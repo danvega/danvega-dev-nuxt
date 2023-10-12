@@ -14,9 +14,9 @@ Last week, I spent some time exploring how to work with JSON in Spring applicati
 
 I wrote a query to extract the data, which resulted in some JSON data. However, the format of this data was not suitable for importing into my new application. To address this issue, I went down the rabbit hole of reading JSON files in Spring and exploring the various options available for mapping this data to the types used in my application.
 
-`youtube:https://youtu.be/EumLbf8WjnY`
+:YouTube{id=EumLbf8WjnY}
 
-`youtube:https://youtu.be/cw0TfpcUkao`
+:YouTube{id=cw0TfpcUkao}
 
 ## VMware Explore Recordings
 

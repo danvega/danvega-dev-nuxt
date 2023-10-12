@@ -14,7 +14,7 @@ Last week, while putting together a small demo, I encountered an interesting iss
 
 Initially, I considered the possibility that the issue was related to Docker. I wondered if I needed to connect to the internal IP address of the containers instead of using localhost. However, that wasn't the problem either. After some head scratching, I eventually identified the cause of the issue. To help you understand what went wrong and how I resolved it, I have created the following tutorial on connecting to a database inside a Docker container.
 
-`youtube:https://youtu.be/NOrwxSI_VIg`
+:YouTube{id=NOrwxSI_VIg}
 
 ## Spring Boot Testing
 
@@ -26,7 +26,7 @@ Next, we delved into Hexagonal Architecture, an approach that Ted is a strong ad
 
 Inspired by watching a few videos on Ted's channel, I decided to create some testing videos of my own. The first video in this series, which focuses on Test Driven Development (TDD) in Spring, has already been published.
 
-`youtube:https://youtu.be/-H5sud1-K5A`
+:YouTube{id=-H5sud1-K5A}
 
 I have already recorded a follow up to this video where we will go through integration testing with Testcontainers and that should be released today!
 

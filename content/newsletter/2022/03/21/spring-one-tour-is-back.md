@@ -14,7 +14,7 @@ In this tutorial, you will learn how to use Spring Boot secret properties in you
 
 Spring Boot 2.4 gave us the ability to import additional configuration files. In this demo, you will set the secret values in a file called secret.properties and ignore it from Git, so it doesn't get checked in. To wrap this up I will show you how to deploy this project to Heroku and override those secret properties using config vars.
 
-`youtube:https://youtu.be/PmGLn3ua_lU`
+:YouTube{id=PmGLn3ua_lU}
 
 ## Spring Boot @JsonTest Annotation
 
@@ -22,7 +22,7 @@ I think if we are being honest most of us don’t write enough tests. We can all
 
 In this video, you will learn all about the Spring Boot @JsonTest Annotation. This annotation allows you to write a slice test for testing your object's serialization and deserialization. In the past, I might have just tested this through the web layer manually but this gives you a test that can be verified through CI/CD that everything is working as expected.
 
-`youtube:https://youtu.be/AiiprfLqriY`
+:YouTube{id=AiiprfLqriY}
 
 ## SpringOne Tour
 

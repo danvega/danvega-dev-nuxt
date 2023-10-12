@@ -28,7 +28,7 @@ If you’re confused about what this syntax is or why it was introduced please c
 
 In a [recent episode](https://youtube.com/live/eRMbHR5LnOc?feature=share) of [Spring Office Hours](http://www.springofficehours.io) DaShaun and I took a look at the recently released [Spring Boot 3.0.4](https://spring.io/blog/2023/03/03/spring-boot-3-0-4-available-now). The reason we wanted to highlight this release is because of a regression that was found. This issue caused problems with Spring applications located in directories with spaces. In these cases, the creation of all `@Configuration` classes and `@RestController`s, along with other `@ComponentScan`based beans, may be skipped.
 
-`youtube:https://youtu.be/eRMbHR5LnOc`
+:YouTube{id=eRMbHR5LnOc}
 
 ### Spring Beans - @Component vs @Bean
 

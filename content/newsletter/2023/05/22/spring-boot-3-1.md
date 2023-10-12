@@ -27,7 +27,7 @@ Spring Boot 3.1 was released and it came packed with some exciting features. If 
 
 If you missed it I did a video on the new Spring Boot Docker Compose module
 
-`youtube:https://youtu.be/lS1GwdIfk0c`
+:YouTube{id=lS1GwdIfk0c}
 
 ## YouTube
 
@@ -39,7 +39,7 @@ AWS recently announced support for Java 17 on Lambda. This is exciting because i
 
 I was thrilled when I heard the news, and I created a tutorial covering these two scenarios.
 
-`youtube:https://youtu.be/bxK4GscuVgs`
+:YouTube{id=bxK4GscuVgs}
 
 ## Spring Office Hours Podcast
 

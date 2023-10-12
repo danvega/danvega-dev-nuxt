@@ -75,7 +75,7 @@ I want to start off by saying thank you to everyone who has supported me and the
 
 I sat down and made a video talking about this huge milestone. In this video, I decided to go back and take a look at some of my earlier videos on the channel and provide some feedback. I hope you enjoy this and I look forward to making a couple more of these at 50,000 and 100,000 🤯
 
-`youtube:https://youtu.be/hsMKOirkLZU`
+:YouTube{id=hsMKOirkLZU}
 
 ## Content
 

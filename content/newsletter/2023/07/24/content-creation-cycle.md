@@ -98,13 +98,13 @@ Speaking of content here are a couple of videos I worked on last week:
 
 Are you tired of dealing with complex development environments? Look no further than this beginner-friendly tutorial on streamlining your development process with Spring Boot, PostgreSQL, and pgAdmin in Docker. I'll walk you through the steps to set up your environment using Docker Compose, so you can focus on writing code instead of worrying about infrastructure. Join me and discover how to build and deploy faster with this efficient and easy-to-use setup.
 
-`youtube:https://youtu.be/XDlgWyVfSMA`
+:YouTube{id=XDlgWyVfSMA}
 
 ### GraphQL Pagination Support in Spring for GraphQL
 
 In this tutorial you are going to learn how to perform pagination in Spring for GraphQL using the cursor connection specification. You will start by building out a GraphQL API and then we will look at when you might want to introduce paging.
 
-`youtube:https://youtu.be/3YTSh8vJ8eY`
+:YouTube{id=3YTSh8vJ8eY}
 
 ## Spring Recipes on the O’Reilly Learning Platform
 

@@ -16,7 +16,7 @@ AWS Lambda is a serverless compute service that lets you run code without provis
 
 I have looked at the concept for deploying functions as a service (FaaS) but in this tutorial we are going to deploy an entire Spring Boot REST API. If you look at the [AWS Pricing Page](https://aws.amazon.com/lambda/pricing/) you will see that The AWS Lambda free tier includes one million free requests per month and 400,000 GB-seconds of compute time per month. This means that for most of the side projects I am working on I can deploy them to AWS Lambda and not have to pay anything.
 
-`youtube:https://youtu.be/GGPPkUcHleQ`
+:YouTube{id=GGPPkUcHleQ}
 
 ## Spring Cloud Gateway
 
@@ -24,7 +24,7 @@ Last week I had a quick trip to Detroit for a SpringOne Tour stop. This was my f
 
 After day 1 of presentations DaShaun and and sat down to record a new episode of the Spring Office Hours Podcast. We were lucky enough to have [Spencer Gibb](https://twitter.com/spencerbgibb) in Detroit so we decided to sit down and talk to him about all things Spring Cloud  + Spring Cloud Gateway. I thought this was a really great level setting conversation on Spring Cloud and some of the use cases for an API Gateway. I want to create some tutorials around Spring Cloud Gateway but would love to hear from you. Is that something you would like to see? What problems are you facing?
 
-`youtube:https://youtu.be/eq1aO9IpEIM`
+:YouTube{id=eq1aO9IpEIM}
 
 
 ## Oracle GraalVM

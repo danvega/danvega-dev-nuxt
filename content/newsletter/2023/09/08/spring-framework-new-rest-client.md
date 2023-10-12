@@ -14,7 +14,7 @@ In this edition of the newsletter I want to talk to you about the new Rest Clien
 
 Last week I worked on a [blog post](https://www.danvega.dev/blog/2023/09/08/rest-client-first-look/) and a video around Spring Framework’s new Rest Client coming in Spring Boot 3.2. What I really enjoy about this new Rest Client is that it works in a Spring MVC app, the fluent API and the simplicity / readability of the resulting code.
 
-`youtube:https://youtu.be/UDNrJAvKc0k`
+:YouTube{id=UDNrJAvKc0k}
 
 I’m also going to be experimenting with creating multiple YouTube shorts for each of my long form videos to hopefully drive more viewers to the tutorial. This didn’t make a lot of sense in the past because there was no way you could connect a short to a long form video. YouTube rolled out a new feature that allows you to set the related video for a short.
 
@@ -28,13 +28,13 @@ I could create these shorts by hand but one of my favorite services around, [Vid
 
 I work a lot with GraphQL on the server using Spring for GraphQL. I often get questions on how to consume those APIs on the frontend so I thought I would take some time to address this last week. I put together a quick tutorial on using Nuxt + Nuxt GraphQL Client Module to call a GraphQL API written in Java and Spring.
 
-`youtube:https://youtu.be/GzB-pL7gJcc`
+:YouTube{id=GzB-pL7gJcc}
 
 ## Reading YAML in Spring with Jackson
 
 We all know how great Jackson is for working with JSON data in Java. Did you know that you can also use it to read in YAML? In this tutorial I give you a quick example of how and why you might want to do this.
 
-`youtube:https://youtu.be/zy8slvenGxc`
+:YouTube{id=zy8slvenGxc}
 
 ## VMware Explore
 

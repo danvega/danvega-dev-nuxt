@@ -63,13 +63,13 @@ We have all heard the complaints that "java is too verbose". Some of the worst o
 
 Record classes were finalized and released in Java 16. In today's tutorial, you will learn how to use record classes in your next Spring Boot project.
 
-`youtube:https://youtu.be/3NshiQIy7p4`
+:YouTube{id=3NshiQIy7p4}
 
 ## Spring Constructor Injection
 
 I had a lot of fun putting this video together. In this tutorial, we try and answer the question that I hear a lot from Spring developers and that is “Why is constructor injection the recommended approach to dependency injection. I took a look at how we declare and manage dependencies outside of spring and then how we can tell Spring to manage our objects for us.
 
-`youtube:https://youtu.be/aX-bgylmprA`
+:YouTube{id=aX-bgylmprA}
 
 ### YouTube Reviews
 

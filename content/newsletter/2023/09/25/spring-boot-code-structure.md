@@ -15,7 +15,7 @@ This is a tutorial I had in my backlog for a long time and I finally got around 
 
 I created the following tutorial to walk through 2 ways that you can structure your code, Package by Layer and Package by Feature. I’m going to be diving into other architecture choices including tomorrow when I sit down with my friend [Ted Young on Spring Office Hours](https://tanzu.vmware.com/developer/tv/spring-office-hours/0053/) to talk about Hexagonal Architecture.
 
-`youtube:https://youtu.be/B1d95I7-zsw`
+:YouTube{id=B1d95I7-zsw}
 
 ## Java 21
 
@@ -23,7 +23,7 @@ Java 21 was released on Tuesday, and I spent most of the day consuming all the c
 
 I decided to create a quick tutorial on how to get started with Java 21. In this video, I also discuss the JEPs included in this release and how to use preview features. I'm a big fan of Java 21 and plan to create a lot of content about it in the coming months.
 
-`youtube:https://youtu.be/aqc5YB7TISM`
+:YouTube{id=aqc5YB7TISM}
 
 ## Spring Boot Observability
 
@@ -33,13 +33,13 @@ In the last newsletter, I introduced [Spring Boot Actuator](https://youtu.be/4OV
 
 Through this tutorial, you will learn how to enable observability in your applications by including the Spring Boot Actuator. Additionally, you will discover how to view traces using a tool like Zipkin, and finally, how to utilize the Observation API and create your own observations.
 
-`youtube:https://youtu.be/exRkiVLyPpc`
+:YouTube{id=exRkiVLyPpc}
 
 ## Java Brains Podcast
 
 There are some really great educators in the Java space and I was lucky enough to spend some time last week with one of my favorite content creators Kouth AKA Java Brains. We sat down and recorded an episode of his podcast and wow did I have some fun. I think we ended up talking for close to 90 minutes and probably could have spent the rest of the day talking.
 
-`youtube:https://youtu.be/HTS8Yfos-Ns`
+:YouTube{id=HTS8Yfos-Ns}
 
 ## SpringOne Tour Virtual
 

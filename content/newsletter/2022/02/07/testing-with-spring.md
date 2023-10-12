@@ -12,7 +12,7 @@ The one day I have marked on my calendar every year is the day we move the clock
 
 I had the privilege of co-hosting [Tanzu Tuesdays](https://tanzu.vmware.com/developer/tv/tanzu-tuesdays/0083/) where our guest was the great [Sam Brannen](https://twitter.com/sam_brannen). Sam was kind enough to present to us on Testing with [Spring](https://spring.io/projects/spring-boot) and [JUnit 5](https://junit.org/junit5/docs/current/user-guide). It was a great talk and I will leave a link to the talk below.
 
-`youtube:https://youtu.be/krA-A2HqWFQ`
+:YouTube{id=krA-A2HqWFQ}
 
 I write tests, probably not enough of them but I do write them. I write tests in Spring and JUnit but what is becoming apparently clear to me is that I am not caught up on all the cool things that JUnit 5 has to offer.
 
@@ -82,7 +82,7 @@ I’m worked on some demo’s last week that might turn into an article, tutoria
 
 As I started putting these demos together I remembered that I already have a tutorial on this. In the video below I show how to start with a simple Maven project and build out a simple Spring Framework application.
 
-`youtube:https://youtu.be/e8aSyQo0nHo`
+:YouTube{id=e8aSyQo0nHo}
 
 The next evolution of this is building out a web application with an embedded Tomcat server, logging, externalized configuration and a database connection. If you can think of anything else you would like to see in this demo please let me know.
 

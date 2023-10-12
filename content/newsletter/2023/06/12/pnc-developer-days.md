@@ -16,7 +16,7 @@ Virtual Threads have been finalized for JDK 21, and there is a lot of excitement
 
 I'm really excited about JDK 21 and Spring Framework 6.1 because I think they will bring some really nice improvements to certain types of applications with little to no code changes. If you're interested in learning more, I did a similar video on this back in April.
 
-`youtube:https://youtu.be/Is5HXJhC3jE`
+:YouTube{id=Is5HXJhC3jE}
 
 ## Tales from the JAR Side
 
@@ -24,7 +24,7 @@ I recently went on a live stream with my friend Ken Kousen. If you're part of th
 
 If you have the chance, I highly recommend watching the stream. Additionally, please do me a favor and subscribe to Ken's YouTube channel. He's doing an excellent job creating content, and you won't want to miss out on any more of it.
 
-`youtube:https://youtu.be/UhCIW3PQHcI`
+:YouTube{id=UhCIW3PQHcI}
 
 ## Hello, Pittsburgh!
 

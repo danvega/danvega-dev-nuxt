@@ -26,7 +26,7 @@ I worked on 2 new videos around Chat GPT. The first one was one that I was reall
 
 This application connects to the Open AI API (the same people behind Chat GPT) and responds to questions. I imagined it as a command line tool to help me remember commands I couldn't recall. Thanks to GraalVM, I was able to create a native image. Now, from the command line, I can type `wtfgpt What is the command to list all docker images` and get the correct response.
 
-`youtube:https://youtu.be/6RXtDxapKX8`
+:YouTube{id=6RXtDxapKX8}
 
 I recently worked on a video to demonstrate how Chat GPT can write a Spring Boot application. It was recorded and is awaiting editing and publication. I'm pleased with the outcome and believe it showcases some of the tasks Chat GPT excels at. Ultimately, I'm a big fan of Chat GPT and think it could be a great addition to any developer's toolkit.
 
@@ -34,7 +34,7 @@ I recently worked on a video to demonstrate how Chat GPT can write a Spring Boot
 
 In the latest edition of Spring Office Hours, we had a mailbag show where we planned to answer as many questions as possible. However, due to the high number of live questions, we didn't get to any of the mailbag questions. This is great news, as it shows that you enjoy these types of shows. Therefore, we will try to do them more often. In fact, the one we were supposed to do last week has been moved to [this week](http://www.springofficehours.io).
 
-`youtube:https://youtu.be/iX8bMlR8Nsw`
+:YouTube{id=iX8bMlR8Nsw}
 
 I created a few YouTube Shorts from this week's Spring Office Hours episode. I believe that taking a 1-minute clip of me answering a question is an excellent way to produce short-form content and provides me with an opportunity to repurpose content for YouTube Shorts.
 

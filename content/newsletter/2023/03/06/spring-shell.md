@@ -30,7 +30,7 @@ During those live streams, I worked on the demo that I would ultimately use in m
 
 This tutorial will teach you the basics of Spring Shell by guiding you through the creation of a simple dad joke CLI. You can run this CLI right from your command line whenever you need a good laugh.
 
-`youtube:https://youtu.be/8B0IjOIzicU`
+:YouTube{id=8B0IjOIzicU}
 
 ## Nuxt 3
 

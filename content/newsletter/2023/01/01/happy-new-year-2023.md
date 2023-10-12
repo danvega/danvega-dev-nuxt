@@ -33,7 +33,7 @@ I am giving 3 presentations in January on Spring Boot 3. I believe 2 of them wil
 
 I have been having so much fun learning about all the new features in Spring Boot 3 and sharing what I have learned with the community. If you haven’t had a chance to check it out yet here is my video on What’s new in Spring Framework 6 and Spring Boot 3.
 
-`youtube:https://youtu.be/TR254zh-f3c`
+:YouTube{id=TR254zh-f3c}
 
 ## Around the web
 

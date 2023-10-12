@@ -18,19 +18,19 @@ I had the opportunity to host Tanzu Tuesday this week. If you’re aware we have
 
 In this episode, I sat down with my cohost DaShaun and our guest Christoph Strobl. Christoph is on the Spring Data team and talked to us about what Spring Data is and what’s coming next. I selfishly love being a host on these shows because I always learn something and this week was no different. I learned that you can create Data projections using DTOs & Interfaces and the resulting SQL will only select the properties you define which can lead to increased performance.
 
-`youtube:https://youtu.be/gEYdSUa4fX8`
+:YouTube{id=gEYdSUa4fX8}
 
 ## Spring Data List Crud Repository
 
 Before we interviewed Christoph I had a chance to put together a video on a new feature coming in Spring Data 3.0. In the current version of Spring Data when you want to retrieve a collection of things the Crud Repository will return an Iterable. In most cases, we are used to working with a List and the List Crud Repository addresses that.
 
-`youtube:https://youtu.be/lDbE0uYlYgk`
+:YouTube{id=lDbE0uYlYgk}
 
 ## Spring Boot + Notion API
 
 If you aren’t new around here you know that I am a huge fan of Notion. In fact, I’m writing this very newsletter in Notion and I use it for so many things in my personal and professional life. In this video, I will show you a Notion database that I created to manage my upcoming talks. We will then use Spring Boot to talk to the Notion API to retrieve those rows. If you’re a fan of Spring and Notion you’re going to enjoy this one!
 
-`youtube:https://youtu.be/4yHYrQ7_gKM`
+:YouTube{id=4yHYrQ7_gKM}
 
 ## Courses
 

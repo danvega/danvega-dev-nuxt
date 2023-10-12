@@ -36,19 +36,19 @@ I decided to sit down and write a command-line-interface in Java that I could ru
 
 Not only did I have a lot of fun building out this project for myself but I feel like you might get a lot out of it as well. I hope you enjoy this and I would love to hear your thoughts on it.
 
-`youtube:https://youtu.be/Oi8JeTswYVI`
+:YouTube{id=Oi8JeTswYVI}
 
 ## Spring Boot Docker Compose
 
 Spring Boot 3.1 RC 1 was released a little over a week ago. I had a chance to dig through the release notes and was really excited about a few of the new features. In this video I took a look at one of those features which was the Spring Boot Docker Compose Module.
 
-`youtube:https://youtu.be/lS1GwdIfk0c`
+:YouTube{id=lS1GwdIfk0c}
 
 ## Spring Security Social Login
 
 Last but not least I have received a few requests for this one. In this tutorial I look at how you can provide a social login for your Spring Boot applications using Spring Security. In the example that I worked on you can login via form login with a username / password or Google & GitHub.
 
-`youtube:https://youtu.be/us0VjFiHogo`
+:YouTube{id=us0VjFiHogo}
 
 ## Around the web
 

@@ -32,13 +32,13 @@ Here are the highlights of the content I worked on last week.
 
 In a recent video, I discussed Spring Beans and how to create them using @Component vs @Bean annotations. Have you ever come across a term that seemed confusing, only to realize later that it was quite simple? For me, Spring Beans was one of those terms when I first started out. In this video, I delve deeper into the topic. I also covered Spring Beans in my [Spring Boot Crash Course](https://youtu.be/UgX5lgv4uVM), but that is a four-hour long video.
 
-`youtube:https://youtu.be/CWEQ-1vff1o`
+:YouTube{id=CWEQ-1vff1o}
 
 ### Multiple Spring Security Configs
 
 Recently, I have discussed how to configure Spring Security using the new component model. This video covers a couple of scenarios where you may need multiple security configurations and how to create them. In previous versions of Spring Security, this was difficult, but it is now much easier.
 
-`youtube:https://youtu.be/PczgM2L3w60`
+:YouTube{id=PczgM2L3w60}
 
 ### Shorts
 

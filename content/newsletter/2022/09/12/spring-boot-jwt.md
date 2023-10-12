@@ -24,7 +24,7 @@ After staring at these convoluted and confusing tutorials I said there has to be
 
 You will find the video below but I also [created a blog post](https://www.danvega.dev/blog/2022/09/06/spring-security-jwt/) for this content as a place you can always reference back to. This video has done better than any other video on my channel in the first three days of its release. Thank you again to everyone who continues to support my content, I truly appreciate it.
 
-`youtube:https://youtu.be/KYNR5js2cXE`
+:YouTube{id=KYNR5js2cXE}
 
 ## Upcoming Talks
 
@@ -43,7 +43,7 @@ I work for VMware and our big conference, VMware Explore was a couple of weeks a
 
 There were lots of exciting product announcements that came out of the conference but I was tuning in for one really exciting one. My good friend and coworker [DaShaun Carter](https://twitter.com/dashaun) was on the main stage for the general session to help announce VMware Aria. It was so exciting to see DaShuan on the big stage where he belongs and he absolutely crushed it!
 
-`youtube:https://youtu.be/yDpRDh9Lt_A`
+:YouTube{id=yDpRDh9Lt_A}
 
 ## YouTube Courses?
 
@@ -57,7 +57,7 @@ With that said I am huge fan of YouTube and the platform it gives me. I love put
 
 Next I saw a similar message from Robert Kyncl who is YouTube's Chief Business Officer. Coincidently the question Robert was answering was from Roberto as well.
 
-`youtube:https://youtu.be/0e2m9DOY0ec`
+:YouTube{id=0e2m9DOY0ec}
 
 I’m really excited about this prospect and can’t wait to see this start rolling out. Does anyone know of any creators that already have paid courses on YouTube? What are your thoughts on this feature?
 

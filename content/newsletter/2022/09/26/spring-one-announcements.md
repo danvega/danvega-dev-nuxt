@@ -65,14 +65,14 @@ Another busy week producing content and preparing for a bunch of content I will 
 
 In this weeks episode DaShuan and I took a look at what’s new in the Spring community and answered your questions. We also had an opportunity to show some demos of things we are currently working on. I’m also pleased to report back that my camera did not overheat this week. It was defiantly due to me changing the recording settings to 4k which is ok for normal videos but not great for streaming.
 
-`youtube:https://youtu.be/mquczsmTIm8`
+:YouTube{id=mquczsmTIm8}
 
 
 ### H2 Database Spring Boot
 
 In this tutorial, you will learn everything you need to know to connect and configure an in-memory H2 database in Spring Boot. I will also walk you through what you need to look out for if you are using Spring Security in your application.
 
-`youtube:https://youtu.be/PSrHcCwvfVQ`
+:YouTube{id=PSrHcCwvfVQ}
 
 ### YouTube Shorts
 

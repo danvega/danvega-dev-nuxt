@@ -32,7 +32,7 @@ If you have been following my tutorials you will know that I have used Spring Da
 
 In this tutorial, I discuss Domain Driven Design, aggregates, and aggregate roots which are core to understanding where to start. When it comes to defining relationships something [Jens Schauder](https://twitter.com/jensschauder) said has really helped _“There are 2 types of relationships you have to define and those are the ones between aggregates and the ones within aggregate roots”._ I hope you enjoy this tutorial where you will create a Spring Boot project from scratch and learn how to use Spring Data JDBC.
 
-`youtube:https://youtu.be/l_T0nQNbFiM`
+:YouTube{id=l_T0nQNbFiM}
 
 ## Spring Security JWT
 
@@ -44,7 +44,7 @@ My biggest question was how to get an instance of the `AuthenticationManager`. I
 
 After speaking with the Spring Security team I was informed that we should avoid this approach and instead create our own Authentication Manager. Once I was armed with that knowledge I had what I needed to complete this tutorial. If you want to see me walk through how to authenticate and return a JWT from a single endpoint check out the video below.
 
-`youtube:https://youtu.be/UaB-0e76LdQ`
+:YouTube{id=UaB-0e76LdQ}
 
 ## GraphQL Testing Tip
 

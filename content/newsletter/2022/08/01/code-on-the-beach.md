@@ -91,7 +91,7 @@ There are 2 new recordings up of Spring Office Hours. This is our chance to talk
 - [https://tanzu.vmware.com/developer/tv/spring-office-hours/0008/](https://tanzu.vmware.com/developer/tv/spring-office-hours/0008/)
 - [https://tanzu.vmware.com/developer/tv/spring-office-hours/0009/](https://tanzu.vmware.com/developer/tv/spring-office-hours/0009/)
 
-`youtube:https://youtu.be/p4gC7M6fjMU`
+:YouTube{id=p4gC7M6fjMU}
 
 ## KCDC
 

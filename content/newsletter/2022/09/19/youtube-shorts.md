@@ -24,7 +24,7 @@ I recently reorganized my office to be more functional when it comes to creating
 
 DaShaun and I got back to streaming and had a successful [Spring Office Hours](https://tanzu.vmware.com/developer/tv/spring-office-hours/). What I love most about these shows is we get to hear from you and find out what problems you’re facing. We took a lot of notes from this show and have some plans to address some of the questions in the near future. The big thing we want to do with this show is getting more consistent and we have scheduled the next 3 shows. For now, we will go live on Tuesday afternoons at 3:30 EDT. Here is the replay of Episode 11:
 
-`youtube:https://youtu.be/79cNoyXhHNU`
+:YouTube{id=79cNoyXhHNU}
 
 
 ### YouTube
@@ -33,12 +33,12 @@ As I write this, I just realized that I posted 6 new videos to YouTube this week
 
 In this tutorial, I answered a question I got from a subscriber. He needed to be able to consume a third-party API, save that information to a database and then send it to another service. I recreated this flow into a fun little tutorial that I hope answered the question.
 
-`youtube:https://youtu.be/XEtPVm_SL2Q`
+:YouTube{id=XEtPVm_SL2Q}
 
 
 I have been publishing a lot of tutorials related to Spring Security lately. In almost all of those demos, I use an in-memory user because it’s quick and I am trying to keep these tutorials on the topic. While this is great for demos it isn’t going to be used in the real world. In this tutorial, I discuss how to authenticate against a database using the `JdbcUserDetailsManager`.
 
-`youtube:https://youtu.be/d7ZmZFbE_qY`
+:YouTube{id=d7ZmZFbE_qY}
 
 ### YouTube Shorts
 

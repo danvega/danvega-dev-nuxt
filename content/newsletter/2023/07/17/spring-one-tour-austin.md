@@ -18,7 +18,7 @@ We had a great team dinner at Vince Young's Steakhouse downtown, which was about
 
 Last week, I spent some time exploring the new features in Spring for GraphQL. I began by examining the new schema mapping inspection report, which can help you identify mapping issues between your schema and data fetchers. I recorded and published a video on this topic, which you can watch below.
 
-`youtube:https://youtu.be/YBPG0JbHvpY`
+:YouTube{id=YBPG0JbHvpY}
 
 During the week, I invested a lot of time in exploring the new paging and sorting features added in Spring for GraphQL 1.2. Thanks to this feature, we now have a standard way of doing paging in GraphQL using the Cursor connection specification. I concluded the week by examining the observation support, which provides us with metrics and insights into the performance of our API. I recorded several videos about GraphQL and will be releasing at least two of them this week, so stay tuned. By the way, if you haven't subscribed to my [YouTube channel](https://www.youtube.com/@danvega), what are you waiting for?
 

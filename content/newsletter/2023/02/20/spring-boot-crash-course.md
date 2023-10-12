@@ -14,7 +14,7 @@ I think I have talked about almost everything in this video in other videos but 
 
 ![Excalidraw](/images/newsletter/2023/02/20/excalidraw.png)
 
-`youtube:https://youtu.be/UgX5lgv4uVM`
+:YouTube{id=UgX5lgv4uVM}
 
 While this was a lot of fun to put together and I think a lot of people are going to get some value out of it I’m glad I am done with that. Creating a 4-minute video for YouTube is a lot of work so you can only imagine how much work goes into creating a 4-hour video. You have to plan for hours of waiting for tasks like exporting, uploading, and processing time.
 
@@ -28,7 +28,7 @@ With that done I will start recording a complete course that will include testin
 
 I released another video last week where I set out to answer the question “Can Chat GPT create a Spring Boot Application?”. This was a lot of fun to work on and if you have been following this newsletter you know I am a big fan of AI and Chat GPT.
 
-`youtube:https://youtu.be/CXbXoMIVpRg`
+:YouTube{id=CXbXoMIVpRg}
 
 I started off this experiment by asking Chat GPT for a list of high-level steps needed to write a REST API in Spring Boot. For the most part, it did a really great job of giving us an outline of what we needed to do to accomplish that task. As I stated in the video I think Chat GPT is really good at 3 things when it comes to code:
 

@@ -30,7 +30,7 @@ If you have been following my [YouTube series](https://www.youtube.com/playlist?
 
 For that to work through all of the ideas will be created and updated inside of Notion. Lucky for us Notion has an API and a way for us to work with that data. I created a tutorial on how you could create a full-stack application with Nuxt 3 that talks to the Notion API.
 
-`youtube:https://youtu.be/JvNhGu5ELgs`
+:YouTube{id=JvNhGu5ELgs}
 
 If you’re a Spring Boot fan, I have some content coming around using the Notion API in your Spring applications coming soon.
 

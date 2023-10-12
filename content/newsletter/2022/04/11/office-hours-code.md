@@ -12,13 +12,13 @@ This will be my last newsletter for a few weeks. Next week the family and I are 
 
 Below is a recording from our latest office hours live stream. This is a chance for you to find out what is the latest news in the world of Spring, learn something new and ask any questions you might have. Up until this point DaShaun and I have just been testing this format out. We are happy to announce that this show is going pro and it will be added to the [Tanzu TV portfolio](https://tanzu.vmware.com/developer/tv/) soon.
 
-`youtube:https://youtu.be/thqCEMyIBCU`
+:YouTube{id=thqCEMyIBCU}
 
 ## Tanzu TV - Code: Spring for GraphQL
 
 In this episode of Code I’m talking all about Spring for GraphQL. I am working on my presentation for the SpringOne Tour and I began working on some of my demo’s in this live stream.
 
-`youtube:https://youtu.be/6WfxWfIwoAU`
+:YouTube{id=6WfxWfIwoAU}
 
 ## Discord Server
 

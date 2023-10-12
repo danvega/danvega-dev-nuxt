@@ -43,7 +43,7 @@ This is an exciting development for the Java community. As a Spring Developer, I
 
 Last week I created a tutorial on the new JDBC Client in Spring Framework. Spring Boot 3.2 will add auto-configuration for the new client that is being released in Spring Framework 6.1. This is a follow up to my tutorial on the other new client, the [Rest Client](https://www.danvega.dev/blog/2023/09/08/rest-client-first-look/). If you want to learn more about it you can check out this [blog post](https://www.danvega.dev/blog/2023/09/11/spring-jdbc-client/) or the video below.
 
-`youtube:https://youtu.be/JBu5GibEJ4k`
+:YouTube{id=JBu5GibEJ4k}
 
 And here are the 3 shorts I created for the JDBC Client tutorial:
 
@@ -59,7 +59,7 @@ The Spring Boot Actuator gives us a number of features that help us move our app
 
 If you’re interested you can check out this [blog post](https://www.danvega.dev/blog/2023/09/17/spring-boot-actuator/) or the video below.
 
-`youtube:https://youtu.be/4OVe0MWgZ4k`
+:YouTube{id=4OVe0MWgZ4k}
 
 As I talked about last week I’m trying to create shorts related to each of my long form videos. Here are the 3 shorts I created for the Spring Boot Actuator tutorial:
 

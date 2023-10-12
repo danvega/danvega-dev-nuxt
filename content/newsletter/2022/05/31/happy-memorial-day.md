@@ -16,17 +16,17 @@ Spring for GraphQL 1.0 has been released! This is a huge milestone and the culmi
 
 Blog Post: [https://www.danvega.dev/blog/2022/05/17/spring-for-graphql/](https://www.danvega.dev/blog/2022/05/17/spring-for-graphql/)
 
-`youtube:https://youtu.be/3PCNqXrU-2g`
+:YouTube{id=3PCNqXrU-2g}
 
 ## Spring Office Hours
 
 DaShaun and I have been busy with our new live stream called Spring Office Hours. This is a chance to tell you what’s new in the Spring Community, show off something we are working on, and answer your questions. I think we have gotten into a good grove and I am excited about the future of this show. If you want you can check out some of our recent episodes below.
 
-`youtube:https://youtu.be/HYszA0Za704`
+:YouTube{id=HYszA0Za704}
 
-`youtube:https://youtu.be/rMu-QBEFG7U`
+:YouTube{id=rMu-QBEFG7U}
 
-`youtube:https://youtu.be/5_DE6r4oxEw`
+:YouTube{id=5_DE6r4oxEw}
 
 ## Around the Web
 

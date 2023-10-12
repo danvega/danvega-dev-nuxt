@@ -24,7 +24,7 @@ If you follow me, you know I am a huge fan of GraphQL. If you're interested in g
 
 If you aren't aware, there are three main operation types in GraphQL: query, mutation, and subscription. A mutation is used any time you want to change data, such as creating, updating, or deleting a record. In this tutorial, I will show you a few examples of how to create a new resource using a mutation. I will walk you through using simple scalar types, such as strings, a complex object type, and a way to bulk create using a List. I hope you enjoy this tutorial and if you had questions about mutations I hope I answered them.
 
-`youtube:https://youtu.be/u3FFRq3-0CM`
+:YouTube{id=u3FFRq3-0CM}
 
 ## Happy Birthday Spring
 

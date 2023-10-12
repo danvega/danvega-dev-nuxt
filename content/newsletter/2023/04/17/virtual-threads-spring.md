@@ -18,13 +18,13 @@ Project Loom aims to reduce the effort of writing, maintaining, and observing hi
 
 I wrote a [blog post](https://www.danvega.dev/blog/2023/04/12/virtual-threads-spring/) and created a video that walks through the thread-per-request model and how Virtual Threads are going to improve performance in our Spring MVC applications.
 
-`youtube:https://youtu.be/Is5HXJhC3jE`
+:YouTube{id=Is5HXJhC3jE}
 
 ### GraphQL Client
 
 I have been talking a lot lately about how to build GraphQL APIs but what happens when you need to call a GraphQL API within your Spring applications? It turns out that the Spring for GraphQL gives us an easy to use client based on the Web Client. You can use the appropriate version for whatever server transport you are using such as HTTP, WebSocket, RSocket.
 
-`youtube:https://youtu.be/BuPItqaVeGo`
+:YouTube{id=BuPItqaVeGo}
 
 ### YouTube Shorts
 

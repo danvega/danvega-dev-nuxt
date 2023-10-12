@@ -34,7 +34,7 @@ The next question becomes how do you do that when you’re using a frontend fram
 
 I was able to do this thanks to [Netlify Serverless functions](https://docs.netlify.com/functions/overview/). With Netlify you can create a directory and any file that exports a handler function gets turned into a serverless function and uploaded to AWS Lambda. I decided to take what I learned from the live streams and created a simple tutorial on how I used a Netlify function to connect to the Notion API.
 
-`youtube:https://youtu.be/A-b1ZdlNbww`
+:YouTube{id=A-b1ZdlNbww}
 
 ## Vue 3 Documentation
 
@@ -48,7 +48,7 @@ I am fascinated by the story of Elizabeth Holmes and Theranos. I read [Bad Blood
 
 Elizabeth Holmes has been in the news lately as she went to trial and was found guilty of defrauding investors. There is a new show coming to Hulu called the dropout which has an incredible cast.
 
-`youtube:https://youtu.be/novUDyBszA8`
+:YouTube{id=novUDyBszA8}
 
 ## Nuxt 3
 

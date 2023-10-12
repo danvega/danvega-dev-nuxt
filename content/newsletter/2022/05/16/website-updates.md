@@ -32,13 +32,13 @@ I will continue to do this for older blog posts when I can. It’s nice to bring
 
 Blog Post: [https://www.danvega.dev/blog/2022/05/11/spring-boot-value-annotation/](https://www.danvega.dev/blog/2022/05/11/spring-boot-value-annotation/)
 
-`youtube:https://youtu.be/vLSyFktOm4g`
+:YouTube{id=vLSyFktOm4g}
 
 ### Spring Data JPA Pagination
 
 Blog Post: [https://www.danvega.dev/blog/2022/05/12/spring-data-jpa-pagination/](https://www.danvega.dev/blog/2022/05/12/spring-data-jpa-pagination/)
 
-`youtube:https://youtu.be/oq-c3D67WqM`
+:YouTube{id=oq-c3D67WqM}
 
 ## Live Coding
 
@@ -50,7 +50,7 @@ This week I hoped on one of our tv shows called Code. This is a chance for us ad
 
 The first part was building out Spring Data JPA repositories. Once I had that in place I walked through how to do pagination in GraphQL.
 
-`youtube:https://youtu.be/67GtZRgE0h0`
+:YouTube{id=67GtZRgE0h0}
 
 ### Spring Office Hours
 
@@ -58,7 +58,7 @@ If you have been following along I have been running a little experiment called 
 
 I’m happy to announce that [Spring Office Hours](https://tanzu.vmware.com/developer/tv/spring-office-hours/) is out of beta and we have been added to the Tanzu TV lineup on the [Tanzu Developer Center](https://tanzu.vmware.com/developer/). This past week was episode 01 and while I started off with some audio issues, we ended strong.
 
-`youtube:https://youtu.be/qOlgTi6bC5U`
+:YouTube{id=qOlgTi6bC5U}
 
 If you want to join us live for Episode 2 you can view the [episode page here](https://tanzu.vmware.com/developer/tv/spring-office-hours/0002/).
 

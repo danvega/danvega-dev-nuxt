@@ -14,18 +14,17 @@ I recently had a discussion about testing Spring Boot applications during [Sprin
 
 When you create a new project on [start.spring.io](http://start.spring.io/), the `spring-boot-starter-test` is automatically included in your application. In the mentioned episode and the video provided below, I explain what is included in this starter. Understanding the components that come with Spring Boot makes it easier to comprehend the purpose of tests and the resources available to you for writing them.
 
-`youtube:https://youtu.be/rUbjV3VY1DI`
-
+:YouTube{id=rUbjV3VY1DI}
 
 I'm also a big fan of Testcontainers and how it simplifies the process of doing the right thing. We all understand the importance of writing tests, but if integration tests take too long, we are less motivated to write them. In this tutorial, I will guide you on how to get started with Testcontainers in Spring Boot. Additionally, we will explore how the changes in Spring Boot 3.1 make this process even easier.
 
-`youtube:https://youtu.be/erp-7MCK5BU`
+:YouTube{id=erp-7MCK5BU}
 
 ## Spring Cloud Gateway
 
 Spring Cloud Gateway is a topic I have wanted to create a tutorial on for ahwile now and last week I finally got around to doing it. I’m building out a service called DanSON Placeholder Service (yes, just like JSON Placeholder Service) and I thought this would be a really good way to show off an API Gateway and specifically Spring Cloud Gateway.
 
-`youtube:https://youtu.be/EKoq98KqvrI`
+:YouTube{id=EKoq98KqvrI}
 
 I put together this graphic and I used it during my tutorial. I thought I would share it here in case you find useful.
 

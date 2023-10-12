@@ -100,25 +100,25 @@ Last week during Spring Office Hours we welcomed in our guest, [Jonatan Ivanov](
 - If you're currently using Spring Cloud Sleuth that will be going away in Spring Boot 3 and the core of that project is being moved to Micrometer Tracing.
 - If you want to learn more check out the following [repository on Github](https://github.com/micrometer-metrics/micrometer-samples) to see some of the examples Jonatan went through during our live stream.
 
-`youtube:https://youtu.be/zgaAEZ4Y_uI`
+:YouTube{id=zgaAEZ4Y_uI}
 
 ### Spring Security CORS
 
 The first video I published this week was in response to a question I have been receiving a lot lately. The question was about the different ways to configure CORS and specifically when Spring Security is a part of your application.
 
-`youtube:https://youtu.be/HRwlT_etr60`
+:YouTube{id=HRwlT_etr60}
 
 ### Domain Class Converter
 
 Next up I came across this handy class in Spring Data called the Domain Class Converter. It allows you to take an id and automatically convert it to a domain object by using Spring Data’s `CrudRepository`.
 
-`youtube:https://youtu.be/_QBe2ZiXV-0`
+:YouTube{id=_QBe2ZiXV-0}
 
 ### Spring Security JPA
 
 I have been putting out a lot of content lately on Spring Security and this was the next progression of that material. In previous videos, I took a look at how to configure an in-memory user and connect to a database using JDBC. There is no built-in mechanism for authenticating against a database using Spring Data JPA but it’s fairly simple to do when you understand what you need to do.
 
-`youtube:https://youtu.be/awcCiqBO36E`
+:YouTube{id=awcCiqBO36E}
 
 ### YouTube Shorts
 

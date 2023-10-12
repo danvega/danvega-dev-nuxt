@@ -14,21 +14,21 @@ In last week's newsletter, I mentioned that I recently gave a presentation on Sp
 
 Since then, I have received a significant number of questions, which tells me that you are very interested in the topic and how it works. I will do my best to answer them as they come in, but for now, enjoy these tutorials.
 
-`youtube:https://youtu.be/4U0hUyktpvg`
+:YouTube{id=4U0hUyktpvg}
 
-`youtube:https://youtu.be/AOJzm7yFOl0`
+:YouTube{id=AOJzm7yFOl0}
 
 ## NetNinja Series
 
 I recently recorded a new series on how to build a portfolio site with Nuxt 3. I partnered with the NetNinja who has a really great YouTube channel and you can find the first video in that series below. This was an exciting project because you get to build a really cool portfolio using a variety of technologies like Nuxt 3, Vue 3, Tailwind CSS, GraphQL and Nuxt Content. I hope you enjoy this and I would love to hear what you think of it.
 
-`youtube:https://youtu.be/b6b2yZZNG6Y`
+:YouTube{id=b6b2yZZNG6Y}
 
 ## Spring Office Hours
 
 In this week's Spring Office Hours Podcast, DaShaun and I discussed a variety of topics, including a great discussion about virtual threads. I’m starting to get really excited about JDK 21 and Spring Framework 6.1 both of which will be released later this year.
 
-`youtube:https://youtu.be/6QeYgSpntpg`
+:YouTube{id=6QeYgSpntpg}
 
 ## SpringOne at VMware Explore
 

@@ -52,7 +52,7 @@ If you haven’t been paying attention my coworker and friend DaShaun and I have
 
 Lately, we have gotten more consistent with the show which airs every Tuesday at 3:30 EDT. With that, we have seen a rise in our viewers where almost 100 people joined us live last week, and thousands on the replay. In the latest episode, which you can find below, we talked all about the release of Spring Boot 3.0 RC1.
 
-`youtube:https://youtu.be/WgcP00BOs5I`
+:YouTube{id=WgcP00BOs5I}
 
 ## YouTube
 

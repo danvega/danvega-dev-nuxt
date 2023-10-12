@@ -34,13 +34,13 @@ I was able to create 2 videos over the last 2 weeks. It’s crazy that in one we
 
 I have been creating a lot of content around Spring for GraphQL lately and one of the questions that keep coming up is how can I test my APIs. The testing support in Spring for GraphQL out of the box is really good and easy to get started with. In this tutorial, you will learn how to write a slice test and the GraphQL Tester that includes a fluent API for testing your APIs independent of the server transport.
 
-`youtube:https://youtu.be/0b0x3C_BTT8`
+:YouTube{id=0b0x3C_BTT8}
 
 ### IntelliJ Live Templates for Spring Boot
 
 If you aren’t aware the Spring Developer Advocacy team started a [Spring Developers Twitter Community](https://twitter.com/i/communities/1496544801533091844). There are so many great questions in that community and my plan is to start answering questions there. In this video, I answer my friend DaShaun’s question on how to quickly automate some one-liners in Spring Boot.
 
-`youtube:https://youtu.be/38VYJjjKqh0`
+:YouTube{id=38VYJjjKqh0}
 
 ## What’s new in Nuxt 3
 

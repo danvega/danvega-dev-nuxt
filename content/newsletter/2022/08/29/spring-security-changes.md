@@ -18,7 +18,7 @@ In doing so I came across this article on some [changes that happened in Spring 
 
 The video below is a tutorial that walks you through the old way to do it and what you should do going forward.
 
-`youtube:https://youtu.be/s4X4SJv2RrU`
+:YouTube{id=s4X4SJv2RrU}
 
 I’m also trying to experiment with YouTube and one of the things I am trying to do is cut out as much fluff as possible. I feel like I got right to the point in this video and it seems to be doing very well in its first few days. Thank you to everyone who supports my videos and provides feedback. I love doing this and want to get better!
 
@@ -26,7 +26,7 @@ I’m also trying to experiment with YouTube and one of the things I am trying t
 
 We made a small change a couple of weeks ago and that was to add our personal YouTube channels to the stream. I want to try and attract more viewers to the live stream because one of the main components of the show is answering your questions. If we don’t have viewers we don’t have questions to answer. We got a pretty good turnout and some really great questions in this episode. My hope is with some more consistency we can start to grow those numbers in the near future. We will have a show this week but It will most likely be later this week as DaShaun is San Francisco for VMware Explore.
 
-`youtube:https://youtu.be/4iA2AMZvivo`
+:YouTube{id=4iA2AMZvivo}
 
 ## Conference Call For Papers (CFP)
 

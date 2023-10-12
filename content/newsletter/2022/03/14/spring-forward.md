@@ -16,7 +16,7 @@ In this tutorial, you will learn about what has changed and what’s new in Spri
 
 I wasn’t able to go through every single feature because there were so many so I picked out what I thought were the major or interesting changes. The video ended up being a little over an hour but don’t let that scare you as I have included timestamps so you can jump to a particular feature.
 
-`youtube:https://youtu.be/4L4LEnawcO8`
+:YouTube{id=4L4LEnawcO8}
 
 I really hope you enjoy this video and if a particular feature I didn’t go through and you want to see a demo on it please reach out. I learned that keeping up with each of the major releases and really understanding what changed and why and what is new is a great way to stay up to date with Spring Boot.
 
