@@ -2,8 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter'
 
-const BASE_DIR = process.argv[2] || '../content/test/';
+const CONTENT_DIR= "newsletter"
+const BASE_DIR = process.argv[2] || `../content/${CONTENT_DIR}/`;
 const DRY_RUN = false;
+
 
 function getFilesFromDir(baseDir) {
     const files = fs.readdirSync(baseDir);
@@ -70,7 +72,7 @@ function processMdFiles() {
 }
 
 function updateImagePath(file,content,dateParts) {
-    const newImagePath = `/images/blog/${dateParts.year}/${dateParts.month}/${dateParts.day}/`;
+    const newImagePath = `/images/${CONTENT_DIR}/${dateParts.year}/${zeroPad(dateParts.month)}/${zeroPad(dateParts.day)}/`;
     const updatedContent = content.replace(/!\[([^\]]*)\]\(\.\//g, `![\$1](${newImagePath}`);
     if(!DRY_RUN) {
         fs.writeFileSync(file, updatedContent, 'utf-8');
@@ -78,8 +80,17 @@ function updateImagePath(file,content,dateParts) {
     console.log(`${file} new image path: ${newImagePath}`)
 }
 
+function zeroPad(number) {
+    return number.toString().padStart(2, '0');
+}
+
 if(DRY_RUN) {
-    console.log("DRY RUN -----------------------------------------")
+    console.log("START DRY RUN -----------------------------------------")
 }
 
 processMdFiles();
+
+
+if(DRY_RUN) {
+    console.log("END DRY RUN -----------------------------------------")
+}
