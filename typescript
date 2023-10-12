@@ -1,0 +1,374 @@
+Script started on Thu Oct 12 13:26:03 2023
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt]1;..vega-dev-nuxt[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt]1;..vega-dev-nuxt[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt]1;..vega-dev-nuxt[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md          [1m[36massets[39;49m[0m             [1m[36mcontent[39;49m[0m            [1m[36mlayouts[39;49m[0m            nuxt.config.ts     package.json       [1m[36mplugins[39;49m[0m            [1m[36mscripts[39;49m[0m            tailwind.config.ts tsconfig.json      typescript
+app.vue            [1m[36mcomponents[39;49m[0m         error.vue          [1m[36mnode_modules[39;49m[0m       package-lock.json  [1m[36mpages[39;49m[0m              [1m[36mpublic[39;49m[0m             [1m[36mserver[39;49m[0m             template.html      [1m[36mtypes[39;49m[0m              typography.ts
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt]1;..vega-dev-nuxt[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hc sscripts[1m/[0m[0m [?1l>[?2004l
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scriptsls[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsmigration.ts
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004ho m nnode migration.ts[1m [0m[0m [?1l>[?2004l
+]2;node migration.ts]1;nodenode:internal/errors:490
+    ErrorCaptureStackTrace(err);
+    ^
+
+TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration.ts
+[90m    at new NodeError (node:internal/errors:399:5)[39m
+[90m    at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:99:9)[39m
+[90m    at defaultGetFormat (node:internal/modules/esm/get_format:139:38)[39m
+[90m    at defaultLoad (node:internal/modules/esm/load:83:20)[39m
+[90m    at DefaultModuleLoader.load (node:internal/modules/esm/loader:317:26)[39m
+[90m    at DefaultModuleLoader.moduleProvider (node:internal/modules/esm/loader:195:22)[39m
+[90m    at new ModuleJob (node:internal/modules/esm/module_job:63:26)[39m
+[90m    at #createModuleJob (node:internal/modules/esm/loader:219:17)[39m
+[90m    at DefaultModuleLoader.getJobFromResolveResult (node:internal/modules/esm/loader:172:34)[39m
+[90m    at DefaultModuleLoader.getModuleJob (node:internal/modules/esm/loader:157:17)[39m {
+  code: [32m'ERR_UNKNOWN_FILE_EXTENSION'[39m
+}
+
+Node.js v20.2.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hnode migration.ts   [?1l>[?2004l
+]2;node migration]1;nodenode:internal/modules/cjs/loader:1073
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration'
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:1070:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:923:27)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: []
+}
+
+Node.js v20.2.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hnode migration.ts[1m [0m[0m [?1l>[?2004l
+]2;node migration.ts]1;nodenode:internal/errors:490
+    ErrorCaptureStackTrace(err);
+    ^
+
+TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration.ts
+[90m    at new NodeError (node:internal/errors:399:5)[39m
+[90m    at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:99:9)[39m
+[90m    at defaultGetFormat (node:internal/modules/esm/get_format:139:38)[39m
+[90m    at defaultLoad (node:internal/modules/esm/load:83:20)[39m
+[90m    at DefaultModuleLoader.load (node:internal/modules/esm/loader:317:26)[39m
+[90m    at DefaultModuleLoader.moduleProvider (node:internal/modules/esm/loader:195:22)[39m
+[90m    at new ModuleJob (node:internal/modules/esm/module_job:63:26)[39m
+[90m    at #createModuleJob (node:internal/modules/esm/loader:219:17)[39m
+[90m    at DefaultModuleLoader.getJobFromResolveResult (node:internal/modules/esm/loader:172:34)[39m
+[90m    at DefaultModuleLoader.getModuleJob (node:internal/modules/esm/loader:157:17)[39m {
+  code: [32m'ERR_UNKNOWN_FILE_EXTENSION'[39m
+}
+
+Node.js v20.2.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hnnode migration.ts[1m [0m[0m   js [?1l>[?2004l
+]2;node migration.js]1;nodenode:internal/modules/cjs/loader:1073
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration.js'
+[90m    at Module._resolveFilename (node:internal/modules/cjs/loader:1070:15)[39m
+[90m    at Module._load (node:internal/modules/cjs/loader:923:27)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)[39m
+[90m    at node:internal/main/run_main_module:23:47[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: []
+}
+
+Node.js v20.2.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scriptsn[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hnnpx ts-node migration.ts[1m [0m[0m [?1l>[?2004l
+]2;npx ts-node migration.ts]1;npx[1G[0JNeed to install the following packages:
+ts-node@10.9.1
+Ok to proceed? (y) [20Gy
+[?25l([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ idealTree:1bf7c3c15bf47d04: [7msill[0m [35midealTree[0m buildDeps[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:1bf7c3c15bf47d04: [32;40mtiming[0m [35midealTree:#root[0m Completed in 672ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:1bf7c3c15bf47d04: [32;40mtiming[0m [35midealTree:#root[0m Completed in 672ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:1bf7c3c15bf47d04: [32;40mtiming[0m [35midealTree:#root[0m Completed in 672ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠋ idealTree:1bf7c3c15bf47d04: [32;40mtiming[0m [35midealTree:#root[0m Completed in 672ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ reify:ts-node: [7msill[0m [35maudit[0m bulk request {[0m[K([107;97m###############[0m[100;90m⠂⠂⠂[0m) ⠸ reify:@types/node: [32;40mtiming[0m [35mreifyNode:node_modules/v8-compile-cache-lib[0m Completed in 69ms[0m[K([107;97m##################[0m) ⠴ reify:ts-node: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/ts-node/-/ts-node-10.9.1.tgz 106ms (cache miss)[0m[K([107;97m##################[0m) ⠴ reify:ts-node: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/ts-node/-/ts-node-10.9.1.tgz 106ms (cache miss)[0m[K([107;97m##################[0m) ⠋ reify:ts-node: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/ts-node/-/ts-node-10.9.1.tgz 106ms (cache miss)[0m[K([107;97m##################[0m) ⠋ reify:ts-node: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/ts-node/-/ts-node-10.9.1.tgz 106ms (cache miss)[0m[K([107;97m##################[0m) ⠋ reify:ts-node: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.org/ts-node/-/ts-node-10.9.1.tgz 106ms (cache miss)[0m[K[K[?25hTypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration.ts
+[90m    at new NodeError (node:internal/errors:399:5)[39m
+[90m    at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:99:9)[39m
+[90m    at defaultGetFormat (node:internal/modules/esm/get_format:139:38)[39m
+[90m    at defaultLoad (node:internal/modules/esm/load:83:20)[39m
+[90m    at DefaultModuleLoader.load (node:internal/modules/esm/loader:317:26)[39m
+[90m    at DefaultModuleLoader.moduleProvider (node:internal/modules/esm/loader:195:22)[39m
+[90m    at new ModuleJob (node:internal/modules/esm/module_job:63:26)[39m
+[90m    at DefaultModuleLoader.#createModuleJob (node:internal/modules/esm/loader:219:17)[39m
+[90m    at DefaultModuleLoader.getJobFromResolveResult (node:internal/modules/esm/loader:172:34)[39m
+[90m    at DefaultModuleLoader.getModuleJob (node:internal/modules/esm/loader:157:17)[39m {
+  code: [32m'ERR_UNKNOWN_FILE_EXTENSION'[39m
+}
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004httypescript[?1l>[?2004l
+]2;typescript]1;typescriptzsh: command not found: typescript
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hnnpm ins   -g typescript [?1l>[?2004l
+]2;npm i -g typescript]1;npm[?25l([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ reify:typescript: [32;40mtiming[0m [35mreify:loadBundles[0m Completed in 0ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ reify:typescript: [32;40mtiming[0m [35mreify:loadBundles[0m Completed in 0ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ reify:typescript: [32;40mtiming[0m [35mreify:loadBundles[0m Completed in 0ms[0m[K[K[?25h
+added 1 package in 303ms
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004httsc migration.ts[1m [0m[0m [?1l>[?2004l
+]2;tsc migration.ts]1;tsc[96mmigration.ts[0m:[93m7[0m:[93m11[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'files'.
+
+[7m7[0m     const files = fs.readdirSync(baseDir);
+[7m [0m [91m          ~~~~~[0m
+
+[96mmigration.ts[0m:[93m8[0m:[93m9[0m - [91merror[0m[90m TS2451: [0mCannot redeclare block-scoped variable 'files'.
+
+[7m8[0m     let files: string[] = [];
+[7m [0m [91m        ~~~~~[0m
+
+[96mmigration.ts[0m:[93m15[0m:[93m13[0m - [91merror[0m[90m TS2588: [0mCannot assign to 'files' because it is a constant.
+
+[7m15[0m             files = files.concat(getFilesFromDir(filePath));
+[7m  [0m [91m            ~~~~~[0m
+
+
+Found 3 errors in the same file, starting at: migration.ts[90m:7[0m
+
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hcleartsc migration.ts[?1l>[?2004l
+]2;tsc migration.ts]1;tsc[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsmigration.js migration.ts
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hnnode migration.sj  js[1m [0m[0m [?1l>[?2004l
+]2;node migration.js]1;nodefile:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration.js:2
+Object.defineProperty(exports, "__esModule", { value: true });
+                      ^
+
+ReferenceError: exports is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/vega/dev/danvega/danvega-dev-nuxt/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at [90mfile:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/[39mmigration.js:2:23
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:192:25)[39m
+
+Node.js v20.2.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hnode migration.js[17Dls               [15Dtsc migration.ts[16Dclear           [11Dtsc migration.ts[16Dclear           [11Dtsc migration.ts[16Dnpm i -g typescript[19D[9P[10C         [9D[10Dnpx ts-node migration.ts[?1l>[?2004l
+]2;npx ts-node migration.ts]1;npxTypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration.ts
+[90m    at new NodeError (node:internal/errors:399:5)[39m
+[90m    at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:99:9)[39m
+[90m    at defaultGetFormat (node:internal/modules/esm/get_format:139:38)[39m
+[90m    at defaultLoad (node:internal/modules/esm/load:83:20)[39m
+[90m    at DefaultModuleLoader.load (node:internal/modules/esm/loader:317:26)[39m
+[90m    at DefaultModuleLoader.moduleProvider (node:internal/modules/esm/loader:195:22)[39m
+[90m    at new ModuleJob (node:internal/modules/esm/module_job:63:26)[39m
+[90m    at DefaultModuleLoader.#createModuleJob (node:internal/modules/esm/loader:219:17)[39m
+[90m    at DefaultModuleLoader.getJobFromResolveResult (node:internal/modules/esm/loader:172:34)[39m
+[90m    at DefaultModuleLoader.getModuleJob (node:internal/modules/esm/loader:157:17)[39m {
+  code: [32m'ERR_UNKNOWN_FILE_EXTENSION'[39m
+}
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hnnode   n  vvmv  nnvm[?1l>[?2004l
+]2;nvm]1;nvm
+Node Version Manager (v0.39.0)
+
+Note: <version> refers to any version-like string nvm understands. This includes:
+  - full or partial version numbers, starting with an optional "v" (0.10, v0.1.2, v1)
+  - default (built-in) aliases: node, stable, unstable, iojs, system
+  - custom aliases you define with `nvm alias foo`
+
+ Any options that produce colorized output should respect the `--no-colors` option.
+
+Usage:
+  nvm --help                                  Show this message
+    --no-colors                               Suppress colored output
+  nvm --version                               Print out the installed version of nvm
+  nvm install [<version>]                     Download and install a <version>. Uses .nvmrc if available and version is omitted.
+   The following optional arguments, if provided, must appear directly after `nvm install`:
+    -s                                        Skip binary download, install from source only.
+    -b                                        Skip source download, install from binary only.
+    --reinstall-packages-from=<version>       When installing, reinstall packages installed in <node|iojs|node version number>
+    --lts                                     When installing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                          When installing, only select from versions for a specific LTS line
+    --skip-default-packages                   When installing, skip the default-packages file if it exists
+    --latest-npm                              After installing, attempt to upgrade to the latest working npm on the given node version
+    --no-progress                             Disable the progress bar on any downloads
+    --alias=<name>                            After installing, set the alias specified to the version specified. (same as: nvm alias <name> <version>)
+    --default                                 After installing, set default alias to the version specified. (same as: nvm alias default <version>)
+  nvm uninstall <version>                     Uninstall a version
+  nvm uninstall --lts                         Uninstall using automatic LTS (long-term support) alias `lts/*`, if available.
+  nvm uninstall --lts=<LTS name>              Uninstall using automatic alias for provided LTS line, if available.
+  nvm use [<version>]                         Modify PATH to use <version>. Uses .nvmrc if available and version is omitted.
+   The following optional arguments, if provided, must appear directly after `nvm use`:
+    --silent                                  Silences stdout/stderr output
+    --lts                                     Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                          Uses automatic alias for provided LTS line, if available.
+  nvm exec [<version>] [<command>]            Run <command> on <version>. Uses .nvmrc if available and version is omitted.
+   The following optional arguments, if provided, must appear directly after `nvm exec`:
+    --silent                                  Silences stdout/stderr output
+    --lts                                     Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                          Uses automatic alias for provided LTS line, if available.
+  nvm run [<version>] [<args>]                Run `node` on <version> with <args> as arguments. Uses .nvmrc if available and version is omitted.
+   The following optional arguments, if provided, must appear directly after `nvm run`:
+    --silent                                  Silences stdout/stderr output
+    --lts                                     Uses automatic LTS (long-term support) alias `lts/*`, if available.
+    --lts=<LTS name>                          Uses automatic alias for provided LTS line, if available.
+  nvm current                                 Display currently activated version of Node
+  nvm ls [<version>]                          List installed versions, matching a given <version> if provided
+    --no-colors                               Suppress colored output
+    --no-alias                                Suppress `nvm alias` output
+  nvm ls-remote [<version>]                   List remote versions available for install, matching a given <version> if provided
+    --lts                                     When listing, only show LTS (long-term support) versions
+    --lts=<LTS name>                          When listing, only show versions for a specific LTS line
+    --no-colors                               Suppress colored output
+  nvm version <version>                       Resolve the given description to a single local version
+  nvm version-remote <version>                Resolve the given description to a single remote version
+    --lts                                     When listing, only select from LTS (long-term support) versions
+    --lts=<LTS name>                          When listing, only select from versions for a specific LTS line
+  nvm deactivate                              Undo effects of `nvm` on current shell
+    --silent                                  Silences stdout/stderr output
+  nvm alias [<pattern>]                       Show all aliases beginning with <pattern>
+    --no-colors                               Suppress colored output
+  nvm alias <name> <version>                  Set an alias named <name> pointing to <version>
+  nvm unalias <name>                          Deletes the alias named <name>
+  nvm install-latest-npm                      Attempt to upgrade to the latest working `npm` on the current node version
+  nvm reinstall-packages <version>            Reinstall global `npm` packages contained in <version> to current version
+  nvm unload                                  Unload `nvm` from shell
+  nvm which [current | <version>]             Display path to installed node version. Uses .nvmrc if available and version is omitted.
+    --silent                                  Silences stdout/stderr output when a version is omitted
+  nvm cache dir                               Display path to the cache directory for nvm
+  nvm cache clear                             Empty cache directory for nvm
+  nvm set-colors [<color codes>]              Set five text colors using format "yMeBg". Available when supported.
+                                               Initial colors are:
+                                                  [0;32m g[0m [0;34m b[0m [0;33m y[0m [0;31m r[0m [0;37m e[0m
+                                               Color codes:
+                                                [0;31m r[0m/[1;31mR[0m = [0;31mred[0m / [1;31mbold red[0m
+                                                [0;32m g[0m/[1;32mG[0m = [0;32mgreen[0m / [1;32mbold green[0m
+                                                [0;34m b[0m/[1;34mB[0m = [0;34mblue[0m / [1;34mbold blue[0m
+                                                [0;36m c[0m/[1;36mC[0m = [0;36mcyan[0m / [1;36mbold cyan[0m
+                                                [0;35m m[0m/[1;35mM[0m = [0;35mmagenta[0m / [1;35mbold magenta[0m
+                                                [0;33m y[0m/[1;33mY[0m = [0;33myellow[0m / [1;33mbold yellow[0m
+                                                [0;30m k[0m/[1;30mK[0m = [0;30mblack[0m / [1;30mbold black[0m
+                                                [0;37m e[0m/[1;37mW[0m = [0;37mlight grey[0m / [1;37mwhite[0m
+
+Example:
+  nvm install 8.0.0                     Install a specific version number
+  nvm use 8.0                           Use the latest available 8.0.x release
+  nvm run 6.10.3 app.js                 Run app.js using node 6.10.3
+  nvm exec 4.8.3 node app.js            Run `node app.js` with the PATH pointing to node 4.8.3
+  nvm alias default 8.1.0               Set default node version on a shell
+  nvm alias default node                Always default to the latest available node version on a shell
+
+  nvm install node                      Install the latest available version
+  nvm use node                          Use the latest version
+  nvm install --lts                     Install the latest LTS version
+  nvm use --lts                         Use the latest LTS version
+
+  nvm set-colors cgYmW                  Set text colors to cyan, green, bold yellow, magenta, and white
+
+Note:
+  to remove, delete, or uninstall nvm - just remove the `$NVM_DIR` folder (usually `~/.nvm`)
+
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hnnode -v[?1l>[?2004l
+]2;node -v]1;nodev20.2.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hnnode migration. .js[1m [0m[0m [?1l>[?2004l
+]2;node migration.js]1;nodefile:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration.js:2
+Object.defineProperty(exports, "__esModule", { value: true });
+                      ^
+
+ReferenceError: exports is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/vega/dev/danvega/danvega-dev-nuxt/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at [90mfile:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/[39mmigration.js:2:23
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:192:25)[39m
+
+Node.js v20.2.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hnnsn  ttsconfig --init[?1l>[?2004l
+]2;tsconfig --init]1;tsconfigzsh: command not found: tsconfig
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004httypescriptt   --init[?1l>[?2004l
+]2;typescript --init]1;typescriptzsh: command not found: typescript
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004httypescript help[?1l>[?2004l
+]2;typescript help]1;typescriptzsh: command not found: typescript
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scriptsts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004httsc --init[?1l>[?2004l
+]2;tsc --init]1;tsc
+Created a new tsconfig.json with:                                                                                  [48;5;68m     [39;49m
+                                                                                                                   [48;5;68m[97m  TS [39m[39;49m
+  target: es2016
+  module: commonjs
+  strict: true
+  esModuleInterop: true
+  skipLibCheck: true
+  forceConsistentCasingInFileNames: true
+
+
+You can learn more at https://aka.ms/tsconfig
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsmigration.js  migration.ts  tsconfig.json
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hclearls   tsc --init[10Dclear     typescript help--init[17Dtsconfig --init  [15Dclear          [10Dnode migration.js[17Dclear            [12Dnode -vnvm    clearnpx ts-node migration.ts[24D[7P[15Cjs       [17Dls               [15Dtsc migration.ts[16Dclear           [11Dtsc migration.ts[?1l>[?2004l
+]2;tsc migration.ts]1;tsc[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hnnode migration.js[1m [0m[0m [?1l>[?2004l
+]2;node migration.js]1;nodefile:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration.js:2
+Object.defineProperty(exports, "__esModule", { value: true });
+                      ^
+
+ReferenceError: exports is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/vega/dev/danvega/danvega-dev-nuxt/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at [90mfile:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/[39mmigration.js:2:23
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:192:25)[39m
+
+Node.js v20.2.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004httsc migration.j ts[1m [0m[0m [?1l>[?2004l
+]2;tsc migration.ts]1;tsc[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hnnode migration.js[1m [0m[0m [?1l>[?2004l
+]2;node migration.js]1;nodefile:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration.js:2
+Object.defineProperty(exports, "__esModule", { value: true });
+                      ^
+
+ReferenceError: exports is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/vega/dev/danvega/danvega-dev-nuxt/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at [90mfile:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/[39mmigration.js:2:23
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:192:25)[39m
+
+Node.js v20.2.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004hcclear[?1l>[?2004l
+]2;clear]1;clear[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004httsc no  migration.ts[1m [0m[0m [?1l>[?2004l
+]2;tsc migration.ts]1;tsc[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[32m🚀 [0m[32m[39m[1m[0m[K[?1h=[?2004hnnode - n migration.js[1m [0m[0m [?1l>[?2004l
+]2;node migration.js]1;nodefile:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/migration.js:2
+Object.defineProperty(exports, "__esModule", { value: true });
+                      ^
+
+ReferenceError: exports is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/vega/dev/danvega/danvega-dev-nuxt/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at [90mfile:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/[39mmigration.js:2:23
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:192:25)[39m
+
+Node.js v20.2.0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                                                                  ]2;vega@Dans-MacBook-Pro-M1-MAX:~/dev/danvega/danvega-dev-nuxt/scripts]1;..-nuxt/scripts[0m[27m[24m[J
+[1m[0m[1m[36mdanvega-dev-nuxt/scripts[0m[36m[39m[1m [0m[1mon [0m[1m[37m[1m[37m[0m[37m[1m[37m[35m main[0m[35m[39m[1m[0m[1m[0m[1m[31m [✘»!+?][0m[31m[39m[1m[0m[0m[39m[1m [0m[1mvia [0m[1m[32m⬢ v20.2.0[0m[32m[39m[1m [0m[1m[0m[1m[31m🚀 [0m[31m[39m[1m[0m[K[?1h=[?2004h
