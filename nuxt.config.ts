@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxt/content',
+    '@vueuse/nuxt'
   ],
   colorMode: {
     preference: 'system',
@@ -27,6 +29,21 @@ export default defineNuxtConfig({
               ? { preset: ['default', { discardComments: { removeAll: true } }] }
               : false, // disable cssnano when not in production
     },
+  },
+  content: {
+      // content options
+    highlight: {
+      theme: {
+        // Default theme (same as single string)
+        default: 'nord',
+        // Theme used if `html.dark`
+        dark: 'github-dark',
+        // Theme used if `html.sepia`
+        sepia: 'monokai'
+      },
+      // https://github.com/shikijs/shiki/blob/main/docs/languages.md#adding-grammar
+      preload: ['java','json','js','ts','css','shell','html','md','yaml','sql','properties','http']
+    }
   },
   devtools: { enabled: false }
 })
