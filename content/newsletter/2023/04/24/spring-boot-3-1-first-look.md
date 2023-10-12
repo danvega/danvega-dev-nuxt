@@ -6,7 +6,7 @@ date: "2023-04-17T10:30:00.000Z"
 
 Happy Monday and welcome to the start of another work week. I hope you had a wonderful weekend. Mine was great - this past weekend I had my first daddy-daughter dance with my oldest daughter, Bella (5). It was an amazing night and she was so excited to get “fancied up”, as she says. We had a delicious meal with friends, an ice cream bar, hula hoops, and of course, we danced the night away.
 
-![Daddy Daughter Dance 2023](./daddy-daughter-dance.png)
+![Daddy Daughter Dance 2023](/images/newsletter/2023/04/17/daddy-daughter-dance.png)
 
 This week, I want to talk to you about the newly released Spring Boot 3.1 RC1. Additionally, I will discuss what I worked on last week, which includes Spring Beans, Spring Security, and YouTube Shorts.
 

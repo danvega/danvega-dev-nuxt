@@ -31,7 +31,7 @@ After day 1 of presentations DaShaun and and sat down to record a new episode of
 
 If you haven't heard, GraalVM is now Oracle GraalVM, and there are a few exciting things that come with [this announcement](https://medium.com/graalvm/a-new-graalvm-release-and-new-free-license-4aab483692f5). The first thing to note is that Oracle GraalVM now supports JDK 17 and 20, and the best part is that it's free. Another update is that if you're using it to generate native images, you no longer need to install a separate tool for that, as it now comes with it. If you want to download it you can do from the [Oracle GraalVM site](https://www.graalvm.org/downloads/) or by using [SDK Man](https://sdkman.io/).
 
-![Oracle GraalVM](./oracle_graalvm.png)
+![Oracle GraalVM](/images/newsletter/2023/07/03/oracle_graalvm.png)
 
 ## Around the web
 

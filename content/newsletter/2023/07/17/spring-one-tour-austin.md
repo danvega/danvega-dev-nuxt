@@ -10,9 +10,9 @@ Last week, I visited Austin, TX for a SpringOne Tour stop at a customer's locati
 
 We had a great team dinner at Vince Young's Steakhouse downtown, which was about a 20-minute drive from where I was staying in the Domain. The Domain is a really cool area with all kinds of shops, and I saw a lot of big tech companies in the area. I would love to go back there one day and spend some time with my family. I was also really close to Top Golf and spent some time hanging out with my coworkers.
 
-![Top Golf Austin](./top-golf.jpeg)
+![Top Golf Austin](/images/newsletter/2023/07/17/top-golf.jpeg)
 
-![SpringOne Tour Austin](./spring-one-tour-austin.jpeg)
+![SpringOne Tour Austin](/images/newsletter/2023/07/17/spring-one-tour-austin.jpeg)
 
 ## Spring for GraphQL
 

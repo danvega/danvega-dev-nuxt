@@ -20,13 +20,13 @@ It's an exciting time to be a Spring Developer! We have three more shows before 
 
 Last week, I spent most of my time working on my slide deck for my GraphQL talk. Although I have given a similar talk about 20 times before, I felt that I had learned a lot over the past year. Therefore, I decided to start from scratch and incorporate what I had learned. I am pleased with the result and feel that the presentation flows well. Despite only having 40 minutes, I was able to pack a substantial amount of content into it.
 
-![spring-one-rest-presentation.png](./spring-one-rest-presentation.png)
+![spring-one-rest-presentation.png](/images/newsletter/2023/07/31/spring-one-rest-presentation.png)
 
 ### Huge Announcement
 
 I can’t believe this is actually happening but yours truly will be on the main stage during this years keynote! I have a small part but couldn’t be more excited to join so many of my amazing colleagues on stage for what should be an amazing presentation. If you are going to SpringOne make sure you take advantage of the [scheduler](https://event.vmware.com/flow/vmware/explore2023lv/content/page/catalog?search.sessiontype=1684866685619001w4UD&src=WWW_us_MRC_dqgsrvt1ho7td&cid=7012H000000wtgaQAA) and sign up for the talks you want to attend.
 
-![SpringOne Keynote](./spring-one-keynote.png)
+![SpringOne Keynote](/images/newsletter/2023/07/31/spring-one-keynote.png)
 
 ## Upcoming Content
 

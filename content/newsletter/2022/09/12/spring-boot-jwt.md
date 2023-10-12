@@ -14,7 +14,7 @@ My daughter starts pre-k school and this year she has moved up to the 4-year-old
 
 I think I speak for all parents who work from home in saying I look forward to the house being a little bit calmer so I can get some work done. Next year the 2-year-old will be 3 and they will both be in school 🤩
 
-![Bella Starts PreK](./bella-prek.jpeg)
+![Bella Starts PreK](/images/newsletter/2022/09/12/bella-prek.jpeg)
 
 ## Spring Security & JSON Web Tokens (JWT)
 

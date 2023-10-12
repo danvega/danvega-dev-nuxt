@@ -26,7 +26,7 @@ This week we made the first of our announcements around speakers, workshops, and
 
 In that list of speakers and sessions, you will find me presenting on Spring for GraphQL. I’m so excited to be giving this presentation at SpringOne and have already begun working on it. I have a lot of content on GraphQL and spent the year talking about it on the SpringOne tour but this presentation will be an updated one.
 
-![Join me at SpringOne](./spring-one-join-me.png)
+![Join me at SpringOne](/images/newsletter/2022/09/26/spring-one-join-me.png)
 
 I’m also giving a workshop on getting started with Spring Boot which you can now [register for](https://springone.io/2022/workshops/spring-boot-beginner). You can get $200 off when registering if you use the code S1VM22_Advocate_200.
 
@@ -49,7 +49,7 @@ This months topic at the Cleveland Java User Group was a deep dive into Java Con
 
 Next, right on topic Scott was able to break down the new Virtual Threads feature in Java 19. I thought his examples were a really great introduction to what you can do with them.
 
-![Virtual Threads (Preview) ](./virtual-threads.png)
+![Virtual Threads (Preview) ](/images/newsletter/2022/09/26/virtual-threads.png)
 
 Virtual Threads (Preview)
 

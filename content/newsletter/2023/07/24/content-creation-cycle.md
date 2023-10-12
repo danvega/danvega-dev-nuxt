@@ -8,7 +8,7 @@ Happy Monday and welcome to another edition of the newsletter. This week I want 
 
 Last week I received the photos that were taken at KCDC and wow were these some great action shots. Thanks to the talented [Tiffany Buckley](https://tiffanybuckley.com/aboutme) for the pictures and capturing my session on Spring Boot 3 and Beyond!
 
-![KCDC Photos](./kcdc.png)
+![KCDC Photos](/images/newsletter/2023/07/24/kcdc.png)
 
 ## The Content Creation Machine
 
@@ -110,7 +110,7 @@ In this tutorial you are going to learn how to perform pagination in Spring for 
 
 I’m excited to announce that on August 17th my friend and coworker Nate Schutta and I will be presenting [Spring Recipes on the O’Reilly Learning Platform](https://learning.oreilly.com/live-events/spring-recipes/0636920095810/). If you’re on the platform I hope you can sign up and join us for a morning full of learning Spring!
 
-![SPring Recipes](./spring-recipes-olp.png)
+![SPring Recipes](/images/newsletter/2023/07/24/spring-recipes-olp.png)
 
 ## SpringOne at VMWare Explore
 

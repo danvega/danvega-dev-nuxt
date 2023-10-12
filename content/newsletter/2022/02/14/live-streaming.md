@@ -40,7 +40,7 @@ I was able to do this thanks to [Netlify Serverless functions](https://docs.netl
 
 If you haven’t been paying attention the [Vue 3 docs](https://vuejs.org/) have been released. Along with this release Vue 3 has now become the default. If you look in the upper left-hand corner of the documentation you will see an API reference section. This toggle will allow you to switch the docs based on if you’re using the Options or Composition API. I thought that was a really nice touch 🎉
 
-![Vue 3 Docs](./vue_3_docs.png)
+![Vue 3 Docs](/images/newsletter/2022/02/14/vue_3_docs.png)
 
 ## The Dropout
 

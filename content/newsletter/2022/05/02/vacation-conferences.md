@@ -6,11 +6,11 @@ date: "2022-05-02T07:30:00.000Z"
 
 Happy Monday friends! It’s been a while since we last talked and I have a lot to share with you. A couple of weeks ago my family and I took a much-needed vacation to Hilton Head, SC. We had such a great time at the beach, riding bikes and eating so much good food.
 
-![Hilton Head Sunrise](./hilton_head_01.png)
+![Hilton Head Sunrise](/images/newsletter/2022/05/02/hilton_head_01.png)
 
-![Hilton Head Family Water](./hilton_head_02.png)
+![Hilton Head Family Water](/images/newsletter/2022/05/02/hilton_head_02.png)
 
-![Hilton Head Dockside](./hilton_head_03.png)
+![Hilton Head Dockside](/images/newsletter/2022/05/02/hilton_head_03.png)
 
 We returned on a Saturday and on Sunday I began packing for SpringOne Tour in Chicago. That night I decided to take a Covid test because I had a bit of a cough. I tested positive and didn’t believe it so I tested again with the same result. I didn’t believe it because even as of recent I have been hearing of others getting pretty sick and I wasn’t sick.
 
@@ -48,7 +48,7 @@ To top it all off VMware was ranked [#2 by Forbes](https://www.forbes.com/lists/
 
 While I was on vacation I crossed 15,000 subscribers on [YouTube](http://www.youtube.com/danvega)! This is amazing and If I was home I probably would have created a video to talk through this amazing milestone. Next up is 20k and I will try and put something together for that one.
 
-![YouTube 15k](./youtube_15k.png)
+![YouTube 15k](/images/newsletter/2022/05/02/youtube_15k.png)
 
 ## This newsletter
 

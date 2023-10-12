@@ -111,7 +111,7 @@ Everything that we just talked about here is in the video below.
 
 As a small YouTuber you need to try and jump on trends as they are happening. I know these are numbers are all relative but for me it was best performing video of all time in the first 1,3, and 5 days. At the time of this writing I have had over 2,000 views in the first 5 videos. If you were one of those 2,000 viewers, thank you!
 
-![log4j2_video_stats.png](./log4j2_video_stats.png)
+![log4j2_video_stats.png](/images/newsletter/2021/12/13/log4j2_video_stats.png)
 
 ## Around the Web
 

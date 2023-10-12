@@ -10,7 +10,7 @@ I hope all of you had a wonderful weekend full of friends, family, and fun and a
 
 I spent most of last week in the great city of Seattle and I was lucky to be able to take my family with me on this trip. Before I get into the SpringOne Tour stop I just have to say what a beautiful city Seattle is. We had a chance to visit the pier, Space Needle, and more, and the views of the water, mountains, and city are just breathtaking.
 
-![Family at the Space Needle in Seattle](./family-pic.jpeg)
+![Family at the Space Needle in Seattle](/images/newsletter/2022/07/18/family-pic.jpeg)
 
 As for the conference, I knew that I would be giving my Introduction to GraphQL talk and half of a new talk on Testcontainers. I found out while I was in Seattle that my coworker Cora wasn’t going to be able to make it so I knew I would need to step up and give the presentation by myself.
 
@@ -22,7 +22,7 @@ I found that after the talk the main question I kept getting asked was “When d
 
 The more custom endpoints and code you are writing means the more code you’re going to have to support and maintain. With GraphQL you can have a single endpoint and let your clients tell you what information they need instead of you telling the clients what information is available to them.
 
-![Dan Presenting on GraphQL](./graphql-in-action.jpeg)
+![Dan Presenting on GraphQL](/images/newsletter/2022/07/18/graphql-in-action.jpeg)
 
 I don’t think I will be giving this talk at any other SpringOne Tour stops this year so if you’re interested in me giving this presentation at your conference or meetup please reach out and let me know.
 
@@ -32,7 +32,7 @@ As I mentioned earlier I was prepared to give half of this 40-minute talk but no
 
 With this essentially being the first time I gave this talk I thought it went really well. I started out by talking about the importance of testing and that if tests are slow and hard to write I won't write them. Cora says this often and I thought I would share it with the audience because it is so true!
 
-![Testing Slide - Quote from Cora](./testing-slide.png)
+![Testing Slide - Quote from Cora](/images/newsletter/2022/07/18/testing-slide.png)
 
 To me this means that if we can make testing easy, fast and concise I will be more likely to write tests, which is what we all should be doing. In the last 25 minutes, I went through a live Spring Boot demo where I created a new integration test and used Testcontainers. We talked through the progression of running a docker command, docker compose, a generic Testcontainer and finally a specific Testcontainer Module.
 
@@ -54,7 +54,7 @@ To me, it starts with the word developer. When we qualify this person as a devel
 
 When it comes to writing code I believe that this individual works on both the front-end and back-end of the stack. This means that they have front-end skills like HTML, CSS & JavaScript. I realize those are broad buckets and we can spend an entire article getting specific about those but I won’t at this time. In JavaScript I believe you should also have some experience with frameworks like React, Angular or Vue. If you have worked with those you might also have experience with bundlers and build tools.
 
-![joshua-aragon-EaB4Ml7C7fE-unsplash.jpg](./joshua-aragon-EaB4Ml7C7fE-unsplash.jpg)
+![joshua-aragon-EaB4Ml7C7fE-unsplash.jpg](/images/newsletter/2022/07/18/joshua-aragon-EaB4Ml7C7fE-unsplash.jpg)
 
 When it comes to the back-end they should have experience in a programming language like Java, build tools like Maven or Gradle, a framework like Spring, and working with databases. Again I have simplified those requirements a bit but those are the types of skills one would need to build back-end web applications.
 
@@ -70,7 +70,7 @@ I’m curious what your thoughts are on what the responsibilities are of a Full-
 
 I have talked about this before but my friend [DaShaun](https://github.com/dashaun) and I run a show called Spring Office Hours.  This is your chance to find out what’s new in the Spring Community, check out some demos, and ask any questions you might have. This week our show returns live on Tuesday at 11 AM EDT and you can find out more using the link below.
 
-![Spring Office Hours - Episode 08 Cover](./spring-office-hours.png)
+![Spring Office Hours - Episode 08 Cover](/images/newsletter/2022/07/18/spring-office-hours.png)
 
 [https://tanzu.vmware.com/developer/tv/spring-office-hours/](https://tanzu.vmware.com/developer/tv/spring-office-hours/0008/)
 

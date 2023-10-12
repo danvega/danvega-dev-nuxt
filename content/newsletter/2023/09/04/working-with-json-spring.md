@@ -25,7 +25,7 @@ In last week's newsletter, I talked about my trip to Las Vegas for SpringOne. Th
 - [Does your API need a REST, checkout GraphQL](https://www.vmware.com/explore/video-library/video-landing.html?sessionid=1681495955926001D6RA&videoId=6335272726112).
 - [Spring Recipes: Common problems and Solutions](https://www.vmware.com/explore/video-library/video-landing.html?sessionid=1680205167648001ZhTy&videoId=6335272438112)
 
-![VMware Explore Library](./vmware_explore_library.png)
+![VMware Explore Library](/images/newsletter/2023/09/04/vmware_explore_library.png)
 
 I am still making my way through the recordings. I can’t believe how many great talks there are from both SpringOne and VMware Explore. If you were in attendance or had a chance to go through the library what are some of your must watch sessions?
 
@@ -33,7 +33,7 @@ I am still making my way through the recordings. I can’t believe how many grea
 
 I have been hard at working on cleaning up my backlog of video ideas and planning out what is next. I have a couple videos already recorded and I’m looking forward editing and publishing those soon. This week my plan is to record videos on the new client in Spring Boot 3.2.
 
-![Video Backlog](./video_backlog.png)
+![Video Backlog](/images/newsletter/2023/09/04/video_backlog.png)
 
 It’s hard to believe that I am starting to submit CFPs for next year. I submitted a bunch of talks to Code Mash, JFokus and I am working on my submissions for Devnexus. I spent some time last week updated my abstracts and you can [check them out here](https://github.com/danvega/abstracts). As a reminder you can always reach out to me if you would like me to speak at your user group meeting, lunch and learn or conference.
 

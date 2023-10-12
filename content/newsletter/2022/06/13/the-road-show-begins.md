@@ -12,11 +12,11 @@ I started out by flying into Toronto on Monday morning. I was supposed to leave 
 
 [Cora](https://tanzu.vmware.com/developer/team/cora-iberkleid/) and I did a talk on [Testcontainers](https://www.testcontainers.org/) and this was the first time we gave that talk. I was interested in finding out how our timing was going to work. We ended up having some problems with jerks on zoom and also deep dove into a couple of things that we weren't going to cover so we ended up spending a lot more time than the hour that we planned. All in all the talk went great and I can’t wait to share more about Testcontainers in the future!
 
-![8A3239C7-7CBD-4BB3-8534-CB9C282565CA_1_105_c.jpeg](./8A3239C7-7CBD-4BB3-8534-CB9C282565CA_1_105_c.jpeg)
+![8A3239C7-7CBD-4BB3-8534-CB9C282565CA_1_105_c.jpeg](/images/newsletter/2022/06/13/8A3239C7-7CBD-4BB3-8534-CB9C282565CA_1_105_c.jpeg)
 
 I want to thank everyone at the VMware offices for welcoming us with open arms and we even got a tour of the office!
 
-![6FCC74D8-CBDD-4E24-A466-DC2F8F6B1E34_1_105_c.jpeg](./6FCC74D8-CBDD-4E24-A466-DC2F8F6B1E34_1_105_c.jpeg)
+![6FCC74D8-CBDD-4E24-A466-DC2F8F6B1E34_1_105_c.jpeg](/images/newsletter/2022/06/13/6FCC74D8-CBDD-4E24-A466-DC2F8F6B1E34_1_105_c.jpeg)
 
 ## SpringOne Tour Toronto
 
@@ -24,17 +24,17 @@ Next up was our [SpringOne Tour](https://tanzu.vmware.com/developer/springone-to
 
 The conference kicked off with [Nate Schutta](https://tanzu.vmware.com/developer/team/nate-schutta/) talking about microservices. I was sitting in the front row listening to Nate speak and all I could think of was “I have to follow this guy”. Nate is a great storyteller and presenter and I learned a lot from him.
 
-![16407CF1-4346-4503-B87E-66BA7F362864_1_105_c.jpeg](./16407CF1-4346-4503-B87E-66BA7F362864_1_105_c.jpeg)
+![16407CF1-4346-4503-B87E-66BA7F362864_1_105_c.jpeg](/images/newsletter/2022/06/13/16407CF1-4346-4503-B87E-66BA7F362864_1_105_c.jpeg)
 
 I gave my talk on Spring for GraphQL and I thought that it went pretty well. There were some great questions afterward that I jotted down that I hope to explore further in the near future. The rest of the conference was amazing with so many great talks by Josh Long, Spencer, Glenn, DaShaun and so many more.
 
 I ended up staying at the Marriott that is attached to the Rogers Centre where the Toronto Blue Jays play. They have a restaurant there that overlooks the field. They weren’t playing while I was there but I want to go back one day when they are. Look at this view 🤩
 
-![0E8A9984-77D6-4540-8DC7-6545145C92BB_1_102_o.jpeg](./0E8A9984-77D6-4540-8DC7-6545145C92BB_1_102_o.jpeg)
+![0E8A9984-77D6-4540-8DC7-6545145C92BB_1_102_o.jpeg](/images/newsletter/2022/06/13/0E8A9984-77D6-4540-8DC7-6545145C92BB_1_102_o.jpeg)
 
 A bunch of us went out for dinner one night at the CN Tower and wow, what a great experience!
 
-![EF17787C-A300-47CB-B53C-3CB9D2A57B38_1_105_c.jpeg](./EF17787C-A300-47CB-B53C-3CB9D2A57B38_1_105_c.jpeg)
+![EF17787C-A300-47CB-B53C-3CB9D2A57B38_1_105_c.jpeg](/images/newsletter/2022/06/13/EF17787C-A300-47CB-B53C-3CB9D2A57B38_1_105_c.jpeg)
 
 I’m really excited about our next tour stop in [New York City](https://tanzu.vmware.com/developer/springone-tour/2022/new-york/) where most of my team should be in the same place at the same time. If you’re in a city where we are stopping make sure you sign up and come say hi 👋🏻
 
@@ -44,11 +44,11 @@ I have been a part of the Vue community for almost 4 years now and this was my f
 
 My talk was on what’s new in Nuxt 3. I have been looking into moving my website over to Nuxt 3 for a while now and as we get closer and closer to a release I’m getting really excited about the move.
 
-![CDB602A4-B009-4444-961A-FA5AFFCB74E4_1_105_c.jpeg](./CDB602A4-B009-4444-961A-FA5AFFCB74E4_1_105_c.jpeg)
+![CDB602A4-B009-4444-961A-FA5AFFCB74E4_1_105_c.jpeg](/images/newsletter/2022/06/13/CDB602A4-B009-4444-961A-FA5AFFCB74E4_1_105_c.jpeg)
 
-![58305412-43C9-43EA-8088-FB3A44A207BD_1_105_c.jpeg](./58305412-43C9-43EA-8088-FB3A44A207BD_1_105_c.jpeg)
+![58305412-43C9-43EA-8088-FB3A44A207BD_1_105_c.jpeg](/images/newsletter/2022/06/13/58305412-43C9-43EA-8088-FB3A44A207BD_1_105_c.jpeg)
 
-![Pratik](./pratik.jpg)
+![Pratik](/images/newsletter/2022/06/13/pratik.jpg)
 
 What I loved most about this conference was what I love about all conferences, the people. I got to meet some people that I have talked to over the years like Adam Jahr and Erik Hanchett and caught up with an old friend Cameron Childress. I really appreciate everyone who came up to me and provided some feedback.
 

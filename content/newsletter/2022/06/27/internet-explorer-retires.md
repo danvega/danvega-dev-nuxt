@@ -18,7 +18,7 @@ I was able to create and publish 5 videos over the last 2 weeks which is a lot. 
 
 I also got the notification this week that my YouTube channel crossed 2,000,000 views. That is so freaking cool and I can’t thank all of you enough for watching.
 
-![YouTube Milestone](./youtube-2-million.png)
+![YouTube Milestone](/images/newsletter/2022/06/27/youtube-2-million.png)
 
 ## Java Frameworks Panel Discussion
 
@@ -28,13 +28,13 @@ It was a great turnout and we had the opportunity to answer questions and then g
 
 I wrapped up my portion of the presentation by building a simple application with Spring Boot. This gave me a chance to show off the Spring Initalizr, talk about dependency injection and demo how easy it is to connect to a database.
 
-![Cleveland Java Meetup](./cjug.jpeg)
+![Cleveland Java Meetup](/images/newsletter/2022/06/27/cjug.jpeg)
 
 ## Internet Explorer
 
 On June 15, 2022, [Internet Explorer officially retired](https://blogs.windows.com/windowsexperience/2022/06/15/internet-explorer-11-has-retired-and-is-officially-out-of-support-what-you-need-to-know/). On one hand, it’s a little bit sad because for a long time this is how many users explored the internet.  On the other hand, I don’t have a lot of great memories of developing for the web with IE standing in my way. I remember fondly IE 6 being the biggest pain to target. When we no longer had to support IE 6 we could stop using the numerous amounts of hacks that existed in CSS & JavaScript.
 
-![Internet Explorer Retires](./internet-explorer.png)
+![Internet Explorer Retires](/images/newsletter/2022/06/27/internet-explorer.png)
 
 This is how I was feeling that day 🤣
 
@@ -48,7 +48,7 @@ I have been lucky enough to have been invited to the Github Copilot program earl
 
 This past week Github Copilot was now available to anyone who wanted to try it out. The catch was that they will be charging for it soon. I can tell you that I have no problem paying for it and have already signed up.
 
-![Github Copilot](./github-copilot.png)
+![Github Copilot](/images/newsletter/2022/06/27/github-copilot.png)
 
 I heard some comments on Twitter that people were upset that Github was taking their code for free and now charging for Github Copilot. I can certainly understand that point of view but It doesn’t bother me. Github is one of the most important tools in life as a developer and it is given to us for **FREE** by Microsoft. If you
 

@@ -29,7 +29,7 @@ Spring Cloud Gateway is a topic I have wanted to create a tutorial on for ahwile
 
 I put together this graphic and I used it during my tutorial. I thought I would share it here in case you find useful.
 
-![Spring Cloud Gateway](./scg-diagram.png)
+![Spring Cloud Gateway](/images/newsletter/2023/10/09/scg-diagram.png)
 
 This was an introduction to Spring Cloud Gateway, but it is certainly not the end of this series. I asked you guys on Twitter if you had any questions about API Gateways or SCG, and you came up with some really great questions. Here is a list of those questions, and we still need to answer the majority of them.
 
@@ -57,7 +57,7 @@ This was an introduction to Spring Cloud Gateway, but it is certainly not the en
 
 Devoxx Belgium took place last week, and I experienced some serious FOMO while watching all the buzz surrounding the conference. It was really cool to see the GraalVM Native Image panel discussion, especially since they used one of my tweets as a talking point. I want to express my gratitude to [Thomas Vitale](https://twitter.com/vitalethomas/status/1709563387267387581/photo/1) for bringing this to my attention.
 
-![GraalVM Tweet](./graalvm-tweet.png)
+![GraalVM Tweet](/images/newsletter/2023/10/09/graalvm-tweet.png)
 
 I was impressed by the quickness with which they posted the conference recordings on their [YouTube channel](https://www.youtube.com/@DevoxxForever). There is a lengthy list of talks that I am interested in watching, but I intend to save them for my trip to Barcelona next month.
 

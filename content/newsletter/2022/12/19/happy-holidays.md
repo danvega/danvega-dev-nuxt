@@ -6,7 +6,7 @@ date: "2022-12-19T19:00:00.000Z"
 
 Happy Monday and welcome to the last edition of the newsletter in 2022. I’m sure we say this every single year but it’s really hard to believe that another year is almost behind us. Before we get to the good stuff I want to take this opportunity to thank you. This has been one of the best professional years of my career and I owe a lot of that to the support that you have given to me. I hope you and your family have a Happy Holiday and a wonderful time ringing in the new year.
 
-![Happy Holidays](./clint-patterson-1-wBnPhsmJY-unsplash.jpg)
+![Happy Holidays](/images/newsletter/2022/12/19/clint-patterson-1-wBnPhsmJY-unsplash.jpg)
 
 I am working a few days this week and then I am out until the new year. During that time I hope to work on my end-of-the-year reflections as well as goals / what I want to focus on in the new year. In today’s newsletter, I want to talk to you about the workshop I am currently working on, new content, and some travel plans for 2023.
 

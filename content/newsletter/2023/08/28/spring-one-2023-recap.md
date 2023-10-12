@@ -8,7 +8,7 @@ Welcome to another edition of the newsletter! This is a special edition in which
 
 This is the first year that we've combined SpringOne and VMware Explore, and the first time we've been in person since 2019. VMware Explore was in person last year at the Moscone Center, and this year it moved to the Venetian Expo Center in Las Vegas. I'm a big fan of Vegas, and I thought it was a perfect setting for the conference, and the Venetian was an excellent host.
 
-![VMware Registration Desk](./registration.jpeg)
+![VMware Registration Desk](/images/newsletter/2023/08/28/registration.jpeg)
 
 I arrived late on Saturday night because I was originally going to be part of the keynote speech, and we had a dress rehearsal scheduled for Sunday morning. However, my flight was delayed, and I didn't arrive in Vegas until 1 AM local time. By the time I got to bed, it was already a little after 2 AM. I don't sleep well on planes, so I only managed to get around 5 hours of sleep.
 
@@ -26,13 +26,13 @@ The keynote room held about 1,000 people, and at one point, I saw people standin
 
 The keynote kicked off with the emcees DaShaun and Tasha, who brought a ton of energy through the keynote. There were so many highlights of the keynote, and I didn't take a lot of notes, so this will be off of memory, which means if I left anything out, I apologize.
 
-![SpringOne Keynote](./springone-keynote.jpeg)
+![SpringOne Keynote](/images/newsletter/2023/08/28/springone-keynote.jpeg)
 
 ### Spring’s 20 years of Innovation
 
 The first speaker was Purnima Padmanabhan, who discussed Spring's 20 years of innovation. She emphasized how great the community is and how it has been the driving force behind Spring's growth. The impact of Spring is not just about technology, but also about improving human lives. Purnima provided examples of companies such as Netflix, FedEx, and Blue Cross Blue Shield that rely on Spring to power their applications.
 
-![Tasha and DaShaun introducing Purnima](./tasha_dashaun_purnima.png)
+![Tasha and DaShaun introducing Purnima](/images/newsletter/2023/08/28/tasha_dashaun_purnima.png)
 
 During her presentation, Purnima announced a new set of Spring Solutions, including Spring Consulting. This new service can help companies transition to the latest and greatest version for all of their Spring applications. For more information, see the [official blog post](https://tanzu.vmware.com/content/blog/springone-2023-announcements).
 
@@ -44,19 +44,19 @@ They began with an application that used an old version of Spring and was based 
 
 They proceeded to show how Spring has simplified application development over the years. Spring Boot provides a way to bootstrap our applications and simplifies everything by removing XML. It also offers powerful features like dependency management and auto-configuration.
 
-![Dave Syer and Josh Long](./josh_dave.png)
+![Dave Syer and Josh Long](/images/newsletter/2023/08/28/josh_dave.png)
 
 ### Spring Community Video
 
 Several individuals from the Spring community shared amazing videos praising Spring for its impact on their careers. It was inspiring to hear from so many people, and I will share the video with the community as soon as I can get my hands on it.
 
-![Matt Raible](./matt_raible.png)
+![Matt Raible](/images/newsletter/2023/08/28/matt_raible.png)
 
 ### Spring + Virtual Threads
 
 During the keynote, my coworker Cora discussed virtual threads in the context of Spring applications. I found her presentation to be an excellent representation of how virtual threads in JDK 21 can enhance performance for blocking applications. What's exciting is that you can easily take advantage of this feature by simply adjusting the settings in Spring Boot 3.2, which will be released later this year.
 
-![Cora’s Virtual Threads Presentation](./cora.png)
+![Cora’s Virtual Threads Presentation](/images/newsletter/2023/08/28/cora.png)
 
 ### Scale your @Controllers to Zero with Serverless
 
@@ -72,7 +72,7 @@ Violeta Georgieva presented using Project CraC in Spring Applications during the
 
 It's difficult to summarize Layla's talk in just a couple of sentences. I highly recommend taking 10 minutes to watch her presentation. During the talk, she shared how her parents instilled in her the importance of using her life to help others from an early age.
 
-![Leyla Seka](./leyla_seka.png)
+![Leyla Seka](/images/newsletter/2023/08/28/leyla_seka.png)
 
 She joined Salesforce early on and enjoyed her time on the product team. However, she noticed that the men in the company were being paid more than her and knew that something was wrong. To address this issue, she led an initiative that included an equal pay audit. This helped to drive change throughout the tech industry.
 
@@ -88,7 +88,7 @@ There are three app-aware platforms for Spring Applications that you should be a
 - VMware Tanzu Application Platform
 - Azure Spring Apps Enterprise
 
-![The power of platforms](./platforms.png)
+![The power of platforms](/images/newsletter/2023/08/28/platforms.png)
 
 The presenters walked through an example application and discussed adding AI to it towards the end. If you want to add AI to your Spring-powered applications today, you could start from scratch and develop your own solution. However, this approach is not very efficient. Instead, you can take advantage of a new experimental project called [Spring AI](https://github.com/spring-projects-experimental/spring-ai), which was announced during the presentation. It was impressive to see how easily we could incorporate AI features into our applications.
 
@@ -104,23 +104,23 @@ That keynote was amazing but I had no time to soak it in because my first talk o
 
 The room was packed with standing room only and I was really excited for this talk. I have been talking about GraphQL for the past couple of years but this was an updated talk packed full of content. I only had 40 minutes and tried to pack in about an hours worth of content into this time slot. I thought the talk went really well but my only criticism of the talk was that it was a lot to take in.
 
-![GraphQL Talk](./graphql_talk.png)
+![GraphQL Talk](/images/newsletter/2023/08/28/graphql_talk.png)
 
 If you were at the conference there is a way to watch the replay. I don’t know if this is going to be public but if it is I will be sure to share the link. If it isn’t and you’re interested in seeing this let me know and I can record it for my YouTube channel.
 
-![GraphQL in Action](./graphql_in_action.png)
+![GraphQL in Action](/images/newsletter/2023/08/28/graphql_in_action.png)
 
 ### Spring Recipes
 
 Later in the afternoon Nate Schutta and I presented on Spring Recipes. This is our take on raising awareness of the different projects in the Spring ecosystem. We start off by defining a problem and then walk through a solution and how Spring can solve it. This talk was 70 minutes and honestly it was so much fun sharing the stage with my good friend Nate. We had a lot of really good questions from the audience and I think this talk was a big hit.
 
-![Spring Recipes in Action](./spring_recipes_in_action.png)
+![Spring Recipes in Action](/images/newsletter/2023/08/28/spring_recipes_in_action.png)
 
 ### Welcome Reception
 
 On Monday night, there was a welcome reception in the main expo hall where all the booths were set up. I was working at the Spring portion of the VMware Booth and had the opportunity to talk to many people about the great things we are doing with Spring. To my surprise, our CEO Raghu Raghuram stopped by the booth, and we had a conversation about the morning's keynote and what was on attendees' minds. It was a conversation that I will remember for the rest of my life. Seeing his enthusiasm for what we were doing and being able to share that with him was a great way to cap off Day 1!
 
-![Raghu Raghuram at VMware Explore](./raghu.jpeg)
+![Raghu Raghuram at VMware Explore](/images/newsletter/2023/08/28/raghu.jpeg)
 
 ### Birthday🤩
 
@@ -136,7 +136,7 @@ I will now quickly run through the remaining parts of the conference, as otherwi
 
 We attempted a live version of Spring Office Hours, but unfortunately, we were unsuccessful. However, it was a valuable learning experience that reminded us of the importance of better preparation. The WiFi in the area was unreliable, which was our biggest obstacle. Additionally, we lacked the appropriate equipment. If we attempt this again, we will work on improving our setup to improve the quality of the broadcast.
 
-![Spring Office Hours Live](./spring_office_hours_live.png)
+![Spring Office Hours Live](/images/newsletter/2023/08/28/spring_office_hours_live.png)
 
 On today's show, we will provide a recap of SpringOne. Please join us live or catch the replay or podcast episode.
 
@@ -144,21 +144,21 @@ On today's show, we will provide a recap of SpringOne. Please join us live or ca
 
 On Wednesday night, we had a 20th Anniversary Spring Celebration get-together, which was one of the highlights for me. It was great to be in a room with so many people who have impacted Spring and so many people from the community. Throughout the event, there were video montages of Spring Conference presentations over the last 20 years, which was really cool to see.
 
-![Spring’s 20 Anniversary Celebration](./spring_20_event.jpeg)
+![Spring’s 20 Anniversary Celebration](/images/newsletter/2023/08/28/spring_20_event.jpeg)
 
-![Dan, Purnima and DaShaun](./dan_purnima_dashaun.png)
+![Dan, Purnima and DaShaun](/images/newsletter/2023/08/28/dan_purnima_dashaun.png)
 
 ### Spring for Architects
 
 On Thursday afternoon, I had my final talk of the conference with my good friend Nate. The presentation focused on what architects of Spring applications should understand. It was held in the Hub area at the code theater, and I wasn't sure if anyone would attend. To my delight, not only did people attend, but the room was packed. It was a lot of fun, and I appreciate all the positive feedback we received.
 
-![Spring for Architects in Action](./spring_architects_in_action.png)
+![Spring for Architects in Action](/images/newsletter/2023/08/28/spring_architects_in_action.png)
 
 ### Spring Team Meeting and Dinner
 
 To conclude the conference, I was invited to a Spring Team Meeting and dinner. During the meeting, we heard from our leadership about the current state of Spring and its future direction. While I cannot divulge too much from the meeting, I can say that I am excited and grateful to be part of such an amazing and talented group of people.
 
-![Spring Team Dinner](./spring_team_dinner.jpeg)
+![Spring Team Dinner](/images/newsletter/2023/08/28/spring_team_dinner.jpeg)
 
 After this dinner I caught a redeye flight home and spent the entire weekend recovering from the conference.
 
@@ -166,7 +166,7 @@ After this dinner I caught a redeye flight home and spent the entire weekend rec
 
 What I will remember most about this conference is the opportunity to hang out with so many amazing people. I had the chance to spend a lot of time with DaShaun, Nate, and Sharat. Sharat, who runs Developer Relations for Java at Oracle, is one of the best people in our community. It was great to see firsthand just how important it is to prioritize people and be kind to everyone. As my friend Sharat likes to say, "Technology is about people first and technology second.”
 
-![LOVE](./love.jpeg)
+![LOVE](/images/newsletter/2023/08/28/love.jpeg)
 
 I want to thank everyone who came up and said hello to me. I got so many great comments about Spring Office Hours or my YouTube channel and it really made me smile and remember why I do what I do.
 

@@ -40,7 +40,7 @@ I think everyone has a different way of learning depending on what your objectiv
 
 In some cases you might want to learn one specific thing. For those instances I have been a big fan of Egghead courses. These courses lose the fluff and drop you right into the subject at hand.  Right now they have a [Holiday Course Release Extravaganza](https://egghead.io/learn) going on where they are releasing a new course every day.
 
-![Egghead Holiday Course Release Extravaganza](./egghead.png)
+![Egghead Holiday Course Release Extravaganza](/images/newsletter/2021/12/13/egghead.png)
 
 I was able to go through a couple courses that I can highly recommend:
 

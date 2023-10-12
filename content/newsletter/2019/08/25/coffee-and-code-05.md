@@ -24,7 +24,7 @@ I don't have any new articles this week but I do have one that a bunch of folks 
 
 Most of us just use it as away to pull dependencies into our projects but have you ever thought about creating your NPM package? if so I have this really great article that walks you through creating and publishing your [first NPM package](https://www.danvega.dev/blog/2019/02/10/creating-your-first-npm-package).
 
-![Create Your First NPM Package Blog Post](./first-npm-package.png)
+![Create Your First NPM Package Blog Post](/images/newsletter/2019/08/25/first-npm-package.png)
 
 ## Around the Web
 

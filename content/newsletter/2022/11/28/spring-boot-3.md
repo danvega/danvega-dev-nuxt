@@ -24,7 +24,7 @@ Spring Framework 6 and Spring Boot 3 are now both GA and what an exciting time i
 
 If you need further proof run the project you downloaded and there in plain ASCII art you can see the new version and I don’t know if you know this but ASCII art never lies 😜
 
-![hello-spring-boot-3.png](./hello-spring-boot-3.png)
+![hello-spring-boot-3.png](/images/newsletter/2022/11/28/hello-spring-boot-3.png)
 
 If you want to find out more I encourage you to check out the Spring Boot 3 [release notes](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Release-Notes) or [this article](https://spring.io/blog/2022/11/24/spring-boot-3-0-goes-ga) by the Spring Team. This release includes over 5700 commits by 151 individuals. I am excited about so much when it comes to Spring Framework 6 and Spring Boot 3 but here are a few of my favorites.
 
@@ -61,7 +61,7 @@ Here is a collection of links I compiled from those responses.
 
 If you have any lists that I am missing in the Java, JavaScript, Web space please let me know. I put together a list based on those links and I have identified some conferences I will begin submitting to as the Call For Papers opens up. This is still a work in progress but here is a screenshot of that list in Notion.
 
-![Notion Conference List](./notion-conference-list.png)
+![Notion Conference List](/images/newsletter/2022/11/28/notion-conference-list.png)
 
 ## 20,000 Subscriber Milestone on YouTube
 

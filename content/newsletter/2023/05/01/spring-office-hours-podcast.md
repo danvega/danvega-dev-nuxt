@@ -16,9 +16,9 @@ I think my reservations were the same we all experience when we want to start so
 
 With that we recorded our livestream and tried to keep our audio only friends in mind. From there I signed up for a service called [Transistor.fm](http://Transistor.fm) which helps you manage and distribute podcasts. I extracted the audio from the livestream using Adobe Premiere Pro and uploaded it to Transistor. They handle distributing your podcasts to all of the networks and at the time of this writing we are on all of the major providers.
 
-![Spotify Podcasts](./spotify-podcast.png)
+![Spotify Podcasts](/images/newsletter/2023/05/01/spotify-podcast.png)
 
-![Apple Podcasts](./apple-podcast.png)
+![Apple Podcasts](/images/newsletter/2023/05/01/apple-podcast.png)
 
 It would mean the world to me if you would subscribe to our podcast wherever you listen. I absolutely love podcasts and I’m already trying to think of the next one I could do 😜
 

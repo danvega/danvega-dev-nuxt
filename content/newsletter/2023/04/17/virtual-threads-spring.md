@@ -39,7 +39,7 @@ Before I dive into the specifics I want to give you a little back story on this 
 
 This past Christmas I bought her a laptop and a book on writing and encouraged her to pursue her passion. I introduced her to Notion and all of the amazing features you get out of the box and showed her how to organize her content. She began writing about what she is passionate about and she happens to pretty amazing at all of them as well. She wanted to document her time being a Mom and everything that goes into that. With that she came up with the name Momoir (A memoir in Mom form) and This is My Momoir was born.
 
-![This is my Momoir](./momoir.png)
+![This is my Momoir](/images/newsletter/2023/04/17/momoir.png)
 
 Initially, I expected her to write a few blog posts before I started building the site. However, a couple of months passed, and she managed to write 50 blog posts! 🤯 She is incredibly productive, which made me rethink how I should approach building the site.
 

@@ -12,7 +12,7 @@ I apologize for missing the last couple of weeks but I have had a lot going on i
 
 I’m excited to announce that I have joined VMware as a Spring Developer Advocate. This is literally a dream for me on so many levels. First I get to join a world-class organization that continually gets ranked as one of the best places to work. I get to join a team made of so many great developers and teachers and I can’t wait to learn from them. Finally, I get to talk about Java & Spring every single day and create content around languages, frameworks, projects, and tools that I genuinely enjoy using. If you want to read more about my decision you can [read a blog post here](https://www.danvega.dev/blog/2022/01/24/im-joining-v-mware/) where I detailed everything.
 
-![VMware](./vmware.png)
+![VMware](/images/newsletter/2022/01/24/vmware.png)
 
 ## Live Streaming with Greg Turnquist
 

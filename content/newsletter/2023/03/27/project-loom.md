@@ -14,7 +14,7 @@ Last week, I spent a lot of time catching up on Project Loom and Virtual Threads
 
 I shared a graphic on [Twitter](https://twitter.com/therealdanvega/status/1638646601295044608) which, as of writing this newsletter, has over 55,000 views. This is amazing and indicates a high level of interest in this topic. Based on feedback, many people have questions about what Project Loom is and what problems it will solve for Spring developers. I hope to answer these and other questions in the near future.
 
-![Embracing Virtual Threads in Spring Applications](./embracing-virtual-threads.png)
+![Embracing Virtual Threads in Spring Applications](/images/newsletter/2023/03/27/embracing-virtual-threads.png)
 
 If you have any questions about this, please feel free to reach out and let me know.
 
@@ -30,7 +30,7 @@ If you aren't aware, there are three main operation types in GraphQL: query, mut
 
 It’s kind of hard to believe but The Spring Framework celebrated it’s 19th birthday last week. If you want you can read the blog post announcing [Spring Framework 1.0](https://spring.io/blog/2004/03/24/spring-framework-1-0-final-released) back on March 24, 2004.
 
-![Happy 19th Birthday Spring!](./happy-birthday-spring.jpeg)
+![Happy 19th Birthday Spring!](/images/newsletter/2023/03/27/happy-birthday-spring.jpeg)
 
 Happy 19th Birthday Spring!
 

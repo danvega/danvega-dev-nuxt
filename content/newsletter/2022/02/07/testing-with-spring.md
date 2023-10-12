@@ -74,7 +74,7 @@ If you're new around here I’m a huge fan of [Groovy](https://groovy-lang.org/)
 
 If you’re using Groovy 4 you can use the new  **RecordType** and take advantage of record style classes, regardless of what version of Java you’re on. If you’re a version that supports records the generated class will be a record but if It isn’t it will be an immutable type that resembles the characteristics of a record class. Pretty cool if you ask me 🥳
 
-![groovy_record.png](./groovy_record.png)
+![groovy_record.png](/images/newsletter/2022/02/07/groovy_record.png)
 
 ## Spring Boot Magic
 

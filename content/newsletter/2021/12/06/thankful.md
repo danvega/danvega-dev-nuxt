@@ -73,7 +73,7 @@ With that I went over to [Upwork](https://upwork.com/) and put up a job descript
 
 I wanted something unique and I excited to share with you one of the results. The following graphic was created for my Groovy Course. What do you think?
 
-![Groovy Course Cover](./groovy-course-cover.jpg)
+![Groovy Course Cover](/images/newsletter/2021/12/06/groovy-course-cover.jpg)
 
 ## YouTube
 

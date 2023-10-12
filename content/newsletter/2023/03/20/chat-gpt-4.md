@@ -10,7 +10,7 @@ GPT-4 is a state-of-the-art language model developed by OpenAI. It is an advance
 
 In case you were wondering I asked Chat GPT-4 to summarize [this article](https://openai.com/research/gpt-4) and it gave me the previous paragraph. If you’re a ChatGPT Plus user you will be able to select GPT-4 and it’s currently capped at 50 messages every 4 hours.
 
-![chat-gpt-4.png](./chat-gpt-4.png)
+![chat-gpt-4.png](/images/newsletter/2023/03/20/chat-gpt-4.png)
 
 In my opinion, the biggest highlights of this model are that it now supports multiple inputs and can process images, which opens up a whole new set of possibilities. Additionally, it can handle larger datasets as input, and although it runs slightly slower than GPT-3, I have found the results to be more accurate. The model training data is also supposed to be better, but a downside is that it still only goes up until September 2021.
 
@@ -20,7 +20,7 @@ In my opinion, the biggest highlights of this model are that it now supports mul
 
 This week I worked on YouTube Tutorial that explained what the Spring Security Lambda DSL was. I would often post Spring Security configuration that looked like the screenshot below and I would get questions about the syntax of that configuration.
 
-![lambda-dsl-example.png](./lambda-dsl-example.png)
+![lambda-dsl-example.png](/images/newsletter/2023/03/20/lambda-dsl-example.png)
 
 If you’re confused about what this syntax is or why it was introduced please check out [this video](https://youtu.be/PWnEZh_t0WI).
 

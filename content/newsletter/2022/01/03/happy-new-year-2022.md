@@ -30,11 +30,11 @@ You might be thinking that moving from 11 to 52 videos in a year is a lofty goal
 
 I love creating courses but I haven’t been able to in a while. I have been struggling with what to create and where. The one thing I know for sure is that I want to create smaller courses that are focused on a particular topic which means no more 12-15 hour courses from me. I could create them on my own platform and charge more or host them on something like Udemy and sell them for less. I have also thrown around the idea of creating a platform and inviting some other creators to build on it. Whatever I end up doing I hope to publish at least 2 courses in 2022 and I can’t wait to share those with you. Until then I am extremely blessed to have 138,000 students around the world taking my courses. Thank You 🙏
 
-![Udemy Stats](./udemy-stats.png)
+![Udemy Stats](/images/newsletter/2022/01/03/udemy-stats.png)
 
 ## Moving my website to Nuxt 3
 
-![Dan Vega Homepage](./danvega-dev-homepage.png)
+![Dan Vega Homepage](/images/newsletter/2022/01/03/danvega-dev-homepage.png)
 
 I’m really happy with my [current website](https://www.danvega.dev/). Every time I post a new article I head over to the site to make sure it looks ok and I remember just how proud I am of it. The current version of my website is written in a framework called [Gridsome](https://gridsome.org/), which is a static site generator for VueJS. I have been really happy with Gridsome but there are a few limitations that are stopping me from doing some of the things I want to do. That and the project hasn’t been moving forward that much over the last couple of years.
 

@@ -8,7 +8,7 @@ Happy Monday and welcome to another edition of the newsletter. It’s been a few
 
 In a previous newsletter I told you that I had taken up golf and my first round ever was played at a beautiful course in Hilton Head SC. Since then I have played 2 more rounds of 18 here in Ohio. I absolutely love the game and love being outside and I’m having fun picking it up. Here is a quick picture my wife took of me heading to the range to try out my new clubs.
 
-![Dan's new clubs](./dan-new-golf-clubs.jpeg)
+![Dan's new clubs](/images/newsletter/2023/06/12/dan-new-golf-clubs.jpeg)
 
 ## Project Loom / Virtual Threads
 
@@ -38,11 +38,11 @@ Next up was PNC Bank’s Developer days. I absolutely love it when a company put
 
 I had a chance to work our booth that was there where we helping to spread the word of VMware Tanzu and how our suite of products help modern application development workflows. PNC is a big user of Java and Spring so I had the opportunity to talk to everyone from interns to experienced developers and answered a bunch of really great questions. A+ job PNC and I hope to back for another developer day.
 
-![PNC Balloons](./pnc-balloons.jpeg)
+![PNC Balloons](/images/newsletter/2023/06/12/pnc-balloons.jpeg)
 
-![VMware Booth](./vmware-booth-01.png)
+![VMware Booth](/images/newsletter/2023/06/12/vmware-booth-01.png)
 
-![VMware Booth](./vmware-booth-02.png)
+![VMware Booth](/images/newsletter/2023/06/12/vmware-booth-02.png)
 
 ## SpringOne at VMware Explore
 

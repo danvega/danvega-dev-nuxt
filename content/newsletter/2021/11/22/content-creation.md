@@ -56,7 +56,7 @@ I have been using Notion to organize my video ideas for a while now but I haven'
 
 I flush out an idea with as much detail as possible and when I feel like it's ready to go I move it into the ready-to-film column. Now when I sit down to record I don't really have to think about what that video is going to look like. That has already been figured out and I can just start creating!
 
-![Notion Video Backlog](./notion_video_backlog.png)
+![Notion Video Backlog](/images/newsletter/2021/11/22/notion_video_backlog.png)
 
 If anyone is interested in seeing my Notion setup for creating videos let me know and I will put that together.
 

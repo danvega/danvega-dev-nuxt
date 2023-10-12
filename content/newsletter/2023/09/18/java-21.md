@@ -6,7 +6,7 @@ date: "2023-09-18T07:00:00.000Z"
 
 Happy Monday and welcome to another edition of the newsletter. Last week, I took a quick trip to Seattle to visit with a customer. While there, Josh Long and I presented on Spring Boot 3 and GraphQL, respectively, in person. It was a great trip and I have been looking forward to meeting this customer in person for a long time.
 
-![Seattle Waterfront](./seattle_waterfront.jpeg)
+![Seattle Waterfront](/images/newsletter/2023/09/18/seattle_waterfront.jpeg)
 
 I was also pretty excited about the iPhone 15 announcements last week. I am still using a 13 pro and I have been waiting for this one. I am excited about a lot of the new features but none more than the improved camera when it comes to shooting video. This is going to be a big step over my 2 year old phone for shooting video on the road.
 

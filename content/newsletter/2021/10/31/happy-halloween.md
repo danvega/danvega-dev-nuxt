@@ -20,23 +20,23 @@ Earlier this year GitHub launched Copilot, an AI pair-programmer. With GitHub Co
 
 This week GitHub announced support for IntelliJ and I was excited to get my hands on this. To get started go to Preferences > Plugins and search for Github Copilot.
 
-![IntelliJ Plugin](./intellij_plugin.png)
+![IntelliJ Plugin](/images/newsletter/2021/10/31/intellij_plugin.png)
 
 To get started create a new Java class called Test. If you place your cursor inside of the class Copilot will make a suggestion for a new main method that prints out "Hello, World!" to the console. If you hit the tab key, that method will be completed for you.
 
-![Test Class](./test_class.png)
+![Test Class](/images/newsletter/2021/10/31/test_class.png)
 
 Another way to trigger Copilot is by typing the name of a method and based on the name you will get suggestions of how to complete that method. Again, hit the tab key to complete the code.
 
-![Sum Method](./sum_method.png)
+![Sum Method](/images/newsletter/2021/10/31/sum_method.png)
 
 Finally, you can use a comment to let Copilot know what you're trying to accomplish. In the example below I would like to write a method that will check to see if a string is a palindrome.
 
-![Comment](./comment.png)
+![Comment](/images/newsletter/2021/10/31/comment.png)
 
 The real question you might have without reading through that code is "Does it work?". I generated a new Test and Copilot is suggesting an assertion and after running my test it passes.
 
-![Palindrome Test](./palindrome_test.png)
+![Palindrome Test](/images/newsletter/2021/10/31/palindrome_test.png)
 
 It might not be up to the standard of the palindrome king [Ken Kousen](https://twitter.com/kenkousen), but it works! This is still very much a technical preview and I think there is room for improvement. I'm also not sure how valuable this is in my day-to-day work but I will test it out and report back. I hope to put together a video on this next week for my [YouTube channel](http://www.youtube.com/danvega) that will include some Spring Boot examples so if you're not a subscriber what are you waiting for!
 
@@ -51,17 +51,17 @@ Open the command palette using one of the following keyboard shortcuts:
 
 From my personal GitHub page, it lets me quickly jump to repositories, projects & packages.
 
-![Command Palette](./command_palette.png)
+![Command Palette](/images/newsletter/2021/10/31/command_palette.png)
 
 If you use `>` you can run commands. In this example, I want to quickly switch over to the dark dimmed theme.
 
-![Command Palette Actions](./cp_actions.png)
+![Command Palette Actions](/images/newsletter/2021/10/31/cp_actions.png)
 
 ## github.dev
 
 This is entirely new but since we are talking about GitHub I thought I would share this little tip with you. If you're looking at a particular file in your repo you can edit the raw file but you lose out on all that code assistance and completion that we all love. Press the`.` or swap `.com` with `.dev` in the URL and you will be taken directly to a Visual Studio Code environment in your browser.
 
-![github_dev.jpg](./github_dev.jpeg)
+![github_dev.jpg](/images/newsletter/2021/10/31/github_dev.jpeg)
 
 It’s a quick way to edit and navigate code. It's especially useful if you want to edit multiple files at a time or take advantage of all the powerful code editing features of Visual Studio Code when making a quick change. For more information, see our [documentation](https://github.co/codespaces-editor-help).
 

@@ -20,7 +20,7 @@ I installed the extension for the first time and walked through bootstrapping a 
 
 I'm a life-long learner and it is something I really enjoy doing. Since you're a student here on Udemy I am guessing most of you are the same. I mean we pretty much have to be in the field that we are in right?
 
-![Back to School Sale on my Udemy Courses](./back-to-school.jpg)
+![Back to School Sale on my Udemy Courses](/images/newsletter/2019/09/01/back-to-school.jpg)
 
 When students of all ages start going back to school it reminds me of getting those fresh school supplies and heading to school eager to learn something new. If you want to learn something new over the holiday weekend I am offering up all of my courses for \$9.99. If you're interested you can use the links below but grab these coupons fast, the back to school sale ends September 2nd.
 

@@ -12,7 +12,7 @@ Throughout the week I collect things I want to talk about in Notion. This is the
 
 As I began typing this out I received the exciting news that I have been accepted to speak at CodeMash 2023. I will be giving a talk on GraphQL and I’m also giving a workshop on Getting Started with Spring. I immediately brought this excellent graphic into Notion and so I am sharing that with you.
 
-![Codemash 2023](./codemash.jpeg)
+![Codemash 2023](/images/newsletter/2022/10/03/codemash.jpeg)
 
 I am beginning to submit to conferences for next year and it’s always tough. You have to put yourself out there and unless you’re a top speaker in our industry you’re going to get more declines than acceptances. It is a really competitive space right now and I get that, it comes with the position I am in.
 
@@ -128,13 +128,13 @@ I mentioned this last week but I am really enjoying creating short-form videos. 
 
 Speaking of Java 19, did you see that it is now an option over at [start.spring.io](http://start.spring.io) 🤩
 
-![Java 19 - Spring Initializr](./java-19-spring.png)
+![Java 19 - Spring Initializr](/images/newsletter/2022/10/03/java-19-spring.png)
 
 ### YouTube
 
 Just to close out this section on YouTube. I ended up posting a total of 17 videos in the month of September and your support means the world to me. With some consistency and talking about topics like Spring Security that more of you are searching for I had my best month ever. I ended up adding 1,000+ subscribers over the last 28 days and that is just mind blowing 🤯 to me. I’m closing in on 20,000 and have a goal of hitting it before the year ends!
 
-![YouTube Stats](./youtube-stats.png)
+![YouTube Stats](/images/newsletter/2022/10/03/youtube-stats.png)
 
 ### Spring Recipes Recording
 

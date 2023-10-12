@@ -37,7 +37,7 @@ If you follow me you know that I am a huge fan of IntelliJ. They just released a
 
 There were 3 changes that really stood out for me. First was the new UI that you can enable by going into Settings > Appearance & Behavior > New UI and enabling the new UI. My initial thoughts on the UI are WOW 🤩 I love the new look, icons shiny buttons at the top. I also go asked about my new setup a lot and I am using the new UI with the GitHub Dark (Experimental) theme.
 
-![IntelliJ New UI](./intellij_new_ui_2.jpeg)
+![IntelliJ New UI](/images/newsletter/2022/12/05/intellij_new_ui_2.jpeg)
 
 As a Spring Developer, I really love the new feature that allows you to add a dependency to the class you’re working on. To show off this feature I created a quick short-form video and posted it to Twitter.
 
@@ -45,7 +45,7 @@ As a Spring Developer, I really love the new feature that allows you to add a de
 
 Finally, I am a big fan of Vue and Vite. You can now create a new Vite project right within IntelliJ using the new project generator
 
-![IntelliJ Vite Project](./intellij_vite.jpeg)
+![IntelliJ Vite Project](/images/newsletter/2022/12/05/intellij_vite.jpeg)
 
 ## Content
 

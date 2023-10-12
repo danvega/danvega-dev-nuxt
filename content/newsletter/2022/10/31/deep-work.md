@@ -12,7 +12,7 @@ I took a short little trip to Ocean Isle, NC last weekend for a friend's wedding
 
 I also decided to take this opportunity to do a little reading. I decided to take 2 books with me not knowing how much I would get done but to my surprise, I was able to finish them both. I forgot that traveling without kids, especially little ones can actually be relaxing. I ended up taking [Deep Work by Cal Newport](https://amzn.to/3TRc8TC) which I was already 30 pages into and [Create Something by Roberto Blake](https://amzn.to/3SKBilz). I will start by giving a mini-review of Deep Work this week and in the next newsletter, I will talk about Create Something awesome. Mini spoiler, I thought they were both really great. 👏🏻
 
-![Books](./books.jpeg)
+![Books](/images/newsletter/2022/10/31/books.jpeg)
 
 ### Deep Work
 
@@ -58,7 +58,7 @@ Lately, we have gotten more consistent with the show which airs every Tuesday at
 
 YouTube launched a redesign of its desktop and mobile applications. I am a big fan of the new look which is cleaner and the slightly rounded corners on the thumbnails. I’m also a big fan of the tabs across the top where they have split out the video, shorts, and live streams. This makes it easier for viewers to consume the appropriate content. I’m also pretty proud of how my page looks with my current thumbnail design. I am not a designer but these turned out well. 🥳
 
-![YouTube Redesign](./youtube_redesign.png)
+![YouTube Redesign](/images/newsletter/2022/10/31/youtube_redesign.png)
 
 Speaking of those thumbnails, I updated to macOS Ventura this week. There is a really great feature that allows you to copy just the subject from an image in your photos app.
 
@@ -91,7 +91,7 @@ This week we made the last of our announcements around speakers, workshops, and 
 
 In that list of speakers and sessions, you will find me presenting on Spring for GraphQL. I’m so excited to be giving this presentation at SpringOne and have already begun working on it. I have a lot of content on GraphQL and spent the year talking about it on the SpringOne tour but this presentation will be an updated one.
 
-![SpringOne](./spring_one_talk.png)
+![SpringOne](/images/newsletter/2022/10/31/spring_one_talk.png)
 
 I’m also giving a workshop on getting started with Spring Boot which you can now [register for](https://springone.io/2022/workshops/spring-boot-beginner). You can get \$200 off when registering if you use the code S1VM22_Advocate_200.
 

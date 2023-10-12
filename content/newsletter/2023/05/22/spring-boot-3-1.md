@@ -6,11 +6,11 @@ date: "2023-05-22T08:00:00.000Z"
 
 Happy Monday and welcome to another edition of the newsletter. It’s been a couple of weeks since my last update but it was for a good reason. I was able to take a week off and spend some fun in the sun with the family as we headed down to Hilton Head SC which is becoming a yearly tradition for us. I absolutely love Hilton Head, it’s just so calm and relaxing and fun for the whole family.
 
-![Hilton Head Family](./hilton-head-family.jpeg)
+![Hilton Head Family](/images/newsletter/2023/05/22/hilton-head-family.jpeg)
 
 I played 18 holes at the Old South Golf course, and it was beautiful. This was the first round of golf I played since I was probably 17. Needless to say, I wasn't very good, but I had fun. I am looking forward to playing more golf this summer and improving my game.
 
-![Golf in Hilton Head](./hilton-head-golf.jpeg)
+![Golf in Hilton Head](/images/newsletter/2023/05/22/hilton-head-golf.jpeg)
 
 Last week, I traveled to Dallas for a customer meeting. Although it was a short trip, it went really well. I had the opportunity to talk to a great group about building GraphQL APIs in Java & Spring. The group was interactive, and there were a ton of really great questions. I have more of these shorter, more focused trips coming up next month, and I'm really excited for them.
 

@@ -22,7 +22,7 @@ By the time I publish that video I am ready to move on to the next one and donâ€
 
 [VideoTap](https://videotapit.com/?via=dan) is a service that transcribes and converts videos into blog posts. They recently increased their video length limit to 25 minutes, which is ideal for most videos. What sets VideoTap apart is the quality of their blog post output. Instead of simply dumping the transcription, they use GPT-4 to generate high-quality blog posts that include code blocks, making them much more compelling articles. Here is a screenshot of a blog post I am currently working on.
 
-![VideoTap - Convert Videos to Blog Posts with ease](./videotap.png)
+![VideoTap - Convert Videos to Blog Posts with ease](/images/newsletter/2023/04/03/videotap.png)
 
 If you want to read through a few blog posts that I have recently created using VideoTap you can check out these:
 

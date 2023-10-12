@@ -72,7 +72,7 @@ A huge shoutout to Thomas Vitale for adding me to his [Awesome Spring Resource](
 
 I recently passed 100,000 hours of watch time on YouTube. To date I have only uploaded 232 videos most of which I would say aren’t great so to hit this milestone is pretty amazing. I want to thank all of you who support the channel and if [you’re not subscribed yet](http://www.youtube.com/danvega), what are you waiting for? I have a bunch of content in the backlog for the next month so stay tuned!
 
-![YouTube 100k](./youtube_100k.png)
+![YouTube 100k](/images/newsletter/2022/02/28/youtube_100k.png)
 
 ## Around the Web
 

@@ -10,7 +10,7 @@ After missing a week due to mostly not having anything to talk to you about I'm 
 
 I ordered my new MacBook Pro the day after the announcement event and I kid you not I have been checking the tracking updates every day since then. This week it finally arrived and I was excited to get it in my hands and test it out. Here is a shot of it still in the box in front of my Cleveland print in my office.
 
-![New MacBook Pro in my office](./new-macbook-pro-office.JPG)
+![New MacBook Pro in my office](/images/newsletter/2021/10/31/new-macbook-pro-office.JPG)
 
 Before it arrived I had all of these plans to create videos for my [YouTube channel](https://www.youtube.com/danvega) on how I set up a new machine as a developer. I always found those types of videos useful and I thought I might be able to help others find new tools or just learn something new.
 

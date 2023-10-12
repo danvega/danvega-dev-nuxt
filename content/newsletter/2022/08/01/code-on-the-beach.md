@@ -16,9 +16,9 @@ The conference was held at the [One Ocean Resort and Spa](https://www.oneoceanre
 
 This is a place that I don’t know I would have ever gone to if I didn’t have a reason to go there and this is one thing I am truly thankful for when it comes to my job. If you have a chance to spend a few days there I would highly recommend it.
 
-![My girls at Atlantic Beach](./0DCB1D05-F68D-410C-97FA-0BB981BD7A13.jpeg)
+![My girls at Atlantic Beach](/images/newsletter/2022/08/01/0DCB1D05-F68D-410C-97FA-0BB981BD7A13.jpeg)
 
-![Dinner in Jacksonville](./A71FE848-6A02-43F9-B85B-6C5AE1EC76C9.jpeg)
+![Dinner in Jacksonville](/images/newsletter/2022/08/01/A71FE848-6A02-43F9-B85B-6C5AE1EC76C9.jpeg)
 
 ### Full Stack Java Development with Spring Boot
 
@@ -60,23 +60,23 @@ I’m still not sure how we survived walking around in 100-degree weather for 3 
 
 My girls had so much fun and it really is the most magical place on earth. Just seeing how excited my girls were will be a memory I carry with me for the rest of my life. I feel very fortunate that I was able to be there with them ❤️
 
-![Disney World](./D6A9CD9C-228C-4E4F-A15E-3BB77429EA2F.jpeg)
+![Disney World](/images/newsletter/2022/08/01/D6A9CD9C-228C-4E4F-A15E-3BB77429EA2F.jpeg)
 
-![Disney World](./C4CB8AEB-4306-4B60-BC2A-218D8CE13D13.jpeg)
+![Disney World](/images/newsletter/2022/08/01/C4CB8AEB-4306-4B60-BC2A-218D8CE13D13.jpeg)
 
-![Disney World](./DF728E8B-BB3F-4E39-9FDF-4DF456991791.jpeg)
+![Disney World](/images/newsletter/2022/08/01/DF728E8B-BB3F-4E39-9FDF-4DF456991791.jpeg)
 
-![Disney World](./F8C2F2EF-D149-41EA-A1F2-74B82851F9AF.jpeg)
+![Disney World](/images/newsletter/2022/08/01/F8C2F2EF-D149-41EA-A1F2-74B82851F9AF.jpeg)
 
-![Disney World](./E1007E35-7BC7-4546-A88D-B34A046702ED.jpeg)
+![Disney World](/images/newsletter/2022/08/01/E1007E35-7BC7-4546-A88D-B34A046702ED.jpeg)
 
-![Disney World](./647E73F8-F954-4D2C-A6C6-DF74DF94B5DD.jpeg)
+![Disney World](/images/newsletter/2022/08/01/647E73F8-F954-4D2C-A6C6-DF74DF94B5DD.jpeg)
 
-![Disney World](./66382F0C-ED2D-445C-9DAA-0455A0CFF4F3.jpeg)
+![Disney World](/images/newsletter/2022/08/01/66382F0C-ED2D-445C-9DAA-0455A0CFF4F3.jpeg)
 
-![Disney World](./518292D0-4241-4F16-A235-68A673B40395.jpeg)
+![Disney World](/images/newsletter/2022/08/01/518292D0-4241-4F16-A235-68A673B40395.jpeg)
 
-![Disney World](./023A3AAF-80F7-4258-8D52-CB0785A8AF5A.jpeg)
+![Disney World](/images/newsletter/2022/08/01/023A3AAF-80F7-4258-8D52-CB0785A8AF5A.jpeg)
 
 ## SpringOne Workshop
 

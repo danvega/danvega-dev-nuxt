@@ -12,7 +12,7 @@ This is a video that I have wanted to put together for a long time now. This int
 
 I think I have talked about almost everything in this video in other videos but I wanted a single video where someone new to Spring could get up and running quickly. I start out by defining the prerequisites for this crash course, defining what The Spring Framework is and where Spring Boot fits in. Finally, we discuss what you will build in this course and what you will learn.
 
-![Excalidraw](./excalidraw.png)
+![Excalidraw](/images/newsletter/2023/02/20/excalidraw.png)
 
 `youtube:https://youtu.be/UgX5lgv4uVM`
 
@@ -22,7 +22,7 @@ The video had something like 3000 views in the first 24 hours which is just amaz
 
 With that done I will start recording a complete course that will include testing & security and go more in-depth into a few topics. This will be a paid course but should be pretty affordable for most. If this is something you’re interested in please let me know.
 
-![Spring Boot Course Outline](./spring-boot-course-outline.png)
+![Spring Boot Course Outline](/images/newsletter/2023/02/20/spring-boot-course-outline.png)
 
 ## Chat GPT & Spring Boot
 
@@ -56,11 +56,11 @@ I’m a big fan of [Midjourney](https://midjourney.com/) and recently signed up 
 
 A **person reading a book RGB --ar 16:9 --stylize 100 --s 5000**
 
-![Girl Reading a Book](./girl-reading-book.png)
+![Girl Reading a Book](/images/newsletter/2023/02/20/girl-reading-book.png)
 
 L**as Vegas if it were taken over by zombies**
 
-![Zombies in Vegas](./zombies-in-vegas.png)
+![Zombies in Vegas](/images/newsletter/2023/02/20/zombies-in-vegas.png)
 
 ## Around the web
 

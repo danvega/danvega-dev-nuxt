@@ -12,7 +12,7 @@ If you’re a regular around here you know that I host a show every week with my
 
 Recently, I made the decision to incorporate live coding into my regular routine. The idea had been on my mind for the last couple of weeks and I was excited to try it out. For my streaming software, I'm using [Ecamm Live](https://www.ecamm.com/mac/ecammlive/), which is different from the software I use on Spring Office Hours. I knew it would take a few episodes to get used to, but I finally feel like I have a handle on it.
 
-![Live Streaming](./live-streaming-screenshot.png)
+![Live Streaming](/images/newsletter/2023/03/06/live-streaming-screenshot.png)
 
 It can get lonely working at home in my dungeon (I work out of the basement) so it’s been a lot of fun connecting with you. I want to thank everyone for joining me during my live streams including Simon, Thomas, and Pad 5 who have been amazing supporters. I was able to go live 5 times over the last 2 weeks and if you missed them you can check out the replays below.
 
@@ -42,7 +42,7 @@ The author of this blog enjoys writing in Notion so I figured I would just keep 
 
 Here is a screenshot of a new blog I started in Notion on the left and the Nuxt 3 application displaying those posts on the right. Notice that only the blog posts in the Done column are being displayed. I have a lot more to share on this front including pulling some similar functionality into Spring Boot so stay tuned!
 
-![Notion + Nuxt Blog](./notion_nuxt_blog.png)
+![Notion + Nuxt Blog](/images/newsletter/2023/03/06/notion_nuxt_blog.png)
 
 What I am still working out is how this will perform in production. There will probably be 1-2 new posts a week so this could almost be a statically generated site. I’m trying to understand all of the different build modes Nuxt 3 comes with to make the right choice here. I also need to figure out if I can use something like Nuxt Image with images that are hosted on Notion (AWS S3 Buckets).
 

@@ -12,7 +12,7 @@ In this edition of the newsletter, I want to talk about SpringOne Tour NYC, A Bo
 
 I had the opportunity to spend a week in NYC with my entire team for the 1st time since joining VMware. It was so great to have everyone in one place and I learned so much on this trip. I gave my talk on Getting Started with GraphQL and I thought it went really well I received some great questions from the audience.
 
-![Dan Speaking in NYC](./dan-nyc-talk.jpeg)
+![Dan Speaking in NYC](/images/newsletter/2022/07/12/dan-nyc-talk.jpeg)
 
 After my talk, I was able to attend a bunch of sessions and I learned so much. One session that I was excited to see was on the new [Spring CLI](https://github.com/spring-projects-experimental/spring-cli) from Mark Pollack. This is an experimental project at the moment but it solves a real problem that other communities have solutions for.
 
@@ -52,7 +52,7 @@ I gave a talk at VueConf US in June on What is new in Nuxt 3. That conference wa
 
 On July 8th my wife Jen and I celebrated our 5th Anniversary. I’m not sure how I got so lucky but If I can offer you some unsolicited advice… Marry your best friend 🤩🥳
 
-![Wedding Picture](./wedding.png)
+![Wedding Picture](/images/newsletter/2022/07/12/wedding.png)
 
 ## Around the Web
 

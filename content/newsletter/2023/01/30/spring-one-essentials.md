@@ -6,7 +6,7 @@ date: "2023-01-30T08:30:00.000Z"
 
 Happy Monday and welcome to another edition of the newsletter! Last week, I had the opportunity to attend the [SpringOne Essentials](https://springone.io/) virtual conference in San Francisco. Today, I'd like to share with you some of the announcements made during the event. I also want to tell you about a new video I made last week as well as what I will be working on in the near future. With only one day left in January, we are getting ever closer to the eventual end of winter and that makes me smile.
 
-![VMware office San Francisco](./vmware-sign.jpeg)
+![VMware office San Francisco](/images/newsletter/2023/01/30/vmware-sign.jpeg)
 
 ## SpringOne Essentials
 
@@ -20,9 +20,9 @@ We also announced the launch of [Spring Academy](https://tanzu.vmware.com/conten
 
 Finally, my colleague Rita Manachi has put together a great roundup of all the exciting announcements from SpringOne Essentials. Check it out [here](https://tanzu.vmware.com/content/blog/springone-essentials-2023-news).
 
-![SpringOne Essentials Ballons](./baloons.jpeg)
+![SpringOne Essentials Ballons](/images/newsletter/2023/01/30/baloons.jpeg)
 
-![Full Snack Developers](./snack-bar.jpeg)
+![Full Snack Developers](/images/newsletter/2023/01/30/snack-bar.jpeg)
 
 I also just want to point out that it was great to be in San Francisco with my friend DaShaun. We got to have a couple of really great dinners together, we went on a nice run down by the pier and we even caught the new Avatar movie on a 3D IMAX screen which was incredible. I guess what I am trying to say is it’s really great working with people you love to be around and I highly recommend it 🥳
 
@@ -38,7 +38,7 @@ To stay true to my goal of creating better content, I followed my own advice and
 
 I added an adjustment layer to this video to blur it and bring some text to the foreground, to draw the viewer's attention. It's not the most thrilling thing, but I'm gaining new skills to help me tell stories more effectively.
 
-![Premiere Pro Timeline](./premiere-pro.png)
+![Premiere Pro Timeline](/images/newsletter/2023/01/30/premiere-pro.png)
 
 In this tutorial, I demonstrated how to use the new UUID generator type in a Spring Data JPA application. It's exciting to start taking advantage of the new features available in Jakarta.
 
@@ -60,7 +60,7 @@ I started reading [SuperIntelligence](https://amzn.to/3WP7whD) by Nick Bostrom o
 
 While we are on the subject of books I saw this cheerful, color-coordinated bookshelf at the VMware office in San Francisco. Few things bring me more joy than a well-organized book collection 🤩
 
-![VMware Office Bookshelf](./bookshelf.jpeg)
+![VMware Office Bookshelf](/images/newsletter/2023/01/30/bookshelf.jpeg)
 
 ### 🎙 Podcasts
 

@@ -30,7 +30,7 @@ We are so happy to announce that the [SpringOne Tour](https://tanzu.vmware.com/d
 
 I am presenting on Getting Started with [Spring for GraphQL](https://spring.io/projects/spring-graphql). If you want to learn the basics of GraphQL and how (and more importantly when) to use it in your next Spring application you should check out my session.
 
-![spring-one-tour.png](./spring-one-tour.png)
+![spring-one-tour.png](/images/newsletter/2022/03/21/spring-one-tour.png)
 
 ## Around the Web
 

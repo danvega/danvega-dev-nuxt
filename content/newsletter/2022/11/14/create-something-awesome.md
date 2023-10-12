@@ -6,7 +6,7 @@ date: "2022-11-14T19:00:00.000Z"
 
 Happy Monday and welcome to another edition of the newsletter. It’s hard to believe that it is the middle of November and Thanksgiving is next week. We had our first snowfall over the weekend and I can say with confidence that I am not ready for this 🤦‍♂️
 
-![First Snowfall in Ohio](./first_snowfall.jpeg)
+![First Snowfall in Ohio](/images/newsletter/2022/11/14/first_snowfall.jpeg)
 
 In this week's edition, I want to talk to you about creating something awesome, Twitter, SpringOne, and what I have been working on lately.
 

@@ -22,7 +22,7 @@ I honestly didn’t have a ton of time to attend many sessions because I was bus
 
 My coworker DaShaun and I gave a 4-hour Introduction to Spring workshop. Overall I thought it went pretty well but this was the first time we gave this one and we learned a few things from it that we will take into the next one. Thank you to our coworker Whitney for grabbing this 📸
 
-![Spring Workshop](./spring_workshop_talk.jpeg)
+![Spring Workshop](/images/newsletter/2023/01/15/spring_workshop_talk.jpeg)
 
 When you go into a workshop you think that 4 hours is a long time and it turns out that it's never enough time. We knew going in that we couldn’t cover everything but we were still pretty ambitious with what we did want to cover. This was the agenda that we ended up going through:
 
@@ -41,7 +41,7 @@ Next up was my solo talk titled “Give your APIs a REST and make the move to Gr
 
 The room was packed out and it was great to see some familiar faces in the crowd. It was also my first time testing out my new [Logitech Spotlight pointer](https://amzn.to/3IRkCrw) (thanks Nate) and I have to say that it worked out great!
 
-![GraphQL Presentation](./dan_graphql_talk.jpeg)
+![GraphQL Presentation](/images/newsletter/2023/01/15/dan_graphql_talk.jpeg)
 
 This presentation was a mix of slides and live coding and the pacing took me right up to my allotted time of 1 hour. The crowd was amazing and asked some really great questions during the presentation. I had to jot a couple of them down because they were really good and I need to get some answers to them. A huge Thank you to [Todd](https://twitter.com/toddlibby/status/1613604500203532288) for shaping this 📸 during my talk.
 
@@ -49,7 +49,7 @@ This presentation was a mix of slides and live coding and the pacing took me rig
 
 There is no official speaker dinner at CodeMash but since the beginning of time, Chris Judd and his company, Manifest Solutions have held a dinner down the street at Danny Boys. This was a chance to eat some good pizza and hang out with some really bright people. It’s really hard to grab people for meaningful conversations in a crowd of 2,000+ attendees at the conference so this setting did just that. Huge shoutout to Chris Judd and Manifest for putting this on!
 
-![Pizza Dinner](./pizza-dinner.jpeg)
+![Pizza Dinner](/images/newsletter/2023/01/15/pizza-dinner.jpeg)
 
 ## Cleveland Java User Group
 
@@ -73,7 +73,7 @@ At the same time, I am currently reading [Can’t hurt me by David Goggins](http
 
 “I don’t drink coffee to wake up. I wake up to drink coffee.” ― Starbucks at Kalahari 🤣
 
-![Coffee](./coffee.jpeg)
+![Coffee](/images/newsletter/2023/01/15/coffee.jpeg)
 
 ## Until Next Week
 
