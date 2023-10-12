@@ -25,7 +25,7 @@ The pivotal question here is: From this vast range of dependencies, which one sh
 
 There's no universally correct answer to this question, as it largely hinges on your specific project requirements. However, in this post, I am sharing my opinion or rather the solution that I religiously follow - Include the Spring Boot Actuator in every single project.
 
-![Start](/images/blog/2023/09/17/photo-1608496601160-f86d19a44f9f.jpeg)
+![Start](./photo-1608496601160-f86d19a44f9f.jpeg)
 
 ## Why the Spring Boot Actuator?
 
@@ -62,7 +62,7 @@ To kickstart our process, navigate to start Spring IO and create a new project. 
 - Depending on the type of application, you can add other dependencies. In this case, I will keep the app simple and include the web dependency for building a web application.
 - Finally, generate the project, download the zip file, and open it in your preferred IDE (Integrated Development Environment).
 
-![Spirng Boot Initializr](/images/blog/2023/09/17/spring-init.png)
+![Spirng Boot Initializr](./spring-init.png)
 
 Now that we have a new project with the Spring Boot Actuator dependency configured, it's time to explore what the actuator brings to the table and how we can leverage it to its optimum potential.
 
@@ -93,7 +93,7 @@ management.endpoints.web.exposure.include=*
 management.endpoint.health.show-details=always
 ```
 
-![actuator_endpoints.png](/images/blog/2023/09/17/actuator_endpoints.png)
+![actuator_endpoints.png](Spring%20Boot%20Actuator%20cf9af2dd0b7f47a9936ada32e0b7e766/actuator_endpoints.png)
 
 ## Extending the Usability of Spring Boot Actuator: Creating Your Own Custom Endpoint
 

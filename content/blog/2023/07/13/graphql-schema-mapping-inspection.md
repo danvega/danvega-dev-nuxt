@@ -34,7 +34,7 @@ Today, we'll create a sample application around the idea of conference events an
 
 To kick off our project, we'll use [Spring Initializr](https://start.spring.io). We will choose a Maven project using Java, with Web and Spring for GraphQL as our only dependencies.
 
-![Spring Initializr](/images/blog/2023/07/13/spring-init.png)
+![Spring Initializr](./spring-init.png)
 
 Please note that the version used in this blog is 3.1.1, which is the latest version at the time of writing. With our project generated and opened in our favorite ID or editor, we will commence with writing some code.
 

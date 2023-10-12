@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt'
   ],
+  runtimeConfig: {},
   colorMode: {
     preference: 'system',
     fallback: 'light',

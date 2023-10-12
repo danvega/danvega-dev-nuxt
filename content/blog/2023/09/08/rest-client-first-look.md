@@ -3,7 +3,7 @@ title: "A First Look at the new Rest Client in Spring Boot 3.2"
 slug: rest-client-first-look
 date: "2023-09-08T17:00:00.000Z"
 published: true
-excerpt: "This is my first look at the new Rest Client in Spring Boot 3.2. In this tutorial we will discuss what a client is, what are the different implementations of clients available and how to get started with the new Rest Client in Spring Framework 6.1 and Spring Boot 3.2"
+excerpt: This is my first look at the new Rest Client in Spring Boot 3.2. In this tutorial we will discuss what a client is, what are the different implementations of clients available and how to get started with the new Rest Client in Spring Framework 6.1 and Spring Boot 3.2
 author: Dan Vega
 tags:
   - Spring Boot
@@ -12,6 +12,9 @@ video: https://www.youtube.com/embed/UDNrJAvKc0k
 github: https://github.com/danvega/rest-client
 keywords: Spring Framework, Spring Boot, Rest Client
 ---
+
+
+# Exploring the New REST Client in Spring Boot 3.2
 
 Greetings, folks! It's Dan Vega, Spring developer advocate at VMware. Today, I am thrilled to dive into Spring Boot 3.2 and its new REST client. But before we do, let's take a moment to examine our journey to this moment.
 
@@ -33,7 +36,7 @@ Let's create a small CRUD service application that uses the Rest client to make 
 
 Start off by selecting a project type like Maven and choosing Java as your language. I'm using Spring's Boot 3.2.0, Milestone 2. If you're tuning in from the future, please go ahead with the most current milestone release of 3.2, or perhaps 3.2+ if it's publicly available.
 
-![Spring Initializr](/images/blog/2023/09/08/start-spring-io.png)
+![Spring Initializr](./start-spring-io.png)
 
 Once you've entered your group and project names, choose Spring Web for your dependencies. Our application will be auto-configured, and we'll have access to the Rest client in all of our classes. Let's generate our application. Upon doing this, a zip file will be downloaded. Open it up in your IDE or text editor of choice - I'll be using IntelliJ Ultimate Edition.
 

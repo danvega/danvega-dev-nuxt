@@ -1,9 +1,31 @@
 <script  lang="ts" setup="">
 import {useDateFormat} from "@vueuse/core/index";
+import Pagination from "~/components/blog/Pagination.vue";
 
+const route = useRoute();
+const total = await queryContent('blog')
+    .where({ draft: {$ne: true} })
+    .count()
+
+// paginate all posts
 const articles = await queryContent('blog')
+    .limit(20)
     .sort({ date: -1 })
     .find();
+
+/*
+Pagination
+  limit: 10,
+  page: 1,
+  total
+  nextPage: true
+  previousPage: true
+
+  100 / 10 = 10 numbers (how many numbers should be displayed in the pagination bar
+*/
+
+// https://www.danvega.dev/blog/3
+// https://www.danvega.dev/tag/spring
 
 const formatDatePublished = (date) => {
   const formatted = useDateFormat(date, "MMMM D, YYYY");
@@ -52,12 +74,14 @@ const formatDatePublished = (date) => {
                 </svg>
               </div>
             </div>
-            <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" :datetime="post.date">
+            <time class="mt-1 md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" :datetime="post.date">
               {{ formatDatePublished(post.date) }}
             </time>
 
           </article>
 
+
+          <Pagination/>
 
 
         </div>

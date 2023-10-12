@@ -9,7 +9,7 @@ type NavItem = {
 const navItems: NavItem[] = [
   {name: "About",link: "/about"},
   {name: "Blog",link: "/blog/"},
-  {name: "Newsletter",link: "/newsletter"},
+  {name: "Newsletter",link: "/newsletter/"},
   {name: "Speaking",link: "/speaking"},
   {name: "Courses",link: "/courses"},
   {name: "Uses",link: "/uses"}

@@ -2,7 +2,6 @@
 import { useDateFormat } from '@vueuse/core'
 
 const { path } = useRoute()
-
 const { data } = await useAsyncData(`content-${path}`, () => {
   return queryContent()
       .where({ _path: path })
@@ -47,7 +46,7 @@ const getImagePath = (date,cover) => {
               <span class="ml-3">Published On: {{ datePublished }}</span>
             </time>
             <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              {{ data.title }}
+              {{ data?.title }}
             </h1>
           </header>
 
@@ -55,12 +54,12 @@ const getImagePath = (date,cover) => {
           <iframe :src="data.video"
                   class="w-full aspect-video"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                  v-if="data.video"></iframe>
+                  v-if="data?.video"></iframe>
           <!-- else show image -->
           <img :src="getImagePath(data.date,data.cover)"
                class="prose dark:prose-invert rounded-2xl mt-8"
                alt="ALT TEXT"
-               v-else-if="data.cover"/>
+               v-else-if="data?.cover"/>
 
           <ContentRenderer :value="data" class="prose dark:prose-invert mt-8" />
 

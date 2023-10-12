@@ -2,6 +2,7 @@
 import {useDateFormat} from "@vueuse/core/index";
 
 const articles = await queryContent('blog')
+    .where( { draft: {$ne: true} })
     .sort({ date: -1 })
     .limit(2)
     .find();

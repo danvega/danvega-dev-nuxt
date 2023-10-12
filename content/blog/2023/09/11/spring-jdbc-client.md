@@ -3,17 +3,21 @@ title: "A First Look at the new JDBC Client in Spring Boot 3.2"
 slug: spring-jdbc-client
 date: "2023-09-11T17:00:00.000Z"
 published: true
-excerpt: In this tutorial, we'll be diving into the fresh waters of the new JDBC client in Spring Framework 6.1 and Spring Boot 3.2.
+excerpt:
 author: Dan Vega
 tags:
   - Spring Boot
-cover: spring-jdbc-client.png
+cover: ./spring-jdbc-client.png
 video: https://www.youtube.com/embed/JBu5GibEJ4k
 github: https://github.com/danvega/jdbc-client
 keywords: Spring Framework, Spring Boot, JDBC Client, JDBC Template, Spring Data, Spring Data JDBC
 ---
 
-In this tutorial, we'll be diving into the fresh waters of the new JDBC client in Spring Framework 6.1 and Spring Boot 3.2. We'll be not only reviewing how to use it but also discussing some of the associated advantages. So, without further ado, let's delve into it.
+# A First Look at Spring Framework's New JDBC Client
+
+In this tutorial, we'll be diving into the fresh waters of the new JDBC client in Spring Framework 6.1 and Spring Boot 3.2.
+
+We'll be not only reviewing how to use it but also discussing some of the associated advantages. So, without further ado, let's delve into it.
 
 ## Remembering the Journey - JDBC Template
 
@@ -35,7 +39,7 @@ One exciting feature with the JDBC client is that it's auto-configured for us in
 
 Let's get to the fun part - the coding! Being a massive fan of the new JDBC client, I trust that you will love it too!
 
-![Post Controller](/images/blog/2023/09/11/post-controller.png)
+![Post Controller](./post-controller.png)
 
 ### Step 1: Creating a New Application
 
