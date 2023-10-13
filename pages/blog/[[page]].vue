@@ -1,31 +1,35 @@
 <script  lang="ts" setup="">
 import {useDateFormat} from "@vueuse/core/index";
-import Pagination from "~/components/blog/Pagination.vue";
+import SimplePagination from "~/components/blog/SimplePagination.vue";
+
+definePageMeta(
+  {
+    path: '/blog/:page(\\d+)?'
+  }
+)
 
 const route = useRoute();
-const total = await queryContent('blog')
-    .where({ draft: {$ne: true} })
-    .count()
+const page = ref(route.params.page ? parseInt(route.params.page) : 1);
+const limit = ref(5);
+
+const articlesCount = await queryContent('blog')
+    .where( { tags: {$in: route.query.tag}} )
+    .find()
 
 // paginate all posts
 const articles = await queryContent('blog')
-    .limit(20)
+    .where( { tags: {$in: route.query.tag}} )
+    .skip(limit.value * (page.value - 1))
+    .limit(limit.value)
     .sort({ date: -1 })
-    .find();
+    .find()
 
-/*
-Pagination
-  limit: 10,
-  page: 1,
-  total
-  nextPage: true
-  previousPage: true
-
-  100 / 10 = 10 numbers (how many numbers should be displayed in the pagination bar
-*/
-
-// https://www.danvega.dev/blog/3
-// https://www.danvega.dev/tag/spring
+if(articles.length == 0) {
+  throw new createError({
+    statusCode:404,
+    statusMessage: "No Blog posts found for path: `${route.path}`"
+  })
+}
 
 const formatDatePublished = (date) => {
   const formatted = useDateFormat(date, "MMMM D, YYYY");
@@ -80,8 +84,7 @@ const formatDatePublished = (date) => {
 
           </article>
 
-
-          <Pagination/>
+          <SimplePagination :count="articlesCount.length" :page="page" :limit="limit" :tag="route.query.tag"/>
 
 
         </div>
