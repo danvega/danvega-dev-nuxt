@@ -8,8 +8,6 @@ const { data } = await useAsyncData(`content-${path}`, () => {
       .findOne()
 })
 
-console.log(data);
-
 // add a type for blog post
 // date format
 const datePublished = useDateFormat(data.date, 'MMMM D, YYYY')
