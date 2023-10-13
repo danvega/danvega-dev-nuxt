@@ -83,7 +83,7 @@ const formatDatePublished = (date) => {
 
           </article>
 
-          <SimplePagination :count="articlesCount.length" :page="page" :limit="limit" :tag="route.query.tag"/>
+          <SimplePagination :count="articlesCount.length" :page="page" :limit="limit" tag=""/>
 
 
         </div>
