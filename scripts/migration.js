@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 
 const CONTENT_DIR= "blog"
 const BASE_DIR = process.argv[2] || `../content/${CONTENT_DIR}/`;
-const DRY_RUN = false;
+const DRY_RUN = true;
 
 function getFilesFromDir(baseDir) {
     const files = fs.readdirSync(baseDir);
@@ -31,6 +31,13 @@ function extractDateFromFrontMatter(content) {
 
 function extractDateParts(file,isoDate) {
     try {
+
+        isoDate = isoDate.toString();
+        if (typeof isoDate !== 'string') {
+            console.error('isoDate is not a string:', isoDate);
+            return null;
+        }
+
         const match = isoDate.match(/^(\d{4})-(\d{2})-(\d{2})T/);
         if (match) {
             return {
