@@ -8,6 +8,8 @@ const { data } = await useAsyncData(`content-${path}`, () => {
       .findOne()
 })
 
+console.log(data);
+
 // add a type for blog post
 // date format
 const datePublished = useDateFormat(data.date, 'MMMM D, YYYY')
@@ -50,11 +52,8 @@ const getImagePath = (date,cover) => {
             </h1>
           </header>
 
-          <!--- if video, show video -->
-          <iframe :src="data.video"
-                  class="w-full aspect-video"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                  v-if="data?.video"></iframe>
+          <YouTube :src="data.video" v-if="data?.video" />
+
           <!-- else show image -->
           <img :src="getImagePath(data.date,data.cover)"
                class="prose dark:prose-invert rounded-2xl mt-8"
