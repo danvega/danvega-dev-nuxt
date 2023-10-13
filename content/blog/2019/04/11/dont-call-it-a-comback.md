@@ -23,7 +23,7 @@ I found an open source blogging platform called [BlogCFC](http://www.blogcfc.com
 
 I really loved the idea of theming the blog and giving it a unique look to match my personality. Now, I have never been known for my design skills but It is still something I enjoy doing to this day. Here is a screenshot of an early version of my blog using the [Wayback Machine](https://archive.org/web/).
 
-![](./2019-04-09_21-55-34-783a547c-404d-4337-9402-6648cae05340.png)
+![](/images/blog/2019/04/11/2019-04-09_21-55-34-783a547c-404d-4337-9402-6648cae05340.png)
 
 Now that I had my new blog up and running I can remember a lot of my early posts were talking about things that I learned while setting up that blog. My motivation for blogging always came down to 2 simple objectives.
 
@@ -103,7 +103,7 @@ In the last few years, JavaScript has really come into its own and I think ES6 b
 
 If you're not reading this article on my blog and want to check it out head over to [https://www.danvega.dev](https://www.danvega.dev). I also have a few articles on why I moved over to Gridsome and how I built certain features. If you're interested my entire site is open source and you can [grab the code here](https://github.com/danvega/danvega-dev).
 
-![](./2019-04-10_11-55-41-4bdf4a5b-10e8-476d-a340-26267e9fed0e.png)
+![](/images/blog/2019/04/11/2019-04-10_11-55-41-4bdf4a5b-10e8-476d-a340-26267e9fed0e.png)
 
 ## Conclusion
 

@@ -27,7 +27,7 @@ GraalVM provides a way to include metadata about the dynamic features of your JV
 
 First, create a new Java project with Maven and the GraalVM Native Maven plugin. In this example, the project will use Java, Maven, and the [GraalVM JDK 17.22.3](https://www.graalvm.org/). Create a simple "Hello World" application with no dynamic features to start.
 
-![Create new Java Project in IntelliJ](./intellij-new-project.png)
+![Create new Java Project in IntelliJ](/images/blog/2023/02/03/intellij-new-project.png)
 
 Next, introduce dynamic capabilities in the form of a `Message` interface, with two implementations: `NiceMessage` and `MeanMessage`. The `Message` interface will have a single method called `printMessage()`. The `NiceMessage` and `MeanMessage` classes will each implement the `Message` interface with their versions of the `printMessage()` method.
 
@@ -87,7 +87,7 @@ For example, in IntelliJ IDEA, go to the "Edit Configurations" menu and add the 
 -agentlib:native-image-agent=config-output-dir=src/main/resources/META-INF/native-image
 ```
 
-![VM Options in IntelliJ](./vm-options.png)
+![VM Options in IntelliJ](/images/blog/2023/02/03/vm-options.png)
 
 Now, when you run your application with the tracing agent enabled, GraalVM will generate the required configuration files, such as `reflect-config.json`, in the specified output directory (`src/main/resources/META-INF/native-image`). These files tell GraalVM about the dynamically reachable classes and methods, such as the `NiceMessage` and `MeanMessage` implementations.
 

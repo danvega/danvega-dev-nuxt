@@ -16,7 +16,7 @@ keywords: Spring Boot, Spring for GraphQL, GraphQL Java, GraphQL Scalars, Java, 
 
 Whether you're new to GraphQL or a seasoned user, understanding the scalar types in GraphQL is important. Within the GraphQL specification, there are five defined scalar types: **int**, **float**, **string**, **boolean**, and **ID**. These will work for many components of your schema definition. But what happens when you need a custom scalar? Unfortunately, you'll inevitably need to create a custom scalar at some point.
 
-![GraphQL Scalar Types](./graphql-scalar-types.png)
+![GraphQL Scalar Types](/images/blog/2023/01/31/graphql-scalar-types.png)
 
 That's what we'll be doing today. We're going to create a new Spring Boot 3 project that includes Spring for GraphQL. We'll be defining our schema and integrating built-in scalars. Then, we'll discuss how to bring in custom scalars when needed.
 
@@ -28,7 +28,7 @@ For those of you who have built a Spring Boot application, you'll be familiar wi
 
 We'll start by heading to start.spring.io, where we'll input our project details. I'm going to use Maven for the project type, with Java as the language. As for dependencies, we're going to include **Spring Web** and **Spring for GraphQL**.
 
-![Spring Initializr](./scalars-spring-init.png)
+![Spring Initializr](/images/blog/2023/01/31/scalars-spring-init.png)
 
 Once our metadata is filled in, we can hit Generate, which will download a zip file. Open this in your preferred IDE - I typically use IntelliJ Ultimate.
 

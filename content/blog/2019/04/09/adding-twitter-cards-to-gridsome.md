@@ -175,7 +175,7 @@ For more information on what each of these meta tags do you can check out the [T
 
 And this is an example of what a card might look like
 
-![](./2019-04-09_14-22-55-7de0bfb4-6ad0-4bd0-bf31-d2e9092d37ca.png)
+![](/images/blog/2019/04/09/2019-04-09_14-22-55-7de0bfb4-6ad0-4bd0-bf31-d2e9092d37ca.png)
 
 ## Conclusion
 

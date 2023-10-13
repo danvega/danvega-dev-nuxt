@@ -34,7 +34,7 @@ As I said in the abstract I want to focus on three different approaches to using
 
 To illustrate these approaches we will be building out functionality for an Ice Cream store. If you don't learn anything you either weren't paying attention or completely consumed with the idea of getting ice cream.
 
-![Ice Cream Store](./ice-cream-store.png)
+![Ice Cream Store](/images/blog/2021/08/30/ice-cream-store.png)
 
 ### Resources
 

@@ -25,7 +25,7 @@ Let's dive straight into the code.
 
 Our project was initiated on [*Start Spring IO*](https://start.spring.io/) with Maven as the build tool, Java as the language, and the most current version of Spring Boot (3.1.0). Our project name for the purpose of guiding you through this post is "headers". Our language of choice for this project is Java 17. The dependencies we have selected for the demo are Spring Web and Web Flux. Potentially, you might select Spring Web for constructing a REST API, but here we turn to Web Flux albeit not constructing a reactive stack as HTTP interfaces utilize the reactive web client under the hood in Spring Boot. This feature does not necessarily have to be blocking or non-blocking; we'll explore an example further down. We'll now generate our project and launch it in IntelliJ IDEA to get things started.
 
-![Spring Initializr](./request-headers-start-spring-io.png)
+![Spring Initializr](/images/blog/2023/06/14/request-headers-start-spring-io.png)
 
 ## Creating a Model
 

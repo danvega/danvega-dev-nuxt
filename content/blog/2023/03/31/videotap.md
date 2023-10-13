@@ -29,7 +29,7 @@ Once I'm ready to publish a video, I often lack the energy to write a full blog 
 
 However, in the real world, with a full-time job, family, and limited time, I need to be precise about how I spend my time. I would rather create two videos than one blog post plus a video. Nevertheless, I would prefer to make two videos and two blog posts instead of only one. That is why I'm excited about this new service that will allow me to do that.
 
-![Writing a new blog post](./photo-1504691342899-4d92b50853e1.jpeg)
+![Writing a new blog post](/images/blog/2023/03/31/photo-1504691342899-4d92b50853e1.jpeg)
 
 ## What is VideoTap
 
@@ -43,19 +43,19 @@ Using VideoTap costs $1 per minute of video you want to convert. For example, a 
 
 Once you create a free account, you can begin the process by going to your dashboard. You can add a video by URL or connect your YouTube account. Once you add a video, the length will be determined, and you will be prompted to pay.
 
-![Ordering a new Blog Post with VideoTap](./order-new-blog-posts.png)
+![Ordering a new Blog Post with VideoTap](/images/blog/2023/03/31/order-new-blog-posts.png)
 
 After your payment is processed, the service will start generating a blog post. This process may take a few minutes as it involves transcribing the video, adding titles, headers, code, and formatting everything.
 
-![Generating a new blog post with VideoTap](./generating-blog-post.png)
+![Generating a new blog post with VideoTap](/images/blog/2023/03/31/generating-blog-post.png)
 
 When the conversion is complete you will be taken to this screen where you can make further edits. First off I love the simplicity of this design with the image and outline on the left. The blog post isn’t perfect and this is usually where I will make my first pass on editing it.
 
-![New blog Post created by VideoTap](./new-blog-post.png)
+![New blog Post created by VideoTap](/images/blog/2023/03/31/new-blog-post.png)
 
 When the blog post is ready to export click the `Export Blog Post` button in the upper right hand corner. I write all of my blog posts in Markdown so the copy markdown is a great feature. It’s almost like this service was written by a developer for developers (👋🏻 Chris).
 
-![Export Blog Post from VideoTap as Markdown](./export-blog-post.png)
+![Export Blog Post from VideoTap as Markdown](/images/blog/2023/03/31/export-blog-post.png)
 
 ### Show me the ~~Money~~ Blog Posts
 
@@ -70,7 +70,7 @@ I think its easy to talk about a service but what about a real world use case. I
 
 They also have a free service for [generating YouTube Chapters](https://videotapit.com/youtube-chapters-generator?ref=dan) which I have found really useful. This is another one of those tasks during the video creation process that I find exhausting. You just spent all this time producing, editing and publishing the video and instead of moving on to the next one you need to watch it again to figure out where the chapter marks are.
 
-![YouTube Chapter Generator from VideoTap](./youtube-chapter-generator.png)
+![YouTube Chapter Generator from VideoTap](/images/blog/2023/03/31/youtube-chapter-generator.png)
 
 ## Conclusion
 

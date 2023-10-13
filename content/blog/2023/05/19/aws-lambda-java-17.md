@@ -25,7 +25,7 @@ I will first show you how to develop a new project utilizing Java only. Let's us
 
 First, I will create a new project in my IntelliJ IDE (although, you can work with any IDE or text editor of your choice). This new project will be named 'Hello, Java 17' and I will save it in my downloads folder.
 
-![Hello Java 17 Project in IntelliJ](./hello-java-17-pom.png)
+![Hello Java 17 Project in IntelliJ](/images/blog/2023/05/19/hello-java-17-pom.png)
 
 This Java project is a Maven project that uses the Coretto 17 version of JDK. My group ID will be 'dev.danvega' and the artifact will be 'hello-java-17'. On creating this project, I will open it in IntelliJ.
 
@@ -103,7 +103,7 @@ The `clean` command cleans the Maven project by deleting the target directory. T
 
 Now that we have our jar ready, we can go ahead and upload it to AWS Lambda. Let's create a new function from scratch and name it 'Hello, Java 17'. The exciting part here is the runtime selection. Here, you can choose Java 17.
 
-![AWS Lambda Create Function](./aws-create-function.png)
+![AWS Lambda Create Function](/images/blog/2023/05/19/aws-create-function.png)
 
 For the purposes of this tutorial, I'll keep the architecture at X86 - this is because if you want to use something like SnapStart, you’ll need to use X86 as it currently does not support ARM64. Having selected the runtime, create the function.
 
@@ -123,7 +123,7 @@ Next, is to create a new project using Spring Boot 3. To do so, we will head ove
 
 On the website, we can select the necessary configurations for our project. For this project, we'll be utilizing Java 17 and Spring Boot 3. For dependencies, select 'Web' and 'Spring Cloud Function'.
 
-![Spring Initializr](./scf-spring-init.png)
+![Spring Initializr](/images/blog/2023/05/19/scf-spring-init.png)
 
 Once the project parameters are set up, you can generate the project. The resulting .zip file can be opened in your preferred IDE (for this project, we are using IntelliJ IDEA). In the application, the `reverse` function simply reverses the given input string. Here is the code for the `reverse` function:
 

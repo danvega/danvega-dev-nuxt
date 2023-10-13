@@ -342,7 +342,7 @@ const todos = await fetch(
 console.table(todos);
 ```
 
-![Brower Compatible Fetch API](./todos-table.png)
+![Brower Compatible Fetch API](/images/blog/2020/05/29/todos-table.png)
 
 The subset of Deno programs which are written completely in JavaScript and do not use the global Deno namespace (or feature test for it), ought to also be able to be run in a modern web browser without change. Deno 1.0 provides the following web-compatible APIs.
 
@@ -407,7 +407,7 @@ import { foo } from "./app.ts";
 
 You just saw an example of importing an ES Module directly from a URL or file path. This means that we no longer need a package manager like NPM (Node Package Manager) or the project bloat that comes along with the `node_modules` folder.
 
-![Node Modules](./node-modules.jpeg)
+![Node Modules](/images/blog/2020/05/29/node-modules.jpeg)
 
 This is probably going to be something that developers debate about the most when it comes to Deno. Rather than relying on a central repository, it is decentralized. This means that anyone can host any type of file on the web, anywhere. There are pros and cons to this and I will need more time to share my personal thoughts on this. If you're looking for a collection of Third Party Modules you can find them on the official Deno website.
 

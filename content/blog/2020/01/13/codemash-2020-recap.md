@@ -21,7 +21,7 @@ The first thing I need to say is that I have been to a decent amount of conferen
 
 I was lucky enough to bring my wife and daughter with me to Kalahari so this conference doubled as a nice little vacation for the family. This was my first trip to Kalahari and we had a blast. The water park had so many things to do for everyone. They also had a great assortment of places to eat and drink. I will definitely be taking the family back there one day.
 
-![Bella & Dad at Kalahari](./bella_codemash.jpg)
+![Bella & Dad at Kalahari](/images/blog/2020/01/13/bella_codemash.jpg)
 
 ## Sessions & Workshops I attended
 
@@ -69,7 +69,7 @@ I am really glad that I was selected to speak on Thursday so that I could enjoy 
 
 I put a lot of time and effort into this presentation and at the end of the day I think it really showed. The session was well attended and the audience was engaged. I got a lot of really great feedback after the talk which really makes me so happy and I feel incredibly lucky to be a speaker at such an amazing conference. My wife and daughter hung out in the back and watched the beginning of my talk and that made it all the more special.
 
-![Vue 3: Smaller, Faster & Stronger](./danvega_vue3_session.jpg)
+![Vue 3: Smaller, Faster & Stronger](/images/blog/2020/01/13/danvega_vue3_session.jpg)
 
 I als want to really thank everyone at [Tech Elevator](https://www.techelevator.com) for supporting me. It means a lot to work for such a great company where everyone shares the same mission.
 

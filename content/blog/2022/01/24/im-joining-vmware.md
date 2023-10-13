@@ -14,7 +14,7 @@ I am thrilled to announce that I have joined **VMWare** as a _Spring Developer A
 
 I’m excited for the opportunity that lies ahead and I know that this is just the start, there is a lot of work ahead. I’m proud of always believing in myself even when I had doubts if this was the career for me. I’m a self-taught developer and over my 22+ years, the only person I have been trying to prove anything to was myself. A job should never define you or your worth but this is a dream job and you better believe I’m going to celebrate this one 🥳
 
-![1642029002280.jpeg](./1642029002280.jpeg)
+![1642029002280.jpeg](/images/blog/2022/01/24/1642029002280.jpeg)
 
 ## A Trip down Spring Memory Lane
 
@@ -34,9 +34,9 @@ My company sent a few of us to SpringOne that year and my main goals for that co
 
 <div style="display:flex;gap:10px;">
 
-![Levi Stadium](./spring_2013_room.jpg)
+![Levi Stadium](/images/blog/2022/01/24/spring_2013_room.jpg)
 
-![Spring 2013 USB Key](./spring_2013_usb.jpg)
+![Spring 2013 USB Key](/images/blog/2022/01/24/spring_2013_usb.jpg)
 
 </div>
 
@@ -63,19 +63,19 @@ In 2015 I made my triumphant return to SpringOne which took place on September 1
 
 <div style="display:flex;gap:10px;">
 
-![Spring 2015 Main Room](./spring_2015_main_room.jpeg)
+![Spring 2015 Main Room](/images/blog/2022/01/24/spring_2015_main_room.jpeg)
 
-![Spring 2015 Booths](./spring_2015_booths.jpeg)
+![Spring 2015 Booths](/images/blog/2022/01/24/spring_2015_booths.jpeg)
 
-![Spring 2015 Hotel](./spring_2015_hotel.jpeg)
+![Spring 2015 Hotel](/images/blog/2022/01/24/spring_2015_hotel.jpeg)
 
 </div>
 
 <div style="display:flex;gap:10px;">
 
-![Spring 2015 Swag](./spring_2015_swag.jpeg)
+![Spring 2015 Swag](/images/blog/2022/01/24/spring_2015_swag.jpeg)
 
-![Spring 2015 Dave and Josh](./spring_2015_dave_josh.jpeg)
+![Spring 2015 Dave and Josh](/images/blog/2022/01/24/spring_2015_dave_josh.jpeg)
 
 </div>
 
@@ -85,7 +85,7 @@ I began working on my first course, [Learn Spring Boot](https://www.udemy.com/co
 
 I would launch this course on November 17th just in time for the big Udemy Black Friday Sale. This course would end up being almost 14 hours in length and as a sidebar, I would not recommend making that long of a course as your first one. As you can see from the screenshot this course has almost 24,000 students worldwide.
 
-![Learn Spring Boot Course](./learn_spring_boot_course.png)
+![Learn Spring Boot Course](/images/blog/2022/01/24/learn_spring_boot_course.png)
 
 I cringe looking back at some of the videos I created for this course but you have to start somewhere. Don’t let production quality stop you if you know your content is good. I now have 6 courses and close to 140,000 students in 184 countries. That still blows my mind and I’m very grateful for that opportunity 🙏 I’m hoping I have some time this year to update my existing courses as well as the opportunity to create some new ones.
 
@@ -113,7 +113,7 @@ After a quick history lesson, I thought I would take some time to tell you what 
 
 I joined Tech Elevator back in 2018 and I can honestly say that no other company has had an impact on me the way they did. Tech Elevator is a coding BootCamp where you can learn how to code and the soft skills needed to start a career in software development. It was great to see people change careers and their lives after going through our program.
 
-![Tech Elevator](./tech_elevator.png)
+![Tech Elevator](/images/blog/2022/01/24/tech_elevator.png)
 
 I was hired on as a Curriculum Developer. My job was to help improve the curriculum the students went through as well as the materials the instructors would use to teach with. We had 2 tracks, Java and .NET. In these tracks, the students would learn the skills needed to be well-rounded full-stack developers.
 
@@ -125,7 +125,7 @@ Even though I created my own curriculum in the past, Tech Elevator gave me a gre
 
 I spent a year with [Briebug](https://briebug.com/) and I was recently promoted to Principal Enterprise Architect. Briebug is a consulting company and I worked on one client the entire time I was there. This client was the largest logistics company in the world and I got an opportunity to work on some really cool projects that were at a scale I wasn’t used to working on.
 
-![kari-shea-1SAnrIxw5OY-unsplash.jpg](./kari-shea-1SAnrIxw5OY-unsplash.jpg)
+![kari-shea-1SAnrIxw5OY-unsplash.jpg](/images/blog/2022/01/24/kari-shea-1SAnrIxw5OY-unsplash.jpg)
 
 All of the projects I worked on were projects using Spring Boot, Spring Cloud, and Pivotal Cloud Foundry (PCF). I also had the opportunity to design a new system from the ground up that ended up being a set of 10 or so Microservices.
 
@@ -135,7 +135,7 @@ I really enjoy mentoring and teaching so these are some of my fondest memories o
 
 ## Spring Developer Advocate 🥑
 
-![mia-baker-ctRgcY-lY8I-unsplash.jpg](./mia-baker-ctRgcY-lY8I-unsplash.jpg)
+![mia-baker-ctRgcY-lY8I-unsplash.jpg](/images/blog/2022/01/24/mia-baker-ctRgcY-lY8I-unsplash.jpg)
 
 Now that you know a little bit of my history I want to take some time to tell you why this is a **_dream job_** for me. I have always had a passion for the art of Software Development. For as long as I can remember though what has brought me the most joy throughout my career is helping others.
 

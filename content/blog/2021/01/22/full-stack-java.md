@@ -37,7 +37,7 @@ If you have full-stack developers that will be working on both sides of the appl
 
 ## Monolithic architecture
 
-![Monolith](./trent-erwin-zvKMpmvLlSo-unsplash.jpg)
+![Monolith](/images/blog/2021/01/22/trent-erwin-zvKMpmvLlSo-unsplash.jpg)
 
 In this article we are going to focus on building a Monolithic application that uses Vue on the fronted and Spring Boot on the backend. A lot of developers I come across are familiar with both of these technologies but aren't quite sure how to configure them in a single project.
 
@@ -67,11 +67,11 @@ I am going to make some assumptions about you before we get started. You should 
 
 My IDE of choice is IntelliJ Ultimate Edition. If you're using the same you can create the project right in the IDE:
 
-![Spring Initializr IntelliJ](./intelli_new_spring_project.png)
+![Spring Initializr IntelliJ](/images/blog/2021/01/22/intelli_new_spring_project.png)
 
 If you're not you can do the same from https://start.spring.io
 
-![Spring Initializr Web](./start_spring_io.png)
+![Spring Initializr Web](/images/blog/2021/01/22/start_spring_io.png)
 
 Start by creating a new Spring Boot project with the following properties:
 
@@ -119,13 +119,13 @@ public class MessageController {
 
 With DevTools your application should have restarted after this change, if it hasn't please re-run the application. Open up a browser and navigate to http://localhost:8080/api/messages/hello
 
-![Hello Endpoint](./hello_endpoint.png)
+![Hello Endpoint](/images/blog/2021/01/22/hello_endpoint.png)
 
 ### Vue
 
 Next, you will create the frontend application using the [Vue CLI](https://cli.vuejs.org/). If you're in IntelliJ you can open up the terminal or open up what ever shell you use. If you have the Vue CLI installed you can navigate to the `/src` folder and run the command `vue create frontend` which will generate a project into `/src/frontend`. For this project I am generating a Vue 3 application but this will also work with v2.
 
-![Vue CLI](./vue_cli.png)
+![Vue CLI](/images/blog/2021/01/22/vue_cli.png)
 
 Once the application has been created navigate to `/src/frontend` and run the application.
 
@@ -213,7 +213,7 @@ export default {
 
 If you run the Vue application using `npm run serve` you should see the message from your backend API being displayed.
 
-![Vue Hello World](./vue_hello_world.png)
+![Vue Hello World](/images/blog/2021/01/22/vue_hello_world.png)
 
 My development workflow consists of running these as separate applications. I usually start up a new shell in the background for running the Vue application. This gives me one less distraction in IntelliJ and I appreciate the larger iTerm window to view anything going wrong with the client.
 
@@ -339,7 +339,7 @@ When that is complete you should see something that looks like this and it will 
 
 You can run this jar from the command line `java -jar target/fsjava-0.0.1-SNAPSHOT.jar`
 
-![Java JAR](./java_jar.png)
+![Java JAR](/images/blog/2021/01/22/java_jar.png)
 
 With this single artifact you can push this into a production environment and you are ready to go. A few of my favorite options for doing this are:
 

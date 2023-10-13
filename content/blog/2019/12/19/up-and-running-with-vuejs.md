@@ -13,7 +13,7 @@ This is a course that I have wanted to make for a long time now and I am happy t
 
 ## Course Motivation
 
-![Course Motivation](./mia-baker-CuoMduHwRZY-unsplash.jpg)
+![Course Motivation](/images/blog/2019/12/19/mia-baker-CuoMduHwRZY-unsplash.jpg)
 
 For most of my career I have primarily been a back-end developer. I have always still had to work on projects where I would be doing front-end development but I can honestly say I never liked it. It was always something I wanted to get better at but the tools available to me weren't that great.
 
@@ -21,7 +21,7 @@ A little less than two years ago I found Vue and it was just so easy to get star
 
 ## Course Goals
 
-![Course Goals](./s-o-c-i-a-l-c-u-t-6iYb1BWWbV0-unsplash.jpg)
+![Course Goals](/images/blog/2019/12/19/s-o-c-i-a-l-c-u-t-6iYb1BWWbV0-unsplash.jpg)
 
 When I started looking at the current landscape of courses in the Vue community I noticed a couple of things. First, there are some really great courses out there by some amazing instructors. I also noticed that a lot of the introduction material came bundled with hours of additional content that might not be relevant for a beginner. It also could be pretty intimidating to want to learn something new and find a course and that is 25 hours long.
 
@@ -41,7 +41,7 @@ I wanted to target developers with HTML/CSS/JS experience. This meant that I wan
 
 ## Course Curriculum
 
-![Course Curriculum](./tim-mossholder-WE_Kv_ZB1l0-unsplash.jpg)
+![Course Curriculum](/images/blog/2019/12/19/tim-mossholder-WE_Kv_ZB1l0-unsplash.jpg)
 
 This course is really geared towards beginners who know HTML, CSS & JavaScript but maybe haven't jumped into a framework just yet. If that sounds like you I think Vue is the perfect framework to learn. Below is a trailer for the course and an outline of the curriculum.
 

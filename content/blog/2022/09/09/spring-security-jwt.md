@@ -30,7 +30,7 @@ This client application will make calls to a server application written in Sprin
 
 What you will do is secure all of the resources so that when the client makes a call to the REST API the client will get a _401 (Unauthorized)_ which means the client request has not been completed because it lacks valid authentication credentials for the requested resource**.**
 
-![Application Architecture: 401 Unauthorized](./app-arch-401.png)
+![Application Architecture: 401 Unauthorized](/images/blog/2022/09/06/app-arch-401.png)
 
 ### JSON Web Tokens (JWT)
 
@@ -48,11 +48,11 @@ The final JWT consists of three parts. Each is base64Url-encoded and separated f
 
 You will introduce a new authentication controller that a client can make a request to with their authentication credentials (username + password) and when they are successfully authenticated the service will return a JWT.
 
-![Application Architecture: JSON Web Token (JWT)](./app-arch-jwt.png)
+![Application Architecture: JSON Web Token (JWT)](/images/blog/2022/09/06/app-arch-jwt.png)
 
 The client will then store the JWT and each subsequent request will pass it via the Authorization header. When the Server application receives the request with the JWT it will verify that it is a valid token and if it is will allow the request to continue.
 
-![Application Architecture: Request with JSON Web Token (JWT)](./app-arch-with-jwt-200.png)
+![Application Architecture: Request with JSON Web Token (JWT)](/images/blog/2022/09/06/app-arch-with-jwt-200.png)
 
 ## Getting Started
 
@@ -62,7 +62,7 @@ To get started you are going to head over to [start.spring.io](http://start.spri
 - oAuth2 Resource Server
 - Spring Configuration Processor
 
-![Spring Initiliazr](./start-spring-io.png)
+![Spring Initiliazr](/images/blog/2022/09/06/start-spring-io.png)
 
 This will generate the following dependencies in your `pom.xml`
 
@@ -102,7 +102,7 @@ public class HomeController {
 }
 ```
 
-![Spring Security Login](./please-sign-in.png)
+![Spring Security Login](/images/blog/2022/09/06/please-sign-in.png)
 
 ## Spring Security Configuration
 
@@ -155,7 +155,7 @@ public InMemoryUserDetailsManager users() {
 
 With the new user configured you should be able to restart the application and visit [http://localhost:8080](http://localhost:8080). You will be presented with a dialog asking for a username and password and if everything works you should be able to log in with `dvega` + `password`.
 
-![Spring Security HTTP Basic](./http-basic-auth.png)
+![Spring Security HTTP Basic](/images/blog/2022/09/06/http-basic-auth.png)
 
 ## OAuth 2.0 Resource Server
 
@@ -325,7 +325,7 @@ At this point, you should be able to run the application without any errors.
 
 You have the keys in place and you have defined a decoder which is a way to decipher the JWT. If you remember back to our architecture diagrams earlier the user will need to log in with their username and password. If they pass authentication you will generate a new JSON Web Token and send it back in the response.
 
-![Application Architecture: JSON Web Token (JWT)](./app-arch-jwt.png)
+![Application Architecture: JSON Web Token (JWT)](/images/blog/2022/09/06/app-arch-jwt.png)
 
 To do this you first need to create a bean of type `JwtEncoder` and you can do this in the `SecurityConfig`. The encoder will be used to encode the signature we learned about earlier into a token and sign it using our private key.
 
@@ -407,11 +407,11 @@ There are many ways that you can manually test this but In this tutorial, I will
 
 An easy way to test this is by using a tool like Postman. If you create a new POST request to the token endpoint you can select Basic Auth from the Authorization tab and enter your credentials. If everything works you will get back the generated JWT in the response.
 
-![Postman Basic Auth](./postman-basic-auth.png)
+![Postman Basic Auth](/images/blog/2022/09/06/postman-basic-auth.png)
 
 Copy the JWT and create a new GET request for [http://localhost:8080](http://localhost:8080). Go to the Authorization tab and select Bearer Token and paste in the generated token. If you send the request you should get back the string returned from the home method in the `HomeController`.
 
-![Postman with JWT Response](./postman-with-jwt-response.png)
+![Postman with JWT Response](/images/blog/2022/09/06/postman-with-jwt-response.png)
 
 **CommandLine**
 
@@ -423,7 +423,7 @@ http POST :8080/token --auth dvega:password -v
 
 The `-v` argument will print the request and the response
 
-![Httpie with Authorization](./httpie-auth.png)
+![Httpie with Authorization](/images/blog/2022/09/06/httpie-auth.png)
 
 The response will contain the generated JWT token. If you make a request to the root path without the authorization header or without the correct token you will receive a _401 (Denied)_ response. If however, you include the Authorization header in the correct format you will get the string returned from the home method in the `HomeController`.
 
@@ -431,7 +431,7 @@ The response will contain the generated JWT token. If you make a request to the 
 http :8080 'Authorization: Bearer JWT_TOKEN_HERE'
 ```
 
-![Httpie Response Success](./httpie-success.png)
+![Httpie Response Success](/images/blog/2022/09/06/httpie-success.png)
 
 ### Automated Testing
 

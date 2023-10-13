@@ -26,7 +26,7 @@ We'll begin by bootstrapping a simple Spring application that uses Spring Data J
 - Java: `version 17`
 - Dependencies: `web`, `data-jpa`, `h2`
 
-![Create new project using Spring Initializr](./spring-init.png)Once your project is generated, you can open it in your favorite IDE (I'll be using IntelliJ in this tutorial).
+![Create new project using Spring Initializr](/images/blog/2022/09/29/spring-init.png)Once your project is generated, you can open it in your favorite IDE (I'll be using IntelliJ in this tutorial).
 
 ## Creating the Model, Repository, and Controller
 

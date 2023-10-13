@@ -20,7 +20,7 @@ Here's the tweet I sent out:
 
 > I often see spring developers returning a ResponseEntity and not manipulating the response. If all you're going to do is this and just return the body, just return that as the return type. If you need to customize the response and you need to add headers or change the status code, you can use a ResponseEntity as the return type.
 
-![Spring Response Entity Tweet](./response-entity-tweet.png)
+![Spring Response Entity Tweet](/images/blog/2022/12/16/response-entity-tweet.png)
 
 This tweet got more than 600 likes, 57 retweets, and many comments. Let's get into the ResponseEntity class and see what it's all about.
 

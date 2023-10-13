@@ -47,7 +47,7 @@ As you can imagine this isn't very efficient and I got really tired of doing thi
 
 Another component of this that is not a deal breaker but it just bothers me from time to time is the markdown preview window. I don't like having my Markdown file open and the need for a preview window to see what the result looks like.
 
-![](./2019-04-25_09-37-18-fa09bb0d-9460-41fc-95ce-dbe3222c21b4.png)
+![](/images/blog/2019/04/25/2019-04-25_09-37-18-fa09bb0d-9460-41fc-95ce-dbe3222c21b4.png)
 
 ## Notion
 
@@ -57,7 +57,7 @@ The reason I kept trying it is that I kept hearing about it on podcasts and Twit
 
 After I spent a little time over a weekend setting up Notion I really started to see the power behind it. This was a replacement for a number of tools I used and became a one-stop shop for everything I needed. Below is a screenshot of my personal Notion workspace. If you're interested in how I use Notion for almost everything let me know and I will put together a post or video walking you through how I use it.
 
-![](./2019-04-25_08-22-10-45f2e734-1c6b-4f79-963e-b560d0606e9b.png)
+![](/images/blog/2019/04/25/2019-04-25_08-22-10-45f2e734-1c6b-4f79-963e-b560d0606e9b.png)
 
 If you're new to Notion I would also suggest checking out [their new template gallery](https://www.notion.so/181e961aeb5c4ee6915307c0dfd5156d). This is a great place to get some ideas and templates for your own workspace. I think most of the battle with the platform is understanding what to use it for and then how to set it up.
 
@@ -67,17 +67,17 @@ The one feature that I absolutely love about Notion is that you can use 1 set of
 
 I have set up a kanban board for blog posts and this is where I have a view into all of my ideas, what's up next, what I am working on now and what has been completed. Having a place where you can quickly add an idea for a blog post with some notes, images or sample code is crucial for my writing process.
 
-![](./2019-04-25_08-25-43-599d95ee-f20d-478c-9f84-41fcca921b54.png)
+![](/images/blog/2019/04/25/2019-04-25_08-25-43-599d95ee-f20d-478c-9f84-41fcca921b54.png)
 
 I did something like this in Asana but over there I had to create a new content calendar to see what would be posted and when.
 
 In Notion, you can set up some properties for each new post, which essentially is just a new page. This allows me to define a publish date for the post for when I expect this article to go live.
 
-![](./2019-04-25_08-28-37-4a42f7e2-b6de-4dd3-bfa1-ecbc46a972d5.png)
+![](/images/blog/2019/04/25/2019-04-25_08-28-37-4a42f7e2-b6de-4dd3-bfa1-ecbc46a972d5.png)
 
 So far nothing new but he is where the real power of Notion comes into play. You can create a different view of the same set of data. So now I can create a new calendar view for by blog posts and based on the published date I can get a calendar view of all my blog posts. This really helps me stay on track and let's me know what I have published and when.
 
-![](./2019-04-25_08-30-45-9f7af7e4-476e-4777-a79c-76197151e32a.png)
+![](/images/blog/2019/04/25/2019-04-25_08-30-45-9f7af7e4-476e-4777-a79c-76197151e32a.png)
 
 I also like using this view to see if I have been posting about a certain topic too frequently. I try and break my posts up so it's not focused on a single topic and this really helps out.
 
@@ -102,7 +102,7 @@ I really enjoy the writing process in Notion. Everything you do is just a block 
 
 Most of my blog posts are text, images and code. So I really appreciate that working with these content types are so easy. Here is a code block from a previous blog post. I enjoy the nice code formatting out of the box and the ability to determine what langauge that code is.
 
-![](./2019-04-25_08-36-25-5ba41d92-9cfd-460c-9bb8-cec0acff8574.png)
+![](/images/blog/2019/04/25/2019-04-25_08-36-25-5ba41d92-9cfd-460c-9bb8-cec0acff8574.png)
 
 The other really nice part of the writing process I enjoy is that because it's web-based I can do it from any computer or phone. Yes, I use my phone sometimes to write something I don't want to forget or adding a link to the article so I remember to reference it later.
 
@@ -118,7 +118,7 @@ While this sorta works it's not working as I would hope and this is something I 
 
 When my blog post is ready to go I just go to the upper right hand corner, click on the 3 little dots and export as Markdown. It can be confusing as there is also an option to Export All as Markdown. What that feature is for is in the situation where you have pages embedded inside of pages.
 
-![](./2019-04-25_08-56-24-1d34f10b-cdc5-428b-9f67-5340472771e5.png)
+![](/images/blog/2019/04/25/2019-04-25_08-56-24-1d34f10b-cdc5-428b-9f67-5340472771e5.png)
 
 What I really appreciate about the export is that I have all of my code and images in Markdown and I am ready to post. From there I will generate a new blog post using a custom generator [I wrote and blogged about here](https://www.danvega.dev/blog/2019/04/23/gridsome-blog-post-generator). Then I copy all of my images into my new post folder and all of the markdown into the new markdown file my generator created.
 
@@ -134,11 +134,11 @@ The other part of the export process is that when I create a table it doesn't ex
 
 Notion asked me on Twitter what would be the top 5 things on my wish list would be and here is how I responded.
 
-![](./2019-04-25_08-47-50-93f60af8-b691-41ce-ab49-e30761f57c9c.png)
+![](/images/blog/2019/04/25/2019-04-25_08-47-50-93f60af8-b691-41ce-ab49-e30761f57c9c.png)
 
 A few of those I have already talked about but I want to talk quickly about the last 2. I am a huge fan of mind maps as a teaching tool. I [created this map](https://coggle.it/diagram/WqgTTNMJtPiHph_q/t/java-development-in-2018) of what to learn as a Java Developer in 2018 and it was really well received.
 
-![](./2019-04-25_09-14-56-c49f496f-084f-46e1-b4dc-05484696df21.png)
+![](/images/blog/2019/04/25/2019-04-25_09-14-56-c49f496f-084f-46e1-b4dc-05484696df21.png)
 
 I would love the ability to create Mind Maps within Notion and then include them in my posts. I'm still not sure if that would mean Notion creating a whole new tool for Mind Mapping or just embedding something like Coggle.
 
@@ -154,7 +154,7 @@ I also create all of my blog post cover images using the dimensions of 1000w x 4
 
 Because you can add custom properties to each post I have even added a DEV publish date so I know when this will go live there.
 
-![](./2019-04-25_09-42-53-41efac07-a9a3-48c2-8ac4-4c1151d89b1a.png)
+![](/images/blog/2019/04/25/2019-04-25_09-42-53-41efac07-a9a3-48c2-8ac4-4c1151d89b1a.png)
 
 ## Conclusion
 

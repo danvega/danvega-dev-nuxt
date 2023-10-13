@@ -29,7 +29,7 @@ You should be familiar with Java, Spring Boot, and Spring Security. Optionally, 
 6. Add dependencies: `web` and `oauth2-client`. Spring Security will be added as a transitive dependency.
 7. Generate and download the project. This will provide a zip file.
 
-![Spring Initalizr](./start-spring-io.png)
+![Spring Initalizr](/images/blog/2023/04/28/start-spring-io.png)
 
 Unzip the project and open it in your favorite IDE or text editor. I'll use IntelliJ IDEA Ultimate.
 

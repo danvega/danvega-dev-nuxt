@@ -17,7 +17,7 @@ The biggest feature coming to Vue 3 is the Composition API. This offers an alter
 
 I have [given a couple](https://www.danvega.dev/blog/2020/01/09/codemash-2020/) presentations on Vue 3 recently and one question that keeps coming up is when do I use Ref vs Reactive to declare a reactive property. I never had a great answer for this so over the past couple of weeks I set out to answer this question and this article is the result of that research.
 
-![New Technology](./christopher-gower-m_HRfLhgABo-unsplash.jpg)
+![New Technology](/images/blog/2020/02/12/christopher-gower-m_HRfLhgABo-unsplash.jpg)
 
 I would also like to point out that this is my opinion and please do not take this as "the way" things should be. This is how I am going to use Ref & Reactive until someone tells me otherwise or until I discover a better approach. With any new technology, I think that it takes some time to figure out how we use it and from there a best practice might emerge.
 

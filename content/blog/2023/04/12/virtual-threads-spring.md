@@ -30,15 +30,15 @@ This application works great on your laptop and during the initial stages of imp
 
 Why is this happening? What can you do to address this?
 
-![embracing-virtual-threads.png](./embracing-virtual-threads.png)
+![embracing-virtual-threads.png](/images/blog/2023/04/12/embracing-virtual-threads.png)
 
 To answer these questions you must understand the thread-per-request model. When a request is handled by the web server it is using a Java Thread and that thread is tied to an operating system thread. When you make a call to a blocking operation like reading or persisting to a database that thread is blocked from doing anything else until the request is fulfilled.
 
 The thread-per-request model ties up threads in the system, and there is a maximum number of concurrent threads allowed. When the number of maximum threads has been reached, each subsequent request will need to wait for a thread to be released to fulfill that request. This can cause slowness or even errors in the application when it experiences high traffic.
 
-![thread-per-request.png](./thread-per-request.png)
+![thread-per-request.png](/images/blog/2023/04/12/thread-per-request.png)
 
-![java-is-made-of-threads.png](./java-is-made-of-threads.png)
+![java-is-made-of-threads.png](/images/blog/2023/04/12/java-is-made-of-threads.png)
 
 ## Scalability Solutions
 
@@ -47,13 +47,13 @@ To improve scalability, there are two main approaches that you can currently tak
 1. **Scaling Hardware**: Add more memory, CPU or servers (vertical and horizontal scaling)
 2. **Asynchronous Programming**: Writing non-blocking software to optimize thread usage
 
-![thread-per-request-solutions.png](./thread-per-request-solutions.png)
+![thread-per-request-solutions.png](/images/blog/2023/04/12/thread-per-request-solutions.png)
 
 ## Introduction to Virtual Threads
 
 Virtual threads, available as a preview release in JDK 19 and 20, are lightweight, inexpensive, and easy to create. They are tied to a platform thread that is connected to the operating system thread. Consequently, we no longer tie up platform threads in our applications and can handle more concurrent requests. The most exciting aspect of virtual threads is that we can use them in our Spring applications with little or no code changes.
 
-![virtual-threads.png](./virtual-threads.png)
+![virtual-threads.png](/images/blog/2023/04/12/virtual-threads.png)
 
 ## Demo: Using Virtual Threads in Spring Applications
 

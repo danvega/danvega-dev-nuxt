@@ -24,7 +24,7 @@ To get started, we'll need a new Java Maven project. Using [Spring Initializr](h
 - Java: 17
 - Dependencies: Web, Spring Data JPA, H2, and Spring Boot GraphQL
 
-![Spring Initalizr](./spring-init.png)Download the generated project and open it in your favorite IDE. We're going to create a simple application that simulates a library system with books and reviews.
+![Spring Initalizr](/images/blog/2023/03/20/spring-init.png)Download the generated project and open it in your favorite IDE. We're going to create a simple application that simulates a library system with books and reviews.
 
 ### Set Up Entities and Repositories
 
@@ -103,7 +103,7 @@ public CommandLineRunner initData(BookRepository bookRepository) {
 
 This is a great opportunity to tell you that you should pick up Josh Long's book, [Reactive Spring](https://amzn.to/3K9d7fw). It's a great read!
 
-![Reactive Spring](./reactive-spring-book.jpeg)
+![Reactive Spring](/images/blog/2023/03/20/reactive-spring-book.jpeg)
 
 At this point, you should be able to run your application, and you'll see that the book and review are saved to the database.
 

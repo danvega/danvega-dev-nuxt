@@ -21,7 +21,7 @@ On the client you would display a smaller number of records at a time and allow 
 
 To get started head over to [start.spring.io](http://start.spring.io) and create a new application with the following:
 
-![Spring Initializr](./spring-data-jpa-pagination.png)
+![Spring Initializr](/images/blog/2022/05/12/spring-data-jpa-pagination.png)
 
 To get started open up `application.properties` and set the following properties for your database:
 
@@ -144,7 +144,7 @@ public class SampleDataLoader implements CommandLineRunner {
 }
 ```
 
-![Loading Sample Data](./loading-sample-data.png)
+![Loading Sample Data](/images/blog/2022/05/12/loading-sample-data.png)
 
 Now that you know that the run method will execute right before the application starts this is a good place to add some data to our database. Create a new instance of `Person` and use the `CrudRepositories` save method to persist a new record to the database. If you visit the [H2 Console](http://localhost:8080/h2-console) you should your new person and address records.
 
@@ -202,7 +202,7 @@ public void run(String... args) throws Exception {
 
 If you run the application you should see 100 records in the `Person` and `Address` table. Not only do you have data but you have some pretty valid data that you can also do some filtering and sorting on.
 
-![100 Rows in the database](./100-people.png)
+![100 Rows in the database](/images/blog/2022/05/12/100-people.png)
 
 Now that you have some data in the database you can focus on pagination.
 

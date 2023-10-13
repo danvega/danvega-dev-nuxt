@@ -27,7 +27,7 @@ A couple of months ago I decided it was time to update my website. I normally ge
 
 I am not a designer but I like to wear this hat from time to time and pretend I am one. I have gravitated towards [Adobe XD](https://www.adobe.com/products/xd.html) and I have been using it for a lot of my projects lately. I find it's really easy to use and it allows me prototype my application quickly. Once I have something I like its really easy for me to grab the colors, fonts and assets and build out the design in HTML & CSS. Below are some artboards from a couple of months ago when I decided to start redesigning the site.
 
-![Adobe XD](./danvega_dev_adobexd.png)
+![Adobe XD](/images/blog/2020/05/16/danvega_dev_adobexd.png)
 
 #### Lesson Learned
 
@@ -72,7 +72,7 @@ The trick here was using an SVG and setting it to `display:block`. I am still pr
 
 ### Dark Mode
 
-![Dark Mode](./darkmode.png)
+![Dark Mode](/images/blog/2020/05/16/darkmode.png)
 
 I have always loved the idea of having a dark mode on my website. I don't know how much my readers were asking for it but this is my website and I wanted to add it 🤷‍♂️. I have used CSS Custom Properties (variables) before but maybe not at this scale. The way this works is by setting some custom properties on the `:root` which will be your default light theme. For each property you create you will create a dark theme property as well.
 
@@ -114,7 +114,7 @@ If you are going to implement something like dark mode do it right from the star
 
 I know that both myself and my audience use my website on a variety of form factors so making sure my design was responsive was important. As you can tell by XD designs I didn't have a mobile-first approach and that caused me some issues along the way. It's important to always be thinking about how a layout or design element will scale up or down. I am really thankful for tools like Flexbox and CSS Grid which are really helpful in creating responsive designs.
 
-![Responsive Design](./responsive-design.png)
+![Responsive Design](/images/blog/2020/05/16/responsive-design.png)
 
 #### Lessons Learned
 
@@ -131,7 +131,7 @@ I knew that once I finished my site I wanted to take a look at the [Lighthouse A
 
 Right now the site is doing well on some page but still needs some work on others. My advice here is let these audits guide you to improve your site but do not obsess over them.
 
-![Lighthouse Audits](./lighthouse-audits.png)
+![Lighthouse Audits](/images/blog/2020/05/16/lighthouse-audits.png)
 
 #### Lessons Learned
 

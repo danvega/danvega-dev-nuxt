@@ -14,7 +14,7 @@ cover: './network-throttling-cover.png'
 
 So you have this amazing loading animation, and you want to test it out but you have a problem. When you're working on your local machine there isn't much latency so you never see your animated art.
 
-![Fancy Animation](./bean-eater-200px_small.jpeg)
+![Fancy Animation](/images/blog/2021/01/08/bean-eater-200px_small.jpeg)
 
 While it's good that you want to test this out this is also an opportunity to test our application for visitors that might be on a slower connection. We have to remember that not everyone is lucky enough to have access to hi-speed internet like you and I do. There are many ways that you can test this out but we are going to cover the following in this tutorial.
 
@@ -32,7 +32,7 @@ As I mentioned in the intro it is important to test your applications on a slowe
 
 To do this open up DevTools and go to the Network tab. There is a dropdown on the first line that defaults to "Online". Change to what speed you want to imitate and reload the page to simulate that connection.
 
-![Chrome DevTools Network Throttling](./chrome-devtools-network-throttling.png)
+![Chrome DevTools Network Throttling](/images/blog/2021/01/08/chrome-devtools-network-throttling.png)
 
 This is a great first step but this will throttle the entire connection and I often don't have the patience for this during development.
 

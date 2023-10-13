@@ -21,7 +21,7 @@ First, create a new Java project using your favorite IDE or text editor. I'll be
 
 Create a new Maven project and choose the `quickstart` archetype, which gives us a basic shell of an application. We'll be using Java 11 and JUnit 5.8.2 for our project.
 
-![Maven QuickStart Archetype](./maven-quickstart.png)
+![Maven QuickStart Archetype](/images/blog/2022/11/09/maven-quickstart.png)
 
 To start, let's create a simple Java class that will hold our Lambda function. Name the class `HelloLambda`, and create a method called `handleRequest` that returns a `String`.
 
@@ -101,7 +101,7 @@ This will create a JAR file in the `target` directory of our project.
 
 Log into the [AWS Management Console](https://console.aws.amazon.com/), navigate to the Lambda service, and create a new function using the "Author from scratch" option. Give your function a name, choose the Java 11 (Corretto) runtime, and specify the Lambda handler using the format `package.class::method`.
 
-![Create new Function](./create-function.png)
+![Create new Function](/images/blog/2022/11/09/create-function.png)
 
 Upload your JAR file built earlier by choosing "Upload a file from Amazon S3" or "Upload a .zip file", and configure the remaining settings according to your needs.
 

@@ -23,11 +23,11 @@ After finishing the AI Blog, I wanted to deploy it on Netlify to see if there we
 
 When I first deployed the [site](https://ai-notion-blog.netlify.app/) everything looked as I expected it to:
 
-![API Blog](./api-blog-home.png)
+![API Blog](/images/blog/2023/03/12/api-blog-home.png)
 
 When I returned to the blog the following day, I noticed that all of the images were missing. This was puzzling, so I decided to investigate further. Using the Chrome Dev Tools, I quickly discovered that I was receiving a 403 Forbidden error on each of the images. What was particularly strange was that some of the blog posts had images that were displaying properly.
 
-![Images Missing](./images-missing.png)
+![Images Missing](/images/blog/2023/03/12/images-missing.png)
 
 I decided to redeploy the website and sure enough, everything was working again. I came back a couple of hours later and the images were missing again.
 
@@ -35,7 +35,7 @@ I decided to redeploy the website and sure enough, everything was working again.
 
 I decided to investigate the cause of this issue. It turns out that the cover images are a property of the page in Notion. If you take a look at the screenshot below, you can see that the page has various properties such as status, date created, and Image. The "Image" property is a file type, which I use to select the thumbnail image for this post.
 
-![Notion Page Properties](./notion-page-properties.png)
+![Notion Page Properties](/images/blog/2023/03/12/notion-page-properties.png)
 
 When you retrieve the details for a page and request a specific property, you will receive some data that looks like this. Is there anything that stands out to you?
 

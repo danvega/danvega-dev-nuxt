@@ -19,7 +19,7 @@ Going into this talk I had higher hopes of showing off more features than I actu
 
 After taking a look at all the new features in Vue 3 it became clear to me that there were a couple of goals with this release. First, they wanted to make the framework **Smaller** and **Faster** (which they accomplished) and a lot of what I covered aligned with those goals. Second, they wanted to make the framework scalable and for me that is where the Composition API shines and makes Vue **Stronger**.
 
-![Slide Deck Cover](./presentation-cover.png)
+![Slide Deck Cover](/images/blog/2020/01/09/presentation-cover.png)
 
 This is how I ended up coming up with the title "Vue 3: Smaller, Faster and Stronger" for my presentation. These are a list of features I ended up talking about that really fit into those buckets.
 

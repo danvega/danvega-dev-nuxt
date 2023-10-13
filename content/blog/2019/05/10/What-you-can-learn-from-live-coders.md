@@ -16,7 +16,7 @@ I remember the first Nintendo I got for Christmas and I thought it was the coole
 
 |                                                                                  |                                                         |
 | -------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| ![](./ea16e9bb12986a0b89f8bd5eefeb2d0f-14c63fb2-1532-44e2-a377-551c0ddc5222.jpg) | ![](./SMguide-ae13d10d-69b3-412a-951c-b6487d447a59.jpg) |
+| ![](/images/blog/2019/05/10/ea16e9bb12986a0b89f8bd5eefeb2d0f-14c63fb2-1532-44e2-a377-551c0ddc5222.jpg) | ![](/images/blog/2019/05/10/SMguide-ae13d10d-69b3-412a-951c-b6487d447a59.jpg) |
 
 ## Live Streaming Gamers
 

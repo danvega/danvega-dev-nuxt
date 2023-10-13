@@ -22,7 +22,7 @@ I owe a lot of this to my boss, co-founder of Tech Elevator, David Wintrich. Not
 
 I haven't been in the office since the first week of March and it's starting to hit me that I won't be going back. I love the energy that the students and my coworkers brought to that space every single day. I'm going to miss the morning coffee chats with so many wonderful people. There are so many great people at Tech Elevator and I hope that I left a good impression on them and that we all stay in touch. 💔
 
-![Tech Elevator Cleveland](./techelevator.jpg)
+![Tech Elevator Cleveland](/images/blog/2021/01/07/techelevator.jpg)
 
 ## Hello, Briebug Software
 
@@ -39,7 +39,7 @@ As much as I love solving problems through code it isn't what drives me. I reall
 
 If that wasn't exciting enough, we are hiring! We are looking to fill many roles so if you're interested in working with me please check out our [careers page](https://briebug.com/careers).
 
-![Code Editor](./christopher-gower-m_HRfLhgABo-unsplash.jpg)
+![Code Editor](/images/blog/2021/01/07/christopher-gower-m_HRfLhgABo-unsplash.jpg)
 
 What this means for you is that you can expect a lot more content on this blog and on my [YouTube](https://www.danvega.dev/youtube) channel around the projects I will be working on day to day. If you have specific items you would like to see me cover please leave a comment below 👇🏻 or reach out to me on [Twitter](https://www.danvega.dev/twitter).
 
@@ -47,7 +47,7 @@ What this means for you is that you can expect a lot more content on this blog a
 
 I don't know about you but I keep a long list of subjects that I am interested in learning. This could be something brand new or brushing up on an existing skill. This list is always changing and given my new role I am going to focus a lot on Enterprise Architecture, Cloud and leadership skills.
 
-![Bookshelf](./pickawood-YbLitAY8bPA-unsplash.jpg)
+![Bookshelf](/images/blog/2021/01/07/pickawood-YbLitAY8bPA-unsplash.jpg)
 
 ### Software Architecture
 
@@ -88,7 +88,7 @@ When the new year starts I usually like to set some goals. I have talked about t
 
 The pandemic has been a real challenge with two young daughters at home. I'm also starting a new job that is going to require my full focus. This doesn't leave a lot of time to work towards some of these goals. With that said there are things I want to do or at the very least work towards this year. That is why I am not going to put any specific time measurement on my goals and they very well could go into next year.
 
-![Goals](./danielle-macinnes-IuLgi9PWETU-unsplash.jpg)
+![Goals](/images/blog/2021/01/07/danielle-macinnes-IuLgi9PWETU-unsplash.jpg)
 
 ### Java Champion
 

@@ -20,7 +20,7 @@ This article discusses the new features of Spring Security 6. If you haven't hea
 - Make sure you're using Java 17, as the baseline for Spring Boot 3 and Spring Security 6 is Java 17.
 - Head over to [start.spring.io](https://start.spring.io/) to create a new Spring Boot 3 project with the Spring Security dependency.
 
-![Spring Initalizr](./spring-init.png)
+![Spring Initalizr](/images/blog/2022/12/01/spring-init.png)
 
 ## WebSecurityConfigurerAdapter Removed
 

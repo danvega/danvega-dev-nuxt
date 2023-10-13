@@ -28,7 +28,7 @@ To create a new project, go to [start.spring.io](http://start.spring.io/), selec
 
 Once you have entered the details, you can download the project as a zip file and unzip it. Then, you can import the project into your preferred Integrated Development Environment (IDE) and begin development.
 
-![Spring Initializr](./start-spring-io.png)
+![Spring Initializr](/images/blog/2023/01/27/start-spring-io.png)
 
 ### Spring Data JPA Entity
 
@@ -105,7 +105,7 @@ Product{id=2236597b-1366-4cad-9a05-77ebb283acd3, title='Product 2'}
 Product{id=c9f0596a-cfbc-48a7-8202-1ddd058120c0, title='Product 3'}
 ```
 
-![Running the Application](./run_app.png)
+![Running the Application](/images/blog/2023/01/27/run_app.png)
 
 ## Conclusion
 

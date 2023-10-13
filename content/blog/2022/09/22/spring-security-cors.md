@@ -23,7 +23,7 @@ The tutorial assumes you have [Java](https://www.java.com/en/download/) and [Mav
 
 Start by creating a new Maven project at [start.spring.io](https://start.spring.io/), choosing Java as the language, Java 17 as the version, and fill in the `Group` as "dev.danvega" and `Artifact` as "cors-demo". The only dependency we would need for now is Spring Web.
 
-![Spring Initializr](./cors-spring-init.png)
+![Spring Initializr](/images/blog/2022/09/22/cors-spring-init.png)
 
 Once done with the setup, generate the project and open the downloaded .zip file in your preferred text editor or IDE.
 

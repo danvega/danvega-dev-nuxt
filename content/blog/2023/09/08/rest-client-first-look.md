@@ -36,7 +36,7 @@ Let's create a small CRUD service application that uses the Rest client to make 
 
 Start off by selecting a project type like Maven and choosing Java as your language. I'm using Spring's Boot 3.2.0, Milestone 2. If you're tuning in from the future, please go ahead with the most current milestone release of 3.2, or perhaps 3.2+ if it's publicly available.
 
-![Spring Initializr](./start-spring-io.png)
+![Spring Initializr](/images/blog/2023/09/08/start-spring-io.png)
 
 Once you've entered your group and project names, choose Spring Web for your dependencies. Our application will be auto-configured, and we'll have access to the Rest client in all of our classes. Let's generate our application. Upon doing this, a zip file will be downloaded. Open it up in your IDE or text editor of choice - I'll be using IntelliJ Ultimate Edition.
 

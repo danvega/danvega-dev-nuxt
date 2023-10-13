@@ -30,7 +30,7 @@ I spent a lot of this year learning as much as I could and teaching what I learn
 - [Code On The Beach](https://www.codeonthebeach.com/)
 - [SpringOne Tour NewYork](https://tanzu.vmware.com/developer/springone-tour/2022/new-york/)
 
-![dan-nyc-talk.jpeg](./dan-nyc-talk.jpeg)
+![dan-nyc-talk.jpeg](/images/blog/2022/12/29/dan-nyc-talk.jpeg)
 
 ## YouTube
 
@@ -38,7 +38,7 @@ I ended up crossing a huge milestone towards the end of the year and passing 20,
 
 I think what I am most excited about is that I have barely scratched the surface of what I could do with this channel. I know I have a lot of room to grow and I have big plans for my channel in the new year. Here is a video I published when I hit 20k thanking my subscribers and looking back at some of my older videos.
 
-`youtube:https://youtu.be/hsMKOirkLZU`
+:YouTube{id=hsMKOirkLZU}
 
 I ended up posting 71 videos this year which exceeded my lofty goal of 1x per week for a total of 52 videos. I also ended up live streaming 24 times which was the exact number I set as a goal at the beginning of the year. I'm proud of the content I published on my channel and across YouTube and here are a few of my most popular videos:
 

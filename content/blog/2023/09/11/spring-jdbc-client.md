@@ -39,7 +39,7 @@ One exciting feature with the JDBC client is that it's auto-configured for us in
 
 Let's get to the fun part - the coding! Being a massive fan of the new JDBC client, I trust that you will love it too!
 
-![Post Controller](./post-controller.png)
+![Post Controller](/images/blog/2023/09/11/post-controller.png)
 
 ### Step 1: Creating a New Application
 

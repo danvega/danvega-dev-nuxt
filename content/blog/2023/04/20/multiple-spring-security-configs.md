@@ -31,7 +31,7 @@ Next, add the following dependencies:
 - Spring Data JDBC
 - H2 Database
 
-![Spring Initializr](./start-spring-io.png)Generate the project and open it up in your favorite IDE.
+![Spring Initializr](/images/blog/2023/04/20/start-spring-io.png)Generate the project and open it up in your favorite IDE.
 
 ## Setting up the Application
 

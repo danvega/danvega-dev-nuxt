@@ -23,7 +23,7 @@ Let's build a new project, pull in the dependency, discuss what this new depende
 
 First, let's create a new Maven project in IntelliJ using the `maven-archetype-quickstart` archetype. Once the project is created, update the `pom.xml` file to include the _AWS Lambda Core_ and _JUnit Jupiter_ dependencies:
 
-![Spring Initalizr](./start-spring-io.png)
+![Spring Initalizr](/images/blog/2022/11/10/start-spring-io.png)
 
 ```xml
 <dependencies>

@@ -27,11 +27,11 @@ In this blog post, we will explore the concept of HTTP interface clients in the 
 
 Before we dive into the implementation details, we need to set up the project structure. The project will be a Maven multi-module project consisting of two modules: the Article Service and the Content Service. We will create an empty Maven project and add the necessary submodules to it. Let's start by setting up the project in IntelliJ IDEA, although you can use any IDE or text editor of your choice.
 
-![Creating an empty Maven project](./empty-project.png)
+![Creating an empty Maven project](/images/blog/2023/06/14/empty-project.png)
 
 Once you have created an empty Maven project, go ahead and create the Article Service and the Content Service as submodules. You can choose the appropriate settings, such as Java version and group ID, according to your preferences. Once the project is set up, you can move on to creating the REST API in the Article Service.
 
-![Maven multi module project](./multi-module-project.png)
+![Maven multi module project](/images/blog/2023/06/14/multi-module-project.png)
 
 ## Creating the REST API in the Article Service
 
@@ -142,7 +142,7 @@ That's it! You have created the Article Client in the Content Service. The Artic
 
 ## Testing the Implemented API
 
-![IntelliJ HTTP Client](./intellij-http-client.png)
+![IntelliJ HTTP Client](/images/blog/2023/06/14/intellij-http-client.png)
 
 Now that we have implemented the REST API in the Article Service and created the Article Client in the Content Service, we can test the API endpoints to ensure they work as expected. To test the API, follow these steps:
 

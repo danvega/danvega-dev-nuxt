@@ -37,7 +37,7 @@ Here's what to do:
 4. Add the `Web` dependency and click `Generate`
 5. Download and unzip the generated project
 
-![Spring Initializr](./start-spring-io.png)
+![Spring Initializr](/images/blog/2020/06/04/start-spring-io.png)
 
 Once that's done, open the project in your favorite IDE, and you're ready for the next step.
 

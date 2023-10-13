@@ -35,7 +35,7 @@ I had a great year on YouTube last year and it gave me a glimpse of what could b
 
 The first item I want to focus on is just being consistent and coming up with a good plan. I think consistency is a big part of why successful YouTubers are successful. I also have so many different types of videos that I work on from shorts to live streams to full-length tutorials. I think coming up with a consistent schedule of when I post what type of content is going to help me. If I can just post 1 of each per week that would be 144 uploads for the year and I think that would be a great goal.
 
-![christian-wiediger-NmGzVG5Wsg8-unsplash.jpg](./christian-wiediger-NmGzVG5Wsg8-unsplash.jpg)
+![christian-wiediger-NmGzVG5Wsg8-unsplash.jpg](/images/blog/2023/01/01/christian-wiediger-NmGzVG5Wsg8-unsplash.jpg)
 
 While I am on that subject a focus of mine last year was repurposing content and I need to get better at that on YouTube. If I prepare content to work on during a live stream I should use that across multiple shorts as well as full-length tutorials. It takes time to prepare content and If I am creating new content for each type of video I am not going to be very productive.
 
@@ -45,7 +45,7 @@ I know my way around video editing software but I wouldn’t call myself much of
 
 Last year DaShaun and I started a new show on Tanzu TV called [Spring Office Hours](https://tanzu.vmware.com/developer/tv/spring-office-hours/). This was our chance to talk about what was new in the Spring community, show off any cool things we were working on and answer questions from the community.
 
-![spring-office-hours.png](./spring-office-hours.png)
+![spring-office-hours.png](/images/blog/2023/01/01/spring-office-hours.png)
 
 We did some shows without really telling anyone before we officially launched the show in May. During the summer we were traveling a lot for the SpringOne Tour and ended up not being as consistent as we would have liked. Towards the end of the year, we found a new home on Tuesdays at 3:30 EDT to hopefully include our friends all over and I think that really worked out well.
 
@@ -57,7 +57,7 @@ Finally, we do have a big idea for this show that we are working on but I don’
 
 My personal website is one of the things that I am most proud of. It has certainly evolved over the years but its purpose never has. This is a place where you can learn more about me as well as get access to all of the content that I produce.
 
-![danega_dev_homepage.png](./danega_dev_homepage.png)
+![danega_dev_homepage.png](/images/blog/2023/01/01/danega_dev_homepage.png)
 
 ### Moving to Nuxt 3
 
@@ -111,7 +111,7 @@ I don’t have a crystal ball and can’t see into the future but what I would s
 
 I spent some time over the break playing around with Midjourney and like ChatGPT the trick is understanding what to ask the service for. I was looking to create a new image for a landing page related to Spring Boot. After playing around with different prompts I came up with the following image which I really love.
 
-![Spring Boot AI](./spring_boot_ai.png)
+![Spring Boot AI](/images/blog/2023/01/01/spring_boot_ai.png)
 
 Going back to my writing blog posts about my YouTube videos. There has to be a solution here somewhere, just need to figure it out 😉
 

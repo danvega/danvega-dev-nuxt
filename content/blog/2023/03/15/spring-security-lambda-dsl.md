@@ -26,7 +26,7 @@ To get started, we'll create a new Spring Boot project at [start.spring.io](http
 - Artifact: hello-security
 - Dependencies: Web & Security
 
-![Spring Initalizr](./spring-init.png)
+![Spring Initalizr](/images/blog/2023/03/15/spring-init.png)
 
 Once our project is generated, we'll download the ZIP file and open it in IntelliJ IDEA or whatever IDE you’re most productive in.
 
@@ -146,7 +146,7 @@ public interface Customizer<T> {
 
 To test our configurations, we can run the application and use the default user and generated password provided by Spring Security. When accessing the root ("/") endpoint, we should receive a 200 OK response with the "Hello, Spring Security" message. If we try to access the "/api/posts" endpoint without providing valid credentials, we'll get a 401 Unauthorized response.
 
-![Testing the Configuration](./test-config.png)
+![Testing the Configuration](/images/blog/2023/03/15/test-config.png)
 
 Both of these configurations achieve the same result; ultimately, it's a matter of personal preference which one you choose to use. However, keep in mind that the Lambda DSL approach is generally more concise and easier to read, especially for more complex configurations.
 

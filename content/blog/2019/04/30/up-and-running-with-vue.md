@@ -170,7 +170,7 @@ Give yourself a big pat on the back because just created your first Vue applicat
 
 This doesn't look like much but Vue is actually doing a lot under the hood for you. The data and the DOM are now linked, and everything is now reactive. How do we know? Open your browser’s JavaScript console (right now, on this page) and set app.message to a different value. You should see the rendered example above update accordingly.
 
-![](./2019-04-30_12-12-13-88a57b30-f402-4444-befb-262701bb347c.png)
+![](/images/blog/2019/04/30/2019-04-30_12-12-13-88a57b30-f402-4444-befb-262701bb347c.png)
 
 Vue also gives you the ability to "hook" into the lifecycle of a component. This means that you can listen for events like `created`, `mounted`, `destroyed` and more. I don't want to get too much further into this because this article is meant to show you different ways to create a Vue application, not everything else. I do want to finish our application though.
 
@@ -216,7 +216,7 @@ The first thing you need to do is install the Vue CLI. A requirement for this is
 
 To `create` a new application you can use the command `vue create`. If you're not sure what commands are available you can run vue -h
 
-![](./2019-04-30_14-12-28-8dc58daf-3581-4eb4-a81c-bce59eb86341.png)
+![](/images/blog/2019/04/30/2019-04-30_14-12-28-8dc58daf-3581-4eb4-a81c-bce59eb86341.png)
 
 The create command takes an app name so let's create a new vue application by running the following command:
 
@@ -226,7 +226,7 @@ vue create hello-vue
 
 This will create a new folder for you in the current directory called `hello-vue`. I will go through this in more detail in a later post but for now, just accept the defaults and a new application will be created for you.
 
-![](./2019-04-30_14-18-14-001b241f-0bda-4f21-b382-cc597bd97095.png)
+![](/images/blog/2019/04/30/2019-04-30_14-18-14-001b241f-0bda-4f21-b382-cc597bd97095.png)
 
 Open up `src/components/HelloWorld.vue` and replace everything in there with the following.
 
@@ -271,7 +271,7 @@ npm run serve
 
 When your application starts the command line should tell you where it's running but by default, it should be at [http://localhost:8080/](http://localhost:8080/)
 
-![](./2019-04-30_14-23-52-74842c90-97ed-4a17-8d54-7a0b3a201d95.png)
+![](/images/blog/2019/04/30/2019-04-30_14-23-52-74842c90-97ed-4a17-8d54-7a0b3a201d95.png)
 
 That was just a quick walkthrough of using the CLI but I hope you saw just how easy it was to create a new application that has a strong infrastructure and is ready to scale with you as your needs grow.
 
@@ -285,15 +285,15 @@ vue ui
 
 This will open a new application at [http://localhost:8000/dashboard](http://localhost:8000/dashboard) that looks like this
 
-![](./2019-04-30_14-29-06-774dbcf1-d680-4083-94e7-049799559548.png)
+![](/images/blog/2019/04/30/2019-04-30_14-29-06-774dbcf1-d680-4083-94e7-049799559548.png)
 
 You can create a new project using the Vue UI and it will give you the same options the command line gives you.
 
-![](./2019-04-30_14-31-34-fe1e08dd-9393-47ac-b0e7-589e1b3771f5.png)
+![](/images/blog/2019/04/30/2019-04-30_14-31-34-fe1e08dd-9393-47ac-b0e7-589e1b3771f5.png)
 
 And when your project is done you can run it right from the UI using the Project Tasks.
 
-![](./2019-04-30_14-34-11-eb6a9994-3a24-4f23-b6c2-e7280a48c788.png)
+![](/images/blog/2019/04/30/2019-04-30_14-34-11-eb6a9994-3a24-4f23-b6c2-e7280a48c788.png)
 
 ## CodeSandbox
 
@@ -301,11 +301,11 @@ While those are all great options to get up and running with Vue they also requi
 
 The first thing you need to do is to sign up for a CodeSandbox account by sign in using your Github account. Once you're signed in click on create a sandbox and from there you can select from a large variety of templates. You can select Vue from the popular or client templates tab.
 
-![](./2019-04-27_10-52-25-6a3c9422-66c2-4de4-be7a-a8a7551f2317.png)
+![](/images/blog/2019/04/30/2019-04-27_10-52-25-6a3c9422-66c2-4de4-be7a-a8a7551f2317.png)
 
 In just seconds you have a new Vue application up and running! In the left pane, you have all of your project files, your editor in the middle and a browser preview of the application running.
 
-![](./2019-04-27_10-54-12-15e1c74a-803a-4d5b-ac61-b22b9422405d.png)
+![](/images/blog/2019/04/30/2019-04-27_10-54-12-15e1c74a-803a-4d5b-ac61-b22b9422405d.png)
 
 Open up `src/components/HelloWorld.vue` and replace everything in there with the following.
 
@@ -346,7 +346,7 @@ And you should see the same application you have been working with. The nice thi
 
 [https://codesandbox.io/s/62o36qkmrr?fontsize=14](https://codesandbox.io/s/62o36qkmrr?fontsize=14)
 
-![](./2019-04-30_14-40-58-1d15756a-fa86-4d24-b8e2-bc57c97a6630.png)
+![](/images/blog/2019/04/30/2019-04-30_14-40-58-1d15756a-fa86-4d24-b8e2-bc57c97a6630.png)
 
 ## Resources
 

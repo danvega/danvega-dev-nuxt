@@ -32,7 +32,7 @@ Below is an example from one of the scenarios I built for getting started with M
 editor and a terminal to run commands. This layout is customizable based on what you are teaching but this made sense
 for this particular scenario.
 
-![Tutorial / Editor / Terminal](./tutorial_editor_terminal.png)
+![Tutorial / Editor / Terminal](/images/blog/2020/07/30/tutorial_editor_terminal.png)
 
 If you want to learn more about Interactive Learning or browse there hundreds of scenarios head over to https://learning.oreilly.com/interactive.
 You will need an O'Reilly account to access these but as someone who had an account before working on these I can tell

@@ -24,7 +24,7 @@ Secondly, in the last video, we took a gander at the Postgres database service. 
 
 So without further ado, let's head over to [start.spring.io](http://start.spring.io/) and get started.
 
-![Spring Initializr](./spring-init.png)
+![Spring Initializr](/images/blog/2023/07/17/spring-init.png)
 
 ## Getting Started with Spring IO
 
@@ -123,7 +123,7 @@ docker exec -it my_postgres_container psql -U my_user -d my_database
 
 The command above will help you connect to a running PostgreSQL container from your terminal, where you can explore the data. Run `dt` to list tables, `\c` to connect to a database or `select` statements to fetch data.
 
-![PSQL](./psql.png)
+![PSQL](/images/blog/2023/07/17/psql.png)
 
 A better way to view and manage your Postgres data is through a tool like pgAdmin.
 
@@ -172,7 +172,7 @@ However, there's a minor flaw. Every time the application is restarted, you'll h
 
 Now each time you restart the application you will be automatically logged into pgAdmin.
 
-![pgAdmin](./pgadmin.png)
+![pgAdmin](/images/blog/2023/07/17/pgadmin.png)
 
 ## Conclusion
 

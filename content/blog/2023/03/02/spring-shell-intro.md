@@ -26,7 +26,7 @@ Today, we're going to talk about building command line applications using [Sprin
    - Spring WebFlux (Reactive Web)
 5. Generate and download the .zip file, then open it up in your favorite IDE.
 
-![Spring Initializr](./start-spring-init.png)
+![Spring Initializr](/images/blog/2023/03/02/start-spring-init.png)
 
 ## Creating a Hello Command
 

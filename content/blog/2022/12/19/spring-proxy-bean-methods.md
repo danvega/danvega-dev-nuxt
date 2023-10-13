@@ -16,7 +16,7 @@ In this blog post, we will explore the configuration classes in Spring and expla
 
 ## Create a new project using the Spring Initializr
 
-![Spring Initializr](./spring-init.png)
+![Spring Initializr](/images/blog/2022/12/19/spring-init.png)
 
 Let's start by creating a new project at [start.spring.io](http://start.spring.io/). I have bookmarked this site, and I recommend you do the same. I am currently creating a Runners application for an upcoming Spring Workshop, and we'll use this to start the tutorial.
 
@@ -82,7 +82,7 @@ public class MyAppConfig {
 
 When we run our application, we have no errors, and everything works fine. However, Spring creates a proxy class using the CGlib code generation library. The reason behind this is Spring doesn't want to call the method that returns a new RestTemplate every time a bean is created. It only wants one instance of RestTemplate. When we create a new service class, it retrieves the already-created instance of RestTemplate using the proxy class.
 
-![Proxy](./proxy.png)
+![Proxy](/images/blog/2022/12/19/proxy.png)
 
 ## Fixing the Problem
 

@@ -21,7 +21,7 @@ I decided to sit down and put together an outline for a course that would help a
 
 Next, I wanted to ensure that the course was the appropriate length, being long enough to cover the material, but still something they can complete over a weekend. As a Udemy course instructor, I have access to statistics on students who start long courses versus those who finish them, and the numbers are rather alarming.
 
-![Where do I start learning Spring?](./photo-1501504905252-473c47e087f8.jpeg)
+![Where do I start learning Spring?](/images/blog/2023/03/09/photo-1501504905252-473c47e087f8.jpeg)
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ If you want to follow the course that I have created, you will need a basic unde
 
 For the latest version of Spring, we have set Java 17 as the baseline. Therefore, before proceeding, make sure that you have Java 17 installed on your system. You will need an IDE or text editor that supports Java development. I am a big fan of [IntelliJ IDEA](https://www.jetbrains.com/idea/) Ultimate which is what I use in this course but feel free to use whatever IDE or text editor you’re most productive in.
 
-![Prerequisites](./prerequisites.png)
+![Prerequisites](/images/blog/2023/03/09/prerequisites.png)
 
 Once you feel comfortable that you are the ideal student for this course and have everything installed we can start by covering the basics.
 
@@ -49,7 +49,7 @@ You can use Spring to break down monolithic architectures into smaller, independ
 
 Spring can be used to build serverless workloads that provide ultimate flexibility by scaling on demand, as well as scaling to zero when there is no demand. You can use [Spring Batch](https://spring.io/projects/spring-batch) to build automated tasks for processing large sets of data. Finally, one of my new favorite ways to use Spring is to build command-line applications with [Spring Shell](https://spring.io/projects/spring-shell).
 
-![Spring Framework](./spring-framework.png)
+![Spring Framework](/images/blog/2023/03/09/spring-framework.png)
 
 As you can see, Spring can be used to provide solutions for a variety of application needs. That's why when people ask me how to get started with Spring, I usually ask them what they want to use it for. By understanding the type of applications they're trying to build, they can narrow down their learning path to something much more manageable.
 
@@ -63,7 +63,7 @@ Spring Boot provides a lot of features out of the box for building Spring applic
 - AutoConfiguration
 - Production Ready
 
-![Spring Boot](./spring-boot.png)
+![Spring Boot](/images/blog/2023/03/09/spring-boot.png)
 
 **Spring Boot Starters**
 
@@ -96,7 +96,7 @@ Auto-configuration is a feature of Spring Boot that allows developers to configu
 
 **Production Ready Features**
 
-![Production Ready Features](./photo-1580106815433-a5b1d1d53d85.jpeg)
+![Production Ready Features](/images/blog/2023/03/09/photo-1580106815433-a5b1d1d53d85.jpeg)
 
 Enabling developers to build the next generation of applications is not enough if you cannot get them into production. Spring provides a range of features that can assist you in building your applications for any environment and comprehending how they are performing in that environment.
 
@@ -122,19 +122,19 @@ When a client calls the REST API, it initially talks to an in-memory collection 
 
 Ultimately, it is important to get our applications into production. Therefore, I will guide you through deploying your application and database into production using a free hosting service.
 
-![What are we building?](./what-are-we-building.png)
+![What are we building?](/images/blog/2023/03/09/what-are-we-building.png)
 
 ### What are we going to learn?
 
 To start, you will build a new application from scratch using [start.spring.io](http://start.spring.io/). Along the way, you will learn many core concepts in Spring, such as Bean and Dependency Injection. You will also learn how to build a REST API using Spring MVC, connect and configure a database in Spring, and use Spring Data Repositories to remove boilerplate code and focus on application requirements. Finally, you will prepare your application for production, build and deploy it.
 
-![What are we going to learn?](./what-are-we-learning.png)
+![What are we going to learn?](/images/blog/2023/03/09/what-are-we-learning.png)
 
 ### Spring Boot Crash Course Video
 
 If you didn't receive the link to the video at the beginning of the article, you can find the course here. The video is almost 4 hours long, but there are chapters listed in the YouTube description if you need to jump around. I hope you enjoy it and would love to hear your feedback.
 
-`youtube:https://youtu.be/UgX5lgv4uVM`
+:YouTube{id=UgX5lgv4uVM}
 
 ### Github Repository
 

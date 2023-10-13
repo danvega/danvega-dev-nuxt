@@ -35,7 +35,7 @@ Start by creating a new project at `start.spring.io`. Choose Java as the languag
 - Spring Session
 - Spring Data Redis
 
-![Spring Initalizr](./start-spring-io.png)
+![Spring Initalizr](/images/blog/2023/05/03/start-spring-io.png)
 
 Before diving into how Spring Session can help with managing user session information, let's comment out the Spring Session and Spring Data references and build a basic application without them.
 

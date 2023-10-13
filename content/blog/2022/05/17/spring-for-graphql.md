@@ -32,7 +32,7 @@ When you move to a mobile application you do have to think about things like scr
 
 This is where GraphQL really stands out and provides a solution to a real problem. GraphQL has a single endpoint and lets each individual client request exactly what data they need. Gone are the days of standup up new endpoints each time a new requirement is raised.
 
-![wes-hicks-4-EeTnaC1S4-unsplash.jpg](./wes-hicks-4-EeTnaC1S4-unsplash.jpg)
+![wes-hicks-4-EeTnaC1S4-unsplash.jpg](/images/blog/2022/05/17/wes-hicks-4-EeTnaC1S4-unsplash.jpg)
 
 ## What is GraphQL
 
@@ -46,7 +46,7 @@ GraphQL was created back in 2012 by Facebook. They were facing a lot of the same
 
 GraphQL was open sourced back in 2015 and is now governed by a [neutral foundation](https://graphql.org/foundation/) made up of some really great companies. You will find implementations of the [GraphQL Spec](https://spec.graphql.org/) in almost every language. This means that after you learn it on the Java side you should be able to move over to JavaScript and hit the ground running.
 
-![alina-grubnyak-ZiQkhI7417A-unsplash.jpg](./alina-grubnyak-ZiQkhI7417A-unsplash.jpg)
+![alina-grubnyak-ZiQkhI7417A-unsplash.jpg](/images/blog/2022/05/17/alina-grubnyak-ZiQkhI7417A-unsplash.jpg)
 
 ### GraphQL Client + Server 🤝
 
@@ -120,7 +120,7 @@ If you need to define a custom type like a date you can do so but this needs to 
 
 After you have setup your object types you will need a way to read and write data from your API. There are 3 root operation types:
 
-![root-operation-types.png](./root-operation-types.png)
+![root-operation-types.png](/images/blog/2022/05/17/root-operation-types.png)
 
 - **Query**: Used to read data
 - **Mutation**: Used to create, update and delete data
@@ -173,7 +173,7 @@ GraphQL for Java has been tried and tested by some of the biggest companies in t
 
 So GraphQL for Java is the execution engine, why do we need Spring for GraphQL? GraphQL Java Engine itself is only concerned with executing queries. It doesn't deal with any HTTP or JSON related topics. The first thing Spring does is provide server transports in the form of:
 
-![graphql-server-transports.png](./graphql-server-transports.png)
+![graphql-server-transports.png](/images/blog/2022/05/17/graphql-server-transports.png)
 
 - Http (Spring MVC or Spring Webflux)
 - WebSocket
@@ -205,7 +205,7 @@ To build your first GraphQL API head over to [start.spring.io](http://start.spri
 - Spring Web
 - Spring GraphQL
 
-![graphql-spring-init.png](./graphql-spring-init.png)
+![graphql-spring-init.png](/images/blog/2022/05/17/graphql-spring-init.png)
 
 ### The Data Layer
 
@@ -444,7 +444,7 @@ spring.graphql.graphiql.enabled=true
 
 With that in place you can run your application and visit [http://localhost:8080/graphiql](http://localhost:8080/graphiql). The left pane is for writing queries and the right pane will display your results. The first thing you will notice is that you get some help context on how to start writing queries.
 
-![graphiql.png](./graphiql.png)
+![graphiql.png](/images/blog/2022/05/17/graphiql.png)
 
 One of the features I really love about GraphQL is that it’s self documenting. If you look on the far right pane you will see a documentation explorer. The root types (Query, Mutation & Subscription) are listed if you click on the right side `Query` you will be given a list of queries defined on the schema. Right now you only have one and it returns a collection of books. If you click on Book you can see what fields are available along with their types.
 
@@ -476,7 +476,7 @@ query {
 }
 ```
 
-![books-execute-query.png](./books-execute-query.png)
+![books-execute-query.png](/images/blog/2022/05/17/books-execute-query.png)
 
 Now that you can fetch all of the records in a collection how about finding a single record. In your schema you will need to define a new query with the name `findOne` but this time it will take an argument. This argument is named id, has a type of ID and will return a single Book.
 

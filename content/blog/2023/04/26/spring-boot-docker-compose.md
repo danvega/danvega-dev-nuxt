@@ -28,7 +28,7 @@ First, let's set up a basic Spring Boot 3.1 project using [Spring Initializr](ht
 - Java 17
 - Dependencies: Web, Spring Data JPA, PostgreSQL Driver
 
-![Spring Initializr](./start-spring-io.png)
+![Spring Initializr](/images/blog/2023/04/26/start-spring-io.png)
 
 With these options selected, click "Generate" and extract the downloaded zip file. Open the extracted project in your favorite IDE or editor (I'm using IntelliJ IDEA Ultimate Edition).
 

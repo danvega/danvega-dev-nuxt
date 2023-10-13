@@ -20,7 +20,7 @@ In this article you will learn about how to set configuration properties and val
 
 For this example I am using a simple application that I bootstrapped using [start.spring.io](http://start.spring.io) and the only dependency you need is Spring Web.
 
-![Spring Initializr](./spring-init.png)
+![Spring Initializr](/images/blog/2022/05/11/spring-init.png)
 
 The first thing you will need to do is to create a new class named `GreetingController` and to mark it as a `@RestController.` Next, create a method named `home` that returns the hard coded String “**Hello, World**”. To make this accessible on the root context annotate it with `@GetMapping.`
 
@@ -116,7 +116,7 @@ To test this out you can set a command line argument in IntelliJ by going to `Ru
 --welcome.salutation=🤩Hello
 ```
 
-![command-line arguments](./command-line-arguments.png)
+![command-line arguments](/images/blog/2022/05/11/command-line-arguments.png)
 
 Even with a value set in `application.properties` this command line argument will now be used because of the property source order. Restart the application and see this change take affect.
 
@@ -126,7 +126,7 @@ The `@Value` annotation is the easiest way to get a single value from a property
 
 If you have one or more related properties you should really move them into a `@ConfigurationProperties` class and with that you will get metadata generated for them. I have a tutorial on creating a class or record using `@ConfigurationProperties` and setting default values that you can check out below.
 
-`youtube:https://youtu.be/Gqn_q2sAebg`
+:YouTube{id=Gqn_q2sAebg}
 
 ## Conclusion
 

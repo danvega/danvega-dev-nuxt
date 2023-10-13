@@ -24,7 +24,7 @@ To demonstrate, we will utilize a free GraphQL API from [Countries Trevorblades.
 
 We will generate our Spring Boot project from [start.spring.io](www.examplelink.com). For our application, we will use Maven as a build tool, Java as the language, and the latest version of Spring Boot. Let's name the application `Countries`, and we will be using Java 17. For our dependencies, we require `Web`, `Spring Data JDBC`, and `H2 Database`.
 
-![Spring Initializr](./graphql-client-spring-init.png)
+![Spring Initializr](/images/blog/2023/04/17/graphql-client-spring-init.png)
 
 The `Web` dependency enables us to build a web application. `Spring Data JDBC` is crucial because it will allow us to load country data and store it in a database to avoid repeating GraphQL API calls. For our database, we will use an `H2` in-memory database for simplicity.
 
@@ -127,7 +127,7 @@ CommandLineRunner commandLineRunner(CountryService service, CountryRepository re
 
 After running the application and no exceptions are thrown, we can confirm that our country data has been saved in the database. You can check this by accessing the H2 Console and running a `SELECT * FROM country;`.
 
-![H2 Console](./h2-select-countries.png)
+![H2 Console](/images/blog/2023/04/17/h2-select-countries.png)
 
 That's all there is to connecting to a GraphQL API in Spring Boot! You now have the tools needed to tackle any GraphQL requests in your projects, courtesy of Spring for GraphQL.
 

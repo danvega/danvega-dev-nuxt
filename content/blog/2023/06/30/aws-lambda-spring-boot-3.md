@@ -38,7 +38,7 @@ In the [GitHub repository](https://github.com/danvega/serverless-api) associated
 
 To create the project using IntelliJ, you can use the Maven archetype generator. Alternatively, you can run the following command from the command line:
 
-![Maven Archetype](./6Kpi6DOLQUkVjHS53ssf-378.57.png)
+![Maven Archetype](/images/blog/2023/06/30/6Kpi6DOLQUkVjHS53ssf-378.57.png)
 
 ```bash
 mvn archetype:generate \-DarchetypeGroupId=com.amazonaws.serverless.archetypes \-DarchetypeArtifactId=aws-serverless-spring-java-archetype \-DarchetypeVersion=1.0.0 \-DgroupId=com.example \-DartifactId=my-spring-boot-app \-Dversion=1.0.0 \-DinteractiveMode=false
@@ -170,7 +170,7 @@ This command will create a ZIP file in the `target` directory, which contains ou
 
 With our packaged application in hand, we can now proceed to deploy it to AWS Lambda. To create a new Lambda function, navigate to the AWS Management Console and select AWS Lambda. Click on "Create function" and choose the "Author from scratch" option.
 
-![Create new Lambda Function](./7uleLq2l1fkpOH0HzKEz-1297.12.png)
+![Create new Lambda Function](/images/blog/2023/06/30/7uleLq2l1fkpOH0HzKEz-1297.12.png)
 
 In the function creation wizard, provide a name for your function and select "Java 17" as the runtime. Note that we'll be using the x86 architecture, as there are some limitations with Snapstart and Java 17 on other architectures.
 
@@ -192,7 +192,7 @@ Provide a name for your API and choose "Create API". This will create a new REST
 
 To define the resources and methods for our API, we'll create a new resource for each endpoint of our REST API. For example, if we have an endpoint `/posts`, we'll create a resource named "Posts". Under each resource, we can define the HTTP methods that are allowed, such as GET, POST, PUT, and DELETE.
 
-![API Gateway](./alA7JYq3UOnAEEbsdORU-1607.83.png)
+![API Gateway](/images/blog/2023/06/30/alA7JYq3UOnAEEbsdORU-1607.83.png)
 
 To configure the integration between the API Gateway and our Lambda function, select a resource and method, and click on "Integration Request". Choose the Lambda function as the integration type and select the appropriate Lambda function from the list. Click "Save" to apply the changes.
 

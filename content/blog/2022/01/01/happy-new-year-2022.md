@@ -22,7 +22,7 @@ I started a new job this year at [Briebug Software](https://briebug.com/) as an 
 
 This year I was lucky to be selected as one of the speakers at SpringOne. I have attended a few Spring Conferences before and it is easily one of my favorites so this was a big deal and an honor for me. [My Presentation](https://www.danvega.dev/blog/2021/08/30/spring-one-2021/) was on Full Stack Java Development with Spring Boot and Vue. I thought I did a really good job of preparing for this talk but nothing really prepares you for Zoom dropping off in the middle of your presentation. Thankfully I was alerted that it happened and I was able to log back in and finish the talk. I got some really good feedback on my talk and appreciate anyone who joined us live or watched [the replay](https://springone.io/2021/sessions/full-stack-development-with-spring-boot-vuejs).
 
-![Spring One](./spring-one.png)
+![Spring One](/images/blog/2022/01/01/spring-one.png)
 
 ### Creating Content
 
@@ -47,7 +47,7 @@ Now that I have 2 small kids at home I’m hesitant to put specific goals out in
 
 ### Move my website over to Nuxt 3
 
-![danvega.dev](./danvega-dev-homepage.png)
+![danvega.dev](/images/blog/2022/01/01/danvega-dev-homepage.png)
 
 I’m really happy with my [current website](https://www.danvega.dev/). Every time I post a new article I head over to the site to make sure it looks ok and I remember just how proud I am of it. The current version of my website is written in a framework called [Gridsome](https://gridsome.org/), which is a static site generator for VueJS. I have been really happy with Gridsome but there are a few limitations that are stopping me from doing some of the things I want to do. That and the project hasn’t been moving forward that much over the last couple of years.
 
@@ -63,7 +63,7 @@ Nuxt 3 is still in beta and while I love what they are doing there are still som
 
 ### Content
 
-![content creator](./onur-binay-O2-EZNGZIyk-unsplash.jpg)
+![content creator](/images/blog/2022/01/01/onur-binay-O2-EZNGZIyk-unsplash.jpg)
 
 I was happy to be back at turning out content last year but after looking at my total numbers I know I can do better. I’m setting some lofty goals in this department but I think they are doable.
 
@@ -94,7 +94,7 @@ I’m really happy that I got back to producing my newsletter on a weekly basis.
 
 ### Charity
 
-![Toys for Shots](./toysforshots.png)
+![Toys for Shots](/images/blog/2022/01/01/toysforshots.png)
 
 Due to the pandemic the non profit organization I run has been unable to throw our big event, [Toys for Shots](https://toysforshots.com/). This is something I hope we can back to this year. With that I would like to move our website over to Nuxt 3. I also want to build in some stripe integration so that we can take donations online which is one feature we are lacking. CLE Cares, is the name of our non-profit and we need to get a site setup for that. A lot of work to do here but it’s something I enjoy working on so I look forward to it.
 

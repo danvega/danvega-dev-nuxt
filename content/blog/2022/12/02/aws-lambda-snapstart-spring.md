@@ -21,7 +21,7 @@ In this blog post, we'll create a new project, include Spring Boot, and Spring C
 
 To create a new project, head over to [start.spring.io](https://start.spring.io/) and choose Maven as your build tool, Java as your language, and Spring Boot 2.7.6 because AWS doesn't support Java 17 yet. Make sure to add `web` and `Spring Cloud Function` as your project dependencies.
 
-![Spring Initializr](./start-spring-io.png)
+![Spring Initializr](/images/blog/2022/12/02/start-spring-io.png)
 
 After generating the project, open it up in your favorite IDE.
 
