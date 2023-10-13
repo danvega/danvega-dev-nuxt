@@ -2,10 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter'
 
-const CONTENT_DIR= "newsletter"
+const CONTENT_DIR= "blog"
 const BASE_DIR = process.argv[2] || `../content/${CONTENT_DIR}/`;
 const DRY_RUN = false;
-
 
 function getFilesFromDir(baseDir) {
     const files = fs.readdirSync(baseDir);
@@ -30,7 +29,6 @@ function extractDateFromFrontMatter(content) {
     return result.data.date
 }
 
-
 function extractDateParts(file,isoDate) {
     try {
         const match = isoDate.match(/^(\d{4})-(\d{2})-(\d{2})T/);
@@ -45,43 +43,50 @@ function extractDateParts(file,isoDate) {
         console.log(error);
     }
 
-
     return null;
 }
 
 function processMdFiles() {
     const mdFiles = getFilesFromDir(BASE_DIR);
-    let imgPathUpdates = 0;
 
     mdFiles.forEach(file => {
-        const content = fs.readFileSync(file, 'utf-8');
+        let content = fs.readFileSync(file, 'utf-8');
         const date = extractDateFromFrontMatter(content);
         const dateParts = extractDateParts(file,date);
 
         if(dateParts) {
             // update relative image paths
-            updateImagePath(file,content,dateParts);
-            imgPathUpdates += 1;
+            content = updateImagePath(file,content,dateParts);
         }
 
         // update youtube links
+        content = transformYouTubeLinks(content);
 
+        if(!DRY_RUN) {
+            fs.writeFileSync(file, content, 'utf-8');
+        }
     });
 
-    console.log("Image Path Update Count: " + imgPathUpdates);
+    console.log("Migration Completed!");
 }
 
 function updateImagePath(file,content,dateParts) {
     const newImagePath = `/images/${CONTENT_DIR}/${dateParts.year}/${zeroPad(dateParts.month)}/${zeroPad(dateParts.day)}/`;
-    const updatedContent = content.replace(/!\[([^\]]*)\]\(\.\//g, `![\$1](${newImagePath}`);
-    if(!DRY_RUN) {
-        fs.writeFileSync(file, updatedContent, 'utf-8');
-    }
-    console.log(`${file} new image path: ${newImagePath}`)
+    return content.replace(/!\[([^\]]*)\]\(\.\//g, `![\$1](${newImagePath}`);
 }
 
 function zeroPad(number) {
     return number.toString().padStart(2, '0');
+}
+
+/*
+`youtube:https://youtu.be/rUbjV3VY1DI`
+:YouTube{id=rUbjV3VY1DI}
+ */
+function transformYouTubeLinks(content) {
+    return content.replace(/`youtube:https:\/\/youtu\.be\/([a-zA-Z0-9_-]+)`/g, (match, id) => {
+        return `:YouTube{id=${id}}`;
+    });
 }
 
 if(DRY_RUN) {
