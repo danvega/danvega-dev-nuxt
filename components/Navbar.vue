@@ -55,6 +55,9 @@ const navItems: NavItem[] = [
       </div>
       <nav class="mt-6">
         <ul class="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+          <li>
+            <NuxtLink href="/" class="block py-2 hover:text-teal-500 dark:hover:text-teal-400">Home</NuxtLink>
+          </li>
           <li v-for="nav in navItems" :key="nav.name">
           <NuxtLink
               :href="nav.link"
