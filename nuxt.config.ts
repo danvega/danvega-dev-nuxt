@@ -43,7 +43,7 @@ export default defineNuxtConfig({
         sepia: 'monokai'
       },
       // https://github.com/shikijs/shiki/blob/main/docs/languages.md#adding-grammar
-      preload: ['java','json','js','ts','css','shell','html','md','yaml','sql','properties','http']
+      preload: ['java','json','js','ts','css','shell','html','md','yaml','sql','properties','http','groovy']
     }
   },
   devtools: { enabled: false }
