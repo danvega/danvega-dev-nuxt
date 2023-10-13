@@ -16,26 +16,66 @@
       <!-- about -->
       <div class="lg:order-first lg:row-span-2">
         <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          I’m Spencer Sharp. I live in New York City, where I design the future.
+          Hello 👋🏻 My Name is Dan Vega
         </h1>
         <div class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-          <p>I’ve loved making things for as long as I can remember, and wrote my first program when I was 6 years old, just two weeks after my mom brought home the brand new Macintosh LC 550 that I taught myself to type on.</p>
-          <p>The only thing I loved more than computers as a kid was space. When I was 8, I climbed the
-            40-foot oak tree at the back of our yard while wearing my older sister’s motorcycle helmet,
-            counted down from three, and jumped — hoping the tree was tall enough that with just a bit of
-            momentum I’d be able to get to orbit.
+          <p>
+            I am a Software Engineer living just outside of one of my favorite
+            places in the world, Cleveland, Ohio. I am a self-taught programmer who
+            firmly believes that you can accomplish anything in this life if you put
+            your mind to it, roll up your sleeves and are willing to put in the
+            work.
           </p>
           <p>
-            I spent the next few summers indoors working on a rocket design, while I recovered from the
-            multiple surgeries it took to fix my badly broken legs. It took nine iterations, but when I was 15
-            I sent my dad’s Blackberry into orbit and was able to transmit a photo back down to our family
-            computer from space.
+            I have been writing software for over 20+ years now and I use my
+            knowledge, passion, and influence to help other developers achieve their
+            goals. I teach online and currently, have over 160,000 students.
           </p>
           <p>
-            Today, I’m the founder of Planetaria, where we’re working on civilian space suits and manned
-            shuttle kits you can assemble at home so that the next generation of kids really <em>can</em> make
-            it to orbit — from the comfort of their own backyards.
+            In my personal life I am a husband to my best friend in the world and a
+            father of two little girls. I enjoy reading, running and lifting weights
+            to get me through the week.
           </p>
+          <h2 class="font-semibold text-zinc-800 dark:text-zinc-100">My Journey</h2>
+          <p>
+            My journey to becoming a computer programmer did not start at a fancy university. Thanks to my mom, who made me
+            take a typing class in high school, in which I excelled, I became interested in computers. After high school, I
+            worked as a landscaper. One day, I decided that this was not life for me. I chose to enroll at a local college for
+            a programming certification in Applied Computer Sciences. Once I completed this certification, I did some
+            freelancing to hone my skills, and soon after, I landed my first job at a startup in San Francisco! It was
+            difficult leaving my friends and family, but I was so excited about this opportunity and quickly packed my bags
+            for the West Coast.
+          </p>
+          <p>
+            My educational journey did not stop there. I consider myself a lifelong learner. Having a passion for learning is
+            the secret to success in life. While I was living in California, I hired a teaching assistant from UC Berkeley to
+            tutor me in computer programming. I spent most of my nights far from home immersing myself in Java programming
+            books to advance my skills, which certainly paid off!
+          </p>
+          <p>
+            After two years in San Francisco, I landed a new position back in Cleveland and jumped at the opportunity to move
+            back home. I continued to advance to different positions and companies over the years, and here I am, 20+ years
+            later, still loving to code every single day.
+          </p>
+
+          <h2 class="font-semibold text-zinc-800 dark:text-zinc-100">One thing that has always stuck with me</h2>
+          <p>
+            One thing that has always stuck with me over the years is how grateful I am for all of the people who taught and
+            inspired me. This helped inspire me to share my passion for learning with others. When I discovered online
+            teaching, I knew this was my calling to help other people make positive changes in their lives through education.
+            As I said in the beginning, if you are willing to put in the work, you can accomplish anything in this life. If
+            programming is what you are hoping to learn and work hard on, I am happy to show you the way!
+          </p>
+
+          <h2></h2>
+          <h2 class="font-semibold text-zinc-800 dark:text-zinc-100">Some other facts about me</h2>
+          <p>
+            I live just outside of Cleveland, Ohio with my wife Jen, and our 2 daughters Isabella and Juliana. When not
+            spending time with my family, I love reading books, listening to podcasts, and watching online courses. I have a
+            real thirst for knowledge and it consumes me every day of the week. I also love to run and lift heavy weights,
+            which keeps me balanced throughout the week.
+          </p>
+
         </div>
       </div>
       <!-- social icons -->
@@ -79,7 +119,7 @@
               <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500">
                 <path fill-rule="evenodd" d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"></path>
               </svg>
-              <span class="ml-4">spencer@planetaria.tech</span>
+              <span class="ml-4">danvega@gmail.com</span>
             </a>
           </li>
         </ul>
