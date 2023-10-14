@@ -16,6 +16,12 @@ const prevLink = (page) => {
   }
 }
 
+
+// TODO: Add tag params
+const nextLink = () => {
+    return `/blog/${props.page + 1}`;
+}
+
 const toCount = () => {
   if(props.count < props.limit * props.page) {
     return props.count;
@@ -45,7 +51,7 @@ const toCount = () => {
        class="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
       Previous
     </a>
-    <a :href="`/blog/${page + 1}`"
+    <a :href="nextLink()"
        v-if="(page * limit) < count"
        class="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
       Next
