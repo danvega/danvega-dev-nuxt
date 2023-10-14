@@ -13,8 +13,8 @@ const page = ref(route.params.page ? parseInt(route.params.page) : 1);
 const limit = ref(5);
 
 // .where( { tags: {$in: route.query.tag}} )
-// const articlesCount = await queryContent('blog')
-//     .find()
+const articlesCount = await queryContent('blog')
+    .find()
 
 // paginate all posts
 const articles = await queryContent('blog')
@@ -39,12 +39,12 @@ const formatDatePublished = (date) => {
 <template>
 
   <Container class="mt-16 sm:mt-32">
-    <header class="max-w-2xl">
+    <header class="max-w-4xl">
       <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-        Writing on software design, company building, and the aerospace industry.
+        Writing on software development and anything else I find interesting.
       </h1>
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-        All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.
+        All of my long-form thoughts on programming, content creation,and more, collected in chronological order.
       </p>
     </header>
     <div class="mt-16 sm:mt-20">
@@ -83,7 +83,7 @@ const formatDatePublished = (date) => {
 
           </article>
 
-<!--          <SimplePagination :count="articlesCount.length" :page="page" :limit="limit" tag=""/>-->
+          <SimplePagination :count="articlesCount.length" :page="page" :limit="limit" tag=""/>
 
         </div>
       </div>
