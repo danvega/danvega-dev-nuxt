@@ -1,7 +1,7 @@
 <script setup>
 import { useDateFormat } from '@vueuse/core'
 
-const { path } = useRoute()
+const { path } = useRoute();
 const { data } = await useAsyncData(`content-${path}`, () => {
   return queryContent()
       .where({ _path: path })
@@ -13,7 +13,6 @@ const { data } = await useAsyncData(`content-${path}`, () => {
 const datePublished = useDateFormat(data.date, 'MMMM D, YYYY')
 // date updated
 // time to read?
-
 
 const getYouTubeVideoID = (video) => {
   let id = "";
