@@ -41,6 +41,8 @@ useHead({
             </div>
             <div class="space-y-10 lg:pl-16 xl:pl-24">
               <Work/>
+
+              <Work/>
             </div>
           </div>
         </div>
