@@ -56,14 +56,23 @@ const navItems: NavItem[] = [
       <nav class="mt-6">
         <ul class="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
           <li>
-            <NuxtLink href="/" class="block py-2 hover:text-teal-500 dark:hover:text-teal-400">Home</NuxtLink>
+            <PopoverButton
+                as="a"
+                href="/"
+                aria-label="Nav Button"
+                class="hover:text-teal-500 dark:hover:text-teal-400 block py-2">
+              Home
+            </PopoverButton>
           </li>
           <li v-for="nav in navItems" :key="nav.name">
-          <NuxtLink
-              :href="nav.link"
-              class="block py-2 hover:text-teal-500 dark:hover:text-teal-400">{{nav.name}}</NuxtLink>
+            <PopoverButton
+                as="a"
+                :aria-label="nav.name"
+                class="hover:text-teal-500 dark:hover:text-teal-400 block py-2"
+                :href="nav.link">
+              {{ nav.name }}
+            </PopoverButton>
           </li>
-
         </ul>
       </nav>
     </PopoverPanel>
