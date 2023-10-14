@@ -2,15 +2,17 @@
 
 </script>
 
+
+
 <template>
   <Container class="mt-16 sm:mt-32">
-    <header class="max-w-2xl">
+    <header class="max-w-4xl">
       <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-        Software I use, gadgets I love, and other things I recommend.
+        Hardware & Software I use, gadgets I love, and other things I recommend.
       </h1>
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-        I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into
-        thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff.
+        I am often asked about the gear I use as a software developer and content creator. The hardware and software I use is changing all the time so this page will serve as a place for an updated list.
+        If you have a question about anything I use or a suggestion for something I am missing please reach out to me on Twitter.
       </p>
     </header>
     <div class="mt-16 sm:mt-20">
