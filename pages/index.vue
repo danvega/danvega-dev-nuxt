@@ -40,8 +40,7 @@ useHead({
               <LatestArticles/>
             </div>
             <div class="space-y-10 lg:pl-16 xl:pl-24">
-              <Work/>
-
+              <NewsletterSignup/>
               <Work/>
             </div>
           </div>
