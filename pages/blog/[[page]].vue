@@ -20,6 +20,7 @@ const  articlesCount = 174;
 
 // paginate all posts
 const articles = await queryContent('blog')
+    .where( {tags: {$in: route.query.tag}})
     .skip(limit.value * (page.value - 1))
     .limit(limit.value)
     .sort({ date: -1 })
