@@ -6,7 +6,10 @@ import typographyStyles from './typography'
 export default {
     content: ['./src/**/*.{js,ts,vue}'],
     darkMode: 'class',
-    plugins: [typographyPlugin],
+    plugins: [
+        typographyPlugin,
+        require('@tailwindcss/forms'),
+    ],
     theme: {
         fontSize: {
             xs: ['0.8125rem', { lineHeight: '1.5rem' }],
