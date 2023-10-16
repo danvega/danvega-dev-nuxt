@@ -10,13 +10,13 @@
       <div class="lg:pl-20">
         <div class="max-w-xs px-2.5 lg:max-w-none">
           <img alt="" loading="lazy" width="800" height="800" decoding="async" data-nimg="1"
-               class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" src="/images/portrait.jpg" style="color: transparent;">
+               class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" src="/images/dan_avatar.jpg" style="color: transparent;">
         </div>
       </div>
       <!-- about -->
       <div class="lg:order-first lg:row-span-2">
         <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          Hello 👋🏻 My Name is Dan Vega
+          Hello 👋🏻 My Name is Dan
         </h1>
         <div class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
           <p>
