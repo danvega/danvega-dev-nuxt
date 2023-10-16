@@ -6,6 +6,16 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt'
   ],
+  // Thank You, Debbie - https://debbie.codes/blog/nuxt-lite-youtube-embeds/
+  plugins: ['~/plugins/youtube.client.js'],
+  build: {
+    transpile: ['lite-youtube'],
+  },
+  vue: {
+    compilerOptions: {
+      isCustomElement: tag => ['lite-youtube'].includes(tag),
+    },
+  },
   runtimeConfig: {},
   colorMode: {
     preference: 'system',
@@ -46,5 +56,6 @@ export default defineNuxtConfig({
       preload: ['java','json','js','ts','css','shell','html','md','yaml','sql','properties','http','groovy']
     }
   },
+  css: ['~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
   devtools: { enabled: false }
 })
