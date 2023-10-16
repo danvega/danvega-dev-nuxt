@@ -6,8 +6,7 @@ declare global {
 
     type Post = {
         title: String,
-        description: String,
-        path: String
+        description: String
     }
 
     type Photo = {
