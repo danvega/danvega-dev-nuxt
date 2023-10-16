@@ -1,7 +1,4 @@
 <script setup lang="ts">
-const props = defineProps({
-    page: { type: String, default: "home" }
-});
 
 const dataOptions = {
   "settings": {
@@ -72,8 +69,7 @@ data-uid: 52adfca2a6
         data-sv-form="1352761"
         data-uid="52adfca2a6"
         data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;: &quot;redirect&quot;,&quot;redirect_url&quot;: &quot;https://www.danvega.dev/newsletter/thank-you/;}}}"
-        class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-        v-if="props.page == 'home'">
+        class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
     <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6 flex-none">
         <path d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z" class="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"/>

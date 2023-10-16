@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import NewsletterSignup from "~/components/home/NewsletterSignup.vue";
+import Work from "~/components/home/Work.vue";
+
 const title = ref("Spring Developer Advocate, YouTuber and Lifelong Learner");
 const about = ref("Hello 👋🏻 My name is Dan Vega, Spring Developer Advocate, Husband and #GirlDad based outside of Cleveland OH. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.");
 
