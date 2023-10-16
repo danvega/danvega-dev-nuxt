@@ -93,7 +93,7 @@ management.endpoints.web.exposure.include=*
 management.endpoint.health.show-details=always
 ```
 
-![actuator_endpoints.png](Spring%20Boot%20Actuator%20cf9af2dd0b7f47a9936ada32e0b7e766/actuator_endpoints.png)
+![actuator_endpoints.png](/images/blog/2023/09/17/actuator_endpoints.png)
 
 ## Extending the Usability of Spring Boot Actuator: Creating Your Own Custom Endpoint
 
