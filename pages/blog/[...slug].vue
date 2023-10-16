@@ -62,6 +62,9 @@ function removeTrailingSlash(inputString) {
 
         </article>
 
+
+        <BlogTags :tags="data.tags"/>
+
         <!-- tags -->
         <!-- newsletter signup -->
         <!-- <pre>{{ data }}</pre>-->
