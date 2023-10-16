@@ -4,7 +4,7 @@ import { useDateFormat } from '@vueuse/core'
 const { path } = useRoute();
 const { data } = await useAsyncData(`content-${path}`, () => {
   return queryContent()
-      .where({ _path: path })
+      .where({ _path: removeTrailingSlash(path) })
       .findOne()
 })
 
@@ -30,6 +30,13 @@ const getImagePath = (date,cover) => {
   const day = `${createdOn.getDate() < 10 ? "0" : ""}${createdOn.getDate()}`;
   return `/images/blog/${year}/${month}/${day}/${cover.replace('./','')}`;
 };
+
+function removeTrailingSlash(inputString) {
+  if (inputString.endsWith("/")) {
+    return inputString.slice(0, -1); // Remove the last character
+  }
+  return inputString; // No trailing slash, return the original string
+}
 </script>
 
 <template>
