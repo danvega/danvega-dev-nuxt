@@ -3,11 +3,11 @@ import {useDateFormat} from "@vueuse/core/index";
 
 const news = await queryContent('newsletter')
     .where({draft: {$ne: true}})
-    .limit(10)
+    .limit(5)
     .sort({ date: -1 })
     .find();
 
-const formatDatePublished = (date) => {
+const formatDatePublished = (date: string) => {
   const formatted = useDateFormat(date, "MMMM D, YYYY");
   return formatted.value;
 }
