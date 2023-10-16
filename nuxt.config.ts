@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/content',
+    'nuxt-feedme',
     '@vueuse/nuxt'
   ],
   // Thank You, Debbie - https://debbie.codes/blog/nuxt-lite-youtube-embeds/
@@ -16,7 +17,9 @@ export default defineNuxtConfig({
       isCustomElement: tag => ['lite-youtube'].includes(tag),
     },
   },
-  runtimeConfig: {},
+  runtimeConfig: {
+    baseUrl: 'https://www.danvega.dev'
+  },
   colorMode: {
     preference: 'system',
     fallback: 'light',
@@ -54,6 +57,24 @@ export default defineNuxtConfig({
       },
       // https://github.com/shikijs/shiki/blob/main/docs/languages.md#adding-grammar
       preload: ['java','json','js','ts','css','shell','html','md','yaml','sql','properties','http','groovy']
+    }
+  },
+  feedme: {
+    feeds: {
+      '/rss.xml': { revisit: '6h', type: 'rss2', content: true },
+
+    },
+    content: {
+      item: {
+        query: {
+          limit: 100,
+          where: [
+            // Mine _path setup, try to make all work with one of yours, then add the second one with regex or |
+            { _path: /^\/blog\/[^\/]+$/ },
+          ],
+          templateRoots: ['blog']
+        },
+      }
     }
   },
   css: ['~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'],

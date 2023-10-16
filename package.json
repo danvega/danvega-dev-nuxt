@@ -17,6 +17,7 @@
     "@vueuse/core": "^10.5.0",
     "@vueuse/nuxt": "^10.5.0",
     "nuxt": "^3.7.4",
+    "nuxt-feedme": "^1.0.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
