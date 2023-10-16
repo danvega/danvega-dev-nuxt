@@ -88,7 +88,9 @@
               <ul role="list" class="space-y-16">
                 <li class="group relative flex flex-col items-start">
                   <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">IntelliJ Ultimate Edition</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I'm a huge fan of IntelliJ and use it for my day to development
+                    in pretty much any language. If you want to see how I have customized it for Java / Spring development you can check out
+                    this <a href="https://youtu.be/g78is10FjF0">video</a>.</p>
                 </li>
               </ul>
             </div>
@@ -100,16 +102,60 @@
             <h2 id=":S3:" class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">Content Creation</h2>
             <div class="md:col-span-3">
               <ul role="list" class="space-y-16">
-
                 <li class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Sony A6100</h3>
+                  <a href="hhttps://amzn.to/3F5XnG8">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Sony A6100</h3>
+                  </a>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
                 </li>
                 <li class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Sigma 16mm f1.4 lens</h3>
+                  <a href="https://www.danvega.dev/uses/Sony%20A6100">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Sigma 16mm f1.4 lens</h3>
+                  </a>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
                 </li>
-
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://amzn.to/3dWTkwX">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Audio-Technica AT2020 Microphone</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://amzn.to/46UJYNV">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Elgato Cam Link 4K</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://www.danvega.dev/uses/StreamYard">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Wyze Bluetooth Headphones</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://amzn.to/2X3qPXG">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Elgato Key Lights</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://www.adobe.com/products/premiere.html">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Adobe Premiere Pro</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://www.epidemicsound.com/">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Epidemic Sound</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://www.ecamm.com/">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Ecamm Live</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
               </ul>
             </div>
           </div>
@@ -122,6 +168,24 @@
               <ul role="list" class="space-y-16">
                 <li class="group relative flex flex-col items-start">
                   <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Notion</h3>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby=":S5:" class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+            <h2 id=":S4:" class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">This Website</h2>
+            <div class="md:col-span-3">
+              <ul role="list" class="space-y-16">
+                <li class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Nuxt 3</h3>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Netlify</h3>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
                 </li>
               </ul>
