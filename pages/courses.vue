@@ -1,13 +1,4 @@
 <script lang="ts" setup>
-
-type Course = {
-  slug: String,
-  title: String,
-  description: String,
-  link: String,
-  cover: String
-}
-
 const courses : Course[] = [
   {
     slug: 'vue-for-beginners',
