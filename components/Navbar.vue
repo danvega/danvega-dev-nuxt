@@ -84,7 +84,7 @@ const navItems: NavItem[] = [
          <li v-for="nav in navItems" :key="nav.name">
           <NuxtLink
             :href="nav.link"
-            exact-active-class="text-teal-500 dark:text-teal-400"
+            active-class="text-teal-500 dark:text-teal-400"
             class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400">{{nav.name}}</NuxtLink>
         </li>
       </ul>
