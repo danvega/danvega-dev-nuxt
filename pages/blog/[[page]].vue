@@ -86,7 +86,7 @@ const formatDatePublished = (date) => {
 
           </article>
 
-          <SimplePagination :count="articlesCount" :page="page" :limit="limit" tag=""/>
+          <SimplePagination :count="articlesCount" :page="page" :limit="limit"/>
 
         </div>
       </div>
