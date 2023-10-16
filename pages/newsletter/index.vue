@@ -1,5 +1,6 @@
 <script lang="ts" setup="" xmlns="http://www.w3.org/1999/html">
 import {useDateFormat} from "@vueuse/core/index";
+import { ExclamationCircleIcon } from '@heroicons/vue/20/solid'
 
 const news = await queryContent('newsletter')
     .where({draft: {$ne: true}})
@@ -22,6 +23,25 @@ const formatDatePublished = (date: string) => {
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
         I started this newsletter as a way to keep myself writing each and every week. I have a blog that I like to write for but a blog post can be a lot of a pressure. This is a no pressure way for me to write and in the meantime connect with you on a weekly basis. Enter your email below to recieve my weekly newsletter every Monday morning.</p>
     </header>
+
+    <form
+        action="https://app.convertkit.com/forms/1094354/subscriptions"
+        method="post"
+        data-sv-form="1094354"
+        data-uid="2245659c84"
+        data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;: &quot;redirect&quot;,&quot;redirect_url&quot;: &quot;https://www.danvega.dev/newsletter/thank-you/;}}}"
+        class="mt-8 md:w-3/4 flex flex-row rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+        <div class="w-3/4">
+          <div>
+            <input type="email" name="email" id="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="you@example.com" />
+          </div>
+        </div>
+        <div class="pl-4">
+            <button type="button" class="rounded-md bg-blue-600 px-2 py-1 text-xs font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+              Subscribe
+            </button>
+        </div>
+    </form>
 
     <div class="mt-16 sm:mt-20">
       <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
