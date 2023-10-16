@@ -1,4 +1,4 @@
-<script  lang="ts" setup="">
+<script setup lang="ts">
 import {useDateFormat} from "@vueuse/core/index";
 import SimplePagination from "~/components/blog/SimplePagination.vue";
 
@@ -19,14 +19,14 @@ const limit = ref(5);
 const  articlesCount = 174;
 
 // paginate all posts
-const articles = await queryContent('blog')
+const posts = await queryContent('blog')
     .where( {tags: {$in: route.query.tag}})
     .skip(limit.value * (page.value - 1))
     .limit(limit.value)
     .sort({ date: -1 })
     .find()
 
-if(articles.length == 0) {
+if(posts.length == 0) {
   throw new createError({
     statusCode:404,
     statusMessage: "No Blog posts found for path: `${route.path}`"
@@ -54,7 +54,7 @@ const formatDatePublished = (date) => {
       <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
         <div class="flex max-w-3xl flex-col space-y-16">
 
-          <article class="md:grid md:grid-cols-4 md:items-baseline" v-for="post in articles" :key="post._id">
+          <article class="md:grid md:grid-cols-4 md:items-baseline" v-for="post in posts" :key="post._id">
 
             <!-- card : turn this into a component at some point -->
             <div class="md:col-span-3 group relative flex flex-col items-start">
