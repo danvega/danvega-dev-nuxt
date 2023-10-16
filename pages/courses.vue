@@ -1,5 +1,57 @@
-<script lang="ts" setup="">
+<script lang="ts" setup>
 
+type Course = {
+  slug: String,
+  title: String,
+  description: String,
+  link: String,
+  cover: String
+}
+
+const courses : Course[] = [
+  {
+    slug: 'vue-for-beginners',
+    title: 'Vue for Beginners: Up and running with Vue',
+    description: 'A beginner\'s guide to learn the basics of the JavaScript Framework Vue.js.',
+    link: 'https://www.udemy.com/course/vue-intro/?referralCode=E9DECFF78CA706D7A68A',
+    cover: 'vue_udemy_cover.png'
+  },
+  {
+    slug: 'apache-groovy',
+    title: 'The Complete Apache Groovy Course',
+    description: 'Everything you need to know to get started with the Groovy Programming Language',
+    link: 'https://www.udemy.com/course/apache-groovy/?referralCode=7FB8CB67D3D3D17CF1EA',
+    cover: 'apache-groovy.jpg'
+  },
+  {
+    slug: 'spring-boot-2',
+    title: 'Getting Started with Spring Boot 2',
+    description: 'Learn how to build a real application using Spring Framework 5 & Spring Boot 2',
+    link: 'https://www.udemy.com/course/spring-boot-2/?referralCode=ECB6B9F8EF104672AF4A',
+    cover: 'spring-boot-2-udemy.jpg'
+  },
+  {
+    slug: 'spring-boot',
+    title: 'Learn Spring Boot',
+    description: 'Spring Boot gives you all the power of the Spring Framework without all of the complexity.',
+    link: 'https://www.udemy.com/course/spring-boot-intro/?referralCode=2B0F1F9DE0DC40C97DC5',
+    cover: 'spring-boot-udemy.jpg'
+  },
+  {
+    slug: 'angular-4-java-developers',
+    title: 'Angular 4 Java Developers',
+    description: 'Learn how to build Spring Boot & Angular apps by building a real world application with JHipster.',
+    link: 'https://www.udemy.com/course/angular-4-java-developers/?referralCode=A41B357F43F549BB7722',
+    cover: 'angular-4-java-developers.jpg'
+  },
+  {
+    slug: 'java-getting-started',
+    title: 'Getting Started with Java',
+    description: 'Everything you need to know about setting up your local development environment.',
+    link: 'https://www.udemy.com/course/angular-4-java-developers/?referralCode=A41B357F43F549BB7722',
+    cover: 'java-free-udemy.jpg'
+  },
+];
 </script>
 
 <template>
@@ -13,30 +65,25 @@
     </header>
 
     <div class="mt-16 sm:mt-20">
-      <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-        <div class="grid grid-cols-2 gap-8">
+      <div class="md:pl-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          <article class="">
+          <div class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400" v-for="course in courses" :key="course.slug">
             <img
-                src="/images/courses/vue_udemy_cover.png"
-                alt="Vue for Beginners"
+                :src="`/images/courses/${course.cover}`"
+                :alt="course.title"
                 class="rounded-2xl w-3/4"/>
-
-            <h2>VUE FOR BEGINNERS: UP AND RUNNING WITH VUE</h2>
-            <p>A beginner's guide to learn the basics of the JavaScript Framework Vue.js.</p>
-            <a href="https://www.udemy.com/course/vue-intro/?referralCode=E9DECFF78CA706D7A68A">Learn More</a>
-          </article>
-
-          <article class="">
-            <img
-                src="/images/courses/apache-groovy.jpg"
-                alt="Vue for Beginners"
-                class="rounded-2xl w-3/4"/>
-
-            <h2>THE COMPLETE APACHE GROOVY COURSE</h2>
-            <p>Everything you need to know to get started with the Groovy Programming Language</p>
-            <a href="https://www.udemy.com/course/apache-groovy/?referralCode=7FB8CB67D3D3D17CF1EA">Learn More</a>
-          </article>
+            <h2 class="font-semibold text-zinc-800 dark:text-zinc-100">{{ course.title }}</h2>
+            <p>{{ course.description }}</p>
+            <a :href="course.link">
+              <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                Learn More
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                  <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </a>
+          </div>
 
 
         </div>
