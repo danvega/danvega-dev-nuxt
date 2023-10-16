@@ -21,7 +21,7 @@
                 <div class="absolute left-0 top-3 origin-left transition-opacity h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10" style="opacity:var(--avatar-border-opacity, 0);transform:var(--avatar-border-transform)"></div>
                 <!-- avatar -->
                 <a aria-label="Home" class="block h-16 w-16 origin-left pointer-events-auto" style="transform:var(--avatar-image-transform)" href="/">
-                  <img alt=""
+                  <img alt="Dan Vega"
                      width="512" height="512"
                      class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"
                      style="color:transparent"

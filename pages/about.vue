@@ -10,7 +10,7 @@
       <div class="lg:pl-20">
         <div class="max-w-xs px-2.5 lg:max-w-none">
           <img alt="" loading="lazy" width="800" height="800" decoding="async" data-nimg="1"
-               class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" src="/images/dan_avatar.jpg" style="color: transparent;">
+               class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" src="/images/dan_portrait.jpg" style="color: transparent;">
         </div>
       </div>
       <!-- about -->
