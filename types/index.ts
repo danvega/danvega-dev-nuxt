@@ -18,6 +18,15 @@ declare global {
         rotate: string
     }
 
+    type Course = {
+        slug: String,
+        title: String,
+        description: String,
+        link: String,
+        cover: String
+    }
+
+
 }
 
 
