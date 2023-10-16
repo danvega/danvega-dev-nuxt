@@ -8,20 +8,14 @@ const { data } = await useAsyncData(`content-${path}`, () => {
       .findOne()
 })
 
-// add a type for blog post
-// date format
-const datePublished = useDateFormat(data.date, 'MMMM D, YYYY')
-// date updated
-// time to read?
-
-const getYouTubeVideoID = (video) => {
-  let id = "";
-  if(video.length) {
-    const parts = video.split("/");
-    id = parts[parts.length - 1];
-  }
-  return id;
+if(data.value == null) {
+  throw new createError({
+    statusCode:404,
+    statusMessage: "No Blog post found for slug: `${route.path}`"
+  })
 }
+
+const datePublished = useDateFormat(data.date, 'MMMM D, YYYY')
 
 const getImagePath = (date,cover) => {
   const createdOn = new Date(date);
