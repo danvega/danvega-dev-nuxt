@@ -80,7 +80,7 @@ const formatDatePublished = (date) => {
                 </svg>
               </div>
             </div>
-            <time class="mt-1 md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" :datetime="post.date">
+            <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" :datetime="post.date">
               {{ formatDatePublished(post.date) }}
             </time>
 
