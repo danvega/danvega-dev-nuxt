@@ -34,7 +34,7 @@
                   <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
                     <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
                       <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                    </span>SpringOne Virtual Tour, October 17, 2023
+                    </span>SpringOne Tour, October 17, 2023 - Virtual
                   </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this talk, I will cover the basics of GraphQL and how it differs from traditional RESTful API architectures.
                     By the end of this talk, you will have everything you need to build your first GraphQL API in Spring.</p>
@@ -49,6 +49,29 @@
                 <article class="group relative flex flex-col items-start">
                   <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                     <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                    <a href="https://learning.oreilly.com/live-events/spring-recipes/0636920095810/">
+                      <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                      <span class="relative z-10">Spring Recipes.</span>
+                    </a>
+                  </h3>
+                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
+                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
+                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                    </span>O'Reilly Learning Platform, October 23, 2023 - Virtual
+                  </p>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Join Spring experts Nathaniel Schutta and Dan Vega to find concrete solutions for common problems encountered in modern software development, from building APIs to cloud native applications. Spring is constantly evolving and growing, so if you’re unsure about all its resources, you’ll discover them during this plunge into the Spring ecosystem.</p>
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                    Learn More
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </article>
+
+
+                <article class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                    <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
                     <a href="https://2023.connect.tech/session/504968">
                       <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
                       <span class="relative z-10">Building Nuxt 3 Applications powered by Notion.</span>
@@ -57,7 +80,7 @@
                   <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
                     <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
                       <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                    </span>ConnectTech, October 17, 2023 - Atlanta, GA
+                    </span>ConnectTech, October 24, 2023 - Atlanta, GA
                   </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this session, I'll show you what I learned while building and deploying a content site powered by the Notion API. By the end of this session, you will have the knowledge required to start building your own solutions with Nuxt and Notion.</p>
                   <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
