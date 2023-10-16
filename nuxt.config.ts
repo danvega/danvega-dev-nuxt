@@ -1,3 +1,7 @@
+const urlSchema = process.env.URL_SCHEMA || 'http'
+const urlDomain = process.env.URL_DOMAIN || 'localhost:3000'
+const urlBase = `${urlSchema}://${urlDomain}`
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -18,7 +22,11 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    baseUrl: 'https://www.danvega.dev'
+    public: {
+      urlSchema,
+      urlDomain,
+      urlBase,
+    },
   },
   colorMode: {
     preference: 'system',
@@ -61,11 +69,35 @@ export default defineNuxtConfig({
   },
   feedme: {
     feeds: {
-      '/rss.xml': { revisit: '6h', type: 'rss2', content: true },
+      '/feed.atom': { content: true },
+      '/feed.json': { content: true },
+      '/feed.xml': { content: true },
+      '/rss.xml': { revisit: '1h', type: 'rss2', content: true },
 
     },
     content: {
+      feed: {
+        defaults: {
+          title: 'Dan Vega',
+          description: 'Personal site of Dan Vega',
+          copyright: '2023 by Dan Vega',
+          link: urlBase,
+          id: urlBase,
+          author: { email: 'danvega@gmail.com', name: 'Dan Vega' },
+        },
+      },
       item: {
+        defaults: {
+          author: [
+            { email: 'danvega@gmail.com', name: 'Dan Vega' },
+          ],
+        },
+        mapping: [
+          ['date', 'modified', value => value ? new Date(value) : value],
+          ['date', 'created', value => value ? new Date(value) : value],
+          ['date', '', () => new Date()],
+          ['link', '_path'],
+        ],
         query: {
           limit: 100,
           where: [
