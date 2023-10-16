@@ -2,8 +2,6 @@
 
 </script>
 
-
-
 <template>
   <Container class="mt-16 sm:mt-32">
     <header class="max-w-4xl">
@@ -12,130 +10,131 @@
       </h1>
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
         I am often asked about the gear I use as a software developer and content creator. The hardware and software I use is changing all the time so this page will serve as a place for an updated list.
-        If you have a question about anything I use or a suggestion for something I am missing please reach out to me on Twitter.
+        If you have a question about anything I use or a suggestion for something I am missing please reach out to me on <a href="http://twitter.com/therealdanvega">Twitter</a>.
       </p>
     </header>
     <div class="mt-16 sm:mt-20">
       <div class="space-y-20">
-        <section aria-labelledby=":S1:"
-                 class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4"><h2 id=":S1:"
-                                                                                            class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
-            Workstation</h2>
+
+        <section aria-labelledby=":S1:" class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+            <h2 id=":S1:" class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">Workstation</h2>
             <div class="md:col-span-3">
               <ul role="list" class="space-y-16">
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">16” MacBook
-                  Pro, M1 Max, 64GB RAM (2021)</h3>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://amzn.to/3F7Mfs6">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      MacBook Pro (14-inch, 2021) Apple M1 Max / 32GB RAM
+                    </h3>
+                  </a>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I was using an
                     Intel-based 16” MacBook Pro prior to this and the difference is night and day. I’ve never
                     heard the fans turn on a single time, even under the incredibly heavy loads I put it through
-                    with our various launch simulations.</p></li>
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Apple Pro
-                  Display XDR (Standard Glass)</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The only display on the
-                    market if you want something HiDPI and bigger than 27”. When you’re working at planetary
-                    scale, every pixel you can get counts.</p></li>
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">IBM Model M
-                  SSK Industrial Keyboard</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">They don’t make
-                    keyboards the way they used to. I buy these any time I see them go up for sale and keep them
-                    in storage in case I need parts or need to retire my main.</p></li>
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Apple Magic
-                  Trackpad</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Something about all the
-                    gestures makes me feel like a wizard with special powers. I really like feeling like a
-                    wizard with special powers.</p></li>
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Herman
-                  Miller Aeron Chair</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">If I’m going to slouch
-                    in the worst ergonomic position imaginable all day, I might as well do it in an expensive
-                    chair.</p></li>
+                    with our various launch simulations. I love this as both a development and content creation machine.</p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://amzn.to/3kufQmi">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      LG 4k HDR Monitor
+                    </h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">This monitor has become my daily
+                    companion for work and leisure. Its crisp 4K display and borderless design immerse me in a world of vivid
+                    colors and sharp details, making it a joy for everything from development to video editing. The adjustable stand
+                    lets me find the perfect viewing angle, and the USB-C connectivity simplifies my workspace, making it the ideal
+                    choice for my everyday monitor needs.</p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://amzn.to/2WFflKQ">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      Apple Magic Keyboard
+                    </h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The Apple Keyboard with Numeric Keypad is an essential
+                    tool in my daily workflow. Its sleek design, seamless wireless connection, and rechargeable battery make it a convenient and
+                    stylish addition to my workspace. The inclusion of a numeric keypad enhances productivity, and the familiar Apple quality
+                    ensures a delightful typing experience every time.</p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://amzn.to/3yg6fr4">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      Logitech Mx Master 3
+                    </h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The Logitech MX Master 3 Advanced Wireless Mouse has become an
+                    indispensable part of my daily computing setup. Its ergonomic design and precision tracking make it exceptionally comfortable and
+                    efficient for long hours of work. The customizable buttons and hyper-fast scrolling wheel have transformed the way I navigate and multitask,
+                    making it a must-have tool for anyone seeking a smoother and more productive computing experience.</p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                    IKEA Desk Hack
+                  </h3>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">My desk is not actually a desk.
+                    It's the Ikea the Karlby countertop on top of 2 cabinets hack that you have probably seen a million
+                    times by now. I really like this setup and it works well for my space.</p>
+                </li>
               </ul>
             </div>
           </div>
         </section>
-        <section aria-labelledby=":S2:"
-                 class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4"><h2 id=":S2:"
-                                                                                            class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
-            Development tools</h2>
+
+        <section aria-labelledby=":S2:" class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+            <h2 id=":S2:" class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
+              Development tools
+            </h2>
             <div class="md:col-span-3">
               <ul role="list" class="space-y-16">
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Sublime Text
-                  4</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I don’t care if it’s
-                    missing all of the fancy IDE features everyone else relies on, Sublime Text is still the
-                    best text editor ever made.</p></li>
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">iTerm2</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I’m honestly not even
-                    sure what features I get with this that aren’t just part of the macOS Terminal but it’s what
-                    I use.</p></li>
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                  TablePlus</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Great software for
-                    working with databases. Has saved me from building about a thousand admin interfaces for my
-                    various projects over the years.</p></li>
+                <li class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">IntelliJ Ultimate Edition</h3>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
               </ul>
             </div>
           </div>
         </section>
-        <section aria-labelledby=":S3:"
-                 class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4"><h2 id=":S3:"
-                                                                                            class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
-            Design</h2>
+
+        <section aria-labelledby=":S3:" class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+            <h2 id=":S3:" class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">Content Creation</h2>
             <div class="md:col-span-3">
               <ul role="list" class="space-y-16">
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Figma</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">We started using Figma
-                    as just a design tool but now it’s become our virtual whiteboard for the entire company.
-                    Never would have expected the collaboration features to be the real hook.</p></li>
+
+                <li class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Sony A6100</h3>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Sigma 16mm f1.4 lens</h3>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
+
               </ul>
             </div>
           </div>
         </section>
-        <section aria-labelledby=":S4:"
-                 class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4"><h2 id=":S4:"
-                                                                                            class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
-            Productivity</h2>
+
+        <section aria-labelledby=":S4:" class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+            <h2 id=":S4:" class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">Productivity</h2>
             <div class="md:col-span-3">
               <ul role="list" class="space-y-16">
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Alfred</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">It’s not the newest kid
-                    on the block but it’s still the fastest. The Sublime Text of the application launcher
-                    world.</p></li>
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Reflect</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Using a daily notes
-                    system instead of trying to keep things organized by topics has been super powerful for me.
-                    And with Reflect, it’s still easy for me to keep all of that stuff discoverable by topic
-                    even though all of my writing happens in the daily note.</p></li>
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                  SavvyCal</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Great tool for
-                    scheduling meetings while protecting my calendar and making sure I still have lots of time
-                    for deep work during the week.</p></li>
-                <li class="group relative flex flex-col items-start"><h3
-                    class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Focus</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Simple tool for
-                    blocking distracting websites when I need to just do the work and get some momentum
-                    going.</p></li>
+                <li class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Notion</h3>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
               </ul>
             </div>
           </div>
         </section>
+
+        <p class="text-zinc-600 dark:text-zinc-400">
+          A few of the links on this page will earn me an affiliate commission. This comes at no extra cost to you and
+          helps support me as a creator. Thank you 🙏
+        </p>
+
+
       </div>
     </div>
   </Container>
