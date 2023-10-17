@@ -28,7 +28,7 @@
                     <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
                     <a href="https://springonetour.io/sessions/does-your-api-need-a-rest-check-out-graphql">
                       <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                      <span class="relative z-10">Does Your API Need a REST? Check Out GraphQL.</span>
+                      <span class="relative z-10">Does Your API Need a REST? Check Out GraphQL</span>
                     </a>
                   </h3>
                   <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
@@ -51,7 +51,7 @@
                     <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
                     <a href="https://learning.oreilly.com/live-events/spring-recipes/0636920095810/">
                       <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                      <span class="relative z-10">Spring Recipes.</span>
+                      <span class="relative z-10">Spring Recipes</span>
                     </a>
                   </h3>
                   <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
@@ -74,7 +74,7 @@
                     <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
                     <a href="https://2023.connect.tech/session/504968">
                       <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                      <span class="relative z-10">Building Nuxt 3 Applications powered by Notion.</span>
+                      <span class="relative z-10">Building Nuxt 3 Applications powered by Notion</span>
                     </a>
                   </h3>
                   <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
@@ -96,7 +96,7 @@
                     <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
                     <a href="https://www.vmware.com/explore/eu.html">
                       <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                      <span class="relative z-10">Accelerating Innovation with Spring.</span>
+                      <span class="relative z-10">Accelerating Innovation with Spring</span>
                     </a>
                   </h3>
                   <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
