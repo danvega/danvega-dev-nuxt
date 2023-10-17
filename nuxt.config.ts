@@ -73,7 +73,6 @@ export default defineNuxtConfig({
       '/feed.json': { content: true },
       '/feed.xml': { content: true },
       '/rss.xml': { revisit: '1h', type: 'rss2', content: true },
-
     },
     content: {
       feed: {
@@ -93,18 +92,18 @@ export default defineNuxtConfig({
           ],
         },
         mapping: [
-          ['date', 'modified', value => value ? new Date(value) : value],
-          ['date', 'created', value => value ? new Date(value) : value],
-          ['date', '', () => new Date()],
+          // Description is used in Feed, so you point Feed object field to yours post field
+          ['description', 'excerpt'],
+          // Same
           ['link', '_path'],
+          // Taking published from date, wrapping value by Date object as described in Readme
+          ['published', 'date', value => value ? new Date(value) : value],
         ],
         query: {
-          limit: 100,
+          limit: 200,
           where: [
-            // Mine _path setup, try to make all work with one of yours, then add the second one with regex or |
-            { _path: /^\/blog\/[^\/]+$/ },
-          ],
-          templateRoots: ['blog']
+            {_path: /^\/blog\/.*$/ }
+          ]
         },
       }
     }
