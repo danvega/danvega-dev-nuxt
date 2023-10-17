@@ -16,7 +16,7 @@ useHead({
       </h1>
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
         I am often asked about the gear I use as a software developer and content creator. The hardware and software I use is changing all the time so this page will serve as a place for an updated list.
-        If you have a question about anything I use or a suggestion for something I am missing please reach out to me on <a href="http://twitter.com/therealdanvega">Twitter</a>.
+        If you have a question about anything I use or a suggestion for something I am missing please reach out to me on <a href="https://twitter.com/therealdanvega" class="text-blue-500 hover:text-blue-400">Twitter</a>.
       </p>
     </header>
     <div class="mt-16 sm:mt-20">

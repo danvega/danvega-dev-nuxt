@@ -18,9 +18,9 @@ useHead({
         One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love
         podcast interviews because they give me the opportunity to answer questions instead of just present my opinions.
 
-        You can view some of my <a href="https://github.com/danvega/abstracts" class="text-teal-500">abstracts</a> here or my <a href="http://www.youtube.com/danvega" class="text-teal-500">YouTube channel</a>
-        if you want to get an idea of my speaking style. For a full list of past events please check out the <NuxtLink to="/speaking/archives">archives</NuxtLink>.
-        If you would like me to speak at your event please feel free to <NuxtLink to="/about" class="text-teal-500">contact me</NuxtLink>.
+        You can view some of my <a href="https://github.com/danvega/abstracts" class="text-blue-500 hover:text-blue-400">abstracts</a> here or my <a href="http://www.youtube.com/danvega" class="text-blue-500 hover:text-blue-400">YouTube channel</a>
+        if you want to get an idea of my speaking style. For a full list of past events please check out the <NuxtLink to="/speaking/archives" class="text-blue-500 hover:text-blue-400">archives</NuxtLink>.
+        If you would like me to speak at your event please feel free to <NuxtLink to="/about" class="text-blue-500 hover:text-blue-400">contact me</NuxtLink>.
       </p>
     </header>
 
