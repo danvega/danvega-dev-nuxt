@@ -1,6 +1,5 @@
 <script lang="ts" setup="" xmlns="http://www.w3.org/1999/html">
 import {useDateFormat} from "@vueuse/core/index";
-import { ExclamationCircleIcon } from '@heroicons/vue/20/solid'
 
 useHead({
   title: 'Dan Vega - Newsletter',
