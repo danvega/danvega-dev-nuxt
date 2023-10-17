@@ -60,7 +60,7 @@ const navItems: NavItem[] = [
                 as="a"
                 href="/"
                 aria-label="Nav Button"
-                class="hover:text-teal-500 dark:hover:text-teal-400 block py-2">
+                class="hover:text-blue-500 dark:hover:text-blue-400 block py-2">
               Home
             </PopoverButton>
           </li>
@@ -68,7 +68,7 @@ const navItems: NavItem[] = [
             <PopoverButton
                 as="a"
                 :aria-label="nav.name"
-                class="hover:text-teal-500 dark:hover:text-teal-400 block py-2"
+                class="hover:text-blue-500 dark:hover:text-blue-400 block py-2"
                 :href="nav.link">
               {{ nav.name }}
             </PopoverButton>
