@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/content',
     'nuxt-feedme',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    'nuxt-simple-sitemap'
   ],
   // Thank You, Debbie - https://debbie.codes/blog/nuxt-lite-youtube-embeds/
   plugins: ['~/plugins/youtube.client.js'],
@@ -107,6 +108,10 @@ export default defineNuxtConfig({
         },
       }
     }
+  },
+  sitemap: {
+    strictNuxtContentPaths: true,
+    xsl: false
   },
   css: ['~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
   devtools: { enabled: false }
