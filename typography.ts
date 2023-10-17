@@ -29,10 +29,10 @@ export default function typographyStyles({ theme }: PluginUtils) {
             css: {
                 '--tw-prose-body': theme('colors.zinc.600'),
                 '--tw-prose-headings': theme('colors.zinc.900'),
-                '--tw-prose-links': theme('colors.teal.500'),
-                '--tw-prose-links-hover': theme('colors.teal.600'),
-                '--tw-prose-underline': theme('colors.teal.500 / 0.2'),
-                '--tw-prose-underline-hover': theme('colors.teal.500'),
+                '--tw-prose-links': theme('colors.blue.500'),
+                '--tw-prose-links-hover': theme('colors.blue.600'),
+                '--tw-prose-underline': theme('colors.blue.500 / 0.2'),
+                '--tw-prose-underline-hover': theme('colors.blue.500'),
                 '--tw-prose-bold': theme('colors.zinc.900'),
                 '--tw-prose-counters': theme('colors.zinc.900'),
                 '--tw-prose-bullets': theme('colors.zinc.900'),
@@ -49,10 +49,10 @@ export default function typographyStyles({ theme }: PluginUtils) {
 
                 '--tw-prose-invert-body': theme('colors.zinc.400'),
                 '--tw-prose-invert-headings': theme('colors.zinc.200'),
-                '--tw-prose-invert-links': theme('colors.teal.400'),
-                '--tw-prose-invert-links-hover': theme('colors.teal.400'),
-                '--tw-prose-invert-underline': theme('colors.teal.400 / 0.3'),
-                '--tw-prose-invert-underline-hover': theme('colors.teal.400'),
+                '--tw-prose-invert-links': theme('colors.blue.400'),
+                '--tw-prose-invert-links-hover': theme('colors.blue.400'),
+                '--tw-prose-invert-underline': theme('colors.blue.400 / 0.3'),
+                '--tw-prose-invert-underline-hover': theme('colors.blue.400'),
                 '--tw-prose-invert-bold': theme('colors.zinc.200'),
                 '--tw-prose-invert-counters': theme('colors.zinc.200'),
                 '--tw-prose-invert-bullets': theme('colors.zinc.200'),
@@ -75,8 +75,8 @@ export default function typographyStyles({ theme }: PluginUtils) {
                     marginBottom: theme('spacing.10'),
                 },
                 p: {
-                    marginTop: theme('spacing.7'),
-                    marginBottom: theme('spacing.7'),
+                    marginTop: theme('spacing.2'),
+                    marginBottom: theme('spacing.2'),
                 },
 
                 // Headings
@@ -87,13 +87,13 @@ export default function typographyStyles({ theme }: PluginUtils) {
                 h2: {
                     fontSize: theme('fontSize.xl')[0],
                     lineHeight: theme('lineHeight.7'),
-                    marginTop: theme('spacing.20'),
+                    marginTop: theme('spacing.12'),
                     marginBottom: theme('spacing.4'),
                 },
                 h3: {
                     fontSize: theme('fontSize.base')[0],
                     lineHeight: theme('lineHeight.7'),
-                    marginTop: theme('spacing.16'),
+                    marginTop: theme('spacing.8'),
                     marginBottom: theme('spacing.4'),
                 },
                 ':is(h2, h3) + *': {
@@ -162,6 +162,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
                 // Lists
                 ul: {
                     listStyleType: 'disc',
+                    marginTop: theme('spacing.1')
                 },
                 ol: {
                     listStyleType: 'decimal',
@@ -170,8 +171,8 @@ export default function typographyStyles({ theme }: PluginUtils) {
                     paddingLeft: theme('spacing.6'),
                 },
                 li: {
-                    marginTop: theme('spacing.6'),
-                    marginBottom: theme('spacing.6'),
+                    marginTop: theme('spacing.2'),
+                    marginBottom: theme('spacing.2'),
                     paddingLeft: theme('spacing[3.5]'),
                 },
                 'li::marker': {
@@ -185,12 +186,12 @@ export default function typographyStyles({ theme }: PluginUtils) {
                     color: 'var(--tw-prose-bullets)',
                 },
                 'li :is(ol, ul)': {
-                    marginTop: theme('spacing.4'),
-                    marginBottom: theme('spacing.4'),
+                    marginTop: theme('spacing.2'),
+                    marginBottom: theme('spacing.2'),
                 },
                 'li :is(li, p)': {
-                    marginTop: theme('spacing.3'),
-                    marginBottom: theme('spacing.3'),
+                    marginTop: theme('spacing.2'),
+                    marginBottom: theme('spacing.2'),
                 },
 
                 // Code blocks

@@ -13,9 +13,6 @@ github: https://github.com/danvega/rest-client
 keywords: Spring Framework, Spring Boot, Rest Client
 ---
 
-
-# Exploring the New REST Client in Spring Boot 3.2
-
 Greetings, folks! It's Dan Vega, Spring developer advocate at VMware. Today, I am thrilled to dive into Spring Boot 3.2 and its new REST client. But before we do, let's take a moment to examine our journey to this moment.
 
 ## From Start to REST Client

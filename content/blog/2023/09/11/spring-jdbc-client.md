@@ -13,8 +13,6 @@ github: https://github.com/danvega/jdbc-client
 keywords: Spring Framework, Spring Boot, JDBC Client, JDBC Template, Spring Data, Spring Data JDBC
 ---
 
-# A First Look at Spring Framework's New JDBC Client
-
 In this tutorial, we'll be diving into the fresh waters of the new JDBC client in Spring Framework 6.1 and Spring Boot 3.2.
 
 We'll be not only reviewing how to use it but also discussing some of the associated advantages. So, without further ado, let's delve into it.
