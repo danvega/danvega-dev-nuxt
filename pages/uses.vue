@@ -194,6 +194,10 @@ useHead({
                   <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Netlify</h3>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
                 </li>
+                <li class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Tailwind CSS / UI</h3>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                </li>
               </ul>
             </div>
           </div>
