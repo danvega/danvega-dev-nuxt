@@ -1,6 +1,4 @@
-<script  lang="ts" setup="">
-import Navbar from "~/components/Navbar.vue";
-
+<script setup  lang="ts">
 const toggleTheme = (newTheme: Theme) => {
   useColorMode().preference = newTheme;
 }
