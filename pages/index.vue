@@ -7,12 +7,12 @@ const title = ref("Spring Developer Advocate, YouTuber and Lifelong Learner");
 const about = ref("Hello 👋🏻 My name is Dan Vega, Spring Developer Advocate, Husband and #GirlDad based outside of Cleveland OH. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.");
 
 useHead({
-  title,
+  title: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner',
   meta: [
-    {name: 'title', content: 'Dan Vega -'},
-    {name: 'description', content: about}
+    { name: 'title', content: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner' },
+    { name: 'description', content: about }
   ]
-})
+});
 </script>
 
 <template>

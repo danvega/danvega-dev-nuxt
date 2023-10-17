@@ -1,5 +1,11 @@
-<script lang="ts" setup="">
-
+<script setup lang="ts">
+useHead({
+  title: 'Dan Vega - Speaking',
+  meta: [
+    { name: 'title', content: 'Dan Vega - Speaking' },
+    { name: 'description', content: 'I’ve spoken at events around the world and been interviewed for podcasts and live streams.' }
+  ]
+});
 </script>
 
 <template>

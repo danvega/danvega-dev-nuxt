@@ -1,5 +1,11 @@
 <script lang="ts" setup="">
-
+useHead({
+  title: 'Dan Vega - About Me',
+  meta: [
+    { name: 'title', content: 'Dan Vega - About Me' },
+    { name: 'description', content: 'Hello 👋🏻 My Name is Dan Vega' }
+  ]
+});
 </script>
 
 <template>

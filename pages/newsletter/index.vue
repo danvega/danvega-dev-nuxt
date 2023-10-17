@@ -2,6 +2,14 @@
 import {useDateFormat} from "@vueuse/core/index";
 import { ExclamationCircleIcon } from '@heroicons/vue/20/solid'
 
+useHead({
+  title: 'Dan Vega - Newsletter',
+  meta: [
+    { name: 'title', content: 'Dan Vega - Newsletter' },
+    { name: 'description', content: 'My Weekly(ish) Newsletter' }
+  ]
+});
+
 const news = await queryContent('newsletter')
     .where({draft: {$ne: true}})
     .limit(5)

@@ -1,5 +1,11 @@
 <script setup lang="ts">
-
+useHead({
+  title: 'Dan Vega - Speaking Archives',
+  meta: [
+    { name: 'title', content: 'Dan Vega - Speaking Archives' },
+    { name: 'description', content: 'A list of past events I have given talks at.' }
+  ]
+});
 </script>
 
 <template>

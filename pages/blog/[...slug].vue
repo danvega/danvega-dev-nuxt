@@ -1,6 +1,7 @@
 <script setup>
 import { useDateFormat } from '@vueuse/core'
 
+
 const { path } = useRoute();
 const { data } = await useAsyncData(`content-${path}`, () => {
   return queryContent()
@@ -31,6 +32,29 @@ function removeTrailingSlash(inputString) {
   }
   return inputString; // No trailing slash, return the original string
 }
+
+const config = useRuntimeConfig();
+
+useHead({
+  title: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner',
+  meta: [
+    { name: 'title', content: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner' },
+    { name: 'description', content: data.value.excerpt },
+    { name: "keywords", content: data.value?.keywords },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: data.value.title },
+    { name: 'twitter:description', content: data.value.excerpt },
+    { name: 'twitter:site', content: '@therealdanvega' },
+    { name: 'twitter:image', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
+    { name: 'twitter:creator', content: '@therealdanvega' },
+    { name: 'og:type', content: 'article' },
+    { name: 'og:title', content: data.value.title },
+    { name: 'og:description', content: data.value.excerpt },
+    { name: 'og:url', content: config.public.urlBase + path },
+    { name: 'og:image', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
+    { name: 'og:image:secure_url', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
+  ]
+});
 </script>
 
 <template>

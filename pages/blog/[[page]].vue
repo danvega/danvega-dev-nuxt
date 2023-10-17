@@ -37,6 +37,14 @@ const formatDatePublished = (date) => {
   const formatted = useDateFormat(date, "MMMM D, YYYY");
   return formatted.value;
 }
+
+useHead({
+  title: 'Dan Vega - Blog',
+  meta: [
+    { name: 'title', content: 'Dan Vega - Blog' },
+    { name: 'description', content: 'Writing on software development and anything else I find interesting.' }
+  ]
+});
 </script>
 
 <template>

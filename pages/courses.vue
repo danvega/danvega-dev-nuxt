@@ -1,4 +1,13 @@
 <script lang="ts" setup>
+
+useHead({
+  title: 'Dan Vega - Courses',
+  meta: [
+    { name: 'title', content: 'Dan Vega - Courses' },
+    { name: 'description', content: 'If you want to learn something new check out one of my courses.' }
+  ]
+});
+
 const courses : Course[] = [
   {
     slug: 'vue-for-beginners',
