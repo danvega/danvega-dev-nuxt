@@ -34,3 +34,61 @@
 /youtube http://www.youtube.com/danvega
 /instagram https://www.instagram.com/thedanvega/
 /linkedin https://www.linkedin.com/in/danvega/
+
+
+# tags
+
+/tag/sql/ /blog?tag=sql 301
+/tag/grails/ /blog?tag=grails 301
+/tag/groovy/ /blog?tag=groovy 301
+/tag/random/ /blog?tag=random 301
+/tag/books/ /blog?tag=books 301
+/tag/java/ /blog?tag=java 301
+/tag/spring/ /blog?tag=spring 301
+/tag/programming/ /blog?tag=programming 301
+/tag/udemy/ /blog?tag=udemy 301
+/tag/you-tube/ /blog?tag=you-tube 301
+/tag/blogging/ /blog?tag=blogging 301
+/tag/angular/ /blog?tag=angular 301
+/tag/software-development/ /blog?tag=software-development 301
+/tag/spring-boot/ /blog?tag=spring-boot 301
+/tag/course/ /blog?tag=course 301
+/tag/goals/ /blog?tag=goals 301
+/tag/tech-elevator/ /blog?tag=tech-elevator 301
+/tag/conference/ /blog?tag=conference 301
+/tag/presentation/ /blog?tag=presentation 301
+/tag/courses/ /blog?tag=courses 301
+/tag/mac/ /blog?tag=mac 301
+/tag/web-development/ /blog?tag=web-development 301
+/tag/vue/ /blog?tag=vue 301
+/tag/node/ /blog?tag=node 301
+/tag/npm/ /blog?tag=npm 301
+/tag/javascript/ /blog?tag=javascript 301
+/tag/html/ /blog?tag=html 301
+/tag/gridsome/ /blog?tag=gridsome 301
+/tag/codesandbox/ /blog?tag=codesandbox 301
+/tag/twitch/ /blog?tag=twitch 301
+/tag/youtube/ /blog?tag=youtube 301
+/tag/vscode/ /blog?tag=vscode 301
+/tag/nodejs/ /blog?tag=nodejs 301
+/tag/markdown/ /blog?tag=markdown 301
+/tag/blog/ /blog?tag=blog 301
+/tag/css/ /blog?tag=css 301
+/tag/vue3/ /blog?tag=vue3 301
+/tag/screencast/ /blog?tag=screencast 301
+/tag/deno/ /blog?tag=deno 301
+/tag/maven/ /blog?tag=maven 301
+/tag/meta/ /blog?tag=meta 301
+/tag/apple/ /blog?tag=apple 301
+/tag/spring-data/ /blog?tag=spring-data 301
+/tag/graphql/ /blog?tag=graphql 301
+/tag/spring-security/ /blog?tag=spring-security 301
+/tag/aws/ /blog?tag=aws 301
+/tag/graph-ql/ /blog?tag=graph-ql 301
+/tag/graalvm/ /blog?tag=graalvm 301
+/tag/spring-shell/ /blog?tag=spring-shell 301
+/tag/spring-framework/ /blog?tag=spring-framework 301
+/tag/notion/ /blog?tag=notion 301
+/tag/content/ /blog?tag=content 301
+/tag/vuepress/ /blog?tag=vuepress 301
+
