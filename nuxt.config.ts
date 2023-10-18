@@ -14,7 +14,10 @@ export default defineNuxtConfig({
     '@nuxt/image'
   ],
   // Thank You, Debbie - https://debbie.codes/blog/nuxt-lite-youtube-embeds/
-  plugins: ['~/plugins/youtube.client.js'],
+  plugins: [
+      '~/plugins/youtube.client.js',
+      '~/plugins/sentry.client.ts'
+  ],
   build: {
     transpile: ['lite-youtube'],
   },
@@ -28,6 +31,10 @@ export default defineNuxtConfig({
       urlSchema,
       urlDomain,
       urlBase,
+      sentry: {
+        dsn: 'https://192a6edf487cb3f69aa56e4cefbcfc75@o268705.ingest.sentry.io/4506073654099968',
+        environment: 'development',
+      }
     },
   },
   routeRules: {
