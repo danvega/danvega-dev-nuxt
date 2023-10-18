@@ -30,6 +30,15 @@ export default defineNuxtConfig({
       urlBase,
     },
   },
+  routeRules: {
+    '/blog/**': { isr: true },
+    '/newsletter/**': { isr: true },
+    '/about': { prerender: true },
+    '/speaking': { prerender: true },
+    '/courses': { prerender: true },
+    '/uses': { prerender: true },
+    '/contact': { redirect: '/about' }
+  },
   app: {
     head: {
       script: [
