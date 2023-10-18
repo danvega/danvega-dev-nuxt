@@ -2,15 +2,15 @@
 import { useDateFormat } from '@vueuse/core'
 
 const { path } = useRoute()
-let slug = ref('');
-if(path) {
-  const parts = path.split('/');
-  slug = parts[parts.length -1];
+let slug = ref();
+if (path) {
+  const trimmedPath = path.endsWith('/') ? path.slice(0, -1) : path;
+  slug = trimmedPath.split('/').pop();
 }
 
 const { data } = await useAsyncData(`content-${path}`, () => {
   return queryContent()
-      .where({ slug })
+      .where({ slug } )
       .findOne()
 })
 
