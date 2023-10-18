@@ -20,12 +20,10 @@ const route = useRoute();
 const page = ref(route.params.page ? parseInt(route.params.page) : 1);
 const limit = ref(5);
 
-// .where( { tags: {$in: route.query.tag}} )
-// const articlesCount = await queryContent('blog')
-//     .find()
-const  articlesCount = 174;
+const articlesCount = await queryContent('blog')
+    .where({tags: {$in: route.query.tag}})
+    .count();
 
-// paginate all posts
 const posts = await queryContent('blog')
     .where( {tags: {$in: route.query.tag}})
     .skip(limit.value * (page.value - 1))
