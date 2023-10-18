@@ -69,7 +69,7 @@ const courses : Course[] = [
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
           <div class="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400" v-for="course in courses" :key="course.slug">
-            <img
+            <NuxtImg
                 :src="`/images/courses/${course.cover}`"
                 :alt="course.title"
                 class="rounded-2xl w-3/4"/>
