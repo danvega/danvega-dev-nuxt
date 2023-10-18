@@ -34,7 +34,7 @@ const posts = await queryContent('blog')
 if(posts.length == 0) {
   throw createError({
     statusCode:404,
-    statusMessage: "No Blog posts found for path: `${route.path}`"
+    statusMessage: `No Blog posts found for path: ${route.path}`
   })
 }
 </script>

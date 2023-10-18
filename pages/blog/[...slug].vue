@@ -10,9 +10,9 @@ const { data } = await useAsyncData(`content-${path}`, () => {
 })
 
 if(data.value == null) {
-  throw new createError({
+  throw createError({
     statusCode:404,
-    statusMessage: "No Blog post found for slug: `${route.path}`"
+    statusMessage: `No Blog post found for slug: ${path}`
   })
 }
 

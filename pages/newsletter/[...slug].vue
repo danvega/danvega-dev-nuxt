@@ -14,6 +14,13 @@ const { data } = await useAsyncData(`content-${path}`, () => {
       .findOne()
 })
 
+if(data.value == null) {
+  throw createError({
+    statusCode:404,
+    statusMessage: `No Newsletter found for slug: ${path}`
+  })
+}
+
 const formatDatePublished = (date) => {
   const formatted = useDateFormat(date, "MMMM D, YYYY");
   return formatted.value;

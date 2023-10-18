@@ -49,7 +49,7 @@ useHead({
                   </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this talk, I will cover the basics of GraphQL and how it differs from traditional RESTful API architectures.
                     By the end of this talk, you will have everything you need to build your first GraphQL API in Spring.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
                     Learn More
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                       <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -71,7 +71,7 @@ useHead({
                     </span>O'Reilly Learning Platform, October 23, 2023 - Virtual
                   </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Join Spring experts Nathaniel Schutta and Dan Vega to find concrete solutions for common problems encountered in modern software development, from building APIs to cloud native applications. Spring is constantly evolving and growing, so if you’re unsure about all its resources, you’ll discover them during this plunge into the Spring ecosystem.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
                     Learn More
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                       <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -94,7 +94,7 @@ useHead({
                     </span>ConnectTech, October 24, 2023 - Atlanta, GA
                   </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this session, I'll show you what I learned while building and deploying a content site powered by the Notion API. By the end of this session, you will have the knowledge required to start building your own solutions with Nuxt and Notion.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
                     Learn More
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                       <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -116,7 +116,7 @@ useHead({
                     </span>VMware Barcelona, November 6-9, 2023 - Barcelona Spain
                   </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Get ready for an exhilarating celebration of 20 years of Spring. As developers, we all crave speed and agility, and Spring has been our trusted companion on this journey. From its humble beginnings to its second act with Spring Boot, we will look back at how Spring has revolutionized the way we develop software.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
                     Learn More
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                       <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -139,7 +139,7 @@ useHead({
                   </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this talk, I will cover the basics of GraphQL and how it differs from traditional RESTful API architectures.
                     By the end of this talk, you will have everything you need to build your first GraphQL API in Spring.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
                     Learn More
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                       <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -161,7 +161,7 @@ useHead({
                     </span>CodeMash, January 9-12, 2024 - Sandusky, OH
                   </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Don't miss this opportunity to discover how you can contribute to the tech world in a unique and impactful way. Join us and take the first step towards a rewarding career in Developer Relations!</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
                     Learn More
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                       <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
