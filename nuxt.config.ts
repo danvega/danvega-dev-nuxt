@@ -29,6 +29,13 @@ export default defineNuxtConfig({
       urlBase,
     },
   },
+  app: {
+    head: {
+      script: [
+        {src: "https://cdn.usefathom.com/script.js" , "data-site": "ZWNSJLZA", defer: true, tagPosition: 'bodyClose'}
+      ],
+    }
+  },
   colorMode: {
     preference: 'system',
     fallback: 'light',
