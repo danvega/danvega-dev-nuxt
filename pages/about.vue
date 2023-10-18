@@ -15,8 +15,15 @@ useHead({
       <!-- portrait -->
       <div class="lg:pl-20">
         <div class="max-w-xs px-2.5 lg:max-w-none">
-          <img alt="" loading="lazy" width="800" height="800" decoding="async" data-nimg="1"
-               class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" src="/images/dan_portrait.jpg" style="color: transparent;">
+          <NuxtImg
+            src="/images/dan_portrait.jpg"
+            class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            style="color: transparent;"
+            loading="lazy"
+            alt="Dan Vega"/>
+
+<!--          <img alt="" loading="lazy" width="800" height="800" decoding="async" data-nimg="1"-->
+<!--               class="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" src="/images/dan_portrait.jpg" style="color: transparent;">-->
         </div>
       </div>
       <!-- about -->

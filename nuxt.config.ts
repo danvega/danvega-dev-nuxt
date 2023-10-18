@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-feedme',
     '@vueuse/nuxt',
-    'nuxt-simple-sitemap'
+    'nuxt-simple-sitemap',
+    '@nuxt/image'
   ],
   // Thank You, Debbie - https://debbie.codes/blog/nuxt-lite-youtube-embeds/
   plugins: ['~/plugins/youtube.client.js'],

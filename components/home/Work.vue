@@ -14,9 +14,14 @@
     <ol class="mt-6 space-y-4">
       <li class="flex gap-4">
         <div class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-          <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
-               class="h-7 w-7 rounded-full" style="color:transparent"
-               src="/images/work/vmware.jpeg"/>
+          <NuxtImg
+            src="/images/work/vmware.jpeg"
+            alt="VMware"
+            width="32"
+            height="32"
+            class="h-7 w-7 rounded-full"
+            style="color:transparent"
+            loading="lazy"/>
         </div>
         <dl class="flex flex-auto flex-wrap gap-x-2">
           <dt class="sr-only">Company</dt>
@@ -37,9 +42,15 @@
       <li class="flex gap-4">
         <div
             class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-          <img alt="" loading="lazy" width="28" height="28" decoding="async" data-nimg="1"
-               class="h-7 w-7 rounded-full" style="color:transparent"
-               src="/images/work/briebug.jpeg"/></div>
+          <NuxtImg
+              src="/images/work/briebug.jpeg"
+              alt="Briebug"
+              width="32"
+              height="32"
+              class="h-7 w-7 rounded-full"
+              style="color:transparent"
+              loading="lazy"/>
+        </div>
         <dl class="flex flex-auto flex-wrap gap-x-2">
           <dt class="sr-only">Company</dt>
           <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">Briebug
@@ -57,9 +68,15 @@
       <li class="flex gap-4">
         <div
             class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-          <img alt="" loading="lazy" width="28" height="28" decoding="async" data-nimg="1"
-               class="h-7 w-7 rounded-full" style="color:transparent"
-               src="/images/work/tech_elevator.jpeg"/></div>
+          <NuxtImg
+              src="/images/work/tech_elevator.jpeg"
+              alt="Tech Elevator"
+              width="32"
+              height="32"
+              class="h-7 w-7 rounded-full"
+              style="color:transparent"
+              loading="lazy"/>
+        </div>
         <dl class="flex flex-auto flex-wrap gap-x-2">
           <dt class="sr-only">Company</dt>
           <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">Tech Elevator
@@ -77,9 +94,15 @@
       <li class="flex gap-4">
         <div
             class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-          <img alt="" loading="lazy" width="28" height="28" decoding="async" data-nimg="1"
-               class="h-7 w-7 rounded-full" style="color:transparent"
-               src="/images/work/markel.jpeg"/></div>
+          <NuxtImg
+              src="/images/work/markel.jpeg"
+              alt="Markel Corp"
+              width="32"
+              height="32"
+              class="h-7 w-7 rounded-full"
+              style="color:transparent"
+              loading="lazy"/>
+          </div>
         <dl class="flex flex-auto flex-wrap gap-x-2">
           <dt class="sr-only">Company</dt>
           <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
@@ -98,9 +121,15 @@
       <li class="flex gap-4">
         <div
             class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-          <img alt="" loading="lazy" width="28" height="28" decoding="async" data-nimg="1"
-               class="h-7 w-7 rounded-full" style="color:transparent"
-               src="/images/work/steris.jpeg"/></div>
+          <NuxtImg
+              src="/images/work/steris.jpeg"
+              alt="STERIS"
+              width="32"
+              height="32"
+              class="h-7 w-7 rounded-full"
+              style="color:transparent"
+              loading="lazy"/>
+        </div>
         <dl class="flex flex-auto flex-wrap gap-x-2">
           <dt class="sr-only">Company</dt>
           <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
@@ -119,9 +148,15 @@
       <li class="flex gap-4">
         <div
             class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-          <img alt="" loading="lazy" width="28" height="28" decoding="async" data-nimg="1"
-               class="h-7 w-7 rounded-full" style="color:transparent"
-               src="/images/work/letter_nine.jpeg"/></div>
+          <NuxtImg
+              src="/images/work/letter_nine.jpeg"
+              alt="LetterNine"
+              width="32"
+              height="32"
+              class="h-7 w-7 rounded-full"
+              style="color:transparent"
+              loading="lazy"/>
+        </div>
         <dl class="flex flex-auto flex-wrap gap-x-2">
           <dt class="sr-only">Company</dt>
           <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">LetterNine
@@ -139,9 +174,15 @@
       <li class="flex gap-4">
         <div
             class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-          <img alt="" loading="lazy" width="28" height="28" decoding="async" data-nimg="1"
-               class="h-7 w-7 rounded-full" style="color:transparent"
-               src="/images/work/five9.jpeg"/></div>
+          <NuxtImg
+              src="/images/work/five9.jpeg"
+              alt="Five9"
+              width="32"
+              height="32"
+              class="h-7 w-7 rounded-full"
+              style="color:transparent"
+              loading="lazy"/>
+        </div>
         <dl class="flex flex-auto flex-wrap gap-x-2">
           <dt class="sr-only">Company</dt>
           <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">Five9
