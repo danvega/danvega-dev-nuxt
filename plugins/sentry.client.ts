@@ -17,10 +17,10 @@ export default defineNuxtPlugin((nuxtApp) => {
             new Sentry.Replay(),
         ],
         // Configure this whole part as you need it!
-        tracesSampleRate: 1.0, // Change in prod
+        tracesSampleRate: 0.5, // Change in prod
         // Set `tracePropagationTargets` to control for which URLs distributed tracing should be enabled
         tracePropagationTargets: ['localhost', 'https://danvega.dev'],
-        replaysSessionSampleRate: 1.0, // Change in prod
-        replaysOnErrorSampleRate: 1.0, // Change in prod if necessary
+        replaysSessionSampleRate: 0.2, // Change in prod
+        replaysOnErrorSampleRate: 0.2, // Change in prod if necessary
     })
 })
