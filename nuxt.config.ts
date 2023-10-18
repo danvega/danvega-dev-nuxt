@@ -117,6 +117,12 @@ export default defineNuxtConfig({
       }
     }
   },
+  image: {
+    provider: 'netlify',
+    netlify: {
+      baseURl: process.env.IMAGES_URL
+    }
+  },
   sitemap: {
     strictNuxtContentPaths: true,
     xsl: false
