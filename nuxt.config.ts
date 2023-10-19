@@ -48,6 +48,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en'
+      },
       script: [
         {src: "https://cdn.usefathom.com/script.js" , "data-site": "ZWNSJLZA", defer: true, tagPosition: 'bodyClose'}
       ],

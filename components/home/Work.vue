@@ -31,8 +31,7 @@
           <dt class="sr-only">Role</dt>
           <dd class="text-xs text-zinc-500 dark:text-zinc-400">Spring Developer Advocate</dd>
           <dt class="sr-only">Date</dt>
-          <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-              aria-label="2022 until Present">
+          <dd class="ml-auto text-xs text-zinc-500 dark:text-zinc-500" aria-label="2022 until Present">
             <time dateTime="2022">2022</time>
             <span aria-hidden="true">—</span>
             <time dateTime="2023">Present</time>
@@ -58,7 +57,7 @@
           <dt class="sr-only">Role</dt>
           <dd class="text-xs text-zinc-500 dark:text-zinc-400">Principal Enterprise Java Architect</dd>
           <dt class="sr-only">Date</dt>
-          <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2021 until 2022">
+          <dd class="ml-auto text-xs text-zinc-500 dark:text-zinc-500" aria-label="2021 until 2022">
             <time dateTime="2021">2021</time>
             <span aria-hidden="true">—</span>
             <time dateTime="2022">2022</time>
@@ -84,7 +83,7 @@
           <dt class="sr-only">Role</dt>
           <dd class="text-xs text-zinc-500 dark:text-zinc-400">Curriculum Developer</dd>
           <dt class="sr-only">Date</dt>
-          <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2018 until 2021">
+          <dd class="ml-auto text-xs text-zinc-500 dark:text-zinc-500" aria-label="2018 until 2021">
             <time dateTime="2018">2018</time>
             <span aria-hidden="true">—</span>
             <time dateTime="2021">2021</time>
@@ -111,7 +110,7 @@
           <dt class="sr-only">Role</dt>
           <dd class="text-xs text-zinc-500 dark:text-zinc-400">Senior Developer</dd>
           <dt class="sr-only">Date</dt>
-          <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2012 until 2018">
+          <dd class="ml-auto text-xs text-zinc-500 dark:text-zinc-500" aria-label="2012 until 2018">
             <time dateTime="2012">2012</time>
             <span aria-hidden="true">—</span>
             <time dateTime="2018">2018</time>
@@ -138,7 +137,7 @@
           <dt class="sr-only">Role</dt>
           <dd class="text-xs text-zinc-500 dark:text-zinc-400">Senior Web Developer</dd>
           <dt class="sr-only">Date</dt>
-          <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2008 until 2012">
+          <dd class="ml-auto text-xs text-zinc-500 dark:text-zinc-500" aria-label="2008 until 2012">
             <time dateTime="2008">2008</time>
             <span aria-hidden="true">—</span>
             <time dateTime="2012">2012</time>
@@ -164,7 +163,7 @@
           <dt class="sr-only">Role</dt>
           <dd class="text-xs text-zinc-500 dark:text-zinc-400">Web Developer</dd>
           <dt class="sr-only">Date</dt>
-          <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2004 until 2008">
+          <dd class="ml-auto text-xs text-zinc-500 dark:text-zinc-500" aria-label="2004 until 2008">
             <time dateTime="2004">2004</time>
             <span aria-hidden="true">—</span>
             <time dateTime="2008">2008</time>
@@ -190,7 +189,7 @@
           <dt class="sr-only">Role</dt>
           <dd class="text-xs text-zinc-500 dark:text-zinc-400">Technical Support Specialist</dd>
           <dt class="sr-only">Date</dt>
-          <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2001 until 2004">
+          <dd class="ml-auto text-xs text-zinc-500 dark:text-zinc-500" aria-label="2001 until 2004">
             <time dateTime="2018">2001</time>
             <span aria-hidden="true">—</span>
             <time dateTime="2021">2004</time>
