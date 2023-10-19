@@ -4,6 +4,7 @@
 /blog/hello-gridsome /blog/2019/01/31/hello-gridsome 301
 /signup /newsletter
 /subscriber-thank-you /newsletter/thank-you
+/blog/2022/09/06/spring-security-jwt /blog/2022/09/09/spring-security-jwt 301
 
 # pretty urls
 
