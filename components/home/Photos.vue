@@ -1,10 +1,10 @@
 <script  lang="ts" setup="">
 const photos : Photo[] = [
-  {id: 1, width: 3744, height: 5616, src: "/images/photos/image-1.jpg", rotate: "rotate-2", alt: "Image 1"},
-  {id: 2, width: 3936, height: 2624, src: "/images/photos/image-2.jpg", rotate: "-rotate-2", alt: "Image 2"},
-  {id: 3, width: 5760, height: 3840, src: "/images/photos/image-3.jpg", rotate: "rotate-2", alt: "Image 3"},
-  {id: 4, width: 2400, height: 3000, src: "/images/photos/image-4.jpg", rotate: "rotate-2", alt: "Image 4"},
-  {id: 5, width: 4240, height: 2384, src: "/images/photos/image-5.jpg", rotate: "-rotate-2", alt: "Image 5"},
+  {id: 1, width: 1000, height: 1500, src: "/images/photos/image-1.jpg", rotate: "rotate-2", alt: "Image 1"},
+  {id: 2, width: 1000, height: 667, src: "/images/photos/image-2.jpg", rotate: "-rotate-2", alt: "Image 2"},
+  {id: 3, width: 1000, height: 667, src: "/images/photos/image-3.jpg", rotate: "rotate-2", alt: "Image 3"},
+  {id: 4, width: 1000, height: 1250, src: "/images/photos/image-4.jpg", rotate: "rotate-2", alt: "Image 4"},
+  {id: 5, width: 1000, height: 562, src: "/images/photos/image-5.jpg", rotate: "-rotate-2", alt: "Image 5"},
 ];
 </script>
 
@@ -17,6 +17,7 @@ const photos : Photo[] = [
         <NuxtImg
             :src="photo.src"
             :alt="photo.alt"
+            format="webp"
             loading="lazy"
             width="288"
             height="320"
