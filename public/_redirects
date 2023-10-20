@@ -52,7 +52,8 @@
 /tag/blogging/ /blog?tag=blogging 301
 /tag/angular/ /blog?tag=angular 301
 /tag/software-development/ /blog?tag=software-development 301
-/tag/spring-boot/ /blog?tag=spring-boot 301
+/tag/spring-boot/ /blog?tag=spring%20boot 301
+/tag/spring%20boot/ /blog?tag=spring%20boot 301
 /tag/course/ /blog?tag=course 301
 /tag/goals/ /blog?tag=goals 301
 /tag/tech-elevator/ /blog?tag=tech-elevator 301
