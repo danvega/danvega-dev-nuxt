@@ -33,9 +33,13 @@ courses.danvega.dev /courses 301
 # social urls
 
 /twitter http://twitter.com/therealdanvega
+/Twitter http://twitter.com/therealdanvega
 /youtube http://www.youtube.com/danvega
+/Youtube http://www.youtube.com/danvega
 /instagram https://www.instagram.com/thedanvega/
+/Instagram https://www.instagram.com/thedanvega/
 /linkedin https://www.linkedin.com/in/danvega/
+/LinkedIn https://www.linkedin.com/in/danvega/
 
 
 # tags
@@ -49,20 +53,19 @@ courses.danvega.dev /courses 301
 /tag/spring/ /blog?tag=spring 301
 /tag/programming/ /blog?tag=programming 301
 /tag/udemy/ /blog?tag=udemy 301
-/tag/you-tube/ /blog?tag=you-tube 301
+/tag/youtube/ /blog?tag=youtube 301
 /tag/blogging/ /blog?tag=blogging 301
 /tag/angular/ /blog?tag=angular 301
-/tag/software-development/ /blog?tag=software-development 301
-/tag/spring-boot/ /blog?tag=spring%20boot 301
+/tag/software%20development/ /blog?tag=software%20development 301
 /tag/spring%20boot/ /blog?tag=spring%20boot 301
 /tag/course/ /blog?tag=course 301
 /tag/goals/ /blog?tag=goals 301
-/tag/tech-elevator/ /blog?tag=tech-elevator 301
+/tag/tech%2Delevator/ /blog?tag=tech%2Delevator 301
 /tag/conference/ /blog?tag=conference 301
 /tag/presentation/ /blog?tag=presentation 301
 /tag/courses/ /blog?tag=courses 301
 /tag/mac/ /blog?tag=mac 301
-/tag/web-development/ /blog?tag=web-development 301
+/tag/web%2Ddevelopment/ /blog?tag=web%2Ddevelopment 301
 /tag/vue/ /blog?tag=vue 301
 /tag/node/ /blog?tag=node 301
 /tag/npm/ /blog?tag=npm 301
@@ -83,14 +86,14 @@ courses.danvega.dev /courses 301
 /tag/maven/ /blog?tag=maven 301
 /tag/meta/ /blog?tag=meta 301
 /tag/apple/ /blog?tag=apple 301
-/tag/spring-data/ /blog?tag=spring-data 301
+/tag/spring%2Ddata/ /blog?tag=spring%2Ddata 301
 /tag/graphql/ /blog?tag=graphql 301
-/tag/spring-security/ /blog?tag=spring-security 301
+/tag/spring%2Dsecurity/ /blog?tag=spring%2Dsecurity 301
 /tag/aws/ /blog?tag=aws 301
-/tag/graph-ql/ /blog?tag=graph-ql 301
+/tag/graph%2Dql/ /blog?tag=graph%2Dql 301
 /tag/graalvm/ /blog?tag=graalvm 301
-/tag/spring-shell/ /blog?tag=spring-shell 301
-/tag/spring-framework/ /blog?tag=spring-framework 301
+/tag/spring%2Dshell/ /blog?tag=spring%2Dshell 301
+/tag/spring%2Dframework/ /blog?tag=spring%2Dframework 301
 /tag/notion/ /blog?tag=notion 301
 /tag/content/ /blog?tag=content 301
 /tag/vuepress/ /blog?tag=vuepress 301
