@@ -3,6 +3,7 @@ useHead({
   title: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner',
   meta: [
     { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner' },
     { name: 'twitter:description', content: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner' },
     { name: 'twitter:image', content: 'https://www.danvega.dev/images/danvega_dev_cover.png' },
     { name: 'twitter:site', content: '@therealdanvega' },
@@ -13,6 +14,16 @@ useHead({
     { name: 'og:url', content: 'https://www.danvega.dev' },
     { name: 'og:image', content: 'https://www.danvega.dev/images/danvega_dev_cover.png' },
     { name: 'og:image:secure_url', content: 'https://www.danvega.dev/images/danvega_dev_cover.png' },
+  ],
+  htmlAttrs: {
+    lang: 'en'
+  },
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon.png'
+    }
   ]
 });
 </script>
