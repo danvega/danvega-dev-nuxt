@@ -31,6 +31,9 @@ courses.danvega.dev /courses 301
 /docs/spring-boot-2-docs https://github.com/danvega/danvega-dev/tree/master/static/docs/spring-boot-2-docs 301
 
 
+# blog posts
+/blog/2023/09/17/spring-boot-actuator /blog/2023/09/17/spring-boot-starter 301
+
 # social urls
 
 /twitter http://twitter.com/therealdanvega
