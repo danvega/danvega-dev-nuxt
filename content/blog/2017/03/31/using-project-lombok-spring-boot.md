@@ -223,7 +223,7 @@ public class User {
 
 The great thing about Lombok is that it integrates well with the IDE. I am using IntelliJ but this will work in Eclipse as well. If you look over at your project structure you can see that all of these methods now exist without us having to write them. We also don't have to guess as to whether it worked or not, we can clearly see that it did. Not to mention, look how clean our class looks! 
 
-![Lombok Demo](./lombok_demo_4-293x300.png)
+![Lombok Demo](/images/blog/2017/03/31/lombok_demo_4-293x300.png)
 
 ## Conclusion
 
