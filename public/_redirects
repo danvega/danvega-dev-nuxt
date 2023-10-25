@@ -17,14 +17,14 @@
 # courses
 
 courses.danvega.dev /courses 301
-/courses/getting-started-with-java https://therealdanvega.teachable.com/p/getting-started-with-java 301
-/courses/learn-spring-boot https://therealdanvega.teachable.com/p/spring-boot-intro
-/courses/spring-boot-2 https://therealdanvega.teachable.com/p/spring-boot-2
-/courses/groovy https://therealdanvega.teachable.com/p/the-complete-apache-groovy-developer-course
-/courses/angular-4-java-developers https://therealdanvega.teachable.com/p/jhipster
-/courses/getting-started-java https://therealdanvega.teachable.com/p/getting-started-with-java
-/courses/vue3 https://danvega.ck.page/d3777e0d2e
-/courses/vue-3 https://danvega.ck.page/d3777e0d2e
+/courses/getting-started-with-java /courses 301
+/courses/learn-spring-boot /courses 301
+/courses/spring-boot-2 /courses 301
+/courses/groovy /courses 301
+/courses/angular-4-java-developers /courses 301
+/courses/getting-started-java /courses 301
+/courses/vue3 /courses 301
+/courses/vue-3 /courses 301
 
 # docs
 /spring-boot-2-docs https://github.com/danvega/danvega-dev/tree/master/static/docs/spring-boot-2-docs 301
