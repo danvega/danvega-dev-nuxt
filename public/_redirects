@@ -27,8 +27,9 @@ courses.danvega.dev /courses 301
 /courses/vue-3 https://danvega.ck.page/d3777e0d2e
 
 # docs
+/spring-boot-2-docs https://github.com/danvega/danvega-dev/tree/master/static/docs/spring-boot-2-docs 301
+/docs/spring-boot-2-docs https://github.com/danvega/danvega-dev/tree/master/static/docs/spring-boot-2-docs 301
 
-/spring-boot-2-docs /docs/spring-boot-2-docs 301
 
 # social urls
 
