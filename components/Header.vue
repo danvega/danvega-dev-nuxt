@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import NavigationButtons from "~/components/NavigationButtons.vue";
 
+const emit = defineEmits(['showSearchDialog']);
 </script>
 
 <template>
 
-  <header class="pointer-events-none relative z-50 flex flex-none flex-col" style="height:var(--header-height);margin-bottom:var(--header-mb)">
+  <header class="pointer-events-none relative flex flex-none flex-col" style="height:var(--header-height);margin-bottom:var(--header-mb)">
     <div class="order-last mt-[calc(theme(spacing.16)-theme(spacing.3))]"></div>
     <div class="sm:px-8 top-0 order-last -mb-3 pt-3" style="position:var(--header-position)">
       <!-- container -->
@@ -12,7 +14,7 @@
         <div class="relative px-4 sm:px-8 lg:px-12">
           <div class="mx-auto max-w-2xl lg:max-w-5xl">
             <div class="top-[var(--avatar-top,theme(spacing.3))] w-full" style="position:var(--header-inner-position)">
-              <div class="relative">
+              <div class="">
                 <!-- avatar container -->
                 <div class="absolute left-0 top-3 origin-left transition-opacity h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10" style="opacity:var(--avatar-border-opacity, 0);transform:var(--avatar-border-transform)"></div>
                 <!-- avatar -->
@@ -47,7 +49,7 @@
                   <Navbar/>
                 </div>
 
-                <ThemeToggle/>
+                <NavigationButtons @show-search-dialog="$emit('showSearchDialog')"/>
 
               </div>
             </div>

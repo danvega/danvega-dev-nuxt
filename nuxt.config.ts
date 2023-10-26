@@ -21,10 +21,12 @@ export default defineNuxtConfig({
   build: {
     transpile: ['lite-youtube'],
   },
-  vue: {
-    compilerOptions: {
-      isCustomElement: tag => ['lite-youtube'].includes(tag),
-    },
+  vite: {
+    vue: {
+      script: {
+        propsDestructure: true
+      }
+    }
   },
   runtimeConfig: {
     public: {

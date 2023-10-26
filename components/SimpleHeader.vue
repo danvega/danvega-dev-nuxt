@@ -1,8 +1,7 @@
 <script  lang="ts" setup="">
-type NavItem = {
-  name: string,
-  link: string
-}
+import NavigationButtons from "~/components/NavigationButtons.vue";
+
+const emit = defineEmits(['showSearchDialog']);
 
 const navItems: NavItem[] = [
   {name: "About",link: "/about"},
@@ -47,7 +46,7 @@ const navItems: NavItem[] = [
                   <Navbar />
                 </div>
 
-                <ThemeToggle/>
+                <NavigationButtons @show-search-dialog="$emit('showSearchDialog')"/>
 
               </div>
             </div>

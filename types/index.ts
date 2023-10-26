@@ -26,6 +26,10 @@ declare global {
         cover: String
     }
 
+    type NavItem = {
+        name: string,
+        link: string
+    }
 
 }
 
