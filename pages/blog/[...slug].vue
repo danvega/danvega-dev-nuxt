@@ -16,7 +16,7 @@ if(data.value == null) {
   })
 }
 
-const datePublished = useDateFormat(data.date, 'MMMM D, YYYY')
+const datePublished = useDateFormat(data.value.date, 'MMMM D, YYYY')
 
 const getImagePath = (date,cover) => {
   const createdOn = new Date(date);
