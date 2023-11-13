@@ -9,11 +9,11 @@ useHead({
   ]
 });
 
-const upcomingEvents = events.filter((event) => {
-  if(event.startDate) {
-    return new Date(event.startDate) > new Date();
-  }
-});
+const upcomingEvents = events
+    .filter((event) => {
+      return event.startDate && new Date(event.startDate) > new Date();
+    })
+    .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
 
 </script>
 

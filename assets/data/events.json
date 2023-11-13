@@ -1,5 +1,23 @@
 [
   {
+    "title": "Does Your API Need a REST? Check Out GraphQL",
+    "url": "https://confoo.ca/en/2024/session/does-your-api-need-a-rest-check-out-graphql",
+    "name": "ConFoo",
+    "startDate": "February 21, 2024",
+    "endDate": "February 23, 2024",
+    "location": "Montreal, Canada",
+    "description": "GraphQL is a declarative query language that simplifies retrieving data from an application's back end. It provides a clear and comprehensive description of the data in your API, giving you the ability to request only what you need. This makes it easy to evolve APIs over time and enables powerful developer tools."
+  },
+  {
+    "title": "Spring Boot 3 and Beyond!",
+    "url": "https://confoo.ca/en/2024/session/spring-boot-3-and-beyond",
+    "name": "ConFoo",
+    "startDate": "February 21, 2024",
+    "endDate": "February 23, 2024",
+    "location": "Montreal, Canada",
+    "description": "This presentation introduces some of the new and exciting features in Spring Boot 3.0 and beyond. One of the key highlights of Spring Boot 3.0 is the built-in AOT (Ahead of Time) support for GraalVM's native image. This groundbreaking addition revolutionizes your approach to application development and unlocks a multitude of unprecedented possibilities."
+  },
+  {
     "title": "The Developer Relations Playbook: How to build bridges by putting people first",
     "url": "https://codemash.org/",
     "name": "CodeMash",
