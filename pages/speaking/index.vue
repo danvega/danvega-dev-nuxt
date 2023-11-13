@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import events from "~/assets/data/events.json";
+
 useHead({
   title: 'Dan Vega - Speaking',
   meta: [
@@ -6,6 +8,13 @@ useHead({
     { name: 'description', content: 'I’ve spoken at events around the world and been interviewed for podcasts and live streams.' }
   ]
 });
+
+const upcomingEvents = events.filter((event) => {
+  if(event.startDate) {
+    return new Date(event.startDate) > new Date();
+  }
+});
+
 </script>
 
 <template>
@@ -34,133 +43,20 @@ useHead({
             <div class="md:col-span-3">
               <div class="space-y-16">
 
-                <article class="group relative flex flex-col items-start">
+                <article v-for="event in upcomingEvents" :key="event.url" class="group relative flex flex-col items-start">
                   <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                     <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                    <a href="https://springonetour.io/sessions/does-your-api-need-a-rest-check-out-graphql">
+                    <a :href="event.url">
                       <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                      <span class="relative z-10">Does Your API Need a REST? Check Out GraphQL</span>
+                      <span class="relative z-10">{{ event.title }}</span>
                     </a>
                   </h3>
                   <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
                     <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
                       <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                    </span>SpringOne Tour, October 17, 2023 - Virtual
+                    </span>{{ event.name }}, {{ event.startDate }} - {{ event.location}}
                   </p>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this talk, I will cover the basics of GraphQL and how it differs from traditional RESTful API architectures.
-                    By the end of this talk, you will have everything you need to build your first GraphQL API in Spring.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
-                    Learn More
-                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
-                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                </article>
-
-                <article class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                    <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                    <a href="https://learning.oreilly.com/live-events/spring-recipes/0636920095810/">
-                      <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                      <span class="relative z-10">Spring Recipes</span>
-                    </a>
-                  </h3>
-                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
-                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                    </span>O'Reilly Learning Platform, October 23, 2023 - Virtual
-                  </p>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Join Spring experts Nathaniel Schutta and Dan Vega to find concrete solutions for common problems encountered in modern software development, from building APIs to cloud native applications. Spring is constantly evolving and growing, so if you’re unsure about all its resources, you’ll discover them during this plunge into the Spring ecosystem.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
-                    Learn More
-                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
-                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                </article>
-
-
-                <article class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                    <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                    <a href="https://2023.connect.tech/session/504968">
-                      <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                      <span class="relative z-10">Building Nuxt 3 Applications powered by Notion</span>
-                    </a>
-                  </h3>
-                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
-                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                    </span>ConnectTech, October 24, 2023 - Atlanta, GA
-                  </p>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this session, I'll show you what I learned while building and deploying a content site powered by the Notion API. By the end of this session, you will have the knowledge required to start building your own solutions with Nuxt and Notion.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
-                    Learn More
-                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
-                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                </article>
-
-                <article class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                    <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                    <a href="https://www.vmware.com/explore/eu.html">
-                      <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                      <span class="relative z-10">Accelerating Innovation with Spring</span>
-                    </a>
-                  </h3>
-                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
-                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                    </span>VMware Barcelona, November 6-9, 2023 - Barcelona Spain
-                  </p>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Get ready for an exhilarating celebration of 20 years of Spring. As developers, we all crave speed and agility, and Spring has been our trusted companion on this journey. From its humble beginnings to its second act with Spring Boot, we will look back at how Spring has revolutionized the way we develop software.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
-                    Learn More
-                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
-                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                </article>
-
-                <article class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                    <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                    <a href="https://codemash.org/">
-                      <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                      <span class="relative z-10">Does Your API Need a REST? Check Out GraphQL</span>
-                    </a>
-                  </h3>
-                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
-                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                    </span>CodeMash, January 9-12, 2024 - Sandusky, OH
-                  </p>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this talk, I will cover the basics of GraphQL and how it differs from traditional RESTful API architectures.
-                    By the end of this talk, you will have everything you need to build your first GraphQL API in Spring.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
-                    Learn More
-                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
-                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </div>
-                </article>
-
-                <article class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                    <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                    <a href="https://codemash.org/">
-                      <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                      <span class="relative z-10">The Developer Relations Playbook: How to build bridges by putting people first</span>
-                    </a>
-                  </h3>
-                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
-                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                    </span>CodeMash, January 9-12, 2024 - Sandusky, OH
-                  </p>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Don't miss this opportunity to discover how you can contribute to the tech world in a unique and impactful way. Join us and take the first step towards a rewarding career in Developer Relations!</p>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{{ event.description }}</p>
                   <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
                     Learn More
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">

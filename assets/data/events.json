@@ -1,0 +1,210 @@
+[
+  {
+    "title": "The Developer Relations Playbook: How to build bridges by putting people first",
+    "url": "https://codemash.org/",
+    "name": "CodeMash",
+    "startDate": "January 9, 2024",
+    "endDate": "January 12, 2024",
+    "location": "Sandusky, OH",
+    "description": "Don't miss this opportunity to discover how you can contribute to the tech world in a unique and impactful way. Join us and take the first step towards a rewarding career in Developer Relations!"
+  },
+  {
+    "title": "Does Your API Need a REST? Check Out GraphQL",
+    "url": "https://codemash.org/",
+    "name": "CodeMash",
+    "startDate": "January 9, 2024",
+    "endDate": "January 12, 2024",
+    "location": "Sandusky, OH",
+    "description": "In this talk, I will cover the basics of GraphQL and how it differs from traditional RESTful API architectures. By the end of this talk, you will have everything you need to build your first GraphQL API in Spring."
+  },
+  {
+    "title": "Accelerating Innovation with Spring",
+    "url": "https://www.vmware.com/explore/eu.html",
+    "name": "VMware Barcelona",
+    "startDate": "November 6, 2023",
+    "endDate": "November 9, 2023",
+    "location": "Barcelona Spain",
+    "description": "Get ready for an exhilarating celebration of 20 years of Spring. As developers, we all crave speed and agility, and Spring has been our trusted companion on this journey. From its humble beginnings to its second act with Spring Boot, we will look back at how Spring has revolutionized the way we develop software."
+  },
+  {
+    "title": "Building Nuxt 3 Applications powered by Notion",
+    "url": "https://2023.connect.tech/session/504968",
+    "name": "ConnectTech",
+    "startDate": "October 24, 2023",
+    "endDate": "October 26, 2023",
+    "location": "Atlanta, GA",
+    "description": "In this session, I'll show you what I learned while building and deploying a content site powered by the Notion API. By the end of this session, you will have the knowledge required to start building your own solutions with Nuxt and Notion."
+  },
+  {
+    "title": "Spring Recipes",
+    "url": "https://learning.oreilly.com/live-events/spring-recipes/0636920095810/",
+    "name": "O'Reilly Learning Platform",
+    "startDate": "October 23, 2023",
+    "endDate": "October 23, 2023",
+    "location": "Virtual",
+    "description": "Join Spring experts Nathaniel Schutta and Dan Vega to find concrete solutions for common problems encountered in modern software development, from building APIs to cloud native applications. Spring is constantly evolving and growing, so if you’re unsure about all its resources, you’ll discover them during this plunge into the Spring ecosystem."
+  },
+  {
+    "title": "Does Your API Need a REST? Check Out GraphQL",
+    "url": "https://springonetour.io/sessions/does-your-api-need-a-rest-check-out-graphql",
+    "name": "SpringOne Tour",
+    "startDate": "October 17, 2023",
+    "endDate": "October 17, 2023",
+    "location": "Virtual",
+    "description": "In this talk, I will cover the basics of GraphQL and how it differs from traditional RESTful API architectures. By the end of this talk, you will have everything you need to build your first GraphQL API in Spring."
+  },
+  {
+    "startDate": "August 21, 2023",
+    "endDate": "August 24, 2023",
+    "name": "SpringOne",
+    "url": "https://springone.io/",
+    "location": "Las Vegas, NV"
+  },
+  {
+    "startDate": "June 20, 2023",
+    "endDate": "June 23, 2023",
+    "name": "KCDC",
+    "url": "https://www.kcdc.info/",
+    "location": "Kansas City, MO"
+  },
+  {
+    "startDate": "April 4, 2023",
+    "endDate": "April 6, 2023",
+    "name": "DevNexus",
+    "url": "https://devnexus.com/",
+    "location": "Atlanta, GA"
+  },
+  {
+    "startDate": "February 7, 2023",
+    "endDate": "February 7, 2023",
+    "name": "What's new in Spring Boot 3",
+    "url": "https://tanzu.vmware.com/content/webinars/feb-7-whats-new-with-spring-6-and-boot-3",
+    "location": "Online"
+  },
+  {
+    "startDate": "January 24, 2023",
+    "endDate": "January 26, 2023",
+    "name": "SpringOne Essentials Watch Party",
+    "url": "https://connect.tanzu.vmware.com/SpringOne-Essentials-Watch-Parties-2022",
+    "location": "San Francisco, CA"
+  },
+  {
+    "startDate": "January 17, 2023",
+    "endDate": "January 17, 2023",
+    "name": "Cleveland Java User Group (CJUG)",
+    "url": "https://www.meetup.com/cleveland-java/",
+    "location": "Cleveland, OH"
+  },
+  {
+    "startDate": "January 11, 2022",
+    "endDate": "January 11, 2022",
+    "name": "CodeMash: Getting Started with Spring Workshop",
+    "url": "https://www.codemash.org/session-details/?id=380331",
+    "location": "Sandusky, OH"
+  },
+  {
+    "startDate": "January 12, 2022",
+    "endDate": "January 12, 2022",
+    "name": "CodeMash: Give your APIs a REST & Make the move to GraphQL",
+    "url": "https://www.codemash.org/session-details/?id=380324",
+    "location": "Sandusky, OH"
+  },
+  {
+    "startDate": "September 22, 2022",
+    "endDate": "September 22, 2022",
+    "name": "BrightTalk Webinar: Spring Recipes",
+    "url": "https://tanzu.vmware.com/content/webinars/sep-22-spring-recipes-a-collection-of-common-sense-solutions",
+    "location": "Online"
+  },
+  {
+    "startDate": "August 08, 2022",
+    "endDate": "August 10, 2022",
+    "name": "Kansas City Developer Conference (KCDC)",
+    "url": "https://www.kcdc.info/",
+    "location": "Kansas City, KS"
+  },
+  {
+    "startDate": "July 25, 2022",
+    "endDate": "July 27, 2022",
+    "name": "Code On The Beach",
+    "url": "https://www.codeonthebeach.com/",
+    "location": "Atlantic Beach, FL"
+  },
+  {
+    "startDate": "June 21, 2022",
+    "endDate": "June 21, 2022",
+    "name": "Introduction to GraphQL",
+    "url": "https://tanzu.vmware.com/content/webinars/jun-introduction-to-spring-for-graphql",
+    "location": "Online"
+  },
+  {
+    "startDate": "June 21, 2002",
+    "endDate": "June 21, 2002",
+    "name": "Java Frameworks Panel Discussion",
+    "url": "https://www.meetup.com/cleveland-java/events/286289533/",
+    "location": "Cleveland, OH"
+  },
+  {
+    "startDate": "July 12, 2022",
+    "endDate": "July 13, 2022",
+    "name": "SpringOne Tour",
+    "url": "https://tanzu.vmware.com/developer/springone-tour/2022/seattle/",
+    "location": "Seattle, WA"
+  },
+  {
+    "startDate": "June 8, 2022",
+    "endDate": "June 10, 2022",
+    "name": "VueConf US",
+    "url": "https://us.vuejs.org/",
+    "location": "Ft. Lauderdale, FL"
+  },
+  {
+    "startDate": "June 7, 2022",
+    "endDate": "June 8, 2022",
+    "name": "SpringOne Tour",
+    "url": "https://tanzu.vmware.com/developer/springone-tour/2022/toronto/",
+    "location": "Toronto, CA"
+  },
+  {
+    "startDate": "June 6, 2022",
+    "endDate": "June 6, 2022",
+    "name": "Level Up Your Integration Testing With Testcontainers",
+    "url": "https://www.meetup.com/toronto-spring-users-group/events/286270337",
+    "location": "Toronto, CA"
+  },
+  {
+    "startDate": "February 23, 2022",
+    "endDate": "February 23, 2022",
+    "name": "San Francisco Java User Group",
+    "url": "https://www.meetup.com/sfjava/events/284010058/",
+    "location": "Online"
+  },
+  {
+    "startDate": "February 16, 2022",
+    "endDate": "February 16, 2022",
+    "name": "IntelliJ IDEA Live Stream",
+    "url": "https://www.youtube.com/watch?v=q_RLfOB7axQ",
+    "location": "Online"
+  },
+  {
+    "startDate": "September 01, 2021",
+    "endDate": "September 01, 2021",
+    "name": "SpringOne",
+    "url": "https://springone.io/2021/sessions/full-stack-development-with-spring-boot-vuejs",
+    "location": "Online"
+  },
+  {
+    "startDate": "January 07, 2020",
+    "endDate": "January 07, 2020",
+    "name": "CodeMash",
+    "url": "https://www.pluralsight.com/courses/codemash-session-52",
+    "location": "Sandusky, OH"
+  },
+  {
+    "startDate": "November 05, 2018",
+    "endDate": "November 05, 2018",
+    "name": "GetWitIt",
+    "url": "https://www.danvega.dev/blog/2018/11/05/cleveland-women-in-tech-presentation/",
+    "location": "Cleveland, OH"
+  }
+]
