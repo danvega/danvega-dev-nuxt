@@ -71,86 +71,55 @@ const upcomingEvents = events
           </div>
         </section>
 
-<!--        <section aria-labelledby=":S2:"-->
-<!--                 class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">-->
-<!--          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4"><h2 id=":S2:"-->
-<!--                                                                                            class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">-->
-<!--            Podcasts</h2>-->
-<!--            <div class="md:col-span-3">-->
-<!--              <div class="space-y-16">-->
-<!--                <article class="group relative flex flex-col items-start">-->
-<!--                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">-->
-<!--                    <div-->
-<!--                        class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>-->
-<!--                    <a href="#"><span-->
-<!--                        class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span-->
-<!--                        class="relative z-10">Using design as a competitive advantage</span></a></h3>-->
-<!--                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">-->
-<!--                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true"><span-->
-<!--                        class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>Encoding-->
-<!--                    Design, July 2022</p>-->
-<!--                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">How we used world-class-->
-<!--                    visual design to attract a great team, win over customers, and get more press for-->
-<!--                    Planetaria.</p>-->
-<!--                  <div aria-hidden="true"-->
-<!--                       class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">Listen to-->
-<!--                    podcast-->
-<!--                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">-->
-<!--                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round"-->
-<!--                            stroke-linejoin="round"></path>-->
-<!--                    </svg>-->
-<!--                  </div>-->
-<!--                </article>-->
-<!--                <article class="group relative flex flex-col items-start">-->
-<!--                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">-->
-<!--                    <div-->
-<!--                        class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>-->
-<!--                    <a href="#"><span-->
-<!--                        class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span-->
-<!--                        class="relative z-10">Bootstrapping an aerospace company to $17M ARR</span></a></h3>-->
-<!--                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">-->
-<!--                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true"><span-->
-<!--                        class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>The Escape-->
-<!--                    Velocity Show, March 2022</p>-->
-<!--                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The story of how we-->
-<!--                    built one of the most promising space startups in the world without taking any capital from-->
-<!--                    investors.</p>-->
-<!--                  <div aria-hidden="true"-->
-<!--                       class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">Listen to-->
-<!--                    podcast-->
-<!--                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">-->
-<!--                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round"-->
-<!--                            stroke-linejoin="round"></path>-->
-<!--                    </svg>-->
-<!--                  </div>-->
-<!--                </article>-->
-<!--                <article class="group relative flex flex-col items-start">-->
-<!--                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">-->
-<!--                    <div-->
-<!--                        class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>-->
-<!--                    <a href="#"><span-->
-<!--                        class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span-->
-<!--                        class="relative z-10">Programming your company operating system</span></a></h3>-->
-<!--                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">-->
-<!--                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true"><span-->
-<!--                        class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>How They Work-->
-<!--                    Radio, September 2021</p>-->
-<!--                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">On the importance of-->
-<!--                    creating systems and processes for running your business so that everyone on the team knows-->
-<!--                    how to make the right decision no matter the situation.</p>-->
-<!--                  <div aria-hidden="true"-->
-<!--                       class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">Listen to-->
-<!--                    podcast-->
-<!--                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">-->
-<!--                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round"-->
-<!--                            stroke-linejoin="round"></path>-->
-<!--                    </svg>-->
-<!--                  </div>-->
-<!--                </article>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </section>-->
+        <section aria-labelledby=":S2:" class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+          <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+            <h2 id=":S2:" class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">Podcasts</h2>
+            <div class="md:col-span-3">
+              <div class="space-y-16">
+
+                <article class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                    <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                    <a href="https://www.theartifact.io/">
+                      <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                      <span class="relative z-10">The Artifact - Everything Spring Framework (with Dan Vega)</span></a>
+                  </h3>
+                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
+                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
+                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>Encoding Design, July 2022</p>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this episode I had the opportunity to be a guest of Koushik Kothagal AKA JavaBrains. Koushik is one of the great teachers in our community and It was really great to sit down and talk all things DevRel, Education and Spring.</p>
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                    Listen to podcast
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </article>
+
+                <article class="group relative flex flex-col items-start">
+                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                    <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                    <a href="https://www.javapubhouse.com/2023/02/episode-102-oh-my-spring-boot-3-is-out-an-interview-with-dan-vega-from-the-pivotal-team.html">
+                      <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                      <span class="relative z-10">Java Pub House - Episode 102. Oh my… Spring Boot 3 is out!</span></a>
+                  </h3>
+                  <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
+                    <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
+                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>Encoding Design, July 2022</p>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Ok, so it’s an incredible time to be in the Java Ecosystem, and one of the biggest frameworks out there just dropped their three-point-oh version! That’s right! So Spring Boot is not officially 3.0, and it has as a Baseline Java 17! (oohh!!). So we brought in the big guns to talk about what does it mean to Upgrade to Spring Boot 3, and what are the new cool toys we can expect from that upgrade!</p>
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                    Listen to podcast
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                </article>
+
+
+              </div>
+            </div>
+          </div>
+        </section>
 
 
       </div>
