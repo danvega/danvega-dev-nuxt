@@ -174,12 +174,16 @@ useHead({
             <div class="md:col-span-3">
               <ul role="list" class="space-y-16">
                 <li class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Notion</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                  <a href="https://notion.so">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Notion</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Notion is a comprehensive organization and productivity tool that combines note-taking, task management, databases, and project tracking into a single, flexible platform. It stands out for its highly customizable interface, allowing users to create and manage content in a variety of formats, from simple to-do lists to complex project boards. Ideal for both personal and collaborative use, Notion is a versatile choice for those seeking an all-in-one solution to streamline their workflow and organize their ideas and projects efficiently.</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">VideoTap</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                  <a href="https://videotapit.com/?via=dan">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">VideoTap</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Are you a content creator who struggles to find enough time to produce written content alongside videos? Do you wish there was an easy way to transform your videos into compelling blog posts? Look no further than <a href="https://videotapit.com/?via=dan">VideoTap!</a></p>
                 </li>
               </ul>
             </div>
@@ -192,16 +196,22 @@ useHead({
             <div class="md:col-span-3">
               <ul role="list" class="space-y-16">
                 <li class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Nuxt 3</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                  <a href="https://nuxt.com/">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Nuxt 3</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Nuxt 3 is a versatile and modern framework for building web applications, offering improved performance, enhanced developer experience, and a range of new features over its predecessor, Nuxt 2. It leverages Vue.js 3, Vite, and Nitro server engine to create fast, server-side rendered applications that are both scalable and maintainable. Ideal for developing both static and dynamic websites, Nuxt 3 simplifies the development process with features like automatic routing, component auto-importing, and improved module compatibility.</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Netlify</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                  <a href="https://www.netlify.com/">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Netlify</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Netlify is a popular platform for hosting and automating web projects, renowned for its simplicity and powerful continuous deployment capabilities. It seamlessly integrates with various front-end frameworks and headless CMS options, offering features like serverless functions, form handling, and automatic SSL. Ideal for modern web development, Netlify simplifies the process of deploying, scaling, and maintaining web applications, making it a go-to choice for developers aiming for efficiency and high performance.</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Tailwind CSS / UI</h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"></p>
+                  <a href="https://tailwindcss.com/">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Tailwind CSS / UI</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Tailwind CSS is a utility-first CSS framework that enables rapid UI development by providing a vast set of pre-defined classes, which can be combined to build custom designs without writing CSS from scratch. It emphasizes responsive design and offers a highly customizable system, making it easy to create unique and responsive interfaces with minimal effort. Tailwind's approach streamlines the development process, leading to cleaner HTML and more maintainable codebases.</p>
                 </li>
               </ul>
             </div>
