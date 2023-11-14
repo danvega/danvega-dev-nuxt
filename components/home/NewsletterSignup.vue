@@ -1,75 +1,15 @@
 <script setup lang="ts">
 
-const dataOptions = {
-  "settings": {
-    "after_subscribe": {
-      "action": "message",
-      "success_message": "Success! Now check your email to confirm your subscription.",
-      "redirect_url": ""
-    },
-    "analytics": {
-      "google": null,
-      "facebook": null,
-      "segment": null,
-      "pinterest": null,
-      "sparkloop": null,
-      "googletagmanager": null
-    },
-    "modal": {
-      "trigger": "timer",
-      "scroll_percentage": null,
-      "timer": 5,
-      "devices": "all",
-      "show_once_every": 15
-    },
-    "powered_by": {
-      "show": true,
-      "url": "https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form"
-    },
-    "recaptcha": {
-      "enabled": false
-    },
-    "return_visitor": {
-      "action": "show",
-      "custom_content": ""
-    },
-    "slide_in": {
-      "display_in": "bottom_right",
-      "trigger": "timer",
-      "scroll_percentage": null,
-      "timer": 5,
-      "devices": "all",
-      "show_once_every": 15
-    },
-    "sticky_bar": {
-      "display_in": "top",
-      "trigger": "timer",
-      "scroll_percentage": null,
-      "timer": 5,
-      "devices": "all",
-      "show_once_every": 15
-    }
-  },
-  "version": "5"
-}
-
-/*
-form id: 1352761
-data-uid: 52adfca2a6
- data-sv-form="1352761"
- */
 </script>
 
 <template>
 
-  <!-- thank you https://sayzlim.net/plain-html-form-convertkit/ -->
-
-  <form action="https://app.convertkit.com/forms/1352761/subscriptions"
+  <form action="/api/convertkit/subscribe"
         method="post"
         data-sv-form="1352761"
         data-uid="52adfca2a6"
-        data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;: &quot;redirect&quot;,&quot;redirect_url&quot;: &quot;https://www.danvega.dev/newsletter/thank-you/;}}}"
         class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <input type="hidden" name="formId" value="1352761" />
     <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6 flex-none">
         <path d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z" class="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"/>
@@ -82,6 +22,7 @@ data-uid: 52adfca2a6
     </p>
     <div class="mt-6 flex">
       <input
+          name="email"
           type="email"
           placeholder="Email address"
           aria-label="Email address"

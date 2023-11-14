@@ -5,13 +5,12 @@ import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/vue/24/outline'
 
 <template>
 
-  <form action="https://app.convertkit.com/forms/843781/subscriptions"
+    <form action="/api/convertkit/subscribe"
         method="post"
         data-sv-form="843781"
         data-uid="44cc02ed05"
-        data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;: &quot;redirect&quot;,&quot;redirect_url&quot;: &quot;https://www.danvega.dev/newsletter/thank-you/;}}}"
         class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-
+    <input type="hidden" name="formId" value="843781" />
     <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32 mt-8 rounded-2xl">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
