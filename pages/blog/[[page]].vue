@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import SimplePagination from "~/components/blog/SimplePagination.vue";
+
 definePageMeta(
   {
     path: '/blog/:page(\\d+)?'
@@ -53,7 +55,7 @@ if(posts.length == 0) {
           <article class="md:grid md:grid-cols-4 md:items-baseline" v-for="post in posts" :key="post._id">
             <BlogCard :post="post"/>
           </article>
-          <SimplePagination :count="articlesCount" :page="page" :limit="limit"/>
+          <SimplePagination :limit="limit" :page="page" :count="articlesCount" />
         </div>
       </div>
     </div>

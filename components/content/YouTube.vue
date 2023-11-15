@@ -1,4 +1,4 @@
-<script  lang="ts" setup="">
+<script setup lang="ts">
 const props = defineProps({
   src: {
     type: String,
@@ -10,7 +10,7 @@ const props = defineProps({
   }
 })
 
-const getYouTubeId = () => props.id ? props.id : props.src.split('/').pop();
+const getYouTubeId = () => props.id ? props.id : props?.src?.split('/').pop();
 
 // video id from newsletter: erp-7MCK5BU
 // full embed path from blog post front matter: https://www.youtube.com/embed/4OVe0MWgZ4k
