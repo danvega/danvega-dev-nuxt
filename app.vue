@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import SearchDialog from "~/components/SearchDialog.vue";
-
 useHead({
   title: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner',
   meta: [

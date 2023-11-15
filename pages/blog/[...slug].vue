@@ -1,7 +1,6 @@
 <script setup>
 import { useDateFormat } from '@vueuse/core'
 
-
 const { path } = useRoute();
 const { data } = await useAsyncData(`content-${path}`, () => {
   return queryContent()
@@ -73,7 +72,6 @@ useHead({
               {{ data?.title }}
             </h1>
           </header>
-
           <!-- if we have a video show that, else show the cover image -->
           <YouTube :src="data.video" v-if="data?.video" />
           <NuxtImg
@@ -81,9 +79,7 @@ useHead({
               class="prose dark:prose-invert rounded-2xl mt-8"
               alt="ALT TEXT"
               v-else-if="data?.cover"/>
-
           <ContentRenderer :value="data" class="prose dark:prose-invert mt-8" />
-
         </article>
 
         <BlogTags :tags="data.tags"/>
