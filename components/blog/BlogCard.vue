@@ -1,5 +1,4 @@
-<script  lang="ts" setup="">
-import {ParsedContent} from "@nuxt/content/dist/runtime/types";
+<script setup  lang="ts">
 import {useDateFormat} from "@vueuse/core/index";
 
 const props = defineProps({

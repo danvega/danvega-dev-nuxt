@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import SimplePagination from "~/components/blog/SimplePagination.vue";
-import BlogCard from "~/components/blog/BlogCard.vue";
-
 definePageMeta(
   {
     path: '/blog/:page(\\d+)?'
