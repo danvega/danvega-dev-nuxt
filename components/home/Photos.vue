@@ -12,17 +12,13 @@ const photos : Photo[] = [
 ];
 
 function getRandomPhotos(photos: Photo[], count: number): Photo[] {
-  // Shuffle the array using Fisher-Yates (Durstenfeld) shuffle algorithm
   for (let i = photos.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [photos[i], photos[j]] = [photos[j], photos[i]];
   }
-
-  // Return the first 'count' elements
   return photos.slice(0, count);
 }
 
-// Example usage
 const randomPhotos = getRandomPhotos(photos, 5);
 </script>
 
