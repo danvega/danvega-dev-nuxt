@@ -14,7 +14,6 @@ declare global {
         width: number,
         height: number,
         src: string,
-        rotate: string,
         alt: string
     }
 
