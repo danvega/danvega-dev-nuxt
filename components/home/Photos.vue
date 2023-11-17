@@ -8,7 +8,11 @@ const photos : Photo[] = [
   {id: 6, width: 1024, height: 768, src: "/images/photos/dan_shar_nate_vegas.jpeg", alt: "Dan/Shar/Nate Las Vegas"},
   {id: 7, width: 1024, height: 768, src: "/images/photos/golf_lasvegas.jpeg", alt: "Golf in Las Vegas"},
   {id: 8, width: 768, height: 1024, src: "/images/photos/family_hilton_head.jpeg", alt: "Family in Hilton Head"},
-  {id: 9, width: 768, height: 1024, src: "/images/photos/dad_bella_dance.jpeg", alt: "Daddy Daughter Dance"}
+  {id: 9, width: 768, height: 1024, src: "/images/photos/dad_bella_dance.jpeg", alt: "Daddy Daughter Dance"},
+  {id: 9, width: 1440, height: 817, src: "/images/photos/lawrence_dan_connecttech.jpeg", alt: "Lawrence & Dan at ConnectTech"},
+  {id: 9, width: 2000, height: 1500, src: "/images/photos/dan_purnima_dashaun_springone.png", alt: "Dan/Purnima/Dashaun SpringOne"},
+  {id: 9, width: 2000, height: 2667, src: "/images/photos/springone_office_hours.png", alt: "Spring Office Hours Live"},
+  {id: 9, width: 2000, height: 1500, src: "/images/photos/dan_springone_graphql_2023.png", alt: "Spring Office Hours Live"},
 ];
 
 function getRandomPhotos(photos: Photo[], count: number): Photo[] {
