@@ -1,5 +1,14 @@
 [
   {
+    "title": "Embracing GraphQL: Beyond REST in API Development",
+    "url": "https://developersummit.com/session/embracing-graphql-beyond-rest-in-api-development",
+    "name": "GIDS India",
+    "startDate": "April 23, 2024",
+    "endDate": "April 26, 2024",
+    "location": "Bangalore India",
+    "description": "GraphQL represents a significant shift in API development, offering a declarative query language that enhances the efficiency of data retrieval. Unlike traditional RESTful APIs, GraphQL allows for a precise and comprehensive description of API data, enabling developers to request exactly what they need. This focused approach to data fetching simplifies API evolution and supports powerful development tools."
+  },
+  {
     "title": "Does Your API Need a REST? Check Out GraphQL",
     "url": "https://confoo.ca/en/2024/session/does-your-api-need-a-rest-check-out-graphql",
     "name": "ConFoo",
