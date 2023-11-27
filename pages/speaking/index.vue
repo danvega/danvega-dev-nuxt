@@ -86,9 +86,12 @@ const upcomingEvents = events
                   </h3>
                   <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
                     <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>Encoding Design, July 2022</p>
+                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                    </span>
+                    The Artifact, September 2023
+                  </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">In this episode I had the opportunity to be a guest of Koushik Kothagal AKA JavaBrains. Koushik is one of the great teachers in our community and It was really great to sit down and talk all things DevRel, Education and Spring.</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
                     Listen to podcast
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                       <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -105,9 +108,12 @@ const upcomingEvents = events
                   </h3>
                   <p class="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
                     <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span></span>Encoding Design, July 2022</p>
+                      <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+                    </span>
+                    Java Pub House, February 2023
+                  </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Ok, so it’s an incredible time to be in the Java Ecosystem, and one of the biggest frameworks out there just dropped their three-point-oh version! That’s right! So Spring Boot is not officially 3.0, and it has as a Baseline Java 17! (oohh!!). So we brought in the big guns to talk about what does it mean to Upgrade to Spring Boot 3, and what are the new cool toys we can expect from that upgrade!</p>
-                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-teal-500">
+                  <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
                     Listen to podcast
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                       <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
