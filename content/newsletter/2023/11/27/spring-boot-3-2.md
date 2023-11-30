@@ -60,7 +60,7 @@ VMware is now VMware by Broadcom as the [acquisition has closed](https://www.bro
 
 ![VMware by Broadcom](/images/newsletter/2023/11/27/vmware-by-broadcom.png)
 
-The uncertainty about my future has been the hardest part. I know a lot of people who left so that they didn’t have to go through it but for me that was never an option. I landed by dream job and I love the people that I work with so I was going to ride this out as long as I could.
+The uncertainty about my future has been the hardest part. I know a lot of people who left so that they didn’t have to go through it but for me that was never an option. I landed my dream job and I love the people that I work with so I was going to ride this out as long as I could.
 
 I’m very thankful for my time at VMware and I happy to say that I will continue to do what I love at VMware by Broadcom 🥳 I love the community that I serve and if there is anything I can do to help please don’t hesitate to reach out. I’m excited about the future and have already started putting some big plans together for the new year.
 
