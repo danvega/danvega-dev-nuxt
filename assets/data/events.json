@@ -1,5 +1,14 @@
 [
   {
+    "title": "Get Up to Speed on\nSpring Boot 3.2",
+    "url": "https://www.azul.com/webinar/20231219-spring-boot-updates/",
+    "name": "Azul Meetup",
+    "startDate": "December 19, 2023",
+    "endDate": "December 19, 2023",
+    "location": "Virtual",
+    "description": "Spring Boot 3.2 was just released and it has a some nice updates but finally has support for fast startup with CRaC, as well as Project Loom support! Join VP of Developer Relations at Azul, Pratik Patel, and Spring Developer Advocate at VMWare Tanzu, Dan Vega, as they explore these updates, hack some code and do some demos."
+  },
+  {
     "title": "Embracing GraphQL: Beyond REST in API Development",
     "url": "https://developersummit.com/session/embracing-graphql-beyond-rest-in-api-development",
     "name": "GIDS India",
