@@ -15,6 +15,32 @@
       <li class="flex gap-4">
         <div class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
           <NuxtImg
+              src="/images/work/broadcom.jpeg"
+              alt="VMware"
+              width="32"
+              height="32"
+              class="h-7 w-7 rounded-full"
+              style="color:transparent"
+              loading="lazy"/>
+        </div>
+        <dl class="flex flex-auto flex-wrap gap-x-2">
+          <dt class="sr-only">Company</dt>
+          <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+            Broadcom
+          </dd>
+          <dt class="sr-only">Role</dt>
+          <dd class="text-xs text-zinc-500 dark:text-zinc-400">Spring Developer Advocate</dd>
+          <dt class="sr-only">Date</dt>
+          <dd class="ml-auto text-xs text-zinc-500 dark:text-zinc-500" aria-label="2022 until Present">
+            <time dateTime="2022">2023</time>
+            <span aria-hidden="true">—</span>
+            <time dateTime="2023">Present</time>
+          </dd>
+        </dl>
+      </li>
+      <li class="flex gap-4">
+        <div class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+          <NuxtImg
             src="/images/work/vmware.jpeg"
             alt="VMware"
             width="32"
@@ -34,7 +60,7 @@
           <dd class="ml-auto text-xs text-zinc-500 dark:text-zinc-500" aria-label="2022 until Present">
             <time dateTime="2022">2022</time>
             <span aria-hidden="true">—</span>
-            <time dateTime="2023">Present</time>
+            <time dateTime="2023">2023</time>
           </dd>
         </dl>
       </li>
