@@ -1,6 +1,6 @@
 ---
-slug: 'new-year-new-me'
 title: 'New Year, New Opportunities and Goals'
+slug: new-year-new-me
 date: '2021-01-07T11:30:00.000Z'
 published: true
 excerpt: 'In this article, I have some exciting personal news to share and I want to take a look ahead at the new year.'

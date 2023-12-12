@@ -1,6 +1,6 @@
 ---
 title: "The Number One Spring Boot Starter You Should Include in Every Project"
-slug: spring-boot-actuator
+slug: spring-boot-starter
 date: "2023-09-17T17:00:00.000Z"
 published: true
 excerpt: In this article, we will focus on the most important Spring Boot starter that you should include in all of your projects.

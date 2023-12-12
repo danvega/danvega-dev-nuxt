@@ -1,6 +1,6 @@
 ---
-slug: "website-redesign-lessons-learned"
 title: "Lessons learned from redesigning my website"
+slug: website-redesign-lessons-learned
 date: "2020-05-16T17:24:14.760Z"
 published: false
 excerpt: "I spent the last couple of months redesigning my website and I would like to share with you some of the lessons I learned"

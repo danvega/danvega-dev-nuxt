@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
 import {Combobox, ComboboxInput, ComboboxOptions, ComboboxOption, Dialog, DialogPanel, TransitionChild, TransitionRoot,} from '@headlessui/vue'
+import {useGetSlugFromPath} from "~/composables/pathUtils";
 
+const { getSlugFromPath } = useGetSlugFromPath();
 const emit = defineEmits(['closeSearchDialog']);
 const { posts = [], showSearchDialog = false } = defineProps<{posts?: Array, showSearchDialog?: boolean }>()
 const isOpen = ref( false )
@@ -37,7 +39,7 @@ function onAfterLeave() {
 }
 
 function onSelect(post) {
-  window.location = post._path;
+  window.location = `/blog/${getSlugFromPath(post._path)}`;
 }
 </script>
 

@@ -19,8 +19,6 @@ When it was released back in June of 2021 they only had support for Visual Studi
 
 In this tutorial, I am focused on Github Copilot for Java Developers. I am using IntelliJ Ultimate Edition but this should work fine in the community edition. The first thing you need to do is to visit [https://copilot.github.com](https://copilot.github.com/) and sign up for the technical preview. Next, open up IntelliJ and go to `Preferences > Plugins`, search for Github Copilot and install the plugin.
 
-![intellij_plugin.png](/images/blog/2021/11/08/intellij_plugin.png)
-
 At this point, you're ready to use GitHub Copilot. In the remainder of the video tutorial, I walk through different ways GitHub Copilot was able to make suggestions for lines of code and even entire methods. If you want to grab the final code you can head over to the repository below.
 
 [https://github.com/danvega/youtube/tree/main/java/github-copilot](https://github.com/danvega/youtube/tree/main/java/github-copilot)

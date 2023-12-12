@@ -1,6 +1,6 @@
 ---
-slug: "hello-deno"
 title: "Hello, Deno"
+slug: hello-deno
 date: "2020-05-29T12:00:00.000Z"
 published: false
 excerpt: "An introduction to Deno which is a secure runtime for JavaScript and TypeScript"

@@ -1,6 +1,6 @@
 ---
-slug: 'network-throttling'
 title: 'How to force a delay in a web app'
+slug: network-throttling
 date: '2021-01-08T09:30:00.000Z'
 published: true
 excerpt: 'In this tutorial, I will show you can force a delay in a web application for testing purposes.'
@@ -40,7 +40,7 @@ This is a great first step but this will throttle the entire connection and I of
 
 The next solution I want to cover is building in a delay to the client-side code. In the following example, I am using a [public API](https://icanhazdadjoke.com/) to return a random dad joke. When the component is mounted the `loadJoke()` method is called and a `fetch()` request is made to the API. We use state within the component to display the loading animation until the fetch request has been completed and we have a joke to display.
 
-```html
+```vue
 <template>
   <div class="dadjoke">
     <h1>Random Dad Jokes</h1>
@@ -86,12 +86,14 @@ export default {
 
 Even in a CodeSandbox environment, this is pretty fast and you don't see the loading animation.
 
+```html
 <iframe src="https://codesandbox.io/embed/angry-fast-3te0x?fontsize=14&module=%2Fsrc%2FApp.vue&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="angry-fast-3te0x"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
+```
 
 To force a delay you can use the `setTimeout()` function in JavaScript to set a timer which executes a function or specified piece of code once the timer expires. The first argument is the function or code you want to execute and the second argument is the delay in milliseconds. In this example, I am forcing a three-second delay.
 
@@ -103,12 +105,14 @@ mounted() {
 
 Now when we run our example we can have a three second delay and we can clearly see our loading animation.
 
+```html
 <iframe src="https://codesandbox.io/embed/cocky-benz-o2x09?fontsize=14&module=%2Fsrc%2FApp.vue&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="cocky-benz-o2x09"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
+```
 
 The one downside to this approach is that you might forget to remove code like this and you don't want this getting checked in and pushed into production. One solution to this problem is to use environment variables to make sure you are in development mode when forcing a delay. In the following example, I am using [Vite](https://github.com/vitejs/vite) to get the environment and to set a custom delay.
 

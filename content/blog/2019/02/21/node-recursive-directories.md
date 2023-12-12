@@ -1,12 +1,12 @@
 ---
 title: Creating multiple directories in node
 slug: node-recursive-directories
-date: 2019-02-20 08:00:00
+date: 2019-02-21 08:00:00
 published: true
 excerpt: A quick tutorial on how to recursively create directories in node.
 author: Dan Vega
 tags: ["node", "javascript"]
-cover: ./node-multiple-directories.png
+cover: node-multiple-directories.png
 ---
 
 This is going to be a quick tutorial but I think it's one that I want to share. I am in the middle of migrating close to 1,000 blog posts from WordPress to Gridsome, a static site generator.
