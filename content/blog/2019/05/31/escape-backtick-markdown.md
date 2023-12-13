@@ -2,7 +2,7 @@
 slug: 'escape-backtick-markdown'
 title: 'How to escape a backtick within a code block in Markdown'
 date: '2019-05-31T18:32:41.710Z'
-published: false
+published: true
 excerpt: 'In this article I will show you how to escape the triple backtick in a markdown code block so that you can display it in a post or a Github comment. '
 author: 'Dan Vega'
 tags: ['markdown','blog']

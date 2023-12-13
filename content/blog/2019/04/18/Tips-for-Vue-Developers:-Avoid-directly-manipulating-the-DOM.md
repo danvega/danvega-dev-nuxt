@@ -2,7 +2,7 @@
 slug: "Tips-for-Vue-Developers:-Avoid-directly-manipulating-the-DOM"
 title: "Tips for Vue Developers: Avoid directly manipulating the DOM"
 date: "2019-04-18T20:24:32.502Z"
-published: false
+published: true
 excerpt: "In this article I will look at an example of where manipulating the DOM in our components might not be the best approach."
 author: "Dan Vega"
 tags: ["vue", "javascript"]

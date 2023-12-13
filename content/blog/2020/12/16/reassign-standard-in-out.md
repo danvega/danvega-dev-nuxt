@@ -2,7 +2,7 @@
 title: 'How to test standard in and out in Java'
 slug: testing-standard-in-out-java
 date: '2020-12-16T15:17:39.619Z'
-published: false
+published: true
 excerpt: 'In this tutorial I will show you how you can test standard in and out in Java.'
 author: 'Dan Vega'
 tags:

@@ -249,7 +249,7 @@ const yaml = jsToYaml.stringify({
   slug,
   title,
   date: createdOn.toISOString(),
-  published: false,
+  published: true,
   excerpt: excerpt,
   author: "Dan Vega",
   tags: tagsList,

@@ -2,7 +2,7 @@
 slug: "run-vue-visual-studio-code"
 title: "3 ways to run VueJS applications from Visual Studio Code"
 date: "2019-05-15T14:19:36.459Z"
-published: false
+published: true
 excerpt: "In this tutorial, I am going to show you 3 ways to run your VueJS applications from Visual Studio Code. "
 author: "Dan Vega"
 tags: ["vue", "npm", "vscode", "javascript"]

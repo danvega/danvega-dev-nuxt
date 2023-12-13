@@ -5,7 +5,7 @@ const { path } = useRoute();
 const slug = getSlugFromPath(path);
 const { data } = await useAsyncData(`content-${path}`, () => {
   return queryContent()
-      .where({ slug: slug })
+      .where({ slug: slug, published: true })
       .findOne()
 })
 

@@ -2,7 +2,7 @@
 title: Spring One 2021 Presentation
 slug: spring-one-2021
 date: "2021-08-30T19:45:43.204Z"
-published: false
+published: true
 excerpt: "I'm so honored to be speaking at this year's SpringOne Conference. This article will give you a look ahead to the presentation by explaining what you can expect and the resources from my talk."
 author: Dan Vega
 tags:

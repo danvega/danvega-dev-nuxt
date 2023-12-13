@@ -2,7 +2,7 @@
 slug: 'vuepress-cookies'
 title: 'How to use cookies in VuePress'
 date: '2019-06-13T10:27:46.175Z'
-published: false
+published: true
 excerpt: 'In this article, I am going to talk about a recent documentation site to VuePress and how I was able to solve a problem I ran across.'
 author: 'Dan Vega'
 tags: ['vue','vuepress']

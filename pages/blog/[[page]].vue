@@ -20,11 +20,11 @@ const page = ref(route.params.page ? parseInt(route.params.page) : 1);
 const limit = ref(5);
 
 const articlesCount = await queryContent('blog')
-    .where({tags: {$in: route.query.tag}})
+    .where({tags: {$in: route.query.tag}, published: true})
     .count();
 
 const posts = await queryContent('blog')
-    .where( {tags: {$in: route.query.tag}})
+    .where( {tags: {$in: route.query.tag}, published:true})
     .skip(limit.value * (page.value - 1))
     .limit(limit.value)
     .sort({ date: -1 })

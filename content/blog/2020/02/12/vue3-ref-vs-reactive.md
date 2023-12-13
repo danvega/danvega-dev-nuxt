@@ -2,7 +2,7 @@
 title: "Vue 3 Composition API: Ref vs Reactive"
 slug: vue3-ref-vs-reactive
 date: "2020-02-12T16:27:46.472Z"
-published: false
+published: true
 excerpt: "One question I keep hearing over and over is what method should I use to declare reactive data in the Vue 3 Composition API? In this article, I explain what ref() and reactive() are and try to answer that question."
 author: "Dan Vega"
 tags:
