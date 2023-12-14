@@ -1,7 +1,7 @@
 ---
 title: Virtual Threads in Spring Boot
 slug: virtual-threads-spring-boot
-date: "2023-12-13T17:00:00.000Z"
+date: "2023-12-14T17:00:00.000Z"
 published: true
 excerpt: 
 author: Dan Vega
