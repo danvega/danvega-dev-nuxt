@@ -3,7 +3,7 @@ title: Spring Boot REST API Domain Class Converter
 slug: domain-class-converter
 date: "2022-09-29T11:00:00.000Z"
 published: true
-excerpt: In this tutorial, you will learn about a class called the Domain Class Converter in Spring Data. This class will allow you to take arbitrary input like an id from a path variable in a REST API and automatically create a domain object by using Spring Data's CrudRepository.
+description: In this tutorial, you will learn about a class called the Domain Class Converter in Spring Data. This class will allow you to take arbitrary input like an id from a path variable in a REST API and automatically create a domain object by using Spring Data's CrudRepository.
 author: Dan Vega
 tags:
   - Spring Boot

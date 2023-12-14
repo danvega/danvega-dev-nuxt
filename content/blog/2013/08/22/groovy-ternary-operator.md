@@ -4,7 +4,7 @@ title: "Groovy Ternary Operator"
 published: true
 date: 2013-08-22T13:08:00-04:00
 tags: ["groovy"]
-excerpt: "
+description: "
 				Groovy Ternary Operator		"
 cover:
 ---

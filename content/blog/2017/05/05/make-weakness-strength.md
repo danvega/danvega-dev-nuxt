@@ -4,7 +4,7 @@ title: "How to Make your weakness your strength"
 published: true
 date: 2017-05-05T08:00:15-04:00
 tags: ['Software Development']
-excerpt: "How to Make your weakness your strength"
+description: "How to Make your weakness your strength"
 cover: './lucas-rosas-98304-760x507.jpg'
 ---
 

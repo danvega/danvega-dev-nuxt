@@ -3,7 +3,7 @@ title: "CodeMash 2020 Recap"
 slug: codemash-2020-recap
 date: "2020-01-13T14:30:00.000Z"
 published: true
-excerpt: "A recap of the conference CodeMash 2020 as both an attendee and a speaker."
+description: "A recap of the conference CodeMash 2020 as both an attendee and a speaker."
 author: "Dan Vega"
 tags:
   - "conference"

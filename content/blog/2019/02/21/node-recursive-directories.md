@@ -3,7 +3,7 @@ title: Creating multiple directories in node
 slug: node-recursive-directories
 date: 2019-02-21 08:00:00
 published: true
-excerpt: A quick tutorial on how to recursively create directories in node.
+description: A quick tutorial on how to recursively create directories in node.
 author: Dan Vega
 tags: ["node", "javascript"]
 cover: node-multiple-directories.png

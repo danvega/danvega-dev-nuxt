@@ -4,7 +4,7 @@ title: "IntelliJ Spring Bean Injection Notification"
 published: true
 date: 2013-08-23T08:08:00-04:00
 tags: ["grails","groovy"]
-excerpt: "IntelliJ Spring Bean Injection Notification"
+description: "IntelliJ Spring Bean Injection Notification"
 cover:
 ---
 

@@ -3,7 +3,7 @@ title: "Getting Started with Spring: A Beginner's Guide"
 slug: spring-boot-crash-course
 date: "2023-03-09T11:30:00.000Z"
 published: true
-excerpt:
+description:
 author: Dan Vega
 tags:
   - Spring Boot

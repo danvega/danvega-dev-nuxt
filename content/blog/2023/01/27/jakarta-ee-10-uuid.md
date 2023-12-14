@@ -3,7 +3,7 @@ title: Easily Implement UUIDs as Primary Keys in Spring Boot 3
 slug: jakarta-ee-10-uuid
 date: "2023-01-27T10:00:00.000Z"
 published: true
-excerpt: In this tutorial you will learn how to use one of the new features in Jakarta EE 10 in a Spring Boot 3 application.
+description: In this tutorial you will learn how to use one of the new features in Jakarta EE 10 in a Spring Boot 3 application.
 author: Dan Vega
 tags:
   - Spring Boot

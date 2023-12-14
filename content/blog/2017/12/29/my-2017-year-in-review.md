@@ -4,7 +4,7 @@ title: "My 2017 Year in Review"
 published: true
 date: 2017-12-29T09:14:08-05:00
 tags: ['goals']
-excerpt: "My 2017 Year in Review"
+description: "My 2017 Year in Review"
 cover: ./pexels-photo-282919-760x571.jpeg
 ---
 

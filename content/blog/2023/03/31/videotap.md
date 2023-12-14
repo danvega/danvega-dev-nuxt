@@ -3,7 +3,7 @@ title: "Why VideoTap is a Game-Changer for Content Creators: Convert Videos to B
 slug: videotap
 date: "2023-03-31T16:00:00.000Z"
 published: true
-excerpt: Are you a content creator who struggles to find enough time to produce written content alongside videos? Do you wish there was an easy way to transform your videos into compelling blog posts? Look no further than VideoTap!
+description: Are you a content creator who struggles to find enough time to produce written content alongside videos? Do you wish there was an easy way to transform your videos into compelling blog posts? Look no further than VideoTap!
 author: Dan Vega
 tags:
   - content

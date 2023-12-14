@@ -4,7 +4,7 @@ title: "Building your Angular Application for Spring Boot"
 published: true
 date: 2017-06-23T08:00:27-04:00
 tags: ['Angular', 'spring']
-excerpt: "Building your Angular Application for Spring Boot"
+description: "Building your Angular Application for Spring Boot"
 cover: './imac-apple-mockup-app-38544-760x505.jpeg'
 ---
 

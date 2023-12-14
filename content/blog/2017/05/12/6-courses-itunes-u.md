@@ -4,7 +4,7 @@ title: "6 Courses on iTunes U that can upgrade your Software Development Career"
 published: true
 date: 2017-05-12T08:00:52-04:00
 tags: ['Software Development']
-excerpt: "6 Courses on iTunes U that can upgrade your Software Development Career"
+description: "6 Courses on iTunes U that can upgrade your Software Development Career"
 cover: './2017-05-11_16-07-03-760x399.png'
 ---
 

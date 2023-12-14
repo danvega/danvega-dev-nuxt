@@ -3,7 +3,7 @@ slug: "codesandbox-custom-theme"
 title: "How to customize the VSCode Theme in CodeSandbox"
 date: "2019-05-08T01:56:43.680Z"
 published: true
-excerpt: "In this article, I am going to give you a quick tip on how to customize the VSCode Theme in CodeSandbox."
+description: "In this article, I am going to give you a quick tip on how to customize the VSCode Theme in CodeSandbox."
 author: "Dan Vega"
 tags: ["codesandbox"]
 cover: ./codesandbox-custom-theme-cover.png

@@ -4,7 +4,7 @@ title: "Cleveland Women in Tech Presentation"
 published: true
 date: 2018-11-05T06:50:29-05:00
 tags: ["conference","presentation"]
-excerpt: "Cleveland Women in Tech Presentation"
+description: "Cleveland Women in Tech Presentation"
 cover: ./merherstory-cover.png
 ---
 

@@ -3,7 +3,7 @@ title: "Deploying Spring Boot 3 Applications to AWS Lambda"
 slug: aws-lambda-spring-boot-3
 date: "2023-06-30T15:00:00.000Z"
 published: true
-excerpt: Discover effective solutions for hosting your personal spring boot projects without hefty costs. Boost your skills with Dan Vega, your spring developer advocate, while exploring the capabilities of AWS Lambda.
+description: Discover effective solutions for hosting your personal spring boot projects without hefty costs. Boost your skills with Dan Vega, your spring developer advocate, while exploring the capabilities of AWS Lambda.
 author: Dan Vega
 tags:
   - Spring Boot

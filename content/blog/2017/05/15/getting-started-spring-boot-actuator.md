@@ -4,7 +4,7 @@ title: "Getting Started with the Spring Boot Actuator"
 published: true
 date: 2017-05-15T08:00:22-04:00
 tags: ['spring']
-excerpt: "Getting Started with the Spring Boot Actuator"
+description: "Getting Started with the Spring Boot Actuator"
 cover: './pexels-photo-169573-760x507.jpeg'
 ---
 

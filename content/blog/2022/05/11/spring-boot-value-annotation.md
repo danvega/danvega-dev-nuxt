@@ -3,7 +3,7 @@ title: Spring Boot @Value Annotation
 slug: spring-boot-value-annotation
 date: "2022-05-11T09:30:00.000Z"
 published: true
-excerpt: A brief introduction to the @Value annotation in Spring Boot.
+description: A brief introduction to the @Value annotation in Spring Boot.
 author: Dan Vega
 tags:
   - spring

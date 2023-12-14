@@ -4,7 +4,7 @@ title: "Spring Boot Application Failed To Start"
 published: true
 date: 2017-07-24T09:55:33-04:00
 tags: ['java', 'spring']
-excerpt: "Spring Boot Application Failed To Start"
+description: "Spring Boot Application Failed To Start"
 cover: './pexels-photo-205316-760x506.png'
 ---
 

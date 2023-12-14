@@ -4,7 +4,7 @@ title: "Angular Forms: How to clear an input field"
 published: true
 date: 2017-06-07T09:50:47-04:00
 tags: ['Angular']
-excerpt: "Angular Forms: How to clear an input field"
+description: "Angular Forms: How to clear an input field"
 cover: ./angular-forms.png
 ---
 

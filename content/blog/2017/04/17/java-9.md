@@ -4,7 +4,7 @@ title: "Getting Started with Java 9"
 published: true
 date: 2017-04-17T11:05:58-04:00
 tags: ['java']
-excerpt: "Getting Started with Java 9"
+description: "Getting Started with Java 9"
 cover: './Java9-760x428.png'
 ---
 

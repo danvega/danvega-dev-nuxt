@@ -4,7 +4,7 @@ title: "Gravatars on a Grails Application"
 published: true
 date: 2014-04-08T14:04:00-04:00
 tags: ["grails","groovy"]
-excerpt: "Gravatars in a Grails Application"
+description: "Gravatars in a Grails Application"
 cover:
 ---
 

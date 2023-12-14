@@ -3,7 +3,7 @@ slug: "My-new-blog-post-workflow"
 title: "My new blog post workflow"
 date: "2019-04-25T13:53:35.054Z"
 published: true
-excerpt: "In this article I will outline for you the tools and process I use to create a new blog post"
+description: "In this article I will outline for you the tools and process I use to create a new blog post"
 author: "Dan Vega"
 tags: ["blogging"]
 cover: ./new-blog-post-workflow-cover.png

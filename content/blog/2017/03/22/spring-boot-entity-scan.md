@@ -4,7 +4,7 @@ title: "Spring Boot Entity Scan"
 published: true
 date: 2017-03-22T08:00:44-04:00
 tags: ['spring']
-excerpt: "Spring Boot Entity Scan"
+description: "Spring Boot Entity Scan"
 cover: ./entity-scan.jpg
 ---
 

@@ -4,7 +4,7 @@ title: "Groovy Primitive Data Types vs Objects"
 published: true
 date: 2013-08-20T12:08:00-04:00
 tags: ["grails","groovy"]
-excerpt: "Groovy Primitive Data Types vs Objects"
+description: "Groovy Primitive Data Types vs Objects"
 cover:
 ---
 

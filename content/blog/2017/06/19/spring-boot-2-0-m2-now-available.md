@@ -4,7 +4,7 @@ title: "Spring Boot 2.0 M2 Now Available"
 published: true
 date: 2017-06-19T08:30:53-04:00
 tags: ['spring']
-excerpt: "Spring Boot 2.0 M2 Now Available"
+description: "Spring Boot 2.0 M2 Now Available"
 cover: './pexels-photo-92904-760x507.jpeg'
 ---
 

@@ -4,7 +4,7 @@ title: "Using Project Lombok in your Spring Boot Project"
 published: true
 date: 2017-03-31T08:00:38-04:00
 tags: ['java', 'spring']
-excerpt: "Using Project Lombok in your Spring Boot Project"
+description: "Using Project Lombok in your Spring Boot Project"
 cover: './2350-760x507.jpg'
 ---
 

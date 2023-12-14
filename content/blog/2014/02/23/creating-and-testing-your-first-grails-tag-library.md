@@ -4,7 +4,7 @@ title: "Creating and testing your first Grails Tag Library"
 published: true
 date: 2014-02-23T07:02:00-05
 tags: ["grails","groovy"]
-excerpt: "Creating and testing your first Grails Tag Library"
+description: "Creating and testing your first Grails Tag Library"
 cover: ./testing-cover.jpg
 video: https://www.youtube.com/embed/vZ_7FfML9Xg
 ---

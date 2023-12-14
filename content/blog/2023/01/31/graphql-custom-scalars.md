@@ -3,7 +3,7 @@ title: "GraphQL Scalars - How to use Custom Scalars in Java"
 slug: graphql-custom-scalars
 date: "2023-01-31T08:00:00.000Z"
 published: true
-excerpt:
+description:
 author: Dan Vega
 tags:
   - Spring Boot

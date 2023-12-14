@@ -3,7 +3,7 @@ title: "Spring into the Future: Embracing Virtual Threads with Java's Project Lo
 slug: virtual-threads-spring
 date: "2023-04-12T16:00:00.000Z"
 published: true
-excerpt:
+description:
 author: Dan Vega
 tags:
   - Spring Boot

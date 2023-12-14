@@ -3,7 +3,7 @@ title: Working with GraphQL Mutations in Spring Boot
 slug: graphql-mutations
 date: "2023-03-20T11:00:00.000Z"
 published: true
-excerpt: In this blog post, we'll be taking a look at mutations in GraphQL, specifically using Spring Boot, GraphQL Java, and Spring Data JPA.
+description: In this blog post, we'll be taking a look at mutations in GraphQL, specifically using Spring Boot, GraphQL Java, and Spring Data JPA.
 author: Dan Vega
 tags:
   - GraphQL

@@ -3,7 +3,7 @@ title: Building Command Line Applications in Spring with Spring Shell
 slug: spring-shell-intro
 date: "2023-03-02T11:00:00.000Z"
 published: true
-excerpt: In this introduction to Spring Shell, you will learn you how to build CLI applications in a familiar programming environment using Java + Spring.
+description: In this introduction to Spring Shell, you will learn you how to build CLI applications in a familiar programming environment using Java + Spring.
 author: Dan Vega
 tags:
   - spring shell

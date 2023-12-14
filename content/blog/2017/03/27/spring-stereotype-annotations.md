@@ -4,7 +4,7 @@ title: "Spring Stereotype Annotations"
 published: true
 date: 2017-03-27T08:00:15-04:00
 tags: ["spring"]
-excerpt: "Spring Stereotype Annotations"
+description: "Spring Stereotype Annotations"
 cover: './stereotype_annotations.png'
 ---
 

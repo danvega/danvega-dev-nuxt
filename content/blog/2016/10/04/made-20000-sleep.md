@@ -4,7 +4,7 @@ title: "How I Made $20,000 in my Sleep"
 published: true
 date: 2016-10-04T20:26:59-04:00
 tags: ['udemy']
-excerpt: "In this article I hope to inspire you to take action now!"
+description: "In this article I hope to inspire you to take action now!"
 cover: ./udemy_milestone_20k_2-1024x688.png
 ---
 

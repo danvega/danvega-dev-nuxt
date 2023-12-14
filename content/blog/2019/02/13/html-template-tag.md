@@ -3,7 +3,7 @@ slug: html-template-tag
 title: HTML Template Tag in Vanilla JavaScript and Vue
 date: 2019-02-13 22:30:00
 published: true
-excerpt: A look at what the HTML template tag is and how it can be used in Vanilla JavaScript as well as what its role in Vue is.
+description: A look at what the HTML template tag is and how it can be used in Vanilla JavaScript as well as what its role in Vue is.
 author: Dan Vega
 tags: ["html", "javascript", "vue"]
 cover: ./html-template-cover.png

@@ -4,7 +4,7 @@ title: "3 YouTube Channels for Java Developers"
 published: true
 date: 2017-08-04T13:14:00-04:00
 tags: ['java', 'spring']
-excerpt: "3 YouTube Channels for Java Developers"
+description: "3 YouTube Channels for Java Developers"
 cover: './pexels-photo-760x506.jpg'
 ---
 

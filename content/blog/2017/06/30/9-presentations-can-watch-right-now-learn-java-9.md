@@ -4,7 +4,7 @@ title: "9 Presentations you can watch right now to learn about Java 9"
 published: true
 date: 2017-06-30T08:00:48-04:00
 tags: ['java']
-excerpt: "9 Presentations you can watch right now to learn about Java 9"
+description: "9 Presentations you can watch right now to learn about Java 9"
 cover: './coding.jpg'
 ---
 

@@ -4,7 +4,7 @@ title: "What you can learn from live coders"
 date: "2019-05-10T18:42:50.066Z"
 modified: "2019-05-10T19:40:00.066Z"
 published: true
-excerpt: "2019 seems to be the year of the live coder. In this article I am going to tell you what you can learn from live coders. "
+description: "2019 seems to be the year of the live coder. In this article I am going to tell you what you can learn from live coders. "
 author: "Dan Vega"
 tags: ["twitch", "youtube"]
 cover: ./live-coders-cover.png

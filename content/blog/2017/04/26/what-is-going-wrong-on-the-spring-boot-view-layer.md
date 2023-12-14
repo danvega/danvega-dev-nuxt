@@ -4,7 +4,7 @@ title: "What is going wrong on the Spring Boot View Layer?"
 published: true
 date: 2017-04-26T09:02:28-04:00
 tags: ['spring']
-excerpt: "What is going wrong on the Spring Boot View Layer?"
+description: "What is going wrong on the Spring Boot View Layer?"
 cover: './view_layer-760x760.png'
 ---
 

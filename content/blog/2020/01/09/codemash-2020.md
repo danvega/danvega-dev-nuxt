@@ -3,7 +3,7 @@ slug: "codemash-2020"
 title: "Vue3: Smaller, Faster & Stronger. CodeMash 2020"
 date: "2020-01-09T09:00:00.000Z"
 published: true
-excerpt: "This post is a collection of resources for my presentation at CodeMash 2020."
+description: "This post is a collection of resources for my presentation at CodeMash 2020."
 author: "Dan Vega"
 tags: ["vue"]
 cover: "./codemash-vue3.png"

@@ -3,7 +3,7 @@ title: "Java 17 🤝 AWS Lambda: Creating Serverless Functions in Java & Spring 
 slug: aws-lambda-java-17
 date: "2023-05-19T08:00:00.000Z"
 published: true
-excerpt: AWS has made a big announcement recently - Java 17 runtime is now supported on AWS Lambda. What this means is, you now have the freedom to write your lambda functions using Java in Spring and specifically target JDK 17.
+description: AWS has made a big announcement recently - Java 17 runtime is now supported on AWS Lambda. What this means is, you now have the freedom to write your lambda functions using Java in Spring and specifically target JDK 17.
 author: Dan Vega
 tags:
   - Spring Boot

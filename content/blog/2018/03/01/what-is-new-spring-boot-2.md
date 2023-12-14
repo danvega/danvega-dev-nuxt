@@ -4,7 +4,7 @@ title: "What's new in Spring Boot 2"
 published: true
 date: 2018-03-01T06:47:52-05:00
 tags: ["java","spring"]
-excerpt: "What's new in Spring Boot 2"
+description: "What's new in Spring Boot 2"
 cover: ./pexels-photo-273238-2-760x507.jpeg
 ---
 

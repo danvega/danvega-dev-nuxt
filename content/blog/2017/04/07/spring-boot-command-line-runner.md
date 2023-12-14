@@ -5,7 +5,7 @@ published: true
 date: 2017-04-07T08:00:43-04:00
 updatedOn: 2022-05-11T11:00:00-05:00
 tags: ["spring"]
-excerpt: "Spring Boot Command Line Runner"
+description: "Spring Boot Command Line Runner"
 cover: "./spring-boot-command-line-runner-thumbnail.png"
 video: https://www.youtube.com/embed/gBN8x4yN5Ks
 ---

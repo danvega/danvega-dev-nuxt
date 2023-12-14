@@ -4,7 +4,7 @@ title: "Windows Kill Process By Port Number"
 published: true
 date: 2015-04-16T10:35:05-04:00
 tags: ["random"]
-excerpt: "Windows Kill Process By Port Number"
+description: "Windows Kill Process By Port Number"
 cover: ./windows-kill-port-cover.jpg
 ---
 

@@ -4,7 +4,7 @@ title: "Multiple Request Mappings in Spring Boot"
 published: true
 date: 2017-07-03T08:30:50-04:00
 tags: ['spring']
-excerpt: "Multiple Request Mappings in Spring Boot"
+description: "Multiple Request Mappings in Spring Boot"
 cover: './pexels-photo-450035-760x506.jpeg'
 ---
 

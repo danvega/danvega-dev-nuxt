@@ -3,7 +3,7 @@ title: Im Joining VMware
 slug: im-joining-vmware
 date: "2022-01-24T08:00:00.000Z"
 published: true
-excerpt: I'm so excited to announce that I am joining VMware as a Spring Developer Advocate!
+description: I'm so excited to announce that I am joining VMware as a Spring Developer Advocate!
 author: Dan Vega
 tags:
   - meta

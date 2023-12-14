@@ -3,7 +3,7 @@ title: "Create a GraphQL Client in Java with Spring Boot"
 slug: graphql-client
 date: "2023-04-17T08:00:00.000Z"
 published: true
-excerpt: If you're working on a Spring application and you need to call another REST API, you have tools such as RestTemplate or WebClient. But what if you need to call a GraphQL API? With Spring, a GraphQL Client is available. In this tutorial, you will learn how to include it in your project and use it by building a practical example.
+description: If you're working on a Spring application and you need to call another REST API, you have tools such as RestTemplate or WebClient. But what if you need to call a GraphQL API? With Spring, a GraphQL Client is available. In this tutorial, you will learn how to include it in your project and use it by building a practical example.
 author: Dan Vega
 tags:
   - Spring Boot

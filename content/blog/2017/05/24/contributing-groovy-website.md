@@ -4,7 +4,7 @@ title: "How you can contribute to the Groovy Website"
 published: true
 date: 2017-05-24T08:12:01-04:00
 tags: ['groovy']
-excerpt: "How you can contribute to the Groovy Website"
+description: "How you can contribute to the Groovy Website"
 cover: './2017-05-23_19-50-54-760x462.png'
 ---
 

@@ -4,7 +4,7 @@ title: "How to start writing Angular & Spring Applications"
 published: true
 date: 2017-05-03T09:00:37-04:00
 tags: ['Angular', 'spring']
-excerpt: "How to start writing Angular & Spring Applications"
+description: "How to start writing Angular & Spring Applications"
 cover: './carl-heyerdahl-181868-760x507.jpg'
 ---
 

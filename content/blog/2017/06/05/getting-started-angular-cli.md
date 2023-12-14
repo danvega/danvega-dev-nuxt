@@ -4,7 +4,7 @@ title: "Getting Started with the Angular CLI"
 published: true
 date: 2017-06-05T10:34:50-04:00
 tags: ['Angular']
-excerpt: "Getting Started with the Angular CLI"
+description: "Getting Started with the Angular CLI"
 cover: './2017-06-05_09-34-25-760x226.png'
 ---
 

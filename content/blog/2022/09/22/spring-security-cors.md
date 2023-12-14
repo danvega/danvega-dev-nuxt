@@ -3,7 +3,7 @@ title: "Spring Security CORS: How to configure CORS in Spring Boot & Spring Secu
 slug: spring-security-cors
 date: "2022-09-22T08:00:00.000Z"
 published: true
-excerpt:
+description:
 author: Dan Vega
 tags:
   - Spring Security

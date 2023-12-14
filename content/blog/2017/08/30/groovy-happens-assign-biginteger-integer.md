@@ -4,7 +4,7 @@ title: "Groovy: What happens when you assign a BigInteger to an Integer"
 published: true
 date: 2017-08-30T07:39:40-04:00
 tags: ['groovy', 'java']
-excerpt: "Groovy: What happens when you assign a BigInteger to an Integer"
+description: "Groovy: What happens when you assign a BigInteger to an Integer"
 cover: './codes-coding.jpg'
 ---
 

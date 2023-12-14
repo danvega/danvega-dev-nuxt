@@ -4,7 +4,7 @@ title: "Groovy collections vs My Current Thought Process"
 published: true
 date: 2013-08-21T16:08:00-04:00
 tags: ["grails","groovy"]
-excerpt: "Groovy collections vs My Current Thought Process"
+description: "Groovy collections vs My Current Thought Process"
 cover:
 ---
 

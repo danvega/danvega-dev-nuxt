@@ -4,7 +4,7 @@ title: "How to check your version and upgrade JHipster"
 published: true
 date: 2017-05-22T09:00:26-04:00
 tags: ['Angular', 'spring']
-excerpt: "How to check your version and upgrade JHipster"
+description: "How to check your version and upgrade JHipster"
 cover: './wallpaper-001-2560x1440-760x428.png'
 ---
 

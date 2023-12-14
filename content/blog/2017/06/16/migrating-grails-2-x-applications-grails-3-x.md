@@ -4,7 +4,7 @@ title: "Migrating Grails 2.x Applications to Grails 3.x"
 published: true
 date: 2017-06-16T08:53:25-04:00
 tags: ['grails']
-excerpt: "Migrating Grails 2.x Applications to Grails 3.x"
+description: "Migrating Grails 2.x Applications to Grails 3.x"
 cover: './pexels-photo-436784-760x507.jpeg'
 ---
 

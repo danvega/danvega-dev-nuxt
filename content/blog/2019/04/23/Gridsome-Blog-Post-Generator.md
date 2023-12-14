@@ -2,7 +2,7 @@
 slug: "Gridsome-Blog-Post-Generator"
 title: "Gridsome Blog Post Generator"
 date: "2019-04-23T19:28:51.186Z"
-excerpt: "In this article I will show you how to crate a blog post generator for your static site."
+description: "In this article I will show you how to crate a blog post generator for your static site."
 author: "Dan Vega"
 tags: ["gridsome", "vue"]
 cover: ./gridsome-post-generator-cover.png
@@ -126,7 +126,7 @@ if (args.length < 3) {
     {
       type: "input",
       name: "excerpt",
-      message: "Post Excerpt:"
+      message: "Post description:"
     },
     {
       type: "input",
@@ -250,7 +250,7 @@ const yaml = jsToYaml.stringify({
   title,
   date: createdOn.toISOString(),
   published: true,
-  excerpt: excerpt,
+  description: excerpt,
   author: "Dan Vega",
   tags: tagsList,
   cover: ""

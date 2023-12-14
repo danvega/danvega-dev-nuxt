@@ -4,7 +4,7 @@ title: "Using JHipster in Development mode"
 published: true
 date: 2017-08-28T09:30:30-04:00
 tags: ['Angular', 'spring']
-excerpt: "Using JHipster in Development mode"
+description: "Using JHipster in Development mode"
 cover: './wallpaper-001-2560x1440-760x428.png'
 ---
 

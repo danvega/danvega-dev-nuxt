@@ -4,7 +4,7 @@ title: "Spring MVC Get Controller & Method Name"
 published: true
 date: 2016-01-14T16:27:22-05:00
 tags: ['java','spring']
-excerpt: "How to get the current controller and method name Spring MVC Get Controller & Method Name"
+description: "How to get the current controller and method name Spring MVC Get Controller & Method Name"
 cover: ./controller-cover.jpg
 ---
 

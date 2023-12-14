@@ -3,7 +3,7 @@ title: "Advanced Spring Security - How to create multiple Spring Security Config
 slug: multiple-spring-security-configs
 date: "2023-04-20T08:00:00.000Z"
 published: true
-excerpt: In this tutorial, we will discuss how to create multiple Spring Security configurations and why you might want to do so.
+description: In this tutorial, we will discuss how to create multiple Spring Security configurations and why you might want to do so.
 author: Dan Vega
 tags:
   - Spring Security

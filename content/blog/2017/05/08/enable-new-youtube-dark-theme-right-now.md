@@ -4,7 +4,7 @@ title: "Enable the new YouTube Dark Theme right now"
 published: true
 date: 2017-05-08T08:00:50-04:00
 tags: ['YouTube']
-excerpt: "Enable the new YouTube Dark Theme right now"
+description: "Enable the new YouTube Dark Theme right now"
 cover: './2017-05-04_23-05-38-760x367.png'
 ---
 

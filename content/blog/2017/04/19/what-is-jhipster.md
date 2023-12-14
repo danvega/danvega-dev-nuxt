@@ -4,7 +4,7 @@ title: "What is JHipster & Why you need to start using it today!"
 published: true
 date: 2017-04-19T09:38:31-04:00
 tags: ['java', 'spring']
-excerpt: "What is JHipster & Why you need to start using it today!"
+description: "What is JHipster & Why you need to start using it today!"
 cover: './wallpaper-001-2560x1440-760x428.png'
 ---
 

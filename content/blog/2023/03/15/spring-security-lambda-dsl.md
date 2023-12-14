@@ -3,7 +3,7 @@ title: Spring Security Configuration - Lambda DSL
 slug: spring-security-lambda-dsl
 date: "2023-03-15T09:30:00.000Z"
 published: true
-excerpt:
+description:
 author: Dan Vega
 tags:
   - Spring Security

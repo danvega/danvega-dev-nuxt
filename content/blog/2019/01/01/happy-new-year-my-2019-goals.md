@@ -4,7 +4,7 @@ title: "Happy New Year! My 2019 Goals"
 published: true
 date: 2019-01-01T08:38:10-05:00
 tags: ["goals"]
-excerpt: "Happy New Year! My 2019 Goals"
+description: "Happy New Year! My 2019 Goals"
 cover: ./2019-cover.png
 ---
 

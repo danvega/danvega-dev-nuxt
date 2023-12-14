@@ -4,7 +4,7 @@ title: "How to add validation to your Spring Entities"
 published: true
 date: 2017-05-01T16:37:13-04:00
 tags: ['spring']
-excerpt: "How to add validation to your Spring Entities"
+description: "How to add validation to your Spring Entities"
 cover: './luis-llerena-14779-760x507.jpg'
 ---
 

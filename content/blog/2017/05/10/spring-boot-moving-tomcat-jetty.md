@@ -4,7 +4,7 @@ title: "Moving from Tomcat to Jetty in your Spring Boot Application"
 published: true
 date: 2017-05-10T09:00:06-04:00
 tags: ['spring']
-excerpt: "Moving from Tomcat to Jetty in your Spring Boot Application"
+description: "Moving from Tomcat to Jetty in your Spring Boot Application"
 cover: './emile-perron-190221-760x428.jpg'
 ---
 

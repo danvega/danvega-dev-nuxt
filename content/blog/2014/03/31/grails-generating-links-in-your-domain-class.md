@@ -4,7 +4,7 @@ title: "Grails: Generating links in your domain class"
 published: true
 date: 2014-03-31T09:03:00-04:00
 tags: ["grails"]
-excerpt: "Grails: Generating Links in your Domain Class"
+description: "Grails: Generating Links in your Domain Class"
 cover:
 ---
 

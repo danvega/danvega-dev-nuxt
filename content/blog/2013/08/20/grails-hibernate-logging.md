@@ -4,7 +4,7 @@ title: "Grails Hibernate Logging"
 published: true
 date: 2013-08-20T17:08:00-04:00
 tags: ["grails"]
-excerpt: "Grails Hibernate Logging"
+description: "Grails Hibernate Logging"
 cover:
 ---
 

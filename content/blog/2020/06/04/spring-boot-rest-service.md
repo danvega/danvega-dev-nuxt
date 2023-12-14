@@ -3,7 +3,7 @@ title: "Spring Boot REST Service: How to build a REST API in Java"
 slug: spring-boot-rest-service
 date: "2020-06-04T08:00:00.000Z"
 published: true
-excerpt: In this tutorial you will learn how to build a REST API in Java using Spring Boot.
+description: In this tutorial you will learn how to build a REST API in Java using Spring Boot.
 author: Dan Vega
 tags:
   - Spring Boot

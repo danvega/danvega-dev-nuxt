@@ -3,7 +3,7 @@ title: AWS Lambda SnapStart for Spring Developers
 slug: aws-lambda-snapstart-spring
 date: "2022-12-02T08:00:00.000Z"
 published: true
-excerpt: AWS Lambda SnapStart is a new performance optimization developed by AWS that can significantly improve the startup time for your applications.
+description: AWS Lambda SnapStart is a new performance optimization developed by AWS that can significantly improve the startup time for your applications.
 author: Dan Vega
 tags:
   - AWS

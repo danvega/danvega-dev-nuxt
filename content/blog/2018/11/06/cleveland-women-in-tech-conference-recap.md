@@ -4,7 +4,7 @@ title: "Cleveland Women in Tech Conference Recap"
 published: true
 date: 2018-11-06T11:59:51-05:00
 tags: ["conference","presentation"]
-excerpt: "Cleveland Women in Tech Conference Recap"
+description: "Cleveland Women in Tech Conference Recap"
 cover: ./IMG_4467.jpg
 ---
 

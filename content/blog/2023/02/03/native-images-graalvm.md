@@ -3,7 +3,7 @@ title: Building Native Images in Java with GraalVM
 slug: native-images-graalvm
 date: "2023-02-03T10:00:00.000Z"
 published: true
-excerpt:
+description:
 author: Dan Vega
 tags:
   - java

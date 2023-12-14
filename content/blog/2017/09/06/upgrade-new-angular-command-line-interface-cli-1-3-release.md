@@ -4,7 +4,7 @@ title: "How to upgrade to the new Angular Command Line Interface (CLI) 1.3 relea
 published: true
 date: 2017-09-06T09:07:30-04:00
 tags: ['Angular']
-excerpt: "How to upgrade to the new Angular Command Line Interface (CLI) 1.3 release"
+description: "How to upgrade to the new Angular Command Line Interface (CLI) 1.3 release"
 cover: ./pexels-photo-247791-1024x562.png
 ---
 

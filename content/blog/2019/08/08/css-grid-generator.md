@@ -3,7 +3,7 @@ slug: "css-grid-generator"
 title: "Learn how to use CSS Grid with a FREE tool CSS Grid Generator"
 date: "2019-08-08T18:13:57.456Z"
 published: true
-excerpt: "Learn how to create a CSS Grid Layout with a free tool called CSS Grid Generator"
+description: "Learn how to create a CSS Grid Layout with a free tool called CSS Grid Generator"
 author: "Dan Vega"
 tags:
   - "css"

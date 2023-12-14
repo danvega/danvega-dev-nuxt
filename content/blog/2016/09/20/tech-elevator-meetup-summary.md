@@ -4,7 +4,7 @@ title: "Tech Elevator Meetup Summary"
 published: true
 date: 2016-09-20T08:00:53-04:00
 tags: ['programming']
-excerpt: "A summary of the panel I was asked to be on at Tech Elevator."
+description: "A summary of the panel I was asked to be on at Tech Elevator."
 cover: ./highres_454339592.jpeg
 ---
 

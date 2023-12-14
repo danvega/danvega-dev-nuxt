@@ -3,7 +3,7 @@ title: "A First Look at the new Rest Client in Spring Boot 3.2"
 slug: rest-client-first-look
 date: "2023-09-08T17:00:00.000Z"
 published: true
-excerpt: This is my first look at the new Rest Client in Spring Boot 3.2. In this tutorial we will discuss what a client is, what are the different implementations of clients available and how to get started with the new Rest Client in Spring Framework 6.1 and Spring Boot 3.2
+description: This is my first look at the new Rest Client in Spring Boot 3.2. In this tutorial we will discuss what a client is, what are the different implementations of clients available and how to get started with the new Rest Client in Spring Framework 6.1 and Spring Boot 3.2
 author: Dan Vega
 tags:
   - Spring Boot

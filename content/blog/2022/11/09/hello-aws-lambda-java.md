@@ -3,7 +3,7 @@ title: "AWS Lambda Java: How to create your first AWS Lambda Function in Java"
 slug: hello-aws-lambda-java
 date: "2022-11-09T08:00:00.000Z"
 published: true
-excerpt: In this tutorial, I'll show you how to create a simple AWS Lambda function using Java.
+description: In this tutorial, I'll show you how to create a simple AWS Lambda function using Java.
 author: Dan Vega
 tags:
   - AWS

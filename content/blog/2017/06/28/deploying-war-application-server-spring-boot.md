@@ -4,7 +4,7 @@ title: "Deploying a WAR to an application server in Spring Boot"
 published: true
 date: 2017-06-28T09:14:15-04:00
 tags: ['spring']
-excerpt: "Deploying a WAR to an application server in Spring Boot"
+description: "Deploying a WAR to an application server in Spring Boot"
 cover: './pexels-photo-292627-760x506.jpeg'
 ---
 

@@ -4,7 +4,7 @@ title: "Spring Boot Convention Based Error Pages"
 published: true
 date: 2017-03-24T08:00:33-04:00
 tags: ["spring"]
-excerpt: "Spring Boot Convention Based Error Pages"
+description: "Spring Boot Convention Based Error Pages"
 cover: ./custom-error-cover.jpg
 ---
 

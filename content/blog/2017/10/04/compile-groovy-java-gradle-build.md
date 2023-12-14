@@ -4,7 +4,7 @@ title: "How to compile Groovy before Java in a Gradle Build"
 published: true
 date: 2017-10-04T08:32:40-04:00
 tags: ['groovy']
-excerpt: "How to compile Groovy before Java in a Gradle Build"
+description: "How to compile Groovy before Java in a Gradle Build"
 cover: ./614px-Groovy-logo.svg_-e1459476180685.png
 ---
 

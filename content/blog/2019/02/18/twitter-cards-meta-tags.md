@@ -3,7 +3,7 @@ title: How to add Twitter Card Meta Tags to your Blog
 slug: twitter-cards-meta-tags
 date: 2019-02-18 22:00:00
 published: true
-excerpt: In this tutorial you will learn what a Twitter Card is along with step by step instructions how to add them to your blog and validate that they are working.
+description: In this tutorial you will learn what a Twitter Card is along with step by step instructions how to add them to your blog and validate that they are working.
 author: Dan Vega
 tags: ["html"]
 cover: ./twitter-cards.png

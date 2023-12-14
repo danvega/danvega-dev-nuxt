@@ -4,7 +4,7 @@ title: "Ready Player One Review"
 published: true
 date: 2015-04-24T22:55:09-04:00
 tags: ["books"]
-excerpt: "Ready Player One Review"
+description: "Ready Player One Review"
 cover: ./bookcase-books-bookshelves-159711.jpg
 ---
 

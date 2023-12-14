@@ -3,7 +3,7 @@ title: "Streamline Your Development: Spring Boot with PostgreSQL & pgAdmin in Do
 slug: pgadmin-docker-compose
 date: "2023-07-17T17:00:00.000Z"
 published: true
-excerpt: In this article you will learn about the new Docker Compose module in Spring Boot 3.1 and how to connect to a Postgres database from your application. You will also learn how to use psql in the shell and pgAdmin to manage your database.
+description: In this article you will learn about the new Docker Compose module in Spring Boot 3.1 and how to connect to a Postgres database from your application. You will also learn how to use psql in the shell and pgAdmin to manage your database.
 author: Dan Vega
 tags:
   - Spring Boot

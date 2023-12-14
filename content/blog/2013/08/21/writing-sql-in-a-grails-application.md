@@ -4,7 +4,7 @@ title: "Writing SQL in a Grails Application"
 published: true
 date: 2013-08-21T12:08:00-04:00
 tags: ["grails"]
-excerpt: "Writing SQL in a Grails Application"
+description: "Writing SQL in a Grails Application"
 cover:
 ---
 

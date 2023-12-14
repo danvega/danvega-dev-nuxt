@@ -3,7 +3,7 @@ title: 14" MacBook Pro M1 Max Review for developers and content creators
 slug: macbook-pro-m1-max-review
 date: "2021-11-15T21:00:00.000Z"
 published: true
-excerpt:  I have been using the new MacBook Pro for about a week and wanted to give you my initial thoughts from a developer & content creator perspective.
+description:  I have been using the new MacBook Pro for about a week and wanted to give you my initial thoughts from a developer & content creator perspective.
 author: Dan Vega
 tags:
   - Apple

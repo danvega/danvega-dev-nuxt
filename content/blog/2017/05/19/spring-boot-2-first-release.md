@@ -4,7 +4,7 @@ title: "The first release of Spring Boot 2.0 is now available!"
 published: true
 date: 2017-05-19T10:15:39-04:00
 tags: ['spring']
-excerpt: "The first release of Spring Boot 2.0 is now available!"
+description: "The first release of Spring Boot 2.0 is now available!"
 cover: './pexels-photo-92904-760x507.jpeg'
 ---
 

@@ -4,7 +4,7 @@ title: "Using GORM in Spring Boot"
 published: true
 date: 2015-11-25T11:43:13-05:00
 tags: ["groovy", "spring", "java"]
-excerpt: "Using GORM in Spring Boot"
+description: "Using GORM in Spring Boot"
 cover: ./adult-back-view-data-1181345.jpg
 ---
 

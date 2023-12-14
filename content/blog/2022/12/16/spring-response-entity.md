@@ -3,7 +3,7 @@ title: "Spring Response Entity -  How to customize the response in Spring Boot"
 slug: spring-response-entity
 date: "2022-12-16T12:00:00.000Z"
 published: true
-excerpt: In this tutorial, you will learn what the ResponseEntity class is and how it can be used to customize the response in your Spring Boot application.
+description: In this tutorial, you will learn what the ResponseEntity class is and how it can be used to customize the response in your Spring Boot application.
 author: Dan Vega
 tags:
   - Spring Boot

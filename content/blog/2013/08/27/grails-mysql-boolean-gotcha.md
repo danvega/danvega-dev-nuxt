@@ -4,7 +4,7 @@ title: "Grails MySQL Boolean Gotcha"
 published: true
 date: 2013-08-27T18:08:00-04:00
 tags: ["grails","groovy"]
-excerpt: "Grails MySQL Boolean Gotcha"
+description: "Grails MySQL Boolean Gotcha"
 cover:
 ---
 

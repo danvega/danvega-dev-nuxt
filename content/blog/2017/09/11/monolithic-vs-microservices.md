@@ -4,7 +4,7 @@ title: "When to use Microservices over Monolithic Architecture"
 published: true
 date: 2017-09-11T08:30:19-04:00
 tags: ['Software Development', 'spring']
-excerpt: "When to use Microservices over Monolithic Architecture"
+description: "When to use Microservices over Monolithic Architecture"
 cover: ./pexels-photo-325229-760x266.jpeg
 ---
 

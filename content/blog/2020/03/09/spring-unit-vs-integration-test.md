@@ -3,7 +3,7 @@ title: "Spring Boot Testing Basics: How to Unit Test & Integration Test REST Con
 slug: spring-unit-vs-integration-test
 date: "2020-03-09T10:00:00.000Z"
 published: true
-excerpt: In this article, we're going to dive into the world of testing in Spring Boot, specifically looking at unit tests and integration tests.
+description: In this article, we're going to dive into the world of testing in Spring Boot, specifically looking at unit tests and integration tests.
 author: "Dan Vega"
 tags:
   - Spring Boot

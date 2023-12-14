@@ -4,7 +4,7 @@ title: "Angular 4 Java Developers Course is now Live!"
 published: true
 date: 2017-11-08T16:15:32-05:00
 tags: ['java', 'spring']
-excerpt: "Angular 4 Java Developers Course is now Live!"
+description: "Angular 4 Java Developers Course is now Live!"
 cover: ./greetings_java_hipsters-760x525.png
 ---
 

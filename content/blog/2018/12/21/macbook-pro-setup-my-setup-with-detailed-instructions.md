@@ -4,7 +4,7 @@ title: "MacBook Pro Setup: My setup with detailed instructions"
 published: true
 date: 2018-12-21T14:17:22-05:00
 tags: ["mac","web development"]
-excerpt: "MacBook Pro Setup: My setup with detailed instructions"
+description: "MacBook Pro Setup: My setup with detailed instructions"
 cover: ./tobias-lystad-606045-unsplash-1024x683.jpg
 ---
 

@@ -4,7 +4,7 @@ title: "Grails Interactive Mode - USE IT"
 published: true
 date: 2013-08-27T15:08:00-04:00
 tags: ["grails"]
-excerpt: "Grails Interactive Mode - USE IT"
+description: "Grails Interactive Mode - USE IT"
 cover:
 ---
 

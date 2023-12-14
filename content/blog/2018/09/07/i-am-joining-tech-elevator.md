@@ -4,7 +4,7 @@ title: "I am joining Tech Elevator"
 published: true
 date: 2018-09-07T01:00:58-04:00
 tags: ["Tech Elevator"]
-excerpt: "I am joining Tech Elevator"
+description: "I am joining Tech Elevator"
 cover: ./Stacked-Logo-760x202.jpg
 ---
 

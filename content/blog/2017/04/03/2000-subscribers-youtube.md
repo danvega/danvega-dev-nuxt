@@ -4,7 +4,7 @@ title: "2,000 Subscribers on YouTube!!"
 published: true
 date: 2017-04-03T08:30:34-04:00
 tags: ['YouTube']
-excerpt: "2,000 Subscribers on YouTube!!"
+description: "2,000 Subscribers on YouTube!!"
 cover: './200-subscribers.jpg'
 ---
 

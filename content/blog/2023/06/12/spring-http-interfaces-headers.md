@@ -3,7 +3,7 @@ title: "How to add Request Headers using HTTP Interfaces in Spring Boot 3"
 slug: spring-http-interfaces-headers
 date: "2023-06-14T08:00:00.000Z"
 published: true
-excerpt: In this tutorial you will learn how to add a request header when using HTTP Interfaces in Spring Boot 3. This can be useful when you need to add a header to a single request or every single request. You will also learn how to view the headers that are sent to make sure everything is working properly.
+description: In this tutorial you will learn how to add a request header when using HTTP Interfaces in Spring Boot 3. This can be useful when you need to add a header to a single request or every single request. You will also learn how to view the headers that are sent to make sure everything is working properly.
 author: Dan Vega
 tags:
   - Spring Framework

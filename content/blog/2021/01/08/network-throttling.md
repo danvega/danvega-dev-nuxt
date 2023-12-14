@@ -3,7 +3,7 @@ title: 'How to force a delay in a web app'
 slug: network-throttling
 date: '2021-01-08T09:30:00.000Z'
 published: true
-excerpt: 'In this tutorial, I will show you can force a delay in a web application for testing purposes.'
+description: 'In this tutorial, I will show you can force a delay in a web application for testing purposes.'
 author: 'Dan Vega'
 tags:
   - 'javascript'

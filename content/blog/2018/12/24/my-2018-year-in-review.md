@@ -4,7 +4,7 @@ title: "My 2018 Year in Review"
 published: true
 date: 2018-12-24T08:52:12-05:00
 tags: ["goals"]
-excerpt: "My 2018 Year in Review"
+description: "My 2018 Year in Review"
 cover: ./2018-cover.png
 ---
 

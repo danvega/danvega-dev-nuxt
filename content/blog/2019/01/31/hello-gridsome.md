@@ -3,7 +3,7 @@ slug: hello-gridsome
 title: Hello, Gridsome!
 date: 2019-01-31 10:00:00
 published: true
-excerpt: A quick write up on why I started a new blog and what I plan to do with it.
+description: A quick write up on why I started a new blog and what I plan to do with it.
 tags: ["vue"]
 cover: ./gridsome.png
 ---

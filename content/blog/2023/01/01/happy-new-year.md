@@ -3,7 +3,7 @@ title: Happy New Year 2023
 slug: happy-new-year-2023
 date: "2023-01-01T10:00:00.000Z"
 published: true
-excerpt: Happy New Year! I want to take a few minutes and talk about a few of my priorities as we head into the new year.
+description: Happy New Year! I want to take a few minutes and talk about a few of my priorities as we head into the new year.
 author: Dan Vega
 tags:
   - meta

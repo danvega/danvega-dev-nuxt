@@ -4,7 +4,7 @@ title: "Spring Boot: The #1 question my students are asking right now"
 published: true
 date: 2017-05-31T08:48:35-04:00
 tags: ['sql']
-excerpt: "Spring Boot: The #1 question my students are asking right now"
+description: "Spring Boot: The #1 question my students are asking right now"
 cover: './pexels-photo-92028-760x599.jpeg'
 ---
 

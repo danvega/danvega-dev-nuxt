@@ -3,7 +3,7 @@ slug: "adding-twitter-cards-to-gridsome"
 title: "Adding Twitter Cards to Gridsome"
 date: "2019-04-09T19:21:53.368Z"
 published: true
-excerpt: In this tutorial I will show you how to add Twitter Cards to your Gridsome Blog.
+description: In this tutorial I will show you how to add Twitter Cards to your Gridsome Blog.
 author: Dan Vega
 tags: ["vue", "gridsome"]
 cover: ./twittter-cards-gridsome-cover-936ee6d4-220e-4800-873c-9d700fa44469.png

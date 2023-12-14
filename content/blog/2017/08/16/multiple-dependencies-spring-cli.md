@@ -4,7 +4,7 @@ title: "How to add multiple dependencies with the Spring CLI"
 published: true
 date: 2017-08-16T08:30:40-04:00
 tags: ['spring']
-excerpt: "How to add multiple dependencies with the Spring CLI"
+description: "How to add multiple dependencies with the Spring CLI"
 cover: './pexels-photo-205421-760x506.jpeg'
 ---
 

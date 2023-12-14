@@ -4,7 +4,7 @@ title: "How do you Define Success as a Software Developer"
 published: true
 date: 2017-04-21T10:00:07-04:00
 tags: ['programming']
-excerpt: "How do you Define Success as a Software Developer"
+description: "How do you Define Success as a Software Developer"
 cover: './william-stitt-224301-760x1140.jpg'
 ---
 

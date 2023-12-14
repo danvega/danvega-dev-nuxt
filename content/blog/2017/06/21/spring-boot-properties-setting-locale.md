@@ -4,7 +4,7 @@ title: "Spring Boot Properties: Setting the locale"
 published: true
 date: 2017-06-21T08:19:09-04:00
 tags: ['spring']
-excerpt: "Spring Boot Properties: Setting the locale"
+description: "Spring Boot Properties: Setting the locale"
 cover: './andre-benz-256762-760x507.jpg'
 ---
 

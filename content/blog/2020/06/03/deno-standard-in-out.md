@@ -3,7 +3,7 @@ title: "Working with Standard Input and Output in Deno"
 slug: deno-stdin-stdout
 date: "2020-06-03T20:00:00.500Z"
 published: true
-excerpt: "In this tutorial I will show you how to work with standard input and output in Deno."
+description: "In this tutorial I will show you how to work with standard input and output in Deno."
 author: "Dan Vega"
 tags:
   - "deno"

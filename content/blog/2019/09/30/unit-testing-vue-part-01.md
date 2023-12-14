@@ -3,7 +3,7 @@ slug: 'unit-testing-vue-part-01'
 title: "A beginner's guide to Unit Testing in Vue: Part 1"
 date: '2019-10-01T00:31:11.329Z'
 published: true
-excerpt: 'Unit Testing in Vue: What to test?'
+description: 'Unit Testing in Vue: What to test?'
 author: 'Dan Vega'
 tags:
   - 'vue'

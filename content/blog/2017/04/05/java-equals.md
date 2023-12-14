@@ -4,7 +4,7 @@ title: "Java: What is the difference between equals and =="
 published: true
 date: 2017-04-05T08:00:50-04:00
 tags: ['java']
-excerpt: "Java: What is the difference between equals and =="
+description: "Java: What is the difference between equals and =="
 cover: './java_equals-760x428.png'
 ---
 

@@ -4,7 +4,7 @@ title: "So you want to create an online course?"
 published: true
 date: 2017-05-26T12:34:08-04:00
 tags: ['course']
-excerpt: "So you want to create an online course?"
+description: "So you want to create an online course?"
 cover: './carl-heyerdahl-181868-1-760x507.jpg'
 ---
 

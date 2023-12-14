@@ -4,7 +4,7 @@ title: "Grails Spring Security Plugin -  Logout postOnly setting"
 published: true
 date: 2014-02-25T13:02:00-05:00
 tags: ["grails"]
-excerpt: "Grails Spring Security Plugin - Logout PostOnly Setting"
+description: "Grails Spring Security Plugin - Logout PostOnly Setting"
 cover:
 ---
 

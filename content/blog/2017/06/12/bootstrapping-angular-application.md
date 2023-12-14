@@ -4,7 +4,7 @@ title: "Bootstrapping your Angular Application"
 published: true
 date: 2017-06-12T11:40:51-04:00
 tags: ['Angular']
-excerpt: "Bootstrapping your Angular Application"
+description: "Bootstrapping your Angular Application"
 cover: './pexels-photo-177598-760x506.jpeg'
 ---
 

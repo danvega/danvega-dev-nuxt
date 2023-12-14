@@ -4,7 +4,7 @@ title: "Spring Boot Defining @RequestMapping handler methods"
 published: true
 date: 2017-06-14T08:36:35-04:00
 tags: ['spring']
-excerpt: "Spring Boot Defining @RequestMapping handler methods"
+description: "Spring Boot Defining @RequestMapping handler methods"
 cover: './pexels-photo-374074-760x506.jpeg'
 ---
 

@@ -4,7 +4,7 @@ title: "Spring Boot Configuration using YAML"
 published: true
 date: 2017-06-26T09:00:06-04:00
 tags: ['spring']
-excerpt: "Spring Boot Configuration using YAML"
+description: "Spring Boot Configuration using YAML"
 cover: './emile-perron-190221-760x428.jpg'
 ---
 

@@ -3,7 +3,7 @@ title: Happy New Year 2022
 slug: happy-new-year-2022
 date: "2022-01-01T11:00:00.000Z"
 published: true
-excerpt: Happy New Year! I want to take a few minutes and reflect on the year that was 2021 and look ahead to 2022.
+description: Happy New Year! I want to take a few minutes and reflect on the year that was 2021 and look ahead to 2022.
 author: Dan Vega
 tags:
   - goals

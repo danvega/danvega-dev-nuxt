@@ -4,7 +4,7 @@ title: "Sending Async Emails in Spring"
 published: true
 date: 2016-01-13T10:30:20-05:00
 tags: ['java','spring']
-excerpt: "In this article I will walk you through how to send email asynchronously in Spring Boot."
+description: "In this article I will walk you through how to send email asynchronously in Spring Boot."
 cover: ./email-cover.jpg
 ---
 

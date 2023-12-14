@@ -3,7 +3,7 @@ title: Spring Data JPA Pagination
 slug: spring-data-jpa-pagination
 date: "2022-05-12T16:00:00.000Z"
 published: true
-excerpt: In this tutorial, you are going to learn how to work with pagination in Spring Data JPA.
+description: In this tutorial, you are going to learn how to work with pagination in Spring Data JPA.
 author: Dan Vega
 tags:
   - Spring

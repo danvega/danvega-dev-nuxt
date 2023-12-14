@@ -3,7 +3,7 @@ title: "🔥 New in Spring Boot 3.1 - Spring Boot Docker Compose Module"
 slug: spring-boot-docker-compose
 date: "2023-04-26T08:00:00.000Z"
 published: true
-excerpt: In this tutorial you will learn about the new Spring Boot Docker Compose Module. This module allows you to use Docker Compose files directly with Spring Boot applications.
+description: In this tutorial you will learn about the new Spring Boot Docker Compose Module. This module allows you to use Docker Compose files directly with Spring Boot applications.
 author: Dan Vega
 tags:
   - Spring Boot

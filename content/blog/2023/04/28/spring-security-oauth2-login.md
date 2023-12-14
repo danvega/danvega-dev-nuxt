@@ -3,7 +3,7 @@ title: "OAuth2 Login Made Easy in Java: A Spring Boot & Spring Security Walkthro
 slug: spring-security-oauth2-login
 date: "2023-04-28T08:00:00.000Z"
 published: true
-excerpt: In this tutorial, we will discuss how to set up OAuth 2 logins in Spring Security with Spring Boot.
+description: In this tutorial, we will discuss how to set up OAuth 2 logins in Spring Security with Spring Boot.
 author: Dan Vega
 tags:
   - Spring Security

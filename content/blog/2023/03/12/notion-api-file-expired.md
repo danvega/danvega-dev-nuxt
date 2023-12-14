@@ -4,7 +4,7 @@ slug: notion-api-file-expired
 date: "2023-03-12T14:30:00.000Z"
 updatedOn: "2023-03-14T14:30:00.000Z"
 published: true
-excerpt:
+description:
 author: Dan Vega
 tags:
   - javascript
@@ -70,7 +70,7 @@ database.results.forEach(post => {
     id: post.id,
     title: post.properties.Name.title[0].plain_text,
     slug: post.properties.Slug.rich_text[0].plain_text,
-    excerpt: post.properties.Excerpt.rich_text[0].plain_text,
+    description: post.properties.Excerpt.rich_text[0].plain_text,
     cover: post.properties.Image.files[0]?.name
   });
   // the cover image expires after 1 hour so we need to download it

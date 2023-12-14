@@ -4,7 +4,7 @@ title: "Spring Data Aggregate Functions in a repository"
 published: true
 date: 2017-07-31T08:48:35-04:00
 tags: ['spring']
-excerpt: "Spring Data Aggregate Functions in a repository"
+description: "Spring Data Aggregate Functions in a repository"
 cover: './pexels-photo-374074-760x506.jpeg'
 ---
 

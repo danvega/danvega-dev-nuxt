@@ -4,7 +4,7 @@ title: "Spring Boot Application Annotation"
 published: true
 date: 2015-10-23T09:08:37-04:00
 tags: [java, spring]
-excerpt: "Spring Boot Application Annotation"
+description: "Spring Boot Application Annotation"
 cover: ./access-code-connection-1181467.jpg
 ---
 

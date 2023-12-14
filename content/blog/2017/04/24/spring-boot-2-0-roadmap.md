@@ -4,7 +4,7 @@ title: "Spring Boot 2.0 Roadmap"
 published: true
 date: 2017-04-24T08:00:05-04:00
 tags: ['spring']
-excerpt: "Spring Boot 2.0 Roadmap"
+description: "Spring Boot 2.0 Roadmap"
 cover: './annie-spratt-161511-760x1140.jpg'
 ---
 

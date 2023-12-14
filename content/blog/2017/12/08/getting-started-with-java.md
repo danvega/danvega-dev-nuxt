@@ -4,7 +4,7 @@ title: "Getting Started with Java course"
 published: true
 date: 2017-12-08T09:00:23-05:00
 tags: ['java']
-excerpt: "Getting Started with Java course"
+description: "Getting Started with Java course"
 cover: ./apple-computer-desk-18105.jpg
 ---
 

@@ -3,7 +3,7 @@ slug: 'website-new-features-improvements'
 title: 'New Features and Improvements to my website'
 date: '2019-07-23T11:20:30.619Z'
 published: true
-excerpt: 'In this article I am going to walk you through some of the new features I have been working on for my website'
+description: 'In this article I am going to walk you through some of the new features I have been working on for my website'
 author: 'Dan Vega'
 tags:
   - 'blog'
@@ -256,7 +256,7 @@ slug: 'triggering-events-router-vue'
 title: 'Triggering events from Vue Router views'
 date: '2019-06-05T20:13:17.445Z'
 published: true
-excerpt: 'In this article, I will show you how to trigger events from views using the Router View component.'
+description: 'In this article, I will show you how to trigger events from views using the Router View component.'
 author: 'Dan Vega'
 tags: ['vue']
 cover: ./triggering-events-router-vue-cover.png

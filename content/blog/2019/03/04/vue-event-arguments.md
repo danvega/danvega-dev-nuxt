@@ -3,7 +3,7 @@ title: Vue Event Handler Arguments
 slug: vue-event-arguments
 date: 2019-03-04 10:00:00
 published: true
-excerpt: In this article you are going to learn how to pass arguments to your Vue event handlers as well as how get access to the original DOM event.
+description: In this article you are going to learn how to pass arguments to your Vue event handlers as well as how get access to the original DOM event.
 author: Dan Vega
 tags: ["vue", "javascript"]
 cover: ./vue-event-arguments.png

@@ -3,7 +3,7 @@ title: "Demystifying Spring Session: A Comprehensive Introduction for Java Devel
 slug: spring-session-introduction
 date: "2023-05-03T08:00:00.000Z"
 published: true
-excerpt: In this tutorial, we'll explore the powerful features of Spring Session and learn how to effectively manage user sessions in your Java web applications.
+description: In this tutorial, we'll explore the powerful features of Spring Session and learn how to effectively manage user sessions in your Java web applications.
 author: Dan Vega
 tags:
   - Spring Security

@@ -3,7 +3,7 @@ slug: 'unit-testing-vue-part-03'
 title: "A Beginner's Guide to Unit Testing in Vue: Part 3"
 date: '2019-10-29T15:30:00.000Z'
 published: true
-excerpt: 'In Part 3 of this series we learn how to write unit tests in Vue by testing more complex components.'
+description: 'In Part 3 of this series we learn how to write unit tests in Vue by testing more complex components.'
 author: 'Dan Vega'
 tags: ['vue']
 cover: './unit-testing-vue-mastery-03-cover.jpg'

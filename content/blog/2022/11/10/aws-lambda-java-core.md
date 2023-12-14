@@ -3,7 +3,7 @@ title: "Building AWS Lambda Functions with Java: An Introduction to the AWS Lamb
 slug: aws-lambda-java-core
 date: "2022-11-10T08:00:00.000Z"
 published: true
-excerpt: In this tutorial you will learn how to build AWS Lambda functions with Java using the AWS Lambda Core Java Library.
+description: In this tutorial you will learn how to build AWS Lambda functions with Java using the AWS Lambda Core Java Library.
 author: Dan Vega
 tags:
   - AWS

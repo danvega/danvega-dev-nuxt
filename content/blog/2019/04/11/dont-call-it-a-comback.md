@@ -3,7 +3,7 @@ slug: "dont-call-it-a-comeback"
 title: "Personal Blogs: Don't Call it a comeback!"
 date: "2019-04-11T11:38:39.435Z"
 published: true
-excerpt: "I'm not sure if you have noticed or not but the personal blog is making a comeback"
+description: "I'm not sure if you have noticed or not but the personal blog is making a comeback"
 author: "Dan Vega"
 tags: ["blogging"]
 cover: ./personal-blog-4b0867c8-0c1b-421c-afaf-7fc7e7986a77.png

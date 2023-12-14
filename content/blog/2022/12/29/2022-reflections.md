@@ -3,7 +3,7 @@ title: 2022 Reflections
 slug: 2022-reflections
 date: "2022-12-29T16:00:00.000Z"
 published: true
-excerpt: In this article I am going to spend some time reflecting because I believe it's a good reminder of the good and the bad as I began to set some goals for next year.
+description: In this article I am going to spend some time reflecting because I believe it's a good reminder of the good and the bad as I began to set some goals for next year.
 author: Dan Vega
 tags:
   - meta

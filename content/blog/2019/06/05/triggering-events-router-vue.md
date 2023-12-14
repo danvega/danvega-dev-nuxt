@@ -3,7 +3,7 @@ slug: "triggering-events-router-vue"
 title: "Triggering events from Vue Router views"
 date: "2019-06-05T20:13:17.445Z"
 published: true
-excerpt: "In this article I will show you how to trigger events from views using the Router View component."
+description: "In this article I will show you how to trigger events from views using the Router View component."
 author: "Dan Vega"
 tags: ["vue"]
 cover: ./triggering-events-router-vue-cover.png

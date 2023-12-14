@@ -4,7 +4,7 @@ title: "Why every developer should start a blog right now!"
 published: true
 date: 2017-04-28T09:15:56-04:00
 tags: ['blogging']
-excerpt: "Why every developer should start a blog right now!"
+description: "Why every developer should start a blog right now!"
 cover: './ken-tomita-239357-760x507.jpg'
 ---
 

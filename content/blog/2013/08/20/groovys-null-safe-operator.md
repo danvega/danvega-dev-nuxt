@@ -4,7 +4,7 @@ title: "Groovy's null safe operator"
 published: true
 date: 2013-08-20T06:08:00-04:00
 tags: ["grails","groovy"]
-excerpt: "Groovy's null safe operator"
+description: "Groovy's null safe operator"
 cover:
 ---
 

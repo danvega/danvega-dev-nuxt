@@ -4,7 +4,7 @@ title: "SQL Server Exception - The Statement Did Not Return A Result Set"
 published: true
 date: 2015-02-05T11:48:18-05:00
 tags: ["groovy", "sql"]
-excerpt: "Using Stored Procedures in a Grails Application with Groovy"
+description: "Using Stored Procedures in a Grails Application with Groovy"
 cover: ./data-cover.jpg
 ---
 

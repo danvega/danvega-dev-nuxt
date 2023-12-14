@@ -3,7 +3,7 @@ title: "Start using Vue 3 in a new project right now"
 slug: start-using-vue3-today
 date: "2020-01-17T13:58:29.936Z"
 published: true
-excerpt: "In this tutorial, I walk you through how to add Vue 3 to a new project."
+description: "In this tutorial, I walk you through how to add Vue 3 to a new project."
 author: "Dan Vega"
 tags:
   - "vue3"

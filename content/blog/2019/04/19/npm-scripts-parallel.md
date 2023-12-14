@@ -3,7 +3,7 @@ slug: "npm-scripts-parallel"
 title: "How to run multiple npm scripts in parallel"
 date: "2019-04-19T16:51:56.537Z"
 published: true
-excerpt: "In this article I will talk about a problem I ran into recently and a couple of the solutions I found."
+description: "In this article I will talk about a problem I ran into recently and a couple of the solutions I found."
 author: "Dan Vega"
 tags: ["npm", "node", "javascript"]
 cover: ./npm-parallel-cover.png
