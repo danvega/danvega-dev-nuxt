@@ -1,9 +1,9 @@
 ---
 title: Virtual Threads in Spring Boot
+description: In this article, we will discuss Virtual Threads in Java, their significance for Spring Boot developers, and how they can enhance the performance of certain types of Spring Boot applications.
 slug: virtual-threads-spring-boot
 date: "2023-12-14T17:00:00.000Z"
 published: true
-excerpt: In this article, we will discuss Virtual Threads in Java, their significance for Spring Boot developers, and how they can enhance the performance of certain types of Spring Boot applications.
 author: Dan Vega
 tags:
   - Java

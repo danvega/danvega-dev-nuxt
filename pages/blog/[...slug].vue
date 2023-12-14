@@ -17,8 +17,7 @@ if(data.value == null) {
 }
 
 const datePublished = useDateFormat(data.value.date, 'MMMM D, YYYY');
-const dateUpdated = useDateFormat(data.value.updatedOn, 'MMMM D, YYYY');
-
+useDateFormat(data.value.updatedOn, 'MMMM D, YYYY');
 const getImagePath = (date,cover) => {
   const createdOn = new Date(date);
   const year = createdOn.getFullYear();
@@ -46,17 +45,17 @@ useHead({
   title: data.value.title,
   meta: [
     { name: 'title', content: data.value.title },
-    { name: 'description', content: data.value.excerpt },
+    { name: 'description', content: data.value?.description },
     { name: "keywords", content: data.value?.keywords },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: data.value.title },
-    { name: 'twitter:description', content: data.value.excerpt },
+    { name: 'twitter:description', content: data.value?.description },
     { name: 'twitter:site', content: '@therealdanvega' },
     { name: 'twitter:image', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
     { name: 'twitter:creator', content: '@therealdanvega' },
     { name: 'og:type', content: 'article' },
     { name: 'og:title', content: data.value.title },
-    { name: 'og:description', content: data.value.excerpt },
+    { name: 'og:description', content: data.value?.description },
     { name: 'og:url', content: config.public.urlBase + path },
     { name: 'og:image', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
     { name: 'og:image:secure_url', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
