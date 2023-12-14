@@ -8,13 +8,13 @@ author: Dan Vega
 tags:
   - Java
   - Spring Boot
-cover: ./spring-boot-virtual-threads.png
+cover: spring-boot-virtual-threads.png
 video: https://www.youtube.com/embed/THavIYnlwck
 github: https://github.com/danvega/hello-virtual-threads/
 keywords: Spring Framework, Spring Boot, Java, virtual threads, Project Loom, virtual threads java, spring virtual threads, virtual threads spring boot tutorial, spring boot 3 2 virtual threads, Spring Boot 3.2
 ---
 
-If you're reading this article, chances are you have heard about Project Loom and Virtual Threads in Java. If you haven't heard about them yet, don't worry. I will provide a quick introduction to what they are and why they are so important. Additionally, I will explain why I believe this feature is significant for Spring Boot developers and provide guidance on how you can start using it today. By the end of this article, you will have a better understanding of virtual threads and how they can enhance the performance of certain types of Spring Boot applications.
+If you're reading this article, c[virtual-threads-spring-boot.md](virtual-threads-spring-boot.md)hances are you have heard about Project Loom and Virtual Threads in Java. If you haven't heard about them yet, don't worry. I will provide a quick introduction to what they are and why they are so important. Additionally, I will explain why I believe this feature is significant for Spring Boot developers and provide guidance on how you can start using it today. By the end of this article, you will have a better understanding of virtual threads and how they can enhance the performance of certain types of Spring Boot applications.
 
 ## Virtual Threads in Java
 
