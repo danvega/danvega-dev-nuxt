@@ -57,9 +57,9 @@ useHead({
     { name: 'og:type', content: 'article' },
     { name: 'og:title', content: data.value.title },
     { name: 'og:description', content: data.value.excerpt },
-    { name: 'og:url', content: config.public.urlBase + path },
-    { name: 'og:image', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
-    { name: 'og:image:secure_url', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
+    { name: 'og:url', content: config.urlBase + path },
+    { name: 'og:image', content: config.urlBase + getImagePath(data.value.date,data.value.cover) },
+    { name: 'og:image:secure_url', content: config.urlBase + getImagePath(data.value.date,data.value.cover) },
   ]
 });
 </script>

@@ -1,6 +1,6 @@
 const urlSchema = process.env.URL_SCHEMA || 'http'
 const urlDomain = process.env.URL_DOMAIN || 'localhost:3000'
-const urlBase = `${urlSchema}://${urlDomain}`
+const urlBase = process.env.URL_BASE || `${urlSchema}://${urlDomain}`
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
