@@ -45,7 +45,7 @@ const config = useRuntimeConfig();
 useHead({
   title: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner',
   meta: [
-    { name: 'title', content: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner' },
+    { name: 'title', content: data.value.title },
     { name: 'description', content: data.value.excerpt },
     { name: "keywords", content: data.value?.keywords },
     { name: 'twitter:card', content: 'summary_large_image' },
