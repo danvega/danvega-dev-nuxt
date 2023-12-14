@@ -44,6 +44,7 @@ const config = useRuntimeConfig();
 
 useHead({
   title: data.value.title,
+  description: data.value.excerpt,
   meta: [
     { name: 'title', content: data.value.title },
     { name: 'description', content: data.value.excerpt },
