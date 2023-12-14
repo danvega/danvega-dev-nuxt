@@ -43,7 +43,7 @@ function getSlugFromPath(path) {
 const config = useRuntimeConfig();
 
 useHead({
-  title: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner',
+  title: data.value.title,
   meta: [
     { name: 'title', content: data.value.title },
     { name: 'description', content: data.value.excerpt },
