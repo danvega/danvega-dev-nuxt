@@ -1,7 +1,3 @@
-const urlSchema = process.env.URL_SCHEMA || 'http'
-const urlDomain = process.env.URL_DOMAIN || 'localhost:3000'
-const urlBase = process.env.URL_BASE || `${urlSchema}://${urlDomain}`
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -30,9 +26,9 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      urlSchema,
-      urlDomain,
-      urlBase,
+      urlSchema: 'http',
+      urlDomain: 'localhost:3000',
+      urlBase: 'http://localhost:3000',
       sentry: {
         dsn: 'https://192a6edf487cb3f69aa56e4cefbcfc75@o268705.ingest.sentry.io/4506073654099968',
         environment: 'development',
@@ -110,8 +106,8 @@ export default defineNuxtConfig({
           title: 'Dan Vega',
           description: 'Personal site of Dan Vega',
           copyright: '2023 by Dan Vega',
-          link: urlBase,
-          id: urlBase,
+          link: useRuntimeConfig().public.urlBase,
+          id: useRuntimeConfig().public.urlBase,
           author: { email: 'danvega@gmail.com', name: 'Dan Vega' },
         },
       },
