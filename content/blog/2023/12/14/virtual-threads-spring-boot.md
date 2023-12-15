@@ -11,10 +11,10 @@ tags:
 cover: spring-boot-virtual-threads.png
 video: https://www.youtube.com/embed/THavIYnlwck
 github: https://github.com/danvega/hello-virtual-threads/
-keywords: Spring Framework, Spring Boot, Java, virtual threads, Project Loom, virtual threads java, spring virtual threads, virtual threads spring boot tutorial, spring boot 3 2 virtual threads, Spring Boot 3.2
+keywords: Spring Framework, Spring Boot, Java, virtual threads, Project Loom, virtual threads java, spring virtual threads, virtual threads spring boot tutorial, spring boot 3 2 virtual threads, Spring Boot 3.2, Spring Boot Virtual Threads
 ---
 
-If you're reading this article, c[virtual-threads-spring-boot.md](virtual-threads-spring-boot.md)hances are you have heard about Project Loom and Virtual Threads in Java. If you haven't heard about them yet, don't worry. I will provide a quick introduction to what they are and why they are so important. Additionally, I will explain why I believe this feature is significant for Spring Boot developers and provide guidance on how you can start using it today. By the end of this article, you will have a better understanding of virtual threads and how they can enhance the performance of certain types of Spring Boot applications.
+If you're reading this article, chances are you have heard about Project Loom and Virtual Threads in Java. If you haven't heard about them yet, don't worry. I will provide a quick introduction to what they are and why they are so important. Additionally, I will explain why I believe this feature is significant for Spring Boot developers and provide guidance on how you can start using it today. By the end of this article, you will have a better understanding of virtual threads and how they can enhance the performance of certain types of Spring Boot applications.
 
 ## Virtual Threads in Java
 
@@ -56,7 +56,7 @@ In this section we will create a new Spring Boot Application that will perform a
 - **Java**: 21
 - **Dependencies**: Web
 
-![Spring Initalizr](/images/blog/2023/12/14/spring-init.png)
+![Spring Initializr](/images/blog/2023/12/14/spring-init.png)
 
 Next, we will create a controller that handles a `GET` request and makes a call to an external service called HTTPBin. This service is useful because it provides various public endpoints, including one called `/block` that allows us to pause for a specified number of seconds.
 
@@ -182,3 +182,6 @@ We know that Virtual Threads make sense when our applications are performing som
 ## Conclusion
 
 This blog post discusses the concept of Virtual Threads in Java, their significance for Spring Boot developers, and how they can enhance the performance of certain types of Spring Boot applications. It explains the challenges of asynchronous programming, introduces Virtual Threads as a solution, and provides an example of using Virtual Threads in a Spring Boot application. The post also includes benchmarks to demonstrate the performance improvement achieved with Virtual Threads and highlights the scenarios where Virtual Threads are beneficial.
+
+Thank You,\
+Happy coding!
