@@ -1,19 +1,20 @@
 ---
-title: "The Number One Spring Boot Starter You Should Include in Every Project"
-slug: spring-boot-starter
+title: "The Spring Boot Actuator is the one dependency you should include in every project"
+description: In this article, we will focus on the most important Spring Boot starter that you should include in all of your projects. The Spring Boot Actuator.
+slug: spring-boot-actuator
 date: "2023-09-17T17:00:00.000Z"
+updatedOn: "2023-12-14T20:00:00.000Z"
 published: true
-description: In this article, we will focus on the most important Spring Boot starter that you should include in all of your projects.
 author: Dan Vega
 tags:
   - Spring Boot
-cover: ./spring-boot-actuator.png
+cover: spring-boot-actuator.png
 video: https://www.youtube.com/embed/4OVe0MWgZ4k
 github: https://github.com/danvega/actuator
 keywords: Spring Framework, Spring Boot, Spring Boot Actuator
 ---
 
-In this article, we will focus on the most important Spring Boot starter that you should include in all of your projects. When creating a new Spring Boot Application, you have multiple choices for the dependencies you should include based on what you're building. While this is just my opinion, I will share what I believe is the number one Spring Boot Starter that you should include in each of your applications. Before reading the entire article, do you have any guesses?
+In this article, we will focus on the most important Spring Boot starter that you should include in all of your projects. When creating a new Spring Boot Application, you have multiple choices for the dependencies you should include based on what you're building. While this is just my opinion, I will share what I believe is the number one Spring Boot Starter that you should include in each of your applications. Before reading the entire article, do you have any guesses? If you guessed the Spring Boot Actuator, you are correct. Let's take a look at what the Spring Boot Actuator is and why you should include it in every project.
 
 ## What is a Spring Boot Starter
 
@@ -62,7 +63,7 @@ To kickstart our process, navigate to start Spring IO and create a new project. 
 - Depending on the type of application, you can add other dependencies. In this case, I will keep the app simple and include the web dependency for building a web application.
 - Finally, generate the project, download the zip file, and open it in your preferred IDE (Integrated Development Environment).
 
-![Spirng Boot Initializr](/images/blog/2023/09/17/spring-init.png)
+![Spring Boot Initializr](/images/blog/2023/09/17/spring-init.png)
 
 Now that we have a new project with the Spring Boot Actuator dependency configured, it's time to explore what the actuator brings to the table and how we can leverage it to its optimum potential.
 
@@ -88,7 +89,7 @@ Most of these endpoints are disabled by default, and then you can go through and
 
 If you open up `[application.properties](http://application.properties)` you can set the following properties to enable all of the endpoints and get more information in the health endpoint.
 
-```bash
+```properties
 management.endpoints.web.exposure.include=*
 management.endpoint.health.show-details=always
 ```
