@@ -20,7 +20,7 @@ I answered a question from a subscriber last week on how to use multiple JDBC Cl
 
 ## Vaadin Flow and Hilla
 
-Last week on S[pring Office Hours](https://www.youtube.com/watch?v=ZCGg8MSuEGY), we had the opportunity to interview Lawrence Lockhart, a developer advocate with Vaadin. This was exciting for me on a couple of different levels. First off I have long been an admirer of Lawrence and his story on how he got started in tech. I have also had Vaadin on my long list of things I want to try / learn.
+Last week on [Spring Office Hours](https://www.youtube.com/watch?v=ZCGg8MSuEGY), we had the opportunity to interview Lawrence Lockhart, a developer advocate with Vaadin. This was exciting for me on a couple of different levels. First off I have long been an admirer of Lawrence and his story on how he got started in tech. I have also had Vaadin on my long list of things I want to try / learn.
 
 During the show I was able to get some clarification on Vaadin the company and the different products they offer. Vaadin Flow is server side UI framework that allows you build full-stack applications completely in Java. Hilla is there full-stack framework for building web applications with React + Java. I really enjoyed this conversation with Lawrence and I hope you do too.
 
