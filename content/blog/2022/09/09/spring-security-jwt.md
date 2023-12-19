@@ -1,17 +1,18 @@
 ---
-title: Spring Boot JWT - How to Secure your REST APIs with Spring Security and Json Web Tokens
+title: How to Secure your REST APIs with Spring Security & JSON Web Tokens (JWTs)
 slug: spring-security-jwt
-date: "2022-09-06T16:00:00.000Z"
+date: "2022-09-09T16:00:00.000Z"
+updatedOn: "2023-12-18T18:00:00.000Z"
 published: true
-description: In this tutorial, you will learn how to secure REST APIs with Spring Security and Json Web Tokens.
+description: In this tutorial, you will learn how to secure REST APIs with Spring Security and JSON Web Tokens (JWTs).
 author: Dan Vega
 tags:
-  - spring
+  - Spring Boot
   - Spring Security
-cover: ./spring-security-jwt-cover.jpeg
-keywords: spring, spring boot, spring security, java
+cover: spring-security-jwt-cover.jpeg
 github: https://github.com/danvega/jwt
 video: https://www.youtube.com/embed/KYNR5js2cXE
+keywords: spring, spring boot, spring security, java, JWT, JSON Web Tokens, REST API, Spring Security JWT, Spring Boot JWT
 ---
 
 If you perform a quick search on how to secure REST APIs in Spring Boot using JSON Web Tokens you will find a lot of the same results. These results contain a method that involves writing a custom filter chain and pulling in a 3rd party library for encoding and decoding JWTs.
@@ -20,7 +21,7 @@ After staring at these convoluted and confusing tutorials I said there has to be
 
 In this tutorial, you are going to learn how to secure your APIs using JSON Web Tokens (JWT) with Spring Security. I’m not saying this approach is easy by any stretch but for me, it made a lot more sense than the alternatives.
 
-[Github Repository](https://github.com/danvega/jwt)
+[GitHub Repository](https://github.com/danvega/jwt)
 
 ## Application Architecture
 
@@ -30,7 +31,7 @@ This client application will make calls to a server application written in Sprin
 
 What you will do is secure all of the resources so that when the client makes a call to the REST API the client will get a _401 (Unauthorized)_ which means the client request has not been completed because it lacks valid authentication credentials for the requested resource**.**
 
-![Application Architecture: 401 Unauthorized](/images/blog/2022/09/06/app-arch-401.png)
+![Application Architecture: 401 Unauthorized](/images/blog/2022/09/09/app-arch-401.png)
 
 ### JSON Web Tokens (JWT)
 
@@ -48,11 +49,11 @@ The final JWT consists of three parts. Each is base64Url-encoded and separated f
 
 You will introduce a new authentication controller that a client can make a request to with their authentication credentials (username + password) and when they are successfully authenticated the service will return a JWT.
 
-![Application Architecture: JSON Web Token (JWT)](/images/blog/2022/09/06/app-arch-jwt.png)
+![Application Architecture: JSON Web Token (JWT)](/images/blog/2022/09/09/app-arch-jwt.png)
 
 The client will then store the JWT and each subsequent request will pass it via the Authorization header. When the Server application receives the request with the JWT it will verify that it is a valid token and if it is will allow the request to continue.
 
-![Application Architecture: Request with JSON Web Token (JWT)](/images/blog/2022/09/06/app-arch-with-jwt-200.png)
+![Application Architecture: Request with JSON Web Token (JWT)](/images/blog/2022/09/09/app-arch-with-jwt-200.png)
 
 ## Getting Started
 
@@ -62,7 +63,7 @@ To get started you are going to head over to [start.spring.io](http://start.spri
 - oAuth2 Resource Server
 - Spring Configuration Processor
 
-![Spring Initiliazr](/images/blog/2022/09/06/start-spring-io.png)
+![Spring Initializer](/images/blog/2022/09/09/start-spring-io.png)
 
 This will generate the following dependencies in your `pom.xml`
 
@@ -102,7 +103,7 @@ public class HomeController {
 }
 ```
 
-![Spring Security Login](/images/blog/2022/09/06/please-sign-in.png)
+![Spring Security Login](/images/blog/2022/09/09/please-sign-in.png)
 
 ## Spring Security Configuration
 
@@ -135,9 +136,10 @@ public class SecurityConfig {
 3. Spring Security will never create an HttpSession and it will never use it to obtain the Security Context.
 4. Spring Security’s HTTP Basic Authentication support is enabled by default. However, as soon as any servlet-based configuration is provided, HTTP Basic must be explicitly provided.
 
-<aside>
-⚠️ WARNING: Never disable CSRF protection while leaving session management enabled! Doing so will open you up to a Cross-Site Request Forgery attack.
-</aside>
+
+::warning{title=WARNING}
+Never disable CSRF protection while leaving session management enabled! Doing so will open you up to a Cross-Site Request Forgery attack.
+::
 
 Now that you have a custom security configuration in place you need a user that isn’t the default one provided by Spring Boot. The following configuration will create an in-memory user using the `NoOpPasswordEncoder` This is a password encoder that does nothing and is useful for testing but should **NOT** be used in production.
 
@@ -155,7 +157,7 @@ public InMemoryUserDetailsManager users() {
 
 With the new user configured you should be able to restart the application and visit [http://localhost:8080](http://localhost:8080). You will be presented with a dialog asking for a username and password and if everything works you should be able to log in with `dvega` + `password`.
 
-![Spring Security HTTP Basic](/images/blog/2022/09/06/http-basic-auth.png)
+![Spring Security HTTP Basic](/images/blog/2022/09/09/http-basic-auth.png)
 
 ## OAuth 2.0 Resource Server
 
@@ -325,7 +327,7 @@ At this point, you should be able to run the application without any errors.
 
 You have the keys in place and you have defined a decoder which is a way to decipher the JWT. If you remember back to our architecture diagrams earlier the user will need to log in with their username and password. If they pass authentication you will generate a new JSON Web Token and send it back in the response.
 
-![Application Architecture: JSON Web Token (JWT)](/images/blog/2022/09/06/app-arch-jwt.png)
+![Application Architecture: JSON Web Token (JWT)](/images/blog/2022/09/09/app-arch-jwt.png)
 
 To do this you first need to create a bean of type `JwtEncoder` and you can do this in the `SecurityConfig`. The encoder will be used to encode the signature we learned about earlier into a token and sign it using our private key.
 
@@ -407,11 +409,11 @@ There are many ways that you can manually test this but In this tutorial, I will
 
 An easy way to test this is by using a tool like Postman. If you create a new POST request to the token endpoint you can select Basic Auth from the Authorization tab and enter your credentials. If everything works you will get back the generated JWT in the response.
 
-![Postman Basic Auth](/images/blog/2022/09/06/postman-basic-auth.png)
+![Postman Basic Auth](/images/blog/2022/09/09/postman-basic-auth.png)
 
 Copy the JWT and create a new GET request for [http://localhost:8080](http://localhost:8080). Go to the Authorization tab and select Bearer Token and paste in the generated token. If you send the request you should get back the string returned from the home method in the `HomeController`.
 
-![Postman with JWT Response](/images/blog/2022/09/06/postman-with-jwt-response.png)
+![Postman with JWT Response](/images/blog/2022/09/09/postman-with-jwt-response.png)
 
 **CommandLine**
 
@@ -423,7 +425,7 @@ http POST :8080/token --auth dvega:password -v
 
 The `-v` argument will print the request and the response
 
-![Httpie with Authorization](/images/blog/2022/09/06/httpie-auth.png)
+![Httpie with Authorization](/images/blog/2022/09/09/httpie-auth.png)
 
 The response will contain the generated JWT token. If you make a request to the root path without the authorization header or without the correct token you will receive a _401 (Denied)_ response. If however, you include the Authorization header in the correct format you will get the string returned from the home method in the `HomeController`.
 
@@ -431,7 +433,7 @@ The response will contain the generated JWT token. If you make a request to the 
 http :8080 'Authorization: Bearer JWT_TOKEN_HERE'
 ```
 
-![Httpie Response Success](/images/blog/2022/09/06/httpie-success.png)
+![Httpie Response Success](/images/blog/2022/09/09/httpie-success.png)
 
 ### Automated Testing
 
@@ -491,6 +493,7 @@ When I started going down the route of creating this tutorial my whole goal was 
 
 I feel very fortunate that I get to work for a company like VMware and that I have access to some really smart people. That access means, even more, when you work with such a great group of people who are always willing to share their knowledge and help out. I would like to give a special shoutout to the following individuals for helping me put this together:
 
+- Daniel Garnier-Moiroux
 - Steve Riesenberg
 - Rob Winch
 - Josh Cummings
