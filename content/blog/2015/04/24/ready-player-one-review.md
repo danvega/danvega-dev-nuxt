@@ -3,7 +3,7 @@ slug: ready-player-one-review
 title: "Ready Player One Review"
 description: "A quick review of the book Ready Player One"
 published: true
-date: 2015-04-24T22:55:09-04:00
+date: "2015-04-24T17:00:00.000Z"
 tags: 
   - Books
 cover: bookcase-books-bookshelves-159711.jpg
