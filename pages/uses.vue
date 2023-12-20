@@ -134,7 +134,7 @@ useHead({
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The Elgato Cam Link 4K has seamlessly integrated into my YouTube video creation process, enabling me to capture high-quality video swiftly and efficiently directly into my computer. Its plug-and-play functionality eliminates any hassle, allowing me to focus solely on producing engaging content. The crisp 4K resolution capture ensures that every detail is impeccably recorded, significantly elevating the visual appeal and professionalism of my videos.</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
-                  <a href="https://www.danvega.dev/uses/StreamYard">
+                  <a href="https://streamyard.com/">
                     <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Wyze Bluetooth Headphones</h3>
                   </a>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">he Wyze Bluetooth Headphones are a delightful find, offering a perfect balance between quality and affordability, which is crucial for my content creation journey. The sound clarity enhances both my editing process and my music listening experience while working, ensuring an enjoyable and productive atmosphere. Moreover, their inexpensive price tag is a sweet bonus, proving that high-quality audio gear doesn't have to break the bank, making them a valuable addition to my toolkit.</p>
