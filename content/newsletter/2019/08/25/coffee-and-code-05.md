@@ -1,5 +1,6 @@
 ---
 title: "Coffee & Code Newsletter: #5"
+slug: coffee-and-code-newsletter-5
 issue: 5
 date: "2019-08-25T08:00:00.000Z"
 ---
