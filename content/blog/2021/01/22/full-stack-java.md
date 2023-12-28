@@ -1,6 +1,6 @@
 ---
 title: 'Full Stack Java development with Spring Boot and VueJS'
-slug: full-stack-java-vue
+slug: full-stack-java
 date: '2021-01-22T08:00:00.000Z'
 published: true
 description: 'In this tutorial, you are going to learn how to build a full-stack application that uses Vue for the frontend and Spring Boot for the backend.'
