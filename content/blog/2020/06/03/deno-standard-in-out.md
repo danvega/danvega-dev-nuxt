@@ -1,13 +1,13 @@
 ---
 title: "Working with Standard Input and Output in Deno"
-slug: deno-stdin-stdout
+slug: deno-standard-in-out
 date: "2020-06-03T20:00:00.500Z"
 published: true
 description: "In this tutorial I will show you how to work with standard input and output in Deno."
 author: "Dan Vega"
 tags:
-  - "deno"
-  - "javascript"
+  - "Deno"
+  - "JavaScript"
 cover: "./deno_stdin_stdout-cover.png"
 ---
 
@@ -23,7 +23,7 @@ Before you write any code I think it is important for you to understand what sta
 
 Now that you have an understanding of what standard in & out are let's talk about them in the context of Deno. If you want to get a handle for [`stdin`](https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.stdin) or [`stdout`](https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts#Deno.stdout) you can use the properties from the Deno Runtime API:
 
-```ts
+```properties
 Deno.stdin;
 Deno.stdout;
 ```
@@ -130,3 +130,6 @@ const tags = await prompt("Tags (comma separated)");
 ## Conclusion
 
 I hope this article helped you understand how to use standard in and standard out in Deno. I want to give a huge shout out to József Sallai who create the [ask library](https://github.com/jozsefsallai/ask/blob/master/README.md). It was a combination of digging through that code and the Deno documentation that I was able to piece this together.
+
+Happy Coding  
+Dan
