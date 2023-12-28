@@ -111,5 +111,5 @@ I had so much fun building my new personal website using [Gridsome](https://grid
 
 If you moved your blog or created a new on top of a new framework or static site generator please let me know. I would love to check it out and I will retweet some of my favorites.
 
-Happy Coding<br/>
+Happy Coding  
 Dan
