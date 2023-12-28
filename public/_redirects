@@ -33,6 +33,7 @@ courses.danvega.dev /courses 301
 
 # blog posts
 /blog/2023/09/17/spring-boot-starter /blog/spring-boot-actuator 301
+/blog/spring-boot-starter /blog/spring-boot-actuator 301
 /blog/2021/01/22/full-stack-java-vue /blog/full-stack-java 301
 
 # social urls
