@@ -1,6 +1,6 @@
 ---
 title: 'How to test standard in and out in Java'
-slug: testing-standard-in-out-java
+slug: reassign-standard-in-out
 date: '2020-12-16T15:17:39.619Z'
 published: true
 description: 'In this tutorial I will show you how you can test standard in and out in Java.'
@@ -155,3 +155,6 @@ public void validUserInput_ShouldResultInExpectedOutput() {
 ## Conclusion
 
 If you already knew this existed this article was pointless and chances are you aren't reading this. For the rest of you I hope you found this as cool as I did. If you want the code for this article you can find it over on [Github](https://github.com/danvega/sys-in-out-tests)
+
+Happy Coding  
+Dan
