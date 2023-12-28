@@ -1,12 +1,12 @@
 ---
-slug: "My-new-blog-post-workflow"
 title: "My new blog post workflow"
+slug: "my-new-blog-post-workflow"
 date: "2019-04-25T13:53:35.054Z"
 published: true
 description: "In this article I will outline for you the tools and process I use to create a new blog post"
 author: "Dan Vega"
 tags: ["blogging"]
-cover: ./new-blog-post-workflow-cover.png
+cover: super-snapper-zIwAchjDirM-unsplash.jpg
 ---
 
 Well, I have been blogging for a few months now on my new website and I thought I would share how I write all of my blog posts. I am really happy with my writing process and it how it allows me to write from any computer and quickly go from idea to live post. In this article, I will talk a little bit about how I used to write articles and what I was looking for in a new workflow.
