@@ -1,13 +1,13 @@
 ---
 slug: 'unit-testing-vue-part-01'
 title: "A beginner's guide to Unit Testing in Vue: Part 1"
-date: '2019-10-01T00:31:11.329Z'
+date: '2019-10-01T17:00:00.000Z'
 published: true
 description: 'Unit Testing in Vue: What to test?'
 author: 'Dan Vega'
 tags:
   - 'vue'
-cover: './unit-testing-vue-mastery-01.png'
+cover: unit-testing-vue-mastery-01.png
 ---
 
 If you're [subscribed to my newsletter](https://www.danvega.dev/signup/) than you know I have been working on a series of articles for my friends over at Vue Mastery for a little while now. The series is titled "A beginner's guide: Unit Testing in Vue" and has been broken into 3 parts. I am really excited to announce that the first article in this series is now live.
