@@ -1,5 +1,5 @@
 ---
-slug: "Tips-for-Vue-Developers:-Avoid-directly-manipulating-the-DOM"
+slug: "vue-tips-avoid-direct-dom-manipulation"
 title: "Tips for Vue Developers: Avoid directly manipulating the DOM"
 date: "2019-04-18T20:24:32.502Z"
 published: true
