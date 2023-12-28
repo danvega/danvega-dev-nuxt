@@ -1,13 +1,13 @@
 ---
 title: 'New Year, New Opportunities and Goals'
-slug: new-year-new-me
+slug: happy-new-year-2021
 date: '2021-01-07T11:30:00.000Z'
-published: true
 description: 'In this article, I have some exciting personal news to share and I want to take a look ahead at the new year.'
+published: true
 author: 'Dan Vega'
 tags:
   - 'meta'
-cover: './isaac-smith-YwrdbQw0oco-unsplash.jpg'
+cover: isaac-smith-YwrdbQw0oco-unsplash.jpg
 ---
 
 I think we can all agree that we would like to put 2020 in the rear-view mirror and begin to look forward to the new year. In this post, I am going to share some exciting personal news, what I'm looking forward to learning, and some goals I want to set for myself this year.
