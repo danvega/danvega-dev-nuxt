@@ -1,6 +1,6 @@
 ---
 title: "Start using Vue 3 in a new project right now"
-slug: start-using-vue3-today
+slug: vue-3-alpha-cli-plugin
 date: "2020-01-17T13:58:29.936Z"
 published: true
 description: "In this tutorial, I walk you through how to add Vue 3 to a new project."
