@@ -1,6 +1,6 @@
 ---
 title: 'Interactive Learning from Oreilly'
-slug: oreilly-interactive-learning
+slug: interactive-learning-from-oreilly
 date: '2020-07-30T12:50:24.664Z'
 published: true
 description: 'O''Reilly has a new hands-on learning platform called Interactive Learning. In this tutorial I will tell you all about it and the tutorials I created for it.'
