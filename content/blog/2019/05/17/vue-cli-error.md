@@ -1,12 +1,12 @@
 ---
-slug: 'vue-cli-validation-error'
 title: 'Vue CLI ValidationError: webpack Dev Server Invalid Options'
+description: 'In this article, I will tell you about an error I received while trying to run and new VueJS project this morning and how I was able to fix it.'
+slug: 'vue-cli-error'
 date: '2019-05-17T15:25:36.871Z'
 published: true
-description: 'In this article, I will tell you about an error I received while trying to run and new VueJS project this morning and how I was able to fix it.'
 author: 'Dan Vega'
 tags: ['vue','npm','nodejs','javascript']
-cover: ./vue-cli-validation-error.png
+cover: vue-cli-validation-error.png
 ---
 
 This morning I ran into an issue creating a new Vue project using the Vue CLI. The strange thing about this is that I just created a new project yesterday and it ran fine. I did some digging around and this seems to be affecting a lot of users so I figured I would throw together a quick post about.
