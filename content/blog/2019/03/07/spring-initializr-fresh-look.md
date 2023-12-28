@@ -1,6 +1,6 @@
 ---
 title: Spring Initializr's Fresh New Look
-slug: spring-initializrs-fresh-new-look
+slug: spring-initializr-fresh-look
 date: 2019-03-07 17:00:00
 published: true
 description: In this article I will tell you what the Spring Initializr is and give you my thoughts on the new redesign.
