@@ -1,14 +1,14 @@
 ---
 title: Happy New Year 2023
+description: Happy New Year! I want to take a few minutes and talk about a few of my priorities as we head into the new year.
 slug: happy-new-year-2023
 date: "2023-01-01T10:00:00.000Z"
 published: true
-description: Happy New Year! I want to take a few minutes and talk about a few of my priorities as we head into the new year.
 author: Dan Vega
 tags:
   - meta
   - goals
-cover: ./kostiantyn-li-pTfOKdj8whk-unsplash.jpg
+cover: kostiantyn-li-pTfOKdj8whk-unsplash.jpg
 keywords: Happy New Year, 2023
 ---
 
