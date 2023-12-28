@@ -1,16 +1,16 @@
 ---
-slug: "find-max-array-objects-javascript"
 title: "How to find the max id in an array of objects in JavaScript"
+slug: "find-max-array-objects-javascript"
 date: "2019-03-14T10:59:53.416Z"
 published: true
 description: "A quick tutorial on the thought process on how you would go about finding the max id in an array of objects in JavaScript"
 author: "Dan Vega"
 tags:
   - "javascript"
-cover: ./find-max-id-cover.png
+cover: joshua-aragon-EaB4Ml7C7fE-unsplash.jpg
 ---
 
-I was recently putting together a tutorial for some students and I came across an issue that I am sure we have all come across at one time or another. I had this array of objects and in each object I had an id. I wanted a quick and efficient way to look at all of the ids and find the max id.
+I was recently putting together a tutorial for some students and I came across an issue that I am sure we have all come across at one time or another. I had this array of objects and in each object I had an id. I wanted a quick and efficient way to look at all the ids and find the max id.
 
 In this article I will walk you through a 4 different solutions.
 
@@ -64,7 +64,7 @@ My main objective every time I write code is to get something to work first and 
 
 ## Array.map
 
-Whenever that red flag of iterating over an array comes up I immediatly ask myself is this something that map/filter/reduce can solve. So if you were going to take that approach here you can start with the [map method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). The `map()` method creates a new array with the results of calling a provided function on every element in the calling array. You will use the map method to create a new array that contains just the id's so you're no longer working with objects. At this point you can just use the normal sort method on the array, grab the last element in the list and that is your max id.
+Whenever that red flag of iterating over an array comes up I immediately ask myself is this something that map/filter/reduce can solve. So if you were going to take that approach here you can start with the [map method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). The `map()` method creates a new array with the results of calling a provided function on every element in the calling array. You will use the map method to create a new array that contains just the id's so you're no longer working with objects. At this point you can just use the normal sort method on the array, grab the last element in the list and that is your max id.
 
 ```javascript
 const ids = characters.map(user => user.id);
@@ -123,5 +123,5 @@ I didn't mean to turn this into an article about functional programming in JavaS
 
 While using reduce gave us an ever so slight performance advantage I prefer using Math.max and the spread operator here. To me it just looks cleaner and it is something that I enjoy writing. If you were given this problem what solution do you reach for? Am I missing any? I hope you enjoyed walking through how I would solve this problem and until next time...
 
-Happy Coding</br>
+Happy Coding  
 Dan
