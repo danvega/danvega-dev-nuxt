@@ -1,11 +1,13 @@
 ---
-slug: "Gridsome-Blog-Post-Generator"
 title: "Gridsome Blog Post Generator"
-date: "2019-04-23T19:28:51.186Z"
 description: "In this article I will show you how to crate a blog post generator for your static site."
+slug: gridsome-blog-post-generator
+date: "2019-04-23T19:28:51.186Z"
+published: true
 author: "Dan Vega"
-tags: ["gridsome", "vue"]
-cover: ./gridsome-post-generator-cover.png
+tags: 
+    - Vue
+cover: nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
 ---
 
 If you're using something like [Gatsby](https://www.gatsbyjs.org/) or [Gridsome](https://gridsome.org/) as your blogging platform there is no UI to create a new blog post. The process usually starts with creating a directory or series of directories depending on your post format and then creating a new markdown file.
