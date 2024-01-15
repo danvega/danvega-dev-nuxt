@@ -9,10 +9,10 @@ const photos : Photo[] = [
   {id: 7, width: 1024, height: 768, src: "/images/photos/golf_lasvegas.jpeg", alt: "Golf in Las Vegas"},
   {id: 8, width: 768, height: 1024, src: "/images/photos/family_hilton_head.jpeg", alt: "Family in Hilton Head"},
   {id: 9, width: 768, height: 1024, src: "/images/photos/dad_bella_dance.jpeg", alt: "Daddy Daughter Dance"},
-  {id: 9, width: 1440, height: 817, src: "/images/photos/lawrence_dan_connecttech.jpeg", alt: "Lawrence & Dan at ConnectTech"},
-  {id: 9, width: 2000, height: 1500, src: "/images/photos/dan_purnima_dashaun_springone.png", alt: "Dan/Purnima/Dashaun SpringOne"},
-  {id: 9, width: 2000, height: 2667, src: "/images/photos/springone_office_hours.png", alt: "Spring Office Hours Live"},
-  {id: 9, width: 2000, height: 1500, src: "/images/photos/dan_springone_graphql_2023.png", alt: "Spring Office Hours Live"},
+  {id: 10, width: 1440, height: 817, src: "/images/photos/lawrence_dan_connecttech.jpeg", alt: "Lawrence & Dan at ConnectTech"},
+  {id: 11, width: 2000, height: 1500, src: "/images/photos/dan_purnima_dashaun_springone.png", alt: "Dan/Purnima/Dashaun SpringOne"},
+  {id: 12, width: 2000, height: 2667, src: "/images/photos/springone_office_hours.png", alt: "Spring Office Hours Live"},
+  {id: 13, width: 2000, height: 1500, src: "/images/photos/dan_springone_graphql_2023.png", alt: "Spring Office Hours Live"},
 ];
 
 function getRandomPhotos(photos: Photo[], count: number): Photo[] {
@@ -23,23 +23,21 @@ function getRandomPhotos(photos: Photo[], count: number): Photo[] {
   return photos.slice(0, count);
 }
 
-const randomPhotos = getRandomPhotos(photos, 5);
+const randomPhotos = getRandomPhotos(photos, 4);
 </script>
 
 <template>
   <div class="mt-16 sm:mt-20">
-    <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+    <div class="-my-4 flex flex-wrap justify-center gap-5 overflow-hidden py-4 sm:gap-8">
       <div v-for="(photo, index) in randomPhotos" :key="photo.id"
-           class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl"
+           class="relative aspect-[9/10] w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800"
            :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'">
         <NuxtImg
             :src="photo.src"
             :alt="photo.alt"
             format="webp"
             loading="lazy"
-            width="288"
-            height="320"
-            class="absolute inset-0 h-full w-full object-cover"
+            class="h-full w-full object-cover"
             style="color:transparent"/>
       </div>
     </div>
