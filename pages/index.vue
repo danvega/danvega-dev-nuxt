@@ -3,13 +3,13 @@ import NewsletterSignup from "~/components/home/NewsletterSignup.vue";
 import Work from "~/components/home/Work.vue";
 import Photos from "~/components/home/Photos.vue";
 
-const title = ref("Spring Developer Advocate, YouTuber and Lifelong Learner");
-const about = ref("Hello 👋🏻 My name is Dan Vega, Spring Developer Advocate, Husband and #GirlDad based outside of Cleveland OH. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.");
+const title = ref("Junior Software Developer & Cybersecurity Student at the University of Gabes");
+const about = ref("Hello 👋🏻 My name is Nidhal Naffati, Spring Developer Advocate, Husband and #GirlDad based outside of Cleveland OH. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.");
 
 useHead({
-  title: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner',
+  title: 'Nidhal Naffati - Junior Software Developer and Cybersecurity Student',
   meta: [
-    { name: 'title', content: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner' },
+    { name: 'title', content: 'Nidhal Naffati - Junior Software Developer and Cybersecurity Student' },
     { name: 'description', content: about }
   ]
 });

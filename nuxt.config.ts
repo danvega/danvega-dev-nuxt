@@ -37,12 +37,9 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/blog/**': { isr: true },
-    '/newsletter/**': { isr: true },
     '/about': { prerender: true },
-    '/speaking': { prerender: true },
-    '/courses': { prerender: true },
-    '/uses': { prerender: true },
-    '/contact': { redirect: '/about' }
+    '/contact': { prerender: true },
+    '/projects': { prerender: true },
   },
   app: {
     head: {
@@ -103,18 +100,18 @@ export default defineNuxtConfig({
     content: {
       feed: {
         defaults: {
-          title: 'Dan Vega',
-          description: 'Personal site of Dan Vega',
-          copyright: '2023 by Dan Vega',
+          title: 'Nidhal Naffati',
+          description: 'Personal site of Nidhal Naffati',
+          copyright: '2024 by Nidhal Naffati',
           link: process.env.BASE_URL || 'https://www.danvega.dev',
           id: process.env.BASE_URL || 'https://www.danvega.dev',
-          author: { email: 'danvega@gmail.com', name: 'Dan Vega' },
+          author: { email: 'nidhalnaffati@gmail.com', name: 'Nidhal Naffati' },
         },
       },
       item: {
         defaults: {
           author: [
-            { email: 'danvega@gmail.com', name: 'Dan Vega' },
+            { email: 'nidhalnaffati@gmail.com', name: 'Nidhal Naffati' },
           ],
         },
         mapping: [
