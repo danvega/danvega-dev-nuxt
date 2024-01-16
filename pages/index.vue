@@ -3,13 +3,13 @@ import NewsletterSignup from "~/components/home/NewsletterSignup.vue";
 import Work from "~/components/home/Work.vue";
 import Photos from "~/components/home/Photos.vue";
 
-const title = ref("Spring Developer Advocate, YouTuber and Lifelong Learner");
-const about = ref("Hello 👋🏻 My name is Dan Vega, Spring Developer Advocate, Husband and #GirlDad based outside of Cleveland OH. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.");
+const title = ref("Java Champion, Spring Developer Advocate, YouTuber and Lifelong Learner");
+const about = ref("Hello 👋🏻 My name is Dan Vega, Java Champion, Spring Developer Advocate, Husband and #GirlDad based outside of Cleveland OH. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.");
 
 useHead({
   title: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner',
   meta: [
-    { name: 'title', content: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner' },
+    { name: 'title', content: 'Dan Vega - Java Champion, Spring Developer Advocate, YouTuber and Lifelong Learner' },
     { name: 'description', content: about }
   ]
 });
@@ -21,7 +21,7 @@ useHead({
     <div class="mx-auto w-full max-w-7xl lg:px-8">
       <div class="relative px-4 sm:px-8 lg:px-12">
         <div class="mx-auto max-w-2xl lg:max-w-5xl">
-          <div class="max-w-2xl">
+          <div class="max-w-4xl">
             <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               {{ title }}
             </h1>
