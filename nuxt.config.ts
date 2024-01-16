@@ -30,8 +30,11 @@ export default defineNuxtConfig({
       urlDomain: 'localhost:3000',
       urlBase: 'http://localhost:3000',
       sentry: {
-        dsn: 'https://192a6edf487cb3f69aa56e4cefbcfc75@o268705.ingest.sentry.io/4506073654099968',
+        dsn: '',
         environment: 'development',
+      },
+      fathom: {
+        siteId: ''
       }
     },
   },
@@ -50,7 +53,7 @@ export default defineNuxtConfig({
         lang: 'en'
       },
       script: [
-        {src: "https://cdn.usefathom.com/script.js" , "data-site": "ZWNSJLZA", defer: true, tagPosition: 'bodyClose'}
+        {src: "https://cdn.usefathom.com/script.js" , "data-site": process.env.NUXT_PUBLIC_FATHOM_SITE_ID, defer: true, tagPosition: 'bodyClose'}
       ],
     }
   },
