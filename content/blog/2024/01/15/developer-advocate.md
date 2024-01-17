@@ -3,6 +3,7 @@ title: What is Developer Relations and How do you define Developer Advocacy?
 description: In this article, I'll provide an overview of Developer Relations (DevRel) and guide you on how to get started. If you're considering this as a potential career, I hope to inform and inspire you.
 slug: developer-advocate
 date: "2024-01-15T17:00:00.000Z"
+updatedOn: "2024-01-17T17:00:00.000Z"
 published: true
 author: Dan Vega
 tags:
@@ -125,7 +126,7 @@ Undergoing the process of becoming a developer, including the challenging nights
 
 Start sharing your passion through various mediums such as writing, public speaking, videos, podcasts, and more. I didn't begin creating content because I aspired to be a developer advocate. I did it because I enjoyed learning something new and wanted to share it with the community. I also started when I encountered a problem and couldn't find a solution. Once I did, I wanted to ensure others could quickly find the same solution. Through this process, I became involved in the communities I was part of, which has been one of the best things I have done for my career.
 
-> “Once you start down the path of enjoying some­thing and sharing it, you're already well on the way to becom­ing a developer advocate.” **Mark Heckler - Microsoft**
+> “Once you start down the path of enjoying something and sharing it, you're already well on the way to becoming a developer advocate.” **Mark Heckler - Microsoft**
 >
 
 S**tart thinking of yourself as a brand**
@@ -144,7 +145,7 @@ There are multiple methods to build a community through education. This section 
 
 ![Public Speaking](/images/blog/2024/01/15/public-speaking.jpeg)
 
-> “Public speaking continues to be one of the number one fears that many people have. There's that common nightmare where you're standing up in front of your classmates at school giving a report and, all of a sudden, you're naked or you've forgotten what you wanted to say next. It takes a real act of courage to stand up and present yourself as an authority, especially to a group of your peers.” - **Scott Davis - ThoughtWorks**
+> “Public speaking continues to be one of the number one fears that many people have. There's that common nightmare where you're standing up in front of your classmates at school giving a report and, all of a sudden, you're naked or you've forgotten what you wanted to say next. It takes a real act of courage to stand up and present yourself as an authority, especially to a group of your peers.” - **Scott Davis - ThoughtWorks**
 >
 
 It certainly requires bravery, but I want to clarify some misconceptions and hopefully inspire you to take that leap. Firstly, you don't need to be an extrovert. I know several introverts, including myself, who find comfort in discussing their passions in front of others. Another misconception is that you need to be an expert on the topic you're speaking about, which is far from the truth. You simply need to be one step ahead of your intended audience. This is why its crucial to be clear on what your presentation will cover and what the expected outcome is.
