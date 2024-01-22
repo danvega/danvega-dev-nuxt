@@ -12,8 +12,6 @@ cover: ./java-champion-cover.png
 keywords: Java, Java Champion, My Story, Career, Dan Vega
 ---
 
-# I’m a Java Champion
-
 On Monday, January 8th, I woke up expecting just another day. Little did I know that this would become a day etched in my memory forever. The day started with me helping my girls prepare for school. Once I settled into work and checked a few emails, I noticed a notification for a tweet mentioning me. At 8:46 AM, I received news from the [Java Champions Twitter account](https://twitter.com/Java_Champions/status/1744354879487758359); I had been named a Java Champion.
 
 ![Java Champions Tweet](/images/blog/2024/01/21/tweet.png)
