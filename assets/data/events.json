@@ -1,5 +1,32 @@
 [
   {
+    "title": "Embracing GraphQL: Beyond REST in API Development",
+    "url": "https://developersummit.com/session/embracing-graphql-beyond-rest-in-api-development",
+    "name": "Great International Developer Summit (GIDS)",
+    "startDate": "April 23, 2024",
+    "endDate": "April 26, 2024",
+    "location": "Bengaluru, India",
+    "description": "In this session, Dan Vega will introduce the basics of GraphQL and its contrast to RESTful API architectures. Attendees will learn how to construct API requests using GraphQL’s query language on the client side. On the server side, the talk will cover creating a schema and data fetchers (akin to controller methods) to power these requests. T"
+  },
+  {
+    "title": "Building Intelligent Applications with Spring AI",
+    "url": "https://blog.jetbrains.com/idea/category/livestreams/",
+    "name": "IntelliJ IDEA Live Stream",
+    "startDate": "March 28, 2024",
+    "endDate": "March 28, 2024",
+    "location": "Virtual",
+    "description": "It's impossible to spend a day in tech without hearing the words \"Artificial Intelligence\". In this presentation we will embark on a journey into the world of Artificial Intelligence (AI) specifically designed for beginners. We'll start by introducing the fundamental concepts of AI, demystifying its jargon, and exploring its potential impact on our everyday lives."
+  },
+  {
+    "title": "Spring Boot 3 and Beyond",
+    "url": "https://www.meetup.com/atlantajug/events/298455293/",
+    "name": "Atlanta Java User Group",
+    "startDate": "March 19, 2024",
+    "endDate": "March 19, 2024",
+    "location": "Atlanta, GA",
+    "description": "This presentation highlights several new and intriguing features in Spring Boot 3.0 and later versions. A significant focus in Spring Boot 3.x is enhancing runtime efficiency. We'll delve into AOT (Ahead of Time) compilation, crucial for creating native images with GraalVM. Spring Boot 3.2 included comprehensive support for the much-anticipated JDK feature, Virtual Threads, promising considerable scalability benefits for traditional blocking MVC applications. Lastly, you'll learn about the initial support for Project CRaC, aimed at improving startup times."
+  },
+  {
     "title": "What is Developer Relations",
     "url": "https://www.meetup.com/make-the-internet/events/298629881/",
     "name": "We Make the Internet Meetup",
