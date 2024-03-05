@@ -14,7 +14,7 @@ When we get into March around here it starts to get warmer out and we know the s
 
 I was lucky enough to be invited to speak at this year's ConFoo conference in Montreal Canada. I have never been to this conference or to Montreal, so I was particularly excited about the unknown and visiting a new location. I checked in to the hotel only to be greeted by a rooftop pool that was heated 🤩
 
-![Hot Pool](/images/newsletter/2024/02/04/hot_pool.jpeg)
+![Hot Pool](/images/newsletter/2024/03/04/hot_pool.jpeg)
 
 The conference kicked off with a Java User Group Meeting at the Hotel where the conference was being held. Free food and drinks is always a great way to invite me to your parties. I also decided to get checked into the conference at this point because I heard from Yann (The conference organizer) that it would be pretty busy the next morning. After the user group meeting I got to bed knowing that the first day of the conference was going to be a busy one.
 
@@ -28,7 +28,7 @@ I want to thank Yann and everyone at ConFoo for inviting me to this conference. 
 
 ## freeCodeCamp
 
-![freeCodeCamp](/images/newsletter/2024/02/04/freeCodeCamp.png)
+![freeCodeCamp](/images/newsletter/2024/03/04/freeCodeCamp.png)
 
 I have been a big fan of freeCodeCamp for a long time now. When I was doing curriculum development at a coding bootcamp we use to refer some of the students to their materials as prerequisites for day 1, and I think it really helped give them a good foundation.
 
