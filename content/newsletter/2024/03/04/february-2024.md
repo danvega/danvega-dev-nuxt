@@ -1,7 +1,7 @@
 ---
 title: February Update - ConFoo, freeCodeCamp, YouTube and Upcoming Talks
 slug: february-2024
-date: "2024-02-04T07:00:00.000Z"
+date: "2024-02-03T07:00:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter. February was an amazing month and I’m excited to tell you what I have been up to. I also want to look ahead to a busy month of March and talk about some of my upcoming talks.
