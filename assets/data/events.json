@@ -1,5 +1,14 @@
 [
   {
+    "title": "Spring Recipes",
+    "url": "https://learning.oreilly.com/live-events/spring-recipes/0636920095810/",
+    "name": "O'Reilly Learning Platform",
+    "startDate": "March 20, 2024",
+    "endDate": "March 20, 2024",
+    "location": "Virtual",
+    "description": "Over the years, Spring has evolved to meet the increasing demands placed on software teams. The breadth of its features, however, can be overwhelming—especially when you need to deploy to production quickly. How do you bridge the gap between knowing that Spring can solve a problem and actually using Spring to fix the issue?"
+  },
+  {
     "title": "Does your API need a REST? Check out GraphQL",
     "url": "https://www.dev2next.com/",
     "name": "dev2Next",
