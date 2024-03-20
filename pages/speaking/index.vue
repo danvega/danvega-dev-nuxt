@@ -11,10 +11,12 @@ useHead({
 
 const upcomingEvents = events
     .filter((event) => {
-      return event.startDate && new Date(event.startDate) > new Date();
+      const eventDate = new Date(event.startDate);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0); // Set time to start of the day
+      return event.startDate && eventDate >= today;
     })
     .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
-
 </script>
 
 <template>
