@@ -1,8 +1,10 @@
 ---
 title: Hello Atlanta, Java 22 and a BIG YouTube Milestone
 slug: atlanta-jug
-date: "2024-25-03T07:00:00.000Z"
+date: "2024-03-25T07:00:00.000Z"
 ---
+
+[Read this on danvega.dev](https://www.danvega.dev/newsletter/atlanta-jug)
 
 Happy Monday and welcome to another edition of the newsletter. While Spring has officially arrived here in Northeast Ohio we are still seeing snow and temps in the 20s. This week's forecast is starting to look a little better as we are getting ready to celebrate Easter. We had an Easter egg hunt this past weekend and the girls had a blast!
 
