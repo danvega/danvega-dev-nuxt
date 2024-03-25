@@ -1,7 +1,7 @@
 ---
 title: Resources for learning Spring and Java is NOT slow and verbose
 slug: resources-learning-spring
-date: "2024-11-03T07:00:00.000Z"
+date: "2024-03-11T07:00:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter. If you follow me you know this weekend was a big one for me as we hit Daylight Savings which is a big milestone around here. This means that our days are going to get longer, and it will stay light out later. This means it will start to get warmer here (it already has) and that long days of winter are over.

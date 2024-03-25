@@ -1,7 +1,7 @@
 ---
 title: freeCodeCamp, Pull Requests are welcomed and Spring AI
 slug: free-code-camp
-date: "2024-18-03T07:00:00.000Z"
+date: "2024-03-18T07:00:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter. In typical Cleveland weather I was able to get out and play a quick 9 holes of golf earlier this week and now as I’m writing this on Sunday it’s snowing. This week I’m heading out on the road for a quick trip to Atlanta to visit the Atlanta Java User Group. This is one of the biggest user groups in the country and I’m really looking forward to this visit. 
