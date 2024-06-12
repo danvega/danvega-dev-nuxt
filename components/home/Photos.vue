@@ -13,6 +13,10 @@ const photos : Photo[] = [
   {id: 11, width: 2000, height: 1500, src: "/images/photos/dan_purnima_dashaun_springone.png", alt: "Dan/Purnima/Dashaun SpringOne"},
   {id: 12, width: 2000, height: 2667, src: "/images/photos/springone_office_hours.png", alt: "Spring Office Hours Live"},
   {id: 13, width: 2000, height: 1500, src: "/images/photos/dan_springone_graphql_2023.png", alt: "Spring Office Hours Live"},
+  {id: 13, width: 2000, height: 1500, src: "/images/photos/spring_io_dan_dashaun.jpeg", alt: "Dan & DaShaun Live from Spring I/O"},
+  {id: 13, width: 2000, height: 1500, src: "/images/photos/spring_io_laur.jpeg", alt: "Meeting Laur for the first time with a Signed copy of his book"},
+  {id: 13, width: 2000, height: 1500, src: "/images/photos/spring_io_morning_session.jpeg", alt: "Live from the morning session"},
+  {id: 13, width: 2000, height: 1500, src: "/images/photos/spring_io_my_session.jpeg", alt: "A view from my session"},
 ];
 
 function getRandomPhotos(photos: Photo[], count: number): Photo[] {
