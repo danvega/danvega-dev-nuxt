@@ -1,5 +1,23 @@
 [
   {
+    "title": "Does your API need a REST? Check out GraphQL.",
+    "url": "https://springone.io/",
+    "name": "SpringOne at VMware Explore 2024",
+    "startDate": "Aug 26, 2024",
+    "endDate": "Aug 28, 2024",
+    "location": "Las Vegas, NV",
+    "description": "GraphQL is a declarative query language that simplifies retrieving data from an application's back end. It provides a clear and comprehensive description of the data in your API, giving you the ability to request only what you need. This makes it easy to evolve APIs over time and enables powerful developer tools."
+  },
+  {
+    "title": "A Spring Developers Guide to navigating the frontend landscape",
+    "url": "https://springone.io/",
+    "name": "SpringOne at VMware Explore 2024",
+    "startDate": "Aug 26, 2024",
+    "endDate": "Aug 28, 2024",
+    "location": "Las Vegas, NV",
+    "description": "This is a beginner-friendly session designed for Spring developers who are trying to navigate the landscape of frontend development. When you need to develop a new frontend for your Spring application, what approach do you take? Do you leverage your existing Java skills and create it using a Java framework? Or do you opt for a modern JavaScript framework like React, Angular, or Vue?"
+  },
+  {
     "title": "Building Intelligent Applications with Spring AI",
     "url": "https://2024.jconf.dev/",
     "name": "jConf.dev 2024",
