@@ -81,7 +81,7 @@ useHead({
             </h1>
           </header>
           <!-- if we have a video show that, else show the cover image -->
-          <YouTube :src="data.video" v-if="data?.video" />
+          <YouTube :src="data.video" v-if="data?.video" class="prose dark:prose-invert rounded-2xl mt-8"/>
           <NuxtImg
               :src="getImagePath(data.date,data.cover)"
               class="prose dark:prose-invert rounded-2xl mt-8"
