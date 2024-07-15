@@ -24,11 +24,11 @@ const courses : Course[] = [
     cover: 'spring_boot_3.jpeg'
   },
   {
-    slug: 'vue-for-beginners',
-    title: 'Vue for Beginners: Up and running with Vue',
-    description: 'A beginner\'s guide to learn the basics of the JavaScript Framework Vue.js.',
-    link: 'https://www.udemy.com/course/vue-intro/?referralCode=E9DECFF78CA706D7A68A',
-    cover: 'vue_udemy_cover.png'
+    slug: 'java-getting-started',
+    title: 'Getting Started with Java',
+    description: 'Everything you need to know about setting up your local development environment.',
+    link: 'https://www.udemy.com/course/angular-4-java-developers/?referralCode=A41B357F43F549BB7722',
+    cover: 'java-free-udemy.jpg'
   },
   {
     slug: 'apache-groovy',
@@ -59,12 +59,12 @@ const courses : Course[] = [
     cover: 'angular-4-java-developers.jpg'
   },
   {
-    slug: 'java-getting-started',
-    title: 'Getting Started with Java',
-    description: 'Everything you need to know about setting up your local development environment.',
-    link: 'https://www.udemy.com/course/angular-4-java-developers/?referralCode=A41B357F43F549BB7722',
-    cover: 'java-free-udemy.jpg'
-  },
+    slug: 'vue-for-beginners',
+    title: 'Vue for Beginners: Up and running with Vue',
+    description: 'A beginner\'s guide to learn the basics of the JavaScript Framework Vue.js.',
+    link: 'https://www.udemy.com/course/vue-intro/?referralCode=E9DECFF78CA706D7A68A',
+    cover: 'vue_udemy_cover.png'
+  }
 ];
 </script>
 
