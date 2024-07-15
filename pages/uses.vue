@@ -36,7 +36,8 @@ useHead({
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I was using an
                     Intel-based 16” MacBook Pro prior to this and the difference is night and day. I’ve never
                     heard the fans turn on a single time, even under the incredibly heavy loads I put it through
-                    with our various launch simulations. I love this as both a development and content creation machine.</p>
+                    with our various launch simulations. I love this as both a development and content creation machine. If you would like
+                    my review or my new machine setup process check out this [blog post](http://localhost:3000/blog/macbook-pro-m1-max-review).</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
                   <a href="https://amzn.to/3kufQmi">
