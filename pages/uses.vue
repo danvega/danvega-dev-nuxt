@@ -186,6 +186,12 @@ useHead({
                   </a>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Are you a content creator who struggles to find enough time to produce written content alongside videos? Do you wish there was an easy way to transform your videos into compelling blog posts? Look no further than <a href="https://videotapit.com/?via=dan">VideoTap!</a></p>
                 </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://raycast.com/?via=dan">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Raycast</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Raycast is a productivity tool for macOS that serves as a powerful alternative to the built-in Spotlight search. It's designed to help users quickly access and control various aspects of their computer and workflow. </p>
+                </li>
               </ul>
             </div>
           </div>
