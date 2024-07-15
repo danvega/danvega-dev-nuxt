@@ -5,8 +5,8 @@ declare global {
     type Theme = "light" | "dark";
 
     type Post = {
-        title: String,
-        description: String
+        title: string,
+        description: string
     }
 
     type Photo = {
@@ -18,11 +18,11 @@ declare global {
     }
 
     type Course = {
-        slug: String,
-        title: String,
-        description: String,
-        link: String,
-        cover: String
+        slug: string,
+        title: string,
+        description: string,
+        link: string,
+        cover: string
     }
 
     type NavItem = {
