@@ -1,6 +1,6 @@
 ---
 title: I'm a Java Champion 
-description: My career journey and how I became a Java Champion.
+description: On Monday, January 8th, I woke up expecting just another day. Little did I know that this would become a day etched in my memory forever. In this post I would like to tell you about my career and how I became I Java Champion.
 slug: java-champion
 date: "2024-01-21T17:00:00.000Z"
 published: true

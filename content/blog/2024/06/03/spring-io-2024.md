@@ -1,6 +1,6 @@
 ---
 title: Spring I/O 2024
-description: This is a recap of my trip to Barcelona, Spain for Spring I/0
+description: I just returned from my very first Spring I/O and I thought this would be a great opportunity to tell you about one of the best conferences I have eve been to. I am very fortunate to be able to travel the world visiting customers and conferences but this was by far one of my favorite trips ever.
 slug: spring-io-2024
 date: "2024-06-03T17:00:00.000Z"
 published: true
