@@ -11,12 +11,15 @@ const photos : Photo[] = [
   {id: 9, width: 768, height: 1024, src: "/images/photos/dad_bella_dance.jpeg", alt: "Daddy Daughter Dance"},
   {id: 10, width: 1440, height: 817, src: "/images/photos/lawrence_dan_connecttech.jpeg", alt: "Lawrence & Dan at ConnectTech"},
   {id: 11, width: 2000, height: 1500, src: "/images/photos/dan_purnima_dashaun_springone.png", alt: "Dan/Purnima/Dashaun SpringOne"},
-  {id: 12, width: 2000, height: 2667, src: "/images/photos/springone_office_hours.png", alt: "Spring Office Hours Live"},
+  {id: 12, width: 1920, height: 1968, src: "/images/photos/springone_office_hours.png", alt: "Spring Office Hours Live"},
   {id: 13, width: 2000, height: 1500, src: "/images/photos/dan_springone_graphql_2023.png", alt: "Spring Office Hours Live"},
-  {id: 13, width: 2000, height: 1500, src: "/images/photos/spring_io_dan_dashaun.jpeg", alt: "Dan & DaShaun Live from Spring I/O"},
-  {id: 13, width: 2000, height: 1500, src: "/images/photos/spring_io_laur.jpeg", alt: "Meeting Laur for the first time with a Signed copy of his book"},
-  {id: 13, width: 2000, height: 1500, src: "/images/photos/spring_io_morning_session.jpeg", alt: "Live from the morning session"},
-  {id: 13, width: 2000, height: 1500, src: "/images/photos/spring_io_my_session.jpeg", alt: "A view from my session"},
+  {id: 14, width: 1024, height: 768, src: "/images/photos/spring_io_dan_dashaun.jpeg", alt: "Dan & DaShaun Live from Spring I/O"},
+  {id: 15, width: 1024, height: 768, src: "/images/photos/spring_io_laur.jpeg", alt: "Meeting Laur for the first time with a Signed copy of his book"},
+  {id: 16, width: 1024, height: 768, src: "/images/photos/spring_io_morning_session.jpeg", alt: "Live from the morning session"},
+  {id: 17, width: 1024, height: 768, src: "/images/photos/spring_io_my_session.jpeg", alt: "A view from my session"},
+  {id: 18, width: 1920, height: 1629, src: "/images/photos/kcdc_01.jpeg", alt: "Me Presenting at KCDC 2024 on Spring Boot 3"},
+  {id: 19, width: 1920, height: 1227, src: "/images/photos/kcdc_02.jpeg", alt: "KCDC Backdrop"},
+  {id: 20, width: 1920, height: 1440, src: "/images/photos/kcdc_03.jpeg", alt: "Me and DaShaun before my session"},
 ];
 
 function getRandomPhotos(photos: Photo[], count: number): Photo[] {
