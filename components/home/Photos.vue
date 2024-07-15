@@ -34,7 +34,7 @@ const randomPhotos = getRandomPhotos(photos, 5);
   <div class="mt-16 sm:mt-20">
     <div class="-my-4 flex flex-wrap justify-center gap-5 overflow-hidden py-4 sm:gap-8">
       <div v-for="(photo, index) in randomPhotos" :key="photo.id"
-           class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl"
+           class="group relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:z-10"
            :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'">
         <NuxtImg
             :src="photo.src"
@@ -43,7 +43,7 @@ const randomPhotos = getRandomPhotos(photos, 5);
             loading="lazy"
             width="288"
             height="320"
-            class="absolute inset-0 h-full w-full object-cover"
+            class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
             style="color:transparent"/>
       </div>
     </div>
