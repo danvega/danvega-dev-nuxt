@@ -55,7 +55,7 @@ const courses : Course[] = [
     slug: 'angular-4-java-developers',
     title: 'Angular 4 Java Developers',
     description: 'Learn how to build Spring Boot & Angular apps by building a real world application with JHipster.',
-    link: 'https://www.udemy.com/course/angular-4-java-developers/?referralCode=A41B357F43F549BB7722',
+    link: 'https://www.youtube.com/playlist?list=PLZV0a2jwt22sSlfykcq8PDK0K5o-ZIpit',
     cover: 'angular-4-java-developers.jpg'
   },
   {
