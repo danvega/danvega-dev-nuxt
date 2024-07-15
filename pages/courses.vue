@@ -27,7 +27,7 @@ const courses : Course[] = [
     slug: 'java-getting-started',
     title: 'Getting Started with Java',
     description: 'Everything you need to know about setting up your local development environment.',
-    link: 'https://www.udemy.com/course/angular-4-java-developers/?referralCode=A41B357F43F549BB7722',
+    link: 'https://www.youtube.com/playlist?list=PLZV0a2jwt22sSlfykcq8PDK0K5o-ZIpit',
     cover: 'java-free-udemy.jpg'
   },
   {
@@ -55,7 +55,7 @@ const courses : Course[] = [
     slug: 'angular-4-java-developers',
     title: 'Angular 4 Java Developers',
     description: 'Learn how to build Spring Boot & Angular apps by building a real world application with JHipster.',
-    link: 'https://www.youtube.com/playlist?list=PLZV0a2jwt22sSlfykcq8PDK0K5o-ZIpit',
+    link: 'https://www.udemy.com/course/angular-4-java-developers/?referralCode=A41B357F43F549BB7722',
     cover: 'angular-4-java-developers.jpg'
   },
   {
@@ -64,7 +64,7 @@ const courses : Course[] = [
     description: 'A beginner\'s guide to learn the basics of the JavaScript Framework Vue.js.',
     link: 'https://www.udemy.com/course/vue-intro/?referralCode=E9DECFF78CA706D7A68A',
     cover: 'vue_udemy_cover.png'
-  }
+  },
 ];
 </script>
 
