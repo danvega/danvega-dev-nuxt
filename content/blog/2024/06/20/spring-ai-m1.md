@@ -1,6 +1,6 @@
 ---
 title: What's New in Spring AI 1.0.0 M1
-description: What's new in Spring AI
+description: In this article you learn about what is new in the latest release of Spring AI, 1.0.0 M1. The milestone comes packed full of features headlined by the new Chat Client that has a fluent API.
 slug: spring-ai-m1
 date: "2024-06-20T17:00:00.000Z"
 published: true
