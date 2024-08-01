@@ -83,11 +83,11 @@ This one's a bit of a mouthful, but it's useful when you want to call a method t
 
 ```java
 // Without method reference
-List<String> team = List.of("Tasha","Dan", "DaShaun", "Cora", "Josh","Whitney","Cote");
-team.sort((s1, s2) -> s1.compareTo(s2));
+List<String> team = Arrays.asList("Tasha", "Dan", "Josh", "DaShaun", "Cora", "Whitney", "Cote");
+team.sort((s1, s2) -> s1.compareToIgnoreCase(s2));
 
 // With method reference
-team.sort(String::compareTo);
+team.sort(String::compareToIgnoreCase);
 ```
 
 In this case, `String::compareTo` is saying "use the compareTo method of String objects". Java figures out that it should call `compareTo` on the first string, passing the second string as an argument.
