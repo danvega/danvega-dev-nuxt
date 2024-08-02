@@ -9,7 +9,7 @@ tags:
   - Java
   - Functional Programming
 cover: java_method_references_with_me.png
-# video: https://www.youtube.com/embed/[Your_YouTube_Video_ID]
+video: https://www.youtube.com/embed/DELCbBuCHHE
 keywords: Java, Method References, Lambda Expressions, Functional Programming, Java 8 Features
 ---
 
