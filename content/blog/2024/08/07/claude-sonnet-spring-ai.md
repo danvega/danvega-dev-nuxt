@@ -6,13 +6,13 @@ date: "2024-08-07T17:00:00.000Z"
 published: true
 author: Dan Vega
 tags: 
-  - AI
+  - Artificial Intelligence (AI)
   - Spring AI
   - Java
 cover: ./claude_sonnet_spring_ai_cover.png
 # video: https://www.youtube.com/embed/VIDEO_ID
 github: https://github.com/danvega/hello-claude
-keywords: AI, 
+keywords: AI, Artificial Intelligence (AI), Spring AI, Java, Anthropic, Claude Sonnet 3.5
 ---
 
 In our [previous blog post](https://www.danvega.dev/blog/claude-sonnet-35), I introduced you to Claude 3.5 Sonnet, Anthropic's latest AI model that's revolutionizing the way we interact with artificial intelligence. Today, we're taking it a step further by exploring how to integrate Claude 3.5 Sonnet with Spring applications using [Spring AI](https://spring.io/projects/spring-ai/). This powerful combination opens up a world of possibilities for Java developers looking to incorporate state-of-the-art AI capabilities into their projects.

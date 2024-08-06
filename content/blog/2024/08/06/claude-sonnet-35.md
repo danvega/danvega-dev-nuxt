@@ -6,10 +6,10 @@ date: "2024-08-06T17:00:00.000Z"
 published: true
 author: Dan Vega
 tags:
-  - AI
+  - Artificial Intelligence (AI)
 cover: ./claude-sonnet-35.jpeg
 # video: https://www.youtube.com/embed/VIDEO_ID
-keywords: AI
+keywords: AI, Artificial Intelligence (AI), Spring AI, Java, Anthropic, Claude Sonnet 3.5
 ---
 
 Artificial Intelligence has taken another leap forward with the release of [Claude 3.5 Sonnet by Anthropic](https://www.anthropic.com/news/claude-3-5-sonnet). This new model promises to revolutionize the way we interact with AI, offering enhanced capabilities, improved speed, and a novel feature called Artifacts. In this blog post, we'll explore the highlights of Claude 3.5 Sonnet and how it can benefit both beginners and seasoned AI enthusiasts.
