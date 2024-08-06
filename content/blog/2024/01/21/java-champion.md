@@ -6,6 +6,7 @@ date: "2024-01-21T17:00:00.000Z"
 published: true
 author: Dan Vega
 tags:
+
   - Java
   - Meta
 cover: ./java-champion-cover.png

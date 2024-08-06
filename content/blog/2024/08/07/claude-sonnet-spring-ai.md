@@ -7,10 +7,12 @@ published: true
 author: Dan Vega
 tags: 
   - AI
+  - Spring AI
+  - Java
 cover: ./claude_sonnet_spring_ai_cover.png
 # video: https://www.youtube.com/embed/VIDEO_ID
 github: https://github.com/danvega/hello-claude
-keywords: AI
+keywords: AI, 
 ---
 
 In our [previous blog post](https://www.danvega.dev/blog/claude-sonnet-35), I introduced you to Claude 3.5 Sonnet, Anthropic's latest AI model that's revolutionizing the way we interact with artificial intelligence. Today, we're taking it a step further by exploring how to integrate Claude 3.5 Sonnet with Spring applications using [Spring AI](https://spring.io/projects/spring-ai/). This powerful combination opens up a world of possibilities for Java developers looking to incorporate state-of-the-art AI capabilities into their projects.
@@ -40,9 +42,7 @@ only need the `web` dependency.
 
 ### Step 2: Add Spring AI Dependencies
 
-https://docs.spring.io/spring-ai/reference/api/chat/anthropic-chat.html
-
-There isn't a starter on the Spring Initializr for Anthropic's Claude so you will need to add it manually.
+There isn't a starter on the Spring Initializr for Anthropic's Claude so you will need to add it manually. If you're reading this in the future and there is you can add it from the Spring Initializr and skip this step. 
 
 ```xml
 <dependencies>
@@ -55,7 +55,7 @@ There isn't a starter on the Spring Initializr for Anthropic's Claude so you wil
 
 ### Step 3: Configure Application Properties
 
-Set up your `application.properties` file with the necessary configuration for Claude 3.5 Sonnet:
+Set up your `application.properties` file with the necessary configuration for Claude 3.5 Sonnet. If you want to hard code the key you can but just remember not to commit your API keys. In the example below I have externalized this key to an environment variable and I am referencing it using the `${}` syntax. 
 
 ```properties
 spring.application.name=hello-claude
@@ -187,7 +187,7 @@ As you explore further, consider expanding this example to handle more complex c
 
 Remember, while AI can significantly boost your productivity, it's essential to review and understand the generated code. Use it as a starting point or inspiration, and always apply your expertise and best practices when incorporating AI-generated code into your projects.
 
-For those who want to dive deeper into the code and explore the full implementation, I've made the complete source code available on my GitHub repository. You can find it at [https://github.com/danvega](https://github.com/danvega/hello-claude). Feel free to clone the repository, experiment with the code, and adapt it to your own projects. Don't hesitate to open issues or submit pull requests if you have any questions or improvements!
+For those who want to dive deeper into the code and explore the full implementation, I've made the complete source code available on my GitHub repository. You can find it at [https://github.com/danvega/hello-claude](https://github.com/danvega/hello-claude). Feel free to clone the repository, experiment with the code, and adapt it to your own projects. Don't hesitate to open issues or submit pull requests if you have any questions or improvements!
 
 We're excited to see what you'll build with Claude 3.5 Sonnet and Spring AI. 
 
