@@ -1,48 +1,16 @@
-// server/api/photos.ts
-
-import { defineEventHandler } from 'h3'
+import {defineEventHandler} from 'h3'
 import fs from 'fs'
 import path from 'path'
-import { fileURLToPath } from 'url'
 
 export default defineEventHandler(async (event) => {
-    console.log('API route triggered: /api/photos');
-
-    function findPhotosDirectory() {
-        // Try multiple possible locations
-        const possiblePaths = [
-            // Local development & some server setups
-            path.resolve(process.cwd(), 'public/images/photos'),
-            // Netlify Functions
-            path.resolve(process.cwd(), 'images/photos'),
-            // Vercel
-            path.resolve(process.cwd(), '../../public/images/photos'),
-            // Fallback to current file's location (similar to your original approach)
-            path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../public/images/photos')
-        ];
-
-        for (const possiblePath of possiblePaths) {
-            console.log('Checking path:', possiblePath);
-            if (fs.existsSync(possiblePath)) {
-                console.log('Found valid path:', possiblePath);
-                return possiblePath;
-            }
-        }
-
-        throw new Error('Could not find photos directory');
-    }
-
     try {
-        const photosDir = findPhotosDirectory();
-        console.log('Using photos directory:', photosDir);
-
+        const photosDirPath : string | undefined = process.env.PHOTOS_DIR;
+        const photosDir = path.resolve(process.cwd(), photosDirPath)
         const files = await fs.promises.readdir(photosDir);
-        console.log('Files found:', files);
 
         const photoFiles = files.filter(file =>
             ['.jpg', '.jpeg', '.png', '.gif', '.webp'].includes(path.extname(file).toLowerCase())
         );
-        console.log('Photo files filtered:', photoFiles);
 
         const photos = await Promise.all(photoFiles.map(async (file, index) => {
             const filePath = path.join(photosDir, file);
@@ -60,7 +28,6 @@ export default defineEventHandler(async (event) => {
             };
         }));
 
-        console.log(`Successfully processed ${photos.length} photos`);
         return photos;
     } catch (error) {
         console.error('Detailed error in photos API:', error);
