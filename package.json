@@ -30,6 +30,7 @@
     "@nuxt/content": "^2.8.5",
     "@nuxt/image": "^1.0.0-rc.3",
     "@nuxtjs/tailwindcss": "^6.8.0",
+    "image-size": "^1.1.1",
     "lite-youtube-embed": "^0.3.0"
   }
 }
