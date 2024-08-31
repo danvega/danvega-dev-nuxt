@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineEventHandler(async (event) => {
     try {
-        const photosDirPath: string = process.env.NUXT_PUBLIC_PHOTOS_DIR || '/public/images/photos';
+        const photosDirPath: string = process.env.NUXT_PUBLIC_PHOTOS_DIR || 'images/photos';
         const photosDir = path.resolve(process.cwd(), photosDirPath)
         const files = await fs.promises.readdir(photosDir);
 
