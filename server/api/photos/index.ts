@@ -15,9 +15,7 @@ export default defineEventHandler(async (event) => {
             path.resolve(process.cwd(), 'public/images/photos'),
             // Netlify Functions
             path.resolve(process.cwd(), 'images/photos'),
-            // Vercel
-            path.resolve(process.cwd(), '../../public/images/photos'),
-            // Fallback to current file's location (similar to your original approach)
+            // Fallback to current file's location
             path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../public/images/photos')
         ];
 
