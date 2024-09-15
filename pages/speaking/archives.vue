@@ -12,8 +12,8 @@ useHead({
 const archivedEvents = events
     .filter((event) => {
       return event.startDate && new Date(event.startDate) < new Date();
-    });
-
+    })
+    .sort((a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
 </script>
 
 <template>
