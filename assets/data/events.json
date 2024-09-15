@@ -81,24 +81,6 @@
     "description": "Over the years, Spring has evolved to meet the increasing demands placed on software teams. The breadth of its features, however, can be overwhelming—especially when you need to deploy to production quickly. How do you bridge the gap between knowing that Spring can solve a problem and actually using Spring to fix the issue?"
   },
   {
-    "title": "Does your API need a REST? Check out GraphQL",
-    "url": "https://www.dev2next.com/",
-    "name": "dev2Next",
-    "startDate": "September 30, 2024",
-    "endDate": "October 3, 2024",
-    "location": "Denver, CO",
-    "description": "GraphQL is a declarative query language that simplifies retrieving data from an application's back end. It provides a clear and comprehensive description of the data in your API, giving you the ability to request only what you need. This makes it easy to evolve APIs over time and enables powerful developer tools."
-  },
-  {
-    "title": "Spring Boot 3 and Beyond",
-    "url": "https://www.dev2next.com/",
-    "name": "dev2Next",
-    "startDate": "September 30, 2024",
-    "endDate": "October 3, 2024",
-    "location": "Denver, CO",
-    "description": "This presentation introduces some of the new and exciting features in Spring Boot 3.0 and beyond. A major focus in Spring Boot 3.x has been on improving runtime efficiency. We will explore AOT (Ahead of Time) compilation, which is necessary for building native images with GraalVM. Additionally, you will learn about support for project CRaC and how Spring provides first-class support for Virtual Threads, one of the most exciting features introduced in the JDK."
-  },
-  {
     "title": "Spring Boot 3 and Beyond",
     "url": "https://www.kcdc.info/",
     "name": "KCDC",
