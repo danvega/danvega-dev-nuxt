@@ -13,7 +13,7 @@ cover: ./jdk-23.png
 keywords: Java 23, JDK 23, primitive types in patterns, Markdown documentation, ZGC, Stream Gatherers, Vector API, Structured Concurrency, Scoped Values
 ---
 
-As Java continues its rapid evolution with its six-month release cycle, we're on the cusp of another exciting update. Java 23, scheduled for release on September 17, 2024, brings a host of new features and enhancements that promise to improve developer productivity, code readability, and application performance. In this post, we'll explore the key highlights of Java 23, diving into new preview features, enhancements to existing APIs, and performance improvements that make this release noteworthy.
+As Java continues its rapid evolution with its six-month release cycle, we're on the cusp of another exciting update. [JDK 23](https://openjdk.org/projects/jdk/23/), scheduled for release on September 17, 2024, brings a host of new features and enhancements that promise to improve developer productivity, code readability, and application performance. In this post, we'll explore the key highlights of Java 23, diving into new preview features, enhancements to existing APIs, and performance improvements that make this release noteworthy.
 
 ## Primitive Types in Patterns, instanceof, and switch (Preview)
 
@@ -89,17 +89,18 @@ The Vector API, in its eighth incubation, allows developers to write vector algo
 
 ### Stream Gatherers (Second Preview)
 
-This enhancement to the Stream API supports custom intermediate operations, making stream pipelines more flexible and expressive. Here's a simple example of how Stream Gatherers might be used:
+This enhancement to the Stream API supports custom intermediate operations, making stream pipelines more flexible and expressive. If you want to use a gatherer for a more complex operation that isn't easily achievable with existing Stream API methods, you could create a custom gatherer. For example, let's say you wanted to group the even squares into pairs:
 
 ```java
 List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-List<Integer> evenSquares = numbers.stream()
-    .gather(Gatherers.filter(n -> n % 2 == 0))
-    .gather(Gatherers.map(n -> n * n))
-    .toList();
+List<List<Integer>> pairedEvenSquares = numbers.stream()
+        .filter(n -> n % 2 == 0)
+        .map(n -> n * n)
+        .gather(Gatherers.windowFixed(2))
+        .toList();
 
-System.out.println(evenSquares);  // Output: [4, 16, 36, 64, 100]
+    System.out.println(pairedEvenSquares);  // Output: [[4, 16], [36, 64], [100]]
 ```
 
 ### ZGC: Generational Mode by Default
@@ -112,15 +113,109 @@ Java 23 also continues to refine some existing preview features:
 
 ### Structured Concurrency (Third Preview)
 
-Structured Concurrency, now in its third preview, aims to simplify multithreaded programming and improve reliability. It treats multiple related tasks running in different threads as a single unit of work, making concurrent code more manageable and less error-prone.
+JEP 480 introduces structured concurrency to Java, aiming to simplify concurrent programming by treating related tasks running in different threads as a single unit of work. This approach enhances error handling, cancellation, reliability, and observability. The key component is the StructuredTaskScope class, which allows developers to fork subtasks, join them as a unit, and handle their results or exceptions collectively.
+Here's an example demonstrating structured concurrency using StructuredTaskScope in the context of a weather application:
+
+```java
+WeatherReport getWeatherReport(String location) throws ExecutionException, InterruptedException {
+    try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
+        Supplier<Temperature> temperature = scope.fork(() -> getTemperature(location));
+        Supplier<Humidity> humidity = scope.fork(() -> getHumidity(location));
+        Supplier<WindSpeed> windSpeed = scope.fork(() -> getWindSpeed(location));
+
+        scope.join()            // Join all subtasks
+                .throwIfFailed();  // Propagate errors if any subtask fails
+
+        // All subtasks have succeeded, so compose their results
+        return new WeatherReport(
+                location,
+                temperature.get(),
+                humidity.get(),
+                windSpeed.get()
+        );
+    }
+}
+```
 
 ### Scoped Values (Third Preview)
 
-Scoped Values, also in their third preview, enable methods to share immutable data with callees within a thread and with child threads more efficiently than thread-local values. This can be particularly useful in scenarios where you need to pass context through a call chain without explicitly adding parameters to each method.
+JEP 481 introduces scoped values, a powerful new feature in Java that enables methods to share immutable data with their callees within a thread and with child threads. This feature addresses some of the limitations of thread-local variables, offering improved performance and easier reasoning about data flow. Scoped values are particularly beneficial when used in conjunction with virtual threads and structured concurrency, making them an excellent fit for modern, high-concurrency Java applications.
+
+Let's look at a simple example to illustrate how scoped values work:
+
+```java
+public class UserContext {
+    private static final ScopedValue<String> USER_ID = ScopedValue.newInstance();
+
+    public static void processRequest(String userId, Runnable task) {
+        ScopedValue.where(USER_ID, userId).run(() -> {
+            // The userId is now available to all code executed within this lambda
+            task.run();
+        });
+    }
+
+    public static String getCurrentUserId() {
+        return USER_ID.get();
+    }
+}
+
+public class UserService {
+    public void performUserOperation() {
+        String userId = UserContext.getCurrentUserId();
+        System.out.println("Performing operation for user: " + userId);
+        // Perform user-specific operations...
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        UserContext.processRequest("user123", () -> {
+            UserService service = new UserService();
+            service.performUserOperation();
+        });
+    }
+}
+```
 
 ### Implicitly Declared Classes and Instance Main Methods (Third Preview)
 
-This feature, previously known as "Unnamed Classes and Instance Main Methods," continues to evolve. It aims to reduce boilerplate code, especially for small programs or quick prototypes, by allowing for a more straightforward entry point to Java programs.
+JEP 477 represents a significant step forward in making Java more accessible to beginners and more convenient for experienced developers writing small programs. By introducing implicitly declared classes, instance main methods, and simplified I/O operations, Java is becoming more user-friendly without sacrificing its power and flexibility.
+
+Before JEP 477
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+After JEP 477
+
+```java
+void main() {
+    println("Hello, World!");
+}
+```
+
+### Flexible Constructor Bodies (Second Preview)
+
+JEP 482: Flexible Constructor Bodies (Second Preview) is a feature aimed at giving Java developers more freedom in constructing objects. It allows statements to appear before the explicit constructor invocation (i.e., super() or this()) in a constructor body. This change enables developers to validate or prepare arguments, initialize fields, and perform other setup tasks before calling the superclass constructor. The key benefit is improved reliability when methods are overridden, as it allows subclass constructors to ensure that superclass constructors never see uninitialized fields.
+
+Here's a simple code sample demonstrating this new flexibility
+
+```java
+public class PositiveBigInteger extends BigInteger {
+    public PositiveBigInteger(long value) {
+        if (value <= 0) {
+            throw new IllegalArgumentException("Value must be positive");
+        }
+        super(Long.toString(value));
+        // Additional initialization can be done here
+    }
+}
+```
 
 ## Conclusion
 
