@@ -17,31 +17,25 @@ As Java continues its rapid evolution with its six-month release cycle, we're on
 
 ## Primitive Types in Patterns, instanceof, and switch (Preview)
 
-One of the most anticipated features in Java 23 is the enhancement of pattern matching to include primitive types. This preview feature extends the capabilities of patterns, `instanceof`, and `switch` to work with all primitive types, enabling more uniform data exploration and aligning type patterns with `instanceof` operations.
+JEP 455 enhances pattern matching in Java by allowing primitive type patterns in all contexts, including instanceof and switch statements. This feature extends the capabilities of pattern matching to work with all primitive types, not just reference types. It aims to enable more uniform data exploration, align type patterns with instanceof, and allow switch to process values of any primitive type. This change makes the Java language more expressive and consistent, eliminating the need for manual type checking and casting when working with primitive types.
 
-Here's a quick example of how this might look:
+Here's a code example demonstrating some of the new capabilities introduced by JEP 455:
 
 ```java
-static String describe(Object obj) {
-    return switch (obj) {
-        case Integer i -> "Integer: " + i;
-        case Long l    -> "Long: " + l;
-        case Double d  -> "Double: " + d;
-        case String s  -> "String: " + s;
-        case null      -> "null";
-        default        -> "Unknown";
-    };
-}
-
-public static void main(String[] args) {
-    System.out.println(describe(42));       // Output: Integer: 42
-    System.out.println(describe(42L));      // Output: Long: 42
-    System.out.println(describe(3.14));     // Output: Double: 3.14
-    System.out.println(describe("Hello"));  // Output: String: Hello
+void processValue(Object value) {
+    switch (value) {
+        case Integer i when i > 100 -> System.out.println("Large integer: " + i);
+        case int i -> System.out.println("Small integer: " + i);
+        case Double d when d > 0 -> System.out.println("Positive double: " + d);
+        case double d -> System.out.println("Non-positive double: " + d);
+        case Long l -> System.out.println("Long value: " + l);
+        case Boolean b -> System.out.println("Boolean value: " + b);
+        default -> System.out.println("Unsupported type");
+    }
 }
 ```
 
-This feature simplifies code that needs to handle different types, including primitives, making it more readable and less error-prone.
+In this example, we can see how primitive type patterns are used in a switch statement to handle various types, including boxed and unboxed primitives. The code demonstrates type checking, value extraction, and conditional matching (using when clauses) for different primitive types, showcasing the enhanced expressiveness and flexibility provided by JEP 455.
 
 ## Markdown Documentation Comments
 
