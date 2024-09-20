@@ -4,12 +4,10 @@
 
 <template>
 
-  <form action="/api/convertkit/subscribe"
+  <form action="/api/beehiiv/subscribe"
         method="post"
-        data-sv-form="1352761"
-        data-uid="52adfca2a6"
         class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-    <input type="hidden" name="formId" value="1352761" />
+    <input type="hidden" name="campaign" value="home-page" />
     <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="h-6 w-6 flex-none">
         <path d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z" class="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"/>

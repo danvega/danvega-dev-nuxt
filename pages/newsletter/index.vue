@@ -32,12 +32,10 @@ const formatDatePublished = (date: string) => {
     </header>
 
     <form
-        action="/api/convertkit/subscribe"
+        action="/api/beehiiv/subscribe"
         method="post"
-        data-sv-form="1094354"
-        data-uid="2245659c84"
         class="mt-8 md:w-3/4 flex flex-row rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-        <input type="hidden" name="formId" value="1094354" />
+      <input type="hidden" name="campaign" value="newsletter" />
         <div class="w-3/4">
           <div>
             <input type="email" name="email" id="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="you@example.com" />
