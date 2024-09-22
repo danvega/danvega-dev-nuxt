@@ -19,11 +19,13 @@ if(data.value == null) {
 const datePublished = useDateFormat(data.value.date, 'MMMM D, YYYY');
 useDateFormat(data.value.updatedOn, 'MMMM D, YYYY');
 const getImagePath = (date,cover) => {
-  const createdOn = new Date(date);
-  const year = createdOn.getFullYear();
-  const month = `${createdOn.getMonth() + 1 < 10 ? "0" : ""}${createdOn.getMonth() + 1}`;
-  const day = `${createdOn.getDate() < 10 ? "0" : ""}${createdOn.getDate()}`;
-  return `/images/blog/${year}/${month}/${day}/${cover.replace('./','')}`;
+  if(cover) {
+    const createdOn = new Date(date);
+    const year = createdOn.getFullYear();
+    const month = `${createdOn.getMonth() + 1 < 10 ? "0" : ""}${createdOn.getMonth() + 1}`;
+    const day = `${createdOn.getDate() < 10 ? "0" : ""}${createdOn.getDate()}`;
+    return `/images/blog/${year}/${month}/${day}/${cover.replace('./','')}`;
+  }
 };
 
 function removeTrailingSlash(inputString) {
@@ -51,14 +53,14 @@ useHead({
     { name: 'twitter:title', content: data.value.title },
     { name: 'twitter:description', content: data.value?.description },
     { name: 'twitter:site', content: '@therealdanvega' },
-    { name: 'twitter:image', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
+    { name: 'twitter:image', content: config.public.urlBase + getImagePath(data.value.date,data.value?.cover) },
     { name: 'twitter:creator', content: '@therealdanvega' },
     { name: 'og:type', content: 'article' },
     { name: 'og:title', content: data.value.title },
     { name: 'og:description', content: data.value?.description },
     { name: 'og:url', content: config.public.urlBase + path },
-    { name: 'og:image', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
-    { name: 'og:image:secure_url', content: config.public.urlBase + getImagePath(data.value.date,data.value.cover) },
+    { name: 'og:image', content: config.public.urlBase + getImagePath(data.value.date,data.value?.cover) },
+    { name: 'og:image:secure_url', content: config.public.urlBase + getImagePath(data.value.date,data.value?.cover) },
   ]
 });
 </script>
@@ -86,7 +88,7 @@ useHead({
               :src="getImagePath(data.date,data.cover)"
               class="prose dark:prose-invert rounded-2xl mt-8"
               alt="ALT TEXT"
-              v-else-if="data?.cover"/>
+              v-if="data?.cover"/>
           <ContentRenderer :value="data" class="prose dark:prose-invert mt-8" />
         </article>
 

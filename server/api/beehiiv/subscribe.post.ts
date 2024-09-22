@@ -2,6 +2,7 @@ export default defineEventHandler(async (event) => {
 
     const apiKey : string | undefined = process.env.BEEHIIV_API_KEY;
     const body = await readBody(event);
+    const referrerURL = getHeader(event, 'referer') || 'Unknown';
 
     if (!body.email || !body.campaign || !apiKey) {
         throw createError({
@@ -21,7 +22,7 @@ export default defineEventHandler(async (event) => {
             email: body.email,
             reactivate_existing: false,
             send_welcome_email: false,
-            referring_site: "www.danvega.dev",
+            referring_site: referrerURL,
             utm_source: "danvega.dev",
             utm_campaign: body.campaign,
             utm_medium: "organic"
