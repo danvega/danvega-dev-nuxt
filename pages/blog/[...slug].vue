@@ -88,7 +88,7 @@ useHead({
               :src="getImagePath(data.date,data.cover)"
               class="prose dark:prose-invert rounded-2xl mt-8"
               alt="ALT TEXT"
-              v-if="data?.cover"/>
+              v-if="data?.cover && !data?.video"/>
           <ContentRenderer :value="data" class="prose dark:prose-invert mt-8" />
         </article>
 
