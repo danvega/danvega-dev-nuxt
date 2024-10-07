@@ -1,5 +1,14 @@
 [
   {
+    "title": "Does your API need a REST? Check out GraphQL.",
+    "url": "https://codemash.org/",
+    "name": "CodeMash 2025",
+    "startDate": "Jan 14, 2025",
+    "endDate": "Jan 17, 2025",
+    "location": "Sandusky, OH",
+    "description": "GraphQL is a declarative query language that simplifies retrieving data from an application's back end. It provides a clear and comprehensive description of the data in your API, giving you the ability to request only what you need. This makes it easy to evolve APIs over time and enables powerful developer tools."
+  },
+  {
     "title": "Building Intelligent Applications with Spring AI",
     "url": "https://www.eventbrite.com/e/intro-to-spring-ai-with-dan-vega-tickets-1005316136627?aff=ebdsoporgprofile",
     "name": "Houston Java User Group",
