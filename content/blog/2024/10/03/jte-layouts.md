@@ -1,6 +1,6 @@
 ---
 title: "Getting started with Java Template Engine (JTE) layouts in Spring Boot"
-description: ""
+description: "Learn how to use layouts with Java Template Engine in your next Spring Boot Application"
 slug: jte-layouts
 date: 2024-10-03T20:00:00.000Z
 published: true
