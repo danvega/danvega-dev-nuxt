@@ -1,6 +1,10 @@
 <template>
   <div class="container mt-20 max-w-5xl mx-auto p-6 bg-white rounded-lg shadow-lg">
     <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">JSON to Java Record Converter</h1>
+    <p class="my-8">If you found this tool useful consider supporting me by
+      <a href="https://www.buymeacoffee.com/danvega" class="text-blue-500 underline hover:no-underline">buying me a cup of coffee</a>.
+      If you want the source code for this tool my website is open source and you can find it
+      <a href="https://github.com/danvega/danvega-dev-nuxt/blob/main/pages/tools/json-to-java-record.vue" class="text-blue-500 underline hover:no-underline">here</a>.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div>
         <label for="recordName" class="block text-sm font-medium text-gray-700 mb-2">Record Name:</label>
