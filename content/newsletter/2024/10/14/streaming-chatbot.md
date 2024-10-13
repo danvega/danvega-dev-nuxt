@@ -4,9 +4,7 @@ slug: streaming-chatbot
 date: "2024-10-14T07:00:00.000Z"
 ---
 
-Happy Monday and Welcome to Another Edition of the Newsletter! 
-
-Last week, I drove down to Cincinnati to spend time with a customer. I stayed near the Cincinnati Reds stadium, which sits on the Ohio/Kentucky border. The area is known as "The Banks," and I must say, I loved it there. If I have the chance, I'm going to try to make it back next summer to catch a game! Speaking of baseball, my Cleveland Guardians are in the ALCS ⚾️🤩
+Happy Monday and Welcome to Another Edition of the Newsletter! Last week, I drove down to Cincinnati to spend time with a customer. I stayed near the Cincinnati Reds stadium, which sits on the Ohio/Kentucky border. The area is known as "The Banks," and I must say, I loved it there. If I have the chance, I'm going to try to make it back next summer to catch a game! Speaking of baseball, my Cleveland Guardians are in the ALCS ⚾️🤩
 
 I gave a talk to our customer on GraphQL, similar to the one I gave at SpringOne. I absolutely love discussing GraphQL because it solves real problems. One thing I always stress to developers is the importance of understanding the "why" before diving into a new technology. Avoid resume-driven development—learning something just to put it on your resume. GraphQL addresses several issues that REST APIs face, such as over-fetching, multiple resource calls, API versioning, and more. If you have questions about building GraphQL APIs in Java & Spring feel free to reach out.
 
