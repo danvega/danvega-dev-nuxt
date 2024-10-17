@@ -2,7 +2,7 @@
 title: "Calling Multiple LLMs with Spring AI: A Practical Guide"
 description: "Learn how to integrate and call multiple Large Language Models (LLMs) like OpenAI's GPT-4 and Anthropic's Claude in a single Spring Boot application using Spring AI. This tutorial covers project setup, configuration, and implementation of separate controllers for each LLM."
 slug: spring-ai-multiple-llms
-date: 2024-10-16T09:00:00.000Z
+date: 2024-10-14T09:00:00.000Z
 published: true
 author: "Dan Vega"
 tags:
