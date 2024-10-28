@@ -1,5 +1,32 @@
 [
   {
+    "title": "Code Smarter, Not Harder: AI-Powered Dev Hacks for All",
+    "url": "https://devnexus.com/presentations/a-java-developers-guide-to-navigating-the-frontend-landscape",
+    "name": "DevNexus 2025",
+    "startDate": "Mar 4, 2025",
+    "endDate": "Mar 6, 2025",
+    "location": "Atlanta, GA",
+    "description": "This is a beginner-friendly session designed for Java developers who are trying to navigate the landscape of frontend development. When you need to develop a new frontend for your application, what approach do you take? Do you leverage your existing Java skills and create it using a Java framework? Or do you opt for a modern JavaScript framework like React, Angular, or Vue? Different requirements may call for different solutions, and in this session, we will explore this topic in depth. By the end of this talk, you will be up to date with the latest techniques for building frontend applications."
+  },
+  {
+    "title": "Code Smarter, Not Harder: AI-Powered Dev Hacks for All",
+    "url": "https://confoo.ca/en/2025/session/code-smarter-not-harder-ai-powered-dev-hacks-for-all",
+    "name": "ConFoo 2025",
+    "startDate": "Feb 26, 2025",
+    "endDate": "Feb 28, 2025",
+    "location": "Montreal, OH",
+    "description": "This talk explores AI's impact on software development, focusing on productivity enhancement. It covers AI applications like code completion, bug detection, refactoring, and test generation. Through demos and examples, attendees learn to use AI tools for various coding tasks across languages and environments. The session aims to equip developers with AI-driven strategies to boost efficiency and skills."
+  },
+  {
+    "title": "Spring into AI: Building Intelligent apps with Spring AI",
+    "url": "https://confoo.ca/en/2025/session/spring-into-ai-building-intelligent-apps-with-spring-ai",
+    "name": "ConFoo 2025",
+    "startDate": "Feb 26, 2025",
+    "endDate": "Feb 28, 2025",
+    "location": "Montreal, OH",
+    "description": "This presentation introduces AI basics for beginners, covering fundamental concepts and potential impacts. It then focuses on Spring AI, a tool simplifying AI integration in applications. The talk covers Spring AI setup, integration with Spring Boot, and implementation of common AI tasks like chatbots and sentiment analysis. Attendees will gain understanding of AI fundamentals and practical skills for incorporating AI into Spring applications."
+  },
+  {
     "title": "Does your API need a REST? Check out GraphQL.",
     "url": "https://codemash.org/",
     "name": "CodeMash 2025",
