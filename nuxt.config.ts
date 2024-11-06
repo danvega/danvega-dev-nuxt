@@ -105,13 +105,18 @@ export default defineNuxtConfig({
     },
     content: {
       feed: {
-        defaults: {
+        data: {
           title: 'Dan Vega',
           description: 'Personal site of Dan Vega',
-          copyright: '2023 by Dan Vega',
+          copyright: '2024 by Dan Vega',
+          language: 'en',
           link: process.env.BASE_URL || 'https://www.danvega.dev',
           id: process.env.BASE_URL || 'https://www.danvega.dev',
           author: { email: 'danvega@gmail.com', name: 'Dan Vega' },
+          feedLinks: {
+            rss: `${process.env.BASE_URL}/feed.xml`,
+            json: `${process.env.BASE_URL}/feed.json`,
+          },
         },
       },
       item: {
@@ -121,12 +126,10 @@ export default defineNuxtConfig({
           ],
         },
         mapping: [
-          // Description is used in Feed, so you point Feed object field to yours post field
           ['description', 'excerpt'],
-          // Same
           ['link', '_path'],
-          // Taking published from date, wrapping value by Date object as described in Readme
-          ['published', 'date', value => value ? new Date(value) : value],
+          ['published', 'date', value => value ? new Date(value).toUTCString() : value], // Format date for RSS 2.0
+          ['guid', '_path'], // Add guid for RSS 2.0
         ],
         query: {
           limit: 200,
