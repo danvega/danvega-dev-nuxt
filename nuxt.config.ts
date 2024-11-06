@@ -105,7 +105,7 @@ export default defineNuxtConfig({
     },
     content: {
       feed: {
-        data: {
+        defaults: {
           title: 'Dan Vega',
           description: 'Personal site of Dan Vega',
           copyright: '2024 by Dan Vega',
@@ -128,8 +128,8 @@ export default defineNuxtConfig({
         mapping: [
           ['description', 'excerpt'],
           ['link', '_path'],
-          ['published', 'date', value => value ? new Date(value).toUTCString() : value], // Format date for RSS 2.0
-          ['guid', '_path'], // Add guid for RSS 2.0
+          ['published', 'date', value => value ? new Date(value) : value],
+          ['guid', '_path'],
         ],
         query: {
           limit: 200,
