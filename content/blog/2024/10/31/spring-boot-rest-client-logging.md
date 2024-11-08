@@ -2,7 +2,7 @@
 title: "Implementing Request/Response Logging with Spring Boot's Rest Client"
 description: Learn how to implement clean and efficient request/response logging for Spring Boot's Rest Client, including both inline and interceptor-based approaches.
 slug: spring-boot-rest-client-logging
-date: "2024-11-08T09:00:00.000Z"
+date: "2024-10-31T09:00:00.000Z"
 published: true
 author: Dan Vega
 tags:

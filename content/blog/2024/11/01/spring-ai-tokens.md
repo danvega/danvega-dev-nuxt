@@ -2,7 +2,7 @@
 title: Understanding Tokens in Large Language Models with Spring AI
 description: Learn how to track and manage token usage in Spring AI applications, including implementing custom response types and automated logging with AOP.
 slug: spring-ai-tokens
-date: 2024-11-08T17:00:00.000Z
+date: 2024-11-01T17:00:00.000Z
 published: true
 author: Dan Vega
 tags:

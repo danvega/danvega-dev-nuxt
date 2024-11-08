@@ -2,7 +2,7 @@
 title: "RestClient OAuth2 Support in Spring Security 6.4: A Complete Guide"
 description: Learn how to implement OAuth2 authentication in your Spring applications using the new RestClient OAuth2 support in Spring Security 6.4. This guide covers architecture, implementation, and best practices for secure service-to-service communication.
 slug: rest-client-oauth2-support
-date: 2024-11-08T17:00:00.000Z
+date: 2024-11-05T17:00:00.000Z
 published: true
 author: Dan Vega
 tags:
