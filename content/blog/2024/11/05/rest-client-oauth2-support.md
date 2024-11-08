@@ -174,8 +174,8 @@ Spring Security 6.4's RestClient OAuth2 support significantly simplifies secure 
 
 For developers currently using custom OAuth2 solutions with RestClient, migrating to this official support offers several advantages:
 
-- Reduced boilerplate code
-- Automatic token management
+- Reduced boilerplate code`
+- Automatic token management`
 - Consistent security configuration
 - Better integration with Spring Security's features
 
