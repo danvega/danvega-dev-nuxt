@@ -37,13 +37,14 @@ export default function typographyStyles({ theme }: PluginUtils) {
                 '--tw-prose-counters': theme('colors.zinc.900'),
                 '--tw-prose-bullets': theme('colors.zinc.900'),
                 '--tw-prose-hr': theme('colors.zinc.100'),
+                '--tw-prose-quotes': theme('colors.zinc.900'),
                 '--tw-prose-quote-borders': theme('colors.zinc.200'),
                 '--tw-prose-captions': theme('colors.zinc.400'),
                 '--tw-prose-code': theme('colors.zinc.700'),
-                '--tw-prose-code-bg': theme('colors.zinc.300 / 0.2'),
-                '--tw-prose-pre-code': theme('colors.zinc.100'),
-                '--tw-prose-pre-bg': theme('colors.zinc.900'),
-                '--tw-prose-pre-border': 'transparent',
+                '--tw-prose-code-bg': theme('colors.zinc.50'), // Very light grey background
+                '--tw-prose-pre-code': theme('colors.zinc.700'),
+                '--tw-prose-pre-bg': theme('colors.zinc.50'), // Very light grey background
+                '--tw-prose-pre-border': theme('colors.zinc.200'), // Light border color
                 '--tw-prose-th-borders': theme('colors.zinc.200'),
                 '--tw-prose-td-borders': theme('colors.zinc.100'),
 
