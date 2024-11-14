@@ -28,9 +28,9 @@ useHead({
             <div class="md:col-span-3">
               <ul role="list" class="space-y-16">
                 <li class="group relative flex flex-col items-start">
-                  <a href="https://amzn.to/3F7Mfs6">
+                  <a href="https://amzn.to/4hQKkLu">
                     <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                      MacBook Pro (14-inch, 2021) Apple M1 Max / 32GB RAM
+                      MacBook Pro (14-inch, 2021) M4 Max / 48GB RAM
                     </h3>
                   </a>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I was using an
@@ -40,16 +40,12 @@ useHead({
                     my review or my new machine setup process check out this [blog post](http://localhost:3000/blog/macbook-pro-m1-max-review).</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
-                  <a href="https://amzn.to/3kufQmi">
+                  <a href="https://amzn.to/48PG2jt">
                     <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                      LG 4k HDR Monitor
+                      Dell S2722QC Monitor - 27 inch 4K
                     </h3>
                   </a>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">This monitor has become my daily
-                    companion for work and leisure. Its crisp 4K display and borderless design immerse me in a world of vivid
-                    colors and sharp details, making it a joy for everything from development to video editing. The adjustable stand
-                    lets me find the perfect viewing angle, and the USB-C connectivity simplifies my workspace, making it the ideal
-                    choice for my everyday monitor needs.</p>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">This 27-inch 4K USB-C monitor has become my daily driver for both work and content creation. Its crisp UHD display with 1.07 billion colors delivers stunning visuals, while the ultra-thin bezels provide an immersive viewing experience. What I particularly love is the versatile USB-C connectivity that reduces cable clutter - a single cable handles power delivery, video, audio, and data transfer. The fully adjustable stand with tilt, swivel, and pivot options helps maintain perfect ergonomics during long work sessions.</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
                   <a href="https://amzn.to/2WFflKQ">
@@ -74,12 +70,28 @@ useHead({
                     making it a must-have tool for anyone seeking a smoother and more productive computing experience.</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
-                  <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                    IKEA Desk Hack
-                  </h3>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">My desk is not actually a desk.
-                    It's the Ikea the Karlby countertop on top of 2 cabinets hack that you have probably seen a million
-                    times by now. I really like this setup and it works well for my space.</p>
+                  <a href="https://amzn.to/4hCM0Zb">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      iVANKY FusionDock MacBook Docking Station
+                    </h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The FusionDock Max 1 is my go-to docking station for the MacBook Pro. With dual Thunderbolt 4 chips and support for quad 6K@60Hz displays, it provides incredible connectivity through its 20 ports. The 96W charging keeps my MacBook powered while handling multiple displays, peripherals, and high-speed data transfers through its 2.5GbE ethernet port. The build quality is excellent, and its sleek midnight blue design complements my setup perfectly.</p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://amzn.to/3YStNOH">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      WD 6TB My Passport External Hard Drive
+                    </h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I keep all my important files backed up on a 6TB WD My Passport external drive. It's incredibly compact for the storage capacity, and the USB-C compatibility makes it perfect for my Mac setup. The built-in hardware encryption helps keep my data secure, and the included backup software with ransomware protection adds an extra layer of security. The Navy color matches my workspace aesthetic nicely.</p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://www.upliftdesk.com/uplift-v2-standing-desk-v2-or-v2-commercial/">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      Uplift Standing Desk - Heritage Oak (72"x30")
+                    </h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I recently upgraded to the UPLIFT V2 Standing Desk with a walnut laminate top. The dual-motor design makes height adjustments whisper-quiet, and the stability braces eliminate any wobble. It's transformed how I work, letting me easily switch between sitting and standing throughout the day. The premium build quality and 15-year warranty make it a worthwhile investment for my workspace.</p>
                 </li>
               </ul>
             </div>
@@ -134,6 +146,13 @@ useHead({
                   </a>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The Elgato Cam Link 4K has seamlessly integrated into my YouTube video creation process, enabling me to capture high-quality video swiftly and efficiently directly into my computer. Its plug-and-play functionality eliminates any hassle, allowing me to focus solely on producing engaging content. The crisp 4K resolution capture ensures that every detail is impeccably recorded, significantly elevating the visual appeal and professionalism of my videos.</p>
                 </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://amzn.to/3UQICzZ">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Elgato Stream Deck +, Audio Mixer</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">I recently added the Stream Deck + to my setup to streamline my workflow. With its 8 customizable LCD keys and 4 tactile dials, it's perfect for controlling audio, launching apps, and automating repetitive tasks. The touch strip and programmable buttons are incredibly versatile - I can trigger multiple actions with a single tap, and the Wave Link integration makes audio management a breeze. The build quality is excellent, and the intuitive software makes customization simple.</p>
+                </li>
+
                 <li class="group relative flex flex-col items-start">
                   <a href="https://streamyard.com/">
                     <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Wyze Bluetooth Headphones</h3>
@@ -226,8 +245,7 @@ useHead({
         </section>
 
         <p class="text-zinc-600 dark:text-zinc-400">
-          A few of the links on this page will earn me an affiliate commission. This comes at no extra cost to you and
-          helps support me as a creator. Thank you 🙏
+          A few of the links on this page will earn me an affiliate commission. This comes at no extra cost to you and helps support me as a creator. Thank you 🙏
         </p>
 
 
