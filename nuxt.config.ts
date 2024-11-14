@@ -26,6 +26,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
       urlSchema: 'http',
       urlDomain: 'localhost:3000',
       urlBase: 'http://localhost:3000',
@@ -147,7 +148,8 @@ export default defineNuxtConfig({
   },
   sitemap: {
     strictNuxtContentPaths: true,
-    xsl: false
+    xsl: false,
+
   },
   css: ['~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
   devtools: { enabled: true }
