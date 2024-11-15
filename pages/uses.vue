@@ -37,7 +37,7 @@ useHead({
                     Intel-based 16” MacBook Pro prior to this and the difference is night and day. I’ve never
                     heard the fans turn on a single time, even under the incredibly heavy loads I put it through
                     with our various launch simulations. I love this as both a development and content creation machine. If you would like
-                    my review or my new machine setup process check out this [blog post](http://localhost:3000/blog/macbook-pro-m1-max-review).</p>
+                    my new machine setup process check out this [repository](https://github.com/danvega/new-macbook-setup/blob/master/2024/README.md).</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
                   <a href="https://amzn.to/48PG2jt">
