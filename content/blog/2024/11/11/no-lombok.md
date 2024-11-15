@@ -1,5 +1,5 @@
 ---
-title: "The Case Against Lombok: Why It's Time to Move On"
+title: "Why you should avoid Using Project Lombok in Java Development"
 description: A detailed exploration of why Java developers should reconsider using Project Lombok, examining its drawbacks and modern alternatives in Java development.
 slug: no-lombok
 date: 2024-11-11T09:00:00.000Z
@@ -7,7 +7,7 @@ published: true
 author: Dan Vega
 tags:
   - Java
-cover: ./the_case_against_lombok.png
+cover: ./no_lombok_cover.png
 keywords: java, lombok, project lombok, java development, java records, clean code, software development, java best practices
 ---
 
@@ -25,7 +25,7 @@ One of the most frustrating aspects of Lombok is its interference with IDE funct
 @Builder
 public class OrderService {
     private final OrderRepository repository;
-    
+
     // ... service methods
 }
 ```
@@ -76,7 +76,7 @@ Lombok's approach to code generation is fundamentally different from standard an
 public class Customer {
     private String name;
     private List<Order> orders;
-    
+
     // Imagine dozens of fields and complex relationships
 }
 ```
@@ -106,7 +106,7 @@ Two of the most serious issues with Lombok affect core development workflows:
    public class Product {
        private final BigDecimal price;
    }
-   
+
    // But break in Java 21 due to Lombok's use of internal APIs
    ```
 
@@ -169,7 +169,7 @@ public class Order {
             this.id = id;
             return this;
         }
-        
+
         // Additional builder methods...
 
         public Order build() {
