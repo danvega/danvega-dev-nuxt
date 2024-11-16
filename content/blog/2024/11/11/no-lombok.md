@@ -1,5 +1,5 @@
 ---
-title: "Why you should avoid Using Project Lombok in Java Development"
+title: "Modern Java: Why You Might Not Need Lombok Anymore"
 description: A detailed exploration of why Java developers should reconsider using Project Lombok, examining its drawbacks and modern alternatives in Java development.
 slug: no-lombok
 date: 2024-11-11T09:00:00.000Z
