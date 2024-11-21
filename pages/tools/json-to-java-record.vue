@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-20 max-w-5xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+  <div class="container mt-20 max-w-5xl mx-auto p-6 bg-white rounded-lg shadow-lg min-h-screen">
     <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">JSON to Java Record Converter</h1>
     <p class="my-8">If you want the source code for this tool my website is open source and you can find it
       <a href="https://github.com/danvega/danvega-dev-nuxt/blob/main/pages/tools/json-to-java-record.vue" class="text-blue-500 underline hover:no-underline">here</a>.</p>
