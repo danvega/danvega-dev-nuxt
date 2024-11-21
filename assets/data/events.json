@@ -243,32 +243,58 @@
     "description": "In this talk, I will cover the basics of GraphQL and how it differs from traditional RESTful API architectures. By the end of this talk, you will have everything you need to build your first GraphQL API in Spring."
   },
   {
+    "title": "Does your API need a REST, check out GraphQL",
     "startDate": "August 21, 2023",
     "endDate": "August 24, 2023",
     "name": "SpringOne",
     "url": "https://springone.io/",
-    "location": "Las Vegas, NV"
+    "location": "Las Vegas, NV",
+    "description": "In this talk, I will cover the basics of GraphQL and how it differs from traditional RESTful API architectures. By the end of this talk, you will have everything you need to build your first GraphQL API in Spring."
   },
   {
+    "title": "Spring Recipes",
+    "startDate": "August 21, 2023",
+    "endDate": "August 24, 2023",
+    "name": "SpringOne",
+    "url": "https://springone.io/",
+    "location": "Las Vegas, NV",
+    "description": "Join Spring experts Nathaniel Schutta and Dan Vega to find concrete solutions for common problems encountered in modern software development, from building APIs to cloud native applications. Spring is constantly evolving and growing, so if you’re unsure about all its resources, you’ll discover them during this plunge into the Spring ecosystem."
+  },
+  {
+    "title": "Spring Boot 3 and Beyond",
     "startDate": "June 20, 2023",
     "endDate": "June 23, 2023",
     "name": "KCDC",
     "url": "https://www.kcdc.info/",
-    "location": "Kansas City, MO"
+    "location": "Kansas City, MO",
+    "description": "This presentation introduces some of the new and exciting features in Spring Boot 3.0 and beyond. One of the key highlights of Spring Boot 3.0 is the built-in AOT (Ahead of Time) support for GraalVM's native image. This groundbreaking addition revolutionizes your approach to application development and unlocks a multitude of unprecedented possibilities."
   },
   {
-    "startDate": "April 4, 2023",
-    "endDate": "April 6, 2023",
-    "name": "DevNexus",
-    "url": "https://devnexus.com/",
-    "location": "Atlanta, GA"
+    "title": "Getting Started with Spring (Workshop)",
+    "startDate": "June 20, 2023",
+    "endDate": "June 23, 2023",
+    "name": "KCDC",
+    "url": "https://www.kcdc.info/",
+    "location": "Kansas City, MO",
+    "description": "If you’re a Java developer and want to learn about the most popular frameworks ever created this session is for you. You are going to learn what Spring is used for and how it can make you a more productive developer. It does this by providing you with the infrastructure to build enterprise-ready applications and allowing you to focus on features."
   },
   {
+      "title": "Spring Recipes: A Collection of Common-Sense Solutions",
+      "startDate": "April 4, 2023",
+      "endDate": "April 6, 2023",
+      "name": "DevNexus",
+      "url": "https://devnexus.com/",
+      "location": "Atlanta, GA",
+      "description": "Join Spring experts Nathaniel Schutta and Dan Vega to find concrete solutions for common problems encountered in modern software development, from building APIs to cloud native applications. Spring is constantly evolving and growing, so if you’re unsure about all its resources, you’ll discover them during this plunge into the Spring ecosystem."
+  },
+  {
+    "title": "What's new in Spring Framework 6 and Spring Boot 3",
     "startDate": "February 7, 2023",
     "endDate": "February 7, 2023",
-    "name": "What's new in Spring Boot 3",
+    "name": "VMware Tanzu Webinar",
     "url": "https://tanzu.vmware.com/content/webinars/feb-7-whats-new-with-spring-6-and-boot-3",
-    "location": "Online"
+    "location": "Online",
+    "description": "This presentation introduces some of the new and exciting features in Spring Boot 3.0 and beyond. One of the key highlights of Spring Boot 3.0 is the built-in AOT (Ahead of Time) support for GraalVM's native image. This groundbreaking addition revolutionizes your approach to application development and unlocks a multitude of unprecedented possibilities."
   },
   {
     "startDate": "January 24, 2023",
