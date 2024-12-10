@@ -6,8 +6,8 @@ date: 2024-12-02T09:00:00.000Z
 published: true
 author: Dan Vega
 tags:
-  - graphql
-  - spring-boot
+  - GraphQL
+  - Spring Boot
 video: https://www.youtube.com/embed/J8vC8RflPPY
 keywords: Spring Boot, GraphQL, Query by Example, QBE, API Development, Java, Spring Data JPA, Dynamic Queries, Spring for GraphQL
 github: https://github.com/danvega/graphql-qbe

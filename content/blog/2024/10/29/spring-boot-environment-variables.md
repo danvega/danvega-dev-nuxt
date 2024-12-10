@@ -6,7 +6,7 @@ date: 2024-10-29T17:00:00.000Z
 published: true
 author: Dan Vega
 tags:
-  - spring-boot
+  - Spring Boot
 video: https://www.youtube.com/embed/rQV76dufxz4
 keywords: spring boot, spring framework, environment variables, configuration, security, api keys, spring framework, java, development, best practices
 ---
