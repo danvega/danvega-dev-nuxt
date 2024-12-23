@@ -1,7 +1,7 @@
 ---
 title: Spring Security 6.4 Released, JTE Production Guide, and Spring gRPC Preview
 slug: spring-grpc-preview
-date: "2024-12-22T07:00:00.000Z"
+date: "2024-12-23T07:00:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter. It’s hard to believe that Christmas is in a few days and then we turn the pages on 2024 and head into the new year. We are hosting a special Spring Office Hours today at 1 PM EDT over on the [Spring Developer YouTube Channel](https://www.youtube.com/watch?v=moWjYv7j56s). In this episode we will review what happened in Java and Spring and why its an exciting time to be a Spring Developer.
