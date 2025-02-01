@@ -1,5 +1,14 @@
 [
   {
+    "title": "AI for Java Developers",
+    "url": "https://jdconf.com/",
+    "name": "Microsoft jDConf 2025",
+    "startDate": "Apr 9, 2025",
+    "endDate": "Apr 10, 2025",
+    "location": "Virtual",
+    "description": "In today's tech landscape, Artificial Intelligence (AI) has become an unavoidable topic of discussion and innovation. This session bridges the gap between traditional Java development and AI, helping Java developers enter this exciting new field. We'll explain core principles of AI, machine learning, and deep learning using concepts familiar to Java developers and show how your existing Java skills apply to AI development."
+  },
+  {
     "title": "A Java Developer's Guide to Navigating the Frontend Landscape",
     "url": "https://reg.rf.oracle.com/flow/oracle/javaone25/catalog/page/catalog/session/1728567379856001G9ap",
     "name": "JavaOne",
