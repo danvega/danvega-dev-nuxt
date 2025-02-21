@@ -1,5 +1,14 @@
 [
   {
+    "title": "What's new in Spring",
+    "url": "https://jdconf.com/",
+    "name": "Microsoft jDConf 2025",
+    "startDate": "Apr 9, 2025",
+    "endDate": "Apr 10, 2025",
+    "location": "Virtual",
+    "description": "Are you new to Spring and curious about the exciting developments in Java’s most popular framework? Join us for an enlightening session that will introduce you to the some of the new features Spring has to offer. This beginner-friendly talk will cover a range of topics designed to boost your productivity, enhance runtime efficiency, and simplify the development of enterprise-grade Java applications."
+  },
+  {
     "title": "AI for Java Developers",
     "url": "https://jdconf.com/",
     "name": "Microsoft jDConf 2025",
