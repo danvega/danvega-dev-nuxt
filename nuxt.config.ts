@@ -127,7 +127,15 @@ export default defineNuxtConfig({
         },
         mapping: [
           ['description', 'excerpt'],
-          ['link', '_path'],
+          ['link', '_path', value => {
+            if (value && value.startsWith('/blog/')) {
+              // Extract the slug from the path (the last part after the last slash)
+              const parts = value.split('/');
+              const slug = parts[parts.length - 1];
+              return `/blog/${slug}`;
+            }
+            return value;
+          }],
           ['published', 'date', value => value ? new Date(value) : value],
           ['guid', '_path'],
         ],
