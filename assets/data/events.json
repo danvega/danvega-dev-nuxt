@@ -1,5 +1,14 @@
 [
   {
+    "title": "Spring into AI: Building Intelligent apps with Spring AI",
+    "url": "https://www.meetup.com/virtualjug/events/306414120",
+    "name": "Virtual Java User Group (vJUG)",
+    "startDate": "Mar 12, 2025",
+    "endDate": "Mar 12, 2025",
+    "location": "Virtual",
+    "description": "This presentation introduces AI basics for beginners, covering fundamental concepts and potential impacts. It then focuses on Spring AI, a tool simplifying AI integration in applications. The talk covers Spring AI setup, integration with Spring Boot, and implementation of common AI tasks like chatbots and sentiment analysis. Attendees will gain understanding of AI fundamentals and practical skills for incorporating AI into Spring applications."
+  },
+  {
     "title": "What's new in Spring",
     "url": "https://jdconf.com/",
     "name": "Microsoft jDConf 2025",
@@ -41,7 +50,7 @@
     "name": "ConFoo 2025",
     "startDate": "Feb 26, 2025",
     "endDate": "Feb 28, 2025",
-    "location": "Montreal, OH",
+    "location": "Montreal, CA",
     "description": "This talk explores AI's impact on software development, focusing on productivity enhancement. It covers AI applications like code completion, bug detection, refactoring, and test generation. Through demos and examples, attendees learn to use AI tools for various coding tasks across languages and environments. The session aims to equip developers with AI-driven strategies to boost efficiency and skills."
   },
   {
@@ -50,7 +59,7 @@
     "name": "ConFoo 2025",
     "startDate": "Feb 26, 2025",
     "endDate": "Feb 28, 2025",
-    "location": "Montreal, OH",
+    "location": "Montreal, CA",
     "description": "This presentation introduces AI basics for beginners, covering fundamental concepts and potential impacts. It then focuses on Spring AI, a tool simplifying AI integration in applications. The talk covers Spring AI setup, integration with Spring Boot, and implementation of common AI tasks like chatbots and sentiment analysis. Attendees will gain understanding of AI fundamentals and practical skills for incorporating AI into Spring applications."
   },
   {
