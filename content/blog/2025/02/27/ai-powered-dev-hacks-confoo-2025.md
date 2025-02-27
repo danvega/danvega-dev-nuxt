@@ -14,6 +14,10 @@ Recently, I had the pleasure of presenting on a topic that I'm pretty passionate
 
 As I shared in the presentation, AI won't replace developers, but developers who use AI will replace those who don't. This sentiment captures the essence of what I believe is happening in our industry right now — we're witnessing a fundamental shift in how software gets built, and those who adapt will thrive.
 
+![Show Time](/images/blog/2025/02/27/confoo_ai-hacks_01.jpg)
+
+![What a Crowd](/images/blog/2025/02/27/confoo_ai-hacks_02.png)
+
 ## Why AI Matters for Developers
 
 The statistics speak volumes: 72% of developers are confident in AI tools, with 92% of Fortune 500 companies already using AI technologies in some capacity. Among developers, 75% are either using or planning to use AI tools, with an average productivity increase of 26%.
