@@ -59,7 +59,7 @@ If you're planning to attend, I'd love to continue the conversation after my ses
 
 The conference has an incredible lineup this year, from the Java 24 launch to the special 30th birthday celebrations. Between the world-class learning opportunities, networking events, and even the Wednesday night party at Devil's Canyon Brewing Company, it's shaping up to be an unmissable event for the Java community.
 
-My session is scheduled for [add your session date/time], and I hope to see you there! Drop by to say hello, or reach out beforehand if you have specific topics you'd like me to address during the Q&A portion.
+My session is scheduled for Tuesday, Mar 182:30 PM - 3:15 PM PDT in Room 105, and I hope to see you there! Drop by to say hello, or reach out beforehand if you have specific topics you'd like me to address during the Q&A portion.
 
 See you in Redwood Shores!
 
