@@ -10,8 +10,6 @@ tags:
 keywords: Java, JDK 24, Stream Gatherers, Java Streams, Blog Processing, Java Records
 ---
 
-# Stream Gatherers in JDK 24: Building Custom Intermediate Operations for the Stream API
-
 I just got back from JavaOne Conference and everyone was talking about the new features in JDK 24, so I thought I would put together a post on one of my favorite new features, Stream Gatherers!
 
 JDK 24, released in March 2025, introduces several exciting features that improve Java's expressiveness and performance. One of the most useful additions for data processing is **Stream Gatherers** (JEP 485), which enhances the Stream API by enabling custom intermediate operations.
