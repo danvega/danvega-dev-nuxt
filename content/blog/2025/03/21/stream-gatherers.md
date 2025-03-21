@@ -1,5 +1,5 @@
 ---
-title: "Stream Gatherers in JDK 24: A Better Way to Process Blog Content"
+title: "Stream Gatherers in JDK 24: Building Custom Intermediate Operations for the Stream API"
 description: "Discover how the new Stream Gatherers feature in JDK 24 provides a more elegant solution for processing blog content compared to traditional stream operations."
 slug: stream-gatherers
 date: 2025-03-21T09:00:00.000Z
@@ -10,7 +10,7 @@ tags:
 keywords: Java, JDK 24, Stream Gatherers, Java Streams, Blog Processing, Java Records
 ---
 
-# Stream Gatherers in JDK 24: A Better Way to Process Blog Content
+# Stream Gatherers in JDK 24: Building Custom Intermediate Operations for the Stream API
 
 I just got back from JavaOne Conference and everyone was talking about the new features in JDK 24, so I thought I would put together a post on one of my favorite new features, Stream Gatherers!
 
