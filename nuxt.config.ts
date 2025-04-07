@@ -140,7 +140,7 @@ export default defineNuxtConfig({
           ['guid', '_path'],
         ],
         query: {
-          limit: 200,
+          limit: 300,
           where: [
             {_path: /^\/blog\/.*$/ }
           ]
