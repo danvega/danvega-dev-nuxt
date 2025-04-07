@@ -1,5 +1,14 @@
 [
   {
+    "title": "Code Smarter, Not Harder: AI-Powered Dev Hacks for All",
+    "url": "https://blog.jetbrains.com/idea/2025/04/new-livestream-code-smarter-not-harder-ai-powered-dev-hacks-for-all/",
+    "name": "IntelliJ IDEA Livestream",
+    "startDate": "Apr 17, 2025",
+    "endDate": "Apr 17, 2025",
+    "location": "Virtual",
+    "description": "In today’s fast-paced software development landscape, AI has become a powerful tool for boosting developer productivity. This talk breaks down AI’s practical role in coding through real-world examples and live demonstrations, making it accessible for developers at any skill level. We’ll explore how AI enhances everything from code completion and bug detection to automated refactoring and test generation, showing you practical ways to streamline your workflow."
+  },
+  {
     "title": "Spring into AI: Building Intelligent apps with Spring AI",
     "url": "https://www.meetup.com/virtualjug/events/306414120",
     "name": "Virtual Java User Group (vJUG)",
