@@ -12,8 +12,6 @@ github: https://github.com/danvega/docker-model-runner
 keywords: docker model runner, spring ai, local ai models, spring boot, ai development, gemma, no api key, privacy, docker desktop
 ---
 
-# Running AI Models Locally with Docker and Spring AI
-
 Are you tired of sending your data to cloud APIs just to use AI in your applications? What if you could run powerful AI models right on your machine with zero API keys, zero data sharing, and zero monthly fees?
 
 Docker Desktop recently introduced an exciting new feature called Model Runner that allows developers to run open-source AI models locally. When combined with Spring AI, this creates a powerful platform for building AI-powered applications that respect privacy, control costs, and simplify development workflows.
