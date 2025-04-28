@@ -1,5 +1,32 @@
 [
   {
+    "title": "The March towards Spring Boot 4 has begun - A look back at Spring Boot 3\n",
+    "url": "https://www.kcdc.info/",
+    "name": "KCDC 2025",
+    "startDate": "Aug 14, 2025",
+    "endDate": "Aug 15, 2025",
+    "location": "Kansas City, MO",
+    "description": "As we march towards Spring Boot 4, let's examine how Spring Boot 3 transformed enterprise Java development through foundational upgrades, developer empowerment, and operational excellence. From embracing Java 17 to enhancing cloud-native capabilities, Spring Boot 3 set new standards for building modern enterprise applications."
+  },
+  {
+    "title": "Building AI-Enabled Spring Applications with Model Context Protocol (MCP)",
+    "url": "https://www.kcdc.info/",
+    "name": "KCDC 2025",
+    "startDate": "Aug 14, 2025",
+    "endDate": "Aug 15, 2025",
+    "location": "Kansas City, MO",
+    "description": "As Large Language Models (LLMs) revolutionize application development, Java/Spring developers face a critical challenge: how to securely and efficiently connect these AI models with enterprise data and tools. The Model Context Protocol (MCP) offers a practical solution by providing a standardized approach for integrating AI capabilities into Spring applications while maintaining enterprise-grade security and scalability."
+  },
+  {
+    "title": "Code Smarter, Not Harder: AI-Powered Dev Hacks for All",
+    "url": "https://2025.springio.net/sessions/code-smarter-not-harder-ai-powered-dev-hacks-for-all/",
+    "name": "Spring I/O 2025",
+    "startDate": "May 22, 2025",
+    "endDate": "May 23, 2025",
+    "location": "Barcelona, Spain",
+    "description": "In today’s fast-paced software development landscape, AI has become a powerful tool for boosting developer productivity. This talk breaks down AI’s practical role in coding through real-world examples and live demonstrations, making it accessible for developers at any skill level. We’ll explore how AI enhances everything from code completion and bug detection to automated refactoring and test generation, showing you practical ways to streamline your workflow."
+  },
+  {
     "title": "Code Smarter, Not Harder: AI-Powered Dev Hacks for All",
     "url": "https://blog.jetbrains.com/idea/2025/04/new-livestream-code-smarter-not-harder-ai-powered-dev-hacks-for-all/",
     "name": "IntelliJ IDEA Livestream",
