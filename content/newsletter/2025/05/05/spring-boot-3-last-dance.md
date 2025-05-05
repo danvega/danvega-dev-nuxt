@@ -12,9 +12,7 @@ One off the presentations I'm giving tomorrow is a "State of Spring" where we wi
 
 I also had some time to think about a lot of my favorite features in the 3.x line and decided to submit a talk about it for [SpringOne](https://www.vmware.com/explore/us/springone). I ended up submitting [8 different talks](https://github.com/danvega/abstracts/blob/main/spring-one-2025.md) on a variety of subjects so fingers 🤞🏻 crossed that one of them get selected.
 
-There are a lot of really great AI powered tools for developers on the market today. In today's edition of the newsletter I will continue my exploration of them by introducing you to Windsurf. I also want to share a conversation I had with Eddú Meléndez over at Docker on Testcontainers and Docker Model Runner. Finally I'll share a presentation I did at JavaOne and some big conference news!
-
-TODO: ADD SPONSOR
+There are a lot of really great AI powered tools for developers on the market today. In today's edition of the newsletter I will continue my exploration of them by introducing you to Windsurf. I also want to share a conversation I had with Eddú Meléndez over at Docker on Testcontainers and Docker Model Runner. Finally, I'll share a presentation I did at JavaOne and some big conference news!
 
 ## Windsurf: The Agentic Code Editor
 
