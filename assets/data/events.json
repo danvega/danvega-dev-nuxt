@@ -1,6 +1,51 @@
 [
   {
-    "title": "The March towards Spring Boot 4 has begun - A look back at Spring Boot 3\n",
+    "title": "Beyond REST: Crafting a Modern GraphQL API Live",
+    "url": "https://www.dev2next.com/",
+    "name": "dev2Next",
+    "startDate": "Sep 29, 2025",
+    "endDate": "Oct 2, 2025",
+    "location": "Colorado Springs, CO",
+    "description": "Review Summary: I like the other GraphQL talk, but this one seems like it might get more into the implementation. Great fit, very good presenter, nice way to deliver."
+  },
+  {
+    "title": "Integrating LLMs in Java: A Practical Guide to Model Context Protocol",
+    "url": "https://www.dev2next.com/",
+    "name": "dev2Next",
+    "startDate": "Sep 29, 2025",
+    "endDate": "Oct 2, 2025",
+    "location": "Colorado Springs, CO",
+    "description": "Review Summary: Very useful topic, current trends, and will draw Java programmers. MCP is a super hot topic (faulty but popular) and Dan is a great speaker. This session will attract a lot of attendees. Relevant topic. Might also be interesting for Arc of AI."
+  },
+  {
+    "title": "Practical AI Integration with Java: A Hands-On Workshop",
+    "url": "https://www.dev2next.com/",
+    "name": "dev2Next",
+    "startDate": "Sep 29, 2025",
+    "endDate": "Oct 2, 2025",
+    "location": "Colorado Springs, CO",
+    "description": "Review Summary: This topic will draw interest. Very good presenter, will keep the attendees engaged throughout the day. The topic walks through the details necessary quite well. This sounds like an awesome workshop that is 100% applicable to our audience. Many people will attend this workshop. And Dan is an excellent presenter. Solid Agenda. I really like the workshop, but I fear we are adding too much AI into Dev2Next. I would recommend this but weigh it against other non-AI workshop entries first."
+  },
+  {
+    "title": "Fundamentals of Software Engineering In the age of AI",
+    "url": "https://www.dev2next.com/",
+    "name": "dev2Next",
+    "startDate": "Sep 29, 2025",
+    "endDate": "Oct 2, 2025",
+    "location": "Colorado Springs, CO",
+    "description": "Review Summary: The approach seems more holistic, good speakers. Amen! Good topic. Highly relevant both from the point of view of the main focus of this conference and also the current trends. Two engaging speakers and two highly relevant topics."
+  },
+  {
+    "title": "Building AI-Enabled Spring Applications with Model Context Protocol (MCP)",
+    "url": "https://www.commityourcode.com/",
+    "name": "Commit Your Code",
+    "startDate": "Sep 25, 2025",
+    "endDate": "Sep 26, 2025",
+    "location": "Dallas, TX",
+    "description": "As Large Language Models (LLMs) revolutionize application development, Java/Spring developers face a critical challenge: how to securely and efficiently connect these AI models with enterprise data and tools. The Model Context Protocol (MCP) offers a practical solution by providing a standardized approach for integrating AI capabilities into Spring applications while maintaining enterprise-grade security and scalability."
+  },
+  {
+    "title": "The March towards Spring Boot 4 has begun - A look back at Spring Boot 3",
     "url": "https://www.kcdc.info/",
     "name": "KCDC 2025",
     "startDate": "Aug 14, 2025",
