@@ -1,6 +1,6 @@
 ---
 title: Spring I/O 2025 Recap, Spring Boot 3.5 and Spring AI hits 1.0 GA
-slug: spring-i-o-2025-recap-spring-boot-3-5-and-spring-ai-hits-1-0-ga
+slug: spring-io-2025-recap
 date: 2025-05-27T00:00:00.000Z
 ---
 
