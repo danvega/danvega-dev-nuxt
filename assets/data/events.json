@@ -1,5 +1,14 @@
 [
   {
+    "title": "Groovy AI: Spring into the Future of Intelligent Applications",
+    "url": "https://communityovercode.org/",
+    "name": "Community over Code",
+    "startDate": "Sep 11, 2025",
+    "endDate": "Sep 14, 2025",
+    "location": "Minneapolis, MN",
+    "description": "Want to add AI to your applications but not sure where to start? This session is for Groovy developers ready to explore the exciting world of artificial intelligence. We'll show you how your Groovy skills transfer perfectly to AI development using Spring AI."
+  },
+  {
     "title": "Beyond REST: Crafting a Modern GraphQL API Live",
     "url": "https://www.dev2next.com/",
     "name": "dev2Next",
