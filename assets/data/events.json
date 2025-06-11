@@ -15,7 +15,7 @@
     "startDate": "Sep 29, 2025",
     "endDate": "Oct 2, 2025",
     "location": "Colorado Springs, CO",
-    "description": "Review Summary: I like the other GraphQL talk, but this one seems like it might get more into the implementation. Great fit, very good presenter, nice way to deliver."
+    "description": "Skip the slides and dive straight into code as we build a full-featured GraphQL API from scratch using Spring Boot. Through live coding, we'll implement essential features including schema-first design, batch loading optimization, virtual threads, and query-by-example filtering. You'll see firsthand how GraphQL solves common REST challenges like over-fetching and endpoint proliferation. By the end, you'll understand not just the basics of GraphQL, but also production-ready patterns for scalability and performance. Perfect for developers looking to modernize their API architecture with practical, battle-tested approaches."
   },
   {
     "title": "Integrating LLMs in Java: A Practical Guide to Model Context Protocol",
@@ -24,7 +24,7 @@
     "startDate": "Sep 29, 2025",
     "endDate": "Oct 2, 2025",
     "location": "Colorado Springs, CO",
-    "description": "Review Summary: Very useful topic, current trends, and will draw Java programmers. MCP is a super hot topic (faulty but popular) and Dan is a great speaker. This session will attract a lot of attendees. Relevant topic. Might also be interesting for Arc of AI."
+    "description": "As Large Language Models (LLMs) revolutionize application development, Java developers face a critical challenge: how to securely and efficiently connect these AI models with enterprise data and tools. The Model Context Protocol (MCP) offers a practical solution by providing a standardized approach for integrating AI capabilities into Java applications while maintaining enterprise-grade security and scalability.\nThrough live coding demonstrations, we'll explore how to leverage Java's MCP implementation to build powerful AI-enabled applications. Starting with basic setup and configuration, we'll progress to building custom MCP servers using Java and create practical features that combine the power of LLMs with Java's robust ecosystem. You'll see firsthand how to connect your Java applications to Claude Desktop and other AI tools while maintaining control over your data and infrastructure.\nAttendees will leave this session with everything needed to start implementing MCP in their Java projects: working code examples, best practices for secure AI integration, patterns for building custom MCP servers, and practical strategies for "
   },
   {
     "title": "Practical AI Integration with Java: A Hands-On Workshop",
@@ -33,7 +33,7 @@
     "startDate": "Sep 29, 2025",
     "endDate": "Oct 2, 2025",
     "location": "Colorado Springs, CO",
-    "description": "Review Summary: This topic will draw interest. Very good presenter, will keep the attendees engaged throughout the day. The topic walks through the details necessary quite well. This sounds like an awesome workshop that is 100% applicable to our audience. Many people will attend this workshop. And Dan is an excellent presenter. Solid Agenda. I really like the workshop, but I fear we are adding too much AI into Dev2Next. I would recommend this but weigh it against other non-AI workshop entries first."
+    "description": "In today's tech landscape, incorporating AI capabilities has become essential for modern applications. This comprehensive 8-hour workshop equips Java developers with practical skills needed to implement powerful AI features in their applications. Through a combination of theory and hands-on coding, you'll learn to build sophisticated AI integrations using familiar Java paradigms.\n\nStarting with foundational concepts, we'll progress to implementing specific AI capabilities including natural language processing, computer vision, and interactive chatbots. The workshop explores advanced techniques such as Retrieval-Augmented Generation (RAG) for enhanced context awareness, and the Model Context Protocol (MCP) for effective AI orchestration. Using Spring AI's powerful abstractions, you'll learn how to write model-agnostic code that works seamlessly with both cloud-based and local AI models, giving you the flexibility to choose the right solution for your specific needs.\n\nThrough guided exercises, you'll gain hands-on experience with setting up AI development environments, integrating various AI capabilities into your applications, and building intelligent features that can process text, images, and audio using both local and cloud-based models."
   },
   {
     "title": "Fundamentals of Software Engineering In the age of AI (Keynote)",
@@ -42,7 +42,7 @@
     "startDate": "Sep 29, 2025",
     "endDate": "Oct 2, 2025",
     "location": "Colorado Springs, CO",
-    "description": "Review Summary: The approach seems more holistic, good speakers. Amen! Good topic. Highly relevant both from the point of view of the main focus of this conference and also the current trends. Two engaging speakers and two highly relevant topics."
+    "description": "Agentic coding assistants and editor based AI chat interfaces are altering the development workflow leading some to proclaim the end of software engineering. Is it time to explore other careers? Not so fast, the rumors of our demise are greatly exaggerated! While these tools can boost productivity, to be used effectively, developers still need to master the fundamentals of the software craft. Modern software development demands more than just coding proficiency—it requires navigating an increasingly AI-augmented landscape."
   },
   {
     "title": "Building AI-Enabled Spring Applications with Model Context Protocol (MCP)",
