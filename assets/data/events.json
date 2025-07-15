@@ -1,5 +1,23 @@
 [
   {
+    "title": "Beyond REST: Crafting a Modern GraphQL API Live",
+    "url": "https://event.vmware.com/flow/vmware/explore2025lv/content/page/catalog",
+    "name": "VMware Explore 2025",
+    "startDate": "Aug 25, 2025",
+    "endDate": "Aug 28, 2025",
+    "location": "Las Vegas, NV",
+    "description": "Skip the slides and dive into code as we build a GraphQL API using Spring Boot. Through live coding, we will implement schema-first design, batch loading optimization, and query filtering. Come see how GraphQL solves common REST challenges like over-fetching and endpoint proliferation. We will explore the latest features from Spring for GraphQL, showcasing recent advancements in the framework. At the end, you will understand not just GraphQL basics, but production-ready patterns for scalability and performance. Perfect for developers looking to modernize their API architecture with practical, battle-tested approaches."
+  },
+  {
+    "title": "Spring into MCP",
+    "url": "https://event.vmware.com/flow/vmware/explore2025lv/content/page/catalog",
+    "name": "VMware Explore 2025",
+    "startDate": "Aug 25, 2025",
+    "endDate": "Aug 28, 2025",
+    "location": "Las Vegas, NV",
+    "description": "As large language models transform application development, Spring developers need standardized approaches to connect AI models with external systems. The Model Context Protocol (MCP) provides this standardization for integrating AI capabilities into Spring applications. We will demonstrate how to leverage the official Java software development kit (SDK) for MCP (donated by the Spring team) through live coding examples. Starting with basic configuration using Spring's programming model, we will build custom MCP servers as Spring components and show how to connect Spring applications to various MCP clients. Attendees will learn what the MCP is and how to begin creating their own MCP clients and servers. You will gain practical insights to immediately improve your Spring-based AI development workflow."
+  },
+  {
     "title": "Groovy AI: Spring into the Future of Intelligent Applications",
     "url": "https://communityovercode.org/",
     "name": "Community over Code",
