@@ -10,11 +10,11 @@ useHead({
 
 const courses : Course[] = [
   {
-    slug: 'free-code-camp-spring-boot',
-    title: 'Building Web Applications with Spring Boot (FreeCodeCamp)',
-    description: 'The course is designed to guide beginners through the nuances of web application development using Spring Boot 3, the cornerstone framework for Java applications. It\'s a blend of theory and practical application, where you start from the grassroots and ascend to creating sophisticated web applications.',
-    link: 'https://youtu.be/31KTdfRH6nY',
-    cover: 'fcc_javaspringboot.png'
+    slug: 'ai-for-java-developers',
+    title: 'AI for Java Developers: Full Course / Workshop on Getting Started with Spring AI',
+    description: 'Every Java Developer is now an AI Developer. Transform your Java skills for the AI era with this comprehensive 5.5-hour Spring AI masterclass!',
+    link: 'https://www.youtube.com/watch?v=FzLABAppJfM',
+    cover: 'ai_for_java_developers.png'
   },
   {
     slug: 'spring-boot-3-tutorial',
@@ -22,6 +22,13 @@ const courses : Course[] = [
     description: 'Welcome to this Spring Boot Crash Course! In this video, you\'ll gain the foundational knowledge of Spring Boot and how to hit the ground running with the Spring Framework. We\'ll discuss key concepts of the Spring Framework such as Beans, Application Context, Inversion of Control, Dependency Injection, and more.',
     link: 'https://youtu.be/UgX5lgv4uVM',
     cover: 'spring_boot_3.jpeg'
+  },
+  {
+    slug: 'free-code-camp-spring-boot',
+    title: 'Building Web Applications with Spring Boot (FreeCodeCamp)',
+    description: 'The course is designed to guide beginners through the nuances of web application development using Spring Boot 3, the cornerstone framework for Java applications. It\'s a blend of theory and practical application, where you start from the grassroots and ascend to creating sophisticated web applications.',
+    link: 'https://youtu.be/31KTdfRH6nY',
+    cover: 'fcc_javaspringboot.png'
   },
   {
     slug: 'java-getting-started',
