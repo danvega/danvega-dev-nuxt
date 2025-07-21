@@ -1,6 +1,6 @@
 ---
 title: "From Vacation Brain to Workflow Gains: Two AI Tools Worth Your Time"
-slug: "from-vacation-brain-to-workflow-gains-two-ai-tools-worth-your-time"
+slug: "from-vacation-brain-to-workflow-gains"
 date: "2025-07-21"
 description: "Happy Monday and welcome to another edition of the newsletter. I'm back after a nice vacation to Hilton Head with the family and feeling refreshed. I spent some time last week cleaning up Notion which is a tool that I use to track everything I do."
 tags: ["AI", "Claude Code", "MCP", "Spring Boot", "Spring AI"]
