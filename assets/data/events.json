@@ -1,5 +1,23 @@
 [
   {
+    "title": "My Favorite Spring Boot 3 Features (And First Look at 4)",
+    "url": "https://www.kcdc.info/sessions",
+    "name": "KCDC 2025",
+    "startDate": "Aug 14, 2025",
+    "endDate": "Aug 15, 2025",
+    "location": "Kansas City, MO",
+    "description": "Remember when virtual threads were just a dream? When native images felt impossible? When observability meant drowning in logging frameworks? Spring Boot 3 didn't just deliver on these promises it transformed how we build Java applications. Join me for a developer's journey as I explore my favorite features in Spring Boot 3.x."
+  },
+  {
+    "title": "Spring into MCP: Model Context Protocol for Java Developers",
+    "url": "https://www.kcdc.info/sessions/",
+    "name": "KCDC 2025",
+    "startDate": "Aug 14, 2025",
+    "endDate": "Aug 15, 2025",
+    "location": "Kansas City, MO",
+    "description": "You reach for your favorite AI tool, give it a prompt and don't get the answer you're looking for. Sound familiar? LLMs struggle with hallucinations, stale data, and accessing your actual business context. The Model Context Protocol (MCP) changes everything by letting you connect AI models directly to real-time data sources, APIs, and business logic. In this session, we'll explore how to build production-ready MCP servers using Spring Boot and the official Java MCP SDK, generously donated by the Spring team to the open source community."
+  },
+  {
     "title": "Beyond REST: Crafting a Modern GraphQL API Live",
     "url": "https://event.vmware.com/flow/vmware/explore2025lv/content/page/catalog",
     "name": "VMware Explore 2025",
@@ -69,24 +87,6 @@
     "startDate": "Sep 25, 2025",
     "endDate": "Sep 26, 2025",
     "location": "Dallas, TX",
-    "description": "As Large Language Models (LLMs) revolutionize application development, Java/Spring developers face a critical challenge: how to securely and efficiently connect these AI models with enterprise data and tools. The Model Context Protocol (MCP) offers a practical solution by providing a standardized approach for integrating AI capabilities into Spring applications while maintaining enterprise-grade security and scalability."
-  },
-  {
-    "title": "The March towards Spring Boot 4 has begun - A look back at Spring Boot 3",
-    "url": "https://www.kcdc.info/",
-    "name": "KCDC 2025",
-    "startDate": "Aug 14, 2025",
-    "endDate": "Aug 15, 2025",
-    "location": "Kansas City, MO",
-    "description": "As we march towards Spring Boot 4, let's examine how Spring Boot 3 transformed enterprise Java development through foundational upgrades, developer empowerment, and operational excellence. From embracing Java 17 to enhancing cloud-native capabilities, Spring Boot 3 set new standards for building modern enterprise applications."
-  },
-  {
-    "title": "Building AI-Enabled Spring Applications with Model Context Protocol (MCP)",
-    "url": "https://www.kcdc.info/",
-    "name": "KCDC 2025",
-    "startDate": "Aug 14, 2025",
-    "endDate": "Aug 15, 2025",
-    "location": "Kansas City, MO",
     "description": "As Large Language Models (LLMs) revolutionize application development, Java/Spring developers face a critical challenge: how to securely and efficiently connect these AI models with enterprise data and tools. The Model Context Protocol (MCP) offers a practical solution by providing a standardized approach for integrating AI capabilities into Spring applications while maintaining enterprise-grade security and scalability."
   },
   {
