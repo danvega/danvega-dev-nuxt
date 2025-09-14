@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-feedme',
     '@vueuse/nuxt',
-    'nuxt-simple-sitemap',
+    '@nuxtjs/sitemap',
     '@nuxt/image'
   ],
   // Thank You, Debbie - https://debbie.codes/blog/nuxt-lite-youtube-embeds/
@@ -155,7 +155,6 @@ export default defineNuxtConfig({
     }
   },
   sitemap: {
-    strictNuxtContentPaths: true,
     xsl: false,
 
   },
