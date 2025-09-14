@@ -21,16 +21,18 @@ const searchTag = computed(() =>
     Array.isArray(route.query.tag) ? route.query.tag[0] : route.query.tag
 );
 
-// Get the count first
-const articlesCount = await queryContent('blog')
+// Get the count and posts with reactive data fetching
+const { data: articlesCount } = await useAsyncData('blog-count', () =>
+  queryContent('blog')
     .where({
       published: true,
       ...(searchTag.value ? { tags: { $contains: searchTag.value } } : {})
     })
-    .count();
+    .count()
+);
 
-// Then get the paginated posts
-const posts = await queryContent('blog')
+const { data: posts } = await useAsyncData('blog-posts', () =>
+  queryContent('blog')
     .where({
       published: true,
       ...(searchTag.value ? { tags: { $contains: searchTag.value } } : {})
@@ -38,9 +40,10 @@ const posts = await queryContent('blog')
     .skip(limit.value * (page.value - 1))
     .limit(limit.value)
     .sort({ date: -1 })
-    .find();
+    .find()
+);
 
-if(posts.length === 0 && searchTag.value) {
+if(posts.value?.length === 0 && searchTag.value) {
   throw createError({
     statusCode: 404,
     statusMessage: `No blog posts found for tag: ${searchTag.value}`
@@ -82,7 +85,7 @@ if(posts.length === 0 && searchTag.value) {
             <BlogCard :post="post"/>
           </article>
           <SimplePagination
-              v-if="posts.length > 0"
+              v-if="posts?.length > 0"
               :limit="limit"
               :page="page"
               :count="articlesCount"

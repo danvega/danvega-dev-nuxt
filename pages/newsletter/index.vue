@@ -9,11 +9,13 @@ useHead({
   ]
 });
 
-const news = await queryContent('newsletter')
+const { data: news } = await useAsyncData('newsletter-posts', () =>
+  queryContent('newsletter')
     .where({draft: {$ne: true}})
     .limit(5)
     .sort({ date: -1 })
-    .find();
+    .find()
+);
 
 const formatDatePublished = (date: string) => {
   const formatted = useDateFormat(date, "MMMM D, YYYY");

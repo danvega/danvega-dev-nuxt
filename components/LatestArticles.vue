@@ -3,11 +3,13 @@ import {useDateFormat} from "@vueuse/core/index";
 import {useGetSlugFromPath} from "~/composables/pathUtils";
 
 const { getSlugFromPath } = useGetSlugFromPath();
-const articles = await queryContent('blog')
+const { data: articles } = await useAsyncData('latest-articles', () =>
+  queryContent('blog')
     .where( { draft: {$ne: true} })
     .sort({ date: -1 })
     .limit(3)
-    .find();
+    .find()
+);
 
 const formatDatePublished = (date) => {
   const formatted = useDateFormat(date, "MMMM D, YYYY");

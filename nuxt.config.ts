@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2025-09-14',
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
@@ -149,9 +150,9 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    provider: 'netlify',
+    provider: process.env.NODE_ENV === 'production' ? 'netlify' : 'ipx',
     netlify: {
-      baseURl: process.env.IMAGES_URL
+      baseURL: process.env.IMAGES_URL
     }
   },
   sitemap: {
