@@ -23,16 +23,20 @@ const searchTag = computed(() =>
 
 // Get the count and posts with reactive data fetching
 const { data: articlesCount } = await useAsyncData('blog-count', () =>
-  queryContent('blog')
+  queryCollection('content')
+    .where('path', 'LIKE', '/blog%')
+    .where('published', true)
     .count()
 );
 
 const { data: posts } = await useAsyncData('blog-posts', () =>
-  queryContent('blog')
+  queryCollection('content')
+    .where('path', 'LIKE', '/blog%')
+    .where('published', true)
     .skip(limit.value * (page.value - 1))
     .limit(limit.value)
-    .sort({ date: -1 })
-    .find()
+    .orderBy('date', 'desc')
+    .all()
 );
 
 if(posts.value?.length === 0 && searchTag.value) {

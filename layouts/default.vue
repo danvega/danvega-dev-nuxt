@@ -18,10 +18,13 @@ function useIsHome(route: any) {
   return isHome;
 }
 
-const { data } = await useAsyncData('searchBlogPosts', () => queryContent('blog')
+const { data } = await useAsyncData('searchBlogPosts', () =>
+  queryContent('/blog')
+    .where({ published: true })
     .sort({ date: -1 })
-    .only(['id','title','_path'])
-    .find())
+    .only(['title', '_path'])
+    .find()
+)
 
 
 const isSearchDialogOpen = ref(false);

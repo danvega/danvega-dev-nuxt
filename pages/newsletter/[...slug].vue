@@ -9,9 +9,9 @@ if (path) {
 }
 
 const { data } = await useAsyncData(`content-${path}`, () => {
-  return queryContent()
-      .where({ slug } )
-      .findOne()
+  return queryContent('/newsletter')
+      .where({ slug })
+      .first()
 })
 
 if(data.value == null) {

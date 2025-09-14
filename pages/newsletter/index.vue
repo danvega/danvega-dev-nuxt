@@ -10,9 +10,9 @@ useHead({
 });
 
 const { data: news } = await useAsyncData('newsletter-posts', () =>
-  queryContent('newsletter')
-    .limit(5)
+  queryContent('/newsletter')
     .sort({ date: -1 })
+    .limit(5)
     .find()
 );
 

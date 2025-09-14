@@ -4,9 +4,9 @@ import { useDateFormat } from '@vueuse/core'
 const { path } = useRoute();
 const slug = getSlugFromPath(path);
 const { data } = await useAsyncData(`content-${path}`, () => {
-  return queryContent()
-      .where({ slug: slug, published: true })
-      .findOne()
+  return queryContent('/blog')
+      .where({ slug, published: true })
+      .first()
 })
 
 if(data.value == null) {
