@@ -24,19 +24,11 @@ const searchTag = computed(() =>
 // Get the count and posts with reactive data fetching
 const { data: articlesCount } = await useAsyncData('blog-count', () =>
   queryContent('blog')
-    .where({
-      published: true,
-      ...(searchTag.value ? { tags: { $contains: searchTag.value } } : {})
-    })
     .count()
 );
 
 const { data: posts } = await useAsyncData('blog-posts', () =>
   queryContent('blog')
-    .where({
-      published: true,
-      ...(searchTag.value ? { tags: { $contains: searchTag.value } } : {})
-    })
     .skip(limit.value * (page.value - 1))
     .limit(limit.value)
     .sort({ date: -1 })

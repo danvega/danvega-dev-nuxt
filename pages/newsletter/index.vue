@@ -11,7 +11,6 @@ useHead({
 
 const { data: news } = await useAsyncData('newsletter-posts', () =>
   queryContent('newsletter')
-    .where({draft: {$ne: true}})
     .limit(5)
     .sort({ date: -1 })
     .find()

@@ -5,7 +5,6 @@ import {useGetSlugFromPath} from "~/composables/pathUtils";
 const { getSlugFromPath } = useGetSlugFromPath();
 const { data: articles } = await useAsyncData('latest-articles', () =>
   queryContent('blog')
-    .where( { draft: {$ne: true} })
     .sort({ date: -1 })
     .limit(3)
     .find()
