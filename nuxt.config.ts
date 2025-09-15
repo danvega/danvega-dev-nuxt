@@ -52,7 +52,7 @@ export default defineNuxtConfig({
     '/courses': { prerender: true },
     '/uses': { prerender: true },
     '/contact': { redirect: '/about' },
-    '/api/photos': { isr: true, headers: { 'cache-control': 's-maxage=86400' } }
+    '/api/photos': { headers: { 'cache-control': 'public, max-age=86400, s-maxage=86400' } }
   },
   app: {
     head: {
@@ -162,7 +162,15 @@ export default defineNuxtConfig({
     domains: ['danvega.dev', 'www.danvega.dev']
   },
   nitro: {
-    serveStatic: true
+    serveStatic: true,
+    // Optimize for serverless deployment
+    preset: 'netlify',
+    // Improve cold start performance
+    minify: true,
+    // Optimize function bundle size
+    experimental: {
+      wasm: false
+    }
   },
   sitemap: {
     xsl: false

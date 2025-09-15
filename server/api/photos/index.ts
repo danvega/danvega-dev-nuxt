@@ -1,8 +1,24 @@
 // server/api/photos.ts
 
-import { defineEventHandler, setHeaders } from 'h3'
+import { defineEventHandler, setHeaders, createError } from 'h3'
+
+// Add timeout protection
+const TIMEOUT_MS = 5000; // 5 second timeout
 
 export default defineEventHandler(async (event) => {
+    // Wrap in timeout protection
+    return Promise.race([
+        processPhotosRequest(event),
+        new Promise((_, reject) =>
+            setTimeout(() => reject(createError({
+                statusCode: 504,
+                statusMessage: 'Request timeout'
+            })), TIMEOUT_MS)
+        )
+    ]);
+});
+
+async function processPhotosRequest(event: any) {
     // Static list of photos for serverless compatibility
     const photoFilenames = [
         'confoo_2025_01.jpg',
@@ -46,11 +62,12 @@ export default defineEventHandler(async (event) => {
     ];
 
     try {
-        // Set cache headers for browser and CDN caching (24 hours)
+        // Set optimized cache headers for browser and CDN caching (24 hours)
         setHeaders(event, {
-            'Cache-Control': 'public, max-age=86400, s-maxage=86400',
-            'ETag': `"photos-v1-${photoFilenames.length}"`,
-            'Last-Modified': new Date('2024-11-12').toUTCString()
+            'Cache-Control': 'public, max-age=86400, s-maxage=86400, stale-while-revalidate=3600',
+            'ETag': `"photos-v2-${photoFilenames.length}"`,
+            'Last-Modified': new Date('2024-11-12').toUTCString(),
+            'Content-Type': 'application/json'
         });
 
         const photos = photoFilenames.map((filename, index) => ({
@@ -65,7 +82,15 @@ export default defineEventHandler(async (event) => {
         return photos;
     } catch (error) {
         console.error('Error in photos API:', error);
-        event.node.res.statusCode = 500;
-        return { error: 'Failed to load photos', details: error instanceof Error ? error.message : String(error) };
+
+        // Return a proper error response
+        throw createError({
+            statusCode: 500,
+            statusMessage: 'Failed to load photos',
+            data: {
+                error: 'Internal Server Error',
+                timestamp: new Date().toISOString()
+            }
+        });
     }
-});
+}
