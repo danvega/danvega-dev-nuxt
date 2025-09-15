@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
   publish = ".output/public"
+  # Retry deployment after internal Netlify error
 
 [build.environment]
   NODE_VERSION = "20"
