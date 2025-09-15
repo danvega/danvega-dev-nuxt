@@ -51,8 +51,7 @@ export default defineNuxtConfig({
     '/speaking': { prerender: true },
     '/courses': { prerender: true },
     '/uses': { prerender: true },
-    '/contact': { redirect: '/about' },
-    '/api/photos': { headers: { 'cache-control': 'public, max-age=86400, s-maxage=86400' } }
+    '/contact': { redirect: '/about' }
   },
   app: {
     head: {
@@ -170,12 +169,6 @@ export default defineNuxtConfig({
     // Optimize function bundle size
     experimental: {
       wasm: false
-    },
-    // Function timeout configuration
-    netlify: {
-      functions: {
-        timeout: 26
-      }
     }
   },
   sitemap: {
