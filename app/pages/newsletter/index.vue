@@ -9,9 +9,9 @@ useHead({
   ]
 });
 
-// Use enhanced newsletter data fetching
-const { useAllNewsletterPosts } = useNewsletterData()
-const { data: news } = await useAllNewsletterPosts()
+// Use enhanced newsletter data fetching with limit of 10
+const { useLatestNewsletterPosts } = useNewsletterData()
+const { data: news } = await useLatestNewsletterPosts(10)
 
 const extractDateFromPath = (path: string) => {
   const match = path?.match(/\/newsletter\/(\d{4})\/(\d{2})\/(\d{2})\//)

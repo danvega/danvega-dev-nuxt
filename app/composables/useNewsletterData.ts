@@ -8,9 +8,21 @@ export const useNewsletterData = () => {
         const allPosts = await queryCollection('content').all()
 
         return allPosts.filter(post =>
-          post.path?.startsWith('/newsletter') &&
-          post.meta?.published === true
-        ).sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
+          post.path?.startsWith('/newsletter')
+        ).sort((a, b) => {
+          // Extract date from path: /newsletter/YYYY/MM/DD/slug for sorting
+          const extractDateFromPath = (path) => {
+            const match = path?.match(/\/newsletter\/(\d{4})\/(\d{2})\/(\d{2})\//)
+            if (match) {
+              return new Date(`${match[1]}-${match[2]}-${match[3]}`)
+            }
+            return new Date(0) // fallback to epoch
+          }
+
+          const dateA = extractDateFromPath(a.path)
+          const dateB = extractDateFromPath(b.path)
+          return dateB - dateA // newest first
+        })
       } catch (err) {
         console.error('Error fetching newsletter posts:', err)
         return []
@@ -19,6 +31,26 @@ export const useNewsletterData = () => {
       default: () => [],
       server: true,
       // Enhanced caching - let Nuxt handle automatically
+    })
+  }
+
+  // Latest newsletter posts with limit
+  const useLatestNewsletterPosts = (limit: number = 10) => {
+    const limitRef = ref(limit)
+
+    return useAsyncData(() => `latest-newsletter-posts-${limitRef.value}`, async () => {
+      try {
+        const { data: allPosts } = await useAllNewsletterPosts()
+        return allPosts.value?.slice(0, limitRef.value) || []
+      } catch (err) {
+        console.error('Error fetching latest newsletter posts:', err)
+        return []
+      }
+    }, {
+      default: () => [],
+      server: true,
+      // Reactive key - will refetch when limit changes
+      watch: [limitRef]
     })
   }
 
@@ -51,6 +83,7 @@ export const useNewsletterData = () => {
 
   return {
     useAllNewsletterPosts,
+    useLatestNewsletterPosts,
     useNewsletterPost
   }
 }
