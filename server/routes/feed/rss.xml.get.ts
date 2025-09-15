@@ -7,22 +7,12 @@ export default defineEventHandler(async (event) => {
     // Get blog posts from pre-generated data
     let posts: any[] = []
     try {
-      // Primary: Try to import the generated RSS data
-      const { rssData } = await import('../api/_rss-data')
+      // Import the generated RSS data
+      const { rssData } = await import('../../api/feed/data')
       posts = rssData.slice(0, 20)
     } catch (importError) {
-      // Fallback: try JSON file if TypeScript import fails
-      try {
-        const { readFile } = await import('fs/promises')
-        const { join } = await import('path')
-        const rssDataPath = join(process.cwd(), '.nuxt/rss-data.json')
-        const rssDataContent = await readFile(rssDataPath, 'utf8')
-        const allPosts = JSON.parse(rssDataContent)
-        posts = allPosts.slice(0, 20)
-      } catch (jsonError) {
-        // Final fallback: empty array
-        posts = []
-      }
+      // Fallback: empty array if data can't be loaded
+      posts = []
     }
 
     // Function to escape XML characters
@@ -54,7 +44,7 @@ export default defineEventHandler(async (event) => {
       <link>${postUrl}</link>
       <guid>${postUrl}</guid>
       <pubDate>${pubDate}</pubDate>
-      <author>hello@danvega.dev (${escapeXml(post.author || 'Dan Vega')})</author>
+      <author>danvega@gmail.com (${escapeXml(post.author || 'Dan Vega')})</author>
 ${categories}
     </item>`
     }).join('\n') : `    <item>
@@ -63,7 +53,7 @@ ${categories}
       <link>${baseUrl}/blog</link>
       <guid>${baseUrl}/blog</guid>
       <pubDate>${new Date().toUTCString()}</pubDate>
-      <author>hello@danvega.dev (Dan Vega)</author>
+      <author>danvega@gmail.com (Dan Vega)</author>
     </item>`
 
     const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -75,8 +65,8 @@ ${categories}
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <managingEditor>hello@danvega.dev (Dan Vega)</managingEditor>
-    <webMaster>hello@danvega.dev (Dan Vega)</webMaster>
+    <managingEditor>danvega@gmail.com (Dan Vega)</managingEditor>
+    <webMaster>danvega@gmail.com (Dan Vega)</webMaster>
 ${rssItems}
   </channel>
 </rss>`
@@ -97,6 +87,8 @@ ${rssItems}
     <description>Personal site of Dan Vega</description>
     <link>${baseUrl}</link>
     <language>en-us</language>
+    <managingEditor>danvega@gmail.com (Dan Vega)</managingEditor>
+    <webMaster>danvega@gmail.com (Dan Vega)</webMaster>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <item>
       <title>Dan Vega's Blog</title>
@@ -104,6 +96,7 @@ ${rssItems}
       <link>${baseUrl}/blog</link>
       <guid>${baseUrl}/blog</guid>
       <pubDate>${new Date().toUTCString()}</pubDate>
+      <author>danvega@gmail.com (Dan Vega)</author>
     </item>
   </channel>
 </rss>`
