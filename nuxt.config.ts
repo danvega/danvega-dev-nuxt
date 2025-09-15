@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/content',
-    'nuxt-feedme',
     '@vueuse/nuxt',
     '@nuxtjs/sitemap',
     '@nuxt/image'
@@ -104,58 +103,6 @@ export default defineNuxtConfig({
               }
           }
       }
-  },
-  feedme: {
-    feeds: {
-      '/feed.atom': { content: true },
-      '/feed.json': { content: true },
-      '/feed.xml': { content: true },
-      '/rss.xml': { revisit: '1h', type: 'rss2', content: true },
-    },
-    content: {
-      feed: {
-        defaults: {
-          title: 'Dan Vega',
-          description: 'Personal site of Dan Vega',
-          copyright: '2024 by Dan Vega',
-          language: 'en',
-          link: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.danvega.dev',
-          id: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.danvega.dev',
-          author: { email: 'danvega@gmail.com', name: 'Dan Vega' },
-          feedLinks: {
-            rss: `${process.env.NUXT_PUBLIC_SITE_URL || 'https://www.danvega.dev'}/feed.xml`,
-            json: `${process.env.NUXT_PUBLIC_SITE_URL || 'https://www.danvega.dev'}/feed.json`,
-          },
-        },
-      },
-      item: {
-        defaults: {
-          author: [
-            { email: 'danvega@gmail.com', name: 'Dan Vega' },
-          ],
-        },
-        mapping: [
-          ['description', 'excerpt'],
-          ['link', '_path', (value: string) => {
-            if (value && value.startsWith('/blog/')) {
-              // Extract the slug from the path (the last part after the last slash)
-              const parts = value.split('/');
-              const slug = parts[parts.length - 1];
-              return `/blog/${slug}`;
-            }
-            return value;
-          }],
-          ['published', 'date', (value: string) => value ? new Date(value) : value],
-          ['guid', '_path'],
-        ],
-        query: {
-          limit: 300,
-          where: [
-            {_path: /^\/blog\/.*$/ }
-          ]
-        },
-      }
-    }
   },
   image: {
     provider: process.env.NODE_ENV === 'production' ? 'netlify' : 'ipx',
