@@ -9,33 +9,9 @@ useHead({
   ]
 });
 
-const { data: news } = await useAsyncData('newsletter-posts', async () => {
-  try {
-    // Get all content and filter newsletter posts
-    const allPosts = await queryCollection('content').all()
-    const newsletterPosts = allPosts
-      .filter(post => post.path?.startsWith('/newsletter'))
-      .sort((a, b) => {
-        // Extract date from path: /newsletter/YYYY/MM/DD/slug
-        const extractDateFromPath = (path) => {
-          const match = path.match(/\/newsletter\/(\d{4})\/(\d{2})\/(\d{2})\//)
-          if (match) {
-            return new Date(`${match[1]}-${match[2]}-${match[3]}`)
-          }
-          return new Date(0) // fallback to epoch
-        }
-
-        const dateA = extractDateFromPath(a.path)
-        const dateB = extractDateFromPath(b.path)
-        return dateB - dateA // newest first
-      })
-      .slice(0, 10)
-    return newsletterPosts
-  } catch (err) {
-    console.error('Error fetching newsletter posts:', err)
-    return []
-  }
-});
+// Use enhanced newsletter data fetching with limit of 10
+const { useLatestNewsletterPosts } = useNewsletterData()
+const { data: news } = await useLatestNewsletterPosts(10)
 
 const extractDateFromPath = (path: string) => {
   const match = path?.match(/\/newsletter\/(\d{4})\/(\d{2})\/(\d{2})\//)

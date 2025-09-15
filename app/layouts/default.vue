@@ -18,19 +18,17 @@ function useIsHome(route: any) {
   return isHome;
 }
 
-const { data } = await useAsyncData('searchBlogPosts', async () => {
-  try {
-    // Get all content and filter blog posts for search
-    const allPosts = await queryCollection('content').all()
-    const blogPosts = allPosts
-      .filter(post => post.path?.startsWith('/blog') && post.meta?.published === true)
-      .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
-      .map(post => ({ title: post.title, _path: post.path }))
-    return blogPosts
-  } catch (err) {
-    console.error('Error fetching search blog posts:', err)
-    return []
-  }
+// Use shared blog data for search functionality
+import type { SearchResult } from '~/types/content'
+
+const { useAllBlogPosts } = useBlogData()
+const { data: allBlogPosts } = await useAllBlogPosts()
+
+const searchData = computed((): SearchResult[] => {
+  return allBlogPosts.value?.map(post => ({
+    title: post.title,
+    _path: post.path || ''
+  })) || []
 })
 
 
@@ -41,7 +39,7 @@ function showSearchDialog() {
 </script>
 
 <template>
-  <SearchDialog :posts="data" :show-search-dialog="isSearchDialogOpen" @close-search-dialog="isSearchDialogOpen = false"/>
+  <SearchDialog :posts="searchData" :show-search-dialog="isSearchDialogOpen" @close-search-dialog="isSearchDialogOpen = false"/>
   <div class="flex h-full bg-zinc-50 dark:bg-black">
     <div class="flex w-full">
       <div class="fixed inset-0 flex justify-center sm:px-8">

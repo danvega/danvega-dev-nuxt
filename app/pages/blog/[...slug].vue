@@ -3,24 +3,10 @@ import { useDateFormat } from '@vueuse/core'
 
 const { path } = useRoute();
 const slug = getSlugFromPath(path);
-const { data } = await useAsyncData(`content-${path}`, async () => {
-  try {
-    // Get all content and find the matching post by slug
-    const allPosts = await queryCollection('content').all()
-    const post = allPosts.find(p => p.meta?.slug === slug && p.meta?.published === true)
-    return post
-  } catch (err) {
-    console.error('Error fetching blog post:', err)
-    return null
-  }
-})
 
-if(data.value == null) {
-  throw createError({
-    statusCode:404,
-    statusMessage: `No Blog post found for slug: ${path}`
-  })
-}
+// Use enhanced blog data fetching with automatic caching
+const { useBlogPost } = useBlogData()
+const { data } = await useBlogPost(slug)
 
 const datePublished = useDateFormat(data.value?.meta?.date, 'MMMM D, YYYY');
 useDateFormat(data.value?.meta?.updatedOn, 'MMMM D, YYYY');

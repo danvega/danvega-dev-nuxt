@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import events from "~/assets/data/events.json";
+import events from "../../../assets/data/events.json";
 
 useHead({
   title: 'Dan Vega - Speaking',

@@ -1,26 +1,9 @@
 <script  lang="ts" setup="">
 import {useDateFormat} from "@vueuse/core/index";
 
-const { data: articles, error } = await useAsyncData('latest-articles', async () => {
-  try {
-    const result = await queryCollection('content')
-      .all()
-
-    // Filter for blog posts only and sort by date, limit to 3
-    const blogPosts = result.filter(post =>
-      post.path?.startsWith('/blog') &&
-      post.meta?.published === true
-    ).sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date)).slice(0, 3)
-
-    return blogPosts
-  } catch (err) {
-    console.error('LatestArticles query error:', err)
-    return []
-  }
-}, {
-  default: () => [],
-  server: true
-});
+// Use enhanced data fetching with automatic data sharing and reactive keys
+const { useLatestArticles } = useBlogData()
+const { data: articles, error } = await useLatestArticles(3)
 
 const formatDatePublished = (date) => {
   const formatted = useDateFormat(date, "MMMM D, YYYY");

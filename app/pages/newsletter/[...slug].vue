@@ -3,40 +3,10 @@ import { useDateFormat } from '@vueuse/core'
 
 const { path } = useRoute();
 const slug = getSlugFromPath(path);
-const { data } = await useAsyncData(`content-${path}`, async () => {
-  try {
-    // Get all content and find the matching newsletter by slug
-    const allPosts = await queryCollection('content').all()
-    // First try to find with strict filters, then fallback to more flexible matching
-    let post = allPosts.find(p => p.meta?.slug === slug && p.meta?.newsletter === true && p.meta?.published === true)
 
-    if (!post) {
-      // Fallback: try to find newsletter in newsletter directory with matching slug
-      post = allPosts.find(p =>
-        p.path?.startsWith('/newsletter') &&
-        p.meta?.slug === slug &&
-        (p.meta?.published !== false) // Allow undefined published field
-      )
-    }
-
-    // Always return a value (never undefined)
-    return post ?? null
-  } catch (err) {
-    console.error('Error fetching newsletter:', err)
-    // Always return a value (never undefined)
-    return null
-  }
-}, {
-  // Ensure default value is provided
-  default: () => null
-})
-
-if(data.value == null) {
-  throw createError({
-    statusCode:404,
-    statusMessage: `No Newsletter found for slug: ${slug}`
-  })
-}
+// Use enhanced newsletter data fetching
+const { useNewsletterPost } = useNewsletterData()
+const { data } = await useNewsletterPost(slug)
 
 function removeTrailingSlash(inputString) {
   if (inputString.endsWith("/")) {
