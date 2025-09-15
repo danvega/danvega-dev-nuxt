@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import SearchDialog from "~/components/SearchDialog.vue";
+// Dynamic import for SearchDialog to reduce initial bundle size
+const SearchDialog = defineAsyncComponent(() => import("~/components/SearchDialog.vue"));
 const emit = defineEmits(['showSearchDialog']);
 const route = useRoute();
 const isHome = useIsHome(route);
@@ -18,22 +19,34 @@ function useIsHome(route: any) {
   return isHome;
 }
 
-// Use shared blog data for search functionality
+// Lazy load search data only when needed - performance optimization
 import type { SearchResult } from '~/types/content'
 
-const { useAllBlogPosts } = useBlogData()
-const { data: allBlogPosts } = await useAllBlogPosts()
+const searchData = ref<SearchResult[]>([])
+const isSearchDataLoaded = ref(false)
 
-const searchData = computed((): SearchResult[] => {
-  return allBlogPosts.value?.map(post => ({
-    title: post.title,
-    _path: post.path || ''
-  })) || []
-})
+const loadSearchData = async () => {
+  if (isSearchDataLoaded.value) return
+
+  try {
+    const { useAllBlogPosts } = useBlogData()
+    const { data: allBlogPosts } = await useAllBlogPosts()
+
+    searchData.value = allBlogPosts.value?.map(post => ({
+      title: post.title,
+      _path: post.path || ''
+    })) || []
+
+    isSearchDataLoaded.value = true
+  } catch (error) {
+    console.error('Failed to load search data:', error)
+  }
+}
 
 
 const isSearchDialogOpen = ref(false);
-function showSearchDialog() {
+async function showSearchDialog() {
+  await loadSearchData() // Load search data when dialog is opened
   isSearchDialogOpen.value = true;
 }
 </script>
