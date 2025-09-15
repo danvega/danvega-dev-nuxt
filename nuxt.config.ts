@@ -170,6 +170,12 @@ export default defineNuxtConfig({
     // Optimize function bundle size
     experimental: {
       wasm: false
+    },
+    // Function timeout configuration
+    netlify: {
+      functions: {
+        timeout: 26
+      }
     }
   },
   sitemap: {

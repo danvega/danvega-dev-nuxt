@@ -6,10 +6,9 @@
   NODE_VERSION = "20"
 
 # Netlify Functions configuration
-[[functions]]
-  # Apply timeout to all functions (max 26 seconds for Pro plans, 10s for free)
-  function = "*"
-  timeout = "26s"
+[functions]
+  # Functions directory
+  directory = ".netlify/functions-internal/"
 
 [[headers]]
   for = "/api/*"
