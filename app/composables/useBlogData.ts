@@ -11,25 +11,27 @@ export const useBlogData = (): BlogDataComposable => {
 
         const blogPosts = allPosts.filter((post: any) =>
           post.path?.startsWith('/blog') &&
-          post.meta?.published === true
+          post.meta?.published === true &&
+          post.meta?.date && // Ensure date exists
+          post.title // Ensure title exists
         )
 
         return blogPosts.map((post: any): BlogPost => ({
-          _id: post.id || post._id,
+          _id: post.id || post._id || '',
           path: post.path,
-          title: post.title,
+          title: post.title || '',
           description: post.description,
           meta: {
             slug: post.meta?.slug,
-            date: post.meta?.date,
-            published: post.meta?.published,
+            date: post.meta.date, // Required field, now guaranteed to exist
+            published: post.meta.published, // Required field, now guaranteed to exist
             tags: post.meta?.tags,
             author: post.meta?.author,
             cover: post.meta?.cover,
             excerpt: post.meta?.excerpt
           },
           body: post.body
-        })).sort((a, b) => new Date(b.meta?.date || 0).getTime() - new Date(a.meta?.date || 0).getTime())
+        })).sort((a, b) => new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime())
       } catch (err) {
         console.error('Error fetching blog posts:', err)
         return []
@@ -76,8 +78,9 @@ export const useBlogData = (): BlogDataComposable => {
 
         // Apply tag filter if provided
         if (tag?.value) {
+          const tagValue = tag.value
           filteredPosts = allPosts.value.filter(post =>
-            post.meta?.tags?.includes(tag.value)
+            post.meta?.tags?.includes(tagValue)
           )
         }
 
