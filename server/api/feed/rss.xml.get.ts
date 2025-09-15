@@ -129,8 +129,8 @@ ${categories}
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <managingEditor>hello@danvega.dev (Dan Vega)</managingEditor>
-    <webMaster>hello@danvega.dev (Dan Vega)</webMaster>
+    <managingEditor>danvega@gmail.com (Dan Vega)</managingEditor>
+    <webMaster>danvega@gmail.com (Dan Vega)</webMaster>
 ${rssItems}
   </channel>
 </rss>`

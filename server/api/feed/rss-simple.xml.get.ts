@@ -13,15 +13,15 @@ export default defineEventHandler(async (event) => {
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <managingEditor>hello@danvega.dev (Dan Vega)</managingEditor>
-    <webMaster>hello@danvega.dev (Dan Vega)</webMaster>
+    <managingEditor>danvega@gmail.com (Dan Vega)</managingEditor>
+    <webMaster>danvega@gmail.com (Dan Vega)</webMaster>
     <item>
       <title>Test RSS Feed</title>
       <description>This is a test RSS feed to verify serverless deployment works</description>
       <link>${baseUrl}/test</link>
       <guid>${baseUrl}/test</guid>
       <pubDate>${new Date().toUTCString()}</pubDate>
-      <author>Dan Vega</author>
+      <author>danvega@gmail.com (Dan Vega)</author>
     </item>
   </channel>
 </rss>`

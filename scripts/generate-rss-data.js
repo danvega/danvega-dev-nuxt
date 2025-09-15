@@ -56,20 +56,16 @@ async function generateRSSData() {
     // Sort by date (newest first) and take top 50
     const sortedPosts = posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 50)
 
-    // Write RSS data to both JSON and TypeScript files
-    const jsonOutputPath = join(process.cwd(), '.nuxt/rss-data.json')
-    const tsOutputPath = join(process.cwd(), 'server/api/_rss-data.ts')
+    // Write RSS data to TypeScript file for server import
+    const tsOutputPath = join(process.cwd(), 'server/api/feed/data.ts')
 
-    await writeFile(jsonOutputPath, JSON.stringify(sortedPosts, null, 2))
-
-    // Also create a TypeScript file in the server directory
     const tsContent = `// Auto-generated RSS data - do not edit manually
 export const rssData = ${JSON.stringify(sortedPosts, null, 2)} as const
 `
     await writeFile(tsOutputPath, tsContent)
 
     console.log(`Generated RSS data with ${sortedPosts.length} published posts`)
-    console.log(`RSS data written to ${jsonOutputPath} and ${tsOutputPath}`)
+    console.log(`RSS data written to ${tsOutputPath}`)
 
     return sortedPosts
   } catch (error) {

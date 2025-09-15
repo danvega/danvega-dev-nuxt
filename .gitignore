@@ -21,7 +21,7 @@ logs
 *.psd
 
 # Auto-generated RSS data
-server/api/_rss-data.ts
+server/api/feed/data.ts
 
 # Local env files
 .env
