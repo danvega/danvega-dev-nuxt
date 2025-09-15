@@ -2,19 +2,6 @@ import { readdir, readFile } from 'fs/promises'
 import { join } from 'path'
 import matter from 'gray-matter'
 
-// Local type definitions for the RSS feed
-interface BlogPost {
-  title?: string;
-  description?: string;
-  slug?: string;
-  date: string;
-  published: boolean;
-  author?: string;
-  tags?: string[];
-  _path?: string;
-  body?: string;
-}
-
 // Function to recursively get all markdown files
 async function getAllMarkdownFiles(dir: string): Promise<string[]> {
   const entries = await readdir(dir, { withFileTypes: true })
@@ -33,98 +20,97 @@ async function getAllMarkdownFiles(dir: string): Promise<string[]> {
   return files
 }
 
-// Function to get all blog posts with frontmatter
-async function getAllBlogPosts(contentDir: string): Promise<BlogPost[]> {
-  const markdownFiles = await getAllMarkdownFiles(contentDir)
-  const posts: BlogPost[] = []
+// RSS feed using file system approach (works in development, fallback for serverless)
+export default defineEventHandler(async (event) => {
+  try {
+    const config = useRuntimeConfig()
+    const baseUrl = config.public.siteUrl || 'https://www.danvega.dev'
 
-  for (const filePath of markdownFiles) {
-    const content = await readFile(filePath, 'utf8')
-    const { data, content: body } = matter(content)
+    // Get blog posts using file system approach
+    let posts: any[] = []
+    try {
+      const contentDir = join(process.cwd(), 'content/blog')
+      const markdownFiles = await getAllMarkdownFiles(contentDir)
 
-    // Only include published posts
-    if (data.published === true) {
-      // Create path from file structure
-      const relativePath = filePath.replace(contentDir, '').replace(/\.md$/, '')
-      const urlPath = `/blog${relativePath}`
+      // Process all markdown files
+      for (const filePath of markdownFiles) {
+        try {
+          const content = await readFile(filePath, 'utf8')
+          const { data } = matter(content)
 
-      posts.push({
-        title: data.title,
-        description: data.description,
-        slug: data.slug,
-        date: data.date,
-        published: data.published,
-        author: data.author,
-        tags: Array.isArray(data.tags) ? data.tags : [],
-        _path: urlPath,
-        body
+          if (data.published === true) {
+            const relativePath = filePath.replace(contentDir, '').replace(/\.md$/, '')
+            const urlPath = `/blog${relativePath}`
+
+            posts.push({
+              title: data.title,
+              description: data.description,
+              date: data.date,
+              author: data.author || 'Dan Vega',
+              _path: urlPath,
+              slug: data.slug,
+              tags: Array.isArray(data.tags) ? data.tags : []
+            })
+          }
+        } catch (fileError) {
+          // Skip problematic files
+          continue
+        }
+      }
+
+      // Sort by date (newest first) and take top 20
+      posts = posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 20)
+    } catch (fsError) {
+      // Fallback to empty array if file system fails (e.g., serverless environment)
+      posts = []
+    }
+
+    // Function to escape XML characters
+    const escapeXml = (unsafe: string) => {
+      if (!unsafe) return ''
+      return String(unsafe).replace(/[<>&'"]/g, (c) => {
+        switch (c) {
+          case '<': return '&lt;'
+          case '>': return '&gt;'
+          case '&': return '&amp;'
+          case "'": return '&apos;'
+          case '"': return '&quot;'
+          default: return c
+        }
       })
     }
-  }
 
-  // Sort by date, newest first
-  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-}
+    // Generate RSS items from posts
+    const rssItems = posts.length > 0 ? posts.map((post: any) => {
+      const postUrl = `${baseUrl}${post._path || ''}`
+      const pubDate = new Date(post.date || new Date()).toUTCString()
+      const categories = post.tags && Array.isArray(post.tags) ? post.tags.map((tag: string) =>
+        `      <category>${escapeXml(tag)}</category>`
+      ).join('\n') : ''
 
-export default defineEventHandler(async (event) => {
-  const config = useRuntimeConfig()
-  const baseUrl = config.public.siteUrl || 'https://www.danvega.dev'
-
-  // Get all blog posts by scanning the content directory
-  const contentDir = join(process.cwd(), 'content/blog')
-  const posts = await getAllBlogPosts(contentDir)
-
-  // Function to format date for RSS
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString)
-    return date.toUTCString()
-  }
-
-  // Function to escape XML characters
-  const escapeXml = (unsafe: string) => {
-    return unsafe.replace(/[<>&'"]/g, (c) => {
-      switch (c) {
-        case '<': return '&lt;'
-        case '>': return '&gt;'
-        case '&': return '&amp;'
-        case '\'': return '&apos;'
-        case '"': return '&quot;'
-        default: return c
-      }
-    })
-  }
-
-  // Function to create post URL from path
-  const createPostUrl = (path: string) => {
-    // Remove leading slash if present
-    const cleanPath = path.startsWith('/') ? path.slice(1) : path
-    return `${baseUrl}/${cleanPath}`
-  }
-
-  // Generate RSS XML
-  const rssItems = posts.map((post: BlogPost) => {
-    const postUrl = createPostUrl(post._path || '')
-    const pubDate = formatDate(post.date)
-    const categories = post.tags && post.tags.length > 0 ? post.tags.map((tag: string) =>
-      `      <category>${escapeXml(tag)}</category>`
-    ).join('\n') : ''
-
-    return `    <item>
-      <title>${escapeXml(post.title || '')}</title>
+      return `    <item>
+      <title>${escapeXml(post.title || 'Untitled')}</title>
       <description>${escapeXml(post.description || '')}</description>
       <link>${postUrl}</link>
       <guid>${postUrl}</guid>
       <pubDate>${pubDate}</pubDate>
-      <author>${escapeXml(post.author || 'Dan Vega')}</author>
+      <author>hello@danvega.dev (${escapeXml(post.author || 'Dan Vega')})</author>
 ${categories}
     </item>`
-  }).join('\n')
+    }).join('\n') : `    <item>
+      <title>Dan Vega&apos;s Blog</title>
+      <description>Latest articles and tutorials on Java, Spring, and web development</description>
+      <link>${baseUrl}/blog</link>
+      <guid>${baseUrl}/blog</guid>
+      <pubDate>${new Date().toUTCString()}</pubDate>
+      <author>hello@danvega.dev (Dan Vega)</author>
+    </item>`
 
-  const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
+    const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dan Vega</title>
-    <description>Personal site of Dan Vega</description>
+    <description>Personal site of Dan Vega - Spring Developer Advocate, Content Creator</description>
     <link>${baseUrl}</link>
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
@@ -135,9 +121,34 @@ ${rssItems}
   </channel>
 </rss>`
 
-  // Set proper headers and return RSS XML
-  setHeader(event, 'content-type', 'application/rss+xml; charset=UTF-8')
-  setHeader(event, 'cache-control', 's-maxage=86400') // Cache for 24 hours
+    setHeader(event, 'content-type', 'application/rss+xml; charset=UTF-8')
+    setHeader(event, 'cache-control', 's-maxage=86400')
 
-  return rssXml
+    return rssXml
+  } catch (error) {
+    // Fallback RSS if anything fails
+    const config = useRuntimeConfig()
+    const baseUrl = config.public.siteUrl || 'https://www.danvega.dev'
+
+    const fallbackRss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Dan Vega</title>
+    <description>Personal site of Dan Vega</description>
+    <link>${baseUrl}</link>
+    <language>en-us</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <item>
+      <title>Dan Vega's Blog</title>
+      <description>Latest articles and tutorials</description>
+      <link>${baseUrl}/blog</link>
+      <guid>${baseUrl}/blog</guid>
+      <pubDate>${new Date().toUTCString()}</pubDate>
+    </item>
+  </channel>
+</rss>`
+
+    setHeader(event, 'content-type', 'application/rss+xml; charset=UTF-8')
+    return fallbackRss
+  }
 })
