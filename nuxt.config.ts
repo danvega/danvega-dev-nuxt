@@ -160,6 +160,9 @@ export default defineNuxtConfig({
     provider: process.env.NODE_ENV === 'production' ? 'netlify' : 'ipx',
     domains: ['danvega.dev', 'www.danvega.dev']
   },
+  nitro: {
+    serveStatic: true
+  },
   sitemap: {
     xsl: false
   },
