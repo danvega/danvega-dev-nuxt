@@ -157,9 +157,10 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    provider: process.env.NODE_ENV === 'production' ? 'netlify' : 'ipx',
+    provider: 'ipx',
+    domains: ['danvega.dev', 'www.danvega.dev'],
     netlify: {
-      baseURL: process.env.IMAGES_URL
+      baseURL: process.env.IMAGES_URL || process.env.NUXT_PUBLIC_SITE_URL || 'https://danvega.dev'
     }
   },
   sitemap: {
