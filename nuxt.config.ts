@@ -87,10 +87,7 @@ export default defineNuxtConfig({
     },
   },
   content: {
-      database: {
-          type: 'sqlite',
-          filename: '/tmp/content.db'
-      },
+      // Let Nuxt Content handle serverless automatically - zero configuration
       build: {
           markdown: {
               highlight: {
@@ -109,15 +106,8 @@ export default defineNuxtConfig({
     domains: ['danvega.dev', 'www.danvega.dev']
   },
   nitro: {
-    serveStatic: true,
-    // Optimize for serverless deployment
-    preset: 'netlify',
-    // Improve cold start performance
-    minify: true,
-    // Optimize function bundle size
-    experimental: {
-      wasm: false
-    }
+    preset: 'netlify'
+    // Let Nuxt Content handle serverless configuration automatically
   },
   sitemap: {
     xsl: false
