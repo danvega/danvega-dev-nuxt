@@ -1,6 +1,6 @@
 // server/api/photos.ts
 
-import { defineEventHandler } from 'h3'
+import { defineEventHandler, setHeaders } from 'h3'
 
 export default defineEventHandler(async (event) => {
     // Static list of photos for serverless compatibility
@@ -46,6 +46,13 @@ export default defineEventHandler(async (event) => {
     ];
 
     try {
+        // Set cache headers for browser and CDN caching (24 hours)
+        setHeaders(event, {
+            'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+            'ETag': `"photos-v1-${photoFilenames.length}"`,
+            'Last-Modified': new Date('2024-11-12').toUTCString()
+        });
+
         const photos = photoFilenames.map((filename, index) => ({
             id: index + 1,
             filename: filename,

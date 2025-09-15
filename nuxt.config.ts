@@ -51,7 +51,8 @@ export default defineNuxtConfig({
     '/speaking': { prerender: true },
     '/courses': { prerender: true },
     '/uses': { prerender: true },
-    '/contact': { redirect: '/about' }
+    '/contact': { redirect: '/about' },
+    '/api/photos': { isr: true, headers: { 'cache-control': 's-maxage=86400' } }
   },
   app: {
     head: {
