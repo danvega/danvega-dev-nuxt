@@ -20,6 +20,9 @@ logs
 .idea
 *.psd
 
+# Auto-generated RSS data
+server/api/_rss-data.ts
+
 # Local env files
 .env
 .env.*
