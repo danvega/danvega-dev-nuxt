@@ -91,14 +91,10 @@ export default defineNuxtConfig({
           markdown: {
               highlight: {
                   theme: {
-                      // Default theme (same as single string)
                       default: 'github-light',
-                      // Theme used if `html.dark`
                       dark: 'github-dark',
-                      // Theme used if `html.sepia`
                       sepia: 'github-light'
                   },
-                  // https://github.com/shikijs/shiki/blob/main/docs/languages.md#adding-grammar
                   preload: ['java','json','js','ts','css','shell','html','md','yaml','sql','properties','http','groovy']
               }
           }
