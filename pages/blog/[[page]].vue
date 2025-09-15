@@ -21,23 +21,32 @@ const searchTag = computed(() =>
     Array.isArray(route.query.tag) ? route.query.tag[0] : route.query.tag
 );
 
-// Get the count and posts with reactive data fetching
-const { data: articlesCount } = await useAsyncData('blog-count', () =>
+// Get all posts first, then filter and paginate manually (temporary solution)
+const { data: allPosts } = await useAsyncData('blog-posts', () =>
   queryCollection('content')
-    .where('path', 'LIKE', '/blog%')
-    .where('published', true)
-    .count()
-);
-
-const { data: posts } = await useAsyncData('blog-posts', () =>
-  queryCollection('content')
-    .where('path', 'LIKE', '/blog%')
-    .where('published', true)
-    .skip(limit.value * (page.value - 1))
-    .limit(limit.value)
-    .orderBy('date', 'desc')
     .all()
 );
+
+// Filter and paginate manually
+const posts = computed(() => {
+  if (!allPosts.value) return [];
+
+  const filteredPosts = allPosts.value.filter(post =>
+    post.path?.startsWith('/blog') &&
+    post.meta?.published === true
+  ).sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date));
+
+  const startIndex = limit.value * (page.value - 1);
+  return filteredPosts.slice(startIndex, startIndex + limit.value);
+});
+
+const articlesCount = computed(() => {
+  if (!allPosts.value) return 0;
+  return allPosts.value.filter(post =>
+    post.path?.startsWith('/blog') &&
+    post.meta?.published === true
+  ).length;
+});
 
 if(posts.value?.length === 0 && searchTag.value) {
   throw createError({
