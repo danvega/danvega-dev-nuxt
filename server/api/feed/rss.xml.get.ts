@@ -1,6 +1,4 @@
-import { readdir, readFile, stat } from 'fs/promises'
-import { join } from 'path'
-import matter from 'gray-matter'
+import { rssData } from './data'
 
 // Local type definitions for the RSS feed
 interface BlogPost {
@@ -8,71 +6,17 @@ interface BlogPost {
   description?: string;
   slug?: string;
   date: string;
-  published: boolean;
   author?: string;
   tags?: string[];
   _path?: string;
-  body?: string;
-}
-
-// Function to recursively get all markdown files
-async function getAllMarkdownFiles(dir: string): Promise<string[]> {
-  const entries = await readdir(dir, { withFileTypes: true })
-  const files: string[] = []
-
-  for (const entry of entries) {
-    const fullPath = join(dir, entry.name)
-    if (entry.isDirectory()) {
-      const subFiles = await getAllMarkdownFiles(fullPath)
-      files.push(...subFiles)
-    } else if (entry.name.endsWith('.md')) {
-      files.push(fullPath)
-    }
-  }
-
-  return files
-}
-
-// Function to get all blog posts with frontmatter
-async function getAllBlogPosts(contentDir: string): Promise<BlogPost[]> {
-  const markdownFiles = await getAllMarkdownFiles(contentDir)
-  const posts: BlogPost[] = []
-
-  for (const filePath of markdownFiles) {
-    const content = await readFile(filePath, 'utf8')
-    const { data, content: body } = matter(content)
-
-    // Only include published posts
-    if (data.published === true) {
-      // Create path from file structure
-      const relativePath = filePath.replace(contentDir, '').replace(/\.md$/, '')
-      const urlPath = `/blog${relativePath}`
-
-      posts.push({
-        title: data.title,
-        description: data.description,
-        slug: data.slug,
-        date: data.date,
-        published: data.published,
-        author: data.author,
-        tags: Array.isArray(data.tags) ? data.tags : [],
-        _path: urlPath,
-        body
-      })
-    }
-  }
-
-  // Sort by date, newest first
-  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   const baseUrl = config.public.siteUrl || 'https://www.danvega.dev'
 
-  // Get all blog posts by scanning the content directory
-  const contentDir = join(process.cwd(), 'content/blog')
-  const posts = await getAllBlogPosts(contentDir)
+  // Use pre-generated RSS data from build time
+  const posts = rssData
 
   // Function to format date for RSS
   const formatDate = (dateString: string) => {
