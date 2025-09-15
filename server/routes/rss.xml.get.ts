@@ -1,68 +1,35 @@
-import { readdir, readFile } from 'fs/promises'
+import { readFile } from 'fs/promises'
 import { join } from 'path'
-import matter from 'gray-matter'
 
-// Function to recursively get all markdown files
-async function getAllMarkdownFiles(dir: string): Promise<string[]> {
-  const entries = await readdir(dir, { withFileTypes: true })
-  const files: string[] = []
-
-  for (const entry of entries) {
-    const fullPath = join(dir, entry.name)
-    if (entry.isDirectory()) {
-      const subFiles = await getAllMarkdownFiles(fullPath)
-      files.push(...subFiles)
-    } else if (entry.name.endsWith('.md')) {
-      files.push(fullPath)
-    }
-  }
-
-  return files
-}
-
-// RSS feed using file system approach (works in development, fallback for serverless)
+// RSS feed using pre-generated data (serverless-compatible)
 export default defineEventHandler(async (event) => {
   try {
     const config = useRuntimeConfig()
     const baseUrl = config.public.siteUrl || 'https://www.danvega.dev'
 
-    // Get blog posts using file system approach
+    // Get blog posts from pre-generated data
     let posts: any[] = []
     try {
-      const contentDir = join(process.cwd(), 'content/blog')
-      const markdownFiles = await getAllMarkdownFiles(contentDir)
+      // Try to load pre-generated RSS data
+      const rssDataPath = join(process.cwd(), '.nuxt/rss-data.json')
+      const rssDataContent = await readFile(rssDataPath, 'utf8')
+      const allPosts = JSON.parse(rssDataContent)
 
-      // Process all markdown files
-      for (const filePath of markdownFiles) {
-        try {
-          const content = await readFile(filePath, 'utf8')
-          const { data } = matter(content)
-
-          if (data.published === true) {
-            const relativePath = filePath.replace(contentDir, '').replace(/\.md$/, '')
-            const urlPath = `/blog${relativePath}`
-
-            posts.push({
-              title: data.title,
-              description: data.description,
-              date: data.date,
-              author: data.author || 'Dan Vega',
-              _path: urlPath,
-              slug: data.slug,
-              tags: Array.isArray(data.tags) ? data.tags : []
-            })
-          }
-        } catch (fileError) {
-          // Skip problematic files
-          continue
-        }
+      // Take top 20 posts for RSS feed
+      posts = allPosts.slice(0, 20)
+    } catch (dataError) {
+      // Fallback: try to use Nuxt Content's storage if available
+      try {
+        const { serverQueryContent } = await import('#content/server')
+        posts = await serverQueryContent(event, 'blog')
+          .where({ published: true })
+          .sort({ date: -1 })
+          .limit(20)
+          .find()
+      } catch (contentError) {
+        // Final fallback: empty array
+        posts = []
       }
-
-      // Sort by date (newest first) and take top 20
-      posts = posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 20)
-    } catch (fsError) {
-      // Fallback to empty array if file system fails (e.g., serverless environment)
-      posts = []
     }
 
     // Function to escape XML characters
