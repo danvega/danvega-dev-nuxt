@@ -1,6 +1,6 @@
 export default defineEventHandler(async (event) => {
 
-    const apiKey : string | undefined = process.env.BEEHIIV_API_KEY;
+    const apiKey : string | undefined = process.env['BEEHIIV_API_KEY'];
     const body = await readBody(event);
     const referrerURL = getHeader(event, 'referer') || 'Unknown';
 

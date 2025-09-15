@@ -22,10 +22,7 @@ export default defineNuxtConfig({
     // Better component islands
     componentIslands: true,
     // Improved build performance
-    buildCache: true,
-    // Additional performance features
-    treeshakeClientOnly: true,
-    emitRouteChunkError: 'automatic'
+    buildCache: true
   },
   // Enhanced build optimization
   optimization: {
@@ -66,39 +63,11 @@ export default defineNuxtConfig({
           isCustomElement: tag => tag === 'lite-youtube'
         }
       }
-    },
-    build: {
-      // Enhanced build optimization for performance
-      rollupOptions: {
-        output: {
-          // Manual chunk splitting for better caching
-          manualChunks: (id) => {
-            // Skip Nuxt Content from manual chunking to avoid conflicts
-            if (id.includes('node_modules')) {
-              if (id.includes('vue') && !id.includes('@nuxt')) return 'vendor-vue'
-              if (id.includes('@headlessui') || id.includes('@heroicons')) return 'vendor-ui'
-              if (id.includes('@vueuse') || id.includes('lodash-es')) return 'vendor-utils'
-              if (id.includes('@sentry/vue')) return 'vendor-sentry'
-              return 'vendor'
-            }
-          }
-        }
-      },
-      // Optimize chunk size
-      chunkSizeWarningLimit: 1000,
-      // Better tree shaking
-      minify: 'terser',
-      terserOptions: {
-        compress: {
-          drop_console: true,
-          drop_debugger: true
-        }
-      }
     }
   },
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+      siteUrl: process.env['NUXT_PUBLIC_SITE_URL'] || 'http://localhost:3000',
       urlSchema: 'http',
       urlDomain: 'localhost:3000',
       urlBase: 'http://localhost:3000',
@@ -111,47 +80,15 @@ export default defineNuxtConfig({
       }
     },
   },
-  routeRules: {
-    // Enhanced ISR with Nuxt 4 performance optimizations
-    '/blog/**': {
-      isr: { ttl: 60 * 60 * 24 }, // 24 hour cache for blog posts
-      headers: { 'cache-control': 's-maxage=86400, stale-while-revalidate=3600' }
+    routeRules: {
+        '/blog/**': {isr: true},
+        '/newsletter/**': {isr: true},
+        '/about': {prerender: true},
+        '/speaking': {prerender: true},
+        '/courses': {prerender: true},
+        '/uses': {prerender: true},
+        '/contact': {redirect: '/about'}
     },
-    '/newsletter/**': {
-      isr: { ttl: 60 * 60 * 24 }, // 24 hour cache for newsletters
-      headers: { 'cache-control': 's-maxage=86400, stale-while-revalidate=3600' }
-    },
-    // API routes with specific caching
-    '/api/feed/**': {
-      headers: { 'cache-control': 's-maxage=3600, stale-while-revalidate=600' } // 1 hour cache for feeds
-    },
-    '/rss.xml': {
-      headers: { 'cache-control': 's-maxage=3600' } // 1 hour cache for RSS
-    },
-    // Archive and listing pages with shorter cache
-    '/blog': {
-      isr: { ttl: 60 * 60 * 4 }, // 4 hour cache for blog listing
-      headers: { 'cache-control': 's-maxage=14400, stale-while-revalidate=1800' }
-    },
-    '/newsletter': {
-      isr: { ttl: 60 * 60 * 4 }, // 4 hour cache for newsletter listing
-      headers: { 'cache-control': 's-maxage=14400, stale-while-revalidate=1800' }
-    },
-    // Static pages prerendered for maximum performance
-    '/about': { prerender: true },
-    '/speaking': { prerender: true },
-    '/courses': { prerender: true },
-    '/uses': { prerender: true },
-    // Home page with shorter ISR for fresh content
-    '/': {
-      isr: { ttl: 60 * 60 * 2 }, // 2 hour cache for homepage
-      headers: { 'cache-control': 's-maxage=7200, stale-while-revalidate=900' }
-    },
-    // Redirects and special pages
-    '/contact': { redirect: '/about' },
-    // Tools and utilities with longer cache
-    '/tools/json-to-java-record': { prerender: true }
-  },
   app: {
     head: {
       htmlAttrs: {
@@ -175,7 +112,7 @@ export default defineNuxtConfig({
       script: [
         {
           src: "https://cdn.usefathom.com/script.js",
-          "data-site": process.env.NUXT_PUBLIC_FATHOM_SITE_ID,
+          "data-site": process.env['NUXT_PUBLIC_FATHOM_SITE_ID'],
           defer: true,
           async: true,
           tagPosition: 'bodyClose'
@@ -200,7 +137,7 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
-      cssnano: process.env.NODE_ENV === 'production'
+      cssnano: process.env['NODE_ENV'] === 'production'
         ? {
             preset: ['default', {
               discardComments: { removeAll: true },
@@ -229,39 +166,11 @@ export default defineNuxtConfig({
       }
   },
   image: {
-    provider: process.env.NODE_ENV === 'production' ? 'netlify' : 'ipx',
+    provider: process.env['NODE_ENV'] === 'production' ? 'netlify' : 'ipx',
     domains: ['danvega.dev', 'www.danvega.dev']
   },
   nitro: {
-    preset: 'netlify',
-    // Enhanced Nitro performance optimizations
-    minify: true,
-    sourceMap: false,
-    // Advanced caching and compression
-    compressPublicAssets: {
-      gzip: true,
-      brotli: true
-    },
-    // Route-specific optimizations
-    routeRules: {
-      '/api/**': {
-        // API routes with CORS and caching headers
-        cors: true,
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'GET,HEAD,OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type'
-        }
-      }
-    },
-    // Enhanced build performance
-    rollupConfig: {
-      external: ['sharp', 'sqlite3']
-    },
-    // Enable experimental features for better performance
-    experimental: {
-      wasm: true
-    }
+    preset: 'netlify'
   },
   sitemap: {
     xsl: false
