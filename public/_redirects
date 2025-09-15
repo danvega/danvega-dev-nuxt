@@ -8,9 +8,8 @@
 
 # pretty urls
 
-/rss.xml /api/feed/rss.xml 200
-/feed /api/feed/rss.xml 200
-/rss /api/feed/rss.xml 200
+/feed /rss.xml 200
+/rss /rss.xml 200
 /spring-one-2021 /blog/2021/08/30/spring-one-2021/ 301
 /command-line-runner /blog/2017/04/07/spring-boot-command-line-runner/ 301
 /spring-boot-crash-course /blog/2023/03/09/spring-boot-crash-course/ 301

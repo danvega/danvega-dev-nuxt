@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
     <title>Dan Vega</title>
     <description>Personal site of Dan Vega</description>
     <link>${baseUrl}</link>
-    <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="${baseUrl}/api/feed/rss-simple.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <managingEditor>danvega@gmail.com (Dan Vega)</managingEditor>
