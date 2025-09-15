@@ -1,30 +1,8 @@
 <script  lang="ts" setup="">
-const photos = ref<Photo[]>([]);
+import { photos, type Photo } from '~/data/photos';
+
 const randomPhotos = ref<Photo[]>([]);
 const isLoading = ref(true);
-const error = ref<string | null>(null)
-
-async function fetchPhotos() {
-  try {
-    const response = await fetch('/api/photos');
-    if (!response.ok) {
-      throw new Error('Failed to fetch photos');
-    }
-    const data = await response.json();
-    photos.value = data.map((photo: any, index: number) => ({
-      id: index + 1,
-      width: photo.width || 1024,
-      height: photo.height || 768,
-      src: `/images/photos/${photo.filename}`,
-      alt: photo.alt || `Photo ${index + 1}`
-    }));
-    isLoading.value = false;
-  } catch (e) {
-    console.error('Error fetching photos:', e);
-    error.value = 'Failed to load photos. Please try again later.';
-    isLoading.value = false;
-  }
-}
 
 function getRandomPhotos(photoList: Photo[], count: number): Photo[] {
   const shuffled = [...photoList].sort(() => Math.random() - 0.5);
@@ -32,16 +10,14 @@ function getRandomPhotos(photoList: Photo[], count: number): Photo[] {
 }
 
 function updateRandomPhotos() {
-  if (photos.value.length > 0) {
-    randomPhotos.value = getRandomPhotos(photos.value, 5);
-  }
+  randomPhotos.value = getRandomPhotos(photos, 5);
 }
 
 let intervalId: number;
 
-onMounted(async () => {
-  await fetchPhotos();
+onMounted(() => {
   updateRandomPhotos(); // Initial set of random photos
+  isLoading.value = false;
   intervalId = setInterval(updateRandomPhotos, 5000); // Update every 5 seconds
 });
 
@@ -57,9 +33,6 @@ onUnmounted(() => {
            class="aspect-[9/10] w-44 sm:w-72 rounded-xl bg-zinc-200 dark:bg-zinc-700 animate-pulse">
       </div>
     </div>
-    <div v-else-if="error" class="text-center text-red-500">
-      {{ error }}
-    </div>
     <div v-else class="-my-4 flex flex-wrap justify-center gap-5 overflow-hidden py-4 sm:gap-8">
       <TransitionGroup name="fade" tag="div" class="flex flex-wrap justify-center gap-5 sm:gap-8">
         <div v-for="(photo, index) in randomPhotos" :key="photo.id"
@@ -73,7 +46,7 @@ onUnmounted(() => {
               width="288"
               height="320"
               class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 cursor-pointer"
-              style="color:transparent"/>
+              :style="`color:transparent; transform: rotate(${photo.rotation || 0}deg);`"/>
         </div>
       </TransitionGroup>
     </div>

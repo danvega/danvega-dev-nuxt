@@ -1,11 +1,12 @@
 <script  lang="ts" setup="">
 import {useDateFormat} from "@vueuse/core/index";
+
 const { data: articles, error } = await useAsyncData('latest-articles', async () => {
   try {
     const result = await queryCollection('content')
       .all()
 
-    // Filter for blog posts only and sort by date
+    // Filter for blog posts only and sort by date, limit to 3
     const blogPosts = result.filter(post =>
       post.path?.startsWith('/blog') &&
       post.meta?.published === true
@@ -16,6 +17,9 @@ const { data: articles, error } = await useAsyncData('latest-articles', async ()
     console.error('LatestArticles query error:', err)
     return []
   }
+}, {
+  default: () => [],
+  server: true
 });
 
 const formatDatePublished = (date) => {
