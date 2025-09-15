@@ -5,8 +5,14 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Netlify Functions configuration
 [functions]
-  # Increase timeout for serverless functions (max 26 seconds)
+  # Directory for Netlify Functions
+  directory = ".netlify/functions-internal/"
+
+[[functions]]
+  # Apply timeout to all functions (max 26 seconds for Pro plans, 10s for free)
+  function = "*"
   timeout = "26s"
 
 [[headers]]
