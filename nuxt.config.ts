@@ -1,5 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  hooks: {
+    'build:before': async () => {
+      // Generate RSS data during build process
+      try {
+        const { generateRSSData } = await import('./scripts/generate-rss-data.js')
+        await generateRSSData()
+        console.log('✅ RSS data generated successfully')
+      } catch (error) {
+        console.error('❌ Failed to generate RSS data:', error)
+      }
+    }
+  },
   compatibilityDate: "2024-11-13",
   modules: [
     '@nuxtjs/tailwindcss',
