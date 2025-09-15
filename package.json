@@ -19,6 +19,7 @@
     "@types/canvas-confetti": "^1.6.4",
     "@vueuse/core": "^13.9.0",
     "@vueuse/nuxt": "^13.9.0",
+    "netlify-cli": "^23.5.1",
     "nuxt": "^4.1.2",
     "nuxt-feedme": "^2.0.0-rc1",
     "vue": "^3.5.21",
