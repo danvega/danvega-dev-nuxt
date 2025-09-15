@@ -22,7 +22,10 @@ export default defineNuxtConfig({
     // Better component islands
     componentIslands: true,
     // Improved build performance
-    buildCache: true
+    buildCache: true,
+    // Additional performance features
+    treeshakeClientOnly: true,
+    emitRouteChunkError: 'automatic'
   },
   // Enhanced build optimization
   optimization: {
@@ -61,6 +64,34 @@ export default defineNuxtConfig({
       template: {
         compilerOptions: {
           isCustomElement: tag => tag === 'lite-youtube'
+        }
+      }
+    },
+    build: {
+      // Enhanced build optimization for performance
+      rollupOptions: {
+        output: {
+          // Manual chunk splitting for better caching
+          manualChunks: (id) => {
+            // Skip Nuxt Content from manual chunking to avoid conflicts
+            if (id.includes('node_modules')) {
+              if (id.includes('vue') && !id.includes('@nuxt')) return 'vendor-vue'
+              if (id.includes('@headlessui') || id.includes('@heroicons')) return 'vendor-ui'
+              if (id.includes('@vueuse') || id.includes('lodash-es')) return 'vendor-utils'
+              if (id.includes('@sentry/vue')) return 'vendor-sentry'
+              return 'vendor'
+            }
+          }
+        }
+      },
+      // Optimize chunk size
+      chunkSizeWarningLimit: 1000,
+      // Better tree shaking
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true
         }
       }
     }
@@ -126,8 +157,29 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
+      link: [
+        // Resource hints for external domains
+        { rel: 'dns-prefetch', href: 'https://cdn.usefathom.com' },
+        { rel: 'dns-prefetch', href: 'https://browser.sentry-cdn.com' },
+        { rel: 'preconnect', href: 'https://cdn.usefathom.com', crossorigin: 'anonymous' },
+        // Critical font preloading (add your fonts here)
+        // { rel: 'preload', href: '/fonts/your-font.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }
+      ],
+      meta: [
+        // Performance and SEO optimizations
+        { name: 'format-detection', content: 'telephone=no' },
+        { name: 'theme-color', content: '#ffffff' },
+        // Preload critical above-the-fold images
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ],
       script: [
-        {src: "https://cdn.usefathom.com/script.js" , "data-site": process.env.NUXT_PUBLIC_FATHOM_SITE_ID, defer: true, tagPosition: 'bodyClose'}
+        {
+          src: "https://cdn.usefathom.com/script.js",
+          "data-site": process.env.NUXT_PUBLIC_FATHOM_SITE_ID,
+          defer: true,
+          async: true,
+          tagPosition: 'bodyClose'
+        }
       ],
     }
   },
@@ -143,15 +195,22 @@ export default defineNuxtConfig({
     config: {},
     viewer: true
   },
-  // production build issue: https://answers.netlify.com/t/javascript-heap-out-of-memory-when-trying-to-build-a-nuxt-app/93138/13
+  // Enhanced PostCSS configuration for performance
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
-      cssnano:
-          process.env.NODE_ENV === 'production'
-              ? { preset: ['default', { discardComments: { removeAll: true } }] }
-              : false, // disable cssnano when not in production
+      cssnano: process.env.NODE_ENV === 'production'
+        ? {
+            preset: ['default', {
+              discardComments: { removeAll: true },
+              normalizeWhitespace: true,
+              removeUnusedKeyframes: true,
+              mergeLonghand: true,
+              discardDuplicates: true
+            }]
+          }
+        : false, // disable cssnano when not in production
     },
   },
   content: {
@@ -198,6 +257,10 @@ export default defineNuxtConfig({
     // Enhanced build performance
     rollupConfig: {
       external: ['sharp', 'sqlite3']
+    },
+    // Enable experimental features for better performance
+    experimental: {
+      wasm: true
     }
   },
   sitemap: {

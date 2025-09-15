@@ -9,10 +9,27 @@ export const useBlogData = (): BlogDataComposable => {
       try {
         const allPosts = await queryCollection('content').all()
 
-        return allPosts.filter((post): post is BlogPost =>
+        const blogPosts = allPosts.filter((post: any) =>
           post.path?.startsWith('/blog') &&
           post.meta?.published === true
-        ).sort((a, b) => new Date(b.meta?.date || 0).getTime() - new Date(a.meta?.date || 0).getTime())
+        )
+
+        return blogPosts.map((post: any): BlogPost => ({
+          _id: post.id || post._id,
+          path: post.path,
+          title: post.title,
+          description: post.description,
+          meta: {
+            slug: post.meta?.slug,
+            date: post.meta?.date,
+            published: post.meta?.published,
+            tags: post.meta?.tags,
+            author: post.meta?.author,
+            cover: post.meta?.cover,
+            excerpt: post.meta?.excerpt
+          },
+          body: post.body
+        })).sort((a, b) => new Date(b.meta?.date || 0).getTime() - new Date(a.meta?.date || 0).getTime())
       } catch (err) {
         console.error('Error fetching blog posts:', err)
         return []
@@ -24,7 +41,7 @@ export const useBlogData = (): BlogDataComposable => {
     })
   }
 
-  // Latest articles with reactive refresh
+  // Latest articles with optimized query - only loads the needed posts
   const useLatestArticles = (limit: number = 3) => {
     const limitRef = ref(limit)
 
