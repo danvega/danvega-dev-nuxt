@@ -1,6 +1,3 @@
-import { readFile } from 'fs/promises'
-import { join } from 'path'
-
 // RSS feed using pre-generated data (serverless-compatible)
 export default defineEventHandler(async (event) => {
   try {
@@ -10,23 +7,19 @@ export default defineEventHandler(async (event) => {
     // Get blog posts from pre-generated data
     let posts: any[] = []
     try {
-      // Try to load pre-generated RSS data
-      const rssDataPath = join(process.cwd(), '.nuxt/rss-data.json')
-      const rssDataContent = await readFile(rssDataPath, 'utf8')
-      const allPosts = JSON.parse(rssDataContent)
-
-      // Take top 20 posts for RSS feed
-      posts = allPosts.slice(0, 20)
-    } catch (dataError) {
-      // Fallback: try to use Nuxt Content's storage if available
+      // Primary: Try to import the generated RSS data
+      const { rssData } = await import('../api/_rss-data')
+      posts = rssData.slice(0, 20)
+    } catch (importError) {
+      // Fallback: try JSON file if TypeScript import fails
       try {
-        const { serverQueryContent } = await import('#content/server')
-        posts = await serverQueryContent(event, 'blog')
-          .where({ published: true })
-          .sort({ date: -1 })
-          .limit(20)
-          .find()
-      } catch (contentError) {
+        const { readFile } = await import('fs/promises')
+        const { join } = await import('path')
+        const rssDataPath = join(process.cwd(), '.nuxt/rss-data.json')
+        const rssDataContent = await readFile(rssDataPath, 'utf8')
+        const allPosts = JSON.parse(rssDataContent)
+        posts = allPosts.slice(0, 20)
+      } catch (jsonError) {
         // Final fallback: empty array
         posts = []
       }
