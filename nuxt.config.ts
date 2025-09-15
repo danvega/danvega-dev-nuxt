@@ -124,6 +124,6 @@ export default defineNuxtConfig({
   sitemap: {
     xsl: false
   },
-  css: ['~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
+  css: ['./node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
   devtools: { enabled: true }
 })

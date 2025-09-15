@@ -1,4 +1,4 @@
-import events from '~/assets/data/events.json'
+import events from '../../../assets/data/events.json'
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)

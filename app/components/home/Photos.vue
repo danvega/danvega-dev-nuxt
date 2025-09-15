@@ -1,5 +1,5 @@
 <script  lang="ts" setup="">
-import { photos, type Photo } from '~/data/photos';
+import { photos, type Photo } from '../../../data/photos';
 
 const randomPhotos = ref<Photo[]>([]);
 const isLoading = ref(true);
