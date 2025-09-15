@@ -3,10 +3,16 @@ import { useDateFormat } from '@vueuse/core'
 
 const { path } = useRoute();
 const slug = getSlugFromPath(path);
-const { data } = await useAsyncData(`content-${path}`, () => {
-  return queryContent()
-      .where({ slug: slug, published: true })
-      .findOne()
+const { data } = await useAsyncData(`content-${path}`, async () => {
+  try {
+    // Get all content and find the matching post by slug
+    const allPosts = await queryCollection('content').all()
+    const post = allPosts.find(p => p.meta?.slug === slug && p.meta?.published === true)
+    return post
+  } catch (err) {
+    console.error('Error fetching blog post:', err)
+    return null
+  }
 })
 
 if(data.value == null) {
@@ -16,8 +22,8 @@ if(data.value == null) {
   })
 }
 
-const datePublished = useDateFormat(data.value.date, 'MMMM D, YYYY');
-useDateFormat(data.value.updatedOn, 'MMMM D, YYYY');
+const datePublished = useDateFormat(data.value?.meta?.date, 'MMMM D, YYYY');
+useDateFormat(data.value?.meta?.updatedOn, 'MMMM D, YYYY');
 const getImagePath = (date,cover) => {
   if(cover) {
     const createdOn = new Date(date);
@@ -41,26 +47,27 @@ function getSlugFromPath(path) {
   return parts[parts.length - 1];
 }
 
+
 const config = useRuntimeConfig();
 
 useHead({
-  title: data.value.title,
+  title: data.value?.title,
   meta: [
-    { name: 'title', content: data.value.title },
+    { name: 'title', content: data.value?.title },
     { name: 'description', content: data.value?.description },
-    { name: "keywords", content: data.value?.keywords },
+    { name: "keywords", content: data.value?.meta?.keywords },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: data.value.title },
+    { name: 'twitter:title', content: data.value?.title },
     { name: 'twitter:description', content: data.value?.description },
     { name: 'twitter:site', content: '@therealdanvega' },
-    { name: 'twitter:image', content: config.public.urlBase + getImagePath(data.value.date,data.value?.cover) },
+    { name: 'twitter:image', content: config.public.urlBase + getImagePath(data.value?.meta?.date,data.value?.meta?.cover) },
     { name: 'twitter:creator', content: '@therealdanvega' },
     { name: 'og:type', content: 'article' },
-    { name: 'og:title', content: data.value.title },
+    { name: 'og:title', content: data.value?.title },
     { name: 'og:description', content: data.value?.description },
     { name: 'og:url', content: config.public.urlBase + path },
-    { name: 'og:image', content: config.public.urlBase + getImagePath(data.value.date,data.value?.cover) },
-    { name: 'og:image:secure_url', content: config.public.urlBase + getImagePath(data.value.date,data.value?.cover) },
+    { name: 'og:image', content: config.public.urlBase + getImagePath(data.value?.meta?.date,data.value?.meta?.cover) },
+    { name: 'og:image:secure_url', content: config.public.urlBase + getImagePath(data.value?.meta?.date,data.value?.meta?.cover) },
   ]
 });
 </script>
@@ -76,23 +83,23 @@ useHead({
             <time dateTime="September 5, 2022" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
               <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
               <span class="ml-3">Published On: {{ datePublished }}</span>
-              <span class="ml-2" v-if="data?.updatedOn">• Updated On: {{ useDateFormat(data.updatedOn, 'MMMM D, YYYY').value }}</span>
+              <span class="ml-2" v-if="data?.meta?.updatedOn">• Updated On: {{ useDateFormat(data?.meta?.updatedOn, 'MMMM D, YYYY').value }}</span>
             </time>
             <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               {{ data?.title }}
             </h1>
           </header>
           <!-- if we have a video show that, else show the cover image -->
-          <YouTube :src="data.video" v-if="data?.video" class="prose dark:prose-invert rounded-2xl mt-8"/>
+          <YouTube :src="data?.meta?.video" v-if="data?.meta?.video" class="prose dark:prose-invert rounded-2xl mt-8"/>
           <NuxtImg
-              :src="getImagePath(data.date,data.cover)"
+              :src="getImagePath(data?.meta?.date,data?.meta?.cover)"
               class="prose dark:prose-invert rounded-2xl mt-8"
               alt="ALT TEXT"
-              v-if="data?.cover && !data?.video"/>
+              v-if="data?.meta?.cover && !data?.meta?.video"/>
           <ContentRenderer :value="data" class="prose dark:prose-invert mt-8" />
         </article>
 
-        <BlogTags :tags="data.tags"/>
+        <BlogTags :tags="data?.meta?.tags"/>
 
         <BlogNewsletterSignup />
 

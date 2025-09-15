@@ -18,10 +18,20 @@ function useIsHome(route: any) {
   return isHome;
 }
 
-const { data } = await useAsyncData('searchBlogPosts', () => queryContent('blog')
-    .sort({ date: -1 })
-    .only(['id','title','_path'])
-    .find())
+const { data } = await useAsyncData('searchBlogPosts', async () => {
+  try {
+    // Get all content and filter blog posts for search
+    const allPosts = await queryCollection('content').all()
+    const blogPosts = allPosts
+      .filter(post => post.path?.startsWith('/blog') && post.meta?.published === true)
+      .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
+      .map(post => ({ title: post.title, _path: post.path }))
+    return blogPosts
+  } catch (err) {
+    console.error('Error fetching search blog posts:', err)
+    return []
+  }
+})
 
 
 const isSearchDialogOpen = ref(false);

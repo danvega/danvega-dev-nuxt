@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-feedme',
     '@vueuse/nuxt',
-    'nuxt-simple-sitemap',
+    '@nuxtjs/sitemap',
     '@nuxt/image'
   ],
   // Thank You, Debbie - https://debbie.codes/blog/nuxt-lite-youtube-embeds/
@@ -21,6 +21,11 @@ export default defineNuxtConfig({
     vue: {
       script: {
         propsDestructure: true
+      },
+      template: {
+        compilerOptions: {
+          isCustomElement: tag => tag === 'lite-youtube'
+        }
       }
     }
   },
@@ -68,7 +73,6 @@ export default defineNuxtConfig({
     configPath: 'tailwind.config.ts',
     exposeConfig: false,
     config: {},
-    injectPosition: 0,
     viewer: true
   },
   // production build issue: https://answers.netlify.com/t/javascript-heap-out-of-memory-when-trying-to-build-a-nuxt-app/93138/13
@@ -83,18 +87,22 @@ export default defineNuxtConfig({
     },
   },
   content: {
-    highlight: {
-      theme: {
-        // Default theme (same as single string)
-        default: 'github-light',
-        // Theme used if `html.dark`
-        dark: 'github-dark',
-        // Theme used if `html.sepia`
-        sepia: 'github-light'
-      },
-      // https://github.com/shikijs/shiki/blob/main/docs/languages.md#adding-grammar
-      preload: ['java','json','js','ts','css','shell','html','md','yaml','sql','properties','http','groovy']
-    }
+      build: {
+          markdown: {
+              highlight: {
+                  theme: {
+                      // Default theme (same as single string)
+                      default: 'github-light',
+                      // Theme used if `html.dark`
+                      dark: 'github-dark',
+                      // Theme used if `html.sepia`
+                      sepia: 'github-light'
+                  },
+                  // https://github.com/shikijs/shiki/blob/main/docs/languages.md#adding-grammar
+                  preload: ['java','json','js','ts','css','shell','html','md','yaml','sql','properties','http','groovy']
+              }
+          }
+      }
   },
   feedme: {
     feeds: {
@@ -110,12 +118,12 @@ export default defineNuxtConfig({
           description: 'Personal site of Dan Vega',
           copyright: '2024 by Dan Vega',
           language: 'en',
-          link: process.env.BASE_URL || 'https://www.danvega.dev',
-          id: process.env.BASE_URL || 'https://www.danvega.dev',
+          link: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.danvega.dev',
+          id: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.danvega.dev',
           author: { email: 'danvega@gmail.com', name: 'Dan Vega' },
           feedLinks: {
-            rss: `${process.env.BASE_URL}/feed.xml`,
-            json: `${process.env.BASE_URL}/feed.json`,
+            rss: `${process.env.NUXT_PUBLIC_SITE_URL || 'https://www.danvega.dev'}/feed.xml`,
+            json: `${process.env.NUXT_PUBLIC_SITE_URL || 'https://www.danvega.dev'}/feed.json`,
           },
         },
       },
@@ -127,7 +135,7 @@ export default defineNuxtConfig({
         },
         mapping: [
           ['description', 'excerpt'],
-          ['link', '_path', value => {
+          ['link', '_path', (value: string) => {
             if (value && value.startsWith('/blog/')) {
               // Extract the slug from the path (the last part after the last slash)
               const parts = value.split('/');
@@ -136,7 +144,7 @@ export default defineNuxtConfig({
             }
             return value;
           }],
-          ['published', 'date', value => value ? new Date(value) : value],
+          ['published', 'date', (value: string) => value ? new Date(value) : value],
           ['guid', '_path'],
         ],
         query: {
@@ -149,15 +157,13 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    provider: 'netlify',
+    provider: process.env.NODE_ENV === 'production' ? 'netlify' : 'ipx',
     netlify: {
-      baseURl: process.env.IMAGES_URL
+      baseURL: process.env.IMAGES_URL
     }
   },
   sitemap: {
-    strictNuxtContentPaths: true,
-    xsl: false,
-
+    xsl: false
   },
   css: ['~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
   devtools: { enabled: true }
