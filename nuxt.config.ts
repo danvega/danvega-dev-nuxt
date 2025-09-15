@@ -51,7 +51,8 @@ export default defineNuxtConfig({
     '/speaking': { prerender: true },
     '/courses': { prerender: true },
     '/uses': { prerender: true },
-    '/contact': { redirect: '/about' }
+    '/contact': { redirect: '/about' },
+    '/api/photos': { isr: true, headers: { 'cache-control': 's-maxage=86400' } }
   },
   app: {
     head: {
@@ -157,11 +158,11 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    provider: 'ipx',
-    domains: ['danvega.dev', 'www.danvega.dev'],
-    netlify: {
-      baseURL: process.env.IMAGES_URL || process.env.NUXT_PUBLIC_SITE_URL || 'https://danvega.dev'
-    }
+    provider: process.env.NODE_ENV === 'production' ? 'netlify' : 'ipx',
+    domains: ['danvega.dev', 'www.danvega.dev']
+  },
+  nitro: {
+    serveStatic: true
   },
   sitemap: {
     xsl: false
