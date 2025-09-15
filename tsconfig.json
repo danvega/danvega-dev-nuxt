@@ -2,6 +2,18 @@
   // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "types": ["node"]
+    "types": ["node"],
+    // Nuxt 4 TypeScript optimizations
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    // Enhanced strictness for better type safety
+    "noUnusedLocals": false, // Disabled due to auto-imports
+    "noUnusedParameters": false, // Disabled due to Vue component props
+    // Better performance with project references
+    "incremental": true,
+    "composite": false
   }
 }

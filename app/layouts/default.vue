@@ -19,13 +19,15 @@ function useIsHome(route: any) {
 }
 
 // Use shared blog data for search functionality
+import type { SearchResult } from '~/types/content'
+
 const { useAllBlogPosts } = useBlogData()
 const { data: allBlogPosts } = await useAllBlogPosts()
 
-const searchData = computed(() => {
+const searchData = computed((): SearchResult[] => {
   return allBlogPosts.value?.map(post => ({
     title: post.title,
-    _path: post.path
+    _path: post.path || ''
   })) || []
 })
 

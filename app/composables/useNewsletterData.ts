@@ -1,17 +1,19 @@
 // Enhanced newsletter data fetching with Nuxt 4 features
-export const useNewsletterData = () => {
+import type { NewsletterPost, NewsletterDataComposable } from '~/types/content'
+
+export const useNewsletterData = (): NewsletterDataComposable => {
 
   // Shared newsletter posts data
   const useAllNewsletterPosts = () => {
-    return useAsyncData('newsletter-posts-all', async () => {
+    return useAsyncData<NewsletterPost[]>('newsletter-posts-all', async () => {
       try {
         const allPosts = await queryCollection('content').all()
 
-        return allPosts.filter(post =>
+        return allPosts.filter((post): post is NewsletterPost =>
           post.path?.startsWith('/newsletter')
         ).sort((a, b) => {
           // Extract date from path: /newsletter/YYYY/MM/DD/slug for sorting
-          const extractDateFromPath = (path) => {
+          const extractDateFromPath = (path?: string): Date => {
             const match = path?.match(/\/newsletter\/(\d{4})\/(\d{2})\/(\d{2})\//)
             if (match) {
               return new Date(`${match[1]}-${match[2]}-${match[3]}`)
@@ -21,7 +23,7 @@ export const useNewsletterData = () => {
 
           const dateA = extractDateFromPath(a.path)
           const dateB = extractDateFromPath(b.path)
-          return dateB - dateA // newest first
+          return dateB.getTime() - dateA.getTime() // newest first
         })
       } catch (err) {
         console.error('Error fetching newsletter posts:', err)
@@ -38,7 +40,7 @@ export const useNewsletterData = () => {
   const useLatestNewsletterPosts = (limit: number = 10) => {
     const limitRef = ref(limit)
 
-    return useAsyncData(() => `latest-newsletter-posts-${limitRef.value}`, async () => {
+    return useAsyncData<NewsletterPost[]>(() => `latest-newsletter-posts-${limitRef.value}`, async () => {
       try {
         const { data: allPosts } = await useAllNewsletterPosts()
         return allPosts.value?.slice(0, limitRef.value) || []
@@ -56,7 +58,7 @@ export const useNewsletterData = () => {
 
   // Single newsletter post
   const useNewsletterPost = (slug: string) => {
-    return useAsyncData(`newsletter-post-${slug}`, async () => {
+    return useAsyncData<NewsletterPost>(`newsletter-post-${slug}`, async () => {
       try {
         const { data: allPosts } = await useAllNewsletterPosts()
 

@@ -1,16 +1,18 @@
 // Enhanced data fetching composables using Nuxt 4 features
-export const useBlogData = () => {
+import type { BlogPost, PaginatedResults, BlogDataComposable } from '~/types/content'
+
+export const useBlogData = (): BlogDataComposable => {
 
   // Shared blog posts data with reactive caching
   const useAllBlogPosts = () => {
-    return useAsyncData('blog-posts-all', async () => {
+    return useAsyncData<BlogPost[]>('blog-posts-all', async () => {
       try {
         const allPosts = await queryCollection('content').all()
 
-        return allPosts.filter(post =>
+        return allPosts.filter((post): post is BlogPost =>
           post.path?.startsWith('/blog') &&
           post.meta?.published === true
-        ).sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
+        ).sort((a, b) => new Date(b.meta?.date || 0).getTime() - new Date(a.meta?.date || 0).getTime())
       } catch (err) {
         console.error('Error fetching blog posts:', err)
         return []
@@ -26,7 +28,7 @@ export const useBlogData = () => {
   const useLatestArticles = (limit: number = 3) => {
     const limitRef = ref(limit)
 
-    return useAsyncData(() => `latest-articles-${limitRef.value}`, async () => {
+    return useAsyncData<BlogPost[]>(() => `latest-articles-${limitRef.value}`, async () => {
       try {
         const { data: allPosts } = await useAllBlogPosts()
         return allPosts.value?.slice(0, limitRef.value) || []
@@ -44,7 +46,7 @@ export const useBlogData = () => {
 
   // Blog posts with pagination and filtering
   const usePaginatedBlogPosts = (page: Ref<number>, limit: Ref<number>, tag?: Ref<string | undefined>) => {
-    return useAsyncData(() => {
+    return useAsyncData<PaginatedResults<BlogPost>>(() => {
       const key = `blog-posts-page-${page.value}-limit-${limit.value}`
       return tag?.value ? `${key}-tag-${tag.value}` : key
     }, async () => {
@@ -87,7 +89,7 @@ export const useBlogData = () => {
 
   // Single blog post with enhanced caching
   const useBlogPost = (slug: string) => {
-    return useAsyncData(`blog-post-${slug}`, async () => {
+    return useAsyncData<BlogPost>(`blog-post-${slug}`, async () => {
       try {
         const { data: allPosts } = await useAllBlogPosts()
 
