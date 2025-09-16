@@ -7,24 +7,21 @@ export const useNewsletterData = (): NewsletterDataComposable => {
   const useAllNewsletterPosts = () => {
     return useAsyncData<NewsletterPost[]>('newsletter-posts-all', async () => {
       try {
-        const allPosts = await queryCollection('content').all()
+        const allPosts = await queryCollection('newsletter')
+          .order('date', 'DESC')
+          .all()
 
-        return allPosts.filter((post): post is NewsletterPost =>
-          post.path?.startsWith('/newsletter')
-        ).sort((a, b) => {
-          // Extract date from path: /newsletter/YYYY/MM/DD/slug for sorting
-          const extractDateFromPath = (path?: string): Date => {
-            const match = path?.match(/\/newsletter\/(\d{4})\/(\d{2})\/(\d{2})\//)
-            if (match) {
-              return new Date(`${match[1]}-${match[2]}-${match[3]}`)
-            }
-            return new Date(0) // fallback to epoch
-          }
-
-          const dateA = extractDateFromPath(a.path)
-          const dateB = extractDateFromPath(b.path)
-          return dateB.getTime() - dateA.getTime() // newest first
-        })
+        return allPosts.map((post: any): NewsletterPost => ({
+          _id: post._id || '',
+          path: post._path || post.path,
+          title: post.title || '',
+          description: post.description,
+          meta: {
+            slug: post.slug,
+            date: post.date
+          },
+          body: post.body
+        }))
       } catch (err) {
         console.error('Error fetching newsletter posts:', err)
         return []
@@ -42,8 +39,22 @@ export const useNewsletterData = (): NewsletterDataComposable => {
 
     return useAsyncData<NewsletterPost[]>(() => `latest-newsletter-posts-${limitRef.value}`, async () => {
       try {
-        const { data: allPosts } = await useAllNewsletterPosts()
-        return allPosts.value?.slice(0, limitRef.value) || []
+        const allPosts = await queryCollection('newsletter')
+          .order('date', 'DESC')
+          .limit(limitRef.value)
+          .all()
+
+        return allPosts.map((post: any): NewsletterPost => ({
+          _id: post._id || '',
+          path: post._path || post.path,
+          title: post.title || '',
+          description: post.description,
+          meta: {
+            slug: post.slug,
+            date: post.date
+          },
+          body: post.body
+        }))
       } catch (err) {
         console.error('Error fetching latest newsletter posts:', err)
         return []

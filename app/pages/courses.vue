@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import type { Course } from '~/types/ui'
 
 useHead({
   title: 'Dan Vega - Courses',

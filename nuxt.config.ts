@@ -15,8 +15,6 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-13",
   // Nuxt 4 experimental features for enhanced performance
   experimental: {
-    // Improved payload extraction and hydration
-    payloadExtraction: false,
     // Enhanced client-side navigation
     viewTransition: true,
     // Better component islands
@@ -81,6 +79,7 @@ export default defineNuxtConfig({
     },
   },
     routeRules: {
+        '/': {prerender: true},
         '/blog/**': {isr: true},
         '/newsletter/**': {isr: true},
         '/about': {prerender: true},

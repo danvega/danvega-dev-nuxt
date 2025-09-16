@@ -13,6 +13,7 @@ export interface BlogPost {
     author?: string
     cover?: string
     excerpt?: string
+    shortDesc?: string
   }
   body?: {
     children: any[]

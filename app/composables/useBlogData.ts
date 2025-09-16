@@ -7,31 +7,28 @@ export const useBlogData = (): BlogDataComposable => {
   const useAllBlogPosts = () => {
     return useAsyncData<BlogPost[]>('blog-posts-all', async () => {
       try {
-        const allPosts = await queryCollection('content').all()
+        const allPosts = await queryCollection('blog')
+          .where('published', '=', true)
+          .order('date', 'DESC')
+          .all()
 
-        const blogPosts = allPosts.filter((post: any) =>
-          post.path?.startsWith('/blog') &&
-          post.meta?.published === true &&
-          post.meta?.date && // Ensure date exists
-          post.title // Ensure title exists
-        )
-
-        return blogPosts.map((post: any): BlogPost => ({
-          _id: post.id || post._id || '',
-          path: post.path,
+        return allPosts.map((post: any): BlogPost => ({
+          _id: post._id || '',
+          path: post._path || post.path,
           title: post.title || '',
           description: post.description,
           meta: {
-            slug: post.meta?.slug,
-            date: post.meta.date, // Required field, now guaranteed to exist
-            published: post.meta.published, // Required field, now guaranteed to exist
-            tags: post.meta?.tags,
-            author: post.meta?.author,
-            cover: post.meta?.cover,
-            excerpt: post.meta?.excerpt
+            slug: post.slug,
+            date: post.date,
+            published: post.published,
+            tags: post.tags,
+            author: post.author,
+            cover: post.cover,
+            excerpt: post.excerpt,
+            shortDesc: post.description ? post.description.split('.')[0] + '.' : undefined
           },
           body: post.body
-        })).sort((a, b) => new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime())
+        }))
       } catch (err) {
         console.error('Error fetching blog posts:', err)
         return []
@@ -49,8 +46,30 @@ export const useBlogData = (): BlogDataComposable => {
 
     return useAsyncData<BlogPost[]>(() => `latest-articles-${limitRef.value}`, async () => {
       try {
-        const { data: allPosts } = await useAllBlogPosts()
-        return allPosts.value?.slice(0, limitRef.value) || []
+        // Use queryCollection with the defined blog collection
+        const posts = await queryCollection('blog')
+          .where('published', '=', true)
+          .order('date', 'DESC')
+          .limit(limitRef.value)
+          .all()
+
+        return posts.map((post: any): BlogPost => ({
+          _id: post._id || '',
+          path: post._path || post.path,
+          title: post.title || '',
+          description: post.description,
+          meta: {
+            slug: post.slug,
+            date: post.date,
+            published: post.published,
+            tags: post.tags,
+            author: post.author,
+            cover: post.cover,
+            excerpt: post.excerpt,
+            shortDesc: post.description ? post.description.split('.')[0] + '.' : undefined
+          },
+          body: post.body
+        }))
       } catch (err) {
         console.error('Error fetching latest articles:', err)
         return []
@@ -111,20 +130,45 @@ export const useBlogData = (): BlogDataComposable => {
   const useBlogPost = (slug: string) => {
     return useAsyncData<BlogPost>(`blog-post-${slug}`, async () => {
       try {
-        const { data: allPosts } = await useAllBlogPosts()
+        // Try to find by slug first
+        let posts = await queryCollection('blog')
+          .where('slug', '=', slug)
+          .where('published', '=', true)
+          .all()
 
-        const post = allPosts.value?.find(post =>
-          post.meta?.slug === slug || post.path?.endsWith(`/${slug}`)
-        )
+        // If not found by slug, try by path
+        if (posts.length === 0) {
+          posts = await queryCollection('blog')
+            .where('_path', 'includes', `/${slug}`)
+            .where('published', '=', true)
+            .all()
+        }
 
-        if (!post) {
+        if (posts.length === 0) {
           throw createError({
             statusCode: 404,
             statusMessage: 'Post not found'
           })
         }
 
-        return post
+        const post = posts[0]
+        return {
+          _id: post._id || '',
+          path: post._path || post.path,
+          title: post.title || '',
+          description: post.description,
+          meta: {
+            slug: post.slug,
+            date: post.date,
+            published: post.published,
+            tags: post.tags,
+            author: post.author,
+            cover: post.cover,
+            excerpt: post.excerpt,
+            shortDesc: post.description ? post.description.split('.')[0] + '.' : undefined
+          },
+          body: post.body
+        }
       } catch (err) {
         console.error(`Error fetching blog post ${slug}:`, err)
         throw err

@@ -1,12 +1,5 @@
 // Static photos data for better performance
-export interface Photo {
-  id: number;
-  width: number;
-  height: number;
-  src: string;
-  alt: string;
-  rotation?: number; // rotation in degrees: 0, 90, 180, 270
-}
+import type { Photo } from '~/app/types/ui'
 
 export const photos: Photo[] = [
   {

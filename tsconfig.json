@@ -4,7 +4,7 @@
   "compilerOptions": {
     "types": ["node"],
     // Nuxt 4 TypeScript optimizations
-    "exactOptionalPropertyTypes": true,
+    "exactOptionalPropertyTypes": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
