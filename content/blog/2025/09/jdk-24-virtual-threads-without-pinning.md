@@ -1,6 +1,6 @@
 ---
 title: "JDK 24's Major Improvement: Virtual Threads Without Pinning"
-description: Learn how JDK 24's enhancement to virtual threads that eliminates pinning with synchronized blocks can dramatically improve performance in your Spring Boot applications.
+description: Discover JDK 24's breakthrough enhancement that eliminates virtual thread pinning with synchronized blocks and methods. This comprehensive guide explores how this change revolutionizes Java concurrency, dramatically improving scalability for Spring Boot applications with legacy synchronized code. You'll learn about the technical details of thread pinning, see practical performance comparisons, and get hands-on examples showing how to leverage this feature in real-world applications for maximum throughput and efficiency.
 slug: jdk-24-virtual-threads-without-pinning
 date: 2025-04-09T17:00:00.000Z
 published: true

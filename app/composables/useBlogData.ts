@@ -1,6 +1,15 @@
 // Enhanced data fetching composables using Nuxt 4 features
 import type { BlogPost, PaginatedResults, BlogDataComposable } from '~/types/content'
 
+// Helper function to clip description to 100 words
+const clipToWords = (description: string, wordLimit: number = 50): string => {
+  const words = description.split(' ')
+  if (words.length <= wordLimit) {
+    return description
+  }
+  return words.slice(0, wordLimit).join(' ') + '...'
+}
+
 export const useBlogData = (): BlogDataComposable => {
 
   // Shared blog posts data with reactive caching
@@ -25,7 +34,7 @@ export const useBlogData = (): BlogDataComposable => {
             author: post.author,
             cover: post.cover,
             excerpt: post.excerpt,
-            shortDesc: post.description ? post.description.split('.')[0] + '.' : undefined
+            shortDesc: post.description ? clipToWords(post.description) : post.description
           },
           body: post.body
         }))
@@ -44,7 +53,7 @@ export const useBlogData = (): BlogDataComposable => {
   const useLatestArticles = (limit: number = 3) => {
     const limitRef = ref(limit)
 
-    return useAsyncData<BlogPost[]>(() => `latest-articles-${limitRef.value}`, async () => {
+    return useAsyncData<BlogPost[]>(() => `latest-articles-${limitRef.value}-v3`, async () => {
       try {
         // Use queryCollection with the defined blog collection
         const posts = await queryCollection('blog')
@@ -66,7 +75,7 @@ export const useBlogData = (): BlogDataComposable => {
             author: post.author,
             cover: post.cover,
             excerpt: post.excerpt,
-            shortDesc: post.description ? post.description.split('.')[0] + '.' : undefined
+            shortDesc: post.description ? clipToWords(post.description) : post.description
           },
           body: post.body
         }))
@@ -165,7 +174,7 @@ export const useBlogData = (): BlogDataComposable => {
             author: post.author,
             cover: post.cover,
             excerpt: post.excerpt,
-            shortDesc: post.description ? post.description.split('.')[0] + '.' : undefined
+            shortDesc: post.description ? clipToWords(post.description) : post.description
           },
           body: post.body
         }

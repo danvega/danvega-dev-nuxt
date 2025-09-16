@@ -1,11 +1,11 @@
 <script  lang="ts" setup="">
-import {useDateFormat} from "@vueuse/core/index";
+import {useDateFormat} from "@vueuse/core";
 
 // Use enhanced data fetching with automatic data sharing and reactive keys
 const { useLatestArticles } = useBlogData()
 const { data: articles, error } = await useLatestArticles(3)
 
-const formatDatePublished = (date) => {
+const formatDatePublished = (date:string) => {
   const formatted = useDateFormat(date, "MMMM D, YYYY");
   return formatted.value;
 }
@@ -13,7 +13,6 @@ const formatDatePublished = (date) => {
 
 <template>
   <div class="flex flex-col gap-16">
-
 
     <article class="group relative flex flex-col items-start" v-for="post in articles" :key="post._id">
       <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
