@@ -1,11 +1,24 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring Boot 3.x Features: Complete Guide to Major Updates (2022-2025)",
+    "description": "Explore the transformative features introduced in Spring Boot 3.0 through 3.5, from Java 17 requirements and GraalVM native images to virtual threads and enhanced observability. This comprehensive guide covers each release's major improvements, including Docker Compose integration, Testcontainers support, structured logging, and SSL certificate management. Learn how Spring Boot 3.x revolutionized Java application development with practical code examples and migration tips for upgrading from 2.x to 3.x.",
+    "date": "2025-09-17T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/09/spring-boot-3-features",
+    "slug": "spring-boot-3-features",
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "Spring Framework"
+    ]
+  },
+  {
     "title": "JDK 24's Major Improvement: Virtual Threads Without Pinning",
-    "description": "Learn how JDK 24's enhancement to virtual threads that eliminates pinning with synchronized blocks can dramatically improve performance in your Spring Boot applications.",
+    "description": "Discover JDK 24's breakthrough enhancement that eliminates virtual thread pinning with synchronized blocks and methods. This comprehensive guide explores how this change revolutionizes Java concurrency, dramatically improving scalability for Spring Boot applications with legacy synchronized code. You'll learn about the technical details of thread pinning, see practical performance comparisons, and get hands-on examples showing how to leverage this feature in real-world applications for maximum throughput and efficiency.",
     "date": "2025-04-09T17:00:00.000Z",
     "author": "Dan Vega",
-    "_path": "/blog/2025/09/jdk-24-virtual-threads-without-pinning",
+    "_path": "/blog/2025/04/09/jdk-24-virtual-threads-without-pinning",
     "slug": "jdk-24-virtual-threads-without-pinning",
     "tags": [
       "Java",
@@ -14,7 +27,7 @@ export const rssData = [
   },
   {
     "title": "Running AI Models Locally with Docker and Spring AI",
-    "description": "Learn how to use Docker's Model Runner feature to run AI models locally with your Spring Boot applications, with zero API keys, zero data sharing, and zero monthly fees.",
+    "description": "Master Docker Desktop's revolutionary Model Runner feature and discover how to build privacy-first AI applications with Spring Boot. This complete tutorial shows you how to run powerful open-source AI models like Gemma locally on your machine, eliminating API costs, protecting sensitive data, and simplifying development workflows. You'll get step-by-step instructions for setting up local AI models, integrating with Spring AI, and building production-ready applications that respect privacy while delivering exceptional AI capabilities without monthly subscription fees.",
     "date": "2025-04-07T17:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/2025/04/07/docker-model-runner",
@@ -25,7 +38,7 @@ export const rssData = [
   },
   {
     "title": "Creating Your First Model Context Protocol (MCP) Server in Java",
-    "description": "Learn how to build and deploy a custom MCP server with Java to extend AI models with your own data and services.",
+    "description": "Build powerful AI integrations by creating your own Model Context Protocol (MCP) server using Spring Boot and Spring AI. This comprehensive guide walks you through implementing a custom MCP server from scratch, enabling AI models like Claude to access your private data sources, execute specialized business logic, and interact with your custom services. You'll learn the MCP architecture, implement tool functions, handle data retrieval, and deploy a production-ready server that seamlessly extends AI capabilities with your organization's unique data and workflows.",
     "date": "2025-03-26T17:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/2025/03/26/creating-your-first-mcp-server-java",
@@ -575,17 +588,6 @@ export const rssData = [
     "slug": "spring-security-oauth2-login",
     "tags": [
       "Spring Security"
-    ]
-  },
-  {
-    "title": "🔥 New in Spring Boot 3.1 - Spring Boot Docker Compose Module",
-    "description": "In this tutorial you will learn about the new Spring Boot Docker Compose Module. This module allows you to use Docker Compose files directly with Spring Boot applications.",
-    "date": "2023-04-26T08:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/04/26/spring-boot-docker-compose",
-    "slug": "spring-boot-docker-compose",
-    "tags": [
-      "Spring Boot"
     ]
   }
 ] as const
