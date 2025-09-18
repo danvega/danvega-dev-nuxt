@@ -9,6 +9,7 @@ tags:
     - Spring Boot
     - Java
     - Spring Framework
+cover: spring_boot_3_features_cover.png
 keywords: Spring Boot 3, Spring Boot 3.x features, Spring Boot 3.0, Spring Boot 3.5, GraalVM native image, virtual threads Spring Boot, Jakarta EE migration, Docker Compose Spring Boot, Testcontainers, structured logging, Spring Boot observability, Spring Boot migration guide, Java 17 Spring Boot, Spring Boot performance, Spring Boot 4.0
 ---
 
@@ -28,6 +29,8 @@ This guide highlights the most impactful features from each release in the 3.x s
 - [Spring Boot 3.3](#spring-boot-33-may-2024-security-and-transparency) - SBOM, Enhanced Observability
 - [Spring Boot 3.4](#spring-boot-34-november-2024-operational-excellence) - Structured Logging, @Fallback
 - [Spring Boot 3.5](#spring-boot-35-may-2025-the-grand-finale) - SSL Metrics, Quartz Actuator
+
+![Spring Boot 3 Features](/images/blog/2025/09/17/spring_boot_3_features.png)
 
 ## Spring Boot 3.0 (November 2022): The Foundation for Modern Java
 
