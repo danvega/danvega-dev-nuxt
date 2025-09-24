@@ -8,6 +8,7 @@ author: Dan Vega
 tags:
   - Java
   - Spring
+cover: ./jdk_24_virtual_threads_pinning_cover_image.png
 video: https://www.youtube.com/embed/V4gsffMge7E
 keywords: virtual threads, JDK 24, Java 24, synchronized blocks, Spring Boot, performance optimization, thread pinning, concurrency
 ---

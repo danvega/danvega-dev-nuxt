@@ -12,6 +12,7 @@ export interface BlogPost {
     tags?: string[]
     author?: string
     cover?: string
+    video?: string
     excerpt?: string
     shortDesc?: string
   }

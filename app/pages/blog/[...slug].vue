@@ -8,6 +8,7 @@ const slug = getSlugFromPath(path);
 const { useBlogPost } = useBlogData()
 const { data } = await useBlogPost(slug)
 
+
 const datePublished = useDateFormat(data.value?.meta?.date, 'MMMM D, YYYY');
 useDateFormat(data.value?.meta?.updatedOn, 'MMMM D, YYYY');
 const getImagePath = (date,cover) => {

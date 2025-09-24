@@ -33,6 +33,7 @@ export const useBlogData = (): BlogDataComposable => {
             tags: post.tags,
             author: post.author,
             cover: post.cover,
+            video: post.video,
             excerpt: post.excerpt,
             shortDesc: post.description ? clipToWords(post.description) : post.description
           },
@@ -74,6 +75,7 @@ export const useBlogData = (): BlogDataComposable => {
             tags: post.tags,
             author: post.author,
             cover: post.cover,
+            video: post.video,
             excerpt: post.excerpt,
             shortDesc: post.description ? clipToWords(post.description) : post.description
           },
@@ -161,6 +163,7 @@ export const useBlogData = (): BlogDataComposable => {
         }
 
         const post = posts[0]
+
         return {
           _id: post._id || '',
           path: post._path || post.path,
@@ -173,6 +176,7 @@ export const useBlogData = (): BlogDataComposable => {
             tags: post.tags,
             author: post.author,
             cover: post.cover,
+            video: post.video,
             excerpt: post.excerpt,
             shortDesc: post.description ? clipToWords(post.description) : post.description
           },

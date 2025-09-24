@@ -13,6 +13,7 @@ export default defineContentConfig({
         tags: z.array(z.string()).optional(),
         description: z.string().optional(),
         cover: z.string().optional(),
+        video: z.string().optional(),
         excerpt: z.string().optional(),
         shortDesc: z.string().optional(),
         author: z.string().optional()
