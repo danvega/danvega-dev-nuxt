@@ -1,11 +1,26 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring AI MCP Servers",
+    "description": "Explore how to integrate Model Context Protocol (MCP) servers with Spring AI to enhance AI applications with external data sources and tools.",
+    "date": "2025-09-24",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/09/24/spring-ai-mcp-servers",
+    "slug": "spring-ai-mcp-servers",
+    "tags": [
+      "spring",
+      "spring-ai",
+      "ai",
+      "mcp",
+      "java"
+    ]
+  },
+  {
     "title": "Spring Boot 3.x Features: Complete Guide to Major Updates (2022-2025)",
     "description": "Explore the transformative features introduced in Spring Boot 3.0 through 3.5, from Java 17 requirements and GraalVM native images to virtual threads and enhanced observability. This comprehensive guide covers each release's major improvements, including Docker Compose integration, Testcontainers support, structured logging, and SSL certificate management. Learn how Spring Boot 3.x revolutionized Java application development with practical code examples and migration tips for upgrading from 2.x to 3.x.",
     "date": "2025-09-17T09:00:00.000Z",
     "author": "Dan Vega",
-    "_path": "/blog/2025/09/spring-boot-3-features",
+    "_path": "/blog/2025/09/17/spring-boot-3-features",
     "slug": "spring-boot-3-features",
     "tags": [
       "Spring Boot",
@@ -575,17 +590,6 @@ export const rssData = [
     "author": "Dan Vega",
     "_path": "/blog/2023/05/03/spring-session-introduction",
     "slug": "spring-session-introduction",
-    "tags": [
-      "Spring Security"
-    ]
-  },
-  {
-    "title": "OAuth2 Login Made Easy in Java: A Spring Boot & Spring Security Walkthrough",
-    "description": "In this tutorial, we will discuss how to set up OAuth 2 logins in Spring Security with Spring Boot.",
-    "date": "2023-04-28T08:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/04/28/spring-security-oauth2-login",
-    "slug": "spring-security-oauth2-login",
     "tags": [
       "Spring Security"
     ]
