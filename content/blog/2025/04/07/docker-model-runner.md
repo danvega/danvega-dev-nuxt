@@ -7,6 +7,7 @@ published: true
 author: Dan Vega
 tags: 
    - Spring AI
+cover: ./running_with_docker_and_spring_ai_cover.png
 video: https://www.youtube.com/embed/6E6JFLMHcoQ
 github: https://github.com/danvega/docker-model-runner
 keywords: docker model runner, spring ai, local ai models, spring boot, ai development, gemma, no api key, privacy, docker desktop
