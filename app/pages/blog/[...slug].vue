@@ -60,38 +60,58 @@ useHead({
 </script>
 
 <template>
-
-  <Container class="mt-16 sm:mt-32">
-    <div class="xl:relative">
-      <div class="mx-auto max-w-7xl">
-
-        <article>
-          <header className="flex flex-col">
-            <time dateTime="September 5, 2022" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
-              <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
-              <span class="ml-3">Published On: {{ datePublished }}</span>
-              <span class="ml-2" v-if="data?.meta?.updatedOn">• Updated On: {{ useDateFormat(data?.meta?.updatedOn, 'MMMM D, YYYY').value }}</span>
-            </time>
-            <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              {{ data?.title }}
-            </h1>
-          </header>
-          <!-- if we have a video show that, else show the cover image -->
-          <YouTube :src="data?.meta?.video" v-if="data?.meta?.video" class="prose dark:prose-invert rounded-2xl mt-8"/>
-          <NuxtImg
-              :src="getImagePath(data?.meta?.date,data?.meta?.cover)"
-              class="prose dark:prose-invert rounded-2xl mt-8"
-              alt="ALT TEXT"
-              v-if="data?.meta?.cover && !data?.meta?.video"/>
-          <ContentRenderer :value="data" class="prose dark:prose-invert mt-8" />
-        </article>
-
-        <BlogTags :tags="data?.meta?.tags"/>
-
-        <BlogNewsletterSignup />
-
+  <div>
+    <!-- Header Section with constrained content -->
+    <Container class="mt-16 sm:mt-32">
+      <div class="xl:relative">
+        <div class="mx-auto max-w-7xl">
+          <article>
+            <header className="flex flex-col">
+              <time dateTime="September 5, 2022" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
+                <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
+                <span class="ml-3">Published On: {{ datePublished }}</span>
+                <span class="ml-2" v-if="data?.meta?.updatedOn">• Updated On: {{ useDateFormat(data?.meta?.updatedOn, 'MMMM D, YYYY').value }}</span>
+              </time>
+              <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                {{ data?.title }}
+              </h1>
+            </header>
+          </article>
+        </div>
       </div>
-    </div>
-  </Container>
+    </Container>
 
+    <!-- Cover Image/Video Section - Same width as content -->
+    <Container class="mt-8 mb-8" v-if="data?.meta?.video || data?.meta?.cover">
+      <div class="xl:relative">
+        <div class="mx-auto max-w-7xl">
+          <div class="mx-auto max-w-2xl lg:max-w-5xl">
+            <!-- if we have a video show that, else show the cover image -->
+            <YouTube :src="data?.meta?.video" v-if="data?.meta?.video" class="w-full rounded-2xl"/>
+            <NuxtImg
+                :src="getImagePath(data?.meta?.date,data?.meta?.cover)"
+                class="w-full rounded-2xl"
+                alt="Cover image for the blog post"
+                v-if="data?.meta?.cover && !data?.meta?.video"/>
+          </div>
+        </div>
+      </div>
+    </Container>
+
+    <!-- Content Section with constrained content -->
+    <Container>
+      <div class="xl:relative">
+        <div class="mx-auto max-w-7xl">
+          <article>
+            <ContentRenderer :value="data" class="prose dark:prose-invert" />
+          </article>
+
+          <BlogTags :tags="data?.meta?.tags"/>
+
+          <BlogNewsletterSignup />
+
+        </div>
+      </div>
+    </Container>
+  </div>
 </template>
