@@ -1,18 +1,31 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
-    "title": "Spring AI MCP Servers",
-    "description": "Explore how to integrate Model Context Protocol (MCP) servers with Spring AI to enhance AI applications with external data sources and tools.",
-    "date": "2025-09-24",
+    "title": "First-Class API Versioning in Spring Boot 4",
+    "description": "Learn how to implement API versioning strategies in Spring Boot 4 applications, including best practices for managing backwards compatibility and evolution of your REST APIs.",
+    "date": "2025-09-25T09:00:00.000Z",
     "author": "Dan Vega",
-    "_path": "/blog/2025/09/24/spring-ai-mcp-servers",
-    "slug": "spring-ai-mcp-servers",
+    "_path": "/blog/2025/09/25/spring-boot-4-api-versioning-in-spring",
+    "slug": "spring-boot-4-api-versioning-in-spring",
     "tags": [
-      "spring",
-      "spring-ai",
-      "ai",
-      "mcp",
-      "java"
+      "Spring Boot",
+      "Spring Boot 4",
+      "Spring Framework"
+    ]
+  },
+  {
+    "title": "My CYC 2025 Demo: Why Building MCP Servers in Java Just Got Ridiculously Simple",
+    "description": "Learn how Spring AI 1.1.0-M2 makes building MCP servers in Java incredibly simple with just annotations. No callbacks, no complex setup. Includes complete code from my Commit Your Code 2025 conference demo, showing how to expose your Java application's data to Claude and other AI assistants.",
+    "date": "2025-09-24T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/09/24/cyc-mcp-server-spring-ai",
+    "slug": "cyc-mcp-server-spring-ai",
+    "tags": [
+      "Spring",
+      "Spring AI",
+      "AI",
+      "MCP",
+      "Java"
     ]
   },
   {
@@ -581,17 +594,6 @@ export const rssData = [
       "Spring Boot",
       "AWS",
       "Java"
-    ]
-  },
-  {
-    "title": "Demystifying Spring Session: A Comprehensive Introduction for Java Developers!",
-    "description": "In this tutorial, we'll explore the powerful features of Spring Session and learn how to effectively manage user sessions in your Java web applications.",
-    "date": "2023-05-03T08:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/05/03/spring-session-introduction",
-    "slug": "spring-session-introduction",
-    "tags": [
-      "Spring Security"
     ]
   }
 ] as const
