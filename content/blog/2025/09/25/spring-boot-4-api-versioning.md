@@ -81,26 +81,22 @@ Alternatively, you can configure API versioning entirely through `application.pr
 
 ```properties
 # Basic versioning configuration
-spring.mvc.api-versioning.supported-versions=1.0,2.0
-spring.mvc.api-versioning.default-version=1.0
+spring.mvc.apiversion.supported=1.0,2.0
+spring.mvc.apiversion.default=1.0
 
 # Choose ONE versioning strategy:
 
 # Path segment versioning (e.g., /api/v1/users)
-spring.mvc.api-versioning.path-segment.enabled=true
-spring.mvc.api-versioning.path-segment.index=1
+spring.mvc.apiversion.use.path-segment=1
 
 # Request header versioning (e.g., X-API-Version: 1.0)
-spring.mvc.api-versioning.request-header.enabled=true
-spring.mvc.api-versioning.request-header.name=X-API-Version
+spring.mvc.apiversion.use.header=X-API-Version
 
 # Query parameter versioning (e.g., ?version=1.0)
-spring.mvc.api-versioning.query-param.enabled=true
-spring.mvc.api-versioning.query-param.name=version
+spring.mvc.apiversion.use.query-parameter=version
 
 # Media type parameter versioning (e.g., Accept: application/json;version=1.0)
-spring.mvc.api-versioning.media-type.enabled=true
-spring.mvc.api-versioning.media-type.parameter-name=version
+spring.mvc.apiversion.use.media-type-parameter[application/json]=version
 ```
 
 **Important**: When using `application.properties` configuration, comment out or remove the `configureApiVersioning` method in your `WebConfig` class to avoid conflicts.
@@ -141,10 +137,9 @@ public void configureApiVersioning(ApiVersionConfigurer configurer) {
 
 **Configuration in properties:**
 ```properties
-spring.mvc.api-versioning.path-segment.enabled=true
-spring.mvc.api-versioning.path-segment.index=1
-spring.mvc.api-versioning.supported-versions=1.0,2.0
-spring.mvc.api-versioning.default-version=1.0
+spring.mvc.apiversion.use.path-segment=1
+spring.mvc.apiversion.supported=1.0,2.0
+spring.mvc.apiversion.default=1.0
 ```
 
 **Client Usage:**
@@ -182,8 +177,7 @@ configurer.useRequestHeader("X-API-Version");
 
 **Configuration in properties:**
 ```properties
-spring.mvc.api-versioning.request-header.enabled=true
-spring.mvc.api-versioning.request-header.name=X-API-Version
+spring.mvc.apiversion.use.header=X-API-Version
 ```
 
 **Client Usage:**
@@ -213,8 +207,7 @@ configurer.useQueryParam("version");
 
 **Configuration in properties:**
 ```properties
-spring.mvc.api-versioning.query-param.enabled=true
-spring.mvc.api-versioning.query-param.name=version
+spring.mvc.apiversion.use.query-parameter=version
 ```
 
 **Client Usage:**
@@ -243,8 +236,7 @@ configurer.useMediaTypeParameter(MediaType.APPLICATION_JSON, "version");
 
 **Configuration in properties:**
 ```properties
-spring.mvc.api-versioning.media-type.enabled=true
-spring.mvc.api-versioning.media-type.parameter-name=version
+spring.mvc.apiversion.use.media-type-parameter[application/json]=version
 ```
 
 **Client Usage:**
