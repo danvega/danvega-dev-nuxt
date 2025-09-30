@@ -13,7 +13,7 @@ export const photos: Photo[] = [
     id: 2,
     width: 1024,
     height: 768,
-    src: '/images/photos/confoo_2025_02.jpeg',
+    src: '/images/photos/confoo_2025_02.jpg',
     alt: 'Photo of confoo 2025 02',
     rotation: 180
   },
@@ -106,7 +106,7 @@ export const photos: Photo[] = [
     id: 15,
     width: 1024,
     height: 768,
-    src: '/images/photos/javaone_01.jpeg',
+    src: '/images/photos/javaone_01.jpg',
     alt: 'Photo of javaone 01',
     rotation: 90
   },
@@ -114,7 +114,7 @@ export const photos: Photo[] = [
     id: 16,
     width: 1024,
     height: 768,
-    src: '/images/photos/javaone_02.jpeg',
+    src: '/images/photos/javaone_02.jpg',
     alt: 'Photo of javaone 02',
     rotation: 90
   },
