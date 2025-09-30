@@ -13,6 +13,9 @@ export default defineNuxtPlugin((nuxtApp) => {
         app: nuxtApp.vueApp,
         dsn: sentry.dsn,
         environment: sentry.environment,
+        _experiments: {
+            enableLogs: true,
+        },
         integrations: [
             new Sentry.BrowserTracing({
                 routingInstrumentation: Sentry.vueRouterInstrumentation(router),
