@@ -159,7 +159,7 @@ export default defineNuxtConfig({
                       dark: 'github-dark',
                       sepia: 'github-light'
                   },
-                  langs: ['java','json','js','ts','css','shell','html','md','yaml','sql','properties','http','groovy']
+                  langs: ['java','json','js','ts','css','shell','html','md','yaml','sql','properties','http','groovy','graphql']
               }
           }
       }
