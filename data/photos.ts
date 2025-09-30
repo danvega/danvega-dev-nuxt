@@ -267,5 +267,12 @@ export const photos: Photo[] = [
     height: 768,
     src: '/images/photos/youtube_01.jpeg',
     alt: 'Photo of youtube 01'
+  },
+  {
+    id: 38,
+    width: 1768,
+    height: 1366,
+    src: '/images/photos/commit_your_code.jpg',
+    alt: 'Commit your Code 2025'
   }
 ];
