@@ -14,19 +14,6 @@ function updateRandomPhotos() {
   randomPhotos.value = getRandomPhotos(photos, 5);
 }
 
-function getRotationClass(rotation: number = 0): string {
-  switch (rotation) {
-    case 90:
-      return 'rotate-90';
-    case 180:
-      return 'rotate-180';
-    case 270:
-      return '-rotate-90';
-    default:
-      return 'rotate-0';
-  }
-}
-
 let intervalId: number;
 
 onMounted(() => {
@@ -59,8 +46,7 @@ onUnmounted(() => {
               loading="lazy"
               width="288"
               height="320"
-              class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 cursor-pointer"
-              :class="getRotationClass(photo.rotation)"/>
+              class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110 cursor-pointer"/>
         </div>
       </TransitionGroup>
     </div>

@@ -14,16 +14,14 @@ export const photos: Photo[] = [
     width: 1024,
     height: 768,
     src: '/images/photos/confoo_2025_02.jpg',
-    alt: 'Photo of confoo 2025 02',
-    rotation: 180
+    alt: 'Photo of confoo 2025 02'
   },
   {
     id: 3,
     width: 1024,
     height: 768,
     src: '/images/photos/dad_bella_dance.jpeg',
-    alt: 'Photo of dad bella dance',
-    rotation: 0
+    alt: 'Photo of dad bella dance'
   },
   {
     id: 4,
@@ -107,16 +105,14 @@ export const photos: Photo[] = [
     width: 1024,
     height: 768,
     src: '/images/photos/javaone_01.jpg',
-    alt: 'Photo of javaone 01',
-    rotation: 90
+    alt: 'Photo of javaone 01'
   },
   {
     id: 16,
     width: 1024,
     height: 768,
     src: '/images/photos/javaone_02.jpg',
-    alt: 'Photo of javaone 02',
-    rotation: 90
+    alt: 'Photo of javaone 02'
   },
   {
     id: 17,

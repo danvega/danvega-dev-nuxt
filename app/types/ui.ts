@@ -5,7 +5,6 @@ export interface Photo {
   height: number
   src: string
   alt: string
-  rotation?: number // rotation in degrees: 0, 90, 180, 270
 }
 
 export interface Course {
