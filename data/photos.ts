@@ -150,9 +150,8 @@ export const photos: Photo[] = [
     id: 21,
     width: 1024,
     height: 768,
-    src: '/images/photos/spring_io_2025_01.jpeg',
-    alt: 'Spring/IO 2025: My First Session',
-    rotation: 180
+    src: '/images/photos/spring_io_2025_01_flipped.jpeg',
+    alt: 'Spring/IO 2025: My First Session'
   },
   {
     id: 22,
