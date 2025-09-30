@@ -1,12 +1,24 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Evolving your API without Versioning in GraphQL",
+    "description": "Explore modern approaches to API versioning in GraphQL, including schema evolution strategies, deprecation patterns, and best practices for maintaining backward compatibility while evolving your API.",
+    "date": "2025-09-30T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/09/30/api-versioning-with-graphql",
+    "slug": "api-versioning-with-graphql",
+    "tags": [
+      "Spring Boot",
+      "GraphQL"
+    ]
+  },
+  {
     "title": "First-Class API Versioning in Spring Boot 4",
     "description": "Learn how to implement API versioning strategies in Spring Boot 4 applications, including best practices for managing backwards compatibility and evolution of your REST APIs.",
     "date": "2025-09-25T09:00:00.000Z",
     "author": "Dan Vega",
-    "_path": "/blog/2025/09/25/spring-boot-4-api-versioning-in-spring",
-    "slug": "spring-boot-4-api-versioning-in-spring",
+    "_path": "/blog/2025/09/25/spring-boot-4-api-versioning",
+    "slug": "spring-boot-4-api-versioning",
     "tags": [
       "Spring Boot",
       "Spring Boot 4",
@@ -581,19 +593,6 @@ export const rssData = [
     "tags": [
       "Spring Framework",
       "Spring Boot"
-    ]
-  },
-  {
-    "title": "Java 17 🤝 AWS Lambda: Creating Serverless Functions in Java & Spring with Java 17",
-    "description": "AWS has made a big announcement recently - Java 17 runtime is now supported on AWS Lambda. What this means is, you now have the freedom to write your lambda functions using Java in Spring and specifically target JDK 17.",
-    "date": "2023-05-19T08:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/05/19/aws-lambda-java-17",
-    "slug": "aws-lambda-java-17",
-    "tags": [
-      "Spring Boot",
-      "AWS",
-      "Java"
     ]
   }
 ] as const
