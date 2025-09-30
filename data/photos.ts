@@ -1,5 +1,5 @@
-// Static photos data for better performance
-import type { Photo } from '~/app/types/ui'
+import type {Photo} from "~/types/ui";
+
 
 export const photos: Photo[] = [
   {
@@ -150,7 +150,7 @@ export const photos: Photo[] = [
     id: 21,
     width: 1024,
     height: 768,
-    src: '/images/photos/spring_io_2025_01_flipped.jpeg',
+    src: '/images/photos/spring_io_2025_01_flipped.jpg',
     alt: 'Spring/IO 2025: My First Session'
   },
   {
