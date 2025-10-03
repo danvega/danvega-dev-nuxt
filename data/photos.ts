@@ -274,5 +274,12 @@ export const photos: Photo[] = [
     height: 1366,
     src: '/images/photos/commit_your_code.jpg',
     alt: 'Commit your Code 2025'
-  }
+  },
+    {
+        id: 39,
+        width: 964,
+        height: 1280,
+        src: '/images/photos/dev2next_2025_01.jpeg',
+        alt: 'AI Panel at dev2Next 2025 led by Frank Greco'
+    }
 ];
