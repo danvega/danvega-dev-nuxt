@@ -4,7 +4,13 @@ import { type Config } from 'tailwindcss'
 import typographyStyles from './typography'
 
 export default {
-    content: ['./src/**/*.{js,ts,vue}'],
+    content: [
+        './app/**/*.{js,ts,vue}',
+        './app.vue',
+        './error.vue',
+        './components/**/*.{js,ts,vue}',
+        './content/**/*.md'
+    ],
     darkMode: 'class',
     plugins: [
         typographyPlugin,

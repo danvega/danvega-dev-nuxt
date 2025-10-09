@@ -142,7 +142,8 @@ export default defineNuxtConfig({
               discardComments: { removeAll: true },
               normalizeWhitespace: true,
               removeUnusedKeyframes: true,
-              mergeLonghand: true,
+              mergeLonghand: false, // Disabled to preserve Tailwind's mobile-first media queries
+              mergeRules: false, // Disabled to prevent CSS rule reordering
               discardDuplicates: true
             }]
           }
