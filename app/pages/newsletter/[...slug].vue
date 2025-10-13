@@ -73,3 +73,10 @@ useHead({
   </div>
   </Container>
 </template>
+
+<style scoped>
+:deep(.prose img:not(.custom-width-image)) {
+  width: 100%;
+  max-width: 100%;
+}
+</style>
