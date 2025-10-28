@@ -1,6 +1,17 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Building MCP Clients with Spring AI: Augmenting LLMs with Custom Context",
+    "description": "Learn how to build MCP (Model Context Protocol) clients using Spring AI to augment Large Language Models with custom context and functionality for your applications.",
+    "date": "2025-10-28T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/10/28/spring-ai-mcp-client",
+    "slug": "spring-ai-mcp-client",
+    "tags": [
+      "Spring AI"
+    ]
+  },
+  {
     "title": "Evolving your API without Versioning in GraphQL",
     "description": "Explore modern approaches to API versioning in GraphQL, including schema evolution strategies, deprecation patterns, and best practices for maintaining backward compatibility while evolving your API.",
     "date": "2025-09-30T09:00:00.000Z",
@@ -578,18 +589,6 @@ export const rssData = [
     "author": "Dan Vega",
     "_path": "/blog/2023/06/12/spring-http-interfaces-headers",
     "slug": "spring-http-interfaces-headers",
-    "tags": [
-      "Spring Framework",
-      "Spring Boot"
-    ]
-  },
-  {
-    "title": "Spring HTTP Interface Clients: Consuming HTTP services in Spring Boot",
-    "description": "Learn all about the new HTTP Interfaces in Spring Framework 6 and Spring Boot 3 by building out a real world example.",
-    "date": "2023-06-14T08:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/06/14/spring-http-interfaces",
-    "slug": "spring-http-interfaces",
     "tags": [
       "Spring Framework",
       "Spring Boot"
