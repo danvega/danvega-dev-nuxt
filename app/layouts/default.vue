@@ -24,6 +24,7 @@ import type { SearchResult } from '~/types/content'
 
 const searchData = ref<SearchResult[]>([])
 const isSearchDataLoaded = ref(false)
+const isSearchDialogOpen = ref(false)
 
 const loadSearchData = async () => {
   if (isSearchDataLoaded.value) return
@@ -32,10 +33,15 @@ const loadSearchData = async () => {
     const { useAllBlogPosts } = useBlogData()
     const { data: allBlogPosts } = await useAllBlogPosts()
 
-    searchData.value = allBlogPosts.value?.map(post => ({
+    if (!allBlogPosts.value || allBlogPosts.value.length === 0) {
+      console.error('No blog posts returned from useBlogData')
+      return
+    }
+
+    searchData.value = allBlogPosts.value.map(post => ({
       title: post.title,
       _path: post.path || ''
-    })) || []
+    })).filter(result => result._path !== '' && result.title)
 
     isSearchDataLoaded.value = true
   } catch (error) {
@@ -43,12 +49,20 @@ const loadSearchData = async () => {
   }
 }
 
-
-const isSearchDialogOpen = ref(false);
 async function showSearchDialog() {
   await loadSearchData() // Load search data when dialog is opened
   isSearchDialogOpen.value = true;
 }
+
+// Handle cmd+k keyboard shortcut
+const keys = useMagicKeys()
+const CmdK = keys['Meta+K']
+
+watch(CmdK, (v) => {
+  if (v) {
+    showSearchDialog()
+  }
+})
 </script>
 
 <template>

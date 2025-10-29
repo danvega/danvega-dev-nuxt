@@ -15,18 +15,10 @@ const filteredPosts = computed(() =>
           return post.title.toLowerCase().includes(query.value.toLowerCase())
         })
 );
-const keys = useMagicKeys()
-const CmdK = keys['Meta+K']
 
 watch(() => showSearchDialog, () => {
     setIsOpen(true);
 });
-
-watch(CmdK, (v) => {
-  if (v) {
-    setIsOpen(true);
-  }
-})
 
 function setIsOpen(value) {
   isOpen.value = value;
@@ -39,7 +31,18 @@ function onAfterLeave() {
 }
 
 function onSelect(post) {
-  window.location = `/blog/${getSlugFromPath(post._path)}`;
+  if (!post._path) {
+    console.error('Post missing _path property:', post)
+    return
+  }
+
+  const slug = getSlugFromPath(post._path)
+  if (slug) {
+    setIsOpen(false)
+    navigateTo(`/blog/${slug}`)
+  } else {
+    console.error('Failed to get slug from path:', post._path)
+  }
 }
 </script>
 
