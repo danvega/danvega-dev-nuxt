@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Testing Spring REST APIs with RestTestClient: A Complete Guide",
+    "description": "Explore the new Rest Test Client in Spring Framework 7, a modern replacement for RestTemplate that provides a fluent API for testing REST APIs with improved type safety and better integration with modern testing practices.",
+    "date": "2025-10-30T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/10/30/spring-framework-7-rest-test-client",
+    "slug": "spring-framework-7-rest-test-client",
+    "tags": [
+      "Spring Framework",
+      "Spring Boot",
+      "Testing"
+    ]
+  },
+  {
     "title": "Building MCP Clients with Spring AI: Augmenting LLMs with Custom Context",
     "description": "Learn how to build MCP (Model Context Protocol) clients using Spring AI to augment Large Language Models with custom context and functionality for your applications.",
     "date": "2025-10-28T09:00:00.000Z",
@@ -580,18 +593,6 @@ export const rssData = [
     "tags": [
       "Spring Boot",
       "AWS"
-    ]
-  },
-  {
-    "title": "How to add Request Headers using HTTP Interfaces in Spring Boot 3",
-    "description": "In this tutorial you will learn how to add a request header when using HTTP Interfaces in Spring Boot 3. This can be useful when you need to add a header to a single request or every single request. You will also learn how to view the headers that are sent to make sure everything is working properly.",
-    "date": "2023-06-14T08:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/06/12/spring-http-interfaces-headers",
-    "slug": "spring-http-interfaces-headers",
-    "tags": [
-      "Spring Framework",
-      "Spring Boot"
     ]
   }
 ] as const
