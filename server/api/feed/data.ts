@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring Boot 4's Bean Registrar: A Cleaner Way to Register Beans Programmatically",
+    "description": "Learn how Spring Boot 4's new BeanRegistrar interface simplifies programmatic bean registration in Spring Framework 7. This tutorial demonstrates dynamic bean creation based on environment properties, conditional registration with complex logic, and performance optimization techniques. Discover when to use BeanRegistrar vs @Bean annotations with practical code examples and testing strategies for your Spring applications.",
+    "date": "2025-11-01T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/11/01/programmatic-bean-registration",
+    "slug": "programmatic-bean-registration",
+    "tags": [
+      "Spring Boot",
+      "Spring Boot 4",
+      "Spring Framework"
+    ]
+  },
+  {
     "title": "Testing Spring REST APIs with RestTestClient: A Complete Guide",
     "description": "Explore the new Rest Test Client in Spring Framework 7, a modern replacement for RestTemplate that provides a fluent API for testing REST APIs with improved type safety and better integration with modern testing practices.",
     "date": "2025-10-30T09:00:00.000Z",
@@ -581,18 +594,6 @@ export const rssData = [
     "tags": [
       "Spring Boot",
       "GraphQL"
-    ]
-  },
-  {
-    "title": "Deploying Spring Boot 3 Applications to AWS Lambda",
-    "description": "Discover effective solutions for hosting your personal spring boot projects without hefty costs. Boost your skills with Dan Vega, your spring developer advocate, while exploring the capabilities of AWS Lambda.",
-    "date": "2023-06-30T15:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/06/30/aws-lambda-spring-boot-3",
-    "slug": "aws-lambda-spring-boot-3",
-    "tags": [
-      "Spring Boot",
-      "AWS"
     ]
   }
 ] as const
