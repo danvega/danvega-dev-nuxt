@@ -8,7 +8,7 @@ author: Dan Vega
 tags:
     - Spring AI
 cover: spring_ai_mcp_client.png
-# video: https://www.youtube.com/embed/VIDEO_ID
+video: https://www.youtube.com/embed/TSFkdlreRMQ
 github: https://github.com/danvega/dvaas-client
 keywords: Spring AI, MCP, Model Context Protocol, Spring Boot, LLM, AI integration, OpenAI, Spring Framework, Java AI
 ---
