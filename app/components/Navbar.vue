@@ -11,6 +11,7 @@ const navItems: NavItem[] = [
   {name: "Blog",link: "/blog/"},
   {name: "Newsletter",link: "/newsletter/"},
   {name: "Speaking",link: "/speaking"},
+  {name: "Books",link: "/books/fundamentals-of-software-engineering"},
   {name: "Courses",link: "/courses"},
   {name: "Uses",link: "/uses"}
 ];

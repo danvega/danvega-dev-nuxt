@@ -49,14 +49,50 @@ useHead({
 
       <!-- Book Details & CTAs -->
       <div class="space-y-6">
-        <!-- Status Card -->
-        <div class="rounded-lg bg-blue-50 dark:bg-blue-950/30 p-6 border border-blue-200 dark:border-blue-800">
-          <p class="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-2">
-            <strong>Status:</strong> Coming Soon
-          </p>
-          <p class="text-sm text-blue-900 dark:text-blue-300">
-            Expected publication date: 2025
-          </p>
+        <!-- How to Get the Book -->
+        <div>
+          <h2 class="text-xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4">
+            How to Get the Book
+          </h2>
+          <div class="space-y-4">
+            <!-- O'Reilly Option -->
+            <div class="rounded-lg border border-blue-200 dark:border-blue-700 bg-gradient-to-br from-blue-50 to-transparent dark:from-blue-950/20 p-6">
+              <div class="flex items-start gap-4">
+                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900">
+                  <svg class="h-5 w-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <p class="text-base font-semibold text-zinc-800 dark:text-zinc-100 mb-1">
+                    Want immediate access?
+                  </p>
+                  <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                    Get it from O'Reilly Learning Platform plus thousands of other technical resources.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Amazon Option -->
+            <div class="rounded-lg border border-orange-200 dark:border-orange-700 bg-gradient-to-br from-orange-50 to-transparent dark:from-orange-950/20 p-6">
+              <div class="flex items-start gap-4">
+                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-orange-100 dark:bg-orange-900">
+                  <svg class="h-5 w-5 text-orange-600 dark:text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <p class="text-base font-semibold text-zinc-800 dark:text-zinc-100 mb-1">
+                    Want the print version?
+                  </p>
+                  <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                    You can pre-order from Amazon now.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Book Info -->
@@ -77,11 +113,11 @@ useHead({
 
         <!-- CTA Buttons -->
         <div class="flex flex-wrap gap-4">
-          <a href="#newsletter" class="rounded-md bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors">
-            Get Updates
+          <a href="https://learning.oreilly.com/library/view/fundamentals-of-software/9781098143220/" target="_blank" rel="noopener noreferrer" class="rounded-md bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors">
+            Get on O'Reilly
           </a>
-          <a href="#contents" class="rounded-md border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 px-6 py-3 text-base font-semibold text-zinc-800 dark:text-zinc-100 shadow-sm hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-colors">
-            View Contents
+          <a href="https://www.amazon.com/Fundamentals-Software-Engineering-Coder-Engineer/dp/109814323X/" target="_blank" rel="noopener noreferrer" class="rounded-md border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 px-6 py-3 text-base font-semibold text-zinc-800 dark:text-zinc-100 shadow-sm hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-colors">
+            Pre-order on Amazon
           </a>
         </div>
       </div>

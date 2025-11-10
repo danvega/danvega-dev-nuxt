@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Stop NullPointerExceptions Before Production with Spring Boot 4's Null Safety",
+    "description": "Discover how Spring Boot 4 and JSpecify annotations catch NullPointerExceptions at compile-time instead of runtime. Learn to implement @NullMarked and @Nullable for bulletproof Java code with practical examples.",
+    "date": "2025-11-05T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/11/05/spring-boot-4-null-safety",
+    "slug": "spring-boot-4-null-safety",
+    "tags": [
+      "Java",
+      "Spring Boot",
+      "Spring Boot 4"
+    ]
+  },
+  {
     "title": "Spring Boot 4's Bean Registrar: A Cleaner Way to Register Beans Programmatically",
     "description": "Learn how Spring Boot 4's new BeanRegistrar interface simplifies programmatic bean registration in Spring Framework 7. This tutorial demonstrates dynamic bean creation based on environment properties, conditional registration with complex logic, and performance optimization techniques. Discover when to use BeanRegistrar vs @Bean annotations with practical code examples and testing strategies for your Spring applications.",
     "date": "2025-11-01T09:00:00.000Z",
@@ -582,18 +595,6 @@ export const rssData = [
     "slug": "pgadmin-docker-compose",
     "tags": [
       "Spring Boot"
-    ]
-  },
-  {
-    "title": "Spring for GraphQL Schema Mapping Inspection Report",
-    "description": "Join VMware's Spring Developer Advocate, Dan Vega, as he explores the exciting new releases in Spring for GraphQL. Dive into the enhanced features of the inspection report, walk through how to create a project, and more!",
-    "date": "2023-07-13T15:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/07/13/graphql-schema-mapping-inspection",
-    "slug": "graphql-schema-mapping-inspection",
-    "tags": [
-      "Spring Boot",
-      "GraphQL"
     ]
   }
 ] as const
