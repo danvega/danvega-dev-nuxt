@@ -1,5 +1,23 @@
 [
   {
+    "title": "Building Intelligent Java Applications: A Developer’s Workshop",
+    "url": "https://qconsf.com/training/nov2025/building-intelligent-java-applications-developers-workshop",
+    "name": "QCon San Francisco 2025",
+    "startDate": "Nov 20, 2025",
+    "endDate": "Nov 20, 2025",
+    "location": "San Francisco, CA",
+    "description": "In today's competitive tech landscape, AI capabilities aren't just nice-to-have—they're essential for creating cutting-edge applications. This immersive workshop empowers Java developers to seamlessly integrate powerful AI features using familiar tools and paradigms.\n\nThrough dynamic hands-on exercises and practical guidance, you'll master the implementation of sophisticated AI capabilities including natural language processing, computer vision, and interactive chatbots. Discover advanced techniques like Retrieval-Augmented Generation (RAG) for enhanced context awareness and the Model Context Protocol (MCP) for effective AI orchestration."
+  },
+  {
+    "title": "Fundamentals of Software Engineering in the Age of AI",
+    "url": "https://qconsf.com/training/nov2025/sold-out-fundamentals-software-engineering-age-ai",
+    "name": "QCon San Francisco 2025",
+    "startDate": "Nov 20, 2025",
+    "endDate": "Nov 20, 2025",
+    "location": "San Francisco, CA",
+    "description": "In today's rapidly evolving tech landscape, AI coding assistants are transforming how we develop software. While these tools enhance productivity, mastering fundamental software engineering principles remains essential for their effective use. This workshop bridges the gap between basic programming skills and the expertise needed to thrive in environments where human engineers collaborate with AI tools."
+  },
+  {
     "title": "My Favorite Spring Boot 3 Features (And First Look at 4)",
     "url": "https://www.kcdc.info/sessions",
     "name": "KCDC 2025",
