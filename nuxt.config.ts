@@ -64,6 +64,8 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
+    // Private keys are exposed only to the server
+    workshopPassword: process.env['WORKSHOP_PASSWORD'] || '',
     public: {
       siteUrl: process.env['NUXT_PUBLIC_SITE_URL'] || 'http://localhost:3000',
       urlSchema: 'http',
@@ -75,7 +77,8 @@ export default defineNuxtConfig({
       },
       fathom: {
         siteId: ''
-      }
+      },
+      workshopApiKey: process.env['WORKSHOP_API_KEY'] || ''
     },
   },
     routeRules: {
@@ -87,7 +90,9 @@ export default defineNuxtConfig({
         '/courses': {prerender: true},
         '/uses': {prerender: true},
         '/contact': {redirect: '/about'},
-        '/rss.xml': {prerender: true}
+        '/rss.xml': {prerender: true},
+        // Workshop pages should not be prerendered (dynamic auth required)
+        '/workshop/**': {ssr: true}
     },
   app: {
     head: {
