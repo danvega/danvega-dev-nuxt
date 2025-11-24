@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "What's New in Spring Framework 7 and Spring Boot 4",
+    "description": "A comprehensive look at the new features in Spring Framework 7 and Spring Boot 4, including code examples and resources to help you get started",
+    "date": "2025-11-24T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/11/24/spring-boot-4-is-here",
+    "slug": "spring-boot-4-is-here",
+    "tags": [
+      "Spring Boot",
+      "Spring",
+      "Java"
+    ]
+  },
+  {
     "title": "Stop NullPointerExceptions Before Production with Spring Boot 4's Null Safety",
     "description": "Discover how Spring Boot 4 and JSpecify annotations catch NullPointerExceptions at compile-time instead of runtime. Learn to implement @NullMarked and @Nullable for bulletproof Java code with practical examples.",
     "date": "2025-11-05T09:00:00.000Z",
@@ -582,17 +595,6 @@ export const rssData = [
     "author": "Dan Vega",
     "_path": "/blog/2023/09/08/rest-client-first-look",
     "slug": "rest-client-first-look",
-    "tags": [
-      "Spring Boot"
-    ]
-  },
-  {
-    "title": "Streamline Your Development: Spring Boot with PostgreSQL & pgAdmin in Docker",
-    "description": "In this article you will learn about the new Docker Compose module in Spring Boot 3.1 and how to connect to a Postgres database from your application. You will also learn how to use psql in the shell and pgAdmin to manage your database.",
-    "date": "2023-07-17T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/07/17/pgadmin-docker-compose",
-    "slug": "pgadmin-docker-compose",
     "tags": [
       "Spring Boot"
     ]
