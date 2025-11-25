@@ -1,6 +1,18 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring Data AOT Repositories: Faster Startup and Build-Time Query Validation",
+    "description": "Learn how Spring Data AOT Repositories move query processing from runtime to compile time, reducing startup times and memory usage, plus how to validate repository methods at build time.",
+    "date": "2025-11-25T10:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/11/25/spring-data-aot-repositories",
+    "slug": "spring-data-aot-repositories",
+    "tags": [
+      "Spring Boot",
+      "Spring Data"
+    ]
+  },
+  {
     "title": "What's New in Spring Framework 7 and Spring Boot 4",
     "description": "A comprehensive look at the new features in Spring Framework 7 and Spring Boot 4, including code examples and resources to help you get started",
     "date": "2025-11-24T09:00:00.000Z",
@@ -584,17 +596,6 @@ export const rssData = [
     "author": "Dan Vega",
     "_path": "/blog/2023/09/11/spring-jdbc-client",
     "slug": "spring-jdbc-client",
-    "tags": [
-      "Spring Boot"
-    ]
-  },
-  {
-    "title": "A First Look at the new Rest Client in Spring Boot 3.2",
-    "description": "This is my first look at the new Rest Client in Spring Boot 3.2. In this tutorial we will discuss what a client is, what are the different implementations of clients available and how to get started with the new Rest Client in Spring Framework 6.1 and Spring Boot 3.2",
-    "date": "2023-09-08T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/09/08/rest-client-first-look",
-    "slug": "rest-client-first-look",
     "tags": [
       "Spring Boot"
     ]
