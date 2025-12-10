@@ -1,6 +1,17 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "MockMvcTester vs RestTestClient: Which one Should You Use in Spring Boot 4?",
+    "description": "A comparison of MockMvcTester and RestTestClient for testing Spring Boot web applications, exploring when to use each approach and their key differences.",
+    "date": "2025-12-10T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/12/10/mock-vs-rest",
+    "slug": "mock-vs-rest",
+    "tags": [
+      "Spring Boot"
+    ]
+  },
+  {
     "title": "Spring Data AOT Repositories: Faster Startup and Build-Time Query Validation",
     "description": "Learn how Spring Data AOT Repositories move query processing from runtime to compile time, reducing startup times and memory usage, plus how to validate repository methods at build time.",
     "date": "2025-11-25T10:00:00.000Z",
@@ -585,17 +596,6 @@ export const rssData = [
     "author": "Dan Vega",
     "_path": "/blog/2023/09/17/spring-boot-actuator",
     "slug": "spring-boot-actuator",
-    "tags": [
-      "Spring Boot"
-    ]
-  },
-  {
-    "title": "A First Look at the new JDBC Client in Spring Boot 3.2",
-    "description": "In this tutorial you will learn about the new JDBC Client in Spring Framework 6.1 and Spring Boot 3.2.",
-    "date": "2023-09-11T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/09/11/spring-jdbc-client",
-    "slug": "spring-jdbc-client",
     "tags": [
       "Spring Boot"
     ]
