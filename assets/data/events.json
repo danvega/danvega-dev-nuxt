@@ -1,5 +1,86 @@
 [
   {
+    "title": "Fundamentals of Software Engineering In the Age of AI",
+    "url": "https://reg.rf.oracle.com/flow/oracle/javaone26/catalog/page/catalog/session/1762784117607001TpGg",
+    "name": "JavaOne 2026",
+    "startDate": "Mar 17, 2026",
+    "endDate": "Mar 19, 2026",
+    "location": "San Francisco, CA",
+    "description": "Agentic coding assistants and editor based AI chat interfaces are altering the development workflow, leading some to proclaim the end of software engineering. Is it time to explore other careers? Not so fast, The rumors of our demise are greatly exaggerated. These tools can boost productivity, but to be used effectively, developers still need to master the fundamentals of the software craft. Modern software development demands more than just coding proficiency, it requires navigating an increasingly AI-augmented landscape."
+  },
+  {
+    "title": "Building and Securing MCP Servers for Java Developers ",
+    "url": "https://reg.rf.oracle.com/flow/oracle/javaone26/catalog/page/catalog/session/1762646608419001fuZx",
+    "name": "JavaOne 2026",
+    "startDate": "Mar 17, 2026",
+    "endDate": "Mar 19, 2026",
+    "location": "San Francisco, CA",
+    "description": "Java developers face a critical challenge: how do you securely and efficiently connect these AI models with enterprise data and tools? The Model Context Protocol (MCP) is transforming how AI applications interact with external systems, and it's rapidly becoming an industry standard. In this session, you'll learn the basic building blocks of MCP and how to build, secure, and test your MCP servers. "
+  },
+  {
+    "title": "Fundamentals of Software Engineering In the Age of AI Workshop",
+    "url": "https://devnexus.com/speakers/dan-vega",
+    "name": "DevNexus 2026",
+    "startDate": "Mar 4, 2026",
+    "endDate": "Mar 4, 2026",
+    "location": "Atlanta, GA",
+    "description": "Agentic coding assistants and editor-based AI chat interfaces are altering the development workflow leading some to proclaim the end of software engineering. Is it time to explore other careers? Not so fast, the rumors of our demise are greatly exaggerated! While these tools can boost productivity, to be used effectively, developers still need to master the fundamentals of the software craft. Modern software development demands more than just coding proficiency—it requires navigating an increasingly AI-augmented landscape."
+  },
+  {
+    "title": "Fundamentals of Software Engineering In the Age of AI",
+    "url": "https://devnexus.com/speakers/dan-vega",
+    "name": "DevNexus 2026",
+    "startDate": "Mar 5, 2026",
+    "endDate": "Mar 6, 2026",
+    "location": "Atlanta, GA",
+    "description": "Agentic coding assistants and editor-based AI chat interfaces are altering the development workflow leading some to proclaim the end of software engineering. Is it time to explore other careers? Not so fast, the rumors of our demise are greatly exaggerated! While these tools can boost productivity, to be used effectively, developers still need to master the fundamentals of the software craft. Modern software development demands more than just coding proficiency—it requires navigating an increasingly AI-augmented landscape."
+  },
+  {
+    "title": "Integrating LLMs in Java: A Practical Guide to Model Context Protocol",
+    "url": "https://devnexus.com/speakers/dan-vega",
+    "name": "DevNexus 2026",
+    "startDate": "Mar 5, 2026",
+    "endDate": "Mar 6, 2026",
+    "location": "Atlanta, GA",
+    "description": "As Large Language Models (LLMs) revolutionize application development, Java developers face a critical challenge: how to securely and efficiently connect these AI models with enterprise data and tools."
+  },
+  {
+    "title": "Building and Securing MCP Servers in Java",
+    "url": "https://jchampionsconf.com/schedule.html#vegaCard",
+    "name": "jChampions Conference 2026",
+    "startDate": "Jan 22, 2026",
+    "endDate": "Jan 22, 2026",
+    "location": "Virtual",
+    "description": "As Large Language Models (LLMs) revolutionize application development, Java developers face a critical challenge: how to securely and efficiently connect these AI models with enterprise data and tools."
+  },
+  {
+    "title": "What's New in Spring Boot 4",
+    "url": "https://confoo.ca/en/speaker/dan-vega",
+    "name": "ConFoo 2026",
+    "startDate": "Feb 25, 2026",
+    "endDate": "Feb 27, 2026",
+    "location": "Montreal, Canada",
+    "description": "The next major release of Spring is here, and this is your comprehensive guide to what matters most. Spring Boot 4 delivers exceptional performance gains, streamlined developer workflows, and production-ready features that solve real-world challenges. In this session, you'll not only learn what's new but experience it firsthand through live coding demos. We'll explore HTTP interfaces, JSpecify null safety, Jackson 3 integration, and the built-in resilience patterns that make your applications production-ready from day one."
+  },
+  {
+    "title": "Introduction to Spring AI",
+    "url": "https://confoo.ca/en/speaker/dan-vega",
+    "name": "ConFoo 2026",
+    "startDate": "Feb 25, 2026",
+    "endDate": "Feb 27, 2026",
+    "location": "Montreal, Canada",
+    "description": "As AI becomes essential for enterprise apps, Java developers need to add intelligent features without rewriting their stack. This introduction to Spring AI shows how to bring generative AI to Java applications through practical examples. Learn to build chatbots, implement RAG for enhanced context, and use MCP for AI orchestration. Write model-agnostic code that works with cloud and local LLMs. See how Spring AI's familiar abstractions make adding intelligent features feel natural for Java developers."
+  },
+  {
+    "title": "AI for Java Developers Workshop",
+    "url": "https://events.codemash.org/2026CodeMashConference#/agenda?lang=en",
+    "name": "CodeMash 2026",
+    "startDate": "Jan 13, 2026",
+    "endDate": "Jan 13, 2026",
+    "location": "Sandusky, OH",
+    "description": "This comprehensive workshop equips Java developers with practical skills needed to implement powerful AI features in their applications. Through a combination of theory and hands-on coding, you'll learn to build sophisticated AI integrations using familiar Java paradigms."
+  },
+  {
     "title": "Building Intelligent Java Applications: A Developer’s Workshop",
     "url": "https://qconsf.com/training/nov2025/building-intelligent-java-applications-developers-workshop",
     "name": "QCon San Francisco 2025",
