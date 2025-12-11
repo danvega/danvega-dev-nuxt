@@ -7,7 +7,7 @@ description: "A comparison of MockMvcTester and RestTestClient for testing Sprin
 author: Dan Vega
 tags:
   - Spring Boot
-cover: 
+cover: ./mock-vs-rest.png
 video: https://www.youtube.com/embed/xWcqvrpj2PM
 github: https://github.com/danvega/mock-vs-rest
 keywords: MockMvcTester, RestTestClient, Spring Boot Testing, Spring MVC Test, Web Testing, Integration Testing, Spring Framework 7, Spring Boot 4
