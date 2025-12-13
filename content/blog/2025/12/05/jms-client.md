@@ -1,9 +1,9 @@
 ---
-title: An Introduction to the new JMS Client in Spring Boot 4
+title: "Spring JMS Client: A Complete Guide to JmsClient in Spring Boot 4"
 slug: jms-client
 date: 2025-12-05T09:00:00.000Z
 published: true
-description: Learn why JMS still matters for enterprise Java, when to choose it over Kafka or RabbitMQ, and how Spring Boot 4's new JmsClient API simplifies messaging with a fluent, modern interface.
+description: Master the Spring JMS Client with this complete Spring Boot 4 JmsClient tutorial. Learn when to choose JMS over Kafka, configure message conversion, and send messages using Spring's fluent API.
 author: Dan Vega
 tags:
 - Java
@@ -12,7 +12,7 @@ tags:
 cover: ./jms_client_cover.png
 video: https://www.youtube.com/embed/91xVrWlzIe4
 github: https://github.com/danvega/
-keywords: Java, JMS, Java Message Service, messaging, asynchronous messaging, enterprise Java, spring boot jms, jmsclient, spring boot, spring jms tutorial, java messaging service spring, activemq artemis spring boot, jms vs kafka, when to use jms
+keywords: spring jms client, spring boot 4 jms client, JmsClient, spring boot jms tutorial, jms messaging spring boot, activemq artemis spring boot, jms vs kafka, spring jms template vs jmsclient, java message service spring, enterprise java messaging
 ---
 
 When developers ask me about messaging in Java, they often jump straight to Kafka or RabbitMQ. And I get it. Those 
