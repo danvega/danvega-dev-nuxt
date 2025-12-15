@@ -12,6 +12,19 @@ export const rssData = [
     ]
   },
   {
+    "title": "Spring JMS Client: A Complete Guide to JmsClient in Spring Boot 4",
+    "description": "Master the Spring JMS Client with this complete Spring Boot 4 JmsClient tutorial. Learn when to choose JMS over Kafka, configure message conversion, and send messages using Spring's fluent API.",
+    "date": "2025-12-05T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/12/05/jms-client",
+    "slug": "jms-client",
+    "tags": [
+      "Java",
+      "Spring Boot",
+      "JMS"
+    ]
+  },
+  {
     "title": "Spring Data AOT Repositories: Faster Startup and Build-Time Query Validation",
     "description": "Learn how Spring Data AOT Repositories move query processing from runtime to compile time, reducing startup times and memory usage, plus how to validate repository methods at build time.",
     "date": "2025-11-25T10:00:00.000Z",
@@ -586,17 +599,6 @@ export const rssData = [
     "slug": "virtual-threads-spring-boot",
     "tags": [
       "Java",
-      "Spring Boot"
-    ]
-  },
-  {
-    "title": "The Spring Boot Actuator is the one dependency you should include in every project",
-    "description": "In this article, we will focus on the most important Spring Boot starter that you should include in all of your projects. The Spring Boot Actuator.",
-    "date": "2023-09-17T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/09/17/spring-boot-actuator",
-    "slug": "spring-boot-actuator",
-    "tags": [
       "Spring Boot"
     ]
   }
