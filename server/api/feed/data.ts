@@ -1,6 +1,18 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring Security 7 Multi-Factor Authentication: Complete Tutorial with @EnableMultiFactorAuthentication",
+    "description": "Learn how to implement multi-factor authentication (MFA) in Spring Boot 4 using Spring Security 7's new @EnableMultiFactorAuthentication annotation. Step-by-step tutorial with one-time token login and custom PIN codes.",
+    "date": "2025-12-16T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/12/16/spring-security-7-multi-factor-authentication",
+    "slug": "spring-security-7-multi-factor-authentication",
+    "tags": [
+      "Spring Boot",
+      "Spring Security"
+    ]
+  },
+  {
     "title": "MockMvcTester vs RestTestClient: Which one Should You Use in Spring Boot 4?",
     "description": "A comparison of MockMvcTester and RestTestClient for testing Spring Boot web applications, exploring when to use each approach and their key differences.",
     "date": "2025-12-10T09:00:00.000Z",
@@ -587,18 +599,6 @@ export const rssData = [
     "_path": "/blog/2023/12/20/spring-boot-3-2",
     "slug": "spring-boot-3-2",
     "tags": [
-      "Spring Boot"
-    ]
-  },
-  {
-    "title": "Virtual Threads in Spring Boot",
-    "description": "In this article, we will discuss Virtual Threads in Java, their significance for Spring Boot developers, and how they can enhance the performance of certain types of Spring Boot applications.",
-    "date": "2023-12-14T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/12/14/virtual-threads-spring-boot",
-    "slug": "virtual-threads-spring-boot",
-    "tags": [
-      "Java",
       "Spring Boot"
     ]
   }
