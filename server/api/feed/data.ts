@@ -87,6 +87,18 @@ export const rssData = [
     ]
   },
   {
+    "title": "Native Retry Support in Spring Boot 4: No External Dependencies Required",
+    "description": "Spring Boot 4 includes native retry support with @Retryable, RetryTemplate, and @ConcurrencyLimit. Learn how to add resilience without the spring-retry dependency.",
+    "date": "2025-11-13T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/11/13/spring-boot-4-native-retry-support",
+    "slug": "spring-boot-4-native-retry-support",
+    "tags": [
+      "Spring Boot",
+      "Java"
+    ]
+  },
+  {
     "title": "HTTP Interfaces in Spring Boot 4: Say Goodbye to Boilerplate",
     "description": "Learn how HTTP interfaces let you define declarative HTTP clients in Spring Boot, and discover how Spring Framework 7 eliminates the configuration boilerplate with @ImportHttpServices.",
     "date": "2025-11-06T09:00:00.000Z",
@@ -594,17 +606,6 @@ export const rssData = [
     "tags": [
       "Java",
       "Meta"
-    ]
-  },
-  {
-    "title": "What is Developer Relations and How do you define Developer Advocacy?",
-    "description": "In this article, I'll provide an overview of Developer Relations (DevRel) and guide you on how to get started. If you're considering this as a potential career, I hope to inform and inspire you.",
-    "date": "2024-01-15T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/01/15/developer-advocate",
-    "slug": "developer-advocate",
-    "tags": [
-      "DevRel"
     ]
   }
 ] as const
