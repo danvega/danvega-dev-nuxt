@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Building a Spring Boot 4 REST API the Fast Way",
+    "description": "Learn how to build a REST API with Spring Boot 4 in minutes. This tutorial shows you how to create CRUD endpoints using Java records and the @RestController annotation.",
+    "date": "2025-12-18T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/12/18/spring-boot-4-rest-api",
+    "slug": "spring-boot-4-rest-api",
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "REST API"
+    ]
+  },
+  {
     "title": "Loading Resources in Spring Boot",
     "description": "Learn how to load resources in Spring Boot using the Resource interface. This tutorial covers three approaches for loading files from the classpath, filesystem, and URLs.",
     "date": "2025-12-17T09:00:00.000Z",
@@ -95,7 +108,20 @@ export const rssData = [
     "slug": "spring-boot-4-native-retry-support",
     "tags": [
       "Spring Boot",
+      "Spring Boot 4",
       "Java"
+    ]
+  },
+  {
+    "title": "Jackson 3 in Spring Boot 4: JsonMapper, JSON Views, and What's Changed",
+    "description": "Learn how to use Jackson 3 in Spring Boot 4 with the new JsonMapper, immutable configuration, unchecked exceptions, and JSON Views with the hint() method.",
+    "date": "2025-11-10T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/11/10/jackson-3-spring-boot-4",
+    "slug": "jackson-3-spring-boot-4",
+    "tags": [
+      "Spring Boot",
+      "Spring Boot 4"
     ]
   },
   {
@@ -583,29 +609,6 @@ export const rssData = [
     "tags": [
       "Spring Boot",
       "Spring AI"
-    ]
-  },
-  {
-    "title": "Spring I/O 2024",
-    "description": "I just returned from my very first Spring I/O and I thought this would be a great opportunity to tell you about one of the best conferences I have eve been to. I am very fortunate to be able to travel the world visiting customers and conferences but this was by far one of my favorite trips ever.",
-    "date": "2024-06-03T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/06/03/spring-io-2024",
-    "slug": "spring-io-2024",
-    "tags": [
-      "Spring Boot"
-    ]
-  },
-  {
-    "title": "I'm a Java Champion",
-    "description": "On Monday, January 8th, I woke up expecting just another day. Little did I know that this would become a day etched in my memory forever. In this post I would like to tell you about my career and how I became I Java Champion.",
-    "date": "2024-01-21T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/01/21/java-champion",
-    "slug": "java-champion",
-    "tags": [
-      "Java",
-      "Meta"
     ]
   }
 ] as const
