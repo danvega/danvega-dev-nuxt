@@ -1,6 +1,18 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Loading Resources in Spring Boot",
+    "description": "Learn how to load resources in Spring Boot using the Resource interface. This tutorial covers three approaches for loading files from the classpath, filesystem, and URLs.",
+    "date": "2025-12-17T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/12/17/loading-spring-resources",
+    "slug": "loading-spring-resources",
+    "tags": [
+      "Spring Boot",
+      "Spring Framework"
+    ]
+  },
+  {
     "title": "Spring Security 7 Multi-Factor Authentication: Complete Tutorial with @EnableMultiFactorAuthentication",
     "description": "Learn how to implement multi-factor authentication (MFA) in Spring Boot 4 using Spring Security 7's new @EnableMultiFactorAuthentication annotation. Step-by-step tutorial with one-time token login and custom PIN codes.",
     "date": "2025-12-16T09:00:00.000Z",
@@ -72,6 +84,19 @@ export const rssData = [
       "Spring Boot",
       "Spring",
       "Java"
+    ]
+  },
+  {
+    "title": "HTTP Interfaces in Spring Boot 4: Say Goodbye to Boilerplate",
+    "description": "Learn how HTTP interfaces let you define declarative HTTP clients in Spring Boot, and discover how Spring Framework 7 eliminates the configuration boilerplate with @ImportHttpServices.",
+    "date": "2025-11-06T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/11/06/http-interfaces-spring-boot-4",
+    "slug": "http-interfaces-spring-boot-4",
+    "tags": [
+      "Spring Boot",
+      "Spring Boot 4",
+      "Spring Framework"
     ]
   },
   {
@@ -580,28 +605,6 @@ export const rssData = [
     "slug": "developer-advocate",
     "tags": [
       "DevRel"
-    ]
-  },
-  {
-    "title": "Happy New Year 2024",
-    "description": "In this article I will take a look at some goals and things I want to focus on in the new year.",
-    "date": "2024-01-01T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/01/01/happy-new-year-2024",
-    "slug": "happy-new-year-2024",
-    "tags": [
-      "Meta"
-    ]
-  },
-  {
-    "title": "2023 Year in Review",
-    "description": "In this article I take a look back at 2023 and share some of the highlights from the year.",
-    "date": "2023-12-30T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/12/30/2023-year-in-review",
-    "slug": "2023-year-in-review",
-    "tags": [
-      "Meta"
     ]
   }
 ] as const
