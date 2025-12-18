@@ -13,6 +13,19 @@ export const rssData = [
     ]
   },
   {
+    "title": "Spring Boot 4 Modularization: Fix Auto-Configuration Issues After Upgrading",
+    "description": "Upgraded to Spring Boot 4 and features stopped working? Learn how the new modular auto-configuration architecture affects your migration and how to fix common issues like the H2 console not appearing.",
+    "date": "2025-12-12T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/12/12/spring-boot-4-modularization",
+    "slug": "spring-boot-4-modularization",
+    "tags": [
+      "Spring Boot",
+      "Spring Boot 4",
+      "Java"
+    ]
+  },
+  {
     "title": "MockMvcTester vs RestTestClient: Which one Should You Use in Spring Boot 4?",
     "description": "A comparison of MockMvcTester and RestTestClient for testing Spring Boot web applications, exploring when to use each approach and their key differences.",
     "date": "2025-12-10T09:00:00.000Z",
@@ -589,17 +602,6 @@ export const rssData = [
     "slug": "2023-year-in-review",
     "tags": [
       "Meta"
-    ]
-  },
-  {
-    "title": "What's New in Spring Boot 3.2",
-    "description": "This article highlights some of the new features in the latest releases of Spring Framework 6.1 and Spring Boot 3.2.",
-    "date": "2023-12-20T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2023/12/20/spring-boot-3-2",
-    "slug": "spring-boot-3-2",
-    "tags": [
-      "Spring Boot"
     ]
   }
 ] as const
