@@ -7,6 +7,7 @@ author: Dan Vega
 date: 2025-11-13T09:00:00.000Z
 tags:
   - Spring Boot
+  - Spring Boot 4
   - Java
 cover: spring_resilience_features_cover.png
 video: https://www.youtube.com/embed/CT1wGTwOfg0
