@@ -1,6 +1,15 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "OpenTelemetry with Spring Boot 4: The New Starter You've Been Waiting For",
+    "description": "Learn how to use the new spring-boot-starter-opentelemetry in Spring Boot 4 to add observability with traces, metrics, and logs—no Actuator required.",
+    "date": "2025-12-23T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2025/12/23/opentelemetry-spring-boot",
+    "slug": "opentelemetry-spring-boot",
+    "tags": []
+  },
+  {
     "title": "Building a Spring Boot 4 REST API the Fast Way",
     "description": "Learn how to build a REST API with Spring Boot 4 in minutes. This tutorial shows you how to create CRUD endpoints using Java records and the @RestController annotation.",
     "date": "2025-12-18T09:00:00.000Z",
@@ -597,18 +606,6 @@ export const rssData = [
       "Java",
       "OpenAI",
       "Artificial Intelligence (AI)"
-    ]
-  },
-  {
-    "title": "What's New in Spring AI 1.0.0 M1",
-    "description": "In this article you learn about what is new in the latest release of Spring AI, 1.0.0 M1. The milestone comes packed full of features headlined by the new Chat Client that has a fluent API.",
-    "date": "2024-06-20T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/06/20/spring-ai-m1",
-    "slug": "spring-ai-m1",
-    "tags": [
-      "Spring Boot",
-      "Spring AI"
     ]
   }
 ] as const
