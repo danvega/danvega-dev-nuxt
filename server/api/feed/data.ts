@@ -7,7 +7,10 @@ export const rssData = [
     "author": "Dan Vega",
     "_path": "/blog/2025/12/23/opentelemetry-spring-boot",
     "slug": "opentelemetry-spring-boot",
-    "tags": []
+    "tags": [
+      "Spring Boot",
+      "Observability"
+    ]
   },
   {
     "title": "Building a Spring Boot 4 REST API the Fast Way",
