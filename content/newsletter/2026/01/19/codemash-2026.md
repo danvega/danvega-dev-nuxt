@@ -1,6 +1,6 @@
 ---
 title: "CodeMash 2026, New Spring Office Hours Website and AI Tutorials"
-slug: "codemash-2026-new-spring-office-hours-website-and-ai-tutorials"
+slug: "codemash-2026"
 date: "2026-01-19T08:00:00.000Z"
 description: "Happy Monday and welcome to another edition of the newsletter. I love when the new year begins because it means I can start attending the conferences I look forward to every year."
 tags: ["CodeMash", "Spring AI", "Spring Office Hours", "YouTube", "MCP"]
