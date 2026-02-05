@@ -8,7 +8,7 @@ author: "Dan Vega"
 tags:
   - Java
   - AI
-cover:
+cover: codex_thumbnail.jpg
 video: https://www.youtube.com/embed/Q44TPEtNcNo
 keywords: OpenAI Codex, Java 25, vending machine CLI, JSpecify, null safety Java, AI coding assistant, Maven Java project
 ---
