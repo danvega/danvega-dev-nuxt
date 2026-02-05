@@ -323,6 +323,18 @@ export const rssData = [
     ]
   },
   {
+    "title": "I Tried OpenAI's New Codex Agent. Here are my First Impressions (It's Really Good)",
+    "description": "OpenAI released Codex, a new GUI for their coding agent. I put it to the test by building a vending machine CLI application in Java 25 with Maven, JUnit 6, and JSpecify null safety annotations.",
+    "date": "2025-01-24T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2026/02/05/openai-codex-first-look",
+    "slug": "openai-codex-first-look",
+    "tags": [
+      "Java",
+      "AI"
+    ]
+  },
+  {
     "title": "Building Dynamic GraphQL APIs with Spring Boot and Query by Example",
     "description": "Learn how to build flexible and maintainable GraphQL APIs using Spring Boot's Query by Example support, reducing boilerplate code while enabling powerful search capabilities.",
     "date": "2024-12-02T09:00:00.000Z",
@@ -596,19 +608,6 @@ export const rssData = [
     "tags": [
       "Spring Boot",
       "Tailwind CSS"
-    ]
-  },
-  {
-    "title": "Getting Started with Open AI's GPT-4o in Java",
-    "description": "In this tutorial you will learn how to access OpenAI's newest model, GPT-4o in Java without using any dependencies. As a Java developer, there are several highlights you would be excited about – 50% lower pricing, two times faster latency, and five times the rate limits.",
-    "date": "2024-07-10T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/07/10/java-gpt-4o",
-    "slug": "java-gpt-4o",
-    "tags": [
-      "Java",
-      "OpenAI",
-      "Artificial Intelligence (AI)"
     ]
   }
 ] as const
