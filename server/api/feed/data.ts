@@ -1,6 +1,18 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "I Tried OpenAI's New Codex Agent. Here are my First Impressions (It's Really Good)",
+    "description": "OpenAI released Codex, a new GUI for their coding agent. I put it to the test by building a vending machine CLI application in Java 25 with Maven, JUnit 6, and JSpecify null safety annotations.",
+    "date": "2026-02-05T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2026/02/05/openai-codex-first-look",
+    "slug": "openai-codex-first-look",
+    "tags": [
+      "Java",
+      "AI"
+    ]
+  },
+  {
     "title": "OpenTelemetry with Spring Boot 4: The New Starter You've Been Waiting For",
     "description": "Learn how to use the new spring-boot-starter-opentelemetry in Spring Boot 4 to add observability with traces, metrics, and logs—no Actuator required.",
     "date": "2025-12-23T09:00:00.000Z",
@@ -319,18 +331,6 @@ export const rssData = [
     "_path": "/blog/2025/02/27/ai-powered-dev-hacks-confoo-2025",
     "slug": "ai-powered-dev-hacks-confoo-2025",
     "tags": [
-      "AI"
-    ]
-  },
-  {
-    "title": "I Tried OpenAI's New Codex Agent. Here are my First Impressions (It's Really Good)",
-    "description": "OpenAI released Codex, a new GUI for their coding agent. I put it to the test by building a vending machine CLI application in Java 25 with Maven, JUnit 6, and JSpecify null safety annotations.",
-    "date": "2025-01-24T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2026/02/05/openai-codex-first-look",
-    "slug": "openai-codex-first-look",
-    "tags": [
-      "Java",
       "AI"
     ]
   },
