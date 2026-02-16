@@ -1,6 +1,16 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring AI Prompt Caching: Stop Wasting Money on Repeated Tokens",
+    "date": "2026-02-09T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2026/02/08/spring-ai-prompt-caching",
+    "slug": "spring-ai-prompt-caching",
+    "tags": [
+      "Spring AI"
+    ]
+  },
+  {
     "title": "I Tried OpenAI's New Codex Agent. Here are my First Impressions (It's Really Good)",
     "description": "OpenAI released Codex, a new GUI for their coding agent. I put it to the test by building a vending machine CLI application in Java 25 with Maven, JUnit 6, and JSpecify null safety annotations.",
     "date": "2026-02-05T09:00:00.000Z",
@@ -596,18 +606,6 @@ export const rssData = [
     "tags": [
       "Java",
       "Functional Programming"
-    ]
-  },
-  {
-    "title": "How to add Tailwind CSS to your Spring Boot Application",
-    "description": "This is an example of how to use Tailwind CSS in your next Spring Boot application. If you just want to get up and running with Tailwind CSS you can use a CDN but this should only be used for prototyping because you will end up shipping a very large css file to production. In this tutorial you will learn how to introduce a build process to only use the styles you are using.",
-    "date": "2024-07-18T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/07/18/spring-boot-tailwind",
-    "slug": "spring-boot-tailwind",
-    "tags": [
-      "Spring Boot",
-      "Tailwind CSS"
     ]
   }
 ] as const
