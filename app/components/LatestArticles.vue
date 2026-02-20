@@ -26,6 +26,7 @@ const formatDatePublished = (date:string) => {
           <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
         </span>
         {{ formatDatePublished(post.meta.date) }}
+        <span v-if="post.body" class="ml-2">&middot; {{ useReadingTime(post.body).text }}</span>
       </time>
       <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{{ post.meta?.shortDesc != null ? post.meta?.shortDesc : post.description }}</p>
       <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">Read article
