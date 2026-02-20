@@ -19,7 +19,7 @@
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/uses">Uses</a>
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/mcp">MCP</a>
                 </div>
-              <p class="text-sm text-zinc-400 dark:text-zinc-500">© <!-- -->2023<!-- --> Dan Vega. All rights reserved.</p>
+              <p class="text-sm text-zinc-400 dark:text-zinc-500">© {{ new Date().getFullYear() }} Dan Vega. All rights reserved.</p>
               </div>
             </div>
           </div>
