@@ -45,7 +45,14 @@ if(posts.value?.length === 0 && searchTag.value) {
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
         All of my long-form thoughts on programming, content creation, and more, collected in chronological order.
       </p>
-      <div class="mt-4 flex items-center">
+      <div class="mt-4 flex items-center gap-6">
+        <a href="/blog/tags" class="flex items-center space-x-2 text-zinc-600 hover:text-blue-500 dark:text-zinc-400 dark:hover:text-blue-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
+          </svg>
+          <span>Browse by topic</span>
+        </a>
         <a href="/rss.xml" title="RSS Feed" class="flex items-center space-x-2 text-zinc-600 hover:text-orange-500 dark:text-zinc-400 dark:hover:text-orange-400">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-orange-500" viewBox="0 0 24 24" fill="currentColor">
             <path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"/>

@@ -16,7 +16,11 @@ export default defineContentConfig({
         video: z.string().optional(),
         excerpt: z.string().optional(),
         shortDesc: z.string().optional(),
-        author: z.string().optional()
+        author: z.string().optional(),
+        featured: z.boolean().optional(),
+        series: z.string().optional(),
+        seriesOrder: z.number().optional(),
+        seriesTitle: z.string().optional()
       })
     }),
     newsletter: defineCollection({

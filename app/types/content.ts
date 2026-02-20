@@ -73,6 +73,8 @@ export interface BlogDataComposable {
     tag?: Ref<string | undefined>
   ) => ReturnType<typeof useAsyncData<PaginatedResults<BlogPost>>>
   useBlogPost: (slug: string) => ReturnType<typeof useAsyncData<BlogPost>>
+  useAllTags: () => ReturnType<typeof useAsyncData<{ name: string; count: number }[]>>
+  useSeriesPosts: (series: string) => ReturnType<typeof useAsyncData<{ slug: string; title: string }[]>>
 }
 
 export interface NewsletterDataComposable {

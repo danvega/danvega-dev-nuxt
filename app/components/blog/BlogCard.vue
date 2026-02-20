@@ -9,10 +9,36 @@ const formatDatePublished = (date: string) => {
   const formatted = useDateFormat(date, "MMMM D, YYYY");
   return formatted.value;
 }
+
+const readingTime = computed(() => {
+  if (!props.post?.body) return null
+  return useReadingTime(props.post.body)
+})
+
+const getImagePath = (date: string, cover: string) => {
+  if (cover) {
+    const createdOn = new Date(date)
+    const year = createdOn.getFullYear()
+    const month = `${createdOn.getMonth() + 1 < 10 ? '0' : ''}${createdOn.getMonth() + 1}`
+    const day = `${createdOn.getDate() < 10 ? '0' : ''}${createdOn.getDate()}`
+    return `/images/blog/${year}/${month}/${day}/${cover.replace('./', '')}`
+  }
+}
 </script>
 
 <template>
   <div class="md:col-span-3 group relative flex flex-col items-start">
+    <!-- Cover Image -->
+    <div v-if="post.meta?.cover" class="relative z-10 mb-4 w-full overflow-hidden rounded-lg">
+      <a :href="`/blog/${post.meta?.slug}`">
+        <NuxtImg
+          :src="getImagePath(post.meta?.date, post.meta?.cover)"
+          :alt="post.title"
+          class="aspect-video w-full object-cover"
+          loading="lazy"
+        />
+      </a>
+    </div>
     <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
       <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
       <a :href="`/blog/${post.meta?.slug}`">
@@ -25,6 +51,7 @@ const formatDatePublished = (date: string) => {
         <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
       </span>
       {{ formatDatePublished(post.meta?.date) }}
+      <span v-if="readingTime" class="ml-2">&middot; {{ readingTime.text }}</span>
     </time>
     <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
       {{ post.meta?.shortDesc != null ? post.meta?.shortDesc : post.description }}
@@ -37,5 +64,6 @@ const formatDatePublished = (date: string) => {
   </div>
   <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" :datetime="post.meta?.date">
     {{ formatDatePublished(post.meta?.date) }}
+    <span v-if="readingTime" class="block mt-1 text-xs">&middot; {{ readingTime.text }}</span>
   </time>
 </template>

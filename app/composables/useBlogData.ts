@@ -192,10 +192,63 @@ export const useBlogData = (): BlogDataComposable => {
     })
   }
 
+  // All unique tags with post counts
+  const useAllTags = () => {
+    return useAsyncData<{ name: string; count: number }[]>('blog-all-tags', async () => {
+      try {
+        const { data: allPosts } = await useAllBlogPosts()
+        if (!allPosts.value) return []
+
+        const tagCounts = new Map<string, number>()
+        for (const post of allPosts.value) {
+          for (const tag of post.meta?.tags || []) {
+            tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1)
+          }
+        }
+
+        return Array.from(tagCounts.entries())
+          .map(([name, count]) => ({ name, count }))
+          .sort((a, b) => b.count - a.count)
+      } catch (err) {
+        console.error('Error fetching tags:', err)
+        return []
+      }
+    }, {
+      default: () => [],
+      server: true
+    })
+  }
+
+  // Posts in a specific series, ordered by seriesOrder
+  const useSeriesPosts = (series: string) => {
+    return useAsyncData<{ slug: string; title: string }[]>(`blog-series-${series}`, async () => {
+      try {
+        const posts = await queryCollection('blog')
+          .where('published', '=', true)
+          .where('series', '=', series)
+          .order('seriesOrder', 'ASC')
+          .all()
+
+        return posts.map((post: any) => ({
+          slug: post.slug,
+          title: post.title
+        }))
+      } catch (err) {
+        console.error(`Error fetching series ${series}:`, err)
+        return []
+      }
+    }, {
+      default: () => [],
+      server: true
+    })
+  }
+
   return {
     useAllBlogPosts,
     useLatestArticles,
     usePaginatedBlogPosts,
-    useBlogPost
+    useBlogPost,
+    useAllTags,
+    useSeriesPosts
   }
 }
