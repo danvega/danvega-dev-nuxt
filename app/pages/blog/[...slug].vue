@@ -34,8 +34,42 @@ function getSlugFromPath(path) {
   return parts[parts.length - 1];
 }
 
+// Reading time
+const readingTime = computed(() => {
+  if (!data.value?.body) return null
+  return useReadingTime(data.value.body)
+})
 
 const config = useRuntimeConfig();
+
+// Build JSON-LD structured data
+const jsonLd = computed(() => {
+  if (!data.value) return null
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: data.value.title,
+    description: data.value.description,
+    datePublished: data.value.meta?.date,
+    author: {
+      '@type': 'Person',
+      name: data.value.meta?.author || 'Dan Vega',
+      url: config.public.urlBase
+    },
+    image: data.value.meta?.cover
+      ? config.public.urlBase + getImagePath(data.value.meta.date, data.value.meta.cover)
+      : undefined,
+    url: config.public.urlBase + path,
+    keywords: data.value.meta?.tags?.join(', ')
+  }
+})
+
+defineOgImage({
+  component: 'Blog',
+  title: data.value?.title || '',
+  description: data.value?.description || '',
+  date: datePublished.value
+})
 
 useHead({
   title: data.value?.title,
@@ -43,24 +77,26 @@ useHead({
     { name: 'title', content: data.value?.title },
     { name: 'description', content: data.value?.description },
     { name: "keywords", content: data.value?.meta?.keywords },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: data.value?.title },
-    { name: 'twitter:description', content: data.value?.description },
     { name: 'twitter:site', content: '@therealdanvega' },
-    { name: 'twitter:image', content: config.public.urlBase + getImagePath(data.value?.meta?.date,data.value?.meta?.cover) },
     { name: 'twitter:creator', content: '@therealdanvega' },
-    { name: 'og:type', content: 'article' },
-    { name: 'og:title', content: data.value?.title },
-    { name: 'og:description', content: data.value?.description },
-    { name: 'og:url', content: config.public.urlBase + path },
-    { name: 'og:image', content: config.public.urlBase + getImagePath(data.value?.meta?.date,data.value?.meta?.cover) },
-    { name: 'og:image:secure_url', content: config.public.urlBase + getImagePath(data.value?.meta?.date,data.value?.meta?.cover) },
-  ]
+    { property: 'og:type', content: 'article' },
+    { property: 'og:title', content: data.value?.title },
+    { property: 'og:description', content: data.value?.description },
+    { property: 'og:url', content: config.public.urlBase + path },
+  ],
+  script: jsonLd.value ? [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(jsonLd.value)
+    }
+  ] : []
 });
 </script>
 
 <template>
   <div>
+    <BlogReadingProgress />
+
     <!-- Header Section with constrained content -->
     <Container class="mt-16 sm:mt-32">
       <div class="xl:relative">
@@ -71,6 +107,7 @@ useHead({
                 <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
                 <span class="ml-3">Published On: {{ datePublished }}</span>
                 <span class="ml-2" v-if="data?.meta?.updatedOn">• Updated On: {{ useDateFormat(data?.meta?.updatedOn, 'MMMM D, YYYY').value }}</span>
+                <span class="ml-2" v-if="readingTime">• {{ readingTime.text }}</span>
               </time>
               <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                 {{ data?.title }}
@@ -98,15 +135,42 @@ useHead({
       </div>
     </Container>
 
+    <!-- Series Navigation (if part of a series) -->
+    <Container v-if="data?.meta?.series">
+      <div class="xl:relative">
+        <div class="mx-auto max-w-7xl">
+          <BlogSeriesNavigation
+            :series="data.meta.series"
+            :series-title="data.meta.seriesTitle"
+            :current-slug="data.meta.slug"
+          />
+        </div>
+      </div>
+    </Container>
+
     <!-- Content Section with constrained content -->
     <Container>
       <div class="xl:relative">
         <div class="mx-auto max-w-7xl">
-          <article>
+          <article id="blog-content">
             <ContentRenderer :value="data" class="prose dark:prose-invert" />
           </article>
 
           <BlogTags :tags="data?.meta?.tags"/>
+
+          <!-- Series Navigation at bottom too -->
+          <BlogSeriesNavigation
+            v-if="data?.meta?.series"
+            :series="data.meta.series"
+            :series-title="data.meta.seriesTitle"
+            :current-slug="data.meta.slug"
+          />
+
+          <BlogRelatedPosts
+            v-if="data?.meta?.tags?.length"
+            :current-slug="data?.meta?.slug"
+            :tags="data?.meta?.tags"
+          />
 
           <BlogNewsletterSignup />
 

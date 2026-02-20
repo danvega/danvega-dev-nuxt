@@ -41,7 +41,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     '@nuxtjs/sitemap',
-    '@nuxt/image'
+    '@nuxt/image',
+    'nuxt-og-image'
   ],
   // Thank You, Debbie - https://debbie.codes/blog/nuxt-lite-youtube-embeds/
   plugins: [
@@ -88,7 +89,8 @@ export default defineNuxtConfig({
         '/uses': {prerender: true},
         '/contact': {redirect: '/about'},
         '/rss.xml': {prerender: true},
-        '/workshop/**': {prerender: true}
+        '/workshop/**': {prerender: true},
+        '/blog/tags': {prerender: true}
     },
   app: {
     head: {

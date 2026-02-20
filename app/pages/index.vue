@@ -2,15 +2,42 @@
 import NewsletterSignup from "~/components/home/NewsletterSignup.vue";
 import Work from "~/components/home/Work.vue";
 import Photos from "~/components/home/Photos.vue";
+import PopularPosts from "~/components/home/PopularPosts.vue";
 
 const title = ref("Java Champion, Spring Developer Advocate, YouTuber and Lifelong Learner");
 const about = ref("Hello 👋🏻 My name is Dan Vega, Java Champion, Spring Developer Advocate, Husband and #GirlDad based outside of Cleveland OH. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.");
+
+const config = useRuntimeConfig();
 
 useHead({
   title: 'Dan Vega - Spring Developer Advocate, YouTuber and Lifelong Learner',
   meta: [
     { name: 'title', content: 'Dan Vega - Java Champion, Spring Developer Advocate, YouTuber and Lifelong Learner' },
     { name: 'description', content: about }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: 'Dan Vega',
+        jobTitle: 'Spring Developer Advocate',
+        worksFor: {
+          '@type': 'Organization',
+          name: 'Broadcom'
+        },
+        url: config.public.urlBase,
+        image: config.public.urlBase + '/images/danvega-dev.png',
+        sameAs: [
+          'https://twitter.com/therealdanvega',
+          'https://github.com/danvega',
+          'https://www.youtube.com/@danvega',
+          'https://www.linkedin.com/in/danvega'
+        ],
+        description: about.value
+      })
+    }
   ]
 });
 </script>
@@ -42,6 +69,7 @@ useHead({
           <div class="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
             <div class="flex flex-col gap-16">
               <LatestArticles/>
+              <PopularPosts />
             </div>
             <div class="space-y-10 lg:pl-16 xl:pl-24">
               <NewsletterSignup/>
