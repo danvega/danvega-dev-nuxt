@@ -1,6 +1,24 @@
 [
   {
     "title": "Fundamentals of Software Engineering In the Age of AI",
+    "url": "https://www.arcofai.com/",
+    "name": "Arc of AI 2026",
+    "startDate": "Apr 13, 2026",
+    "endDate": "Apr 16, 2026",
+    "location": "Austin, TX",
+    "description": "Agentic coding assistants and editor-based AI chat interfaces are altering the development workflow leading some to proclaim the end of software engineering. Is it time to explore other careers? Not so fast, the rumors of our demise are greatly exaggerated! While these tools can boost productivity, to be used effectively, developers still need to master the fundamentals of the software craft. Modern software development demands more than just coding proficiency—it requires navigating an increasingly AI-augmented landscape."
+  },
+  {
+    "title": "Building and Securing MCP Servers in Java",
+    "url": "https://www.arcofai.com/",
+    "name": "Arc of AI 2026",
+    "startDate": "Apr 13, 2026",
+    "endDate": "Apr 16, 2026",
+    "location": "Austin, TX",
+    "description": "Java developers face a critical challenge: how do you securely and efficiently connect AI models with enterprise data and tools? The Model Context Protocol (MCP) is transforming how AI applications interact with external systems, and it's rapidly becoming an industry standard. In this session, you'll learn the basic building blocks of MCP and how to build, secure, and test your MCP servers."
+  },
+  {
+    "title": "Fundamentals of Software Engineering In the Age of AI",
     "url": "https://reg.rf.oracle.com/flow/oracle/javaone26/catalog/page/catalog/session/1762784117607001TpGg",
     "name": "JavaOne 2026",
     "startDate": "Mar 17, 2026",
