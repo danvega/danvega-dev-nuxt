@@ -29,6 +29,14 @@ useHead({
     { property: 'og:description', content: talk.value.description || '' }
   ]
 })
+
+defineOgImage({
+  component: 'Speaking',
+  title: talk.value.title,
+  conference: talk.value.conference,
+  date: formattedDate.value,
+  location: talk.value.location
+})
 </script>
 
 <template>
