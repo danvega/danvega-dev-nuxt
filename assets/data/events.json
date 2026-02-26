@@ -38,6 +38,7 @@
   {
     "title": "Fundamentals of Software Engineering In the Age of AI Workshop",
     "url": "https://devnexus.com/speakers/dan-vega",
+    "slug": "devnexus-2026-fundamentals-software-engineering-ai-workshop",
     "name": "DevNexus 2026",
     "startDate": "Mar 4, 2026",
     "endDate": "Mar 4, 2026",
@@ -47,6 +48,7 @@
   {
     "title": "Fundamentals of Software Engineering In the Age of AI",
     "url": "https://devnexus.com/speakers/dan-vega",
+    "slug": "devnexus-2026-fundamentals-software-engineering-ai",
     "name": "DevNexus 2026",
     "startDate": "Mar 5, 2026",
     "endDate": "Mar 6, 2026",
@@ -56,6 +58,7 @@
   {
     "title": "Integrating LLMs in Java: A Practical Guide to Model Context Protocol",
     "url": "https://devnexus.com/speakers/dan-vega",
+    "slug": "devnexus-2026-integrating-llms-java-mcp",
     "name": "DevNexus 2026",
     "startDate": "Mar 5, 2026",
     "endDate": "Mar 6, 2026",
