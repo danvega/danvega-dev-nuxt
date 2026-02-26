@@ -19,3 +19,14 @@ export interface Post {
   title: string
   description: string
 }
+
+export interface Project {
+  slug: string
+  title: string
+  description: string
+  image: string
+  techStack: string[]
+  github?: string
+  url?: string
+  status?: 'active' | 'in-progress' | 'archived'
+}

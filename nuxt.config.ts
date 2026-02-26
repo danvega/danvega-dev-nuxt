@@ -87,6 +87,7 @@ export default defineNuxtConfig({
         '/speaking': {prerender: true},
         '/speaking/**': {isr: true},
         '/courses': {prerender: true},
+        '/projects': {prerender: true},
         '/uses': {prerender: true},
         '/contact': {redirect: '/about'},
         '/rss.xml': {prerender: true},
