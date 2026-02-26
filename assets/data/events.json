@@ -74,6 +74,7 @@
   {
     "title": "What's New in Spring Boot 4",
     "url": "https://confoo.ca/en/speaker/dan-vega",
+    "slug": "confoo-2026-whats-new-in-spring-boot-4",
     "name": "ConFoo 2026",
     "startDate": "Feb 25, 2026",
     "endDate": "Feb 27, 2026",
@@ -83,6 +84,7 @@
   {
     "title": "Introduction to Spring AI",
     "url": "https://confoo.ca/en/speaker/dan-vega",
+    "slug": "confoo-2026-introduction-to-spring-ai",
     "name": "ConFoo 2026",
     "startDate": "Feb 25, 2026",
     "endDate": "Feb 27, 2026",

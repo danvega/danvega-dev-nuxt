@@ -85,6 +85,7 @@ export default defineNuxtConfig({
         '/newsletter/**': {isr: true},
         '/about': {prerender: true},
         '/speaking': {prerender: true},
+        '/speaking/**': {isr: true},
         '/courses': {prerender: true},
         '/uses': {prerender: true},
         '/contact': {redirect: '/about'},

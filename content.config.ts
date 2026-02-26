@@ -34,6 +34,20 @@ export default defineContentConfig({
         description: z.string().optional(),
         excerpt: z.string().optional()
       })
+    }),
+    speaking: defineCollection({
+      type: 'page',
+      source: 'speaking/**/*.md',
+      schema: z.object({
+        slug: z.string(),
+        title: z.string(),
+        published: z.boolean().default(false),
+        date: z.string(),
+        conference: z.string(),
+        conferenceUrl: z.string().optional(),
+        location: z.string(),
+        description: z.string().optional()
+      })
     })
   }
 })

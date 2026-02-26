@@ -11,10 +11,11 @@ useHead({
 
 const upcomingEvents = events
     .filter((event) => {
-      const eventDate = new Date(event.startDate);
-      const today = new Date();
-      today.setHours(0, 0, 0, 0); // Set time to start of the day
-      return event.startDate && eventDate >= today;
+      const endDate = new Date(event.endDate || event.startDate);
+      const cutoff = new Date();
+      cutoff.setHours(0, 0, 0, 0);
+      cutoff.setDate(cutoff.getDate() - 3); // Keep events for 3 days after they end
+      return event.startDate && endDate >= cutoff;
     })
     .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
 </script>
@@ -45,10 +46,14 @@ const upcomingEvents = events
             <div class="md:col-span-3">
               <div class="space-y-16">
 
-                <article v-for="event in upcomingEvents" :key="event.url" class="group relative flex flex-col items-start">
+                <article v-for="event in upcomingEvents" :key="event.title + event.name" class="group relative flex flex-col items-start">
                   <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                     <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                    <a :href="event.url">
+                    <NuxtLink v-if="event.slug" :to="`/speaking/${event.slug}`">
+                      <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                      <span class="relative z-10">{{ event.title }}</span>
+                    </NuxtLink>
+                    <a v-else :href="event.url">
                       <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
                       <span class="relative z-10">{{ event.title }}</span>
                     </a>
@@ -60,7 +65,8 @@ const upcomingEvents = events
                   </p>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{{ event.description }}</p>
                   <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">
-                    Learn More
+                    <template v-if="event.slug">View Details</template>
+                    <template v-else>Learn More</template>
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
                       <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
