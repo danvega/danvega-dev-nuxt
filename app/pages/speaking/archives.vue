@@ -21,7 +21,7 @@ const archives = events
 
 <template>
   <Container class="mt-16 sm:mt-32">
-    <div class="w-full max-w-4xl mx-auto">
+    <header class="max-w-4xl">
       <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mb-8">
         Speaking Archives
       </h1>
@@ -31,7 +31,7 @@ const archives = events
       <p class="mt-4 text-base text-zinc-600 dark:text-zinc-400">
         Specializing in Spring Framework, Java, and modern web development, my talks have reached thousands of developers, contributing to the growth and evolution of our developer community. I'm passionate about sharing practical insights and fostering meaningful technical discussions.
       </p>
-    </div>
+    </header>
 
     <div class="mt-12">
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
