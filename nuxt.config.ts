@@ -10,6 +10,14 @@ export default defineNuxtConfig({
       } catch (error) {
         console.error('❌ Failed to generate RSS data:', error)
       }
+      // Generate speaking photos manifest
+      try {
+        const { generateSpeakingPhotos } = await import('./scripts/generate-speaking-photos.js')
+        await generateSpeakingPhotos()
+        console.log('✅ Speaking photos manifest generated successfully')
+      } catch (error) {
+        console.error('❌ Failed to generate speaking photos manifest:', error)
+      }
     }
   },
   compatibilityDate: "2024-11-13",
