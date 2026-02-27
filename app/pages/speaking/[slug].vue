@@ -86,6 +86,9 @@ defineOgImage({
       <div class="mt-10 prose dark:prose-invert max-w-none">
         <ContentRenderer v-if="talk.body" :value="talk" />
       </div>
+
+      <!-- Photos -->
+      <SpeakingPhotos :slug="slug" />
     </div>
   </Container>
 </template>
