@@ -281,5 +281,19 @@ export const photos: Photo[] = [
         height: 1280,
         src: '/images/photos/dev2next_2025_01.jpeg',
         alt: 'AI Panel at dev2Next 2025 led by Frank Greco'
+    },
+    {
+      id: 40,
+      width: 640,
+      height: 480,
+      src: '/images/photos/devnexus_2026_01.jpeg',
+      alt: 'DevNexus Book Signing'
+    },
+    {
+      id: 41,
+      width: 640,
+      height: 480,
+      src: '/images/photos/devnexus_2026_02.jpeg',
+      alt: 'DevNexus Glenn and Nate'
     }
 ];
