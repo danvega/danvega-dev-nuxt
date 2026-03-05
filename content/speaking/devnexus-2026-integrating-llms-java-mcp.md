@@ -21,3 +21,14 @@ In this session, you'll learn the basic building blocks of MCP and how to build,
 - Testing strategies for MCP server implementations
 - Connecting LLMs to enterprise data sources via MCP
 - Real-world patterns for production MCP deployments
+
+
+## Slides
+
+:pdf-embed{src="https://speakerdeck.com/therealdanvega/integrating-llms-in-java-a-practical-guide-to-model-context-protocol" title="Spring AI MCP Slides" height="450px"}
+
+## Code
+
+::GitHubRepo{url="https://github.com/danvega/dvaas"}
+All the code from this presentation can be found in the repository below.
+::
