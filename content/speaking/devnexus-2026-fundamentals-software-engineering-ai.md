@@ -21,3 +21,8 @@ Modern software development demands more than just coding proficiency—it requi
 - System design principles that AI can't replace
 - Practical strategies for staying relevant in an AI-augmented world
 - Real-world examples of where AI helps and where it falls short
+
+
+## Slides
+
+:pdf-embed{src="https://speakerdeck.com/therealdanvega/fundamentals-of-software-engineering-in-the-age-of-ai" title="Fundamentals of SWE in the age of AI Slides" height="450px"}
