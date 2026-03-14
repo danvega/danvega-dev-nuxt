@@ -1,12 +1,13 @@
 ---
 title: "Spring AI Prompt Caching: Stop Wasting Money on Repeated Tokens"
 slug: spring-ai-prompt-caching
-date: 2026-02-09T09:00:00.000Z
+date: 2026-02-08T09:00:00.000Z
 published: true
 excerpt: "Learn how to implement prompt caching in Spring AI to dramatically reduce your Anthropic API costs by caching system prompts and tools that don't change between requests."
 author: Dan Vega
 tags:
   - Spring AI
+cover: spring-ai-prompt-caching.jpg  
 video: https://www.youtube.com/embed/eYb7BKW4QcU
 keywords: spring ai prompt caching, anthropic prompt caching, claude api cost reduction, spring ai cache strategy, spring boot ai tutorial
 ---
