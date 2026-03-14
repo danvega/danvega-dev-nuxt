@@ -14,7 +14,7 @@ export const rssData = [
   },
   {
     "title": "Spring AI Prompt Caching: Stop Wasting Money on Repeated Tokens",
-    "date": "2026-02-09T09:00:00.000Z",
+    "date": "2026-02-08T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/2026/02/08/spring-ai-prompt-caching",
     "slug": "spring-ai-prompt-caching",

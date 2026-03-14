@@ -15,7 +15,7 @@ useHead({
 
 const route = useRoute();
 const page = ref(route.params.page ? parseInt(route.params.page) : 1);
-const limit = ref(5);
+const limit = ref(10);
 
 const searchTag = computed(() =>
     Array.isArray(route.query.tag) ? route.query.tag[0] : route.query.tag
@@ -67,23 +67,34 @@ if(posts.value?.length === 0 && searchTag.value) {
       </div>
     </header>
     <div class="mt-16 sm:mt-20">
-      <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-        <div class="flex max-w-3xl flex-col space-y-16">
-          <article
-              v-for="post in posts"
-              :key="post._id"
-              class="md:grid md:grid-cols-4 md:items-baseline"
-          >
-            <BlogCard :post="post"/>
-          </article>
-          <SimplePagination
-              v-if="posts?.length > 0"
-              :limit="limit"
-              :page="page"
-              :count="articlesCount"
+      <!-- Page 1: Featured hero + grid -->
+      <template v-if="page === 1 && posts.length > 0">
+        <BlogFeaturedHero :post="posts[0]" />
+        <div v-if="posts.length > 1" class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <BlogThumbnailCard
+            v-for="post in posts.slice(1)"
+            :key="post._id"
+            :post="post"
           />
         </div>
+      </template>
+
+      <!-- Page 2+: All posts in grid -->
+      <div v-else class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <BlogThumbnailCard
+          v-for="post in posts"
+          :key="post._id"
+          :post="post"
+        />
       </div>
+
+      <SimplePagination
+        v-if="posts?.length > 0"
+        :limit="limit"
+        :page="page"
+        :count="articlesCount"
+        class="mt-12"
+      />
     </div>
   </Container>
 </template>
