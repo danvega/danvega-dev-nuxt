@@ -31,9 +31,9 @@ const primaryTag = computed(() => {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 gap-8 lg:grid-cols-5">
+  <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
     <!-- Left: Cover Image -->
-    <div class="lg:col-span-3">
+    <div>
       <a v-if="post.meta?.cover" :href="`/blog/${post.meta?.slug}`" class="block overflow-hidden rounded-lg">
         <NuxtImg
           :src="getImagePath(post.meta?.date, post.meta?.cover)"
@@ -48,7 +48,7 @@ const primaryTag = computed(() => {
     </div>
 
     <!-- Right: Post Details -->
-    <div class="flex flex-col justify-center lg:col-span-2">
+    <div class="flex flex-col justify-center">
       <span class="inline-flex w-fit items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
         Latest
       </span>
