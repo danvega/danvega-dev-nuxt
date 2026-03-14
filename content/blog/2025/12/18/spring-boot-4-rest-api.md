@@ -9,7 +9,7 @@ tags:
   - Spring Boot
   - Java
   - REST API
-cover:
+cover: spring-boot-rest-api-easy.jpeg
 video: https://www.youtube.com/embed/klnxzL8oQdM
 github: https://github.com/danvega/meetup/tree/fast-path
 keywords: spring boot 4 rest api, spring boot crud api, restcontroller spring boot, spring boot api example, java records spring boot, spring boot tutorial, spring boot 4 tutorial, build rest api java
