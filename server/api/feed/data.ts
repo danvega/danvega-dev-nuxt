@@ -1,6 +1,18 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Building a Spring Initializr Terminal UI with Java",
+    "description": "How I built a terminal user interface for the Spring Initializr using Tambu UI, a new Java TUI framework, and GraalVM native images to streamline my development workflow.",
+    "date": "2026-03-14T10:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2026/03/14/spring-initializr-tui",
+    "slug": "spring-initializr-tui",
+    "tags": [
+      "Java",
+      "Spring Boot"
+    ]
+  },
+  {
     "title": "Spring AI Prompt Caching: Stop Wasting Money on Repeated Tokens",
     "date": "2026-02-09T09:00:00.000Z",
     "author": "Dan Vega",
@@ -594,18 +606,6 @@ export const rssData = [
     "slug": "ollama-web-ui",
     "tags": [
       "AI"
-    ]
-  },
-  {
-    "title": "Java Method References - A Beginner's Guide",
-    "description": "Discover the power of method references in Java! This beginner-friendly guide explains what method references are, why they're useful, and how to use them effectively. With clear explanations and practical code examples, you'll learn to write cleaner, more expressive code using this powerful Java feature.",
-    "date": "2024-08-01T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/08/01/java-method-references",
-    "slug": "java-method-references",
-    "tags": [
-      "Java",
-      "Functional Programming"
     ]
   }
 ] as const
