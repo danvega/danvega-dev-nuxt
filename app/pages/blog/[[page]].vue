@@ -9,7 +9,7 @@ useHead({
   title: 'Dan Vega - Blog',
   meta: [
     { name: 'title', content: 'Dan Vega - Blog' },
-    { name: 'description', content: 'Writing on software development and anything else I find interesting.' }
+    { name: 'description', content: 'Practical writing on Java, Spring, AI, and the craft of software engineering.' }
   ]
 });
 
@@ -40,10 +40,10 @@ if(posts.value?.length === 0 && searchTag.value) {
   <Container class="mt-16 sm:mt-32">
     <header class="max-w-4xl">
       <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-        Writing on software development and anything else I find interesting.
+        Practical writing on Java, Spring, AI, and the craft of software engineering.
       </h1>
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-        All of my long-form thoughts on programming, content creation, and more, collected in chronological order.
+        If you're building with Java and Spring (or trying to figure out where AI fits into your development workflow) you're in the right place. I write practical, beginner-friendly deep dives on Spring Boot, Spring AI, and software engineering fundamentals, collected here in chronological order.
       </p>
       <div class="mt-4 flex items-center gap-6">
         <a href="/blog/tags" class="flex items-center space-x-2 text-zinc-600 hover:text-blue-500 dark:text-zinc-400 dark:hover:text-blue-400">
