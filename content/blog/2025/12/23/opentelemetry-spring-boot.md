@@ -8,7 +8,7 @@ published: true
 tags:
   - Spring Boot
   - Observability
-cover:
+cover: spring-boot-open-telemetry.jpg
 video: https://www.youtube.com/embed/6_Y41z7OIv8
 github: https://github.com/danvega/ot
 keywords: spring boot opentelemetry, spring-boot-starter-opentelemetry, spring boot 4 observability, OTLP traces metrics logs, grafana lgtm spring boot, distributed tracing spring boot, spring boot without actuator, micrometer opentelemetry, opentelemetry starter, spring boot 4 observability
