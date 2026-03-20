@@ -1,6 +1,17 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "JEP 500: Prepare to Make Final Mean Final in JDK 26",
+    "description": "JDK 26 introduces JEP 500, which warns developers when final fields are mutated through reflection. Here's what this means for your Java code and how to prepare for the future.",
+    "date": "2026-03-20T10:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2026/20/jdk-26-final-means-final",
+    "slug": "jdk-26-final-means-final",
+    "tags": [
+      "Java"
+    ]
+  },
+  {
     "title": "Building a Spring Initializr Terminal UI with Java",
     "description": "How I built a terminal user interface for the Spring Initializr using Tambu UI, a new Java TUI framework, and GraalVM native images to streamline my development workflow.",
     "date": "2026-03-14T10:00:00.000Z",
@@ -595,17 +606,6 @@ export const rssData = [
     "slug": "claude-sonnet-35",
     "tags": [
       "Artificial Intelligence (AI)"
-    ]
-  },
-  {
-    "title": "Harnessing Local LLMs - A Practical Guide to Ollama and Open Web UI",
-    "description": "This guide introduces Ollama, a tool for running large language models (LLMs) locally, and its integration with Open Web UI. It highlights the cost and security benefits of local LLM deployment, providing setup instructions for Ollama and demonstrating how to use Open Web UI for enhanced model interaction.",
-    "date": "2024-08-05T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/08/05/ollama-web-ui",
-    "slug": "ollama-web-ui",
-    "tags": [
-      "AI"
     ]
   }
 ] as const
