@@ -1,6 +1,18 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Giving Your Spring AI Agents a Real Browser with the Browserbase Spring Boot Starter",
+    "description": "Most AI agents can search the web. But what happens when they need to actually use it? I built a Spring Boot Starter for Browserbase that gives your agents a real, headless browser in three lines of configuration, plus a deep research agent to show it off.",
+    "date": "2026-03-25T08:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2026/25/browswerbase-spring-boot-starter",
+    "slug": "browserbase-spring-boot-starter",
+    "tags": [
+      "Spring Boot",
+      "Spring AI"
+    ]
+  },
+  {
     "title": "JEP 500: Prepare to Make Final Mean Final in JDK 26",
     "description": "JDK 26 introduces JEP 500, which warns developers when final fields are mutated through reflection. Here's what this means for your Java code and how to prepare for the future.",
     "date": "2026-03-20T10:00:00.000Z",
@@ -595,17 +607,6 @@ export const rssData = [
       "Artificial Intelligence (AI)",
       "Spring AI",
       "Java"
-    ]
-  },
-  {
-    "title": "Claude 3.5 Sonnet - AI Assistance with Speed and Artifacts",
-    "description": "Claude 3.5 Sonnet, Anthropic's latest AI model, sets new benchmarks in intelligence, speed, and capabilities across various domains. This blog post explores the key features of Claude 3.5 Sonnet, including its enhanced performance and the groundbreaking Artifacts feature, which enables real-time collaboration between users and AI.",
-    "date": "2024-08-06T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/08/06/claude-sonnet-35",
-    "slug": "claude-sonnet-35",
-    "tags": [
-      "Artificial Intelligence (AI)"
     ]
   }
 ] as const
