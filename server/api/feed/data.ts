@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring, Build Me a Coding Agent",
+    "description": "Learn how to build an autonomous coding agent in Spring AI using the Spring AI Agent Utils library. This tutorial walks you through creating a CLI-based agent with file system access, shell commands, and skills.",
+    "date": "2026-03-31",
+    "author": "Dan Vega",
+    "_path": "/blog/2026/31/sprig-build-me-a-coding-agent",
+    "slug": "spring-building-me-a-coding-agent",
+    "tags": [
+      "Spring AI",
+      "Spring Boot",
+      "Java"
+    ]
+  },
+  {
     "title": "Giving Your Spring AI Agents a Real Browser with the Browserbase Spring Boot Starter",
     "description": "Most AI agents can search the web. But what happens when they need to actually use it? I built a Spring Boot Starter for Browserbase that gives your agents a real, headless browser in three lines of configuration, plus a deep research agent to show it off.",
     "date": "2026-03-25T08:00:00.000Z",
@@ -594,19 +607,6 @@ export const rssData = [
     "slug": "jdk-23-first-look",
     "tags": [
       "java"
-    ]
-  },
-  {
-    "title": "Supercharge Your Spring Apps with AI - A Beginner's Guide to Claude 3.5 Sonnet and Spring AI",
-    "description": "Unlock the power of artificial intelligence in your Java applications with Claude 3.5 Sonnet and Spring AI. This beginner-friendly guide walks you through integrating cutting-edge AI capabilities into your Spring projects, opening up a world of possibilities for smart, responsive applications.",
-    "date": "2024-08-07T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/08/07/claude-sonnet-spring-ai",
-    "slug": "claude-sonnet-spring-ai",
-    "tags": [
-      "Artificial Intelligence (AI)",
-      "Spring AI",
-      "Java"
     ]
   }
 ] as const
