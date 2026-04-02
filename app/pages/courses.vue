@@ -11,6 +11,13 @@ useHead({
 
 const courses : Course[] = [
   {
+    slug: 'graphql-for-java-developers',
+    title: 'GraphQL for Java Developers',
+    description: 'Learn how to build scalable GraphQL APIs with Java 26 and Spring Boot 4. This course walks you through schema-first development, batch loading, unions, Query by Example, AOT repositories, and more.',
+    link: 'https://www.youtube.com/playlist?list=PLZV0a2jwt22u5DEFwYSzOM7mg6AjL90hw',
+    cover: 'graphql-java-developers.jpg'
+  },
+  {
     slug: 'ai-for-java-developers',
     title: 'AI for Java Developers: Full Course / Workshop on Getting Started with Spring AI',
     description: 'Every Java Developer is now an AI Developer. Transform your Java skills for the AI era with this comprehensive 5.5-hour Spring AI masterclass!',

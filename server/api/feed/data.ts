@@ -1,7 +1,7 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
-    "title": "Getting Started with GraphQL for Java Developers",
+    "title": "GraphQL for Java Developers",
     "description": "Learn how to build scalable GraphQL APIs with Java 26 and Spring Boot 4. This course walks you through schema-first development, batch loading, unions, Query by Example, AOT repositories, and more.",
     "date": "2026-04-01T08:00:00.000Z",
     "author": "Dan Vega",
