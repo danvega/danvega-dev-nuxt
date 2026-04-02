@@ -1,11 +1,24 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Getting Started with GraphQL for Java Developers",
+    "description": "Learn how to build scalable GraphQL APIs with Java 26 and Spring Boot 4. This course walks you through schema-first development, batch loading, unions, Query by Example, AOT repositories, and more.",
+    "date": "2026-04-01T08:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2026/04/01/graphql-for-java-developers-course",
+    "slug": "getting-started-with-graphql-for-java-developers",
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "GraphQL"
+    ]
+  },
+  {
     "title": "Spring, Build Me a Coding Agent",
     "description": "Learn how to build an autonomous coding agent in Spring AI using the Spring AI Agent Utils library. This tutorial walks you through creating a CLI-based agent with file system access, shell commands, and skills.",
-    "date": "2026-03-31",
+    "date": "2026-03-31T08:00:00.000Z",
     "author": "Dan Vega",
-    "_path": "/blog/2026/31/sprig-build-me-a-coding-agent",
+    "_path": "/blog/2026/03/31/sprig-build-me-a-coding-agent",
     "slug": "spring-building-me-a-coding-agent",
     "tags": [
       "Spring AI",
@@ -18,7 +31,7 @@ export const rssData = [
     "description": "Most AI agents can search the web. But what happens when they need to actually use it? I built a Spring Boot Starter for Browserbase that gives your agents a real, headless browser in three lines of configuration, plus a deep research agent to show it off.",
     "date": "2026-03-25T08:00:00.000Z",
     "author": "Dan Vega",
-    "_path": "/blog/2026/25/browswerbase-spring-boot-starter",
+    "_path": "/blog/2026/03/25/browswerbase-spring-boot-starter",
     "slug": "browserbase-spring-boot-starter",
     "tags": [
       "Spring Boot",
@@ -30,7 +43,7 @@ export const rssData = [
     "description": "JDK 26 introduces JEP 500, which warns developers when final fields are mutated through reflection. Here's what this means for your Java code and how to prepare for the future.",
     "date": "2026-03-20T10:00:00.000Z",
     "author": "Dan Vega",
-    "_path": "/blog/2026/20/jdk-26-final-means-final",
+    "_path": "/blog/2026/03/20/jdk-26-final-means-final",
     "slug": "jdk-26-final-means-final",
     "tags": [
       "Java"
@@ -596,17 +609,6 @@ export const rssData = [
     "tags": [
       "Spring Boot",
       "Java"
-    ]
-  },
-  {
-    "title": "What's new in JDK 23",
-    "description": "Explore the exciting new features and improvements coming in Java 23, including primitive types in patterns, Markdown documentation comments, and enhancements to garbage collection and concurrency.",
-    "date": "2024-09-12T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/09/12/jdk-23-first-look",
-    "slug": "jdk-23-first-look",
-    "tags": [
-      "java"
     ]
   }
 ] as const
