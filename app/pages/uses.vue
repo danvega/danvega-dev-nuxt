@@ -40,6 +40,14 @@ useHead({
                     my new machine setup process check out this [repository](https://github.com/danvega/new-macbook-setup/blob/master/2024/README.md).</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
+                  <a href="https://www.amazon.com/Apple-Studio-Display-Standard-Tilt-Adjustable/dp/B0GR1PJYT8">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                      Apple Studio Display
+                    </h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The Apple Studio Display is a stunning 27-inch 5K Retina display that pairs perfectly with my Mac setup. The P3 wide color gamut and 600 nits of brightness deliver incredibly vibrant and detailed visuals, making it ideal for both development work and content creation. The built-in 12MP Ultra Wide camera with Center Stage, studio-quality three-mic array, and six-speaker sound system with Spatial Audio mean I have everything I need for video calls and media without any extra peripherals.</p>
+                </li>
+                <li class="group relative flex flex-col items-start">
                   <a href="https://amzn.to/48PG2jt">
                     <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                       Dell S2722QC Monitor - 27 inch 4K
@@ -133,12 +141,18 @@ useHead({
                   </a>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The Sigma 16mm f1.4 lens has truly elevated my YouTube videos, delivering that sought-after blurry background which adds a professional depth to my shots. The wide aperture of f1.4 not only allows for beautiful bokeh but also performs exceptionally in low light conditions, ensuring my videos are always vibrant and clear. Its sharp and precise focus adds a level of polish to my content, making each video a visual delight for my viewers.</p>
                 </li>
+
                 <li class="group relative flex flex-col items-start">
-                  <a href="https://amzn.to/3s31Nv9">
-                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Shure MV7 USB Microphone</h3>
+                  <a href="https://www.amazon.com/Shure-SM7B-Cardioid-Dynamic-Microphone/dp/B0002E4Z8M">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Shure SM7B</h3>
                   </a>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    The Shure MV7 USB Microphone has been a game changer in the audio quality of both my YouTube videos and podcast episodes. Its plug-and-play simplicity, coupled with the superior sound clarity, ensures my voice comes across as natural and professional, enhancing the overall auditory experience for my audience. Additionally, the MV7's sleek design and robust build not only look great on camera but also promise longevity, making it a worthy investment for any content creator.</p>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The Shure SM7B is an industry-standard dynamic microphone that has taken my audio quality to the next level. Known for its warm, smooth sound and excellent rejection of background noise, it's the same mic used in professional broadcast studios and podcasting setups worldwide. The bass rolloff and mid-range emphasis controls let me dial in the perfect vocal tone, and its rugged construction means it will last for years to come.</p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                  <a href="https://www.amazon.com/Rode-RodeCaster-Duo-Streaming-Mixer/dp/B0BQLJYSBX">
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">RODECaster Duo</h3>
+                  </a>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">The RODECaster Duo is a compact yet powerful audio production studio that handles all my recording and streaming needs. With two high-quality preamps, built-in APHEX audio processing, and a beautifully intuitive touchscreen interface, it makes professional audio production accessible and effortless. The multi-track USB recording, customizable smart pads, and seamless integration with my SM7B make it the perfect centerpiece for my podcasting and content creation workflow.</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
                   <a href="https://amzn.to/46UJYNV">
@@ -199,12 +213,7 @@ useHead({
                   </a>
                   <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Notion is a comprehensive organization and productivity tool that combines note-taking, task management, databases, and project tracking into a single, flexible platform. It stands out for its highly customizable interface, allowing users to create and manage content in a variety of formats, from simple to-do lists to complex project boards. Ideal for both personal and collaborative use, Notion is a versatile choice for those seeking an all-in-one solution to streamline their workflow and organize their ideas and projects efficiently.</p>
                 </li>
-                <li class="group relative flex flex-col items-start">
-                  <a href="https://videotapit.com/?via=dan">
-                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">VideoTap</h3>
-                  </a>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Are you a content creator who struggles to find enough time to produce written content alongside videos? Do you wish there was an easy way to transform your videos into compelling blog posts? Look no further than <a href="https://videotapit.com/?via=dan">VideoTap!</a></p>
-                </li>
+
                 <li class="group relative flex flex-col items-start">
                   <a href="https://raycast.com/?via=dan">
                     <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Raycast</h3>
@@ -223,9 +232,9 @@ useHead({
               <ul role="list" class="space-y-16">
                 <li class="group relative flex flex-col items-start">
                   <a href="https://nuxt.com/">
-                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Nuxt 3</h3>
+                    <h3 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">Nuxt 4</h3>
                   </a>
-                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Nuxt 3 is a versatile and modern framework for building web applications, offering improved performance, enhanced developer experience, and a range of new features over its predecessor, Nuxt 2. It leverages Vue.js 3, Vite, and Nitro server engine to create fast, server-side rendered applications that are both scalable and maintainable. Ideal for developing both static and dynamic websites, Nuxt 3 simplifies the development process with features like automatic routing, component auto-importing, and improved module compatibility.</p>
+                  <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">Nuxt 4 is the latest version of the modern Vue.js framework for building web applications, bringing improved performance, a streamlined developer experience, and powerful new features. It leverages Vue.js 3, Vite, and the Nitro server engine to create fast, server-side rendered applications that are both scalable and maintainable. Ideal for developing both static and dynamic websites, Nuxt 4 simplifies the development process with features like automatic routing, component auto-importing, and improved module compatibility.</p>
                 </li>
                 <li class="group relative flex flex-col items-start">
                   <a href="https://www.netlify.com/">
