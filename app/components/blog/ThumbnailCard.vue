@@ -54,11 +54,11 @@ const tagGradientClass = computed(() => {
       <NuxtImg
         :src="getImagePath(post.meta?.date, post.meta?.cover)"
         :alt="post.title"
-        class="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105"
         loading="lazy"
       />
     </div>
-    <div v-else class="flex aspect-[4/3] items-center justify-center bg-gradient-to-br" :class="tagGradientClass">
+    <div v-else class="flex aspect-video items-center justify-center bg-gradient-to-br" :class="tagGradientClass">
       <span v-if="primaryTag" class="text-lg font-semibold text-zinc-400 dark:text-zinc-500">{{ primaryTag }}</span>
     </div>
 

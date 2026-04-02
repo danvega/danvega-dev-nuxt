@@ -38,11 +38,11 @@ const primaryTag = computed(() => {
         <NuxtImg
           :src="getImagePath(post.meta?.date, post.meta?.cover)"
           :alt="post.title"
-          class="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-105"
+          class="aspect-video w-full object-cover transition-transform duration-300 hover:scale-105"
           loading="eager"
         />
       </a>
-      <a v-else :href="`/blog/${post.meta?.slug}`" class="flex aspect-[4/3] items-center justify-center rounded-lg bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20">
+      <a v-else :href="`/blog/${post.meta?.slug}`" class="flex aspect-video items-center justify-center rounded-lg bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20">
         <span v-if="primaryTag" class="text-2xl font-semibold text-zinc-400 dark:text-zinc-500">{{ primaryTag }}</span>
       </a>
     </div>
@@ -68,20 +68,10 @@ const primaryTag = computed(() => {
         {{ post.meta?.shortDesc != null ? post.meta?.shortDesc : post.description }}
       </p>
 
-      <div v-if="post.meta?.tags" class="mt-4 flex flex-wrap gap-2">
-        <span
-          v-for="tag in post.meta.tags.slice(0, 4)"
-          :key="tag"
-          class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
-        >
-          {{ tag }}
-        </span>
-      </div>
-
-      <div class="mt-6">
+      <div class="mt-4">
         <a
           :href="`/blog/${post.meta?.slug}`"
-          class="inline-flex items-center rounded-md bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors"
+          class="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors"
         >
           Read article
           <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1.5 h-4 w-4 stroke-current">
