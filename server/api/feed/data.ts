@@ -1,6 +1,31 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Embabel MCP Servers and Tools: Supercharging Your Agentic Flows on the JVM",
+    "description": "Learn how to add tools and MCP servers to your Embabel agents in Java. Build a blog writing agent that can research topics, calculate reading time, and generate front matter.",
+    "date": "2026-04-10T08:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2026/04/10/embabel-tools-mcp",
+    "slug": "embabel-mcp-servers-and-tools",
+    "tags": [
+      "java",
+      "spring",
+      "ai"
+    ]
+  },
+  {
+    "title": "Embabel First Look: Building Agentic Flows on the JVM",
+    "description": "A first look at Embabel, a framework by Rod Johnson for building agentic AI flows on the JVM. Learn how to create a blog writing agent with goal-oriented action planning.",
+    "date": "2026-04-02T08:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/2026/04/02/embabel-first-look",
+    "slug": "embabel-first-look",
+    "tags": [
+      "Spring AI",
+      "Java"
+    ]
+  },
+  {
     "title": "GraphQL for Java Developers",
     "description": "Learn how to build scalable GraphQL APIs with Java 26 and Spring Boot 4. This course walks you through schema-first development, batch loading, unions, Query by Example, AOT repositories, and more.",
     "date": "2026-04-01T08:00:00.000Z",
@@ -582,30 +607,6 @@ export const rssData = [
     "author": "Dan Vega",
     "_path": "/blog/2024/10/06/spring-boot-jte-htmx",
     "slug": "spring-boot-jte-htmx",
-    "tags": [
-      "Spring Boot",
-      "Java"
-    ]
-  },
-  {
-    "title": "Getting started with Java Template Engine (JTE) layouts in Spring Boot",
-    "description": "Learn how to use layouts with Java Template Engine in your next Spring Boot Application",
-    "date": "2024-10-03T20:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/10/03/jte-layouts",
-    "slug": "jte-layouts",
-    "tags": [
-      "Spring Boot",
-      "Java"
-    ]
-  },
-  {
-    "title": "Introducing JTE: The Latest Template Engine in Spring Boot",
-    "description": "Explore JTE, the new Java Template Engine now available in Spring Initializer. Learn its benefits, how to get started, and why you might choose it for your next Spring Boot project.",
-    "date": "2024-10-01T20:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/2024/10/01/hello-jte",
-    "slug": "hello-jte",
     "tags": [
       "Spring Boot",
       "Java"
