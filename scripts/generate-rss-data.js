@@ -34,8 +34,7 @@ async function generateRSSData() {
         const { data } = matter(content)
 
         if (data.published === true) {
-          const relativePath = filePath.replace(contentDir, '').replace(/\.md$/, '')
-          const urlPath = `/blog${relativePath}`
+          const urlPath = `/blog/${data.slug}`
 
           posts.push({
             title: data.title,
