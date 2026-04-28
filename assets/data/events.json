@@ -1,5 +1,25 @@
 [
   {
+    "title": "What's New in Spring Boot 4",
+    "url": "https://www.kcdc.info/",
+    "slug": "kcdc-2026-whats-new-in-spring-boot-4",
+    "name": "KCDC 2026",
+    "startDate": "Sep 10, 2026",
+    "endDate": "Sep 11, 2026",
+    "location": "Kansas City, MO",
+    "description": "The next major release of Spring is here, and this is your comprehensive guide to what matters most. Spring Boot 4 delivers exceptional performance gains, streamlined developer workflows, and production-ready features that solve real-world challenges. In this session, you'll not only learn what's new but experience it firsthand through live coding demos. We'll explore HTTP interfaces, JSpecify null safety, Jackson 3 integration, and the built-in resilience patterns that make your applications production-ready from day one."
+  },
+  {
+    "title": "Zero to Superpowers with Claude Code",
+    "url": "https://www.kcdc.info/",
+    "slug": "kcdc-2026-zero-to-superpowers-claude-code",
+    "name": "KCDC 2026",
+    "startDate": "Sep 10, 2026",
+    "endDate": "Sep 11, 2026",
+    "location": "Kansas City, MO",
+    "description": "Claude Code is powerful. Maybe too powerful. With so many features, it's hard to know where to start. In this session, I'll show you how I actually use Claude Code day to day. We'll start with the basics that deliver immediate value. Then we'll build up to the features that make Claude Code truly yours: custom slash commands, skills, and agents that fit your workflow. You don't need to learn everything at once. You need to know what matters first and what to add as you grow. By the end, you'll have a clear path from beginner to power user."
+  },
+  {
     "title": "Fundamentals of Software Engineering In the Age of AI",
     "url": "https://www.arcofai.com/",
     "name": "Arc of AI 2026",
