@@ -20,6 +20,33 @@
     "description": "Claude Code is powerful. Maybe too powerful. With so many features, it's hard to know where to start. In this session, I'll show you how I actually use Claude Code day to day. We'll start with the basics that deliver immediate value. Then we'll build up to the features that make Claude Code truly yours: custom slash commands, skills, and agents that fit your workflow. You don't need to learn everything at once. You need to know what matters first and what to add as you grow. By the end, you'll have a clear path from beginner to power user."
   },
   {
+    "title": "AI for Java Developers",
+    "url": "https://www.commityourcode.com/",
+    "name": "Commit Your Code 2026",
+    "startDate": "Sep 3, 2026",
+    "endDate": "Sep 4, 2026",
+    "location": "Plano, TX",
+    "description": "AI has become an unavoidable topic in software development, and many Java developers are wondering if they need to learn Python to participate. The answer is no. The Java ecosystem has everything you need to build modern AI applications, and your existing skills carry over more than you might think. This session bridges the gap between traditional Java development and AI. We'll cover the core concepts of AI and large language models in terms familiar to Java developers, then look at what's possible today: chatbots, retrieval augmented generation, recommendation systems, and intelligent agents, all built on the JVM. You'll leave with a clear picture of the Java AI landscape, the confidence that you don't need to switch languages to build production AI features, and a starting point for your first project."
+  },
+  {
+    "title": "Building and Securing MCP Servers in Java",
+    "url": "https://www.meetup.com/orlando-jug-java-user-group/events/314762709/",
+    "name": "Orlando JUG",
+    "startDate": "Jun 11, 2026",
+    "endDate": "Jun 11, 2026",
+    "location": "Orlando, FL",
+    "description": "The Model Context Protocol (MCP) is transforming how AI applications interact with external systems, and it's rapidly becoming an industry standard. In this session, Dan Vega examines MCP and demonstrates how it enables developers to build AI-powered Java applications while preserving authority over security, infrastructure, and data access. You'll learn how to move beyond initial AI prototypes toward building dependable, production-ready, and scalable MCP applications."
+  },
+  {
+    "title": "Building Intelligent Applications with Spring AI",
+    "url": "https://www.meetup.com/tampa-jug/events/314768363/",
+    "name": "Tampa Java User Group",
+    "startDate": "Jun 10, 2026",
+    "endDate": "Jun 10, 2026",
+    "location": "Tampa, FL",
+    "description": "Curious about adding AI to your Spring applications but not sure where to start? This talk introduces the fundamentals of AI for beginners, then dives into Spring AI and how it simplifies building applications that incorporate artificial intelligence functionality without introducing unnecessary complexity. We'll cover setting up Spring AI projects, integrating with existing Spring Boot applications, and implementing common AI tasks like chatbots, recommendations, and sentiment analysis."
+  },
+  {
     "title": "Fundamentals of Software Engineering In the Age of AI",
     "url": "https://www.arcofai.com/",
     "name": "Arc of AI 2026",
