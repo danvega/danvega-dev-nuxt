@@ -1,20 +1,4 @@
 ---
-title: "Spring Boot + Kafka in 10 Minutes (Your First Message)"
-slug: spring-boot-kafka-in-10-minutes-your-first-message
-date: 2026-05-18T09:00:00.000Z
-published: true
-description: "Learn how to get up and running with Spring for Apache Kafka"
-author: "Dan Vega"
-tags:
-  - Spring
-  - Spring Boot
-cover: spring-boot-kafka-in-10-minutes-your-first-message.jpg
-video: 
-keywords: Spring, Spring Boot
----
-
-
----
 title: "Spring Boot + Kafka in 10 Minutes: Sending Your First Message"
 slug: spring-boot-kafka-quick-start
 date: 2026-05-20T08:00:00.000Z
@@ -24,8 +8,10 @@ author: "Dan Vega"
 tags:
   - Spring Boot
   - Apache Kafka
-  - Spring for Apache Kafka
+- Spring for Apache Kafka
 keywords: spring boot kafka, spring for apache kafka, kafka spring boot tutorial, kafka template spring boot, kafka listener spring boot, spring boot kafka docker compose, embedded kafka test
+cover: spring-boot-kafka-in-10-minutes-your-first-message.jpg
+video: https://www.youtube.com/embed/5XW3f_39ipY
 ---
 
 If you've been building Spring Boot services that talk to each other over HTTP, you've probably hit the wall where everything is synchronous, tightly coupled, and one slow service brings the whole chain down. Apache Kafka offers a way out of that mess, but getting started with the raw Kafka Java client can feel overwhelming. Spring for Apache Kafka wraps all of that complexity in the annotations and auto-configuration you already know, and you can have your first message flowing in about 10 minutes.
