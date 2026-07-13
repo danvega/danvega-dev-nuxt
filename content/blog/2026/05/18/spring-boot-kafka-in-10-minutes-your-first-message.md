@@ -1,7 +1,7 @@
 ---
 title: "Spring Boot + Kafka in 10 Minutes: Sending Your First Message"
 slug: spring-boot-kafka-quick-start
-date: 2026-05-20T08:00:00.000Z
+date: 2026-05-18T08:00:00.000Z
 published: true
 description: "Learn how to produce and consume your first Apache Kafka message using Spring Boot. This beginner-friendly guide covers Docker Compose setup, KafkaTemplate, @KafkaListener, and testing with Embedded Kafka."
 author: "Dan Vega"
