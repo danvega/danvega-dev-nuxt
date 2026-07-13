@@ -7,7 +7,7 @@ import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/vue/24/outline'
 
     <form action="/api/beehiiv/subscribe"
         method="post"
-        class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+        class="mt-16 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <input type="hidden" name="campaign" value="blog-post-footer" />
     <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32 mt-8 rounded-2xl">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
