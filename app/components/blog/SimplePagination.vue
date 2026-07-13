@@ -3,8 +3,12 @@
 const props = defineProps({
   count: {type: Number, required: true},
   page: {type: Number, required: true},
-  limit: {type: Number, required: true}
+  limit: {type: Number, required: true},
+  // Page 1 can hold a different number of posts (e.g. featured hero + grid)
+  firstPageLimit: {type: Number, required: false, default: null}
 });
+
+const firstLimit = computed(() => props.firstPageLimit ?? props.limit);
 
 const route = useRoute();
 const tag = route.query.tag;
@@ -28,12 +32,15 @@ const nextLink = () => {
   }
 }
 
+const fromCount = () => {
+  return props.page === 1 ? 1 : firstLimit.value + (props.page - 2) * props.limit + 1;
+}
+
 const toCount = () => {
-  if(props.count < props.limit * props.page) {
-    return props.count;
-  } else {
-    return props.limit * props.page;
-  }
+  const end = props.page === 1
+    ? firstLimit.value
+    : firstLimit.value + (props.page - 1) * props.limit;
+  return Math.min(end, props.count);
 }
 </script>
 
@@ -42,7 +49,7 @@ const toCount = () => {
   <div class="hidden sm:block">
     <p class="text-sm text-gray-700 dark:text-zinc-100">
       Showing
-      <span class="font-medium">{{props.page > 1 ? (props.page -1) * props.limit : 1}}</span>
+      <span class="font-medium">{{ fromCount() }}</span>
       to
       <span class="font-medium">{{toCount()}}</span>
       of
@@ -57,7 +64,7 @@ const toCount = () => {
       Previous
     </a>
     <a :href="nextLink()"
-       v-if="(props.page * props.limit) < count"
+       v-if="toCount() < count"
        class="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
       Next
     </a>

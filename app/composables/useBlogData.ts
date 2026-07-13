@@ -94,9 +94,10 @@ export const useBlogData = (): BlogDataComposable => {
   }
 
   // Blog posts with pagination and filtering
-  const usePaginatedBlogPosts = (page: Ref<number>, limit: Ref<number>, tag?: Ref<string | undefined>) => {
+  // firstPageLimit lets page 1 hold more posts (e.g. featured hero + grid) than later pages
+  const usePaginatedBlogPosts = (page: Ref<number>, limit: Ref<number>, tag?: Ref<string | undefined>, firstPageLimit?: Ref<number>) => {
     return useAsyncData<PaginatedResults<BlogPost>>(() => {
-      const key = `blog-posts-page-${page.value}-limit-${limit.value}`
+      const key = `blog-posts-page-${page.value}-limit-${limit.value}-first-${firstPageLimit?.value ?? limit.value}`
       return tag?.value ? `${key}-tag-${tag.value}` : key
     }, async () => {
       try {
@@ -114,9 +115,12 @@ export const useBlogData = (): BlogDataComposable => {
           )
         }
 
-        const totalPages = Math.ceil(filteredPosts.length / limit.value)
-        const startIndex = (page.value - 1) * limit.value
-        const endIndex = startIndex + limit.value
+        const firstLimit = firstPageLimit?.value ?? limit.value
+        const totalPages = filteredPosts.length <= firstLimit
+          ? 1
+          : 1 + Math.ceil((filteredPosts.length - firstLimit) / limit.value)
+        const startIndex = page.value === 1 ? 0 : firstLimit + (page.value - 2) * limit.value
+        const endIndex = startIndex + (page.value === 1 ? firstLimit : limit.value)
         const posts = filteredPosts.slice(startIndex, endIndex)
 
         return {
@@ -133,7 +137,7 @@ export const useBlogData = (): BlogDataComposable => {
       default: () => ({ posts: [], totalPages: 0, currentPage: page.value }),
       server: true,
       // Reactive keys - will refetch when page, limit, or tag changes
-      watch: [page, limit, ...(tag ? [tag] : [])]
+      watch: [page, limit, ...(tag ? [tag] : []), ...(firstPageLimit ? [firstPageLimit] : [])]
     })
   }
 

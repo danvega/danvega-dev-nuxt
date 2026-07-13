@@ -15,7 +15,9 @@ useHead({
 
 const route = useRoute();
 const page = ref(route.params.page ? parseInt(route.params.page) : 1);
-const limit = ref(10);
+// Page 1 shows a featured hero + 9 grid posts; later pages show a full 3x3 grid
+const limit = ref(9);
+const firstPageLimit = ref(10);
 
 const searchTag = computed(() =>
     Array.isArray(route.query.tag) ? route.query.tag[0] : route.query.tag
@@ -23,7 +25,7 @@ const searchTag = computed(() =>
 
 // Use enhanced data fetching with reactive keys and automatic caching
 const { usePaginatedBlogPosts } = useBlogData()
-const { data: blogData } = await usePaginatedBlogPosts(page, limit, searchTag)
+const { data: blogData } = await usePaginatedBlogPosts(page, limit, searchTag, firstPageLimit)
 
 const posts = computed(() => blogData.value?.posts || []);
 const articlesCount = computed(() => blogData.value?.totalPosts || 0);
@@ -91,6 +93,7 @@ if(posts.value?.length === 0 && searchTag.value) {
       <SimplePagination
         v-if="posts?.length > 0"
         :limit="limit"
+        :first-page-limit="firstPageLimit"
         :page="page"
         :count="articlesCount"
         class="mt-12"

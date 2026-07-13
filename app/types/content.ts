@@ -70,7 +70,8 @@ export interface BlogDataComposable {
   usePaginatedBlogPosts: (
     page: Ref<number>,
     limit: Ref<number>,
-    tag?: Ref<string | undefined>
+    tag?: Ref<string | undefined>,
+    firstPageLimit?: Ref<number>
   ) => ReturnType<typeof useAsyncData<PaginatedResults<BlogPost>>>
   useBlogPost: (slug: string) => ReturnType<typeof useAsyncData<BlogPost>>
   useAllTags: () => ReturnType<typeof useAsyncData<{ name: string; count: number }[]>>
