@@ -17,7 +17,7 @@ keywords:
   - spring framework 7 resilience
   - restclient default status handler
   - spring boot global exception handler
-date: 2026-07-12T09:00:00.000Z
+date: 2026-03-26T09:00:00.000Z
 published: true
 cover: rest-client-error-handling.jpeg
 video: https://www.youtube.com/embed/MuYzEZk6-zI
