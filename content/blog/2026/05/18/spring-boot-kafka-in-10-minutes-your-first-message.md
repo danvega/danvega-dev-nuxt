@@ -8,7 +8,7 @@ author: "Dan Vega"
 tags:
   - Spring Boot
   - Apache Kafka
-- Spring for Apache Kafka
+  - Spring for Apache Kafka
 keywords: spring boot kafka, spring for apache kafka, kafka spring boot tutorial, kafka template spring boot, kafka listener spring boot, spring boot kafka docker compose, embedded kafka test
 cover: spring-boot-kafka-in-10-minutes-your-first-message.jpg
 video: https://www.youtube.com/embed/5XW3f_39ipY

@@ -1,6 +1,149 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring AI Tool Search: Stop Wasting Tokens on Tools You Don't Need",
+    "description": "Learn how to use Spring AI 2.0's tool search capabilities to dynamically discover tools on demand instead of loading them all into every request, saving tokens and money.",
+    "date": "2026-07-09T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-ai-tool-search",
+    "slug": "spring-ai-tool-search",
+    "tags": [
+      "Spring AI",
+      "Spring Boot"
+    ]
+  },
+  {
+    "title": "Building Custom Spring AI Advisors for Tool Logging and Token Tracking",
+    "description": "Learn how to create custom Spring AI advisors that log available tools, track tool invocations, and count token usage across your LLM calls.",
+    "date": "2026-07-08T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-ai-custom-advisors-tool-logging-token-counter",
+    "slug": "spring-ai-custom-advisors-tool-logging-token-counter",
+    "tags": [
+      "Spring AI",
+      "Spring Boot",
+      "Java"
+    ]
+  },
+  {
+    "title": "ChatClient vs ChatModel: Which Spring AI API Should You Actually Use?",
+    "description": "Spring AI gives you two ways to talk to an LLM. Learn the difference between ChatClient and ChatModel, when to use each one, and see both in action with practical code examples.",
+    "date": "2026-07-02T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/chatclient-vs-chatmodel-spring-ai",
+    "slug": "chatclient-vs-chatmodel-spring-ai",
+    "tags": [
+      "Spring AI",
+      "Spring Boot"
+    ]
+  },
+  {
+    "title": "X (Twitter) MCP Servers with Spring AI: Search Posts and Query Docs Programmatically",
+    "description": "X just released MCP servers for their API and developer documentation. Learn how to build a Spring Boot MCP client that searches X posts and queries their docs using Spring AI.",
+    "date": "2026-07-01T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/x-twitter-mcp-servers-spring-ai",
+    "slug": "x-twitter-mcp-servers-spring-ai",
+    "tags": [
+      "Spring AI",
+      "MCP",
+      "Spring Boot"
+    ]
+  },
+  {
+    "title": "Type Safe Property Paths in Spring Boot 4.1",
+    "description": "Spring Boot 4.1 introduces type-safe property paths in Spring Data, eliminating a class of runtime bugs caused by stringly typed property references in sorting, criteria queries, and composite paths.",
+    "date": "2026-06-30T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/type-safe-property-paths-spring-boot-4-1",
+    "slug": "type-safe-property-paths-spring-boot-4-1",
+    "tags": [
+      "Spring Boot",
+      "Spring Data"
+    ]
+  },
+  {
+    "title": "The New @RedisListener Annotation in Spring Boot 4.1",
+    "description": "Spring Boot 4.1 introduces @RedisListener, a simple annotation that brings Redis Pub/Sub in line with Kafka and Rabbit. No more wiring up listener containers and adapting byte arrays by hand.",
+    "date": "2026-06-29T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/redis-listener-spring-boot-4-1",
+    "slug": "redis-listener-spring-boot-4-1",
+    "tags": [
+      "Spring Boot",
+      "Redis"
+    ]
+  },
+  {
+    "title": "SSRF Protection in Spring Boot 4.1 with InetAddressFilter",
+    "description": "Learn how Spring Boot 4.1's new InetAddressFilter protects your applications against Server-Side Request Forgery (SSRF) attacks with a single bean definition.",
+    "date": "2026-06-26T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-boot-ssrf-protection-inet-address-filter",
+    "slug": "spring-boot-ssrf-protection-inet-address-filter",
+    "tags": [
+      "Spring Boot",
+      "Java"
+    ]
+  },
+  {
+    "title": "Lazy JDBC Connections in Spring Boot 4.1: One Property, Massive Performance Win",
+    "description": "Spring Boot 4.1 introduces lazy JDBC connection fetching with a single property. Learn how it works, when to use it, and see real metrics showing a drop from 2 seconds to 15 milliseconds of connection hold time.",
+    "date": "2026-06-25T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/lazy-jdbc-connections-spring-boot-4-1",
+    "slug": "lazy-jdbc-connections-spring-boot-4-1",
+    "tags": [
+      "Spring Boot",
+      "Spring Data"
+    ]
+  },
+  {
+    "title": "Getting Started with Spring gRPC in Spring Boot 4.1",
+    "date": "2026-06-24T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-grpc-spring-boot-4-1",
+    "slug": "spring-grpc-spring-boot-4-1",
+    "tags": []
+  },
+  {
+    "title": "Spring Modulith Externalized Events",
+    "description": "How to externalize events to a message broker like Kafka",
+    "date": "2026-05-20T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-modulith-externalized-events",
+    "slug": "spring-modulith-externalized-events",
+    "tags": [
+      "Spring Modulith"
+    ]
+  },
+  {
+    "title": "Spring Modulith Durable Events: Reliable Event Processing Without a Message Broker",
+    "description": "Learn how to use Spring Modulith's durable event registry to persist and replay failed events across application restarts, all without adding a message broker to your stack.",
+    "date": "2026-05-14T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-modulith-durable-events",
+    "slug": "spring-modulith-durable-events",
+    "tags": [
+      "Spring Boot",
+      "Spring Modulith"
+    ]
+  },
+  {
+    "title": "Introduction to Spring Modulith: Building Modular Monoliths with Spring Boot",
+    "description": "Learn how Spring Modulith helps you build well-structured Spring Boot applications with enforced module boundaries, event-driven communication, and a clear path from monolith to modular monolith.",
+    "date": "2026-04-30T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/introduction-to-spring-modulith",
+    "slug": "introduction-to-spring-modulith",
+    "tags": [
+      "Spring Boot",
+      "Spring Modulith",
+      "Java",
+      "Modular Monolith"
+    ]
+  },
+  {
     "title": "Embabel MCP Servers and Tools: Supercharging Your Agentic Flows on the JVM",
     "description": "Learn how to add tools and MCP servers to your Embabel agents in Java. Build a blog writing agent that can research topics, calculate reading time, and generate front matter.",
     "date": "2026-04-10T08:00:00.000Z",
@@ -48,6 +191,31 @@ export const rssData = [
     "tags": [
       "Spring AI",
       "Spring Boot",
+      "Java"
+    ]
+  },
+  {
+    "title": "Spring AI Deep Research Agent",
+    "description": "AI Agent Search",
+    "date": "2026-03-27T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-ai-deep-research-agent",
+    "slug": "spring-ai-deep-research-agent",
+    "tags": [
+      "AI"
+    ]
+  },
+  {
+    "title": "Getting Started with Error Handling in the RestClient",
+    "description": "Learn best practices for error handling with Spring's RestClient, including global exception handlers, custom exceptions, Problem Detail responses, and built-in retry with resilience methods in Spring Framework 7.",
+    "date": "2026-03-26T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/rest-client-error-handling",
+    "slug": "rest-client-error-handling",
+    "tags": [
+      "Spring Boot",
+      "Spring Framework",
+      "REST Client",
       "Java"
     ]
   },
@@ -440,176 +608,6 @@ export const rssData = [
     "tags": [
       "GraphQL",
       "Spring Boot"
-    ]
-  },
-  {
-    "title": "Modern Java: Why You Might Not Need Lombok Anymore",
-    "description": "A detailed exploration of why Java developers should reconsider using Project Lombok, examining its drawbacks and modern alternatives in Java development.",
-    "date": "2024-11-11T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/no-lombok",
-    "slug": "no-lombok",
-    "tags": [
-      "Java"
-    ]
-  },
-  {
-    "title": "Query By Example in Spring Data JPA: A Clean Approach to Dynamic Queries",
-    "description": "Learn how to simplify your Spring Data JPA queries using Query By Example (QBE) and create dynamic, type-safe queries without the boilerplate code.",
-    "date": "2024-11-08T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-data-jpa-query-by-example",
-    "slug": "spring-data-jpa-query-by-example",
-    "tags": [
-      "Spring Boot",
-      "Spring Data"
-    ]
-  },
-  {
-    "title": "RestClient OAuth2 Support in Spring Security 6.4: A Complete Guide",
-    "description": "Learn how to implement OAuth2 authentication in your Spring applications using the new RestClient OAuth2 support in Spring Security 6.4. This guide covers architecture, implementation, and best practices for secure service-to-service communication.",
-    "date": "2024-11-05T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/rest-client-oauth2-support",
-    "slug": "rest-client-oauth2-support",
-    "tags": [
-      "Spring Boot",
-      "Spring Security"
-    ]
-  },
-  {
-    "title": "Understanding Tokens in Large Language Models with Spring AI",
-    "description": "Learn how to track and manage token usage in Spring AI applications, including implementing custom response types and automated logging with AOP.",
-    "date": "2024-11-01T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-ai-tokens",
-    "slug": "spring-ai-tokens",
-    "tags": [
-      "Spring AI"
-    ]
-  },
-  {
-    "title": "Implementing Request/Response Logging with Spring Boot's Rest Client",
-    "description": "Learn how to implement clean and efficient request/response logging for Spring Boot's Rest Client, including both inline and interceptor-based approaches.",
-    "date": "2024-10-31T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-rest-client-logging",
-    "slug": "spring-boot-rest-client-logging",
-    "tags": [
-      "Spring Boot",
-      "Rest Client"
-    ]
-  },
-  {
-    "title": "Using Environment Variables in Spring Boot",
-    "description": "Learn how to effectively manage configuration and secure sensitive data using environment variables in Spring Boot applications. This comprehensive guide covers best practices, security considerations, and practical examples.",
-    "date": "2024-10-29T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-environment-variables",
-    "slug": "spring-boot-environment-variables",
-    "tags": [
-      "Spring Boot"
-    ]
-  },
-  {
-    "title": "Building a Spring Security Login Form with JTE",
-    "description": "Learn how to create a secure login form using Spring Security and JTE (Java Template Engine) with support for both traditional authentication and OAuth2 providers.",
-    "date": "2024-10-24T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-oauth-demo",
-    "slug": "spring-boot-oauth-demo",
-    "tags": [
-      "Spring Boot",
-      "Spring Security"
-    ]
-  },
-  {
-    "title": "Getting Started with Spring AI and RAG: A Practical Guide",
-    "description": "Learn how to build intelligent applications using Retrieval Augmented Generation (RAG) with Spring AI. This practical guide covers everything from understanding tokens and context windows to implementing a full RAG solution.",
-    "date": "2024-10-22T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/getting-started-with-spring-ai-rag",
-    "slug": "getting-started-with-spring-ai-rag",
-    "tags": [
-      "spring",
-      "spring-ai",
-      "java"
-    ]
-  },
-  {
-    "title": "Building Generative AI Applications in Java: From Simple Scripts to Spring Boot",
-    "description": "Explore how Java developers can leverage generative AI, from basic curl commands to robust Spring Boot applications. Learn to integrate OpenAI's GPT models, use Java's HTTP client, and harness the power of Spring AI for structured output and simplified AI integration.",
-    "date": "2024-10-15T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/ai-java-developers",
-    "slug": "ai-java-developers",
-    "tags": [
-      "Java",
-      "Spring Boot",
-      "AI"
-    ]
-  },
-  {
-    "title": "Calling Multiple LLMs with Spring AI: A Practical Guide",
-    "description": "Learn how to integrate and call multiple Large Language Models (LLMs) like OpenAI's GPT-4 and Anthropic's Claude in a single Spring Boot application using Spring AI. This tutorial covers project setup, configuration, and implementation of separate controllers for each LLM.",
-    "date": "2024-10-14T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-ai-multiple-llms",
-    "slug": "spring-ai-multiple-llms",
-    "tags": [
-      "Spring Boot",
-      "Java",
-      "Spring AI"
-    ]
-  },
-  {
-    "title": "Building Intelligent Chatbots with Spring AI: Implementing Chat Memory",
-    "description": "Learn how to create a context-aware chatbot using Spring AI and OpenAI. This tutorial covers implementing chat memory, handling token usage, and managing context window limitations for more engaging AI conversations.",
-    "date": "2024-10-11T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-ai-chat-memory",
-    "slug": "spring-ai-chat-memory",
-    "tags": [
-      "Spring Boot",
-      "Java",
-      "Spring AI~~"
-    ]
-  },
-  {
-    "title": "Building a Streaming Chat Bot with Spring Boot and Spring AI",
-    "description": "Learn how to create a responsive and engaging chat bot using Spring Boot and Spring AI, featuring both traditional and streaming response capabilities for an enhanced user experience.",
-    "date": "2024-10-08T20:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-ai-streaming-chatbot",
-    "slug": "spring-ai-streaming-chatbot",
-    "tags": [
-      "Spring Boot",
-      "Java",
-      "Spring AI"
-    ]
-  },
-  {
-    "title": "Building Dynamic Forms with Spring Boot and JTE: A Practical Guide",
-    "description": "Learn how to create interactive web forms using Spring Boot and Java Template Engine (JTE) in this comprehensive tutorial.",
-    "date": "2024-10-07T20:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/jte-forms",
-    "slug": "jte-forms",
-    "tags": [
-      "Spring Boot",
-      "Java"
-    ]
-  },
-  {
-    "title": "Building a Dynamic Task Manager with Spring Boot, JTE, and HTMX",
-    "description": "Learn how to build a dynamic Task manager using Spring Boot, Java Template Engine (JTE), HTMX and Tailwind CSS.",
-    "date": "2024-10-06T20:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-jte-htmx",
-    "slug": "spring-boot-jte-htmx",
-    "tags": [
-      "Spring Boot",
-      "Java"
     ]
   }
 ] as const
