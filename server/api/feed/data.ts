@@ -26,6 +26,18 @@ export const rssData = [
     ]
   },
   {
+    "title": "UI.sh: Agent Skills That Actually Make AI-Generated UIs Look Good",
+    "description": "The team behind Tailwind CSS created UI.sh, a collection of agent skills for building UIs that don't suck. Here's how to get started and why back-end developers should be paying attention.",
+    "date": "2026-07-07T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/ui-dot-sh-agent-skills-for-building-beautiful-uis",
+    "slug": "ui-dot-sh-agent-skills-for-building-beautiful-uis",
+    "tags": [
+      "AI",
+      "Tailwind CSS"
+    ]
+  },
+  {
     "title": "ChatClient vs ChatModel: Which Spring AI API Should You Actually Use?",
     "description": "Spring AI gives you two ways to talk to an LLM. Learn the difference between ChatClient and ChatModel, when to use each one, and see both in action with practical code examples.",
     "date": "2026-07-02T09:00:00.000Z",
@@ -115,6 +127,19 @@ export const rssData = [
     "slug": "spring-modulith-externalized-events",
     "tags": [
       "Spring Modulith"
+    ]
+  },
+  {
+    "title": "Spring Boot + Kafka in 10 Minutes: Sending Your First Message",
+    "description": "Learn how to produce and consume your first Apache Kafka message using Spring Boot. This beginner-friendly guide covers Docker Compose setup, KafkaTemplate, @KafkaListener, and testing with Embedded Kafka.",
+    "date": "2026-05-18T08:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-boot-kafka-quick-start",
+    "slug": "spring-boot-kafka-quick-start",
+    "tags": [
+      "Spring Boot",
+      "Apache Kafka",
+      "Spring for Apache Kafka"
     ]
   },
   {
@@ -585,29 +610,6 @@ export const rssData = [
     "tags": [
       "Spring AI",
       "MCP"
-    ]
-  },
-  {
-    "title": "AI-Powered Dev Hacks at ConFoo 2025",
-    "description": "Recently, I had the pleasure of presenting on a topic that I'm pretty passionate about: how artificial intelligence can amplify developer productivity and creativity.",
-    "date": "2025-02-27T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/ai-powered-dev-hacks-confoo-2025",
-    "slug": "ai-powered-dev-hacks-confoo-2025",
-    "tags": [
-      "AI"
-    ]
-  },
-  {
-    "title": "Building Dynamic GraphQL APIs with Spring Boot and Query by Example",
-    "description": "Learn how to build flexible and maintainable GraphQL APIs using Spring Boot's Query by Example support, reducing boilerplate code while enabling powerful search capabilities.",
-    "date": "2024-12-02T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-graphql-query-by-example",
-    "slug": "spring-boot-graphql-query-by-example",
-    "tags": [
-      "GraphQL",
-      "Spring Boot"
     ]
   }
 ] as const

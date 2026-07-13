@@ -1,5 +1,32 @@
 [
   {
+    "title": "AI for Java Developers",
+    "url": "https://www.meetup.com/pdxjug/events/315597761/",
+    "name": "Portland Java User Group",
+    "startDate": "Aug 25, 2026",
+    "endDate": "Aug 25, 2026",
+    "location": "Portland, OR",
+    "description": "AI has become an unavoidable topic in software development, and many Java developers are wondering if they need to learn Python to participate. The answer is no.\n\nThe Java ecosystem has everything you need to build modern AI applications, and your existing skills carry over more than you might think.\n\nThis session bridges the gap between traditional Java development and AI. We'll cover the core concepts of AI and large language models in terms familiar to Java developers, then look at what's possible today: chatbots, retrieval augmented generation, recommendation systems, and intelligent agents, all built on the JVM.\n\nYou'll leave with a clear picture of the Java AI landscape, the confidence that you don't need to switch languages to build production AI features, and a starting point for your first project."
+  },
+  {
+    "title": "AI for Java Developers",
+    "url": "https://qconsf.com/training/nov2026/ai-java-developers",
+    "name": "QCon San Francisco 2026",
+    "startDate": "Nov 19, 2026",
+    "endDate": "Nov 19, 2026",
+    "location": "San Francisco, CA",
+    "description": "AI has become an unavoidable topic in software development, and many Java developers are wondering if they need to learn Python to participate. The answer is no. The Java ecosystem has everything you need to build modern AI applications, and your existing skills carry over more than you might think.\n\nThis workshop is the hands on version of that idea. Bring a laptop with Java and your IDE of choice. You'll spend three hours coding alongside me and end the session with a working AI powered Spring Boot application you understand top to bottom.\n\nWe'll build it one feature at a time. Model abstraction, so your code runs against OpenAI, Anthropic, or a local model on your laptop with a single config change. Prompt templates for cleaner, reusable prompts. Structured output that turns LLM responses into typed Java objects you can use in your domain. Tool calling that lets the model fetch live data and trigger real actions in your application. And the Model Context Protocol, where you'll build a working MCP server that exposes your application's capabilities to any MCP compatible AI client.\n\nYou don't need prior AI experience. Just comfort with Spring Boot and a willingness to write code alongside the room. You'll leave with a working repository, a clear mental model of how the pieces fit together, and the confidence to bring AI capabilities back to your own projects."
+  },
+  {
+    "title": "The Fundamentals of Software Engineering in the Age of AI",
+    "url": "https://qconsf.com/training/nov2026/fundamentals-software-engineering-age-ai",
+    "name": "QCon San Francisco 2026",
+    "startDate": "Nov 19, 2026",
+    "endDate": "Nov 19, 2026",
+    "location": "San Francisco, CA",
+    "description": "Every few years, something comes along that's supposed to end software engineering as we know it. IDE features that write code for you. Low-code. No-code. Now AI. And every time, the role adapts, the fundamentals stay, and the people who understand the craft come out ahead.\n\nStill, the anxiety this time around is real. The headlines say software engineering is dead. Your group chat says juniors are cooked. Your CEO just asked why the team isn't shipping 10x faster. Take a breath, because nobody knows where we are heading, but it's worth talking about honestly.\n\nHere's something you've probably noticed. AI is amazing at the things you don't know. Ask it about a language you've never touched or a framework you're just picking up, and it looks like magic. Then you ask it about the code you've lived in for five years, and suddenly you're catching mistakes on every other line. That's not a bug in the tool. That's the fundamentals talking. AI tools are genuinely powerful, and they reward the developers who already understand what good software looks like. Naming things well, knowing when to refactor, reading code critically, designing systems that hold up. These fundamentals matter more now, not less, because they're what let you tell when the output is wrong.\n\nWhether you write code, ship it, or plan the work around it, Dan Vega and Nate Schutta will cut through the noise around AI coding tools: where they help, where they hurt, and why the fundamentals are your biggest advantage right now. You'll leave knowing what to invest in, what to keep learning, and why the craft still matters."
+  },
+  {
     "title": "Fundamentals of Software Engineering In the Age of AI Workshop",
     "url": "https://www.dev2next.com/",
     "slug": "dev2next-2026-fundamentals-software-engineering-ai-workshop",
@@ -625,13 +652,13 @@
     "description": "If you’re a Java developer and want to learn about the most popular frameworks ever created this session is for you. You are going to learn what Spring is used for and how it can make you a more productive developer. It does this by providing you with the infrastructure to build enterprise-ready applications and allowing you to focus on features."
   },
   {
-      "title": "Spring Recipes: A Collection of Common-Sense Solutions",
-      "startDate": "April 4, 2023",
-      "endDate": "April 6, 2023",
-      "name": "DevNexus",
-      "url": "https://devnexus.com/",
-      "location": "Atlanta, GA",
-      "description": "Join Spring experts Nathaniel Schutta and Dan Vega to find concrete solutions for common problems encountered in modern software development, from building APIs to cloud native applications. Spring is constantly evolving and growing, so if you’re unsure about all its resources, you’ll discover them during this plunge into the Spring ecosystem."
+    "title": "Spring Recipes: A Collection of Common-Sense Solutions",
+    "startDate": "April 4, 2023",
+    "endDate": "April 6, 2023",
+    "name": "DevNexus",
+    "url": "https://devnexus.com/",
+    "location": "Atlanta, GA",
+    "description": "Join Spring experts Nathaniel Schutta and Dan Vega to find concrete solutions for common problems encountered in modern software development, from building APIs to cloud native applications. Spring is constantly evolving and growing, so if you’re unsure about all its resources, you’ll discover them during this plunge into the Spring ecosystem."
   },
   {
     "title": "What's new in Spring Framework 6 and Spring Boot 3",
