@@ -17,7 +17,8 @@ const formattedDate = computed(() => {
   return new Date(talk.value.date).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
+    timeZone: 'UTC'
   })
 })
 

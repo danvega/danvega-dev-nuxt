@@ -1,5 +1,35 @@
 [
   {
+    "title": "Fundamentals of Software Engineering In the Age of AI Workshop",
+    "url": "https://www.dev2next.com/",
+    "slug": "dev2next-2026-fundamentals-software-engineering-ai-workshop",
+    "name": "dev2next 2026",
+    "startDate": "Oct 12, 2026",
+    "endDate": "Oct 12, 2026",
+    "location": "Lone Tree, CO",
+    "description": "Agentic coding assistants and editor-based AI chat interfaces are altering the development workflow leading some to proclaim the end of software engineering. Is it time to explore other careers? Not so fast, the rumors of our demise are greatly exaggerated! This intensive full-day workshop bridges the critical gap between what early-career developers learn in formal education and what they need to thrive in professional environments where human expertise and artificial intelligence increasingly collaborate."
+  },
+  {
+    "title": "Spring AI: There and Back Again",
+    "url": "https://www.dev2next.com/",
+    "slug": "dev2next-2026-spring-ai-there-and-back-again",
+    "name": "dev2next 2026",
+    "startDate": "Oct 13, 2026",
+    "endDate": "Oct 13, 2026",
+    "location": "Lone Tree, CO",
+    "description": "Every great journey begins with a single step out the front door. For Spring developers, that step is a ChatClient and a prompt. This is that adventure: we'll set out with the basics of Spring AI, teach our application to use tools, cross into the wider world through MCP, and at the edge of the map, meet the agents. Applications that can think, plan, and act on their own. Along the way you'll pick up working code and a clear mental model of how the pieces of Spring AI fit together in a real application."
+  },
+  {
+    "title": "Zero to Superpowers with Claude Code",
+    "url": "https://www.dev2next.com/",
+    "slug": "dev2next-2026-zero-to-superpowers-claude-code",
+    "name": "dev2next 2026",
+    "startDate": "Oct 13, 2026",
+    "endDate": "Oct 13, 2026",
+    "location": "Lone Tree, CO",
+    "description": "Claude Code is powerful. Maybe too powerful. With so many features, it's hard to know where to start. In this session, I'll show you how I actually use Claude Code day to day. We'll start with the basics that deliver immediate value. Then we'll build up to the features that make Claude Code truly yours: custom slash commands, skills, and agents that fit your workflow. By the end, you'll have a clear path from beginner to power user."
+  },
+  {
     "title": "What's New in Spring Boot 4",
     "url": "https://www.kcdc.info/",
     "slug": "kcdc-2026-whats-new-in-spring-boot-4",
