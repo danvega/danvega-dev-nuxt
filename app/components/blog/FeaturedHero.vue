@@ -49,35 +49,33 @@ const primaryTag = computed(() => {
 
     <!-- Right: Post Details -->
     <div class="flex flex-col justify-center">
-      <span class="inline-flex w-fit items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
-        Latest
-      </span>
+      <p class="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
+        <span v-if="primaryTag" class="text-blue-600 dark:text-blue-400">{{ primaryTag }}</span>
+        <span v-if="primaryTag" class="mx-2 text-zinc-300 dark:text-zinc-600">/</span>
+        <time :datetime="post.meta?.date">{{ formatDatePublished(post.meta?.date) }}</time>
+      </p>
 
-      <h2 class="mt-4 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+      <h2 class="mt-4 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
         <a :href="`/blog/${post.meta?.slug}`" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
           {{ post.title }}
         </a>
       </h2>
 
-      <div class="mt-3 flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
-        <time :datetime="post.meta?.date">{{ formatDatePublished(post.meta?.date) }}</time>
-        <span v-if="readingTime">&middot; {{ readingTime.text }}</span>
-      </div>
-
-      <p class="mt-4 text-base text-zinc-600 dark:text-zinc-400 line-clamp-3">
+      <p class="mt-4 text-lg text-zinc-600 dark:text-zinc-400 line-clamp-3">
         {{ post.meta?.shortDesc != null ? post.meta?.shortDesc : post.description }}
       </p>
 
-      <div class="mt-4">
+      <div class="mt-5 flex items-center gap-4">
         <a
           :href="`/blog/${post.meta?.slug}`"
-          class="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors"
+          class="inline-flex items-center gap-1 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors"
         >
           Read article
-          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1.5 h-4 w-4 stroke-current">
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="h-4 w-4 stroke-current">
             <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </a>
+        <span v-if="readingTime" class="text-sm text-zinc-500 dark:text-zinc-500">{{ readingTime.text }}</span>
       </div>
     </div>
   </div>
