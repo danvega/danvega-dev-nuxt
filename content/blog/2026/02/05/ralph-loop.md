@@ -19,11 +19,12 @@ date: 2026-02-05T09:00:00.000Z
 published: false
 cover: ralph-loop.jpg
 video: https://www.youtube.com/embed/CV97l0GkPHo
+github: https://github.com/danvega/ralph-vending-machine
 ---
 
 Want to let your AI coding assistant build an entire feature while you grab a coffee? That's the promise of the Ralph Loop, and the surprising part is how simple it is. It's a bash script. That's it.
 
-The technique comes from [Geoffrey Huntley](https://ghuntley.com/ralph/), and at its core it's about three lines of shell. But the idea behind it solves a real problem that anyone who has run a long AI coding session has hit face-first: the context window.
+The technique comes from [Geoffrey Huntley](https://ghuntley.com/ralph/), and at its core it's a loop that runs your agent over and over, each time with a completely fresh context window. That one idea solves a real problem anyone who has run a long AI coding session has hit face-first.
 
 In this post I'll explain what the Ralph Loop is, when you should reach for it, and how I used it to build a complete vending machine CLI application in Java.
 
@@ -47,35 +48,80 @@ Before we go further, it's worth being clear about when this technique is the ri
 - **Tasks** — Good when you have a handful of related changes and want the agent to work through them while you review as it goes.
 - **The Ralph Loop** — For multi-task automation where you want real autonomy and you're willing to walk away. This is the "build the whole thing while I grab coffee" option.
 
-If your task fits in one focused session, use plan mode. The Ralph Loop earns its keep when you have a list of tasks long enough that context degradation becomes the bottleneck.
+If your task fits in one focused session, use plan mode. The Ralph Loop earns its keep when your task list is long enough that context degradation becomes the bottleneck.
 
 ## How the Ralph Loop Works
 
-The trick is that the loop keeps **no state in memory at all**. Everything lives on disk:
+The trick is that the loop keeps **no state in memory at all**. Everything lives on disk in three files:
 
-1. A **PRD file** describes what you're building — the full spec, all the tasks.
-2. A **progress file** records what's been done so far.
-3. The **codebase itself** is the real source of truth.
+1. **`CLAUDE.md`** — how to work in this project. Build commands, testing stack, conventions.
+2. **`PRD.md`** — what you're building. A checklist of tasks.
+3. **`progress.txt`** — what's been done, and any notes for the next iteration.
 
-Each iteration, the agent starts with a completely fresh context window. It reads the PRD, reads the progress file, looks at the code, picks the **next single unfinished task**, does it, commits, and writes down what it did.
+Each iteration, the agent starts with a completely fresh context window. It reads those three files, picks the **highest-priority incomplete task**, implements it, tests it, commits it, ticks the box in the PRD, and appends to the progress log.
 
-Then the loop kills it and starts over. Clean slate. Same three files.
+Then the process exits and the loop starts a new one. Clean slate. Same three files.
 
 That's the whole idea. State survives in the file system, not the conversation. Every iteration gets a model at full strength instead of one drowning in its own history.
 
-Yes, re-reading the spec every single iteration is wasteful. That waste is the point — you're trading tokens for fidelity.
+Yes, re-reading everything every single iteration is wasteful. That waste is the point — you're trading tokens for fidelity.
 
 ## Creating the PRD File
 
-The PRD is where all the thinking goes. It's the spec the agent re-reads every iteration, so it needs to be complete and unambiguous.
+The PRD is where all the thinking goes. It's the spec the agent re-reads every iteration, so it needs to be complete and unambiguous. Mine is just a markdown checklist:
 
-For the vending machine, mine covered the domain model, the CLI commands, coin handling and change-making, inventory, and a task list broken into small, independently completable chunks.
+```markdown
+# Product Requirements
+
+## Project
+Vending Machine Console Application - Java 25
+
+## Tasks
+- [ ] Create Product enum with displayName and price fields (Cola, Diet Cola, Water, ...)
+- [ ] Create Slot class with Product reference, quantity tracking, isInStock() and decrementQuantity()
+- [ ] Create PurchaseResult sealed interface with Success, InsufficientFunds, and OutOfStock records
+- [ ] Create MenuOption enum with number and description fields and fromNumber() static lookup
+- [ ] Create VendingMachine class with balance management (insertMoney, getBalance, collectChange)
+- [ ] Add inventory loading and getSlots() with defensive copy to VendingMachine
+- [ ] Add purchase() method to VendingMachine returning PurchaseResult with stock and balance checks
+- [ ] Create Application class with main(), Scanner setup, welcome banner, and main menu loop
+- [ ] Add viewProducts handler with formatted table
+- [ ] Add insertMoney and checkBalance handlers with input validation
+- [ ] Add purchase handler with pattern matching switch on PurchaseResult
+- [ ] Add getChange handler and exit flow with Scanner cleanup
+- [ ] Verify full application flow end-to-end
+```
+
+Notice those checkboxes. The PRD isn't just a spec — it's **state**. The agent ticks `[ ]` to `[x]` as it goes, so the next fresh iteration can see at a glance what's left.
 
 The task breakdown matters more than anything else here. The single most important rule of the Ralph Loop is:
 
 > **One task per iteration. Only one.**
 
-If an iteration tries to do three things, you get the same context degradation you were trying to escape — just in miniature. Small, atomic tasks are what make this work.
+Every task in that list is small enough to implement, test, and commit on its own. That's what makes this work.
+
+## Don't Skip CLAUDE.md
+
+The PRD says *what* to build. `CLAUDE.md` says *how to work here* — and it's doing a lot of quiet lifting:
+
+```markdown
+## Build Commands
+./mvnw compile -q          # Compile
+./mvnw test -q             # Run all tests
+
+## Testing
+### Stack
+- JUnit 6
+- AssertJ for assertions
+- Mockito for mocking (when needed)
+
+### Conventions
+- Test class naming: {ClassName}Test.java
+- Test method naming: methodName_scenario_expectedResult
+- Use @DisplayName for readable test names
+```
+
+Without this, every iteration would re-derive how to build and test the project — and probably derive it differently each time. This is the file that keeps thirteen independent iterations producing one coherent codebase.
 
 ## The Ralph Bash Script
 
@@ -85,60 +131,70 @@ Huntley's original is about as minimal as it gets:
 while :; do cat PROMPT.md | claude-code ; done
 ```
 
-That's genuinely it. A loop that pipes a prompt file into an agent, forever.
-
-The version I used adds a couple of quality-of-life touches — an exit condition, and a little logging so you can see what happened while you were away:
+Mine is a little more careful. The big difference: **it takes a number of iterations** rather than running forever.
 
 ```bash
 #!/bin/bash
-# ralph.sh - run one task per iteration until the PRD is complete
+set -e
 
-ITERATION=0
+if [ -z "$1" ]; then
+  echo "Usage: $0 <iterations>"
+  exit 1
+fi
 
-while true; do
-  ITERATION=$((ITERATION + 1))
-  echo "🔁 Iteration $ITERATION - $(date '+%H:%M:%S')"
+for ((i=1; i<=$1; i++)); do
+  echo ""
+  echo "****************************************"
+  echo "Iteration $i of $1"
+  echo "****************************************"
 
-  cat PROMPT.md | claude -p
+  result=$(claude --dangerously-skip-permissions -p "@CLAUDE.md @PRD.md @progress.txt \
+1. Read progress.txt to see what has been completed. \
+2. Find the highest-priority incomplete task from PRD.md. \
+3. Implement that single task. \
+4. Write unit tests for any code with logic. \
+5. Verify: ./mvnw compile -q && ./mvnw test -q \
+6. If tests pass, git add and commit with a conventional commit message (feat:, fix:, test:, refactor:). \
+7. Mark the task complete in PRD.md (change [ ] to [x]). \
+8. Append your progress to progress.txt with what you completed. \
+9. If ALL tasks in PRD.md are complete, output <promise>COMPLETE</promise>. \
+ONLY WORK ON ONE TASK PER ITERATION.")
 
-  if grep -q "ALL TASKS COMPLETE" progress.txt; then
-    echo "✅ PRD complete after $ITERATION iterations."
-    break
+  echo "$result"
+
+  if [[ "$result" == *"<promise>COMPLETE</promise>"* ]]; then
+    echo ""
+    echo "✅ PRD complete after $i iterations!"
+    exit 0
   fi
 done
+
+echo ""
+echo "⚠️ Reached $1 iterations. PRD may not be complete."
 ```
 
-The loop itself is dumb on purpose. All the intelligence is in `PROMPT.md`, which tells the agent how to behave on every pass:
+A few things worth pointing out:
 
-```markdown
-Read PRD.md for the full specification.
-Read progress.txt to see what has already been completed.
+**The bounded loop.** `for ((i=1; i<=$1; i++))` instead of `while true`. An infinite loop with `--dangerously-skip-permissions` and a credit card attached is a bad combination. Giving it a budget means the worst case is a bounded amount of damage.
 
-Pick the NEXT single unfinished task. Only one.
+**Step 5 is the quality gate.** `./mvnw compile -q && ./mvnw test -q` runs *before* the commit. The agent doesn't get to claim a task is done because it feels done — the build has to pass.
 
-Implement it, write tests for it, and make sure the build passes.
-Then commit your work with a clear message describing just that task.
+**The promise sentinel.** The agent outputs `<promise>COMPLETE</promise>` when the PRD is finished, and the script watches stdout for it. That's how the loop knows to stop early instead of burning its remaining iterations.
 
-Append what you completed to progress.txt.
-If every task in the PRD is finished, write "ALL TASKS COMPLETE" to progress.txt.
-
-Don't assume something isn't implemented — check the codebase first.
-```
-
-That last line matters more than it looks. A known failure mode is the agent searching badly, concluding a feature doesn't exist, and cheerfully building it a second time.
+**The `@` references.** `@CLAUDE.md @PRD.md @progress.txt` pulls those three files into a fresh context every time. That single line is the whole state-restoration mechanism.
 
 ## Running the Loop
 
-Kick it off and walk away:
+Give it a budget and walk away:
 
 ```bash
 chmod +x ralph.sh
-./ralph.sh
+./ralph.sh 15
 ```
 
-What you'll see is the agent working through your PRD one task at a time — implementing, testing, committing, logging — then starting over fresh. Over and over until the list is done.
+What you'll see is the agent working the PRD one task at a time — implement, test, commit, tick the box, log — then starting over fresh. My vending machine has thirteen tasks, so fifteen iterations gives it a little headroom.
 
-The **atomic commits per task** are the detail I'd push hardest on. Because each iteration commits exactly one task, your git history becomes a readable log of what the AI did. If iteration 7 made a mess, you revert iteration 7. You're not untangling one giant commit that touched forty files.
+The **atomic commits per task** are the detail I'd push hardest on. Because each iteration commits exactly one task with a conventional commit message, your git history becomes a readable log of what the AI did. If iteration 7 made a mess, you revert iteration 7. You're not untangling one giant commit that touched forty files.
 
 ## Reviewing the Generated Code
 
@@ -150,20 +206,35 @@ The Ralph Loop gets you a working first draft with real momentum. It does not ge
 
 ## A Single-Iteration Variation
 
-You don't always want an infinite loop. A useful variation is running exactly one iteration at a time:
+You don't always want to hand over fifteen iterations at once. `ralph-once.sh` runs exactly one:
 
 ```bash
-cat PROMPT.md | claude -p
+#!/bin/bash
+set -e
+
+claude --permission-mode acceptEdits -p "@CLAUDE.md @PRD.md @progress.txt \
+1. Find the highest-priority incomplete task and work only on that task. \
+   Use your judgment on priority - not necessarily the first in the list. \
+2. Implement the task and write tests if the code has logic. \
+3. Verify: ./mvnw compile -q && ./mvnw test -q \
+4. Mark the task complete in PRD.md (change [ ] to [x]). \
+5. Append your progress to progress.txt with what you completed and any notes for the next iteration. \
+6. Make a git commit with a descriptive message. \
+ONLY WORK ON A SINGLE TASK. \
+If the PRD is complete, output <promise>COMPLETE</promise>."
 ```
 
-Same mechanics — fresh context, reads the PRD, does one task, commits — but you're in control of when the next one starts. This is a nice middle ground when you want the Ralph structure but you'd rather review each task before moving on.
+Same mechanics — fresh context, three files, one task, commit — but you decide when the next one starts. Note it uses `--permission-mode acceptEdits` rather than `--dangerously-skip-permissions`, which is a reasonable trade when you're sitting there watching anyway.
+
+This is a nice middle ground: the Ralph structure, but you review each task before moving on.
 
 ## When to Use the Ralph Loop
 
 Reach for it when:
 
 - You have a **long list of small, well-specified tasks**
-- The spec is solid enough that the agent won't need you mid-flight
+- Your spec is solid enough that the agent won't need you mid-flight
+- You have a **verification command** that can gate each commit
 - You genuinely want to walk away
 - The work is greenfield enough that mistakes are cheap to throw out
 
@@ -175,11 +246,11 @@ Skip it when:
 
 ## Wrapping Up
 
-The Ralph Loop is a great reminder that not every AI technique needs a framework. This is a `while` loop and three files, and it works because it takes the context window problem seriously instead of pretending it doesn't exist.
+The Ralph Loop is a great reminder that not every AI technique needs a framework. This is a `for` loop and three files, and it works because it takes the context window problem seriously instead of pretending it doesn't exist.
 
-Write a real spec, break it into small tasks, keep state on disk, commit atomically, and read the diff. The bash part is the easy bit.
+Write a real spec, break it into small tasks, tell the agent how to build and test, keep state on disk, gate every commit on a passing build, and read the diff. The bash part is the easy bit.
 
-If you want to see this built end to end — including the vending machine app and the loop running live — check out the video above. And go read [Geoffrey Huntley's original post](https://ghuntley.com/ralph/) and his [follow-up on loops](https://ghuntley.com/loop/); he's the one who figured this out.
+If you want to see this built end to end, check out the video above — and the [full source is on GitHub](https://github.com/danvega/ralph-vending-machine). Go read [Geoffrey Huntley's original post](https://ghuntley.com/ralph/) and his [follow-up on loops](https://ghuntley.com/loop/); he's the one who figured this out.
 
 Happy Coding!<br/>
 Dan
