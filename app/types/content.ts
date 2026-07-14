@@ -16,6 +16,9 @@ export interface BlogPost {
     excerpt?: string
     shortDesc?: string
   }
+  // Only the single post fetched by `useBlogPost` carries a body. List queries
+  // omit it and expose `readingTime` instead, so the parsed bodies of every
+  // post never reach the client payload.
   body?: {
     children: any[]
     toc?: {
@@ -28,6 +31,10 @@ export interface BlogPost {
         text: string
       }>
     }
+  }
+  readingTime?: {
+    minutes: number
+    text: string
   }
 }
 

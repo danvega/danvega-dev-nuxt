@@ -37,7 +37,11 @@ export const useBlogData = (): BlogDataComposable => {
             excerpt: post.excerpt,
             shortDesc: post.description ? clipToWords(post.description) : post.description
           },
-          body: post.body
+          // Derive reading time here rather than shipping every post's parsed
+          // body to the client. Consumers only ever used `body` to render a
+          // "N min read" label, and serialising 250+ bodies into the payload
+          // made every blog page ~6.8MB.
+          readingTime: useReadingTime(post.body)
         }))
       } catch (err) {
         console.error('Error fetching blog posts:', err)
@@ -79,7 +83,7 @@ export const useBlogData = (): BlogDataComposable => {
             excerpt: post.excerpt,
             shortDesc: post.description ? clipToWords(post.description) : post.description
           },
-          body: post.body
+          readingTime: useReadingTime(post.body)
         }))
       } catch (err) {
         console.error('Error fetching latest articles:', err)

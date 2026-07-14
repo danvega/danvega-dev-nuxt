@@ -11,6 +11,9 @@ const formatDatePublished = (date: string) => {
 }
 
 const readingTime = computed(() => {
+  // List queries precompute this server-side; only fall back to the body for
+  // callers that still pass a full post.
+  if (props.post?.readingTime) return props.post.readingTime
   if (!props.post?.body) return null
   return useReadingTime(props.post.body)
 })

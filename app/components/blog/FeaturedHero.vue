@@ -10,6 +10,7 @@ const formatDatePublished = (date: string) => {
 };
 
 const readingTime = computed(() => {
+  if (props.post?.readingTime) return props.post.readingTime;
   if (!props.post?.body) return null;
   return useReadingTime(props.post.body);
 });
