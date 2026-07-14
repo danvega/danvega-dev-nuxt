@@ -316,6 +316,18 @@ export const rssData = [
     ]
   },
   {
+    "title": "The Ralph Loop: Automate AI Coding Tasks in Java",
+    "description": "The Ralph Loop is a bash script that runs your AI coding agent with a fresh context every iteration. Here's how it works and how I used it to build a Java CLI.",
+    "date": "2026-02-05T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/ralph-loop",
+    "slug": "ralph-loop",
+    "tags": [
+      "AI",
+      "Java"
+    ]
+  },
+  {
     "title": "OpenTelemetry with Spring Boot 4: The New Starter",
     "description": "Learn how to use the new spring-boot-starter-opentelemetry in Spring Boot 4 to add observability with traces, metrics, and logs—no Actuator required.",
     "date": "2025-12-23T09:00:00.000Z",
@@ -555,8 +567,8 @@ export const rssData = [
     ]
   },
   {
-    "title": "Spring Boot 3.x Features: Complete Guide to Major Updates (2022-2025)",
-    "description": "Explore the transformative features introduced in Spring Boot 3.0 through 3.5, from Java 17 requirements and GraalVM native images to virtual threads and enhanced observability. This comprehensive guide covers each release's major improvements, including Docker Compose integration, Testcontainers support, structured logging, and SSL certificate management. Learn how Spring Boot 3.x revolutionized Java application development with practical code examples and migration tips for upgrading from 2.x to 3.x.",
+    "title": "Spring Boot 3.x Features: A Complete Guide (3.0 to 3.5)",
+    "description": "Every major Spring Boot 3.x feature from 3.0 to 3.5—Java 17, GraalVM native images, virtual threads, Docker Compose, Testcontainers, and structured logging.",
     "date": "2025-09-17T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-boot-3-features",
@@ -601,17 +613,6 @@ export const rssData = [
       "Java",
       "Spring",
       "MCP"
-    ]
-  },
-  {
-    "title": "Stream Gatherers in JDK 24: Building Custom Intermediate Operations for the Stream API",
-    "description": "Discover how the new Stream Gatherers feature in JDK 24 provides a more elegant solution for processing blog content compared to traditional stream operations.",
-    "date": "2025-03-21T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/stream-gatherers",
-    "slug": "stream-gatherers",
-    "tags": [
-      "Java"
     ]
   }
 ] as const
