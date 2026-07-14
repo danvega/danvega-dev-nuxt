@@ -8,6 +8,7 @@ export interface BlogPost {
   meta?: {
     slug?: string
     date: string
+    updatedOn?: string
     published: boolean
     tags?: string[]
     author?: string

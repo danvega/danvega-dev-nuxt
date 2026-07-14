@@ -187,6 +187,7 @@ export const useBlogData = (): BlogDataComposable => {
           meta: {
             slug: post.slug,
             date: post.date,
+            updatedOn: post.updatedOn,
             published: post.published,
             tags: toTags(post.tags),
             author: post.author,

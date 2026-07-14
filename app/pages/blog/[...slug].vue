@@ -21,7 +21,7 @@ if (error.value || !data.value) {
 
 
 const datePublished = useDateFormat(data.value?.meta?.date, 'MMMM D, YYYY');
-useDateFormat(data.value?.meta?.updatedOn, 'MMMM D, YYYY');
+const dateUpdated = useDateFormat(data.value?.meta?.updatedOn, 'MMMM D, YYYY');
 const getImagePath = (date,cover) => {
   if(cover) {
     const createdOn = new Date(date);
@@ -96,6 +96,9 @@ const jsonLd = computed(() => {
     headline: data.value.title,
     description: data.value.description,
     datePublished: data.value.meta?.date,
+    // Google reads dateModified for freshness. Fall back to the publish date so
+    // the field is never missing on posts that have never been revised.
+    dateModified: data.value.meta?.updatedOn || data.value.meta?.date,
     author: {
       '@type': 'Person',
       name: data.value.meta?.author || 'Dan Vega',
@@ -152,10 +155,10 @@ useHead({
         <div class="mx-auto max-w-7xl">
           <article>
             <header className="flex flex-col">
-              <time dateTime="September 5, 2022" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
+              <time :datetime="data?.meta?.date" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
                 <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
                 <span class="ml-3">Published On: {{ datePublished }}</span>
-                <span class="ml-2" v-if="data?.meta?.updatedOn">• Updated On: {{ useDateFormat(data?.meta?.updatedOn, 'MMMM D, YYYY').value }}</span>
+                <span class="ml-2" v-if="data?.meta?.updatedOn">• Updated On: {{ dateUpdated }}</span>
                 <span class="ml-2" v-if="readingTime">• {{ readingTime.text }}</span>
               </time>
               <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">

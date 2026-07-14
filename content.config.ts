@@ -10,6 +10,7 @@ export default defineContentConfig({
         title: z.string(),
         published: z.boolean().default(false),
         date: z.string(), // Keep as string since your dates are in ISO format
+        updatedOn: z.string().optional(), // Set when a post is materially revised
         tags: z.array(z.string()).optional(),
         description: z.string().optional(),
         cover: z.string().optional(),
