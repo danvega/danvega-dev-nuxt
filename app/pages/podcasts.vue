@@ -4,6 +4,7 @@ interface Episode {
   date: string;
   dateLabel: string;
   duration: string;
+  url?: string;
 }
 
 interface Show {
@@ -138,10 +139,23 @@ const guestAppearances: GuestAppearance[] = [
   }
 ];
 
-const latestAcrossShows = shows
-  .flatMap(show => show.episodes.map(episode => ({ ...episode, show })))
-  .sort((a, b) => b.date.localeCompare(a.date))
-  .slice(0, 6);
+// Live episode data from the Transistor RSS feeds (cached server-side);
+// the static episodes above are the fallback if a feed is unreachable
+const { data: liveFeeds } = await useFetch('/api/podcasts');
+
+const showsWithEpisodes = computed(() =>
+  shows.map(show => {
+    const live = liveFeeds.value?.find(feed => feed.slug === show.slug);
+    return live ? { ...show, episodeCount: live.episodeCount, episodes: live.episodes } : show;
+  })
+);
+
+const latestAcrossShows = computed(() =>
+  showsWithEpisodes.value
+    .flatMap(show => show.episodes.map(episode => ({ ...episode, show })))
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 6)
+);
 
 useHead({
   title: 'Dan Vega - Podcasts',
@@ -169,7 +183,7 @@ useHead({
     <section aria-labelledby="shows-heading">
       <h2 id="shows-heading" class="sr-only">Shows I Host</h2>
       <div class="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2">
-        <a v-for="show in shows" :key="show.slug" :href="show.site" target="_blank" rel="noopener"
+        <a v-for="show in showsWithEpisodes" :key="show.slug" :href="show.site" target="_blank" rel="noopener"
            class="group flex items-center gap-5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/50 p-5 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
           <img :src="show.artwork" :alt="`${show.title} artwork`"
                class="h-24 w-24 shrink-0 rounded-lg shadow-md" loading="lazy"/>
@@ -187,7 +201,7 @@ useHead({
         <h2 class="mt-3 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">Latest Episodes</h2>
         <div class="mt-6 rounded-lg border border-zinc-200 dark:border-zinc-700 divide-y divide-zinc-200 dark:divide-zinc-700">
           <a v-for="entry in latestAcrossShows" :key="entry.show.slug + entry.title"
-             :href="entry.show.site" target="_blank" rel="noopener"
+             :href="entry.url || entry.show.site" target="_blank" rel="noopener"
              class="flex items-center gap-4 px-4 py-4 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors">
             <img :src="entry.show.artwork" :alt="`${entry.show.title} artwork`"
                  class="h-10 w-10 shrink-0 rounded-md" loading="lazy"/>
