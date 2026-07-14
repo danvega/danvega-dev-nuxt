@@ -67,7 +67,7 @@ watch(CmdK, (v) => {
 
 <template>
   <SearchDialog :posts="searchData" :show-search-dialog="isSearchDialogOpen" @close-search-dialog="isSearchDialogOpen = false"/>
-  <div class="flex h-full bg-zinc-50 dark:bg-black">
+  <div class="flex min-h-screen bg-zinc-50 dark:bg-black">
     <div class="flex w-full">
       <div class="fixed inset-0 flex justify-center sm:px-8">
         <div class="flex w-full max-w-7xl lg:px-8">
@@ -77,7 +77,7 @@ watch(CmdK, (v) => {
       <div class="relative flex w-full flex-col">
         <Header v-if="isHome" @show-search-dialog="showSearchDialog"/>
         <SimpleHeader v-else @show-search-dialog="showSearchDialog"/>
-          <main class="flex-auto">
+          <main class="flex flex-auto flex-col justify-center">
             <slot />
           </main>
         <Footer/>
