@@ -1,16 +1,24 @@
 ---
-title: "Getting Started with Spring: A Beginner's Guide"
+title: "Learn Spring & Spring Boot: A Free Crash Course for Beginners"
 slug: spring-boot-crash-course
 date: "2023-03-09T11:30:00.000Z"
 published: true
-description:
+description: "New to Spring? This free crash course shows you where to start, whether to learn Spring or Spring Boot first, and how to build your first Spring Boot app."
 author: Dan Vega
 tags:
   - Spring Boot
   - Spring Framework
 cover: ./spring-boot-crash-course-new-thumbnail.png
 video: https://www.youtube.com/embed/UgX5lgv4uVM
-keywords: Spring Framework, Spring Boot, Learn Spring, Learn Spring Boot, Java, Spring Boot REST API,Spring Boot Crash Course, Spring Tutorial for Beginners
+keywords:
+  - spring boot crash course
+  - learn spring boot
+  - spring boot tutorial for beginners
+  - learn spring
+  - spring tutorial
+  - spring framework vs spring boot
+  - how to learn spring boot
+  - java spring tutorial
 ---
 
 ## Where do I start?
