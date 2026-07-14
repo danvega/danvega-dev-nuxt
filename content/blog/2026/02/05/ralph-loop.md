@@ -16,7 +16,7 @@ keywords:
   - autonomous ai coding agent
   - ai agent context window
 date: 2026-02-05T09:00:00.000Z
-published: false
+published: true
 cover: ralph-loop.jpg
 video: https://www.youtube.com/embed/CV97l0GkPHo
 github: https://github.com/danvega/ralph-vending-machine
@@ -252,5 +252,5 @@ Write a real spec, break it into small tasks, tell the agent how to build and te
 
 If you want to see this built end to end, check out the video above — and the [full source is on GitHub](https://github.com/danvega/ralph-vending-machine). Go read [Geoffrey Huntley's original post](https://ghuntley.com/ralph/) and his [follow-up on loops](https://ghuntley.com/loop/); he's the one who figured this out.
 
-Happy Coding!<br/>
+Happy Coding! 
 Dan
