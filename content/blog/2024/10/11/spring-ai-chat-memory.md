@@ -8,7 +8,7 @@ author: "Dan Vega"
 tags:
     - Spring Boot
     - Java
-    - Spring AI~~
+    - Spring AI
 video: https://www.youtube.com/embed/6VdM1MOOMrw
 keywords: Spring AI, OpenAI, chat memory, conversational AI, ChatClient, MessageChatMemoryAdvisor, InMemoryChatMemory, token usage, context window, Spring Framework, Spring Boot, Java
 ---

@@ -18,7 +18,7 @@ const { data: tags } = await useAllTags()
         Browse by Topic
       </h1>
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-        Explore articles organized by topic. Click any tag to see all related posts.
+        The topics I write about most, ordered by how much I've written on each. Click any topic to see the related posts.
       </p>
     </header>
     <div class="mt-12 flex flex-wrap gap-3">

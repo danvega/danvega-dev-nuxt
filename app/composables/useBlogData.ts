@@ -30,7 +30,7 @@ export const useBlogData = (): BlogDataComposable => {
             slug: post.slug,
             date: post.date,
             published: post.published,
-            tags: post.tags,
+            tags: toTags(post.tags),
             author: post.author,
             cover: post.cover,
             video: post.video,
@@ -76,7 +76,7 @@ export const useBlogData = (): BlogDataComposable => {
             slug: post.slug,
             date: post.date,
             published: post.published,
-            tags: post.tags,
+            tags: toTags(post.tags),
             author: post.author,
             cover: post.cover,
             video: post.video,
@@ -102,7 +102,7 @@ export const useBlogData = (): BlogDataComposable => {
   const usePaginatedBlogPosts = (page: Ref<number>, limit: Ref<number>, tag?: Ref<string | undefined>, firstPageLimit?: Ref<number>) => {
     return useAsyncData<PaginatedResults<BlogPost>>(() => {
       const key = `blog-posts-page-${page.value}-limit-${limit.value}-first-${firstPageLimit?.value ?? limit.value}`
-      return tag?.value ? `${key}-tag-${tag.value}` : key
+      return tag?.value ? `${key}-tag-${tagKey(tag.value)}` : key
     }, async () => {
       try {
         const { data: allPosts } = await useAllBlogPosts()
@@ -111,11 +111,12 @@ export const useBlogData = (): BlogDataComposable => {
 
         let filteredPosts = allPosts.value
 
-        // Apply tag filter if provided
+        // Match on the folded key so ?tag=Spring%20Boot also finds the post tagged
+        // "Spring boot", and older ?tag=java links keep working.
         if (tag?.value) {
-          const tagValue = tag.value
+          const wanted = tagKey(tag.value)
           filteredPosts = allPosts.value.filter(post =>
-            post.meta?.tags?.includes(tagValue)
+            post.meta?.tags?.some((postTag: string) => tagKey(postTag) === wanted)
           )
         }
 
@@ -187,7 +188,7 @@ export const useBlogData = (): BlogDataComposable => {
             slug: post.slug,
             date: post.date,
             published: post.published,
-            tags: post.tags,
+            tags: toTags(post.tags),
             author: post.author,
             cover: post.cover,
             video: post.video,
@@ -209,23 +210,32 @@ export const useBlogData = (): BlogDataComposable => {
     })
   }
 
-  // All unique tags with post counts
+  // Topics for the browse page: tag variants folded together, one-offs dropped.
   const useAllTags = () => {
     return useAsyncData<{ name: string; count: number }[]>('blog-all-tags', async () => {
       try {
         const { data: allPosts } = await useAllBlogPosts()
         if (!allPosts.value) return []
 
-        const tagCounts = new Map<string, number>()
+        const tagCounts = new Map<string, { name: string; count: number }>()
         for (const post of allPosts.value) {
-          for (const tag of post.meta?.tags || []) {
-            tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1)
+          // A post carrying both "Java" and "java" is still one post for that topic.
+          const seen = new Set<string>()
+          for (const tag of post.meta?.tags ?? []) {
+            const key = tagKey(tag)
+            if (seen.has(key)) continue
+            seen.add(key)
+            const entry = tagCounts.get(key)
+            if (entry) entry.count++
+            // Unmapped tags fall back to the casing of the most recent post using
+            // them, since `allPosts` is ordered date DESC.
+            else tagCounts.set(key, { name: tagDisplayName(tag), count: 1 })
           }
         }
 
-        return Array.from(tagCounts.entries())
-          .map(([name, count]) => ({ name, count }))
-          .sort((a, b) => b.count - a.count)
+        return Array.from(tagCounts.values())
+          .filter(tag => tag.count >= TAG_MIN_POSTS)
+          .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
       } catch (err) {
         console.error('Error fetching tags:', err)
         return []

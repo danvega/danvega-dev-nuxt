@@ -3,7 +3,7 @@ slug: new-course-getting-started-with-spring-boot-2
 title: "New Course: Getting Started with Spring Boot 2"
 published: true
 date: 2018-11-20T12:39:53-05:00
-tags: courses
+tags: ["courses"]
 description: "New Course: Getting Started with Spring Boot 2"
 cover: ./teachable_course_graphic-760x428.png
 ---
