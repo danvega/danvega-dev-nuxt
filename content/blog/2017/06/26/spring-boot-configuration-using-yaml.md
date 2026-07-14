@@ -4,11 +4,19 @@ title: "Spring Boot Configuration using YAML"
 published: true
 date: 2017-06-26T09:00:06-04:00
 tags: ['spring']
-description: "Spring Boot Configuration using YAML"
+description: "Learn Spring Boot YAML configuration with application.yml — inject properties with @Value, use Spring profiles, and manage dev and production environments."
+keywords:
+  - spring boot yaml configuration
+  - application.yml
+  - spring boot @value annotation
+  - spring boot profiles yaml
+  - profile specific configuration
+  - spring boot application properties yaml
+  - yaml configuration example
 cover: './emile-perron-190221-760x428.jpg'
 ---
 
-In this tutorial, we are going to look at a question from a student in my [Spring Boot Introduction](https://www.danvega.dev/spring-boot) course. This question had to do with using a YAML file for configuration and the best way about how to inject a single property for multiple environments.  Let's take a look at the question and then we will talk through the solution. 
+In this tutorial, we are going to look at Spring Boot YAML configuration, based on a question from a student in my [Spring Boot Introduction](https://www.danvega.dev/spring-boot) course. This question had to do with using a YAML file for configuration and the best way about how to inject a single property for multiple environments.  Let's take a look at the question and then we will talk through the solution. 
 
 > Hi! How can I access these properties from a single yml properties file in the DataSourceConfig? Thanks.
 

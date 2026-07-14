@@ -4,11 +4,19 @@ title: "Java: What is the difference between equals and =="
 published: true
 date: 2017-04-05T08:00:50-04:00
 tags: ['java']
-description: "Java: What is the difference between equals and =="
+description: "Understand the difference between == and .equals() in Java. Learn why == compares references while .equals() compares String values, and how to fix it."
+keywords:
+  - java equals vs ==
+  - difference between equals and == java
+  - .equals() java
+  - java string comparison == equals
+  - compare strings in java
+  - reference vs value comparison java
+  - java == operator
 cover: './java_equals-760x428.png'
 ---
 
-This is going to be a fun and personal post for me. The problem that we are going to look at in this article is something we are taught as young software developers. I saw this question on a facebook group that I am a part of and I made the same mistake at work debugging a critical ticket. If you want to find out what trips up newbies and veterans alike, continue reading this article. 
+This is going to be a fun and personal post for me, all about the difference between `==` and `.equals()` in Java. The problem that we are going to look at in this article is something we are taught as young software developers. I saw this question on a facebook group that I am a part of and I made the same mistake at work debugging a critical ticket. If you want to find out what trips up newbies and veterans alike, continue reading this article. 
 
 ## The Problem
 

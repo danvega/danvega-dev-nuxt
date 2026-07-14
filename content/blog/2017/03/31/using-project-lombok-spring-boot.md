@@ -4,7 +4,14 @@ title: "Using Project Lombok in your Spring Boot Project"
 published: true
 date: 2017-03-31T08:00:38-04:00
 tags: ['java', 'spring']
-description: "Using Project Lombok in your Spring Boot Project"
+description: "Learn how to use Project Lombok in Spring Boot to reduce boilerplate code — the @Data annotation generates getters, setters, toString, equals & hashCode."
+keywords:
+  - project lombok spring boot
+  - lombok @data annotation
+  - reduce boilerplate code java
+  - lombok getters and setters
+  - lombok spring boot example
+  - java data class annotation
 cover: './2350-760x507.jpg'
 ---
 

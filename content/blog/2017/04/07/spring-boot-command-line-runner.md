@@ -1,11 +1,19 @@
 ---
 slug: spring-boot-command-line-runner
-title: "Spring Boot Command Line Runner"
+title: "Spring Boot CommandLineRunner Example"
 published: true
 date: 2017-04-07T08:00:43-04:00
 updatedOn: 2022-05-11T11:00:00-05:00
 tags: ["spring"]
-description: "Spring Boot Command Line Runner"
+description: "Learn how to use the Spring Boot CommandLineRunner interface to run code at application startup, load initial data, and order multiple runners in Java."
+keywords:
+  - spring boot commandlinerunner
+  - commandlinerunner example
+  - run code on startup spring boot
+  - commandlinerunner interface
+  - load data on startup spring boot
+  - multiple commandlinerunner order annotation
+  - commandlinerunner functional interface bean
 cover: "./spring-boot-command-line-runner-thumbnail.png"
 video: https://www.youtube.com/embed/gBN8x4yN5Ks
 ---

@@ -3,8 +3,16 @@ slug: "spring-boot-visual-studio-code"
 title: "Spring Boot in Visual Studio Code"
 date: "2019-11-21T11:28:07.266Z"
 published: true
-description: "In this tutorial I will show you how to create a new Spring Boot application in Visual Studio Code"
+description: "Learn how to set up Spring Boot in Visual Studio Code using the Java and Spring Boot Extension Packs, then build a Spring Boot REST API in this tutorial."
 author: "Dan Vega"
+keywords:
+  - spring boot visual studio code
+  - spring boot vs code
+  - spring boot extension pack
+  - java extension pack vs code
+  - spring initializr vs code
+  - spring boot dashboard
+  - create spring boot application vscode
 tags:
   - Spring Boot
   - java

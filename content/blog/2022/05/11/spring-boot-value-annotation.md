@@ -3,10 +3,19 @@ title: Spring Boot @Value Annotation
 slug: spring-boot-value-annotation
 date: "2022-05-11T09:30:00.000Z"
 published: true
-description: A brief introduction to the @Value annotation in Spring Boot.
+description: Learn how to use the Spring Boot @Value annotation to inject configuration properties, set default values, and understand property source order in Java.
 author: Dan Vega
 tags:
   - spring
+keywords:
+  - spring boot @value annotation
+  - "@value annotation example"
+  - "@value default value"
+  - inject property values spring boot
+  - spring property placeholder
+  - spel @value annotation
+  - externalize configuration spring boot
+  - spring boot property source order
 cover: "./spring-boot-value-annotation-thumbnail.png"
 video: https://www.youtube.com/embed/vLSyFktOm4g
 github: https://github.com/danvega/spring-boot-value-annotation

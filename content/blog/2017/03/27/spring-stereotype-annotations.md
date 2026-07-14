@@ -4,7 +4,15 @@ title: "Spring Stereotype Annotations"
 published: true
 date: 2017-03-27T08:00:15-04:00
 tags: ["spring"]
-description: "Spring Stereotype Annotations"
+description: "Learn Spring stereotype annotations: @Component, @Service, @Repository, and @Controller, how component scanning registers them as beans, plus an AOP demo."
+keywords:
+  - spring stereotype annotations
+  - "@Component annotation"
+  - "@Service annotation"
+  - "@Repository annotation"
+  - "@Controller annotation"
+  - spring component scanning
+  - spring bean dependency injection
 cover: './stereotype_annotations.png'
 ---
 

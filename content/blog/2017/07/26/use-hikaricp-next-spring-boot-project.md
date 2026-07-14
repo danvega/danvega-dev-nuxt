@@ -1,10 +1,18 @@
 ---
 slug: use-hikaricp-next-spring-boot-project
-title: "How to use HikariCP in your next Spring Boot project"
+title: "How to Use HikariCP as Your Spring Boot Connection Pool"
 published: true
 date: 2017-07-26T08:16:50-04:00
 tags: ['java', 'spring']
-description: "How to use HikariCP in your next Spring Boot project"
+description: "Learn how to use HikariCP, the high-performance JDBC connection pool, in Spring Boot and configure it via application.properties and auto-configuration."
+keywords:
+  - HikariCP Spring Boot
+  - HikariCP connection pool
+  - Spring Boot connection pool
+  - spring.datasource.hikari
+  - HikariCP configuration
+  - JDBC connection pool
+  - Spring Boot DataSource
 cover: './pexels-photo-169976-760x506.jpeg'
 ---
 

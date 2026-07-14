@@ -1,14 +1,22 @@
 ---
 slug: add-validation-spring-entities
-title: "How to add validation to your Spring Entities"
+title: "How to Add Validation to Your Spring Boot Entities"
 published: true
 date: 2017-05-01T16:37:13-04:00
 tags: ['spring']
-description: "How to add validation to your Spring Entities"
+description: "Learn how to add Bean Validation to your Spring Boot entities with @NotNull and JPA, then build a custom constraint validator with ConstraintValidator."
+keywords:
+  - spring boot validation
+  - bean validation @NotNull
+  - custom constraint validator
+  - ConstraintValidator interface
+  - spring boot entity validation
+  - javax.validation constraints
+  - JPA entity validation
 cover: './luis-llerena-14779-760x507.jpg'
 ---
 
-A student had a question about validating data at the domain level and so I thought it would share it with you.
+A student had a question about adding validation to Spring Boot entities at the domain level, and I thought I would share it with you.
 
 > Hi Dan,  First of all thanks a lot for this great course. It really helped me to get into Spring. But now I'm facing a problem and didn't find a solution yet. I want to use for my DTO classes annotations like @NotNull (javax.validation.constraints) or custom annotations. But both don't work within spring boot. Do you know a good way or practice to solve this? Or is it too expensive to make these annotations work? If yes, is there a spring alternative for such annotations that execute a custom validation like a license-plate for instance?  I hope this question isn't too off-topic to this course and perhaps also interesting for another member of this course. Best wishes, Daniel  
 

@@ -1,14 +1,22 @@
 ---
 slug: getting-started-spring-boot-actuator
-title: "Getting Started with the Spring Boot Actuator"
+title: "Getting Started with Spring Boot Actuator Endpoints"
 published: true
 date: 2017-05-15T08:00:22-04:00
 tags: ['spring']
-description: "Getting Started with the Spring Boot Actuator"
+description: "Getting started with Spring Boot Actuator: add the dependency, explore the built-in production-ready endpoints for health and metrics, and secure them."
+keywords:
+  - Spring Boot Actuator
+  - Spring Boot Actuator endpoints
+  - Spring Boot Actuator health endpoint
+  - Spring Boot Actuator metrics
+  - production-ready endpoints
+  - spring-boot-starter-actuator
+  - Spring Boot monitoring
 cover: './pexels-photo-169573-760x507.jpeg'
 ---
 
-Spring Boot includes a number of additional features to help you monitor and manage your application when it’s pushed to production. You can choose to manage and monitor your application using HTTP endpoints, with JMX or even by a remote shell (SSH or Telnet). Auditing, health and metrics gathering can be automatically applied to your application. In this article, we will take a look at how to include the actuator in your next project and what endpoints are available. 
+The Spring Boot Actuator gives you a number of production-ready features to help you monitor and manage your application when it’s pushed to production. You can choose to manage and monitor your application using HTTP endpoints, with JMX or even by a remote shell (SSH or Telnet). Auditing, health and metrics gathering can be automatically applied to your application. In this article, we will take a look at how to include the actuator in your next project and what endpoints are available. 
 
 ## Actuator Dependencies
 
