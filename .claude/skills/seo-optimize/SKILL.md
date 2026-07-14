@@ -100,6 +100,16 @@ video: https://www.youtube.com/embed/VG00DildlvY
 
 Keep `keywords` to **5–8 entries** — more is not better. Lead with the most specific. `tags` are broad site categories (e.g. "Spring AI", "Java", "AI") and are curated by Dan — suggest tag changes, don't make them silently.
 
+**Quote any keyword starting with `@`.** `@` is a YAML reserved indicator and can't start a plain scalar, so an unquoted entry makes Nuxt Content fail to parse the whole post:
+
+```yaml
+keywords:
+  - "@Component vs @Bean"      # required
+  - @Component vs @Bean        # breaks the build
+```
+
+This bites constantly on Spring posts, where the annotation *is* the high-value exact-match term (`@Bean`, `@CrossOrigin`, `@Value`). After editing frontmatter, parse it with the repo's own `js-yaml` to confirm — run from the project root so it resolves.
+
 ## Developer-blog keyword patterns
 
 Developers search differently than general audiences — match their phrasing:

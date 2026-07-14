@@ -1,19 +1,27 @@
 ---
-title: "Spring Security CORS: How to configure CORS in Spring Boot & Spring Security"
+title: "Spring Security CORS: How to Configure CORS in Spring Boot"
 slug: spring-security-cors
 date: "2022-09-22T08:00:00.000Z"
 published: true
-description:
+description: "Configure CORS in Spring Boot with @CrossOrigin, a WebMvcConfigurer, and a CorsConfigurationSource bean so Spring Security stops blocking preflight requests."
 author: Dan Vega
 tags:
   - Spring Security
 cover: ./ss-cors-thumbnail.jpeg
 video: https://www.youtube.com/embed/HRwlT_etr60
 github: https://github.com/danvega/spring-security-cors-demo
-keywords: Spring Framework, Spring Boot, Spring Security, Spring Security CORS, CORS, Spring Security CORS Configuration
+keywords:
+  - Spring Security CORS configuration
+  - configure CORS in Spring Boot
+  - CorsConfigurationSource bean
+  - "@CrossOrigin annotation"
+  - CORS preflight request Spring Security
+  - WebMvcConfigurer addCorsMappings
+  - Cross-Origin Resource Sharing
+  - Spring Boot
 ---
 
-Authentication is a vital aspect of most applications, and Spring Boot provides several methods to control access. One of these methods is the use of CORS - a flexible, HTTP header-based mechanism that allows for the specification of authorized cross-domain requests. This article guides you through configuring CORS in Spring Boot at the controller, method, and global levels, as well as managing CORS when adding Spring Security.
+If you've built a frontend that calls a Spring Boot API, you've almost certainly run into a CORS error. CORS - Cross-Origin Resource Sharing - is a flexible, HTTP header-based mechanism that allows for the specification of authorized cross-domain requests. This article guides you through configuring CORS in Spring Boot at the controller, method, and global levels, as well as Spring Security CORS configuration, where preflight requests can get rejected before your security rules ever run.
 
 ## Getting Started
 
@@ -48,7 +56,7 @@ public enum Size {
 }
 ```
 
-# Creating Our Controller
+## Creating Our REST Controller
 
 To begin, create a new package called `controller` in the `main` package. Inside the `controller` package, create a new Java class called `CoffeeController`.
 
@@ -118,7 +126,7 @@ In either case, only requests from `localhost:5173` will be allowed, and other c
 
 Moreover, the `@CrossOrigin` annotation can also be applied at a granular level, specifically on methods, which allows for fine-grained control over which API endpoints should allow cross-origin requests.
 
-## Configuring CORS Globally
+## Configuring CORS Globally with WebMvcConfigurer
 
 For larger applications with many controllers, it may be more efficient to configure CORS globally instead of annotating each controller or method separately. This can be done by creating a configuration class that implements the `WebMvcConfigurer` interface and overrides its `addCorsMappings` method.
 
@@ -137,7 +145,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
 In the code above, we allow all endpoints (indicated by `/**`) to accept cross-origin requests from `localhost:5173` and permit the HTTP methods GET, POST, PUT, and DELETE.
 
-## Configuring CORS With Spring Security
+## Configuring CORS with Spring Security and CorsConfigurationSource
 
 Adding Spring Security to a Spring Boot application changes things a bit. The issue is that CORS needs to be processed before Spring Security. This is because CORS makes a preflight request that does not contain any cookies. If Spring Security is processed first, it will reject the request as unauthenticated.
 

@@ -1,18 +1,25 @@
 ---
-title: Spring Security Configuration - Lambda DSL
+title: "Spring Security Lambda DSL vs Chaining Configuration"
 slug: spring-security-lambda-dsl
 date: "2023-03-15T09:30:00.000Z"
 published: true
-description:
+description: "Spring Security's Lambda DSL vs the older chaining style with and(). Configure a SecurityFilterChain both ways in Spring Boot and see which reads cleaner."
 author: Dan Vega
 tags:
   - Spring Security
 cover: ./spring-security-lambda-dsl.png
 video: https://www.youtube.com/embed/PWnEZh_t0WI
-keywords: Spring Security, Spring Security Configuration, Spring Security Lambda DSL
+keywords:
+  - Spring Security Lambda DSL
+  - Spring Security configuration
+  - SecurityFilterChain bean example
+  - Spring Security and() chaining style
+  - HttpSecurity Customizer withDefaults
+  - Spring Boot security configuration
+  - configure Spring Security with lambdas
 ---
 
-Hello, friends! Today, we'll discuss two different ways to configure Spring Security in your applications and create a basic security configuration in a Spring Boot project using each approach. I will walk you through each method, explaining the pros and cons of each, so that you can better understand the different configurations you might come across in your projects.
+Hello, friends! Today, we'll discuss two different ways to configure Spring Security in your applications — the older chaining style and the Lambda DSL — and create a basic security configuration in a Spring Boot project using each approach. I will walk you through each method, explaining the pros and cons of each, so that you can better understand the different configurations you might come across in your projects.
 
 ## Setting Up The Project
 

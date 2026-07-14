@@ -3,7 +3,7 @@ title: "GraphQL Scalars - How to use Custom Scalars in Java"
 slug: graphql-custom-scalars
 date: "2023-01-31T08:00:00.000Z"
 published: true
-description:
+description: "Learn how to use GraphQL custom scalars in Java. We build a Spring Boot 3 app with Spring for GraphQL and register the BigDecimal and LocalDateTime scalars."
 author: Dan Vega
 tags:
   - Spring Boot
@@ -11,7 +11,15 @@ tags:
 cover: ./graphql-scalars-thumbnail.png
 video: https://www.youtube.com/embed/ooknmgr4WiA
 github: https://github.com/danvega/graphql-scalars
-keywords: Spring Boot, Spring for GraphQL, GraphQL Java, GraphQL Scalars, Java, GraphQL
+keywords:
+  - graphql custom scalars java
+  - spring for graphql custom scalar
+  - graphql-java-extended-scalars
+  - RuntimeWiringConfigurer scalar
+  - graphql LocalDateTime scalar
+  - graphql BigDecimal scalar
+  - GraphQL scalar types
+  - Spring Boot 3 GraphQL
 ---
 
 Whether you're new to GraphQL or a seasoned user, understanding the scalar types in GraphQL is important. Within the GraphQL specification, there are five defined scalar types: **int**, **float**, **string**, **boolean**, and **ID**. These will work for many components of your schema definition. But what happens when you need a custom scalar? Unfortunately, you'll inevitably need to create a custom scalar at some point.
@@ -22,7 +30,7 @@ That's what we'll be doing today. We're going to create a new Spring Boot 3 proj
 
 So, let's dive into some code.
 
-## Setting Up a New Project with GraphQL
+## Setting Up a Spring Boot 3 Project with Spring for GraphQL
 
 For those of you who have built a Spring Boot application, you'll be familiar with the process of how we set up a new project.
 
@@ -84,7 +92,7 @@ public class Application {
 }
 ```
 
-## Defining our Schema
+## Defining our GraphQL Schema
 
 After successfully creating our products and ensuring they're in the database, let's move onto defining our GraphQL schema.
 
@@ -150,7 +158,7 @@ Now, if we rerun our application and add 'onSale' and 'weight' to our query, we 
 
 So, what do we do when we need some custom scalars? Let's investigate how to handle this.
 
-## Implementing Custom Scalars
+## Implementing Custom Scalars with GraphQL Java Extended Scalars
 
 Let's add a **price** to our Product model, as a **BigDecimal**, and a **dateCreated** as a **LocalDateTime**.
 

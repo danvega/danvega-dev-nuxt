@@ -1,9 +1,9 @@
 ---
-title: "Spring Boot 4 Modularization: Fix Auto-Configuration Issues After Upgrading"
+title: "Spring Boot 4 Modularization: Fix Missing Auto-Configuration"
 slug: spring-boot-4-modularization
 date: "2025-12-12T09:00:00.000Z"
 published: true
-description: Upgraded to Spring Boot 4 and features stopped working? Learn how the new modular auto-configuration architecture affects your migration and how to fix common issues like the H2 console not appearing.
+description: "Spring Boot 4 broke your auto-configuration? Learn which modular starters you now need—Flyway, H2, and the test starters behind @AutoConfigureMockMvc."
 author: Dan Vega
 tags:
   - Spring Boot
@@ -12,7 +12,15 @@ tags:
 cover: 
 video: https://www.youtube.com/embed/kTLuhE7_jGU
 github: https://github.com/danvega/sb4
-keywords: spring boot 4 modularization, spring boot 4 migration, spring boot auto-configuration, spring boot autoconfigure classic, spring boot 4 upgrade, spring boot starter webmvc, spring boot h2 console, spring boot 4 dependencies, spring boot 4 breaking changes, modular auto configuration spring boot
+keywords:
+  - spring boot 4 modularization
+  - spring boot 4 autoconfiguremockmvc
+  - "@AutoConfigureMockMvc not found"
+  - spring boot 4 flyway starter dependency
+  - spring-boot-starter-flyway
+  - spring boot 4 auto configuration
+  - spring boot autoconfigure classic
+  - spring boot 4 migration
 ---
 
 Spring Boot 4 introduces modular auto-configuration, which is why features like the H2 console might stop working after 
