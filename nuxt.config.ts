@@ -187,6 +187,7 @@ export default defineNuxtConfig({
     preset: 'netlify'
   },
   sitemap: {
+    sources: ['/api/__sitemap__/urls'],
     xsl: false
   },
   css: ['./node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
