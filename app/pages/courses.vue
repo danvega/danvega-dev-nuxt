@@ -96,12 +96,17 @@ const courses : Course[] = [
     <div class="mt-4 sm:mt-6">
       <div class="md:pl-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="mt-4 space-y-7 text-base text-zinc-600 dark:text-zinc-400" v-for="course in courses" :key="course.slug">
+          <div class="mt-4 space-y-7 text-base text-zinc-600 dark:text-zinc-400" v-for="(course, index) in courses" :key="course.slug">
             <a :href="course.link">
             <NuxtImg
                 :src="`/images/courses/${course.cover}`"
                 :alt="course.title"
-                class="w-full rounded-2xl transition-transform duration-300 ease-in-out hover:scale-110"/>
+                width="484"
+                height="272"
+                sizes="sm:100vw md:484px"
+                :loading="index < 2 ? 'eager' : 'lazy'"
+                :fetchpriority="index === 0 ? 'high' : 'auto'"
+                class="w-full aspect-video object-cover rounded-2xl transition-transform duration-300 ease-in-out hover:scale-110"/>
             </a>
             <h2 class="font-semibold text-zinc-800 dark:text-zinc-100">{{ course.title }}</h2>
             <p>{{ course.description }}</p>
