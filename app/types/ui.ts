@@ -10,9 +10,14 @@ export interface Photo {
 export interface Course {
   slug: string
   title: string
+  /** Trimmed title for the featured editorial layout, where the full title runs too long. */
+  shortTitle?: string
   description: string
   link: string
   cover: string
+  topic?: string
+  platform?: 'YouTube' | 'Udemy' | 'FreeCodeCamp'
+  featured?: boolean
 }
 
 export interface Post {
