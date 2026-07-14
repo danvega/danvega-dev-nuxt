@@ -155,7 +155,10 @@ export const useBlogData = (): BlogDataComposable => {
         // the frontmatter slug). Nuxt Content v3 exposes `path`, not `_path`,
         // and only supports SQL operators like LIKE — the old `_path`/`includes`
         // query threw, which turned every not-found URL into a 500 instead of a 404.
-        if (posts.length === 0) {
+        // Every real filename is kebab-case, so anything else can't match a post.
+        // The guard also stops SQL LIKE wildcards (`%`, `_`) in a URL from
+        // impersonating a real post (e.g. /blog/jackson_3_spring_boot_4).
+        if (posts.length === 0 && /^[a-z0-9-]+$/i.test(slug)) {
           posts = await queryCollection('blog')
             .where('path', 'LIKE', `%/${slug}`)
             .where('published', '=', true)
