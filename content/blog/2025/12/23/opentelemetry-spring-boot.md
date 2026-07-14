@@ -1,6 +1,6 @@
 ---
 slug: opentelemetry-spring-boot
-title: "OpenTelemetry with Spring Boot 4: The New Starter You've Been Waiting For"
+title: "OpenTelemetry with Spring Boot 4: The New Starter"
 description: "Learn how to use the new spring-boot-starter-opentelemetry in Spring Boot 4 to add observability with traces, metrics, and logs—no Actuator required."
 author: Dan Vega
 date: 2025-12-23T09:00:00.000Z
@@ -11,7 +11,15 @@ tags:
 cover: spring-boot-open-telemetry.jpg
 video: https://www.youtube.com/embed/6_Y41z7OIv8
 github: https://github.com/danvega/ot
-keywords: spring boot opentelemetry, spring-boot-starter-opentelemetry, spring boot 4 observability, OTLP traces metrics logs, grafana lgtm spring boot, distributed tracing spring boot, spring boot without actuator, micrometer opentelemetry, opentelemetry starter, spring boot 4 observability
+keywords:
+  - spring-boot-starter-opentelemetry
+  - spring boot 4 opentelemetry
+  - opentelemetry spring boot
+  - spring boot opentelemetry starter
+  - spring boot 4 observability
+  - distributed tracing spring boot
+  - spring boot without actuator
+  - grafana lgtm spring boot
 ---
 
 I like to say that hope is not a production strategy. You can't just push your applications to production and hope everything will be okay. 

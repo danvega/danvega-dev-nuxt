@@ -1,6 +1,6 @@
 ---
-title: Creating Your First Model Context Protocol (MCP) Server in Java
-description: Build powerful AI integrations by creating your own Model Context Protocol (MCP) server using Spring Boot and Spring AI. This comprehensive guide walks you through implementing a custom MCP server from scratch, enabling AI models like Claude to access your private data sources, execute specialized business logic, and interact with your custom services. You'll learn the MCP architecture, implement tool functions, handle data retrieval, and deploy a production-ready server that seamlessly extends AI capabilities with your organization's unique data and workflows.
+title: "Creating Your First MCP Server in Java with Spring Boot"
+description: "Build your first Model Context Protocol (MCP) server in Java using Spring Boot and Spring AI, exposing tools that let Claude and other AI models call your code."
 slug: creating-your-first-mcp-server-java
 date: 2025-03-26T17:00:00.000Z
 published: true
@@ -11,7 +11,15 @@ tags:
   - MCP
 video: https://www.youtube.com/embed/w5YVHG1j3Co
 github: https://github.com/danvega/dv-courses-mcp
-keywords: model context protocol, mcp, spring ai, spring boot, java, ai integration, claude, mcp server, tool integration
+keywords:
+  - spring boot mcp server
+  - java mcp server
+  - mcp server java
+  - how to create mcp server in java
+  - spring ai mcp server
+  - model context protocol java
+  - java mcp server example
+  - mcp server spring boot
 ---
 
 Are you looking to extend the capabilities of AI models like Claude by connecting them to your custom data and services? Model Context Protocol (MCP) provides a standardized way to do exactly that, and Spring AI makes implementing your own MCP server surprisingly straightforward. In this tutorial, I'll walk you through creating your first MCP server from scratch using Spring Boot and Spring AI.
