@@ -1,19 +1,28 @@
 ---
-title: Spring Data JPA Pagination
+title: "Spring Data JPA Pagination: Pageable and PageRequest Tutorial"
 slug: spring-data-jpa-pagination
 date: "2022-05-12T16:00:00.000Z"
 published: true
-description: In this tutorial, you are going to learn how to work with pagination in Spring Data JPA.
+description: "Learn how to add pagination to a Spring Boot REST API with Spring Data JPA using Pageable, PageRequest, and the PagingAndSortingRepository, with code examples."
 author: Dan Vega
 tags:
   - Spring
   - Spring Data
+keywords:
+  - Spring Data JPA pagination
+  - Spring Boot pagination
+  - Spring Boot REST API pagination
+  - Pageable Spring Boot
+  - PageRequest example
+  - PagingAndSortingRepository
+  - Spring Data JPA Pageable
+  - Spring Boot pagination example
 cover: "./spring-data-jpa-pagination-thumbnail.png"
 video: https://www.youtube.com/embed/oq-c3D67WqM
 github: https://github.com/danvega/graphql-paging
 ---
 
-In this tutorial, you are going to learn how to work with pagination in Spring Data JPA. If you have a few records you can just return all of them from a single API endpoint. In the real world though you will probably have more than a few records. In this case you wouldn’t want to return all of the records to the client for performance reasons.
+In this tutorial, you are going to learn how to work with pagination in Spring Data JPA, using the `Pageable` interface to page results from a Spring Boot REST API. If you have a few records you can just return all of them from a single API endpoint. In the real world though you will probably have more than a few records. In this case you wouldn’t want to return all of the records to the client for performance reasons.
 
 On the client you would display a smaller number of records at a time and allow the user to click on next, previous or a specific page number. To simulate that in this demo you will use a third party library to create a large dataset.
 
