@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import NewsletterSignup from "~/components/home/NewsletterSignup.vue";
 import Work from "~/components/home/Work.vue";
+import BlogNewsletterSignup from "~/components/blog/BlogNewsletterSignup.vue";
 import Photos from "~/components/home/Photos.vue";
-import PopularPosts from "~/components/home/PopularPosts.vue";
 
 const about = ref("Hello 👋🏻 My name is Dan Vega, Java Champion, Spring Developer Advocate, Husband and #GirlDad based outside of Cleveland OH. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.");
 
@@ -120,13 +119,24 @@ useHead({
           <div class="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
             <div class="flex flex-col gap-16">
               <LatestArticles/>
-              <PopularPosts />
             </div>
             <div class="space-y-10 lg:pl-16 xl:pl-24">
-              <NewsletterSignup/>
               <Work/>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sm:px-8">
+    <div class="mx-auto w-full max-w-7xl lg:px-8">
+      <div class="relative px-4 sm:px-8 lg:px-12">
+        <div class="mx-auto max-w-2xl lg:max-w-5xl">
+          <BlogNewsletterSignup
+            heading="Want more like this? Get the newsletter."
+            campaign="home-page-footer"
+            input-id="home-footer-email"
+          />
         </div>
       </div>
     </div>
