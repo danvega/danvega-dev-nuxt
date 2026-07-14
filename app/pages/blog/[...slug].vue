@@ -62,6 +62,31 @@ const canonicalUrl = computed(() =>
     : config.public.urlBase + path
 );
 
+// VideoObject structured data for posts with an embedded YouTube video.
+// lite-youtube deliberately renders no iframe until the user clicks, so the
+// markup gives Google no signal that the page contains a video — every video
+// was landing in Search Console as "Video isn't on a watch page".
+const youTubeId = computed(() => {
+  const src = data.value?.meta?.video
+  if (!src) return null
+  return src.split('/').pop()?.split('?')[0] || null
+})
+
+const videoObject = computed(() => {
+  if (!youTubeId.value) return undefined
+  return {
+    '@type': 'VideoObject',
+    name: data.value?.title,
+    description: data.value?.description,
+    thumbnailUrl: `https://i.ytimg.com/vi/${youTubeId.value}/maxresdefault.jpg`,
+    // Approximation: posts and their videos are published together, and the
+    // frontmatter carries no separate video upload date.
+    uploadDate: data.value?.meta?.date,
+    embedUrl: `https://www.youtube.com/embed/${youTubeId.value}`,
+    contentUrl: `https://www.youtube.com/watch?v=${youTubeId.value}`
+  }
+})
+
 // Build JSON-LD structured data
 const jsonLd = computed(() => {
   if (!data.value) return null
@@ -80,7 +105,8 @@ const jsonLd = computed(() => {
       ? config.public.urlBase + getImagePath(data.value.meta.date, data.value.meta.cover)
       : undefined,
     url: canonicalUrl.value,
-    keywords: data.value.meta?.tags?.join(', ')
+    keywords: data.value.meta?.tags?.join(', '),
+    video: videoObject.value
   }
 })
 
