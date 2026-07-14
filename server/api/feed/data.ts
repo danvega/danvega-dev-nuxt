@@ -440,14 +440,15 @@ export const rssData = [
     ]
   },
   {
-    "title": "What's New in Spring Framework 7 and Spring Boot 4",
-    "description": "A comprehensive look at the new features in Spring Framework 7 and Spring Boot 4, including code examples and resources to help you get started",
+    "title": "Spring Boot 4: Everything You Need to Know (4.0 and 4.1)",
+    "description": "Everything new in Spring Boot 4 and 4.1, from null safety and HTTP interfaces to modularization and gRPC, plus the upgrade path from Spring Boot 3.",
     "date": "2025-11-24T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-boot-4-is-here",
     "slug": "spring-boot-4-is-here",
     "tags": [
       "Spring Boot",
+      "Spring Boot 4",
       "Spring",
       "Java"
     ]
