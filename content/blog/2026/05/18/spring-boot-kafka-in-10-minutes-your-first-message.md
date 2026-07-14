@@ -3,13 +3,20 @@ title: "Spring Boot + Kafka in 10 Minutes: Sending Your First Message"
 slug: spring-boot-kafka-quick-start
 date: 2026-05-18T08:00:00.000Z
 published: true
-description: "Learn how to produce and consume your first Apache Kafka message using Spring Boot. This beginner-friendly guide covers Docker Compose setup, KafkaTemplate, @KafkaListener, and testing with Embedded Kafka."
+description: "Produce and consume your first Apache Kafka message with Spring Boot. Covers Docker Compose, KafkaTemplate, @KafkaListener, and Embedded Kafka for tests."
 author: "Dan Vega"
 tags:
   - Spring Boot
   - Apache Kafka
   - Spring for Apache Kafka
-keywords: spring boot kafka, spring for apache kafka, kafka spring boot tutorial, kafka template spring boot, kafka listener spring boot, spring boot kafka docker compose, embedded kafka test
+keywords:
+  - spring boot kafka
+  - spring for apache kafka
+  - kafka spring boot tutorial
+  - kafka template spring boot
+  - kafka listener spring boot
+  - spring boot kafka docker compose
+  - embedded kafka test
 cover: spring-boot-kafka-in-10-minutes-your-first-message.jpg
 video: https://www.youtube.com/embed/5XW3f_39ipY
 ---

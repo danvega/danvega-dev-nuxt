@@ -1,7 +1,7 @@
 ---
 title: "Lazy JDBC Connections in Spring Boot 4.1: One Property, Massive Performance Win"
 slug: lazy-jdbc-connections-spring-boot-4-1
-description: "Spring Boot 4.1 introduces lazy JDBC connection fetching with a single property. Learn how it works, when to use it, and see real metrics showing a drop from 2 seconds to 15 milliseconds of connection hold time."
+description: "Spring Boot 4.1 adds lazy JDBC connection fetching via spring.datasource.connection-fetch. See how it cuts connection hold time from 2 seconds to 15ms."
 author: Dan Vega
 tags:
   - Spring Boot

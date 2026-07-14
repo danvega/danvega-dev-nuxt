@@ -1,12 +1,19 @@
 ---
 title: "UI.sh: Agent Skills That Actually Make AI-Generated UIs Look Good"
 slug: ui-dot-sh-agent-skills-for-building-beautiful-uis
-description: "The team behind Tailwind CSS created UI.sh, a collection of agent skills for building UIs that don't suck. Here's how to get started and why back-end developers should be paying attention."
+description: "UI.sh is a collection of agent skills from the Tailwind CSS and Refactoring UI team that give Claude Code and Codex the polish of a senior UI designer."
 author: "Dan Vega"
 tags:
   - AI
   - Tailwind CSS
-keywords: ui.sh, tailwind css agent skills, ai ui design, ui.sh tutorial, ai generated ui, refactoring ui, claude code ui skills
+keywords:
+  - ui.sh
+  - tailwind css agent skills
+  - ai ui design
+  - ui.sh tutorial
+  - ai generated ui
+  - refactoring ui
+  - claude code ui skills
 date: 2026-07-07T09:00:00.000Z
 published: true
 cover: ui-dot-sh-agent-skills-for-building-beautiful-uis.jpeg

@@ -2,7 +2,15 @@
 title: "Getting Started with Spring gRPC in Spring Boot 4.1"
 slug: spring-grpc-spring-boot-4-1
 draft: false
-keywords: spring grpc, spring boot 4.1, grpc spring boot tutorial, grpc java example, spring boot grpc server, spring boot grpc client, protobuf spring boot
+description: "Build a gRPC server and client in Spring Boot 4.1 with Spring gRPC — using @GrpcService, protobuf, and the new starters from start.spring.io."
+keywords:
+  - spring grpc
+  - spring boot 4.1 grpc
+  - grpc spring boot tutorial
+  - grpc java example
+  - spring boot grpc server
+  - spring boot grpc client
+  - protobuf spring boot
 author: "Dan Vega"
 date: 2026-06-24T09:00:00.000Z
 published: true

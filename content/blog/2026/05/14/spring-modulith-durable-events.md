@@ -1,7 +1,7 @@
 ---
 title: "Spring Modulith Durable Events: Reliable Event Processing Without a Message Broker"
 slug: spring-modulith-durable-events
-description: "Learn how to use Spring Modulith's durable event registry to persist and replay failed events across application restarts, all without adding a message broker to your stack."
+description: "Learn how Spring Modulith's event publication registry persists and replays failed events across restarts, giving you a transactional outbox with no message broker."
 author: "Dan Vega"
 tags:
   - Spring Boot
@@ -11,7 +11,7 @@ keywords:
   - Spring Modulith event publication registry
   - Spring Boot modular monolith
   - Spring application events
-  - reliable event processing Spring Boot
+  - Spring Modulith transactional outbox
   - Spring Modulith tutorial
   - Spring Data JDBC events
 date: 2026-05-14T09:00:00.000Z

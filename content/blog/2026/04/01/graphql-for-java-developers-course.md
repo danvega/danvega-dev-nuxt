@@ -1,18 +1,22 @@
 ---
-title: "GraphQL for Java Developers"
+title: "GraphQL for Java Developers with Spring Boot"
 slug: getting-started-with-graphql-for-java-developers
 date: "2026-04-01T08:00:00.000Z"
 published: true
-description: "Learn how to build scalable GraphQL APIs with Java 26 and Spring Boot 4. This course walks you through schema-first development, batch loading, unions, Query by Example, AOT repositories, and more."
+description: "Build GraphQL APIs in Java with Spring Boot 4 and Spring for GraphQL. A free course covering schema-first design, batch loading, unions, and AOT repositories."
 author: "Dan Vega"
 tags:
   - Spring Boot
   - Java
   - GraphQL
 keywords:
-  - Spring Boot
-  - Java
-  - GraphQL
+  - Spring for GraphQL
+  - GraphQL Java tutorial
+  - Spring Boot GraphQL
+  - GraphQL N+1 problem
+  - "@BatchMapping"
+  - schema-first GraphQL
+  - GraphQL for Java developers
 cover: graphql-java-developers-cover.jpg
 video: https://www.youtube.com/embed/xZSv67a9OYA
 ---

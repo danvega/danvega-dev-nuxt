@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Spring Modulith: Building Modular Monoliths with Spring Boot"
 slug: introduction-to-spring-modulith
-description: "Learn how Spring Modulith helps you build well-structured Spring Boot applications with enforced module boundaries, event-driven communication, and a clear path from monolith to modular monolith."
+description: "Learn how Spring Modulith helps you build a modular monolith in Spring Boot with enforced module boundaries, application events, and verified architecture."
 author: "Dan Vega"
 tags:
   - Spring Boot
@@ -12,7 +12,7 @@ keywords:
   - spring modulith tutorial
   - modular monolith spring boot
   - spring modulith example
-  - spring boot application architecture
+  - spring modulith application modules
   - spring modulith events
   - spring boot module boundaries
   - spring modulith verification test

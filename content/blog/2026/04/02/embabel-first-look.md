@@ -3,11 +3,19 @@ title: "Embabel First Look: Building Agentic Flows on the JVM"
 slug: embabel-first-look
 date: "2026-04-02T08:00:00.000Z"
 published: true
-description: "A first look at Embabel, a framework by Rod Johnson for building agentic AI flows on the JVM. Learn how to create a blog writing agent with goal-oriented action planning."
+description: "A first look at Embabel, Rod Johnson's framework for building agentic AI flows on the JVM. Build a blog writing agent using goal-oriented action planning (GOAP)."
 tags:
   - Spring AI  
   - Java
-keywords: embabel, spring ai, agentic flows, java ai agents, goal-oriented action planning, rod johnson, spring boot ai, embabel tutorial  
+keywords:
+  - embabel
+  - embabel agent framework
+  - goal-oriented action planning
+  - rod johnson
+  - agentic flows jvm
+  - java ai agents
+  - spring ai
+  - embabel tutorial
 cover: EmbabelFirstLook.jpg
 video: https://www.youtube.com/embed/G5VDQCZu6t0
 ---

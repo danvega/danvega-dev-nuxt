@@ -1,7 +1,7 @@
 ---
 title: "X (Twitter) MCP Servers with Spring AI: Search Posts and Query Docs Programmatically"
 slug: x-twitter-mcp-servers-spring-ai
-description: "X just released MCP servers for their API and developer documentation. Learn how to build a Spring Boot MCP client that searches X posts and queries their docs using Spring AI."
+description: "X released MCP servers for its API and docs. Build a Spring Boot MCP client with Spring AI 2.0 to search X posts and query the X API docs programmatically."
 author: "Dan Vega"
 tags:
   - Spring AI
@@ -10,14 +10,12 @@ tags:
 keywords:
   - X MCP server
   - Spring AI MCP client
-  - X API Spring Boot
   - MCP server Spring AI
+  - X API Spring Boot
   - Twitter API MCP
-  - context engineering
-  - Spring Boot 4.1
-  - Spring AI 2.0
   - streamable HTTP MCP
-  - X developer API
+  - Spring AI 2.0
+  - context engineering
 date: 2026-07-01T09:00:00.000Z
 published: true
 cover: x-twitter-mcp-servers-spring-ai.jpeg

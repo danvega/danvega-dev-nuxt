@@ -1,9 +1,9 @@
 ---
-title: "Embabel MCP Servers and Tools: Supercharging Your Agentic Flows on the JVM"
+title: "Embabel MCP Servers and Tools for Agentic Flows on the JVM"
 slug: embabel-mcp-servers-and-tools
 date: "2026-04-10T08:00:00.000Z"
 published: true
-description: "Learn how to add tools and MCP servers to your Embabel agents in Java. Build a blog writing agent that can research topics, calculate reading time, and generate front matter."
+description: "Add tools and MCP servers to your Embabel agents in Java. Build a blog writing agent that researches topics, calculates reading time, and generates front matter."
 tags:
   - Spring AI
   - Embabel
@@ -14,6 +14,8 @@ keywords:
     - embabel java agent
     - spring ai tools
     - agentic flows jvm
+    - spring ai mcp
+    - mcp server java
 cover: embabel_tools_mcp.jpg
 video: https://www.youtube.com/embed/2mGr7kdstJs
 ---

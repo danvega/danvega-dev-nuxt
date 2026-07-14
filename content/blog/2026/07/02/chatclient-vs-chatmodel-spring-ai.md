@@ -1,17 +1,17 @@
 ---
 title: "ChatClient vs ChatModel: Which Spring AI API Should You Actually Use?"
 slug: chatclient-vs-chatmodel-spring-ai
-description: "Spring AI gives you two ways to talk to an LLM. Learn the difference between ChatClient and ChatModel, when to use each one, and see both in action with practical code examples."
+description: "Spring AI gives you two ways to call an LLM. Learn the difference between ChatClient and ChatModel, when to use each, and see both in action with code examples."
 author: "Dan Vega"
 tags:
   - Spring AI
   - Spring Boot
 keywords:
   - Spring AI ChatClient vs ChatModel
-  - Spring AI tutorial
   - ChatClient Spring AI
   - ChatModel Spring AI
-  - Spring AI beginner guide
+  - Spring AI 2.0
+  - Spring AI tutorial
   - Spring Boot AI
   - LLM Java Spring
 date: 2026-07-02T09:00:00.000Z

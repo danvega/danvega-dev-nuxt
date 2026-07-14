@@ -1,7 +1,7 @@
 ---
 title: "Type Safe Property Paths in Spring Boot 4.1"
 slug: type-safe-property-paths-spring-boot-4-1
-description: "Spring Boot 4.1 introduces type-safe property paths in Spring Data, eliminating a class of runtime bugs caused by stringly typed property references in sorting, criteria queries, and composite paths."
+description: "Spring Boot 4.1 adds type-safe property paths to Spring Data, replacing stringly typed references in sorting, criteria queries, and composite paths."
 author: "Dan Vega"
 tags:
   - Spring Boot

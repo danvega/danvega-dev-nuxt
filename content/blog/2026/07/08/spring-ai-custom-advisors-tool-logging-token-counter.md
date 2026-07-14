@@ -1,23 +1,21 @@
 ---
 title: "Building Custom Spring AI Advisors for Tool Logging and Token Tracking"
 slug: spring-ai-custom-advisors-tool-logging-token-counter
-description: "Learn how to create custom Spring AI advisors that log available tools, track tool invocations, and count token usage across your LLM calls."
+description: "Learn to build custom Spring AI advisors with the BaseAdvisor interface to log available tools, track tool invocations, and count token usage on every LLM call."
 author: "Dan Vega"
 tags:
   - Spring AI
   - Spring Boot
   - Java
 keywords:
-  - Spring AI advisors
   - Spring AI custom advisor
-  - Spring AI tool logging
+  - Spring AI advisors
+  - BaseAdvisor Spring AI
   - Spring AI token counter
-  - Spring AI 2.0
-  - Spring Boot AI tutorial
+  - Spring AI tool logging
   - LLM token tracking
   - Spring AI tool calling
-  - BaseAdvisor Spring AI
-  - chat client advisor
+  - Spring AI 2.0
 youtube: WNJFR-_N9bc
 date: 2026-07-08T09:00:00.000Z
 published: true

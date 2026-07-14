@@ -3,22 +3,20 @@ title: "Spring, Build Me a Coding Agent"
 slug: spring-building-me-a-coding-agent
 date: "2026-03-31T08:00:00.000Z"
 published: true
-description: "Learn how to build an autonomous coding agent in Spring AI using the Spring AI Agent Utils library. This tutorial walks you through creating a CLI-based agent with file system access, shell commands, and skills."
+description: "Build an autonomous coding agent in Spring AI with the Spring AI Agent Utils library. This tutorial adds file system tools, shell commands, and agent skills."
 author: "Dan Vega"
 tags:
   - Spring AI
   - Spring Boot
   - Java
 keywords:
-  - spring ai agent
   - spring ai agent utils
+  - spring ai agent
+  - coding agent java
   - build ai agent spring boot
   - spring ai tools
-  - coding agent java
+  - spring ai agent skills
   - spring ai chat client
-  - ai agent spring ai tutorial
-  - spring ai skills
-  - autonomous agent spring
   - claude code spring ai
 cover: ./coding_agent_cover.jpg
 video: https://www.youtube.com/embed/P8s65qu-LZI

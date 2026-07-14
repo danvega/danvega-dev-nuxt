@@ -1,36 +1,21 @@
 ---
-title: "Spring Modulith Externalized Events"
+title: "Spring Modulith Externalized Events: Publishing Events to Kafka"
 slug: spring-modulith-externalized-events
 date: 2026-05-20T09:00:00.000Z
 published: true
-description: "How to externalize events to a message broker like Kafka"
+description: "Learn how to externalize Spring Modulith application events to Apache Kafka so other systems can react to changes happening inside your modular monolith."
 author: "Dan Vega"
 tags:
   - Spring Modulith
 cover: spring-modulith-externalized-events.jpeg
 video: https://www.youtube.com/embed/8sJIWwc7Jss
-keywords: Spring Modulith
----
-
-
----
-title: "Spring Modulith Externalized Events: Publishing Module Events to Kafka"
-slug: spring-modulith-externalized-events
-date: 2026-05-20
-published: true
-description: "Learn how to externalize Spring Modulith application events to Apache Kafka so other systems can react to changes happening inside your modular monolith."
-tags:
-  - spring
-  - spring-boot
-  - spring-modulith
-  - kafka
 keywords:
   - spring modulith externalized events
   - spring modulith kafka
   - spring boot kafka events
   - modular monolith event externalization
   - spring modulith tutorial
-  - application event publisher kafka
+  - "@Externalized annotation"
   - spring for apache kafka
 ---
 

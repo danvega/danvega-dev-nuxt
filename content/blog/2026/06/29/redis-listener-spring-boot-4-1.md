@@ -1,7 +1,7 @@
 ---
 title: "The New @RedisListener Annotation in Spring Boot 4.1"
 slug: redis-listener-spring-boot-4-1
-description: "Spring Boot 4.1 introduces @RedisListener, a simple annotation that brings Redis Pub/Sub in line with Kafka and Rabbit. No more wiring up listener containers and adapting byte arrays by hand."
+description: "Spring Boot 4.1 adds @RedisListener, one annotation that brings Redis Pub/Sub in line with @KafkaListener and @RabbitListener. No container wiring needed."
 author: Dan Vega
 tags:
   - Spring Boot
@@ -11,6 +11,7 @@ keywords:
   - redis pub/sub spring boot
   - spring boot 4.1 new features
   - redis listener annotation
+  - "@RedisListener spring boot"
   - spring data redis tutorial
   - spring boot redis pub sub example
 date: 2026-06-29T09:00:00.000Z
