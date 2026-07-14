@@ -13,7 +13,7 @@ const navItems: NavItem[] = [
   {name: "Speaking",link: "/speaking"},
   {name: "Books",link: "/books/fundamentals-of-software-engineering"},
   {name: "Courses",link: "/courses"},
-  {name: "Uses",link: "/uses"}
+  {name: "Podcasts",link: "/podcasts"}
 ];
 </script>
 

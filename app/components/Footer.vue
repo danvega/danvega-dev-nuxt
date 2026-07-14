@@ -16,6 +16,7 @@
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/newsletter">Newsletter</a>
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/speaking">Speaking</a>
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/courses">Courses</a>
+                  <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/podcasts">Podcasts</a>
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/uses">Uses</a>
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/mcp">MCP</a>
                 </div>
