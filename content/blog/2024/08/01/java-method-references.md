@@ -1,6 +1,6 @@
 ---
-title: Java Method References - A Beginner's Guide
-description: Discover the power of method references in Java! This beginner-friendly guide explains what method references are, why they're useful, and how to use them effectively. With clear explanations and practical code examples, you'll learn to write cleaner, more expressive code using this powerful Java feature.
+title: "Method References in Java: A Beginner's Guide (Java 8+)"
+description: "Learn what method references are in Java, when to use them, and all four types—static, instance, arbitrary object, and constructor—with clear :: examples."
 slug: java-method-references
 date: "2024-08-01T09:00:00.000Z"
 published: true
@@ -10,7 +10,15 @@ tags:
   - Functional Programming
 cover: java_method_references_with_me.png
 video: https://www.youtube.com/embed/DELCbBuCHHE
-keywords: Java, Method References, Lambda Expressions, Functional Programming, Java 8 Features
+keywords:
+  - method reference in java
+  - method reference in java 8
+  - java method reference
+  - method references in java
+  - what is method reference in java
+  - java method reference example
+  - constructor reference java
+  - double colon operator java
 ---
 
 Hello, Java enthusiasts! 👋 Today, we're diving into a powerful feature of Java that can make your code cleaner, more readable, and boost your productivity. Let's explore method references!
