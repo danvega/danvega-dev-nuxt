@@ -6,7 +6,18 @@ const slug = getSlugFromPath(path);
 
 // Use enhanced blog data fetching with automatic caching
 const { useBlogPost } = useBlogData()
-const { data } = await useBlogPost(slug)
+const { data, error } = await useBlogPost(slug)
+
+// useAsyncData captures a missing post into `error` rather than throwing, so
+// without this the page rendered with null data and ContentRenderer crashed —
+// turning every unknown /blog/* URL into a 500 instead of a 404.
+if (error.value || !data.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Post not found',
+    fatal: true
+  })
+}
 
 
 const datePublished = useDateFormat(data.value?.meta?.date, 'MMMM D, YYYY');

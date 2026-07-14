@@ -151,10 +151,13 @@ export const useBlogData = (): BlogDataComposable => {
           .where('published', '=', true)
           .all()
 
-        // If not found by slug, try by path
+        // If not found by slug, try by path (posts whose filename differs from
+        // the frontmatter slug). Nuxt Content v3 exposes `path`, not `_path`,
+        // and only supports SQL operators like LIKE — the old `_path`/`includes`
+        // query threw, which turned every not-found URL into a 500 instead of a 404.
         if (posts.length === 0) {
           posts = await queryCollection('blog')
-            .where('_path', 'includes', `/${slug}`)
+            .where('path', 'LIKE', `%/${slug}`)
             .where('published', '=', true)
             .all()
         }
@@ -186,8 +189,11 @@ export const useBlogData = (): BlogDataComposable => {
           },
           body: post.body
         }
-      } catch (err) {
-        console.error(`Error fetching blog post ${slug}:`, err)
+      } catch (err: any) {
+        // A missing post is an expected 404, not a server error worth logging.
+        if (err?.statusCode !== 404) {
+          console.error(`Error fetching blog post ${slug}:`, err)
+        }
         throw err
       }
     }, {
