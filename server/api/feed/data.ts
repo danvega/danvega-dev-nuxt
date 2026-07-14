@@ -1,6 +1,20 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring Boot End of Life: Every 3.x Branch Is Now Unsupported",
+    "description": "Spring Boot 3.5 reached end of life in June 2026 and every 3.x branch is now unsupported. What that means, and how to plan your Spring Boot 4 upgrade.",
+    "date": "2026-07-14T13:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-boot-end-of-life",
+    "slug": "spring-boot-end-of-life",
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "Spring Boot 4",
+      "AI"
+    ]
+  },
+  {
     "title": "How to Kill a Process Running on a Port (Windows, macOS & Linux)",
     "description": "Port 8080 already in use? Learn how to find and kill the process running on a port on Windows, macOS, and Linux—with copy-paste commands for each.",
     "date": "2026-07-14T09:00:00.000Z",
@@ -600,19 +614,6 @@ export const rssData = [
     "slug": "docker-model-runner",
     "tags": [
       "Spring AI"
-    ]
-  },
-  {
-    "title": "Creating Your First MCP Server in Java with Spring Boot",
-    "description": "Build your first Model Context Protocol (MCP) server in Java using Spring Boot and Spring AI, exposing tools that let Claude and other AI models call your code.",
-    "date": "2025-03-26T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/creating-your-first-mcp-server-java",
-    "slug": "creating-your-first-mcp-server-java",
-    "tags": [
-      "Java",
-      "Spring",
-      "MCP"
     ]
   }
 ] as const
