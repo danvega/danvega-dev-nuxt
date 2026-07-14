@@ -1,7 +1,7 @@
 ---
 slug: kill-java-process-macos-sierra-using-activity-monitor
 title: "How to kill Java process on mac OS Sierra using Activity Monitor"
-published: true
+published: false
 date: 2017-08-02T08:13:38-04:00
 tags: ['java', 'spring']
 description: "How to kill Java process on mac OS Sierra using Activity Monitor"

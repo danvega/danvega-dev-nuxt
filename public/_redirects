@@ -215,7 +215,7 @@ courses.danvega.dev /courses 301
 /blog/2017/08/28/using-jhipster-development-mode /blog/using-jhipster-development-mode 301
 /blog/2017/08/16/multiple-dependencies-spring-cli /blog/multiple-dependencies-spring-cli 301
 /blog/2017/08/04/3-youtube-channels-java-developers /blog/3-youtube-channels-java-developers 301
-/blog/2017/08/02/kill-java-process-macos-sierra-using-activity-monitor /blog/kill-java-process-macos-sierra-using-activity-monitor 301
+/blog/2017/08/02/kill-java-process-macos-sierra-using-activity-monitor /blog/kill-process-on-port 301
 /blog/2017/07/31/spring-data-aggregate-functions-repository /blog/spring-data-aggregate-functions-repository 301
 /blog/2017/07/26/use-hikaricp-next-spring-boot-project /blog/use-hikaricp-next-spring-boot-project 301
 /blog/2017/07/24/spring-boot-application-failed-start /blog/spring-boot-application-failed-start 301
@@ -266,7 +266,7 @@ courses.danvega.dev /courses 301
 /blog/2015/11/25/using-gorm-in-spring-boot /blog/using-gorm-in-spring-boot 301
 /blog/2015/10/23/spring-boot-application-annotation /blog/spring-boot-application-annotation 301
 /blog/2015/04/24/ready-player-one-review /blog/ready-player-one-review 301
-/blog/2015/04/16/windows-kill-process-by-port-number /blog/windows-kill-process-by-port-number 301
+/blog/2015/04/16/windows-kill-process-by-port-number /blog/kill-process-on-port 301
 /blog/2015/02/05/sql-server-exception-statement-not-return-result-set /blog/sql-server-exception-statement-not-return-result-set 301
 /blog/2014/04/08/gravatars-on-a-grails-application /blog/gravatars-on-a-grails-application 301
 /blog/2014/03/31/grails-generating-links-in-your-domain-class /blog/grails-generating-links-in-your-domain-class 301
@@ -371,3 +371,8 @@ courses.danvega.dev /courses 301
 /blog/2026/07/07/ui-dot-sh-agent-skills-for-building-beautiful-uis /blog/ui-dot-sh-agent-skills-for-building-beautiful-uis 301
 /blog/2026/07/08/spring-ai-custom-advisors-tool-logging-token-counter /blog/spring-ai-custom-advisors-tool-logging-token-counter 301
 /blog/2026/07/09/spring-ai-tool-search /blog/spring-ai-tool-search 301
+
+# kill-process-on-port consolidation (2026-07-14): old Windows + Mac posts -> new comprehensive post
+/blog/windows-kill-process-by-port-number /blog/kill-process-on-port 301
+/blog/kill-java-process-macos-sierra-using-activity-monitor /blog/kill-process-on-port 301
+/blog/2026/07/14/kill-process-on-port /blog/kill-process-on-port 301
