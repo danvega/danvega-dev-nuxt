@@ -17,6 +17,7 @@ keywords:
   - lsof kill port
 date: 2026-07-14T09:00:00.000Z
 published: true
+cover: kill-process-on-port.png
 ---
 
 If you do any kind of web development, you have seen this error. You go to start your application and instead of a running server you get something like this:
@@ -134,5 +135,5 @@ Usually an app didn't shut down cleanly—an IDE run that was force-stopped, or 
 
 The next time you hit "port 8080 already in use," you know the drill: find the PID, then kill it. Bookmark this one so you have the command for whatever machine you're on.
 
-Happy Coding!<br/>
+Happy Coding!  
 Dan
