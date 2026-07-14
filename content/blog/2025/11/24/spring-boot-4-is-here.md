@@ -1,22 +1,48 @@
 ---
-title: What's New in Spring Framework 7 and Spring Boot 4
+title: "Spring Boot 4: Everything You Need to Know (4.0 and 4.1)"
 slug: spring-boot-4-is-here
 date: "2025-11-24T09:00:00.000Z"
+updatedOn: "2026-07-14T15:00:00.000Z"
 published: true
-description: A comprehensive look at the new features in Spring Framework 7 and Spring Boot 4, including code examples and resources to help you get started
+description: "Everything new in Spring Boot 4 and 4.1, from null safety and HTTP interfaces to modularization and gRPC, plus the upgrade path from Spring Boot 3."
 author: Dan Vega
 tags:
   - Spring Boot
+  - Spring Boot 4
   - Spring
   - Java
 cover: spring-boot-4-is-here.png
-keywords: Spring Boot 4, Spring Framework 7, Java 21, Spring Boot upgrade, Spring Boot migration, Spring Boot new features
+keywords:
+  - spring boot 4
+  - spring boot 4.1
+  - spring boot 4 features
+  - spring boot 4 new features
+  - spring boot 4 migration guide
+  - spring boot 4 upgrade
+  - spring boot 3 vs 4
+  - spring framework 7
 ---
 
-Spring Framework 7 and Spring Boot 4 represent a major leap forward for Java developers.
-After spending some time exploring and creating content around these releases, I'm excited to share my favorite features with you.
-This guide brings together everything you need to know in one place. While the focus is on Framework 7 and Boot 4,
-some of the features highlighted also come from the broader Spring ecosystem.
+Spring Boot 4 and Spring Framework 7 represent a major leap forward for Java developers. This is the guide I keep coming back to and updating: what's in Spring Boot 4, what landed in 4.1, and what you need to know to move.
+
+If you're on Spring Boot 3, this stopped being optional in June 2026. Every 3.x branch is now out of OSS support, so 4.x is where free security patches live. I wrote about that in detail in [Spring Boot End of Life](/blog/spring-boot-end-of-life).
+
+## Which Spring Boot 4 Version Should You Be On?
+
+Two versions of Spring Boot 4 are out, and only one of them is a good place to land.
+
+| Branch | Released | End of OSS Support |
+|--------|----------|--------------------|
+| 4.1.x  | 2026-06  | 2027-07            |
+| 4.0.x  | 2025-11  | 2026-12            |
+
+**Go to 4.1.** 4.0 loses OSS support in December 2026, so starting there means doing the upgrade twice. Every branch gets roughly 13 months of free patches, which is the cadence worth planning around rather than being surprised by.
+
+Two things that make this upgrade easier than you'd expect:
+
+**The Java baseline hasn't moved.** Spring Boot 4 requires Java 17, the same as Spring Boot 3, with first-class support for Java 25 if you want it. There's no forced JDK jump hiding in here.
+
+**There's no `javax` to `jakarta` rewrite.** That was the thing that made 2.7 to 3.0 hurt, and it isn't in this one. Spring Boot 4 moves to a Jakarta EE 11 and Servlet 6.1 baseline, so there's real work in the dependency layer, but nothing like the last major upgrade.
 
 ## High-Level Overview
 
@@ -486,6 +512,38 @@ public class OrderService {
 - [Spring Blog: OpenTelemetry with Spring Boot](https://spring.io/blog/2025/11/18/opentelemetry-with-spring-boot)
 - [OpenTelemetry](https://opentelemetry.io/)
 
+### 11. Modularization
+
+This is the one that'll actually change your build file. Spring Boot 4 splits the framework into smaller, more focused modules, which means some auto-configuration you took for granted now lives somewhere you have to ask for explicitly.
+
+If you upgrade and something that "just worked" suddenly doesn't, this is usually why. It's the single change most likely to bite you on day one, and it's worth understanding before you start rather than after.
+
+**Resources:**
+- [YouTube Tutorial](https://youtu.be/kTLuhE7_jGU)
+- [Blog Post](/blog/spring-boot-4-modularization)
+
+## What's New in Spring Boot 4.1
+
+Spring Boot 4.1 landed in June 2026. It's a smaller release than 4.0, but there are a few things worth moving for.
+
+**[Spring gRPC](/blog/spring-grpc-spring-boot-4-1)** brings first-class gRPC support to Spring Boot. If you've been wiring this up by hand, this is the release you've been waiting for.
+
+**[Lazy JDBC Connections](/blog/lazy-jdbc-connections-spring-boot-4-1)** is one property and a real performance win. Connections are only acquired when actually needed rather than at the start of every transaction.
+
+**[SSRF Protection with InetAddressFilter](/blog/spring-boot-ssrf-protection-inet-address-filter)** closes a whole class of attack with a single bean. If your app fetches user-supplied URLs, read this one. It's also a good example of why staying current matters: this is a security feature you simply do not get on 3.5, and never will.
+
+**[The New @RedisListener Annotation](/blog/redis-listener-spring-boot-4-1)** does for Redis messaging what `@KafkaListener` did for Kafka.
+
+**[Type-Safe Property Paths](/blog/type-safe-property-paths-spring-boot-4-1)** in Spring Data replaces stringly-typed property references with something the compiler can check.
+
+## Upgrading from Spring Boot 3
+
+Start with the [Spring Boot 4.0 Migration Guide](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide). It's thorough and it's the official word.
+
+Two things to know before you begin. Modularization (above) is the most likely source of surprise. And if you're running this across a lot of services rather than one, that's a different kind of problem than a single upgrade.
+
+If you want to see what a 4.1 project looks like before committing to anything, [start.spring.io](https://start.spring.io) will generate one in about fifteen seconds.
+
 ## Conclusion
 
 Spring Framework 7 and Spring Boot 4 deliver significant improvements across developer experience, performance, and production-readiness. The theme is clear: less boilerplate, faster applications, and better defaults.
@@ -497,9 +555,11 @@ My personal highlights:
 - **Built-in Resilience** removes external dependencies for common patterns
 - **REST Test Client** finally unifies our testing story
 
-Ready to get started? Head to [start.spring.io](https://start.spring.io), select Spring Boot 4.0, and start exploring.
+Ready to get started? Head to [start.spring.io](https://start.spring.io), select Spring Boot 4.1, and start exploring.
 I've also created a [discovery repository](https://github.com/danvega/sb4) with links to all the individual projects and
 resources mentioned in this post.
+
+And if you're still on 3.x, the clock already ran out. [Every 3.x branch lost OSS support in June 2026](/blog/spring-boot-end-of-life).
 
 If you want to dive deeper into any of these features, check out my [YouTube channel](https://www.youtube.com/@danvega)
 where I have dedicated tutorials for some of the features listed in this article.
