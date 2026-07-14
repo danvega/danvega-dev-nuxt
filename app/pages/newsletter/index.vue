@@ -30,70 +30,89 @@ const formatDatePublished = (date: string) => {
 <template>
   <Container class="mt-16 sm:mt-32">
     <header class="max-w-2xl">
-      <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-        My Weekly(ish) Newsletter.
+      <p class="font-mono text-sm text-green-600 dark:text-green-400">$ ls ~/newsletters</p>
+      <h1 class="mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+        Words, shipped weekly.
       </h1>
       <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-        I started this newsletter as a way to keep myself writing each and every week. I have a blog that I like to write for but a blog post can be a lot of a pressure. This is a no pressure way for me to write and in the meantime connect with you on a weekly basis. Enter your email below to recieve my weekly newsletter every Monday morning.</p>
+        I write two newsletters: a weekly(ish) letter on Java, Spring, and whatever I'm learning, and
+        ByteSized AI — practical AI for developers in small, digestible doses.
+      </p>
     </header>
 
-    <form
-        action="/api/beehiiv/subscribe"
-        method="post"
-        class="mt-8 md:w-3/4 flex flex-row rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <input type="hidden" name="campaign" value="newsletter" />
-        <div class="w-3/4">
-          <div>
-            <input type="email" name="email" id="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="you@example.com" />
-          </div>
+    <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
+      <!-- the-weeklyish.md -->
+      <div class="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/50">
+        <div class="flex items-center gap-2 border-b border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-4 py-3">
+          <span class="h-3 w-3 rounded-full bg-red-500"></span>
+          <span class="h-3 w-3 rounded-full bg-yellow-500"></span>
+          <span class="h-3 w-3 rounded-full bg-green-500"></span>
+          <span class="ml-2 font-mono text-xs text-zinc-500 dark:text-zinc-400">the-weeklyish.md</span>
         </div>
-        <div class="pl-4">
-            <button type="submit" class="rounded-md bg-blue-600 px-2 py-1 text-xs font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
-              Subscribe
+        <div class="p-6">
+          <p class="font-mono text-sm text-zinc-500 dark:text-zinc-400"><span class="text-green-600 dark:text-green-400">~</span> every Monday morning</p>
+          <h2 class="mt-2 text-xl font-semibold text-zinc-800 dark:text-zinc-100">The Weekly(ish)</h2>
+          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+            Java, Spring, career notes, and what I'm learning — a no-pressure weekly letter from me to you.
+          </p>
+          <form action="/api/beehiiv/subscribe" method="post" class="mt-6 flex gap-3">
+            <input type="hidden" name="campaign" value="newsletter" />
+            <input type="email" name="email" required placeholder="you@example.com" aria-label="Email address"
+                   class="min-w-0 flex-auto rounded-md border-0 px-3 py-2 font-mono text-sm text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 dark:bg-zinc-800 dark:text-zinc-100 dark:ring-zinc-600" />
+            <button type="submit" class="rounded-md bg-zinc-800 dark:bg-zinc-700 px-4 py-2 font-mono text-sm font-semibold text-white shadow-sm hover:bg-zinc-700 dark:hover:bg-zinc-600 transition-colors">
+              ./subscribe
             </button>
+          </form>
         </div>
-    </form>
+      </div>
 
-    <div class="mt-16 sm:mt-20">
-      <div class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-        <div class="flex max-w-3xl flex-col space-y-16">
-
-          <article class="md:grid md:grid-cols-4 md:items-baseline" v-for="post in news" :key="post._id">
-
-            <!-- card : turn this into a component at some point -->
-            <div class="md:col-span-3 group relative flex flex-col items-start">
-              <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-                <a :href="`/newsletter/${post.meta?.slug}`">
-                  <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                  <span class="relative z-10">{{ post.title }}</span>
-                </a>
-              </h2>
-              <time class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5" :datetime="extractDateFromPath(post.path)">
-                <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-                  <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                </span>
-                {{ formatDatePublished(extractDateFromPath(post.path)) }}
-              </time>
-              <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                {{ post.description }}
-              </p>
-              <div aria-hidden="true" class="relative z-10 mt-4 flex items-center text-sm font-medium text-blue-500">Read Newsletter
-                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
-                  <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </div>
-            </div>
-            <time class="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500" :datetime="extractDateFromPath(post.path)">
-              {{ formatDatePublished(extractDateFromPath(post.path)) }}
-            </time>
-
-          </article>
-
-
+      <!-- bytesized-ai.md -->
+      <div class="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/50">
+        <div class="flex items-center gap-2 border-b border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-4 py-3">
+          <span class="h-3 w-3 rounded-full bg-red-500"></span>
+          <span class="h-3 w-3 rounded-full bg-yellow-500"></span>
+          <span class="h-3 w-3 rounded-full bg-green-500"></span>
+          <span class="ml-2 font-mono text-xs text-zinc-500 dark:text-zinc-400">bytesized-ai.md</span>
+        </div>
+        <div class="p-6">
+          <p class="font-mono text-sm text-zinc-500 dark:text-zinc-400"><span class="text-green-600 dark:text-green-400">~</span> bytesizedai.dev</p>
+          <h2 class="mt-2 text-xl font-semibold text-zinc-800 dark:text-zinc-100">ByteSized AI</h2>
+          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+            AI for developers in bite-sized pieces — tools, models, and techniques that actually matter.
+          </p>
+          <div class="mt-6">
+            <a href="https://bytesizedai.dev" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 rounded-md border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 px-4 py-2 font-mono text-sm font-semibold text-zinc-800 dark:text-zinc-100 shadow-sm hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-colors">
+              ./visit --bytesizedai
+            </a>
+          </div>
         </div>
       </div>
     </div>
+
+    <section class="mt-16 sm:mt-20">
+      <p class="font-mono text-sm text-green-600 dark:text-green-400">$ newsletter --history</p>
+      <div class="mt-6 overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-700">
+        <div class="flex items-center gap-2 border-b border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-4 py-3">
+          <span class="h-3 w-3 rounded-full bg-red-500"></span>
+          <span class="h-3 w-3 rounded-full bg-yellow-500"></span>
+          <span class="h-3 w-3 rounded-full bg-green-500"></span>
+          <span class="ml-2 font-mono text-xs text-zinc-500 dark:text-zinc-400">recent-issues.log</span>
+        </div>
+        <div class="divide-y divide-zinc-200 dark:divide-zinc-700/60 bg-zinc-50 dark:bg-zinc-800/50">
+          <a v-for="post in news" :key="post._id" :href="`/newsletter/${post.meta?.slug}`"
+             class="group block px-6 py-5 hover:bg-white dark:hover:bg-zinc-800 transition-colors">
+            <time class="font-mono text-xs text-zinc-500 dark:text-zinc-400" :datetime="extractDateFromPath(post.path)">
+              <span class="text-green-600 dark:text-green-400">~</span> {{ formatDatePublished(extractDateFromPath(post.path)) }}
+            </time>
+            <h3 class="mt-1 text-base font-semibold text-zinc-800 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              {{ post.title }}
+            </h3>
+            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{{ post.description }}</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
   </Container>
 </template>
