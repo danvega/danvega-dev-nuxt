@@ -316,7 +316,7 @@ export const rssData = [
     ]
   },
   {
-    "title": "OpenTelemetry with Spring Boot 4: The New Starter You've Been Waiting For",
+    "title": "OpenTelemetry with Spring Boot 4: The New Starter",
     "description": "Learn how to use the new spring-boot-starter-opentelemetry in Spring Boot 4 to add observability with traces, metrics, and logs—no Actuator required.",
     "date": "2025-12-23T09:00:00.000Z",
     "author": "Dan Vega",
@@ -365,8 +365,8 @@ export const rssData = [
     ]
   },
   {
-    "title": "Spring Boot 4 Modularization: Fix Auto-Configuration Issues After Upgrading",
-    "description": "Upgraded to Spring Boot 4 and features stopped working? Learn how the new modular auto-configuration architecture affects your migration and how to fix common issues like the H2 console not appearing.",
+    "title": "Spring Boot 4 Modularization: Fix Missing Auto-Configuration",
+    "description": "Spring Boot 4 broke your auto-configuration? Learn which modular starters you now need—Flyway, H2, and the test starters behind @AutoConfigureMockMvc.",
     "date": "2025-12-12T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-boot-4-modularization",
@@ -591,8 +591,8 @@ export const rssData = [
     ]
   },
   {
-    "title": "Creating Your First Model Context Protocol (MCP) Server in Java",
-    "description": "Build powerful AI integrations by creating your own Model Context Protocol (MCP) server using Spring Boot and Spring AI. This comprehensive guide walks you through implementing a custom MCP server from scratch, enabling AI models like Claude to access your private data sources, execute specialized business logic, and interact with your custom services. You'll learn the MCP architecture, implement tool functions, handle data retrieval, and deploy a production-ready server that seamlessly extends AI capabilities with your organization's unique data and workflows.",
+    "title": "Creating Your First MCP Server in Java with Spring Boot",
+    "description": "Build your first Model Context Protocol (MCP) server in Java using Spring Boot and Spring AI, exposing tools that let Claude and other AI models call your code.",
     "date": "2025-03-26T17:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/creating-your-first-mcp-server-java",
