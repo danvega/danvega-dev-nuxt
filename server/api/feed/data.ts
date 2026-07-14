@@ -294,6 +294,7 @@ export const rssData = [
   },
   {
     "title": "Spring AI Prompt Caching: Stop Wasting Money on Repeated Tokens",
+    "description": "Spring AI prompt caching cuts your Anthropic Claude API costs. Use AnthropicCacheStrategy to cache system prompts and tools that don't change between requests.",
     "date": "2026-02-08T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-ai-prompt-caching",
