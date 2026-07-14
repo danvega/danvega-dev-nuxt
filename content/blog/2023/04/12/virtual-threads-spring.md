@@ -1,9 +1,9 @@
 ---
-title: "Spring into the Future: Embracing Virtual Threads with Java's Project Loom"
+title: "Project Loom Virtual Threads in Spring (JDK 19/20 Preview)"
 slug: virtual-threads-spring
 date: "2023-04-12T16:00:00.000Z"
 published: true
-description:
+description: "Project Loom virtual threads explained for Spring developers: why thread-per-request breaks under load, and how to enable them in Spring on JDK 19/20 preview."
 author: Dan Vega
 tags:
   - Spring Boot
@@ -11,7 +11,15 @@ tags:
 cover: ./virtual-threads-spring-boot.png
 video: https://www.youtube.com/embed/Is5HXJhC3jE
 github: https://github.com/danvega/loom
-keywords: Content, Content Creation, VideoTop, VideoTap, Video to Blog Post, GPT-4
+keywords:
+  - project loom virtual threads
+  - virtual threads spring
+  - thread-per-request model
+  - TomcatProtocolHandlerCustomizer
+  - VirtualThreadPerTaskExecutor
+  - JDK 19 virtual threads preview
+  - platform threads vs virtual threads
+  - Java concurrency scalability
 ---
 
 Welcome back, friends! Today, we're diving into Project Loom and specifically virtual threads. We'll be covering what they are, why you should care as a Spring developer, and even provide a demo on using virtual threads in a Spring application. Let’s begin!
@@ -22,7 +30,7 @@ Project Loom aims to reduce the effort of writing, maintaining, and observing hi
 
 It's been announced that [virtual threads are targeted for JDK 21](https://openjdk.org/jeps/444), which is exciting news as it means they might show up in Spring Framework 6.1 (also targeted for later this year). So it's about time we all learn about virtual threads and why we might care about them as Spring developers.
 
-## History: Why We Need Virtual Threads
+## Why We Need Virtual Threads: The Thread-Per-Request Model
 
 Let's first understand the thread-per-request model and how threads work in Java. When a client makes a request to a server, the request often involves the server to process blocking operations, such as reading or persisting from a database using JDBC or JPA, writing to a file, or communicating with another service.
 
@@ -40,7 +48,7 @@ The thread-per-request model ties up threads in the system, and there is a maxim
 
 ![java-is-made-of-threads.png](/images/blog/2023/04/12/java-is-made-of-threads.png)
 
-## Scalability Solutions
+## Scaling Java Concurrency Before Virtual Threads
 
 To improve scalability, there are two main approaches that you can currently take advantage of:
 
@@ -49,7 +57,7 @@ To improve scalability, there are two main approaches that you can currently tak
 
 ![thread-per-request-solutions.png](/images/blog/2023/04/12/thread-per-request-solutions.png)
 
-## Introduction to Virtual Threads
+## What Are Virtual Threads?
 
 Virtual threads, available as a preview release in JDK 19 and 20, are lightweight, inexpensive, and easy to create. They are tied to a platform thread that is connected to the operating system thread. Consequently, we no longer tie up platform threads in our applications and can handle more concurrent requests. The most exciting aspect of virtual threads is that we can use them in our Spring applications with little or no code changes.
 

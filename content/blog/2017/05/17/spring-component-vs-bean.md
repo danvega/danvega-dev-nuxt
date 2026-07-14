@@ -1,18 +1,25 @@
 ---
 slug: spring-component-vs-bean
-title: "Spring Beans @Component vs @Bean"
+title: "Spring @Component vs @Bean: What's the Difference?"
 published: true
 date: 2017-05-17T09:00:06-04:00
 updatedOn: 2023-04-13T13:00:00-04:00
 tags:
   - Spring
   - Spring Boot
-description: "Spring Beans @Component vs @Bean"
+description: "@Component vs @Bean in Spring: @Component marks classes you own for classpath scanning, @Bean builds beans from methods. Learn when to use each, with examples."
 cover: "./bean-vs-component.png"
-keywords: Spring Framework, Spring Boot, Spring Beans, @Component, @Bean
+keywords:
+  - "@Component vs @Bean"
+  - "difference between @Component and @Bean"
+  - "when to use @Bean instead of @Component"
+  - "Spring @Bean annotation"
+  - "Spring @Component annotation"
+  - "Spring stereotype annotations"
+  - "Spring Beans dependency injection"
 ---
 
-In this article, you will learn what a Spring Bean is and what the annotations `@Bean` vs `@Component` are used for, and how to use them. Before we dive into how each of these annotations is used it’s important to understand what a Spring Bean is. If you haven’t had a chance to check out my [Spring Boot Crash Course](https://www.danvega.dev/blog/2023/03/09/spring-boot-crash-course/) I cover this topic in more!
+In this article, you will learn what a Spring Bean is and what the annotations `@Component` vs `@Bean` are used for, and how to use them. Before we dive into how each of these annotations is used it’s important to understand what a Spring Bean is. If you haven’t had a chance to check out my [Spring Boot Crash Course](https://www.danvega.dev/blog/2023/03/09/spring-boot-crash-course/) I cover this topic in more!
 
 ## What is a Spring Bean? The Spring Framework
 
@@ -154,6 +161,16 @@ public class Application {
 
 }
 ```
+
+## When Should You Use @Bean Instead of @Component?
+
+Now that you've seen both annotations, the question I get most often is which one to reach for. The answer usually comes down to a single question: do you own the class?
+
+Reach for `@Component` (or a stereotype annotation like `@Service` or `@Repository`) when the class is yours. `PostService` is your code, so you can annotate it directly and let classpath scanning pick it up. That's the common case in your own application, and it's what you should default to.
+
+Reach for `@Bean` when you can't annotate the class. `RestTemplate` is a good example: it comes from the framework, so you don't own the source and there's nowhere to put a `@Component`. Instead, you declare a method in a `@Configuration` class that returns the instance you want, and Spring manages it from there. The same goes for when creating the object takes more than a constructor call — the `RestTemplateBuilder` above does some work before you get an instance, and a `@Bean` method gives you a place to put that logic.
+
+The other difference worth remembering is where each one lives. `@Component` is a class-level annotation that goes on the class itself. `@Bean` is a method-level annotation that belongs in a class marked with `@Configuration` — forget the `@Configuration` and your bean never makes it into the application context.
 
 ## Resources
 

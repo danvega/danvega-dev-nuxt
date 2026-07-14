@@ -1,16 +1,23 @@
 ---
-title: Notion API File Request has expired
+title: "Notion API File URLs Expire: Fixing 403 Errors on Images"
 slug: notion-api-file-expired
 date: "2023-03-12T14:30:00.000Z"
 updatedOn: "2023-03-14T14:30:00.000Z"
 published: true
-description:
+description: "Notion API file URLs carry an expiry_time and expire after 1 hour, so your images start returning 403 Forbidden. Here's how I fixed it in a Nuxt 3 static site."
 author: Dan Vega
 tags:
   - javascript
   - notion
 cover: ./notion-cover-image.png
-keywords: Notion, Notion API
+keywords:
+  - notion api file url expired
+  - notion api image 403 forbidden
+  - notion api expiry_time
+  - notion api images expire after 1 hour
+  - notion api s3 signed url
+  - download notion images at build time
+  - notion as a cms nuxt 3
 ---
 
 If you follow me, you know I'm a huge fan of Notion. I use it for everything in my personal and professional life. Since the release of the [Notion API](https://developers.notion.com/), I've been playing with it, but I've never built anything that I was going to launch publicly.
@@ -31,7 +38,7 @@ When I returned to the blog the following day, I noticed that all of the images 
 
 I decided to redeploy the website and sure enough, everything was working again. I came back a couple of hours later and the images were missing again.
 
-## Notion Page Property File & Media Type
+## Notion Files & Media Page Property and expiry_time
 
 I decided to investigate the cause of this issue. It turns out that the cover images are a property of the page in Notion. If you take a look at the screenshot below, you can see that the page has various properties such as status, date created, and Image. The "Image" property is a file type, which I use to select the thumbnail image for this post.
 
@@ -113,7 +120,7 @@ I tried writing the download image function using Nuxtâ€™s `$fetch` but I didnâ€
 
 [https://twitter.com/therealdanvega/status/1634977252931960832](https://twitter.com/therealdanvega/status/1634977252931960832)
 
-## Images Expiring Update
+## Update: Notion Images Expiring in Post Content Too
 
 I realized that after I deployed a test version of my Wife's new blog she was having the same problem on all of her post pages. This is because she was using her own images that she uploaded to Notion while I was using Unsplash Images on the AI Blog.
 

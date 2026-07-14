@@ -3,19 +3,26 @@ title: Building Native Images in Java with GraalVM
 slug: native-images-graalvm
 date: "2023-02-03T10:00:00.000Z"
 published: true
-description:
+description: "Learn how to handle GraalVM Native Image reflection errors in Java by using the tracing agent to generate reachability metadata and fix ClassNotFoundException."
 author: Dan Vega
 tags:
   - java
   - graalvm
 cover: ./graalvm-dynamic-new.png
 video: https://www.youtube.com/embed/Rk4zfvVvRks
-keywords: Java, GraalVM, Native Images
+keywords:
+  - graalvm native image reflection
+  - graalvm reachability metadata
+  - native image tracing agent
+  - reflect-config.json
+  - graalvm native image java tutorial
+  - building native images with graalvm
+  - native image ClassNotFoundException
 ---
 
-When building native executables with GraalVM, you might run into issues when your application uses dynamic language features of the JVM. This article will walk you through a practical example of how to work with these types of features and provide metadata to GraalVM's Native Image Builder.
+When building native executables with GraalVM, you might run into issues when your application uses dynamic language features of the JVM, like reflection. This article will walk you through a practical example of how to work with these types of features and provide reachability metadata to GraalVM's Native Image Builder.
 
-## The Problem
+## Why Reflection Breaks a GraalVM Native Image
 
 When you build a native executable without any dynamic language features, everything works as expected. However, when you introduce dynamic features like reflection, you need to instruct GraalVM where the different dynamic features in your application are.
 
@@ -77,7 +84,7 @@ public class Application {
 
 When you run the application with your desired argument (e.g., `NiceMessage`), it will work correctly. However, when you attempt to build a native image with GraalVM, it will fail at runtime with a `ClassNotFoundException`. This is because GraalVM does not include the dynamic classes in the final binary since it cannot discover them through static analysis.
 
-## Using a Tracing Agent
+## Using the Tracing Agent to Generate Reflection Metadata
 
 To resolve this issue, you can use a tracing agent to supply metadata about the dynamic features in your application. The tracing agent is a JVM command-line option that you can use when running your application. It generates JSON configuration files in the `META-INF/native-image` directory to inform GraalVM's Native Image Builder about the dynamically reachable classes and methods.
 

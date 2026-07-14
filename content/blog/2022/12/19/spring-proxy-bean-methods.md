@@ -1,18 +1,25 @@
 ---
-title: Spring Boot Configuration proxy bean methods
+title: "Spring @Configuration proxyBeanMethods: Why Set It to False"
 slug: spring-proxy-bean-methods
 date: "2022-12-19T10:00:00.000Z"
 published: true
-description:
+description: "Setting proxyBeanMethods = false on @Configuration drops the CGLIB proxy Spring adds. Learn why it matters for native images and how to refactor your beans."
 author: Dan Vega
 tags:
   - Spring Boot
 cover: ./proxy-bean-methods.png
 video: https://www.youtube.com/embed/VoK6-OiSPu4
-keywords: Spring Boot, Spring Boot Configuration, proxy bean methods
+keywords:
+  - proxyBeanMethods
+  - "@Configuration proxyBeanMethods false"
+  - spring boot proxyBeanMethods
+  - spring configuration full mode vs lite mode
+  - spring CGLIB proxy configuration
+  - spring native image configuration
+  - spring inter-bean references
 ---
 
-In this blog post, we will explore the configuration classes in Spring and explain how setting a property on the `@Configuration` annotation of `proxyBeanMethods=false` can resolve certain issues. We will guide you through creating a few services that depend on a RestTemplate using the `@Configuration` annotation. Along the way, we will examine a problem and how to address it.
+In this blog post, we will explore the configuration classes in Spring and explain how setting a property on the `@Configuration` annotation of `proxyBeanMethods=false` can resolve certain issues. Spring's own documentation has names for these two behaviors: the proxied default is a full `@Configuration` class, and turning the proxy off is what the docs call "@Bean lite mode." We will guide you through creating a few services that depend on a RestTemplate using the `@Configuration` annotation. Along the way, we will examine a problem and how to address it.
 
 ## Create a new project using the Spring Initializr
 
@@ -84,7 +91,7 @@ When we run our application, we have no errors, and everything works fine. Howev
 
 ![Proxy](/images/blog/2022/12/19/proxy.png)
 
-## Fixing the Problem
+## Fixing the Problem: Setting proxyBeanMethods to false
 
 Using a proxy class most of the time isn’t an issue, but we want to get rid of it because it's using the CGlib library, which won’t work for native executables. I’m also a big fan of avoiding proxies in any situation I can so even If you’re not building a native executable I find this to be a best practice. We can disable this by setting a property proxy bean methods equal to false on the `@Configuration` annotation.
 
