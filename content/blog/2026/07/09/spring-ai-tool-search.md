@@ -1,20 +1,20 @@
 ---
 title: "Spring AI Tool Search: Stop Wasting Tokens on Tools You Don't Need"
 slug: spring-ai-tool-search
-description: "Learn how to use Spring AI 2.0's tool search capabilities to dynamically discover tools on demand instead of loading them all into every request, saving tokens and money."
+description: "Spring AI 2.0's tool search brings dynamic tool discovery to Spring Boot—load tools on demand instead of into every request to cut token usage and cost."
 author: "Dan Vega"
 tags:
   - Spring AI
   - Spring Boot
 keywords:
   - Spring AI tool search
+  - Spring AI dynamic tool discovery
   - Spring AI 2.0
-  - tool calling Spring AI
-  - Spring AI context window
   - Spring AI token optimization
+  - MCP token optimization
   - tool search advisor
-  - Spring AI MCP tools
-  - Spring Boot AI tools
+  - Spring AI tool calling
+  - reduce LLM token usage
 date: 2026-07-09T09:00:00.000Z
 published: true
 cover: spring-ai-tool-search.jpg
@@ -22,7 +22,7 @@ video: https://www.youtube.com/embed/VG00DildlvY
 ---
 
 
-Every tool you register with a large language model adds its JSON schema, name, description, and parameters to every single request. Before a user even asks a question, you're paying for those tokens. A typical multi-server setup with MCP connections can easily aggregate 50+ tools consuming 55,000+ tokens right out of the gate. On top of that, tool selection accuracy degrades when models face 30+ similarly-named tools. Spring AI 2.0 introduces a tool search capability that solves both of these problems, and in this post I'll show you exactly how to set it up.
+Every tool you register with a large language model adds its JSON schema, name, description, and parameters to every single request. Before a user even asks a question, you're paying for those tokens. A typical multi-server setup with MCP connections can easily aggregate 50+ tools consuming 55,000+ tokens right out of the gate. On top of that, tool selection accuracy degrades when models face 30+ similarly-named tools. Spring AI 2.0 introduces a tool search capability—also called dynamic tool discovery—that solves both of these problems, and in this post I'll show you exactly how to set it up.
 
 ::GitHubRepo{url="https://github.com/danvega/spring-ai-tool-search"}
 Follow along with the complete working example.
@@ -36,9 +36,9 @@ That's over 100x more tokens for a question that didn't even need a single tool 
 
 As AI agents connect to more services (Slack, GitHub, Jira, MCP servers), your tool libraries grow rapidly. You can't keep loading everything into every request. You need a smarter approach.
 
-## How Tool Search Works
+## How Tool Search (Dynamic Tool Discovery) Works
 
-The tool search pattern in Spring AI 2.0 takes a different approach to tool registration. Instead of loading every tool into the context, it loads just one tool: the tool search tool itself. Here's the flow:
+The tool search pattern in Spring AI 2.0—Spring's dynamic tool discovery approach—takes a different approach to tool registration. Instead of loading every tool into the context, it loads just one tool: the tool search tool itself. Here's the flow:
 
 1. The model receives only a single search tool initially (minimal token usage)
 2. When the model determines it needs a capability, it searches using a natural language query
