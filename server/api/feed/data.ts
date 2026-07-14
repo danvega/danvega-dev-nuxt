@@ -2,7 +2,7 @@
 export const rssData = [
   {
     "title": "Spring AI Tool Search: Stop Wasting Tokens on Tools You Don't Need",
-    "description": "Learn how to use Spring AI 2.0's tool search capabilities to dynamically discover tools on demand instead of loading them all into every request, saving tokens and money.",
+    "description": "Spring AI 2.0's tool search brings dynamic tool discovery to Spring Boot—load tools on demand instead of into every request to cut token usage and cost.",
     "date": "2026-07-09T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-ai-tool-search",
@@ -14,7 +14,7 @@ export const rssData = [
   },
   {
     "title": "Building Custom Spring AI Advisors for Tool Logging and Token Tracking",
-    "description": "Learn how to create custom Spring AI advisors that log available tools, track tool invocations, and count token usage across your LLM calls.",
+    "description": "Learn to build custom Spring AI advisors with the BaseAdvisor interface to log available tools, track tool invocations, and count token usage on every LLM call.",
     "date": "2026-07-08T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-ai-custom-advisors-tool-logging-token-counter",
@@ -27,7 +27,7 @@ export const rssData = [
   },
   {
     "title": "UI.sh: Agent Skills That Actually Make AI-Generated UIs Look Good",
-    "description": "The team behind Tailwind CSS created UI.sh, a collection of agent skills for building UIs that don't suck. Here's how to get started and why back-end developers should be paying attention.",
+    "description": "UI.sh is a collection of agent skills from the Tailwind CSS and Refactoring UI team that give Claude Code and Codex the polish of a senior UI designer.",
     "date": "2026-07-07T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/ui-dot-sh-agent-skills-for-building-beautiful-uis",
@@ -39,7 +39,7 @@ export const rssData = [
   },
   {
     "title": "ChatClient vs ChatModel: Which Spring AI API Should You Actually Use?",
-    "description": "Spring AI gives you two ways to talk to an LLM. Learn the difference between ChatClient and ChatModel, when to use each one, and see both in action with practical code examples.",
+    "description": "Spring AI gives you two ways to call an LLM. Learn the difference between ChatClient and ChatModel, when to use each, and see both in action with code examples.",
     "date": "2026-07-02T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/chatclient-vs-chatmodel-spring-ai",
@@ -51,7 +51,7 @@ export const rssData = [
   },
   {
     "title": "X (Twitter) MCP Servers with Spring AI: Search Posts and Query Docs Programmatically",
-    "description": "X just released MCP servers for their API and developer documentation. Learn how to build a Spring Boot MCP client that searches X posts and queries their docs using Spring AI.",
+    "description": "X released MCP servers for its API and docs. Build a Spring Boot MCP client with Spring AI 2.0 to search X posts and query the X API docs programmatically.",
     "date": "2026-07-01T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/x-twitter-mcp-servers-spring-ai",
@@ -64,7 +64,7 @@ export const rssData = [
   },
   {
     "title": "Type Safe Property Paths in Spring Boot 4.1",
-    "description": "Spring Boot 4.1 introduces type-safe property paths in Spring Data, eliminating a class of runtime bugs caused by stringly typed property references in sorting, criteria queries, and composite paths.",
+    "description": "Spring Boot 4.1 adds type-safe property paths to Spring Data, replacing stringly typed references in sorting, criteria queries, and composite paths.",
     "date": "2026-06-30T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/type-safe-property-paths-spring-boot-4-1",
@@ -76,7 +76,7 @@ export const rssData = [
   },
   {
     "title": "The New @RedisListener Annotation in Spring Boot 4.1",
-    "description": "Spring Boot 4.1 introduces @RedisListener, a simple annotation that brings Redis Pub/Sub in line with Kafka and Rabbit. No more wiring up listener containers and adapting byte arrays by hand.",
+    "description": "Spring Boot 4.1 adds @RedisListener, one annotation that brings Redis Pub/Sub in line with @KafkaListener and @RabbitListener. No container wiring needed.",
     "date": "2026-06-29T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/redis-listener-spring-boot-4-1",
@@ -100,7 +100,7 @@ export const rssData = [
   },
   {
     "title": "Lazy JDBC Connections in Spring Boot 4.1: One Property, Massive Performance Win",
-    "description": "Spring Boot 4.1 introduces lazy JDBC connection fetching with a single property. Learn how it works, when to use it, and see real metrics showing a drop from 2 seconds to 15 milliseconds of connection hold time.",
+    "description": "Spring Boot 4.1 adds lazy JDBC connection fetching via spring.datasource.connection-fetch. See how it cuts connection hold time from 2 seconds to 15ms.",
     "date": "2026-06-25T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/lazy-jdbc-connections-spring-boot-4-1",
@@ -112,6 +112,7 @@ export const rssData = [
   },
   {
     "title": "Getting Started with Spring gRPC in Spring Boot 4.1",
+    "description": "Build a gRPC server and client in Spring Boot 4.1 with Spring gRPC — using @GrpcService, protobuf, and the new starters from start.spring.io.",
     "date": "2026-06-24T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-grpc-spring-boot-4-1",
@@ -119,8 +120,8 @@ export const rssData = [
     "tags": []
   },
   {
-    "title": "Spring Modulith Externalized Events",
-    "description": "How to externalize events to a message broker like Kafka",
+    "title": "Spring Modulith Externalized Events: Publishing Events to Kafka",
+    "description": "Learn how to externalize Spring Modulith application events to Apache Kafka so other systems can react to changes happening inside your modular monolith.",
     "date": "2026-05-20T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-modulith-externalized-events",
@@ -131,7 +132,7 @@ export const rssData = [
   },
   {
     "title": "Spring Boot + Kafka in 10 Minutes: Sending Your First Message",
-    "description": "Learn how to produce and consume your first Apache Kafka message using Spring Boot. This beginner-friendly guide covers Docker Compose setup, KafkaTemplate, @KafkaListener, and testing with Embedded Kafka.",
+    "description": "Produce and consume your first Apache Kafka message with Spring Boot. Covers Docker Compose, KafkaTemplate, @KafkaListener, and Embedded Kafka for tests.",
     "date": "2026-05-18T08:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-boot-kafka-quick-start",
@@ -144,7 +145,7 @@ export const rssData = [
   },
   {
     "title": "Spring Modulith Durable Events: Reliable Event Processing Without a Message Broker",
-    "description": "Learn how to use Spring Modulith's durable event registry to persist and replay failed events across application restarts, all without adding a message broker to your stack.",
+    "description": "Learn how Spring Modulith's event publication registry persists and replays failed events across restarts, giving you a transactional outbox with no message broker.",
     "date": "2026-05-14T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-modulith-durable-events",
@@ -156,7 +157,7 @@ export const rssData = [
   },
   {
     "title": "Introduction to Spring Modulith: Building Modular Monoliths with Spring Boot",
-    "description": "Learn how Spring Modulith helps you build well-structured Spring Boot applications with enforced module boundaries, event-driven communication, and a clear path from monolith to modular monolith.",
+    "description": "Learn how Spring Modulith helps you build a modular monolith in Spring Boot with enforced module boundaries, application events, and verified architecture.",
     "date": "2026-04-30T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/introduction-to-spring-modulith",
@@ -169,8 +170,8 @@ export const rssData = [
     ]
   },
   {
-    "title": "Embabel MCP Servers and Tools: Supercharging Your Agentic Flows on the JVM",
-    "description": "Learn how to add tools and MCP servers to your Embabel agents in Java. Build a blog writing agent that can research topics, calculate reading time, and generate front matter.",
+    "title": "Embabel MCP Servers and Tools for Agentic Flows on the JVM",
+    "description": "Add tools and MCP servers to your Embabel agents in Java. Build a blog writing agent that researches topics, calculates reading time, and generates front matter.",
     "date": "2026-04-10T08:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/embabel-mcp-servers-and-tools",
@@ -183,7 +184,7 @@ export const rssData = [
   },
   {
     "title": "Embabel First Look: Building Agentic Flows on the JVM",
-    "description": "A first look at Embabel, a framework by Rod Johnson for building agentic AI flows on the JVM. Learn how to create a blog writing agent with goal-oriented action planning.",
+    "description": "A first look at Embabel, Rod Johnson's framework for building agentic AI flows on the JVM. Build a blog writing agent using goal-oriented action planning (GOAP).",
     "date": "2026-04-02T08:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/embabel-first-look",
@@ -194,8 +195,8 @@ export const rssData = [
     ]
   },
   {
-    "title": "GraphQL for Java Developers",
-    "description": "Learn how to build scalable GraphQL APIs with Java 26 and Spring Boot 4. This course walks you through schema-first development, batch loading, unions, Query by Example, AOT repositories, and more.",
+    "title": "GraphQL for Java Developers with Spring Boot",
+    "description": "Build GraphQL APIs in Java with Spring Boot 4 and Spring for GraphQL. A free course covering schema-first design, batch loading, unions, and AOT repositories.",
     "date": "2026-04-01T08:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/getting-started-with-graphql-for-java-developers",
@@ -208,7 +209,7 @@ export const rssData = [
   },
   {
     "title": "Spring, Build Me a Coding Agent",
-    "description": "Learn how to build an autonomous coding agent in Spring AI using the Spring AI Agent Utils library. This tutorial walks you through creating a CLI-based agent with file system access, shell commands, and skills.",
+    "description": "Build an autonomous coding agent in Spring AI with the Spring AI Agent Utils library. This tutorial adds file system tools, shell commands, and agent skills.",
     "date": "2026-03-31T08:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/spring-building-me-a-coding-agent",
