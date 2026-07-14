@@ -1,6 +1,18 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "How to Kill a Process Running on a Port (Windows, macOS & Linux)",
+    "description": "Port 8080 already in use? Learn how to find and kill the process running on a port on Windows, macOS, and Linux—with copy-paste commands for each.",
+    "date": "2026-07-14T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/kill-process-on-port",
+    "slug": "kill-process-on-port",
+    "tags": [
+      "Java",
+      "Spring Boot"
+    ]
+  },
+  {
     "title": "Spring AI Tool Search: Stop Wasting Tokens on Tools You Don't Need",
     "description": "Spring AI 2.0's tool search brings dynamic tool discovery to Spring Boot—load tools on demand instead of into every request to cut token usage and cost.",
     "date": "2026-07-09T09:00:00.000Z",
@@ -599,18 +611,6 @@ export const rssData = [
     "slug": "stream-gatherers",
     "tags": [
       "Java"
-    ]
-  },
-  {
-    "title": "Supercharge Your LLM Applications with Model Context Protocol (MCP)",
-    "description": "Learn how Model Context Protocol (MCP) enables LLMs to access external data sources and tools, with practical implementation guides for getting started today.",
-    "date": "2025-03-11T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/model-context-protocol-introduction",
-    "slug": "model-context-protocol-introduction",
-    "tags": [
-      "Spring AI",
-      "MCP"
     ]
   }
 ] as const
