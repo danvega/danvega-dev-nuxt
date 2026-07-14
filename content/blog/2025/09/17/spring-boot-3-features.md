@@ -1,6 +1,6 @@
 ---
-title: "Spring Boot 3.x Features: Complete Guide to Major Updates (2022-2025)"
-description: Explore the transformative features introduced in Spring Boot 3.0 through 3.5, from Java 17 requirements and GraalVM native images to virtual threads and enhanced observability. This comprehensive guide covers each release's major improvements, including Docker Compose integration, Testcontainers support, structured logging, and SSL certificate management. Learn how Spring Boot 3.x revolutionized Java application development with practical code examples and migration tips for upgrading from 2.x to 3.x.
+title: "Spring Boot 3.x Features: A Complete Guide (3.0 to 3.5)"
+description: "Every major Spring Boot 3.x feature from 3.0 to 3.5—Java 17, GraalVM native images, virtual threads, Docker Compose, Testcontainers, and structured logging."
 slug: spring-boot-3-features
 date: 2025-09-17T09:00:00.000Z
 published: true
@@ -10,7 +10,15 @@ tags:
     - Java
     - Spring Framework
 cover: spring_boot_3_features_cover.png
-keywords: Spring Boot 3, Spring Boot 3.x features, Spring Boot 3.0, Spring Boot 3.5, GraalVM native image, virtual threads Spring Boot, Jakarta EE migration, Docker Compose Spring Boot, Testcontainers, structured logging, Spring Boot observability, Spring Boot migration guide, Java 17 Spring Boot, Spring Boot performance, Spring Boot 4.0
+keywords:
+  - spring boot 3.x features
+  - spring boot 3 features
+  - spring boot 3 new features
+  - spring boot 3 versions
+  - spring boot 3.5 features
+  - graalvm native image spring boot
+  - virtual threads spring boot
+  - spring boot 3 migration guide
 ---
 
 ## What's New in Spring Boot 3.x? Understanding the Major Features
