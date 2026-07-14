@@ -42,6 +42,15 @@ const readingTime = computed(() => {
 
 const config = useRuntimeConfig();
 
+// Canonical URL: always the bare-slug form (/blog/<slug>), matching the site's
+// internal links. The catch-all route also serves each post at its dated path
+// (/blog/YYYY/MM/DD/<slug>), so without this Google indexes both and splits ranking.
+const canonicalUrl = computed(() =>
+  data.value?.meta?.slug
+    ? `${config.public.urlBase}/blog/${data.value.meta.slug}`
+    : config.public.urlBase + path
+);
+
 // Build JSON-LD structured data
 const jsonLd = computed(() => {
   if (!data.value) return null
@@ -59,7 +68,7 @@ const jsonLd = computed(() => {
     image: data.value.meta?.cover
       ? config.public.urlBase + getImagePath(data.value.meta.date, data.value.meta.cover)
       : undefined,
-    url: config.public.urlBase + path,
+    url: canonicalUrl.value,
     keywords: data.value.meta?.tags?.join(', ')
   }
 })
@@ -73,6 +82,9 @@ defineOgImage({
 
 useHead({
   title: data.value?.title,
+  link: [
+    { rel: 'canonical', href: canonicalUrl.value },
+  ],
   meta: [
     { name: 'title', content: data.value?.title },
     { name: 'description', content: data.value?.description },
@@ -82,7 +94,7 @@ useHead({
     { property: 'og:type', content: 'article' },
     { property: 'og:title', content: data.value?.title },
     { property: 'og:description', content: data.value?.description },
-    { property: 'og:url', content: config.public.urlBase + path },
+    { property: 'og:url', content: canonicalUrl.value },
   ],
   script: jsonLd.value ? [
     {
