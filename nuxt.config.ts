@@ -99,6 +99,7 @@ export default defineNuxtConfig({
         '/podcasts': {isr: 3600},
         '/uses': {prerender: true},
         '/contact': {redirect: '/about'},
+        '/books': {redirect: {to: '/books/fundamentals-of-software-engineering', statusCode: 302}},
         '/rss.xml': {prerender: true},
         '/workshop/**': {prerender: true},
         '/blog/tags': {prerender: true}
