@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-import NewsletterSignup from "~/components/home/NewsletterSignup.vue";
+import BlogNewsletterSignup from "~/components/blog/BlogNewsletterSignup.vue";
 
 useHead({
   title: 'Fundamentals of Software Engineering | Dan Vega',
   meta: [
-    { name: 'title', content: 'Fundamentals of Software Engineering' },
-    { name: 'description', content: 'Bridge the gap between writing code and becoming a true software engineer. Your onboarding guide to the fundamentals that will set you up for a successful career.' },
-    { property: 'og:title', content: 'Fundamentals of Software Engineering' },
-    { property: 'og:description', content: 'Bridge the gap between writing code and becoming a true software engineer. Your onboarding guide to the fundamentals that will set you up for a successful career.' }
+    { name: 'title', content: 'Fundamentals of Software Engineering: From Coder to Engineer' },
+    { name: 'description', content: 'Bridge the gap between writing code and becoming a true software engineer. Available now from O\'Reilly in print, Kindle, and on the O\'Reilly learning platform.' },
+    { property: 'og:title', content: 'Fundamentals of Software Engineering: From Coder to Engineer' },
+    { property: 'og:description', content: 'Bridge the gap between writing code and becoming a true software engineer. Available now from O\'Reilly in print, Kindle, and on the O\'Reilly learning platform.' }
   ]
 });
 </script>
@@ -16,9 +16,11 @@ useHead({
   <Container class="mt-16 sm:mt-32">
     <!-- Hero Section -->
     <header class="max-w-4xl">
-      <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+      <p class="font-mono text-sm text-green-600 dark:text-green-400">$ man software-engineering</p>
+      <h1 class="mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
         Fundamentals of Software Engineering
       </h1>
+      <p class="mt-3 font-mono text-lg text-blue-600 dark:text-blue-400">From Coder to Engineer — Nate Schutta &amp; Dan Vega</p>
       <p class="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
         Bridge the gap between writing code and becoming a true software engineer.
       </p>
@@ -49,48 +51,28 @@ useHead({
 
       <!-- Book Details & CTAs -->
       <div class="space-y-6">
-        <!-- How to Get the Book -->
-        <div>
-          <h2 class="text-xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4">
-            How to Get the Book
-          </h2>
-          <div class="space-y-4">
-            <!-- O'Reilly Option -->
-            <div class="rounded-lg border border-blue-200 dark:border-blue-700 bg-gradient-to-br from-blue-50 to-transparent dark:from-blue-950/20 p-6">
-              <div class="flex items-start gap-4">
-                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900">
-                  <svg class="h-5 w-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <div class="flex-1">
-                  <p class="text-base font-semibold text-zinc-800 dark:text-zinc-100 mb-1">
-                    Want immediate access?
-                  </p>
-                  <p class="text-sm text-zinc-600 dark:text-zinc-400">
-                    Get it from O'Reilly Learning Platform plus thousands of other technical resources.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Amazon Option -->
-            <div class="rounded-lg border border-orange-200 dark:border-orange-700 bg-gradient-to-br from-orange-50 to-transparent dark:from-orange-950/20 p-6">
-              <div class="flex items-start gap-4">
-                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-orange-100 dark:bg-orange-900">
-                  <svg class="h-5 w-5 text-orange-600 dark:text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                </div>
-                <div class="flex-1">
-                  <p class="text-base font-semibold text-zinc-800 dark:text-zinc-100 mb-1">
-                    Want the print version?
-                  </p>
-                  <p class="text-sm text-zinc-600 dark:text-zinc-400">
-                    You can pre-order from Amazon now.
-                  </p>
-                </div>
-              </div>
+        <!-- Terminal get-the-book window -->
+        <div class="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/50">
+          <div class="flex items-center gap-2 border-b border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 px-4 py-3">
+            <span class="h-3 w-3 rounded-full bg-red-500"></span>
+            <span class="h-3 w-3 rounded-full bg-yellow-500"></span>
+            <span class="h-3 w-3 rounded-full bg-green-500"></span>
+            <span class="ml-2 font-mono text-xs text-zinc-500 dark:text-zinc-400">get-the-book.sh</span>
+          </div>
+          <div class="p-6">
+            <p class="font-mono text-sm text-green-600 dark:text-green-400">$ book install fundamentals-of-software-engineering</p>
+            <p class="mt-3 text-sm text-zinc-600 dark:text-zinc-400">
+              Available now in digital and print. Pick your format:
+            </p>
+            <div class="mt-6 space-y-3">
+              <a href="https://learning.oreilly.com/library/view/fundamentals-of-software/9781098143220/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between gap-4 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 px-4 py-3 font-mono text-sm text-zinc-700 dark:text-zinc-300 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+                <span><span class="text-green-600 dark:text-green-400">~</span> ./read --oreilly</span>
+                <span class="text-xs text-zinc-400 dark:text-zinc-500">learning platform</span>
+              </a>
+              <a href="https://www.amazon.com/Fundamentals-Software-Engineering-Coder-Engineer/dp/109814323X/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between gap-4 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 px-4 py-3 font-mono text-sm text-zinc-700 dark:text-zinc-300 hover:border-blue-400 dark:hover:border-blue-600 transition-colors">
+                <span><span class="text-green-600 dark:text-green-400">~</span> ./buy --amazon</span>
+                <span class="text-xs text-zinc-400 dark:text-zinc-500">paperback &amp; kindle</span>
+              </a>
             </div>
           </div>
         </div>
@@ -98,34 +80,29 @@ useHead({
         <!-- Book Info -->
         <div class="rounded-lg border border-zinc-200 dark:border-zinc-700 p-6 space-y-4">
           <div>
+            <p class="text-sm font-semibold text-zinc-600 dark:text-zinc-400">Published</p>
+            <p class="text-base text-zinc-800 dark:text-zinc-100">December 2025 by O'Reilly Media</p>
+          </div>
+          <div>
             <p class="text-sm font-semibold text-zinc-600 dark:text-zinc-400">Format</p>
-            <p class="text-base text-zinc-800 dark:text-zinc-100">Digital & Print</p>
+            <p class="text-base text-zinc-800 dark:text-zinc-100">Digital &amp; Print</p>
           </div>
           <div>
             <p class="text-sm font-semibold text-zinc-600 dark:text-zinc-400">Pages</p>
-            <p class="text-base text-zinc-800 dark:text-zinc-100">Approximately 370 pages</p>
+            <p class="text-base text-zinc-800 dark:text-zinc-100">404 pages</p>
           </div>
           <div>
             <p class="text-sm font-semibold text-zinc-600 dark:text-zinc-400">Authors</p>
-            <p class="text-base text-zinc-800 dark:text-zinc-100">Nate Schutta & Dan Vega</p>
+            <p class="text-base text-zinc-800 dark:text-zinc-100">Nate Schutta &amp; Dan Vega</p>
           </div>
-        </div>
-
-        <!-- CTA Buttons -->
-        <div class="flex flex-wrap gap-4">
-          <a href="https://learning.oreilly.com/library/view/fundamentals-of-software/9781098143220/" target="_blank" rel="noopener noreferrer" class="rounded-md bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors">
-            Get on O'Reilly
-          </a>
-          <a href="https://www.amazon.com/Fundamentals-Software-Engineering-Coder-Engineer/dp/109814323X/" target="_blank" rel="noopener noreferrer" class="rounded-md border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 px-6 py-3 text-base font-semibold text-zinc-800 dark:text-zinc-100 shadow-sm hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-colors">
-            Pre-order on Amazon
-          </a>
         </div>
       </div>
     </div>
 
     <!-- Target Audience Section -->
     <section class="mt-24">
-      <h2 class="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+      <p class="font-mono text-sm text-green-600 dark:text-green-400">$ whoami --reader</p>
+      <h2 class="mt-4 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
         Who Is This Book For?
       </h2>
       <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -164,7 +141,7 @@ useHead({
             </svg>
           </div>
           <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
-            Students & Self-Learners
+            Students &amp; Self-Learners
           </h3>
           <p class="text-base text-zinc-600 dark:text-zinc-400">
             Great for computer science students and self-taught programmers who want practical insights alongside theoretical knowledge.
@@ -178,7 +155,7 @@ useHead({
             </svg>
           </div>
           <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
-            Team Leads & Architects
+            Team Leads &amp; Architects
           </h3>
           <p class="text-base text-zinc-600 dark:text-zinc-400">
             Valuable for technical leads and architects who need to establish common understanding and best practices across their teams.
@@ -189,7 +166,8 @@ useHead({
 
     <!-- What You'll Learn Section -->
     <section class="mt-24">
-      <h2 class="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mb-4">
+      <p class="font-mono text-sm text-green-600 dark:text-green-400">$ ls what-youll-learn/</p>
+      <h2 class="mt-4 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mb-4">
         What You'll Learn
       </h2>
       <p class="text-base text-zinc-600 dark:text-zinc-400 max-w-3xl mb-8">
@@ -204,7 +182,7 @@ useHead({
             </svg>
           </div>
           <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
-            Reading & Writing Code
+            Reading &amp; Writing Code
           </h3>
           <p class="text-sm text-zinc-600 dark:text-zinc-400">
             Master strategies for understanding existing codebases and writing maintainable, quality code that your team will thank you for.
@@ -218,7 +196,7 @@ useHead({
             </svg>
           </div>
           <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
-            Modeling & Testing
+            Modeling &amp; Testing
           </h3>
           <p class="text-sm text-zinc-600 dark:text-zinc-400">
             Learn to use diagrams and models to design systems, and build confidence through comprehensive automated testing approaches.
@@ -232,7 +210,7 @@ useHead({
             </svg>
           </div>
           <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
-            UI Design & Data Management
+            UI Design &amp; Data Management
           </h3>
           <p class="text-sm text-zinc-600 dark:text-zinc-400">
             Create usable, accessible interfaces and effectively manage data types, storage, and performance in your applications.
@@ -246,7 +224,7 @@ useHead({
             </svg>
           </div>
           <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
-            Architecture & Production
+            Architecture &amp; Production
           </h3>
           <p class="text-sm text-zinc-600 dark:text-zinc-400">
             Understand architectural trade-offs and learn how to deploy and maintain code in real production environments.
@@ -260,7 +238,7 @@ useHead({
             </svg>
           </div>
           <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
-            Productivity & Learning
+            Productivity &amp; Learning
           </h3>
           <p class="text-sm text-zinc-600 dark:text-zinc-400">
             Optimize your development workflow and discover effective strategies for continuous skill development as an engineer.
@@ -274,7 +252,7 @@ useHead({
             </svg>
           </div>
           <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-2">
-            Professional Skills & AI
+            Professional Skills &amp; AI
           </h3>
           <p class="text-sm text-zinc-600 dark:text-zinc-400">
             Master communication, collaboration, career management, and learn how to work effectively with AI tools as a modern engineer.
@@ -285,7 +263,8 @@ useHead({
 
     <!-- Table of Contents -->
     <section id="contents" class="mt-24">
-      <h2 class="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mb-8">
+      <p class="font-mono text-sm text-green-600 dark:text-green-400">$ cat table-of-contents.md</p>
+      <h2 class="mt-4 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mb-8">
         Table of Contents
       </h2>
 
@@ -389,16 +368,12 @@ useHead({
     </section>
 
     <!-- Newsletter Signup -->
-    <section id="newsletter" class="mt-24">
-      <div class="rounded-lg bg-gradient-to-br from-blue-50 to-transparent dark:from-blue-950/20 border border-blue-200 dark:border-blue-800 p-8">
-        <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mb-4">
-          Stay Updated
-        </h2>
-        <p class="text-base text-zinc-600 dark:text-zinc-400 mb-6">
-          Want to be notified when the book is released? Sign up for my newsletter to get updates on the book's progress, exclusive previews, and valuable software engineering insights delivered to your inbox.
-        </p>
-        <NewsletterSignup />
-      </div>
+    <section id="newsletter" class="mt-8">
+      <BlogNewsletterSignup
+        heading="Enjoyed the book? Get more like it in your inbox."
+        campaign="book-page-footer"
+        input-id="book-footer-email"
+      />
     </section>
 
   </Container>
