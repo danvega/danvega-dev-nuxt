@@ -1,100 +1,155 @@
 <template>
-  <div class="container mt-20 max-w-5xl mx-auto p-6 bg-white rounded-lg shadow-lg min-h-screen">
-    <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">JSON to Java Record Converter</h1>
-    <p class="my-8">If you want the source code for this tool my website is open source and you can find it
-      <a href="https://github.com/danvega/danvega-dev-nuxt/blob/main/pages/tools/json-to-java-record.vue" class="text-blue-500 underline hover:no-underline">here</a>.</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div>
-        <label for="recordName" class="block text-sm font-medium text-gray-700 mb-2">Record Name:</label>
-        <input
-            type="text"
-            id="recordName"
-            v-model="recordName"
-            class="w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-            placeholder="Enter Record name..."
-        />
+  <Container class="mt-16 sm:mt-32">
+    <header class="max-w-2xl">
+      <p class="font-mono text-sm text-green-600 dark:text-green-400">$ cat input.json | json2record</p>
+      <h1 class="mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+        JSON to Java Record
+      </h1>
+      <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+        Paste any JSON and get clean Java records back — nested objects included. Everything runs in your
+        browser and the
+        <a href="https://github.com/danvega/danvega-dev-nuxt/blob/main/app/pages/tools/json-to-java-record.vue" class="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300">source code</a>
+        is open.
+      </p>
+    </header>
+
+    <!-- Input terminal -->
+    <div class="mt-12 overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-900 shadow-2xl">
+      <div class="flex items-center gap-2 border-b border-zinc-700/60 bg-zinc-800 px-4 py-3">
+        <span class="h-3 w-3 rounded-full bg-red-500"></span>
+        <span class="h-3 w-3 rounded-full bg-yellow-500"></span>
+        <span class="h-3 w-3 rounded-full bg-green-500"></span>
+        <span class="ml-2 font-mono text-xs text-zinc-400">input.json</span>
       </div>
-      <div class="md:col-span-2">
-        <label for="jsonInput" class="block text-sm font-medium text-gray-700 mb-2">JSON Input:</label>
-        <div class="relative border border-gray-300 rounded-md" style="height: 300px;">
-          <div ref="preRef" class="absolute top-0 left-0 w-full h-full overflow-auto m-0 p-2 bg-transparent code-input" v-html="highlightedJson"></div>
-          <textarea
-              ref="textareaRef"
-              id="jsonInput"
-              v-model="jsonInput"
-              class="absolute top-0 left-0 w-full h-full p-2 font-mono bg-transparent resize-none outline-none code-input"
-              placeholder="Paste your JSON here..."
-              :style="{ color: 'transparent', caretColor: 'black' }"
-              @input="handleInput"
-          ></textarea>
+      <textarea
+          id="jsonInput"
+          v-model="jsonInput"
+          spellcheck="false"
+          aria-label="JSON input"
+          placeholder='{ "paste": "your JSON here" }'
+          class="block h-64 w-full resize-none bg-transparent p-4 font-mono text-[13px] leading-relaxed text-zinc-100 placeholder-zinc-500 caret-white outline-none"
+          @input="handleInput"
+      ></textarea>
+    </div>
+
+    <!-- Pipe command strip -->
+    <div class="mt-6 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800/50 px-4 py-3 font-mono text-sm text-zinc-700 dark:text-zinc-300 overflow-x-auto">
+      <span class="text-green-600 dark:text-green-400">$</span>
+      cat input.json | json2record --name
+      <input
+          id="recordName"
+          v-model="recordName"
+          type="text"
+          aria-label="Record name"
+          class="w-28 border-0 border-b border-dashed border-zinc-400 dark:border-zinc-500 bg-transparent px-1 font-mono text-sm text-blue-600 dark:text-blue-400 focus:border-blue-500 focus:outline-none"
+      />
+      &gt; {{ outputFileName }}
+    </div>
+
+    <!-- Output terminal -->
+    <div class="mt-6 overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-700 bg-zinc-900 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-zinc-700/60 bg-zinc-800 px-4 py-3">
+        <div class="flex items-center gap-2">
+          <span class="h-3 w-3 rounded-full bg-red-500"></span>
+          <span class="h-3 w-3 rounded-full bg-yellow-500"></span>
+          <span class="h-3 w-3 rounded-full bg-green-500"></span>
+          <span class="ml-2 font-mono text-xs text-zinc-400">{{ outputFileName }}</span>
         </div>
+        <button
+            :disabled="javaRecords.length === 0"
+            class="font-mono text-xs text-zinc-400 transition-colors hover:text-zinc-200 disabled:cursor-not-allowed disabled:opacity-40"
+            @click="copyOutput"
+        >
+          {{ copied ? 'copied!' : 'copy' }}
+        </button>
       </div>
-      <div class="md:col-span-2">
-        <label for="javaOutput" class="block text-sm font-medium text-gray-700 mb-2">Java Record Output:</label>
-        <div class="p-2 border border-gray-300 rounded-md bg-gray-50 overflow-auto code-input" style="max-height: 300px;" v-html="highlightedJava"></div>
-      </div>
+      <pre class="max-h-96 min-h-40 overflow-auto p-4 font-mono text-[13px] leading-relaxed text-zinc-300"><code v-html="prettyJava"></code></pre>
     </div>
-    <div class="mt-6 flex justify-center space-x-4">
+
+    <div class="mt-8 flex flex-wrap items-center gap-4">
       <button
+          class="rounded-md bg-zinc-800 dark:bg-zinc-700 px-5 py-2.5 font-mono text-sm font-semibold text-white shadow-sm transition-colors hover:bg-zinc-700 dark:hover:bg-zinc-600"
           @click="convertJsonToJavaRecord"
-          class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
       >
-        Convert to Java Record
+        ./convert
       </button>
       <button
-          @click="downloadRecords"
           :disabled="javaRecords.length === 0"
-          class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+          class="rounded-md border border-zinc-300 dark:border-zinc-600 bg-white dark:bg-zinc-800 px-5 py-2.5 font-mono text-sm font-semibold text-zinc-800 dark:text-zinc-100 shadow-sm transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-700 disabled:cursor-not-allowed disabled:opacity-50"
+          @click="downloadRecords"
       >
-        Download Record(s)
+        ./download
+      </button>
+      <button
+          class="font-mono text-sm text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300"
+          @click="loadExample"
+      >
+        load example
       </button>
     </div>
-  </div>
+  </Container>
 </template>
 
 <script setup>
-import { ref, onMounted, watch, computed } from 'vue'
-import { useRuntimeConfig } from '#app'
+import { ref, computed } from 'vue'
 import { debounce } from 'lodash-es'
 import JSZip from 'jszip'
+
+useHead({
+  title: 'JSON to Java Record Converter | Dan Vega',
+  meta: [
+    { name: 'title', content: 'JSON to Java Record Converter' },
+    { name: 'description', content: 'Free online tool that converts JSON into Java records, nested objects included. Runs entirely in your browser.' },
+    { property: 'og:title', content: 'JSON to Java Record Converter' },
+    { property: 'og:description', content: 'Convert JSON into Java records right in your browser.' }
+  ]
+});
 
 const recordName = ref('Root')
 const jsonInput = ref('')
 const javaOutput = ref('')
 const javaRecords = ref([])
-const textareaRef = ref(null)
-const preRef = ref(null)
+const copied = ref(false)
 
-const runtimeConfig = useRuntimeConfig()
-const shiki = runtimeConfig.public.shiki
+const outputFileName = computed(() => `${(recordName.value || 'Root').trim()}.java`)
 
-const highlightedJson = computed(() => {
-  if (!shiki) return jsonInput.value
-  return shiki.highlight(jsonInput.value || ' ', { lang: 'json', theme: 'nord' })
-})
+const escapeHtml = (str) => str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
 
-const highlightedJava = computed(() => {
-  if (!shiki) return javaOutput.value
-  return shiki.highlight(javaOutput.value || ' ', { lang: 'java', theme: 'nord' })
-})
-
-onMounted(() => {
-  syncScroll()
-})
-
-watch([jsonInput, javaOutput], () => {
-  // Highlighting is handled by the computed properties
-})
-
-const syncScroll = () => {
-  const textarea = textareaRef.value
-  const pre = preRef.value
-  if (textarea && pre) {
-    textarea.addEventListener('scroll', () => {
-      pre.scrollTop = textarea.scrollTop
-      pre.scrollLeft = textarea.scrollLeft
-    })
+const prettyJava = computed(() => {
+  if (!javaOutput.value) {
+    return '<span class="text-zinc-500">// your Java records will appear here</span>'
   }
+  if (javaOutput.value.startsWith('Error:')) {
+    return `<span class="text-red-400">${escapeHtml(javaOutput.value)}</span>`
+  }
+  return escapeHtml(javaOutput.value)
+      .replace(/\b(public|record)\b/g, '<span class="text-purple-400">$1</span>')
+      .replace(/\b(String|int|double|boolean|Object|List)\b/g, '<span class="text-sky-400">$1</span>')
+})
+
+const loadExample = () => {
+  jsonInput.value = JSON.stringify({
+    name: 'Dan Vega',
+    role: 'Spring Developer Advocate',
+    yearsExperience: 25,
+    isJavaChampion: true,
+    social: {
+      youtube: '@danvega',
+      twitter: '@therealdanvega'
+    },
+    topics: ['Java', 'Spring Boot', 'AI']
+  }, null, 2)
+  convertJsonToJavaRecord()
+}
+
+const copyOutput = async () => {
+  if (!javaOutput.value) return
+  await navigator.clipboard.writeText(javaOutput.value)
+  copied.value = true
+  setTimeout(() => { copied.value = false }, 2000)
 }
 
 const formatJSON = (json) => {
@@ -124,6 +179,7 @@ const convertJsonToJavaRecord = () => {
     javaOutput.value = records.map(record => record.content).join('\n')
   } catch (error) {
     javaOutput.value = `Error: ${error.message}\n\nPlease check your JSON input and try again.`
+    javaRecords.value = []
   }
 }
 
@@ -250,12 +306,3 @@ const downloadZip = async () => {
   URL.revokeObjectURL(url)
 }
 </script>
-
-<style scoped>
-.code-input {
-  font-family: monospace;
-  white-space: pre;
-  overflow: auto;
-  tab-size: 2;
-}
-</style>
