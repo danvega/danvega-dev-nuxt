@@ -9,8 +9,9 @@ Welcome to my personal website! This is where you can find out more about me and
 - 📝 **Blog Posts** - In-depth articles about Java, Spring Boot, web development, and software engineering best practices
 - 📧 **Newsletter** - Regular updates on the latest in Java and Spring ecosystem
 - 🎤 **Speaking** - Information about my conference talks, presentations, and upcoming events
-- 📚 **Courses** - Educational resources and tutorials to help you level up your development skills
-- 🛠️ **Tools** - Useful utilities like JSON to Java Record converter
+- 🎙️ **Podcasts** - Shows I host and guest appearances, with episodes pulled live from RSS feeds
+- 📖 **Book** - Fundamentals of Software Engineering, my book with O'Reilly
+- 📚 **Courses & Workshops** - Educational resources like the Spring AI course and the AI for Java Developers workshop
 - ℹ️ **About Me** - My background, experience, and the gear I use for content creation
 
 ## 🔗 Connect With Me
@@ -34,11 +35,12 @@ This website is built with modern web technologies:
 
 ## 📊 Key Features
 
-- ⚡ **Fast Loading** - Optimized performance with ISR and image optimization
+- 💻 **Terminal Design** - Terminal-inspired UI with mono `$`-prompt accents and terminal-window cards throughout the site
+- ⚡ **Fast Loading** - Optimized performance with ISR, image optimization, and lean client payloads
 - 🌙 **Dark Mode** - System preference detection with manual toggle
 - 📱 **Responsive** - Mobile-first design that works on all devices
-- 🔍 **SEO Optimized** - Comprehensive meta tags and structured data
-- 📡 **RSS Feeds** - Automatic RSS, Atom, and JSON feed generation
+- 🔍 **SEO Optimized** - Canonical blog URLs, comprehensive meta tags, and structured data (including VideoObject for posts with videos)
+- 📡 **RSS Feeds** - Automatic RSS, Atom, and JSON feed generation, plus live podcast episodes from Transistor RSS
 - 🎨 **Syntax Highlighting** - Beautiful code blocks with multiple language support
 - 📈 **Analytics** - Performance tracking and user insights
 
