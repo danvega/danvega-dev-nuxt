@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Can You Use Java for AI? Why Java Is Better Positioned Than You Think",
+    "description": "Can you use Java for AI? Yes. For building real AI applications it might be the better choice. Why the JVM, Spring AI, and your existing team are enough.",
+    "date": "2026-07-15T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/can-you-use-java-for-ai",
+    "slug": "can-you-use-java-for-ai",
+    "tags": [
+      "Java",
+      "AI",
+      "Spring AI"
+    ]
+  },
+  {
     "title": "Spring Boot End of Life: Every 3.x Branch Is Now Unsupported",
     "description": "Spring Boot 3.5 reached end of life in June 2026 and every 3.x branch is now unsupported. What that means, and how to plan your Spring Boot 4 upgrade.",
     "date": "2026-07-14T13:00:00.000Z",
@@ -604,17 +617,6 @@ export const rssData = [
     "tags": [
       "Java",
       "Spring"
-    ]
-  },
-  {
-    "title": "Running AI Models Locally with Docker and Spring AI",
-    "description": "Master Docker Desktop's revolutionary Model Runner feature and discover how to build privacy-first AI applications with Spring Boot. This complete tutorial shows you how to run powerful open-source AI models like Gemma locally on your machine, eliminating API costs, protecting sensitive data, and simplifying development workflows. You'll get step-by-step instructions for setting up local AI models, integrating with Spring AI, and building production-ready applications that respect privacy while delivering exceptional AI capabilities without monthly subscription fees.",
-    "date": "2025-04-07T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/docker-model-runner",
-    "slug": "docker-model-runner",
-    "tags": [
-      "Spring AI"
     ]
   }
 ] as const
