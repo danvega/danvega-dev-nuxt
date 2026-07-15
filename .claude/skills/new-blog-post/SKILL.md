@@ -66,7 +66,7 @@ One sentence, **~155 characters**. It's the SEO meta description and the RSS fee
 
 ### cover
 
-A **bare filename** (`cover: ralph-loop.jpg`), resolved against `public/images/blog/YYYY/MM/DD/`. It's optional — **omit it entirely rather than pointing at an image that doesn't exist yet**, and tell the user what to drop in and where.
+A **bare filename** (`cover: ralph-loop.jpg`), resolved against `public/images/blog/YYYY/MM/DD/`. It's optional — **omit it entirely rather than pointing at an image that doesn't exist yet**. The `post-cover` skill generates an on-brand terminal-theme cover from the finished post; offer it instead of telling the user to make an image by hand.
 
 ### published
 
@@ -94,6 +94,9 @@ Traits you can see in any recent post:
 - **Credit sources inline** with real links, and quote people directly when their phrasing is good.
 - **Headings are plain and descriptive** — "The Context Window Problem", "How the Ralph Loop Works". Not clever, not questions, not listicle bait.
 - **Build from one concrete working example** end to end, rather than sprinkling disconnected snippets.
+- **No em dashes, ever.** Dan strips every "—" from drafts. Restructure into two sentences, or use a comma, colon, or period instead. Hyphens inside compound words (type-safe, real-world) are fine.
+- **Simple language, short sentences.** One idea per sentence. If a sentence has two clauses glued together with a dash or runs past about 25 words, split it. Prefer the plain word over the fancy one.
+- **Define acronyms at first mention.** Spell it out once with the acronym in parens — *"Large Language Models (LLMs)"*, *"Model Context Protocol (MCP)"* — then use the short form everywhere after, including headings. The definition goes at the first mention in the body, not wherever it happens to feel natural mid-draft.
 
 Avoid: "In today's fast-paced world", "Let's dive in", "It's important to note that", breathless adjectives, and paragraphs that restate the heading. If a sentence would survive being deleted, delete it.
 
