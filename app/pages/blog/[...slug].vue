@@ -113,12 +113,22 @@ const jsonLd = computed(() => {
   }
 })
 
-defineOgImage({
-  component: 'Blog',
-  title: data.value?.title || '',
-  description: data.value?.description || '',
-  date: datePublished.value
-})
+// Social cards: a post's real cover is the og:image when it has one. The
+// generated text card is only a fallback for posts without a cover.
+const coverImageUrl = computed(() =>
+  data.value?.meta?.cover
+    ? config.public.urlBase + getImagePath(data.value.meta.date, data.value.meta.cover)
+    : null
+)
+
+if (!coverImageUrl.value) {
+  defineOgImage({
+    component: 'Blog',
+    title: data.value?.title || '',
+    description: data.value?.description || '',
+    date: datePublished.value
+  })
+}
 
 useHead({
   title: data.value?.title,
@@ -135,6 +145,11 @@ useHead({
     { property: 'og:title', content: data.value?.title },
     { property: 'og:description', content: data.value?.description },
     { property: 'og:url', content: canonicalUrl.value },
+    ...(coverImageUrl.value ? [
+      { property: 'og:image', content: coverImageUrl.value },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: coverImageUrl.value },
+    ] : []),
   ],
   script: jsonLd.value ? [
     {
