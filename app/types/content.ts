@@ -9,7 +9,7 @@ export interface BlogPost {
     slug?: string
     date: string
     updatedOn?: string
-    published: boolean
+    published?: boolean
     tags?: string[]
     author?: string
     cover?: string
@@ -69,27 +69,6 @@ export interface PaginatedResults<T> {
   totalPages: number
   currentPage: number
   totalPosts?: number
-}
-
-// Type-safe data fetching return types
-export interface BlogDataComposable {
-  useAllBlogPosts: () => ReturnType<typeof useAsyncData<BlogPost[]>>
-  useLatestArticles: (limit?: number) => ReturnType<typeof useAsyncData<BlogPost[]>>
-  usePaginatedBlogPosts: (
-    page: Ref<number>,
-    limit: Ref<number>,
-    tag?: Ref<string | undefined>,
-    firstPageLimit?: Ref<number>
-  ) => ReturnType<typeof useAsyncData<PaginatedResults<BlogPost>>>
-  useBlogPost: (slug: string) => ReturnType<typeof useAsyncData<BlogPost>>
-  useAllTags: () => ReturnType<typeof useAsyncData<{ name: string; count: number }[]>>
-  useSeriesPosts: (series: string) => ReturnType<typeof useAsyncData<{ slug: string; title: string }[]>>
-}
-
-export interface NewsletterDataComposable {
-  useAllNewsletterPosts: () => ReturnType<typeof useAsyncData<NewsletterPost[]>>
-  useLatestNewsletterPosts: (limit?: number) => ReturnType<typeof useAsyncData<NewsletterPost[]>>
-  useNewsletterPost: (slug: string) => ReturnType<typeof useAsyncData<NewsletterPost>>
 }
 
 // Search data type for components

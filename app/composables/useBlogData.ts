@@ -1,5 +1,5 @@
 // Enhanced data fetching composables using Nuxt 4 features
-import type { BlogPost, PaginatedResults, BlogDataComposable } from '~/types/content'
+import type { BlogPost, PaginatedResults } from '~/types/content'
 
 // Helper function to clip description to 100 words
 const clipToWords = (description: string, wordLimit: number = 50): string => {
@@ -10,7 +10,7 @@ const clipToWords = (description: string, wordLimit: number = 50): string => {
   return words.slice(0, wordLimit).join(' ') + '...'
 }
 
-export const useBlogData = (): BlogDataComposable => {
+export const useBlogData = () => {
 
   // Shared blog posts data with reactive caching
   const useAllBlogPosts = () => {
@@ -22,8 +22,8 @@ export const useBlogData = (): BlogDataComposable => {
           .all()
 
         return allPosts.map((post: any): BlogPost => ({
-          _id: post._id || '',
-          path: post._path || post.path,
+          _id: post.id || '',
+          path: post.path,
           title: post.title || '',
           description: post.description,
           meta: {
@@ -68,8 +68,8 @@ export const useBlogData = (): BlogDataComposable => {
           .all()
 
         return posts.map((post: any): BlogPost => ({
-          _id: post._id || '',
-          path: post._path || post.path,
+          _id: post.id || '',
+          path: post.path,
           title: post.title || '',
           description: post.description,
           meta: {
@@ -170,18 +170,17 @@ export const useBlogData = (): BlogDataComposable => {
             .all()
         }
 
-        if (posts.length === 0) {
+        const post = posts[0]
+        if (!post) {
           throw createError({
             statusCode: 404,
             statusMessage: 'Post not found'
           })
         }
 
-        const post = posts[0]
-
         return {
-          _id: post._id || '',
-          path: post._path || post.path,
+          _id: post.id,
+          path: post.path,
           title: post.title || '',
           description: post.description,
           meta: {

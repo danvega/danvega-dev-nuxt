@@ -1,7 +1,7 @@
 // Enhanced newsletter data fetching with Nuxt 4 features
-import type { NewsletterPost, NewsletterDataComposable } from '~/types/content'
+import type { NewsletterPost } from '~/types/content'
 
-export const useNewsletterData = (): NewsletterDataComposable => {
+export const useNewsletterData = () => {
 
   // Shared newsletter posts data
   const useAllNewsletterPosts = () => {
@@ -12,8 +12,8 @@ export const useNewsletterData = (): NewsletterDataComposable => {
           .all()
 
         return allPosts.map((post: any): NewsletterPost => ({
-          _id: post._id || '',
-          path: post._path || post.path,
+          _id: post.id || '',
+          path: post.path,
           title: post.title || '',
           description: post.description,
           meta: {
@@ -45,8 +45,8 @@ export const useNewsletterData = (): NewsletterDataComposable => {
           .all()
 
         return allPosts.map((post: any): NewsletterPost => ({
-          _id: post._id || '',
-          path: post._path || post.path,
+          _id: post.id || '',
+          path: post.path,
           title: post.title || '',
           description: post.description,
           meta: {
