@@ -1,9 +1,12 @@
 import * as Sentry from '@sentry/vue'
 
+// Error monitoring only. Replay, tracing, and console-log forwarding were
+// removed on purpose: this is a content site, the stack trace is enough,
+// and dropping them keeps the client bundle small.
 export default defineNuxtPlugin((nuxtApp) => {
-    const router = useRouter()
     const { public: { sentry } } = useRuntimeConfig()
-    if (!sentry.dsn) {
+    // Skip placeholder values like "your-sentry-dsn" from .env templates.
+    if (!sentry.dsn?.startsWith('https://')) {
         return
     }
 
@@ -33,24 +36,6 @@ export default defineNuxtPlugin((nuxtApp) => {
                 'zp_token is not defined',
                 'crusoe is not defined',
             ],
-            enableLogs:true,
-            integrations: [
-                Sentry.consoleLoggingIntegration({ levels: ["log", "warn", "error"] }),
-                Sentry.replayIntegration({
-                    maskAllText: true,
-                    blockAllMedia: true,
-                }),
-                Sentry.browserTracingIntegration({
-                    router,
-                    routeLabel: 'path',
-                }),
-            ],
-            // Optimized for production performance
-            tracesSampleRate: sentry.environment === 'production' ? 0.05 : 0.2, // Reduced for prod
-            // Set `tracePropagationTargets` to control for which URLs distributed tracing should be enabled
-            tracePropagationTargets: ['localhost', 'https://danvega.dev'],
-            replaysSessionSampleRate: 0.1,
-            replaysOnErrorSampleRate: 1.0,
         })
     })
 })
