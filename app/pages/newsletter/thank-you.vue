@@ -3,7 +3,7 @@
 const route = useRoute();
 const showSuccessMessage = ref(false);
 
-if(route.query.success) {
+if(route.query['success']) {
   showSuccessMessage.value = true;
 }
 </script>

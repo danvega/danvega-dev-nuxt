@@ -2,7 +2,7 @@
 
 const emit = defineEmits(['showSearchDialog']);
 
-const toggleTheme = (newTheme: Theme) => {
+const toggleTheme = (newTheme: 'light' | 'dark') => {
   useColorMode().preference = newTheme;
 }
 </script>

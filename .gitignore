@@ -28,3 +28,4 @@ server/api/feed/data.ts
 .env.*
 !.env.example
 /.claude/launch.json
+*.tsbuildinfo

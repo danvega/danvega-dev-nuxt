@@ -11,7 +11,7 @@ const props = defineProps({
 const firstLimit = computed(() => props.firstPageLimit ?? props.limit);
 
 const route = useRoute();
-const tag = route.query.tag;
+const tag = route.query['tag'];
 
 const prevLink = () => {
   let link = "/blog";

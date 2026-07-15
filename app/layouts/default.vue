@@ -58,11 +58,13 @@ async function showSearchDialog() {
 const keys = useMagicKeys()
 const CmdK = keys['Meta+K']
 
-watch(CmdK, (v) => {
-  if (v) {
-    showSearchDialog()
-  }
-})
+if (CmdK) {
+  watch(CmdK, (v) => {
+    if (v) {
+      showSearchDialog()
+    }
+  })
+}
 </script>
 
 <template>

@@ -23,7 +23,7 @@ const relatedPosts = computed(() => {
     .slice(0, 3)
 })
 
-const formatDate = (date: string) => useDateFormat(date, 'MMMM D, YYYY').value
+const formatDate = (date?: string) => date ? useDateFormat(date, 'MMMM D, YYYY').value : ''
 </script>
 
 <template>

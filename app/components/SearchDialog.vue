@@ -2,10 +2,11 @@
 import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
 import {Combobox, ComboboxInput, ComboboxOptions, ComboboxOption, Dialog, DialogPanel, TransitionChild, TransitionRoot,} from '@headlessui/vue'
 import {useGetSlugFromPath} from "~/composables/pathUtils";
+import type { SearchResult } from "~/types/content";
 
 const { getSlugFromPath } = useGetSlugFromPath();
 const emit = defineEmits(['closeSearchDialog']);
-const { posts = [], showSearchDialog = false } = defineProps<{posts?: Array, showSearchDialog?: boolean }>()
+const { posts = [], showSearchDialog = false } = defineProps<{posts?: SearchResult[], showSearchDialog?: boolean }>()
 const isOpen = ref( false )
 const query = ref('')
 const filteredPosts = computed(() =>
@@ -20,7 +21,7 @@ watch(() => showSearchDialog, () => {
     setIsOpen(true);
 });
 
-function setIsOpen(value) {
+function setIsOpen(value: boolean) {
   isOpen.value = value;
   emit('closeSearchDialog')
 }
@@ -30,7 +31,7 @@ function onAfterLeave() {
   setIsOpen(false);
 }
 
-function onSelect(post) {
+function onSelect(post: SearchResult) {
   if (!post._path) {
     console.error('Post missing _path property:', post)
     return
@@ -63,7 +64,7 @@ function onSelect(post) {
               </div>
 
               <ComboboxOptions v-if="filteredPosts.length > 0" static class="max-h-72 scroll-py-2 overflow-y-auto py-2 text-sm text-gray-800">
-                <ComboboxOption v-for="post in filteredPosts" :key="post.id" :value="post" as="template" v-slot="{ active }">
+                <ComboboxOption v-for="post in filteredPosts" :key="post._path" :value="post" as="template" v-slot="{ active }">
                   <li :class="['cursor-default select-none px-4 py-2', active && 'bg-blue-600 text-white']">
                     {{ post.title }}
                   </li>

@@ -5,7 +5,8 @@ import {useDateFormat} from "@vueuse/core";
 const { useLatestArticles } = useBlogData()
 const { data: articles, error } = await useLatestArticles(3)
 
-const formatDatePublished = (date:string) => {
+const formatDatePublished = (date?: string) => {
+  if (!date) return '';
   const formatted = useDateFormat(date, "MMMM D, YYYY");
   return formatted.value;
 }
@@ -26,11 +27,11 @@ const formatDatePublished = (date:string) => {
             <span class="absolute -inset-x-4 -inset-y-4 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
             <span class="relative z-10">{{ post.title }}</span></a>
         </h3>
-        <time class="relative z-10 order-first mb-2 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5" :dateTime="post.meta.date">
+        <time class="relative z-10 order-first mb-2 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5" :dateTime="post.meta?.date">
           <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
             <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
           </span>
-          {{ formatDatePublished(post.meta.date) }}
+          {{ formatDatePublished(post.meta?.date) }}
           <span v-if="post.readingTime" class="ml-2">&middot; {{ post.readingTime.text }}</span>
         </time>
         <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2">{{ post.meta?.shortDesc != null ? post.meta?.shortDesc : post.description }}</p>

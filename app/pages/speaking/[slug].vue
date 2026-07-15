@@ -1,16 +1,20 @@
 <script setup lang="ts">
 const route = useRoute()
-const slug = route.params.slug as string
+const slug = route.params['slug'] as string
 
 const { useSpeakingPost } = useSpeakingData()
-const { data: talk, error } = await useSpeakingPost(slug)
+const { data: talkData, error } = await useSpeakingPost(slug)
 
-if (error.value || !talk.value) {
+if (error.value || !talkData.value) {
   throw createError({
     statusCode: 404,
     statusMessage: 'Talk not found'
   })
 }
+
+// Non-null view of the talk for the template; the guard above already
+// threw for the missing case, but that doesn't narrow the ref's type.
+const talk = computed(() => talkData.value!)
 
 const formattedDate = computed(() => {
   if (!talk.value?.date) return ''
@@ -31,8 +35,7 @@ useHead({
   ]
 })
 
-defineOgImage({
-  component: 'Speaking',
+defineOgImageComponent('Speaking', {
   title: talk.value.title,
   conference: talk.value.conference,
   date: formattedDate.value,

@@ -1,5 +1,5 @@
 <script lang="ts" setup="" xmlns="http://www.w3.org/1999/html">
-import {useDateFormat} from "@vueuse/core/index";
+import {useDateFormat} from "@vueuse/core";
 
 useHead({
   title: 'Dan Vega - Newsletter',
@@ -13,15 +13,16 @@ useHead({
 const { useLatestNewsletterPosts } = useNewsletterData()
 const { data: news } = await useLatestNewsletterPosts(10)
 
-const extractDateFromPath = (path: string) => {
+const extractDateFromPath = (path?: string) => {
   const match = path?.match(/\/newsletter\/(\d{4})\/(\d{2})\/(\d{2})\//)
   if (match) {
     return `${match[1]}-${match[2]}-${match[3]}`
   }
-  return null
+  return undefined
 }
 
-const formatDatePublished = (date: string) => {
+const formatDatePublished = (date?: string) => {
+  if (!date) return '';
   const formatted = useDateFormat(date, "MMMM D, YYYY");
   return formatted.value;
 }

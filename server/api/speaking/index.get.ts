@@ -4,7 +4,7 @@ export default defineEventHandler(async (event) => {
   const query = getQuery(event)
 
   // Return only upcoming events if requested
-  if (query.upcoming === 'true') {
+  if (query['upcoming'] === 'true') {
     const upcomingEvents = events
       .filter((event) => {
         const eventDate = new Date(event.startDate)

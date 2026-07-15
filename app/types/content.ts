@@ -21,7 +21,7 @@ export interface BlogPost {
   // omit it and expose `readingTime` instead, so the parsed bodies of every
   // post never reach the client payload.
   body?: {
-    children: any[]
+    children?: any[]
     toc?: {
       title: string
       depth: number
@@ -50,7 +50,7 @@ export interface NewsletterPost {
     // Newsletter posts don't have published field
   }
   body?: {
-    children: any[]
+    children?: any[]
     toc?: {
       title: string
       depth: number

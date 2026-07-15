@@ -1,4 +1,9 @@
 // UI-related types
+export interface NavItem {
+  name: string
+  link: string
+}
+
 export interface Photo {
   id: number
   width: number

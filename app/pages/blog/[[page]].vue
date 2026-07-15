@@ -14,14 +14,17 @@ useHead({
 });
 
 const route = useRoute();
-const page = ref(route.params.page ? parseInt(route.params.page) : 1);
+const rawPage = route.params['page'];
+const pageParam = Array.isArray(rawPage) ? rawPage[0] : rawPage;
+const page = ref(pageParam ? parseInt(pageParam) : 1);
 // Page 1 shows a featured hero + 9 grid posts; later pages show a full 3x3 grid
 const limit = ref(9);
 const firstPageLimit = ref(10);
 
-const searchTag = computed(() =>
-    Array.isArray(route.query.tag) ? route.query.tag[0] : route.query.tag
-);
+const searchTag = computed(() => {
+  const tag = route.query['tag'];
+  return (Array.isArray(tag) ? tag[0] : tag) ?? undefined;
+});
 
 // Use enhanced data fetching with reactive keys and automatic caching
 const { usePaginatedBlogPosts } = useBlogData()
@@ -71,7 +74,7 @@ if(posts.value?.length === 0 && searchTag.value) {
     <div class="mt-16 sm:mt-20">
       <!-- Page 1: Featured hero + grid -->
       <template v-if="page === 1 && posts.length > 0">
-        <BlogFeaturedHero :post="posts[0]" />
+        <BlogFeaturedHero :post="posts[0]!" />
         <div v-if="posts.length > 1" class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <BlogThumbnailCard
             v-for="post in posts.slice(1)"

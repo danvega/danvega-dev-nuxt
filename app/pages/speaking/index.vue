@@ -17,7 +17,7 @@ const upcomingEvents = events
       cutoff.setDate(cutoff.getDate() - 3); // Keep events for 3 days after they end
       return event.startDate && endDate >= cutoff;
     })
-    .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+    .sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
 
 // Stats derived from the full event history
 const cityCount = new Set(events.map((e) => e.location)).size;

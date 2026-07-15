@@ -1,5 +1,6 @@
 <script  lang="ts" setup="">
 import NavigationButtons from "~/components/NavigationButtons.vue";
+import type { NavItem } from "~/types/ui";
 
 const emit = defineEmits(['showSearchDialog']);
 

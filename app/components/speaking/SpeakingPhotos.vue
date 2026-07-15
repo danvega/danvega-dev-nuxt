@@ -12,6 +12,10 @@ const props = defineProps<{
 
 const { data: photos } = await useFetch<Photo[]>(`/api/speaking/${props.slug}/photos`)
 
+// Narrowed accessor for the single-photo layout; photos[0] alone doesn't
+// satisfy noUncheckedIndexedAccess even behind the length check.
+const firstPhoto = computed(() => photos.value?.[0])
+
 const lightboxPhoto = ref<Photo | null>(null)
 
 function openLightbox(photo: Photo) {
@@ -44,14 +48,14 @@ onUnmounted(() => {
     </h2>
 
     <!-- Single photo -->
-    <div v-if="photos.length === 1" class="mt-8">
+    <div v-if="photos.length === 1 && firstPhoto" class="mt-8">
       <button
         class="overflow-hidden rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-        @click="openLightbox(photos[0])"
+        @click="openLightbox(firstPhoto)"
       >
         <NuxtImg
-          :src="photos[0].src"
-          :alt="photos[0].alt"
+          :src="firstPhoto.src"
+          :alt="firstPhoto.alt"
           format="webp"
           loading="lazy"
           sizes="sm:100vw md:768px"

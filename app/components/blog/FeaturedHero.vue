@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import { useDateFormat } from "@vueuse/core/index";
+import { useDateFormat } from "@vueuse/core";
+import type { BlogPost } from "~/types/content";
 
 const props = defineProps({
-  post: { type: Object as PropType<ParsedContent>, required: true }
+  post: { type: Object as PropType<BlogPost>, required: true }
 });
 
-const formatDatePublished = (date: string) => {
-  return useDateFormat(date, "MMMM D, YYYY").value;
+const formatDatePublished = (date?: string) => {
+  return date ? useDateFormat(date, "MMMM D, YYYY").value : '';
 };
 
 const readingTime = computed(() => {
@@ -15,14 +16,13 @@ const readingTime = computed(() => {
   return useReadingTime(props.post.body);
 });
 
-const getImagePath = (date: string, cover: string) => {
-  if (cover) {
-    const createdOn = new Date(date);
-    const year = createdOn.getFullYear();
-    const month = `${createdOn.getMonth() + 1 < 10 ? '0' : ''}${createdOn.getMonth() + 1}`;
-    const day = `${createdOn.getDate() < 10 ? '0' : ''}${createdOn.getDate()}`;
-    return `/images/blog/${year}/${month}/${day}/${cover.replace('./', '')}`;
-  }
+const getImagePath = (date?: string, cover?: string) => {
+  if (!date || !cover) return undefined;
+  const createdOn = new Date(date);
+  const year = createdOn.getFullYear();
+  const month = `${createdOn.getMonth() + 1 < 10 ? '0' : ''}${createdOn.getMonth() + 1}`;
+  const day = `${createdOn.getDate() < 10 ? '0' : ''}${createdOn.getDate()}`;
+  return `/images/blog/${year}/${month}/${day}/${cover.replace('./', '')}`;
 };
 
 const primaryTag = computed(() => {

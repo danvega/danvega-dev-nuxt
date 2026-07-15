@@ -41,7 +41,7 @@ const EPISODES_PER_SHOW = 3
 function extractTag(xml: string, tag: string): string {
   const match = xml.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`))
   if (!match) return ''
-  return match[1].replace(/^<!\[CDATA\[([\s\S]*?)\]\]>$/, '$1').trim()
+  return (match[1] ?? '').replace(/^<!\[CDATA\[([\s\S]*?)\]\]>$/, '$1').trim()
 }
 
 function decodeEntities(text: string): string {
@@ -75,7 +75,7 @@ function formatDuration(raw: string): string {
 }
 
 function parseFeed(xml: string, config: FeedConfig): PodcastShowFeed {
-  const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1])
+  const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1] ?? '')
 
   const episodes: PodcastEpisode[] = items.slice(0, EPISODES_PER_SHOW).map((item) => {
     const title = decodeEntities(extractTag(item, 'title'))

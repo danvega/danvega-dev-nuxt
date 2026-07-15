@@ -14,7 +14,7 @@ function updateRandomPhotos() {
   randomPhotos.value = getRandomPhotos(photos, 5);
 }
 
-let intervalId: number;
+let intervalId: ReturnType<typeof setInterval>;
 
 onMounted(() => {
   updateRandomPhotos(); // Initial set of random photos
