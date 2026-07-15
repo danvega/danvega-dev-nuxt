@@ -245,7 +245,7 @@ useHead({
     </section>
 
     <!-- Want me on your show? -->
-    <div class="mt-24 mb-16 rounded-lg bg-blue-50 dark:bg-blue-950/30 p-6 border border-blue-200 dark:border-blue-800">
+    <div class="mt-24 rounded-lg bg-blue-50 dark:bg-blue-950/30 p-6 border border-blue-200 dark:border-blue-800">
       <p class="text-sm text-blue-900 dark:text-blue-300">
         <strong>Want me on your show?</strong> I love talking about Java, Spring, AI for Java developers, and career
         growth. Reach out on <a href="https://twitter.com/therealdanvega" class="underline hover:no-underline">Twitter</a>
