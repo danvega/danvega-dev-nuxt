@@ -70,14 +70,15 @@ export default function typographyStyles({ theme }: PluginUtils) {
 
                 // Base
                 color: 'var(--tw-prose-body)',
-                lineHeight: theme('lineHeight.7'),
+                fontSize: theme('fontSize.lg')[0],
+                lineHeight: theme('lineHeight.8'),
                 '> *': {
                     marginTop: theme('spacing.10'),
                     marginBottom: theme('spacing.10'),
                 },
                 p: {
-                    marginTop: theme('spacing.2'),
-                    marginBottom: theme('spacing.2'),
+                    marginTop: theme('spacing.6'),
+                    marginBottom: theme('spacing.6'),
                 },
 
                 // Headings
@@ -86,15 +87,17 @@ export default function typographyStyles({ theme }: PluginUtils) {
                     fontWeight: theme('fontWeight.semibold'),
                 },
                 h2: {
-                    fontSize: theme('fontSize.xl')[0],
-                    lineHeight: theme('lineHeight.7'),
-                    marginTop: theme('spacing.12'),
-                    marginBottom: theme('spacing.4'),
+                    fontSize: theme('fontSize.3xl')[0],
+                    fontWeight: theme('fontWeight.bold'),
+                    letterSpacing: theme('letterSpacing.tight'),
+                    lineHeight: theme('lineHeight.tight'),
+                    marginTop: theme('spacing.14'),
+                    marginBottom: theme('spacing.5'),
                 },
                 h3: {
-                    fontSize: theme('fontSize.base')[0],
-                    lineHeight: theme('lineHeight.7'),
-                    marginTop: theme('spacing.8'),
+                    fontSize: theme('fontSize.xl')[0],
+                    lineHeight: theme('lineHeight.snug'),
+                    marginTop: theme('spacing.10'),
                     marginBottom: theme('spacing.4'),
                 },
                 ':is(h2, h3) + *': {
@@ -120,6 +123,12 @@ export default function typographyStyles({ theme }: PluginUtils) {
                     color: 'var(--tw-prose-links-hover)',
                     textDecorationColor: 'var(--tw-prose-underline-hover)',
                 },
+                // Nuxt Content wraps headings in anchor links; keep them styled as headings
+                ':is(h2, h3) a, :is(h2, h3) a:hover': {
+                    color: 'inherit',
+                    fontWeight: 'inherit',
+                    textDecoration: 'none',
+                },
                 strong: {
                     color: 'var(--tw-prose-bold)',
                     fontWeight: theme('fontWeight.semibold'),
@@ -127,7 +136,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
                 code: {
                     display: 'inline-block',
                     color: 'var(--tw-prose-code)',
-                    fontSize: theme('fontSize.sm')[0],
+                    fontSize: '0.875em',
                     fontWeight: theme('fontWeight.semibold'),
                     backgroundColor: 'var(--tw-prose-code-bg)',
                     borderRadius: theme('borderRadius.lg'),
@@ -172,8 +181,8 @@ export default function typographyStyles({ theme }: PluginUtils) {
                     paddingLeft: theme('spacing.6'),
                 },
                 li: {
-                    marginTop: theme('spacing.2'),
-                    marginBottom: theme('spacing.2'),
+                    marginTop: theme('spacing.3'),
+                    marginBottom: theme('spacing.3'),
                     paddingLeft: theme('spacing[3.5]'),
                 },
                 'li::marker': {
