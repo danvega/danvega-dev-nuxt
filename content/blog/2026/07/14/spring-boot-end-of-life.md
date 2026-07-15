@@ -19,7 +19,7 @@ keywords:
   - tanzu spring
 date: 2026-07-14T13:00:00.000Z
 published: true
-cover: spring-boot-end-of-life.png
+cover: spring-boot-end-of-life-alt.png
 ---
 
 If you're running Spring Boot 3.5 in production, you stopped getting free security patches last month. Not "soon." Last month.
