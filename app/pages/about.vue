@@ -50,8 +50,8 @@ const sections = [
           alt="Dan Vega"/>
       </div>
       <div>
-        <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400">About</p>
-        <h1 class="mt-3 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl lg:text-6xl">
+        <p class="font-mono text-sm text-green-600 dark:text-green-400">$ whoami --verbose</p>
+        <h1 class="mt-4 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           Hello 👋🏻 My Name is Dan
         </h1>
         <p class="mt-4 text-lg text-zinc-600 dark:text-zinc-400">

@@ -36,7 +36,7 @@ function dateParts(dateString: string) {
   <Container class="mt-16 sm:mt-32">
     <header class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400">Speaking</p>
+        <p class="font-mono text-sm text-green-600 dark:text-green-400">$ ls ~/talks</p>
         <h1 class="mt-4 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
           Hi, I'm Dan. I help developers make sense of Spring, modern Java, and AI live on stage.
         </h1>
