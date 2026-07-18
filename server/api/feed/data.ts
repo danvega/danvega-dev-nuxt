@@ -1,6 +1,32 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Self-Correcting Structured Output in Spring AI 2.0",
+    "description": "Learn how Spring AI 2.0 validates LLM JSON against your schema and automatically retries failures with self-correcting structured output. A beginner guide.",
+    "date": "2026-07-17T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/self-correcting-structured-output-spring-ai",
+    "slug": "self-correcting-structured-output-spring-ai",
+    "tags": [
+      "Spring AI",
+      "Spring Boot",
+      "Java"
+    ]
+  },
+  {
+    "title": "Self-Correcting Structured Output in Spring AI 2.0",
+    "description": "Learn how Spring AI 2.0 validates LLM JSON against your schema and automatically retries failures with self-correcting structured output. A beginner guide.",
+    "date": "2026-07-17",
+    "author": "Dan Vega",
+    "_path": "/blog/self-correcting-structured-output",
+    "slug": "self-correcting-structured-output",
+    "tags": [
+      "Spring AI",
+      "Spring Boot",
+      "Java"
+    ]
+  },
+  {
     "title": "Can You Use Java for AI? Why Java Is Better Positioned Than You Think",
     "description": "Can you use Java for AI? Yes. For building real AI applications it might be the better choice. Why the JVM, Spring AI, and your existing team are enough.",
     "date": "2026-07-15T09:00:00.000Z",
@@ -592,31 +618,6 @@ export const rssData = [
       "AI",
       "MCP",
       "Java"
-    ]
-  },
-  {
-    "title": "Spring Boot 3.x Features: A Complete Guide (3.0 to 3.5)",
-    "description": "Every major Spring Boot 3.x feature from 3.0 to 3.5—Java 17, GraalVM native images, virtual threads, Docker Compose, Testcontainers, and structured logging.",
-    "date": "2025-09-17T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-3-features",
-    "slug": "spring-boot-3-features",
-    "tags": [
-      "Spring Boot",
-      "Java",
-      "Spring Framework"
-    ]
-  },
-  {
-    "title": "JDK 24's Major Improvement: Virtual Threads Without Pinning",
-    "description": "Discover JDK 24's breakthrough enhancement that eliminates virtual thread pinning with synchronized blocks and methods. This comprehensive guide explores how this change revolutionizes Java concurrency, dramatically improving scalability for Spring Boot applications with legacy synchronized code. You'll learn about the technical details of thread pinning, see practical performance comparisons, and get hands-on examples showing how to leverage this feature in real-world applications for maximum throughput and efficiency.",
-    "date": "2025-04-09T17:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/jdk-24-virtual-threads-without-pinning",
-    "slug": "jdk-24-virtual-threads-without-pinning",
-    "tags": [
-      "Java",
-      "Spring"
     ]
   }
 ] as const
