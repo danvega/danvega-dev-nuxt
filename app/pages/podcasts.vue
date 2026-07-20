@@ -66,6 +66,14 @@ interface GuestAppearance {
 
 const guestAppearances: GuestAppearance[] = [
   {
+    show: "Booting Up",
+    host: "Roxy Rodriguez-Becker",
+    title: "What's Actually Happening in Java Right Now",
+    dateLabel: "Jul 2026",
+    description: "Roxy from Torc sits down with me and DaShaun Carter to break down what is changing in Java, from Spring AI to Spring Boot 4.",
+    url: "https://www.youtube.com/watch?v=QzufJOJi0jk"
+  },
+  {
     show: "CF Weekly",
     host: "Nick Kuhn",
     title: "Gotta Catch 'Em All: DevNexus 2026 Recap with Spring's Finest",
