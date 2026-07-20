@@ -17,7 +17,7 @@ keywords:
   - video production workflow
 date: 2026-07-18T09:00:00.000Z
 updatedOn: 2026-07-20T09:00:00.000Z
-cover: content-creation-workflow.png
+cover: content-creation-workflow-blueprint.png
 published: true
 ---
 

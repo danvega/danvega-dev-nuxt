@@ -18,7 +18,7 @@ keywords:
   - Java AI
 date: 2026-07-15T09:00:00.000Z
 published: true
-cover: can-you-use-java-for-ai.png
+cover: can-you-use-java-for-ai-editorial.png
 ---
 
 Can you use Java for AI? Yes. If you're building AI into real applications rather than training models, Java might be the better choice. The conversation around AI has been dominated by Python for so long that many developers assume the JVM isn't even in the running. I think that assumption is about two years out of date.
