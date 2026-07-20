@@ -16,7 +16,7 @@ export const rssData = [
   {
     "title": "Self-Correcting Structured Output in Spring AI 2.0",
     "description": "Learn how Spring AI 2.0 validates LLM JSON against your schema and automatically retries failures with self-correcting structured output. A beginner guide.",
-    "date": "2026-07-17",
+    "date": "2026-07-17T09:00:00.000Z",
     "author": "Dan Vega",
     "_path": "/blog/self-correcting-structured-output",
     "slug": "self-correcting-structured-output",

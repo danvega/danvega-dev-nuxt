@@ -19,9 +19,9 @@ const readingTime = computed(() => {
 const getImagePath = (date?: string, cover?: string) => {
   if (!date || !cover) return undefined;
   const createdOn = new Date(date);
-  const year = createdOn.getFullYear();
-  const month = `${createdOn.getMonth() + 1 < 10 ? '0' : ''}${createdOn.getMonth() + 1}`;
-  const day = `${createdOn.getDate() < 10 ? '0' : ''}${createdOn.getDate()}`;
+  const year = createdOn.getUTCFullYear();
+  const month = `${createdOn.getUTCMonth() + 1 < 10 ? '0' : ''}${createdOn.getUTCMonth() + 1}`;
+  const day = `${createdOn.getUTCDate() < 10 ? '0' : ''}${createdOn.getUTCDate()}`;
   return `/images/blog/${year}/${month}/${day}/${cover.replace('./', '')}`;
 };
 
