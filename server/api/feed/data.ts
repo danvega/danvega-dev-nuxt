@@ -1,16 +1,16 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
-    "title": "Self-Correcting Structured Output in Spring AI 2.0",
-    "description": "Learn how Spring AI 2.0 validates LLM JSON against your schema and automatically retries failures with self-correcting structured output. A beginner guide.",
-    "date": "2026-07-17T09:00:00.000Z",
+    "title": "My Content Creation Workflow: 10 Stages From Idea to Published",
+    "description": "My complete 10-stage content creation workflow for YouTube: ideation, packaging, AI rough cuts, repurposing videos into blog posts, Shorts, and a newsletter.",
+    "date": "2026-07-18T09:00:00.000Z",
     "author": "Dan Vega",
-    "_path": "/blog/self-correcting-structured-output-spring-ai",
-    "slug": "self-correcting-structured-output-spring-ai",
+    "_path": "/blog/content-creation-workflow",
+    "slug": "content-creation-workflow",
     "tags": [
-      "Spring AI",
-      "Spring Boot",
-      "Java"
+      "YouTube",
+      "Blogging",
+      "AI"
     ]
   },
   {

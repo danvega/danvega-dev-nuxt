@@ -372,6 +372,14 @@ courses.danvega.dev /courses 301
 /blog/2026/07/07/ui-dot-sh-agent-skills-for-building-beautiful-uis /blog/ui-dot-sh-agent-skills-for-building-beautiful-uis 301
 /blog/2026/07/08/spring-ai-custom-advisors-tool-logging-token-counter /blog/spring-ai-custom-advisors-tool-logging-token-counter 301
 /blog/2026/07/09/spring-ai-tool-search /blog/spring-ai-tool-search 301
+/blog/2026/07/14/spring-boot-end-of-life /blog/spring-boot-end-of-life 301
+/blog/2026/07/15/can-you-use-java-for-ai /blog/can-you-use-java-for-ai 301
+/blog/2026/07/17/self-correcting-structured-output /blog/self-correcting-structured-output 301
+/blog/2026/07/18/content-creation-workflow /blog/content-creation-workflow 301
+
+# duplicate post cleanup (2026-07-20): -spring-ai slug was an accidental duplicate
+/blog/self-correcting-structured-output-spring-ai /blog/self-correcting-structured-output 301
+/blog/2026/07/17/self-correcting-structured-output-spring-ai /blog/self-correcting-structured-output 301
 
 # kill-process-on-port consolidation (2026-07-14): old Windows + Mac posts -> new comprehensive post
 /blog/windows-kill-process-by-port-number /blog/kill-process-on-port 301
