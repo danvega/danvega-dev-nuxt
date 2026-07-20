@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<!--
+  STYLE: bauhaus — geometric poster: cream ground, red circle, blue bar,
+  black diagonal, giant uppercase type. The most "art print" of the library.
+  USE WHEN: milestone posts, retrospectives, anniversary/celebration posts,
+  or any post that deserves a poster more than an explanation.
+
+  Sections to customize per post:
+    1. .vert    — vertical spine text: site · month year
+    2. .kicker  — underlined category line, · separated
+    3. h1       — uppercase headline, 2 lines max; wrap ONE letter in
+                  <span class="o"> for the red accent letter
+    4. .num     — the big cream number inside the red circle (version, count,
+                  year). If the post has no number, use a single word.
+    5. .facts   — 3 short mono lines, bottom-left
+
+  Gotchas: the shapes are fixed decor; only move them if text collides.
+  Headline works best at 7-9 characters per line (font is 205px).
+  Example content below is from a real post (Embabel 1.0) — replace all of it.
+-->
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --cream: #f2ead8;
+    --ink: #16150f;
+    --red: #d94f2b;
+    --blue: #2456a4;
+    --gold: #e3a92e;
+    --sans: "Helvetica Neue", Inter, -apple-system, sans-serif;
+    --mono: "SF Mono", Menlo, monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--sans);
+    position: relative;
+    overflow: hidden;
+  }
+  .circle {
+    position: absolute;
+    width: 980px; height: 980px; border-radius: 50%;
+    background: var(--red);
+    right: -240px; top: -240px;
+  }
+  .halfmoon {
+    position: absolute;
+    width: 620px; height: 310px;
+    background: var(--gold);
+    border-radius: 310px 310px 0 0;
+    left: 170px; bottom: 150px;
+  }
+  .bar {
+    position: absolute;
+    width: 150px; top: 0; bottom: 0; left: 1050px;
+    background: var(--blue);
+    opacity: 0.92;
+  }
+  .diag {
+    position: absolute;
+    width: 1900px; height: 26px;
+    background: var(--ink);
+    transform: rotate(-24deg);
+    transform-origin: left center;
+    left: 690px; bottom: 210px;
+  }
+  .dotshape {
+    position: absolute; width: 120px; height: 120px; border-radius: 50%;
+    background: var(--ink);
+    right: 480px; bottom: 330px;
+  }
+  .vert {
+    position: absolute;
+    left: 66px; top: 90px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: var(--mono);
+    font-size: 30px; letter-spacing: 0.34em; text-transform: uppercase;
+    color: var(--ink);
+  }
+  .content {
+    position: absolute; left: 190px; top: 170px;
+    max-width: 1450px;
+  }
+  .kicker {
+    display: inline-block;
+    font-family: var(--mono); font-size: 30px; letter-spacing: 0.26em; text-transform: uppercase;
+    border-bottom: 8px solid var(--ink);
+    padding-bottom: 16px;
+    margin-bottom: 60px;
+  }
+  h1 {
+    font-size: 205px; font-weight: 800; text-transform: uppercase;
+    letter-spacing: -0.015em; line-height: 0.95;
+  }
+  h1 .o { color: var(--red); }
+  .num {
+    position: absolute;
+    right: 165px; top: 205px;
+    font-size: 330px; font-weight: 800; letter-spacing: -0.04em;
+    color: var(--cream);
+  }
+  .facts {
+    position: absolute; left: 190px; bottom: 175px;
+    font-family: var(--mono); font-size: 32px; line-height: 2.15;
+    letter-spacing: 0.06em;
+    background: var(--cream);
+    padding: 10px 26px 10px 0;
+  }
+  .facts b { font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="circle"></div>
+  <div class="bar"></div>
+  <div class="halfmoon"></div>
+  <div class="diag"></div>
+  <div class="dotshape"></div>
+  <div class="num">1.0</div>
+  <div class="vert">danvega.dev · july 2026</div>
+  <div class="content">
+    <div class="kicker">AI Agents · JVM · General Availability</div>
+    <h1>Emba<span class="o">b</span>el<br>Is GA</h1>
+  </div>
+  <div class="facts">
+    <b>rod johnson</b> · creator of spring<br>
+    goap planning · deterministic<br>
+    spring ai · java + kotlin
+  </div>
+</body>
+</html>

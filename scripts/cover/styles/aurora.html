@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<!--
+  STYLE: aurora — modern SaaS launch page: dark ground, blurred violet/cyan
+  gradient blobs, glass pills, gradient text on the accent word.
+  USE WHEN: release announcements, AI-topic posts, anything with launch energy.
+
+  Sections to customize per post:
+    1. .pill   — announcement pill: "<who/what> · <status>"
+    2. h1      — headline; wrap the accent word in <span class="grad">
+                 (cyan→violet→pink gradient text)
+    3. .sub    — one plain-English sentence, sentence case
+    4. .glass  — 3 glass chips with ✓ facts
+
+  Gotchas: keep the sub to one line; the gradient word reads best when short
+  (a version number or one word).
+  Example content below is from a real post (Embabel 1.0) — replace all of it.
+-->
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --bg: #0b0a14;
+    --fg: #f5f4fa;
+    --dim: rgba(245, 244, 250, 0.6);
+    --violet: #8b5cf6;
+    --cyan: #22d3ee;
+    --pink: #f472b6;
+    --mono: "SF Mono", Menlo, monospace;
+    --sans: Inter, -apple-system, "Helvetica Neue", sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .blob { position: absolute; border-radius: 50%; filter: blur(160px); opacity: 0.55; }
+  .b1 { width: 1100px; height: 1100px; background: var(--violet); top: -420px; left: -220px; }
+  .b2 { width: 900px; height: 900px; background: var(--cyan); bottom: -380px; right: -160px; opacity: 0.4; }
+  .b3 { width: 700px; height: 700px; background: var(--pink); top: -260px; right: 380px; opacity: 0.3; }
+  .stars {
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(2px 2px at 12% 30%, rgba(255,255,255,0.5), transparent),
+      radial-gradient(2px 2px at 78% 18%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(2px 2px at 30% 80%, rgba(255,255,255,0.35), transparent),
+      radial-gradient(3px 3px at 62% 62%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(2px 2px at 90% 75%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(2px 2px at 45% 12%, rgba(255,255,255,0.35), transparent);
+  }
+  .wrap {
+    position: relative;
+    display: flex; flex-direction: column; align-items: center; gap: 58px;
+    text-align: center;
+    padding: 0 140px;
+  }
+  .pill {
+    font-family: var(--mono); font-size: 32px;
+    color: var(--fg);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 18px 44px;
+    border-radius: 999px;
+    letter-spacing: 0.04em;
+    box-shadow: 0 0 60px rgba(139, 92, 246, 0.35);
+  }
+  .pill .dotp { color: var(--cyan); margin-right: 16px; }
+  h1 {
+    font-size: 172px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.03;
+  }
+  h1 .grad {
+    background: linear-gradient(100deg, var(--cyan) 0%, var(--violet) 55%, var(--pink) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .sub { font-size: 46px; color: var(--dim); font-weight: 500; max-width: 1500px; line-height: 1.5; }
+  .row { display: flex; gap: 30px; }
+  .glass {
+    font-family: var(--mono); font-size: 32px;
+    padding: 22px 42px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    color: var(--fg);
+  }
+  .glass .ok { color: var(--cyan); margin-right: 14px; }
+</style>
+</head>
+<body>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <div class="stars"></div>
+  <div class="wrap">
+    <div class="pill"><span class="dotp">●</span>rod johnson's agent framework · now generally available</div>
+    <h1>Embabel <span class="grad">1.0</span><br>Is Here</h1>
+    <div class="sub">AI agents on the JVM with deterministic planning, built on Spring AI.</div>
+    <div class="row">
+      <div class="glass"><span class="ok">✓</span>spring ai</div>
+      <div class="glass"><span class="ok">✓</span>goap planner</div>
+      <div class="glass"><span class="ok">✓</span>java + kotlin</div>
+    </div>
+  </div>
+</body>
+</html>

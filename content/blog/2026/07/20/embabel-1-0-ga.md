@@ -3,7 +3,7 @@ title: "Embabel 1.0 Is Here: AI Agent Framework for Java Goes GA"
 slug: embabel-1-0-ga
 date: 2026-07-20T09:00:00.000Z
 published: true
-cover: embabel-1-0-ga.png
+cover: embabel-1-0-ga-brutalist.png
 description: "Embabel 1.0 is GA. What Rod Johnson's AI agent framework for the JVM means for Java developers, what changed on the road to 1.0, and how to get started."
 tags:
   - java

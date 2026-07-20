@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<!--
+  STYLE: poster — hype poster: black ground, headline stacked from faint
+  outline to solid, one acid-green payoff line, stamp badge bottom-right.
+  USE WHEN: big announcements, launches, "it finally happened" posts.
+  The headline is the whole cover; use when the title alone carries it.
+
+  Sections to customize per post:
+    1. .meta    — top strip: site / topic (acid accent) / month · year
+    2. .stack   — SAME short phrase in all three ghost/solid rows, then the
+                  payoff row in <span class="acid">. Keep the phrase under
+                  ~11 characters or drop .row font-size (300px) until it fits.
+    3. .bottom  — facts line, · separated
+    4. .tag     — the stamp word (STABLE / SHIPPED / GA / DONE)
+
+  Gotchas: rows are white-space nowrap; check nothing clips at the right edge.
+  Example content below is from a real post (Embabel 1.0) — replace all of it.
+-->
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --fg: #f2f2f2;
+    --acid: #d4ff3f;
+    --sans: Inter, -apple-system, "Helvetica Neue", sans-serif;
+    --mono: "SF Mono", Menlo, monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    position: relative;
+    overflow: hidden;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .stack {
+    display: flex; flex-direction: column;
+    line-height: 0.93;
+    padding-left: 120px;
+  }
+  .row {
+    font-size: 300px; font-weight: 900; text-transform: uppercase; letter-spacing: -0.035em;
+    white-space: nowrap;
+  }
+  .ghost1 {
+    color: transparent;
+    -webkit-text-stroke: 3px rgba(242, 242, 242, 0.28);
+  }
+  .ghost2 {
+    color: transparent;
+    -webkit-text-stroke: 3px rgba(242, 242, 242, 0.14);
+  }
+  .solid { color: var(--fg); }
+  .solid .acid { color: var(--acid); }
+  .meta {
+    position: absolute; top: 100px; left: 124px; right: 124px;
+    display: flex; justify-content: space-between;
+    font-family: var(--mono); font-size: 30px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: rgba(242, 242, 242, 0.6);
+  }
+  .meta .a { color: var(--acid); }
+  .bottom {
+    position: absolute; bottom: 100px; left: 124px; right: 124px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--mono); font-size: 34px;
+    color: rgba(242, 242, 242, 0.75);
+    letter-spacing: 0.06em;
+  }
+  .tag {
+    border: 3px solid var(--acid);
+    color: var(--acid);
+    padding: 16px 36px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+  .grain {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.045) 1px, transparent 1px);
+    background-size: 5px 5px;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+  <div class="meta">
+    <span>danvega.dev</span>
+    <span class="a">ai agents · jvm</span>
+    <span>07 · 2026</span>
+  </div>
+  <div class="stack">
+    <div class="row ghost2">Embabel 1.0</div>
+    <div class="row ghost1">Embabel 1.0</div>
+    <div class="row solid">Embabel 1.0</div>
+    <div class="row solid"><span class="acid">Is GA.</span></div>
+  </div>
+  <div class="bottom">
+    <span>rod johnson · goap · spring ai · java + kotlin</span>
+    <span class="tag">STABLE</span>
+  </div>
+  <div class="grain"></div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<!--
+  STYLE: brutalist — neo-brutalist sticker sheet: yellow ground, thick black
+  borders, hard offset shadows, rotated stickers, marquee strip.
+  USE WHEN: opinion pieces, hot takes, playful posts, "stop doing X" posts.
+  The loudest style in the library; the energy should match the post's tone.
+
+  Sections to customize per post:
+    1. .kicker    — black tag inside the main card
+    2. h1         — uppercase headline; wrap the punch word in
+                    <span class="hl"> (pink block). Keep it to 2-3 words/line.
+    3. .sub       — 2 short mono lines under the headline
+    4. .sticker   — 3 rotated stickers (s1 blue, s2 white, s3 pink); short facts
+    5. .burst     — the circle badge: big number/word + small caption.
+                    Delete if the post has no number; stickers carry it fine.
+    6. .strip     — marquee text; repeat a short phrase with · separators
+
+  Gotchas: headline over ~12 chars per line breaks the card; stickers overlap
+  the card on purpose but keep them off the headline.
+  Example content below is from a real post (Embabel 1.0) — replace all of it.
+-->
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --bg: #ffd43b;
+    --ink: #111111;
+    --paper: #fffef5;
+    --pink: #ff5d8f;
+    --blue: #3a86ff;
+    --mono: "SF Mono", Menlo, monospace;
+    --sans: Inter, -apple-system, "Helvetica Neue", sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; }
+  body {
+    background: var(--bg);
+    background-image: radial-gradient(rgba(17,17,17,0.14) 3px, transparent 3px);
+    background-size: 56px 56px;
+    font-family: var(--sans);
+    color: var(--ink);
+    position: relative;
+    overflow: hidden;
+  }
+  .card {
+    position: absolute;
+    background: var(--paper);
+    border: 7px solid var(--ink);
+    box-shadow: 22px 22px 0 var(--ink);
+  }
+  .main {
+    top: 150px; left: 150px;
+    width: 1650px;
+    padding: 80px 90px 90px;
+  }
+  .kicker {
+    display: inline-block;
+    font-family: var(--mono); font-size: 34px; font-weight: 700;
+    background: var(--ink); color: var(--bg);
+    padding: 14px 28px;
+    margin-bottom: 48px;
+  }
+  h1 {
+    font-size: 168px; font-weight: 900; letter-spacing: -0.03em; line-height: 0.98;
+    text-transform: uppercase;
+  }
+  h1 .hl { background: var(--pink); color: var(--paper); padding: 0 28px; display: inline-block; border: 7px solid var(--ink); }
+  .sub {
+    margin-top: 52px;
+    font-family: var(--mono); font-size: 40px; font-weight: 700; line-height: 1.5;
+  }
+  .sticker {
+    position: absolute;
+    font-family: var(--mono); font-size: 36px; font-weight: 700;
+    border: 6px solid var(--ink);
+    padding: 22px 40px;
+    background: var(--paper);
+    box-shadow: 14px 14px 0 var(--ink);
+  }
+  .s1 { top: 92px; right: 170px; transform: rotate(6deg); background: var(--blue); color: var(--paper); }
+  .s2 { top: 300px; right: 110px; transform: rotate(-4deg); }
+  .s3 { top: 500px; right: 210px; transform: rotate(3deg); background: var(--pink); color: var(--paper); }
+  .strip {
+    position: absolute; left: -40px; right: -40px; bottom: 100px;
+    background: var(--ink); color: var(--bg);
+    font-family: var(--mono); font-size: 44px; font-weight: 700;
+    padding: 30px 0;
+    transform: rotate(-1.6deg);
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+  }
+  .burst {
+    position: absolute; bottom: 240px; right: 190px;
+    width: 330px; height: 330px;
+    background: var(--blue);
+    border: 7px solid var(--ink);
+    border-radius: 50%;
+    box-shadow: 16px 16px 0 var(--ink);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    color: var(--paper);
+    transform: rotate(8deg);
+  }
+  .burst .big { font-size: 110px; font-weight: 900; letter-spacing: -0.03em; }
+  .burst .small { font-family: var(--mono); font-size: 40px; font-weight: 700; margin-top: 4px; }
+</style>
+</head>
+<body>
+  <div class="card main">
+    <div class="kicker">rod johnson's agent framework</div>
+    <h1>Embabel<br>Is <span class="hl">GA</span></h1>
+    <div class="sub">ai agents on the jvm.<br>deterministic planning · spring ai · java + kotlin</div>
+  </div>
+  <div class="sticker s1">spring ai ✓</div>
+  <div class="sticker s2">goap planner ✓</div>
+  <div class="sticker s3">java + kotlin ✓</div>
+  <div class="burst"><div class="big">1.0</div><div class="small">stable</div></div>
+  <div class="strip">&nbsp;· agents on the jvm · goal → plan → act · agents on the jvm · goal → plan → act · agents on the jvm ·</div>
+</body>
+</html>

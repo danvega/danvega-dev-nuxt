@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<!--
+  STYLE: blueprint — engineering drawing on drafting-blue paper.
+  USE WHEN: the post explains architecture, a pipeline, a flow, or any concept
+  that diagrams well as boxes and arrows. The diagram IS the argument.
+
+  Sections to customize per post:
+    1. .kicker      — "FIG. 1 · <subject>" caption line
+    2. h1           — headline; wrap the accent word in <em> (gold)
+    3. .dek         — one mono line of supporting facts, · separated
+    4. .drawing     — the box-and-arrow diagram: 3-4 dashed .node boxes with
+                      .lbl labels, .arrow connectors with .note captions,
+                      final node gets class "solid" (gold outline = the payoff)
+    5. .loop        — optional footnote under the diagram; delete if unused
+    6. .titleblock  — corner title block: project / engineer / rev / date
+
+  Gotchas: keep node text short (1-2 words) or the diagram overflows the frame.
+  Example content below is from a real post (Embabel 1.0) — replace all of it.
+-->
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --bg: #123a6b;
+    --ink: #eaf2ff;
+    --ink-dim: rgba(234, 242, 255, 0.55);
+    --line: rgba(234, 242, 255, 0.28);
+    --line-faint: rgba(234, 242, 255, 0.10);
+    --accent: #ffd166;
+    --mono: "SF Mono", Menlo, monospace;
+    --sans: Inter, -apple-system, "Helvetica Neue", sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; }
+  body {
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(var(--line-faint) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-faint) 1px, transparent 1px),
+      linear-gradient(rgba(234,242,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(234,242,255,0.05) 1px, transparent 1px);
+    background-size: 180px 180px, 180px 180px, 36px 36px, 36px 36px;
+    color: var(--ink);
+    font-family: var(--sans);
+    position: relative;
+    overflow: hidden;
+  }
+  .frame {
+    position: absolute; inset: 50px;
+    border: 3px solid var(--line);
+  }
+  .kicker {
+    position: absolute; top: 110px; left: 130px;
+    font-family: var(--mono); font-size: 34px; letter-spacing: 0.28em;
+    color: var(--ink-dim); text-transform: uppercase;
+  }
+  h1 {
+    position: absolute; top: 185px; left: 124px;
+    font-size: 170px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.02;
+    max-width: 1700px;
+  }
+  h1 em { font-style: normal; color: var(--accent); }
+  .dek {
+    position: absolute; top: 610px; left: 130px;
+    font-family: var(--mono); font-size: 34px; color: var(--ink-dim); letter-spacing: 0.08em;
+  }
+  .drawing {
+    position: absolute; left: 130px; bottom: 420px;
+    display: flex; align-items: center; gap: 0;
+  }
+  .node {
+    border: 3px dashed var(--line);
+    padding: 40px 60px;
+    font-family: var(--mono); font-size: 42px; color: var(--ink);
+    position: relative;
+    background: rgba(234, 242, 255, 0.04);
+  }
+  .node .lbl {
+    position: absolute; top: -46px; left: 0;
+    font-size: 26px; color: var(--ink-dim); letter-spacing: 0.12em;
+  }
+  .node.solid { border-style: solid; border-color: var(--accent); color: var(--accent); }
+  .arrow {
+    width: 160px; height: 3px; background: var(--line); position: relative; margin: 0 6px;
+  }
+  .arrow::after {
+    content: ""; position: absolute; right: -2px; top: -9px;
+    border-left: 22px solid var(--line);
+    border-top: 10px solid transparent; border-bottom: 10px solid transparent;
+  }
+  .arrow .note {
+    position: absolute; top: -44px; width: 240px; left: 50%; transform: translateX(-50%);
+    font-family: var(--mono); font-size: 24px; color: var(--ink-dim); text-align: center;
+  }
+  .loop {
+    position: absolute; left: 130px; bottom: 340px;
+    font-family: var(--mono); font-size: 28px; color: var(--ink-dim); letter-spacing: 0.06em;
+  }
+  .titleblock {
+    position: absolute; right: 50px; bottom: 50px;
+    border: 3px solid var(--line);
+    border-right: none; border-bottom: none;
+    display: grid; grid-template-columns: auto auto;
+    font-family: var(--mono);
+    background: rgba(18, 58, 107, 0.9);
+  }
+  .tb { padding: 20px 36px; border-right: 3px solid var(--line); border-bottom: 3px solid var(--line); }
+  .tb .k { font-size: 22px; color: var(--ink-dim); letter-spacing: 0.18em; text-transform: uppercase; }
+  .tb .v { font-size: 34px; margin-top: 8px; }
+  .tb .v.acc { color: var(--accent); }
+  .corner { position: absolute; width: 26px; height: 26px; border: 3px solid var(--accent); }
+  .c1 { top: 36px; left: 36px; border-right: none; border-bottom: none; }
+  .c2 { top: 36px; right: 36px; border-left: none; border-bottom: none; }
+  .c3 { bottom: 36px; left: 36px; border-right: none; border-top: none; }
+</style>
+</head>
+<body>
+  <div class="frame"></div>
+  <div class="corner c1"></div>
+  <div class="corner c2"></div>
+  <div class="corner c3"></div>
+  <div class="kicker">FIG. 1 · AI AGENT FRAMEWORK FOR THE JVM</div>
+  <h1>Embabel 1.0<br>Is <em>GA</em></h1>
+  <div class="dek">rod johnson · deterministic planning · spring ai · java + kotlin</div>
+  <div class="drawing">
+    <div class="node"><span class="lbl">INPUT</span>goal</div>
+    <div class="arrow"><span class="note">goap</span></div>
+    <div class="node"><span class="lbl">DETERMINISTIC</span>plan</div>
+    <div class="arrow"><span class="note">spring ai</span></div>
+    <div class="node"><span class="lbl">TOOLS</span>act</div>
+    <div class="arrow"><span class="note">replan</span></div>
+    <div class="node solid"><span class="lbl">OUTPUT</span>goal achieved ✓</div>
+  </div>
+  <div class="loop">↺ observe · replan after each action</div>
+  <div class="titleblock">
+    <div class="tb"><div class="k">Project</div><div class="v">embabel-agent</div></div>
+    <div class="tb"><div class="k">Engineer</div><div class="v">rod johnson</div></div>
+    <div class="tb"><div class="k">Rev</div><div class="v acc">1.0.0 · GA</div></div>
+    <div class="tb"><div class="k">Date</div><div class="v">2026-07-20</div></div>
+  </div>
+</body>
+</html>
