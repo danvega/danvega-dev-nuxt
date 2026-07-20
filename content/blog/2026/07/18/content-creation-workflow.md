@@ -16,6 +16,7 @@ keywords:
   - claude code skills
   - video production workflow
 date: 2026-07-18T09:00:00.000Z
+updatedOn: 2026-07-20T09:00:00.000Z
 cover: content-creation-workflow.png
 published: true
 ---
@@ -48,7 +49,9 @@ If I don't, I have a Claude Code skill called `video-ideation` that helps me fig
 
 ### Develop the Idea
 
-This is where a rough topic becomes a real, concrete idea. I have a `develop-idea` skill that researches the topic, validates that people actually want this video, and finds the angle other videos are missing.
+This is where a rough topic becomes a real, concrete idea. I have a `develop-idea` skill that researches the topic, validates that people actually want this video, and finds the angle other videos are missing. In Content OS (a system I built for managing my content), the brief is part of the project and defines the scope of this content.
+
+![contentos_brief.png](/images/blog/2026/07/18/contentos_brief.png)
 
 Sometimes I'll also tease the topic on social media at this point. I don't have any code yet. I don't have anything concrete. I just put something out there to see if people are interested before I invest more time.
 
@@ -62,7 +65,7 @@ I collect resources: blog posts, other videos, documentation. Then I work out th
 
 Here's something that took me too long to learn: the most important parts of a video are decided before the video exists. The title, the thumbnail, and the intro determine whether anyone clicks and whether they stay. So I work all three out up front with a `video-packaging` skill, and I treat this as a hard gate. No recording until the title, thumbnail, and intro are locked.
 
-The thumbnail gets its own track within this stage. I have a `thumbnail` skill, I use [Paper](https://paper.design) for design work, and I work with a designer. I'll be honest: this part of my process is still being refined into a repeatable system, and it's the stage I'm most actively trying to improve.
+The thumbnail gets its own track within this stage. I have a `thumbnail` skill, I use [Figma](http://figma.com/) for design work, and I work with a designer. I'll be honest: this part of my process is still being refined into a repeatable system, and it's the stage I'm most actively trying to improve.
 
 ![phase_01.png](/images/blog/2026/07/18/phase_01.png)
 
@@ -98,7 +101,7 @@ The first two steps used to be hours of manual timeline work. Now they're a firs
 
 ### Publishing
 
-Once the video is done, I upload it to YouTube and fill out all of the information about it. Then I bring the video into Content OS, a project I built for exactly this. It gets me a transcript and generates ideas for titles and descriptions. I take the best of those and manually add everything to YouTube, and once it's ready, I publish.
+Once the video is done, I upload it to YouTube and fill out all the information about it. Then I bring the video into Content OS, a project I built for exactly this. It gets me a transcript and generates ideas for titles and descriptions. I take the best of those and manually add everything to YouTube, and once it's ready, I publish.
 
 ![contentos.png](/images/blog/2026/07/18/contentos.png)
 
