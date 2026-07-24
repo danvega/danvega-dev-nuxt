@@ -1,6 +1,33 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring AI 2.0 Tool Calling: Build a Live Claude-Style UI",
+    "description": "Build a Claude-style 'Calling tool...' UI with Spring AI 2.0's ToolCallingAdvisor. Stream live tool call events over SSE from the ChatClient advisor chain.",
+    "date": "2026-07-24T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-ai-tool-calling-advisor-2-0",
+    "slug": "spring-ai-tool-calling-advisor-2-0",
+    "tags": [
+      "Spring AI",
+      "Spring Boot",
+      "Java"
+    ]
+  },
+  {
+    "title": "Embabel 1.0 Is Here: AI Agent Framework for Java Goes GA",
+    "description": "Embabel 1.0 is GA. What Rod Johnson's AI agent framework for the JVM means for Java developers, what changed on the road to 1.0, and how to get started.",
+    "date": "2026-07-20T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/embabel-1-0-ga",
+    "slug": "embabel-1-0-ga",
+    "tags": [
+      "java",
+      "spring-ai",
+      "embabel",
+      "ai-agents"
+    ]
+  },
+  {
     "title": "My Content Creation Workflow: 10 Stages From Idea to Published",
     "description": "My complete 10-stage content creation workflow for YouTube: ideation, packaging, AI rough cuts, repurposing videos into blog posts, Shorts, and a newsletter.",
     "date": "2026-07-18T09:00:00.000Z",
@@ -590,34 +617,6 @@ export const rssData = [
     "tags": [
       "Spring Boot",
       "GraphQL"
-    ]
-  },
-  {
-    "title": "First-Class API Versioning in Spring Boot 4",
-    "description": "Learn how to implement API versioning strategies in Spring Boot 4 applications, including best practices for managing backwards compatibility and evolution of your REST APIs.",
-    "date": "2025-09-25T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-4-api-versioning",
-    "slug": "spring-boot-4-api-versioning",
-    "tags": [
-      "Spring Boot",
-      "Spring Boot 4",
-      "Spring Framework"
-    ]
-  },
-  {
-    "title": "My CYC 2025 Demo: Why Building MCP Servers in Java Just Got Ridiculously Simple",
-    "description": "Learn how Spring AI 1.1.0-M2 makes building MCP servers in Java incredibly simple with just annotations. No callbacks, no complex setup. Includes complete code from my Commit Your Code 2025 conference demo, showing how to expose your Java application's data to Claude and other AI assistants.",
-    "date": "2025-09-24T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/cyc-mcp-server-spring-ai",
-    "slug": "cyc-mcp-server-spring-ai",
-    "tags": [
-      "Spring",
-      "Spring AI",
-      "AI",
-      "MCP",
-      "Java"
     ]
   }
 ] as const
