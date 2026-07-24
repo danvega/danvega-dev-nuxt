@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import appearances from "../../assets/data/appearances.json";
+
 interface Episode {
   title: string;
   date: string;
@@ -64,88 +66,9 @@ interface GuestAppearance {
   url: string;
 }
 
-const guestAppearances: GuestAppearance[] = [
-  {
-    show: "Booting Up",
-    host: "Roxy Rodriguez-Becker",
-    title: "What's Actually Happening in Java Right Now",
-    dateLabel: "Jul 2026",
-    description: "Roxy from Torc sits down with me and DaShaun Carter to break down what is changing in Java, from Spring AI to Spring Boot 4.",
-    url: "https://www.youtube.com/watch?v=QzufJOJi0jk"
-  },
-  {
-    show: "CF Weekly",
-    host: "Nick Kuhn",
-    title: "Gotta Catch 'Em All: DevNexus 2026 Recap with Spring's Finest",
-    dateLabel: "Mar 2026",
-    description: "A DevNexus 2026 recap with the Cloud Foundry Weekly crew — conference highlights and what's new across the Spring ecosystem.",
-    url: "https://www.youtube.com/watch?v=FiwF2Y-yrlY"
-  },
-  {
-    show: "ClueCon Weekly",
-    host: "Jon Gray",
-    title: "Treating LLMs Like Just Another Integration Layer",
-    dateLabel: "Mar 2026",
-    description: "Why LLMs are best thought of as another integration layer in your architecture, and what that means for how you build with them.",
-    url: "https://www.youtube.com/watch?v=ZeZre8uXDAc"
-  },
-  {
-    show: "Ready, Test, GO",
-    host: "David Carty",
-    title: "The Craft of Engineering in the Age of Vibe Coding",
-    dateLabel: "Mar 2026",
-    description: "A conversation about what happens to the craft of software engineering when AI can write the code for you.",
-    url: "https://www.applause.com/resources/podcasts/ep-38-craft-of-engineering-age-of-vibe-coding/"
-  },
-  {
-    show: "bas.fm",
-    host: "Bas Steins",
-    title: "Fundamentals of Software Engineering: A Conversation with Dan Vega",
-    dateLabel: "Jan 2026",
-    description: "Bas and I dig into the fundamentals every software engineer needs, and why they outlast any framework or tool.",
-    url: "https://www.youtube.com/watch?v=7PBPIMaM4zM"
-  },
-  {
-    show: "A Bootiful Podcast",
-    host: "Josh Long",
-    title: "Dan Vega on the Fundamentals of Software Engineering",
-    dateLabel: "Dec 2025",
-    description: "Josh Long and I talk about the new book, why fundamentals matter more than ever in the age of AI, and what it took to write it.",
-    url: "https://spring.io/blog/2025/12/04/a-bootiful-podcast-dan-vega/"
-  },
-  {
-    show: "Java Challengers",
-    host: "Rafael del Nero",
-    title: "Dan Vega's Unexpected Java Tip: The Skill You Really Need as a Senior Dev",
-    dateLabel: "Jan 2025",
-    description: "The skill that actually moves the needle for senior Java developers — and it isn't the one you'd expect.",
-    url: "https://www.youtube.com/watch?v=XNZF-kgEMG4"
-  },
-  {
-    show: "The Artifact",
-    host: "The Artifact crew",
-    title: "Ep 10: Everything Spring Framework (with Dan Vega)",
-    dateLabel: "Sep 2023",
-    description: "What a Spring Developer Advocate actually does, and how I got here from a career of building software.",
-    url: "https://www.youtube.com/watch?v=HTS8Yfos-Ns"
-  },
-  {
-    show: "Java Pub House",
-    host: "Freddy Guime & Bob Paulin",
-    title: "Oh my… Spring Boot 3 is out!",
-    dateLabel: "Nov 2022",
-    description: "An interview about upgrading to Spring Boot 3, native images, and the new features that came with the release.",
-    url: "https://www.pubhouse.net/podcast/episode-102-oh-my-spring-boot-3-is-out-an-interview-with-dan-vega-from-the-pivotal-team/"
-  },
-  {
-    show: "A Bootiful Podcast",
-    host: "Josh Long",
-    title: "Spring Developer Advocate Dan Vega",
-    dateLabel: "Jun 2022",
-    description: "A conversation with Josh Long about my journey into developer advocacy and the Spring community.",
-    url: "https://spring.io/blog/2022/06/30/a-bootiful-podcast-spring-developer-advocate-dan-vega/"
-  }
-];
+// Guest appearances live in assets/data/appearances.json (newest first);
+// the podcast-appearance workflow adds new entries there
+const guestAppearances: GuestAppearance[] = appearances;
 
 // Live episode data from the Transistor RSS feeds (cached server-side);
 // the static episodes above are the fallback if a feed is unreachable
