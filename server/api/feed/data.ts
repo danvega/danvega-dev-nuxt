@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Docker Compose for Java Developers, Explained",
+    "description": "Learn what that docker-compose.yml in every Java repo actually does. Spin up Postgres with one command and run any project you clone with zero setup.",
+    "date": "2026-07-27T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/docker-compose-for-java-developers",
+    "slug": "docker-compose-for-java-developers",
+    "tags": [
+      "Java",
+      "Docker",
+      "Postgres"
+    ]
+  },
+  {
     "title": "Spring AI 2.0 Tool Calling: Build a Live Claude-Style UI",
     "description": "Build a Claude-style 'Calling tool...' UI with Spring AI 2.0's ToolCallingAdvisor. Stream live tool call events over SSE from the ChatClient advisor chain.",
     "date": "2026-07-24T09:00:00.000Z",
@@ -605,18 +618,6 @@ export const rssData = [
     "slug": "spring-ai-mcp-client",
     "tags": [
       "Spring AI"
-    ]
-  },
-  {
-    "title": "Evolving your API without Versioning in GraphQL",
-    "description": "Explore modern approaches to API versioning in GraphQL, including schema evolution strategies, deprecation patterns, and best practices for maintaining backward compatibility while evolving your API.",
-    "date": "2025-09-30T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/api-versioning-with-graphql",
-    "slug": "api-versioning-with-graphql",
-    "tags": [
-      "Spring Boot",
-      "GraphQL"
     ]
   }
 ] as const
