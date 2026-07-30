@@ -1,5 +1,5 @@
 ---
-title: "Spring AI Guardrails: 4 Layers That Actually Hold"
+title: "Spring AI: Build Real Guardrails that hold"
 slug: spring-ai-guardrails-safeguard-advisor
 description: "Learn how to build Spring AI guardrails with SafeGuardAdvisor, custom PII masking, and output rails to stop prompt injection and data leaks."
 author: "Dan Vega"
