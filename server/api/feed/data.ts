@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring AI: Build Real Guardrails that hold",
+    "description": "Learn how to build Spring AI guardrails with SafeGuardAdvisor, custom PII masking, and output rails to stop prompt injection and data leaks.",
+    "date": "2026-07-28T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-ai-guardrails-safeguard-advisor",
+    "slug": "spring-ai-guardrails-safeguard-advisor",
+    "tags": [
+      "Spring AI",
+      "Spring Boot",
+      "Java"
+    ]
+  },
+  {
     "title": "Docker Compose for Java Developers, Explained",
     "description": "Learn what that docker-compose.yml in every Java repo actually does. Spin up Postgres with one command and run any project you clone with zero setup.",
     "date": "2026-07-27T09:00:00.000Z",
@@ -607,17 +620,6 @@ export const rssData = [
       "Spring Framework",
       "Spring Boot",
       "Testing"
-    ]
-  },
-  {
-    "title": "Building MCP Clients with Spring AI: Augmenting LLMs with Custom Context",
-    "description": "Learn how to build MCP (Model Context Protocol) clients using Spring AI to augment Large Language Models with custom context and functionality for your applications.",
-    "date": "2025-10-28T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-ai-mcp-client",
-    "slug": "spring-ai-mcp-client",
-    "tags": [
-      "Spring AI"
     ]
   }
 ] as const
