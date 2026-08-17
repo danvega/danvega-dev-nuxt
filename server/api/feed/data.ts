@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Upgrading Dependencies with AI: A Practical Guide",
+    "description": "Learn a practical workflow for upgrading dependencies with AI, using scope, scale, and stakes to decide when to reach for an LLM to patch your projects.",
+    "date": "2026-07-30T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/upgrading-dependencies-with-ai",
+    "slug": "upgrading-dependencies-with-ai",
+    "tags": [
+      "AI",
+      "Web Development",
+      "Nuxt"
+    ]
+  },
+  {
     "title": "Spring AI: Build Real Guardrails that hold",
     "description": "Learn how to build Spring AI guardrails with SafeGuardAdvisor, custom PII masking, and output rails to stop prompt injection and data leaks.",
     "date": "2026-07-28T09:00:00.000Z",
@@ -607,19 +620,6 @@ export const rssData = [
       "Spring Boot",
       "Spring Boot 4",
       "Spring Framework"
-    ]
-  },
-  {
-    "title": "Testing Spring REST APIs with RestTestClient: A Complete Guide",
-    "description": "Explore the new Rest Test Client in Spring Framework 7, a modern replacement for RestTemplate that provides a fluent API for testing REST APIs with improved type safety and better integration with modern testing practices.",
-    "date": "2025-10-30T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-framework-7-rest-test-client",
-    "slug": "spring-framework-7-rest-test-client",
-    "tags": [
-      "Spring Framework",
-      "Spring Boot",
-      "Testing"
     ]
   }
 ] as const
