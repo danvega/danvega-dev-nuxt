@@ -18,7 +18,7 @@ the friction of switching to a browser just to bootstrap a new Spring project. I
 Initializr website, my downloads folder, my IDE, and then back to the terminal to start coding. That workflow had 
 too many steps, and I wanted to fix it.
 
-So when I spotted a tweet announcing [Tambu UI](https://tambuui.com), a brand-new open source Terminal UI (TUI) 
+So when I spotted a tweet announcing [Tambu UI](https://tamboui.dev/), a brand-new open source Terminal UI (TUI) 
 framework for Java, I knew exactly what I wanted to build: a full terminal interface for the Spring Initializr that 
 lets me create, configure, and open Spring projects without ever leaving the command line.
 
