@@ -22,6 +22,20 @@ export const speakingPhotos: Record<string, Array<{ id: number; src: string; alt
       "filename": "IMG_7353.jpeg"
     }
   ],
+  "kcdc-2026-whats-new-in-spring-boot-4": [
+    {
+      "id": 1,
+      "src": "/images/speaking/kcdc-2026-whats-new-in-spring-boot-4/HR8YnbCaQAA1oIU.jpeg",
+      "alt": "HR8YnbCaQAA1oIU",
+      "filename": "HR8YnbCaQAA1oIU.jpeg"
+    },
+    {
+      "id": 2,
+      "src": "/images/speaking/kcdc-2026-whats-new-in-spring-boot-4/HR9eDBlbUAAkw0D.jpeg",
+      "alt": "HR9eDBlbUAAkw0D",
+      "filename": "HR9eDBlbUAAkw0D.jpeg"
+    }
+  ],
   "kcdc-2026-zero-to-superpowers-claude-code": [
     {
       "id": 1,

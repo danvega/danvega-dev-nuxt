@@ -295,5 +295,12 @@ export const photos: Photo[] = [
       height: 480,
       src: '/images/photos/devnexus_2026_02.jpeg',
       alt: 'DevNexus Glenn and Nate'
+    },
+    {
+      id: 42,
+      width: 5712,
+      height: 4284,
+      src: '/images/photos/kcdc_2026_01.jpeg',
+      alt: 'Packed room for my Zero to Superpowers Claude Code talk at KCDC 2026'
     }
 ];
