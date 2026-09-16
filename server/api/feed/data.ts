@@ -1,6 +1,32 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "The 5 Steps of AI Adoption: Which One Are You On?",
+    "description": "Learn the 5 steps of AI adoption mapped out by Boris Cherny, creator of Claude Code, and how to move from copy-pasting code to supervised autonomy.",
+    "date": "2026-08-05T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/five-steps-of-ai-adoption",
+    "slug": "five-steps-of-ai-adoption",
+    "tags": [
+      "AI",
+      "Spring Boot",
+      "Java"
+    ]
+  },
+  {
+    "title": "Can You Trust AI-Generated Code?",
+    "description": "Can you trust AI-generated code? It depends on what you already know. A look at why AI code feels great in unfamiliar stacks and how to verify it.",
+    "date": "2026-07-31T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/can-you-trust-ai-generated-code",
+    "slug": "can-you-trust-ai-generated-code",
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "AI"
+    ]
+  },
+  {
     "title": "Upgrading Dependencies with AI: A Practical Guide",
     "description": "Learn a practical workflow for upgrading dependencies with AI, using scope, scale, and stakes to decide when to reach for an LLM to patch your projects.",
     "date": "2026-07-30T09:00:00.000Z",
@@ -590,32 +616,6 @@ export const rssData = [
     "author": "Dan Vega",
     "_path": "/blog/http-interfaces-spring-boot-4",
     "slug": "http-interfaces-spring-boot-4",
-    "tags": [
-      "Spring Boot",
-      "Spring Boot 4",
-      "Spring Framework"
-    ]
-  },
-  {
-    "title": "Stop NullPointerExceptions Before Production with Spring Boot 4's Null Safety",
-    "description": "Discover how Spring Boot 4 and JSpecify annotations catch NullPointerExceptions at compile-time instead of runtime. Learn to implement @NullMarked and @Nullable for bulletproof Java code with practical examples.",
-    "date": "2025-11-05T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-4-null-safety",
-    "slug": "spring-boot-4-null-safety",
-    "tags": [
-      "Java",
-      "Spring Boot",
-      "Spring Boot 4"
-    ]
-  },
-  {
-    "title": "Spring Boot 4's Bean Registrar: A Cleaner Way to Register Beans Programmatically",
-    "description": "Learn how Spring Boot 4's new BeanRegistrar interface simplifies programmatic bean registration in Spring Framework 7. This tutorial demonstrates dynamic bean creation based on environment properties, conditional registration with complex logic, and performance optimization techniques. Discover when to use BeanRegistrar vs @Bean annotations with practical code examples and testing strategies for your Spring applications.",
-    "date": "2025-11-01T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/programmatic-bean-registration",
-    "slug": "programmatic-bean-registration",
     "tags": [
       "Spring Boot",
       "Spring Boot 4",
