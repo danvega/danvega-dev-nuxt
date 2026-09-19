@@ -1,6 +1,69 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Claude Code Skills for Podcast Automation",
+    "description": "Use Claude Code skills for podcast automation: edit audio, create show notes, prepare a Transistor upload, and open a spring.io PR after the episode is live.",
+    "date": "2026-09-20T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/claude-code-skills-not-just-for-coding",
+    "slug": "claude-code-skills-not-just-for-coding",
+    "tags": [
+      "AI",
+      "Software Development"
+    ]
+  },
+  {
+    "title": "Java Structured Concurrency in JDK 27: A Practical Example",
+    "description": "Learn Java structured concurrency in JDK 27 with a runnable example comparing sequential calls, virtual threads, and StructuredTaskScope failure handling.",
+    "date": "2026-09-19T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/java-structured-concurrency-jdk-27",
+    "slug": "java-structured-concurrency-jdk-27",
+    "tags": [
+      "Java"
+    ]
+  },
+  {
+    "title": "Getting Started with Jev in Java and Spring Boot",
+    "description": "Call TypeSafe Jev from Java and Spring Boot with RestClient. Build a complete support-ticket example with typed questions, Java records, and a mocked API test.",
+    "date": "2026-09-18T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/getting-started-jev-java-spring-boot",
+    "slug": "getting-started-jev-java-spring-boot",
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "AI"
+    ]
+  },
+  {
+    "title": "I Built My Own Content OS With Claude Code",
+    "description": "How I built Content OS with Claude Code and Spring Boot to manage videos, blog posts, and newsletters, and what changes when you build software for one user.",
+    "date": "2026-09-17T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/content-os-claude-code-spring-boot",
+    "slug": "content-os-claude-code-spring-boot",
+    "tags": [
+      "Spring Boot",
+      "Spring AI",
+      "Java",
+      "AI"
+    ]
+  },
+  {
+    "title": "ColdFusion Inside Spring Boot (One Property)",
+    "description": "Render real ColdFusion .cfm templates inside a Spring Boot app using the BoxLang Spring Boot starter and one undocumented boxlang.suffix property.",
+    "date": "2026-09-15T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/coldfusion-inside-spring-boot-boxlang-starter",
+    "slug": "coldfusion-inside-spring-boot-boxlang-starter",
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "BoxLang"
+    ]
+  },
+  {
     "title": "The 5 Steps of AI Adoption: Which One Are You On?",
     "description": "Learn the 5 steps of AI adoption mapped out by Boris Cherny, creator of Claude Code, and how to move from copy-pasting code to supervised autonomy.",
     "date": "2026-08-05T09:00:00.000Z",
@@ -556,70 +619,6 @@ export const rssData = [
       "Java",
       "Spring Boot",
       "JMS"
-    ]
-  },
-  {
-    "title": "Spring Data AOT Repositories: Faster Startup and Build-Time Query Validation",
-    "description": "Learn how Spring Data AOT Repositories move query processing from runtime to compile time, reducing startup times and memory usage, plus how to validate repository methods at build time.",
-    "date": "2025-11-25T10:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-data-aot-repositories",
-    "slug": "spring-data-aot-repositories",
-    "tags": [
-      "Spring Boot",
-      "Spring Data"
-    ]
-  },
-  {
-    "title": "Spring Boot 4: Everything You Need to Know (4.0 and 4.1)",
-    "description": "Everything new in Spring Boot 4 and 4.1, from null safety and HTTP interfaces to modularization and gRPC, plus the upgrade path from Spring Boot 3.",
-    "date": "2025-11-24T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-4-is-here",
-    "slug": "spring-boot-4-is-here",
-    "tags": [
-      "Spring Boot",
-      "Spring Boot 4",
-      "Spring",
-      "Java"
-    ]
-  },
-  {
-    "title": "Native Retry Support in Spring Boot 4: No External Dependencies Required",
-    "description": "Spring Boot 4 includes native retry support with @Retryable, RetryTemplate, and @ConcurrencyLimit. Learn how to add resilience without the spring-retry dependency.",
-    "date": "2025-11-13T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-4-native-retry-support",
-    "slug": "spring-boot-4-native-retry-support",
-    "tags": [
-      "Spring Boot",
-      "Spring Boot 4",
-      "Java"
-    ]
-  },
-  {
-    "title": "Jackson 3 in Spring Boot 4: JsonMapper, JSON Views, and What's Changed",
-    "description": "Learn how to use Jackson 3 in Spring Boot 4 with the new JsonMapper, immutable configuration, unchecked exceptions, and JSON Views with the hint() method.",
-    "date": "2025-11-10T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/jackson-3-spring-boot-4",
-    "slug": "jackson-3-spring-boot-4",
-    "tags": [
-      "Spring Boot",
-      "Spring Boot 4"
-    ]
-  },
-  {
-    "title": "HTTP Interfaces in Spring Boot 4: Say Goodbye to Boilerplate",
-    "description": "Learn how HTTP interfaces let you define declarative HTTP clients in Spring Boot, and discover how Spring Framework 7 eliminates the configuration boilerplate with @ImportHttpServices.",
-    "date": "2025-11-06T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/http-interfaces-spring-boot-4",
-    "slug": "http-interfaces-spring-boot-4",
-    "tags": [
-      "Spring Boot",
-      "Spring Boot 4",
-      "Spring Framework"
     ]
   }
 ] as const
