@@ -286,11 +286,7 @@ Reach for a scope when several subtasks belong to one operation, such as loading
 
 It is not a replacement for every executor. Scheduled work, background jobs that deliberately outlive a request, and CPU-heavy work have different requirements. Virtual threads are most useful here because the tasks spend their time waiting.
 
-## Wrapping Up
-
-The sequential version is easy to follow, but adds the two wait times together. Virtual threads overlap those waits. `StructuredTaskScope` adds an explicit relationship between the tasks so the default policy can coordinate failure and cancellation.
-
-Run the examples with both failure flags off, then turn them on. Watch the elapsed time and read the exception handling. That comparison makes the purpose of structured concurrency much clearer than another thread-count benchmark.
+Try one more change in the demo: make `fetchOrders` fail while `findUser` is still sleeping. The executor version waits on `user.get()` before discovering the orders failure. The scope can respond to either task failing. That is the behavior to look for when several calls belong to one request.
 
 Happy Coding!  
 Dan
