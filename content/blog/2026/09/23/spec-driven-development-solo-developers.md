@@ -52,6 +52,8 @@ The interesting part isn't the cart. It's what happens after the customer pays. 
 
 ## Three Actions Instead of Seven Stages
 
+![ShipIt Skills](/images/blog/2026/09/23/fig3-stages-light.png)
+
 My skills are called **shipit**. There are seven of them, but the process really comes down to three actions:
 
 1. **Decide enough to start**

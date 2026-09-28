@@ -1,6 +1,58 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Spring Boot 3 to 4 Migration: Fixing Every Break",
+    "description": "A hands-on Spring Boot 3 to 4 migration: upgrade a real app, then fix Jackson 3, modular starters, the missing H2 console, test imports, and JSpecify.",
+    "date": "2026-09-24T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-boot-3-to-4-migration",
+    "slug": "spring-boot-3-to-4-migration",
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "Jackson"
+    ]
+  },
+  {
+    "title": "Spec-Driven Development for Solo Developers: My Plan",
+    "description": "Spec-driven development without the team process. The lightweight plan I use as a solo developer, from one PRODUCT.md to a retro, on a Spring Boot Stripe store.",
+    "date": "2026-09-23T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spec-driven-development-solo-developers",
+    "slug": "spec-driven-development-solo-developers",
+    "tags": [
+      "Spring Boot",
+      "AI",
+      "Java"
+    ]
+  },
+  {
+    "title": "Spring AI TypeSafe: Build a Model Router From Scratch",
+    "description": "Learn Spring AI TypeSafe by building a model router from an empty app. One Choice question to Jev picks the cheapest OpenAI model tier for every prompt.",
+    "date": "2026-09-22T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/spring-ai-typesafe-model-router",
+    "slug": "spring-ai-typesafe-model-router",
+    "tags": [
+      "Spring AI",
+      "Spring Boot",
+      "Java"
+    ]
+  },
+  {
+    "title": "Jev Spring Boot Starter: One Dependency, Done",
+    "description": "Use the Jev Spring Boot Starter to call TypeSafe's Jev API with one dependency and an injected JevClient, then see how Spring Boot 4 auto-configuration works.",
+    "date": "2026-09-21T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/jev-spring-boot-starter",
+    "slug": "jev-spring-boot-starter",
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "Jev"
+    ]
+  },
+  {
     "title": "Claude Code Skills for Podcast Automation",
     "description": "Use Claude Code skills for podcast automation: edit audio, create show notes, prepare a Transistor upload, and open a spring.io PR after the episode is live.",
     "date": "2026-09-20T09:00:00.000Z",
@@ -570,55 +622,6 @@ export const rssData = [
     "tags": [
       "Spring Boot",
       "Spring Framework"
-    ]
-  },
-  {
-    "title": "Spring Security 7 Multi-Factor Authentication: Complete Tutorial with @EnableMultiFactorAuthentication",
-    "description": "Learn how to implement multi-factor authentication (MFA) in Spring Boot 4 using Spring Security 7's new @EnableMultiFactorAuthentication annotation. Step-by-step tutorial with one-time token login and custom PIN codes.",
-    "date": "2025-12-16T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-security-7-multi-factor-authentication",
-    "slug": "spring-security-7-multi-factor-authentication",
-    "tags": [
-      "Spring Boot",
-      "Spring Security"
-    ]
-  },
-  {
-    "title": "Spring Boot 4 Modularization: Fix Missing Auto-Configuration",
-    "description": "Spring Boot 4 broke your auto-configuration? Learn which modular starters you now need—Flyway, H2, and the test starters behind @AutoConfigureMockMvc.",
-    "date": "2025-12-12T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-4-modularization",
-    "slug": "spring-boot-4-modularization",
-    "tags": [
-      "Spring Boot",
-      "Spring Boot 4",
-      "Java"
-    ]
-  },
-  {
-    "title": "MockMvcTester vs RestTestClient: Which one Should You Use in Spring Boot 4?",
-    "description": "A comparison of MockMvcTester and RestTestClient for testing Spring Boot web applications, exploring when to use each approach and their key differences.",
-    "date": "2025-12-10T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/mock-vs-rest",
-    "slug": "mock-vs-rest",
-    "tags": [
-      "Spring Boot"
-    ]
-  },
-  {
-    "title": "Spring JMS Client: A Complete Guide to JmsClient in Spring Boot 4",
-    "description": "Master the Spring JMS Client with this complete Spring Boot 4 JmsClient tutorial. Learn when to choose JMS over Kafka, configure message conversion, and send messages using Spring's fluent API.",
-    "date": "2025-12-05T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/jms-client",
-    "slug": "jms-client",
-    "tags": [
-      "Java",
-      "Spring Boot",
-      "JMS"
     ]
   }
 ] as const
