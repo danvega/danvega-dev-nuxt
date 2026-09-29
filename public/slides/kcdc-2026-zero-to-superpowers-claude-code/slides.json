@@ -1,0 +1,272 @@
+{
+  "pdf": "/slides/kcdc-2026-zero-to-superpowers-claude-code/kcdc-2026-zero-to-superpowers-claude-code.pdf",
+  "pdfSize": 2703796,
+  "width": 1920,
+  "height": 1080,
+  "slides": [
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/001.webp",
+      "text": "C L A U D E C O D E A practical intro for engineers new to coding agents Start simple. Scale smart. Dan Vega Spring Developer Advocate · Broadcom start simple. scale smart."
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/002.webp",
+      "text": "One quick disclaimer. If you're already running five terminals with custom agent and skills… This talk probably isn't for you. Go grab another coffee. We'll be in the fundamentals for most of this talk. disclaimer"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/003.webp",
+      "text": "CODING AGENTS One tool today. Most of it translates to your favorite. Codex alternatives Gemini CLI Copilot Cursor Windsurf Grok Build Kiro"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/004.webp",
+      "text": "I want to describe a feeling I get these days. a feeling"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/005.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/006.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/007.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/008.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/009.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/010.webp",
+      "text": "Social media driven development. smdd"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/011.webp",
+      "text": "QUICK SHOW OF HANDS… Who's feeling overwhelmed? It's okay. This is a safe space. show of hands"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/012.webp",
+      "text": "Things we're supposed to learn in coding agents. CLAUDE.md Agents the wall Hooks /clear Subagents SKILL.md MCP Memory Worktrees /init Plan Mode Plugins Skills Agent Teams"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/013.webp",
+      "text": "Things we're supposed to learn in coding agents. CLAUDE.md Agents Harness Hooks /clear Subagents SKILL.md Checkpoints Permissions Routines MCP /init Memory PostToolUse Tokens Marketplace the wall Worktrees Status Line /goal Plan Mode Plugins /resume Agent Teams /context Compaction Skills Sonnet PreToolUse"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/014.webp",
+      "text": "Things we're supposed to learn in coding agents. CLAUDE.md Agents Harness Hooks /clear Subagents SKILL.md Checkpoints MCP /goal Routines Tokens Marketplace /resume SessionStart Dispatch Auto-Accept Edits Plan Mode Plugins Compaction Auto Mode Slash Commands Cowork Effort Levels Skills Agent Teams /context Status Line Permissions Background Sessions /init Memory PostToolUse Side Chat Worktrees Sonnet PreToolUse Context Window Headless Mode Haiku Opus .claude/ Computer Use the wall …and that's just this week"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/015.webp",
+      "text": "You are not behind. You don't need to learn all of this. You need the building blocks. Scale later. We're all on our own journey. the turn"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/016.webp",
+      "text": "HELLO 👋 About me. 25 Years as a software engineer Java Champion Spring Developer Advocate · Broadcom Author danvega.dev about me"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/017.webp",
+      "text": "TO DAY What we'll cover. 01 The fundamentals 02 Getting started 03 Context is the job 04 Scaling up agenda agent · harness · token · context window three surfaces · slash commands · permissions CLAUDE.md · skills · MCP subagents · hooks · goals"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/018.webp",
+      "text": "SECTION 01 / 04 The fundamentals. The vocabulary everything else hangs on. section 01 01 The fundamentals 02 Getting started 03 Context is the job 04 Scaling up"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/019.webp",
+      "text": "FUNDAMENTALS · 01 Agent. fundamentals"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/020.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/021.webp",
+      "text": "AGENT An agent runs its own loop. 01 Explore autocomplete suggests the next line. No loop. 04 Adjust REPEAT until it works 02 Act chat answers, then waits. You are the loop. agent runs the loop itself. You steer. 03 Check the loop"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/022.webp",
+      "text": "FUNDAMENTALS · 02 Harness. fundamentals"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/023.webp",
+      "text": "HARNESS The machinery that builds and runs the loop. Claude Code is a harness. So are Codex, Cursor, Gemini CLI, and Copilot's agent mode. Same model, different harness, different results. harness"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/024.webp",
+      "text": "harness ·the car agent ·the driver model ↓ → decide use a tool → observe ↻ repeats until the goal is done tools context safety rails orchestration read, edit, run what the model sees sandbox, approvals retries, loops driver and car"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/025.webp",
+      "text": "FUNDAMENTALS · 03 Token. fundamentals"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/026.webp",
+      "text": "TOKEN You don't pay for words. You pay for tokens. Ref actor tests = 9 the payment service and Roughly three quarters of a word. Claude reads, writes, and bills in them. token run the"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/027.webp",
+      "text": "FUNDAMENTALS · 04 Context window. fundamentals"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/028.webp",
+      "text": "CONTEXT WINDOW Working memory for one session. > /context system prompt ▮▮ tool definitions ▮▮▮▮▮▮ memory files ▮▮▮ messages ▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮ free space ▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮ 3% 9% 4% auto-compact at 95% Everything Claude is holding in its head right now. Big, but finite. 41% 43%"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/029.webp",
+      "text": "T H E C AT C H Context rot. output quality More context is not better context. 18 frontier models tested. All 18 got worse as the window filled. tokens in context → context rot"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/030.webp",
+      "text": "SECTION 02 / 04 Getting started. Three surfaces, slash commands, permissions. section 02 01 The fundamentals 02 Getting started 03 Context is the job 04 Scaling up"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/031.webp",
+      "text": "T H R E E WAY S I N Same engine underneath. terminal desktop web fast, scriptable parallel sessions runs while you're away three ways in"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/032.webp",
+      "text": "B E F O R E YO U S TA R T Two ways to pay. $/month $/token Subscription. Flat, predictable. API. Metered, no ceiling. Pro, Max, or a Team seat. One pool across chat and Code. Great for scripts and CI. Pricey for daily coding. A stray ANTHROPIC_API_KEY silently moves you to the right column. /status shows your route. pricing"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/033.webp",
+      "text": "D E M O · 0 1 A first session. Open a project. Run claude. Ask for one small thing. Watch the loop. → jump to claude code demo 01"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/034.webp",
+      "text": "TRUST, BUT VERIFY Permissions. plan mode permissions ask every time auto-accept edits auto mode skip everything"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/035.webp",
+      "text": "THE ONE FOLDER TO KNOW .claude/ .claude/ ├── commands/your custom slash commands ├── agents/subagent configs (YAML) ├── skills/SKILL.md folders ├── hooks/lifecycle shell scripts Everything custom about your Claude ├── settings.json project settings Code setup lives here. Memory. └── settings.local.json your overrides (gitignored) Commands. Agents. Skills. Hooks. CLAUDE.md project memory (root of repo) .claude"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/036.webp",
+      "text": ".claude/settings.json INSIDE .CLAUDE settings.json { \"model\": \"sonnet\", \"permissions\": { \"allow\": [\"Bash(./mvnw *)\", \"Bash(git diff *)\", \"Read\"], \"deny\": [\"Bash(rm -rf *)\", \"Bash(mvn deploy *)\", One JSON file controls permissions, environment, and team-wide defaults. Checked into the repo, it travels with the project. \"Read(./.env)\"], \"ask\": [\"Bash(git commit *)\", \"Bash(git push *)\"] }, \"env\": { \"SPRING_PROFILES_ACTIVE\": \"test\" } } settings.json"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/037.webp",
+      "text": "M AY B E M Y FAVO R I T E F E AT U R E Plan mode. Hit ⇧ Tab twice. Claude goes read-only. The difference between \"oh no\" and \"yes, do exactly that.\" plan mode 01 Explore the codebase 02 Ask clarifying questions 03 Write a markdown plan 04 You approve · it executes"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/038.webp",
+      "text": "D E M O · 0 2 Permissions and plan mode. A new project, from first prompt to trusted setup. → jump to claude code demo 02"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/039.webp",
+      "text": "SECTION 03 / 04 Context is the job. Steering Claude with what you already know. section 03 01 The fundamentals 02 Getting started 03 Context is the job 04 Scaling up"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/040.webp",
+      "text": "This is where you can take a coding agent from a nice parlor trick to an irreplaceable teammate. context is the job"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/041.webp",
+      "text": "The model is only as good as the context you give it. context is the job"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/042.webp",
+      "text": "THREE GAPS, THREE FIXES Three ways the model comes up short. GAP 01 GAP 02 GAP 03 CLAUDE.md Skills MCP What it should always What it should know how to What it cannot see from know about this project. do. where it sits. the three gaps"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/043.webp",
+      "text": "CLAUDE.md A plain markdown file at the root of your repo. Claude reads it every session, automatically. What this project is The stack and key conventions How to run, test, and build Gotchas: what you wish someone told you on day one 20 minutes writing a good one = every future session is sharper. # # claude.md # # # # PROJECT MEMORY CLAUDE.md # spring-petclinic Java 21 · Spring Boot 3.4 · PostgreSQL · Maven Conventions - Constructor injection only - Records for DTOs - Tests use Testcontainers, not H2 Run it $ ./mvnw spring-boot:run Gotchas - Migrations live in db/migration, not resources/"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/044.webp",
+      "text": "PROJECT MEMORY · THE CRAFT Write one that actually helps. VAGUE · DON'T SPECIFIC · DO \"Write good code.\" \"Use 2-space indent, no semicolons.\" \"Follow best practices.\" \"Constructor injection only.\" \"Format things properly.\" \"DTOs are records in model/.\" \"Test your changes.\" \"Run ./mvnw verify before done.\" Claude already tries to do all of this. Zero signal. Concrete rules Claude can't guess. Real signal. Structure it. Headings and bullets, not prose. claude.md craft Keep it tight. Every line costs context. Revisit it. Fix the file, not just the chat."
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/045.webp",
+      "text": "CLAUDE.md KEEP IT LEAN Progressive disclosure. # Payments API Constructor injection only. Run ./mvnw verify before done. Testing conventions: @docs/testing.md Point at the details instead of pasting DB migrations: @docs/migrations.md them. Claude reads a file only when Release process: @docs/release.md the task needs it. Loaded up front: 8 lines. Loaded on demand: everything else. progressive disclosure"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/046.webp",
+      "text": "G A P 0 2 · W H AT I T S H O U L D K N O W H O W T O D O A skill is a folder with a SKILL.md. Expertise packaged once, pulled in on demand. Not crammed into every prompt. skills"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/047.webp",
+      "text": "SKILLS What one looks like. The description is the trigger. Claude reads it to decide when the skill applies. The body is the playbook. Steps, conventions, commands. name: readme description: Write, rewrite, or review a README so it serves its actual reader. Use whenever the task is creating or improving a README. A README has one job: get the reader to what they came for in under a minute. Ground rules It's just markdown. In the repo, reviewed and versioned - Open with one plain sentence saying like code. what the project is and who it's for - Verify every command against the repo - No hype. Show a code sample instead. - - # - skill.md - # - - .claude/skills/readme/SKILL.md"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/048.webp",
+      "text": "SKILLS If you explain it twice, make it a skill. new-endpoint scaffold a REST endpoint the way this team does it db-migration write a Flyway migration, naming and all code-review review a diff against the team's checklist release-notes turn merged PRs into a changelog, in house style skill examples"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/049.webp",
+      "text": "SKILLS IN THE WILD One video, nine skills. PLAN video-develop-idea Is this worth making? Research demand, find the angle, scope it. video-packaging Lock the title, thumbnail concept, and first 30 seconds. video-project Scaffold the project folder from my template. → BUILD PUBLISH video-demo-design video-thumbnail Design and build the demo code the camera sees. Render the final thumbnail in the channel's style. → video-rough-cut Trim dead air, filler words, and retakes. video-motion-graphics Add lower thirds, titles, callouts, punch-in zooms. video-shorts Chop it into vertical shorts with burned-in captions. video-x-clips Cut clips for X with the post copy written. Also in the library: Spring Boot 4 reference skills (modular-auto-config, rest-test-client, jackson-3 , writing skills (readme, newsletter-publish, blogseo-optimize), and the Spring Office Hours episode pipeline. ) skill library"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/050.webp",
+      "text": "G A P 0 3 · W H AT I T C A N N O T S E E F R O M W H E R E I T S I T S MCP is a standard plug for outside tools. One protocol. Any tool that speaks it, Claude can see and use. mcp"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/051.webp",
+      "text": "MCP What connecting looks like. One command to connect. The server does the rest. Claude discovers the tools. The server advertises what it can do. You stay in charge. Tool use runs through the same permissions. / / mcp connect terminal $ claude mcp add danvega \\ https: mcp.danvega.dev ✓ Connected to danvega ✓ 4 tools discovered: get_posts · get_talks · get_courses · search_content"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/052.webp",
+      "text": "MCP Wherever Claude is guessing, plug in the source. github postgres read the real issue, comment on the real PR query the actual schema, not a guess at it chrome-devtools figma drive a real browser: live DOM, console, network build from the design file, not a screenshot cloudflare context7 manage workers, DNS, and logs on your real account current docs for your framework version, not training data mcp examples"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/053.webp",
+      "text": "CONTEXT IS THE JOB Skills versus MCP. SKILLS MCP Teach Claude how. Give Claude tools. Markdown playbooks for repeatable work. Static. Can't reach outside the repo. Live connections to tickets, databases, APIs. Capabilities. They don't teach taste. \"how we write Flyway migrations\" TOGETHER skills vs mcp \"read the production schema\" MCP reads the real schema. The skill writes the migration your way."
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/054.webp",
+      "text": "D E M O · 0 3 Skills and MCP. Teach it a skill, then plug in mcp.danvega.dev. → jump to claude code demo 03"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/055.webp",
+      "text": "SECTION 04 / 04 Scaling up. One session to many. Watching to delegating. section 04 01 The fundamentals 02 Getting started 03 Context is the job 04 Scaling up"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/056.webp",
+      "text": "An agent is a file. .claude/agents/code-reviewer.md Its own prompt you decide how it behaves name: code-reviewer Only these tools description: Reviews code for quality read only, in this case tools: Read, Glob, Grep A cheaper model model: haiku haiku for mechanical work You are a code reviewer. Give specific, actionable feedback. Its own context window the whole reason to use one It reads 40 files. You get back a paragraph. - - - what is a subagent - - - SCALING UP"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/057.webp",
+      "text": "D E L E G AT I N G S A F E LY Hooks. Hard rules, not vibes. CLAUDE.md HOOKS Advises. Enforce. The model reads it. The model can drift. A script at a lifecycle point. Runs every time, no judgment call. The more you delegate, the more you want rules that cannot be talked out of. hooks"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/058.webp",
+      "text": "W O R K T H AT R E P E AT S Loops and routines. Recurring and scheduled work. Your laptop does not need to be on. schedule api webhook cron-like fire from CI GitHub events loops and routines"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/059.webp",
+      "text": "F R O M WAT C H I N G T O D E L E G AT I N G /goal Set the outcome, not the task. Claude keeps working, turn after turn, until it gets there. /goal Every task in PLAN.md is marked complete, and ./mvnw verify passes with output shown for each one. A task is not complete until it has a unit test and an integration test covering its behavior. Update PLAN.md after each task. Stop after 25 turns. goal"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/060.webp",
+      "text": "KNOW THE DIFFERENCE /goal is not spec driven development. SPEC DRIVEN /goal The decisions, written down first. A termination condition. A full spec up front. The agent builds to it. The Keep going until this is true. Not a planning tool. spec is the contract. Don't reach for it when the task needs design decisions you haven't made yet. goal vs sdd"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/061.webp",
+      "text": "RUNNING MORE THAN ONE Two agents, one repo, one mess. Git worktrees give each branch its own folder. Same history, separate working files. FROM CLAUDE One .git history, shared across all of them. claude Separate files, so builds and tests don't collide. worktree feature-auth No stashing, no branch switching mid task. OR BY HAND git worktree add /api-auth auth-fix git worktree remove . . . . - - worktrees /api-auth Cost: each folder needs its own install and build."
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/062.webp",
+      "text": "D E M O · 0 4 Agents Working with subagents → jump to claude code demo 04"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/063.webp",
+      "text": "Remember the wall? You know the ones that matter. CLAUDE.md Agents Harness Hooks /clear Subagents SKILL.md Checkpoints MCP /goal Routines Tokens Marketplace /resume SessionStart Dispatch Auto-Accept Edits Plan Mode Plugins Compaction Auto Mode Slash Commands Cowork Effort Levels Sonnet PreToolUse Context Window Headless Mode Haiku Computer Use the wall Skills Agent Teams /context Status Line Permissions Background Sessions /init Memory PostToolUse Side Chat Worktrees You are not behind. Start simple, scale later. We're all on our own journey. Opus .claude/"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/064.webp",
+      "text": "S AV E YO U R S E L F A F E W W E E K S Mistakes I made so you don't have to. 01 Vague one-line prompts. \"Fix the bug.\" Cool. Which one? Where? What did you try? Be specific. 04 No CLAUDE.md. Re-explaining your stack every session. Twenty minutes, write it once. 02 Skipping plan mode for real work. Five minutes of planning saves an hour of \"what did you just do?\" 05 Trusting the first answer. Read the diff. Run the tests. Push back. Claude likes the pushback. 03 Never running /clear. Stale context bleeds into new tasks. Wipe between unrelated jobs. 06 Reaching for Skills/MCP/Agents too early. First learn what Claude does well bare. Then add scaffolding. mistakes"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/065.webp",
+      "text": "github.com/danvega/claude-code-start-simple The code from this talk"
+    },
+    {
+      "src": "/slides/kcdc-2026-zero-to-superpowers-claude-code/066.webp",
+      "text": "That's it. Thanks.Questions? Dan Vega Spring Developer Advocate · Broadcom danvega.dev · @therealdanvega thanks"
+    }
+  ]
+}
