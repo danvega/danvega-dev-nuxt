@@ -24,7 +24,7 @@ Learn to build chatbots, implement RAG for enhanced context, and use MCP for AI 
 
 ## Slides
 
-:pdf-embed{src="https://speakerdeck.com/therealdanvega/sprng-into-ai-ai-for-java-developers" title="Introduction to Spring AI Slides" height="450px"}
+:slide-deck{slug="confoo-2026-introduction-to-spring-ai" title="Introduction to Spring AI Slides"}
 
 ## Code
 

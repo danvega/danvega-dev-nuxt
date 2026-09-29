@@ -11,14 +11,50 @@ import { join } from 'path'
 // slide, and slides.json (dimensions + per-slide text for alt text and SEO).
 // Then regenerates server/data/slides.ts. Needs poppler and webp:
 //   brew install poppler webp
+// PDFs over 20MB are shrunk for the download copy if Ghostscript is
+// installed (brew install ghostscript). Slide images always render from
+// the original.
 
 const SLIDE_WIDTH = 1920
 const WEBP_QUALITY = '80'
+const COMPRESS_OVER_BYTES = 20 * 1024 * 1024
 
 const slidesRoot = join(process.cwd(), 'public', 'slides')
 
 function run(cmd, args) {
   return execFileSync(cmd, args, { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 })
+}
+
+function hasCommand(cmd) {
+  try {
+    execFileSync('which', [cmd], { stdio: 'ignore' })
+    return true
+  } catch {
+    return false
+  }
+}
+
+// Copy the PDF people download, shrinking big ones with Ghostscript.
+// Keeps the original if compression fails or doesn't help.
+async function writeDownloadPdf(pdfPath, dest) {
+  const { size } = await stat(pdfPath)
+  if (size > COMPRESS_OVER_BYTES && hasCommand('gs')) {
+    try {
+      execFileSync('gs', ['-q', '-dNOPAUSE', '-dBATCH', '-dSAFER', '-sDEVICE=pdfwrite',
+        '-dCompatibilityLevel=1.6', '-dPDFSETTINGS=/ebook', `-sOutputFile=${dest}`, pdfPath], { stdio: 'ignore' })
+      const { size: compressed } = await stat(dest)
+      if (compressed < size) {
+        console.log(`Compressed download PDF from ${(size / 1e6).toFixed(1)}MB to ${(compressed / 1e6).toFixed(1)}MB`)
+        return compressed
+      }
+    } catch {
+      // fall through to a plain copy
+    }
+  } else if (size > COMPRESS_OVER_BYTES) {
+    console.warn(`PDF is ${(size / 1e6).toFixed(1)}MB. Install Ghostscript to shrink it: brew install ghostscript`)
+  }
+  await copyFile(pdfPath, dest)
+  return size
 }
 
 function cleanText(text) {
@@ -35,7 +71,7 @@ export async function importSlides(pdfPath, slug) {
   await mkdir(outDir, { recursive: true })
 
   const pdfName = `${slug}.pdf`
-  await copyFile(pdfPath, join(outDir, pdfName))
+  const pdfSize = await writeDownloadPdf(pdfPath, join(outDir, pdfName))
 
   const info = run('pdfinfo', [pdfPath])
   const pages = Number(info.match(/Pages:\s+(\d+)/)?.[1])
@@ -62,7 +98,6 @@ export async function importSlides(pdfPath, slug) {
     throw new Error(`Expected ${pages} slides, rendered ${slides.length}`)
   }
 
-  const { size: pdfSize } = await stat(pdfPath)
   const deck = { pdf: `/slides/${slug}/${pdfName}`, pdfSize, width, height, slides }
   await writeFile(join(outDir, 'slides.json'), JSON.stringify(deck, null, 2) + '\n')
   console.log(`Imported ${slides.length} slides into ${outDir}`)

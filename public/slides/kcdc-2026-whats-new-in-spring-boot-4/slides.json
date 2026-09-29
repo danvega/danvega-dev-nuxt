@@ -1,0 +1,376 @@
+{
+  "pdf": "/slides/kcdc-2026-whats-new-in-spring-boot-4/kcdc-2026-whats-new-in-spring-boot-4.pdf",
+  "pdfSize": 1584314,
+  "width": 1920,
+  "height": 1080,
+  "slides": [
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/001.webp",
+      "text": "SPRING BOOT 4 · NOVEMBER 2025 What's New in Spring Boot 4 Spring Framework 7 & Spring Boot 4 DV Dan Vega Spring Developer Advocate · Broadcom"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/002.webp",
+      "text": "WHO'S TALKING Dan Vega Spring Developer Advocate · Broadcom BACKGROUND FIND ME • Java Champion • danvega.dev • Author: Fundamentals of Software Engineering (O'Reilly) • YouTube · Blog · Podcast • X / Twitter: @therealdanvega • 25+ years building software • Cleveland, OH · Husband & Father Spring Boot 4 · Spring Framework 7 • LinkedIn, Bluesky"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/003.webp",
+      "text": "/ / https: www.springofficehours.io"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/004.webp",
+      "text": "PART ZERO Where We've Been A quick recap of the Spring Boot 3.x line."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/005.webp",
+      "text": "“ You can't really know where you are going until you know where you have been. — Maya Angelou"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/006.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/007.webp",
+      "text": "SPRING BOOT 3.X · 2022 → 2025 Three years, six releases 3.0 Nov 2022 3.1 May 2023 3.2 Nov 2023 JDK 17+ · Jakarta EE 9/10 · AOT & GraalVM · Observability · HTTP Interface Clients · Problem Details Docker Compose support · Testcontainers · Spring Authorization Server JDK 21 LTS · Virtual Threads · RestClient · JdbcClient · SSL bundle reloading 3.3 May 2024 3.4 Nov 2024 3.5 May 2025 CDS support · Observability upgrades · SBOM actuator · Service Connections Structured Logging · @Fallback beans · AssertJ for MockMvc · ARM images SSL bundle metrics · Properties from env vars · Quartz from Actuator · ECS logging Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/008.webp",
+      "text": "NOVEMBER 2025 Spring Framework 7 & Spring Boot 4 The first major release in three years."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/009.webp",
+      "text": "THE ROAD TO GA Follow along, and run the code Road to GA blog series Demo repository The Spring team documented every milestone on the way to 4.0. Every example in this talk — runnable, in one place. spring.io/blog/2025/09/02/road_to_ga_introduction github.com/danvega/sb4 Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/010.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/011.webp",
+      "text": "BASELINE UPGRADES A fresh foundation under everything JDK 17+ / JDK 25 LTS Hibernate ORM 7.x Spring Boot 4 · Spring Framework 7 Jakarta EE 11 Kotlin 2.2 Servlet 6.1 · Tomcat 11 GraalVM 25 Jackson 3 JPA 3.2 JUnit 6 Bean Validation 3.1"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/012.webp",
+      "text": "THE FOUNDATION Modular Auto-Config The biggest structural change in Spring Boot 4."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/013.webp",
+      "text": "SPRING-BOOT-AUTOCONFIGURE JAR 185 KB → 2 MB JAR growth from 2014 to 2025 — one monolith of auto-configuration."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/014.webp",
+      "text": "WHAT CHANGED Auto-config split into focused modules spring-boot-starter-web → spring-boot-webmvc A new, more explicit spring-boot-webmvc starter replaces the catch-all. Each starter now brings only its own auto-configuration. Smaller footprint, sharper IDE auto-complete, fewer surprises on the classpath. Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/015.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/016.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/017.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/018.webp",
+      "text": "JSON, REWORKED Jackson 3 A new JSON library with big improvements."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/019.webp",
+      "text": "JACKSON 3 SUPPORT What's new in the box · Immutable, builder-based configuration · Unchecked exceptions, better for lambdas & streams · Spring Boot auto-configures a JsonMapper bean · ISO-8601 date defaults out of the box · New tools.jackson packages · Jackson 2 & 3 supported side by side during migration Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/020.webp",
+      "text": "Inject the auto-configured mapper @Component public class DataLoader implements CommandLineRunner private final JsonMapper { jsonMapper; private final ResourceLoader resourceLoader; constructor injection — Spring wires the JsonMapper bean public DataLoader(JsonMapper jsonMapper, ResourceLoader resourceLoader) { @Override public void run(String Resource args) throws Exception { resource = resourceLoader.getResource(DONUTS_JSON_PATH); this .donuts = jsonMapper.readValue(resource.getInputStream(), new TypeReference } } > < . . . Spring Boot 4 · Spring Framework 7 / / JACKSON 3 · JSONMAPPER () {});"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/021.webp",
+      "text": "JACKSON · MIGRATION ESCAPE HATCH Keep Jackson 2 defaults while you migrate spring: application: name: donut-shop jackson: serialization: indent-output: true use-jackson2-defaults: true Spring Boot 4 · Spring Framework 7 # opt back in"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/022.webp",
+      "text": "JACKSON · JSON VIEWS Tag each field with the view it belongs to public record Donut ( @JsonView(Views.Summary.class) String type, @JsonView(Views.Public.class) Glaze glaze, @JsonView(Views.Public.class) List<String > toppings, @JsonView(Views.Summary.class ) @JsonFormat(shape = Shape.STRING, pattern = \"$#. BigDecimal price, @JsonView(Views.Internal.class) Integer calories, @JsonView(Views.Internal.class) LocalDateTime bakedAt ) {} # # Spring Boot 4 · Spring Framework 7 \" )"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/023.webp",
+      "text": "Views compose by inheritance public class Views { Minimal info for quick listings → type, price public interface Summary {} Public API consumers → Summary + glaze, toppings, isVegan public interface Public extends Summary {} Internal → Public + calories, bakedAt public interface Internal extends Public {} Admin → everything, no restrictions public interface Admin extends Internal } / / / Spring Boot 4 · Spring Framework 7 / / / / / JACKSON · JSON VIEWS {}"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/024.webp",
+      "text": "From a mutable wrapper to a fluent hint ✕ Spring Boot 3 mutable wrapper required var user = new User(\"Marcel\", …); var jv = new MappingJacksonValue (user); send wrapper, not object jv.setSerializationView( Summary.class); var response = restTemplate.postForObject(\"/create\" ,jv,String.class); ✓ Spring Boot 4 clean, immutable, fluent var user = new User(\"Marcel\", …); var response = restClient.post() .uri( \"/create\" ) .hint( JsonView.class .getName(),Summary.class ) .body(user) the actual object .retrieve() .body(String.class); / / / / Spring Boot 4 · Spring Framework 7 / / / / REQUESTING FILTERED FIELDS"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/025.webp",
+      "text": "WITH JSPECIFY Null Safety Say goodbye to NullPointerExceptions… maybe."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/026.webp",
+      "text": "Ever hit a NullPointe Exception? r­ Yeah. Everyone. Every single one of you."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/027.webp",
+      "text": "THE REAL PROBLEM The problem isn't null Sometimes you genuinely want to express the absence of a value. The real problem is that nullness is usually implicit and undocumented and the compiler can't help you. Spring Boot 4 · Spring Framework 7 @therealdanvega"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/028.webp",
+      "text": "JSPECIFY · JSPECIFY.DEV Four annotations, one standard @Nullable @NonNull This type usage — field, return, parameter, generic — can be null. Explicitly marks that null is not a valid value here. @NullMarked @NullUnmarked Everything in this scope is non-null by default. Nullness is unspecified — opt a scope back out. Spring Boot 4 · Spring Framework 7 @therealdanvega"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/029.webp",
+      "text": "ACROSS THE PORTFOLIO JSpecify replaces Spring's JSR-305 annotations @Nullable @NonNull Spring Boot 4 · Spring Framework 7 @NonNullApi @NonNullFields @therealdanvega"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/030.webp",
+      "text": "Why are we doing this? Ensure null safety in the IDE or during compilation time"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/031.webp",
+      "text": "Support for JSpecify Across the Spring Portfolio of Projects"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/032.webp",
+      "text": "PROGRAMMATIC BEANS BeanRegistrar API A flexible way to register beans without abusing @Bean methods."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/033.webp",
+      "text": "THE IDEA Register multiple or conditional beans programmatically Decide which beans to register at runtime. This can be driven by configuration, environment, or any logic you like. Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/034.webp",
+      "text": "BEANREGISTRAR · IN ACTION Choose the implementation at registration time public class MessageServiceRegistrar implements BeanRegistrar { @Override public void register(BeanRegistry registry, Environment env) { String messageType = env.getProperty(\"app.message-type\", \"email\"); } } switch (messageType.toLowerCase()) { case \"email\" registry.registerBean(\"messageService\", EmailMessageService.class, spec spec.description(\"Email service via BeanRegistrar\")); case \"sms\" registry.registerBean(\"messageService\", SmsMessageService.class, spec spec.description(\"SMS service via BeanRegistrar\")); } > > > - - - > - Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/035.webp",
+      "text": "BEANREGISTRAR · WIRING IT UP Import it like any other config @Configuration @Import(MessageServiceRegistrar.class) public class ModernConfig { other bean definitions here } / / Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/036.webp",
+      "text": "BUILT-IN API Versioning First-class support in MVC & WebFlux."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/037.webp",
+      "text": "THE SHIFT We could always version our APIs Now there's first-class support for web endpoint versioning in MVC and WebFlux. No more custom interceptors or filters. Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/038.webp",
+      "text": "WHAT YOU GET A versioning toolkit, not just a flag · version attribute on @GetMapping / @PostMapping · Configurable strategy via ApiVersionConfigurer · No more custom interceptors or filters · Version source: header, param, media type or path · Declare supported versions + a default version · RFC 9745 deprecation hints, framework-emitted Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/039.webp",
+      "text": "API VERSIONING · CONTROLLER Same path, two methods, one version @GetMapping(value = \"/{version}/users\", version = \"1.0\") public List<UserDTOv1 > findAllV1() { return userRepository.findAll().stream().map(userMapper toV1).toList(); } @GetMapping(value = \"/{version}/users\", version = \"2.0\") public List<UserDTOv2 > findAllV2() { return userRepository.findAll().stream().map(userMapper toV2).toList(); } : : : : Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/040.webp",
+      "text": "API VERSIONING · CONFIGURATION Pick a strategy, configure once @Configuration public class WebConfig implements WebMvcConfigurer @Override public void configureApiVersioning(ApiVersionConfigurer c .addSupportedVersions( \"1.0\", \"1.1\", \"2.0\" ) .setDefaultVersion( \"1.0\" ) .useRequestHeader( \"X-API-Version\" ) .setVersionParser( new ApiVersionParser ()); } } Spring Boot 4 · Spring Framework 7 c) { {"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/041.webp",
+      "text": "DECLARATIVE HTTP HTTP Interface Clients Declarative HTTP with @HttpExchange."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/042.webp",
+      "text": "A QUICK HISTORY Introduced in Spring Framework 6 & Spring Boot 3.0 Spring Boot 4 makes them simpler. Still declare an interface, and Spring generates the client. Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/043.webp",
+      "text": "HTTP CLIENTS · DECLARE Describe the API as an interface @HttpExchange(url = \"/todos\", accept = \"application/json\") public interface TodoService { @GetExchange(\"/\" ) List<Todo > getAllTodos(); @GetExchange(\"/{id}\" ) Todo getTodoById(@PathVariable Long id); @PostExchange(\"/\" ) Todo createTodo(@RequestBody Todo } Spring Boot 4 · Spring Framework 7 todo);"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/044.webp",
+      "text": "No proxy factory boilerplate. Just import it. @Configuration(proxyBeanMethods = false) @ImportHttpServices(TodoService.class) public class HttpClientConfig That's it! } Spring Boot 4 · Spring Framework 7 / / HTTP CLIENTS · REGISTER {"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/045.webp",
+      "text": "HTTP CLIENTS · REGISTER Configuration @Configuration @ImportHttpServices(group = \"jsonplaceholder\", types = {TodoService.class, PostService.class}) @ImportHttpServices(group = \"github\", types = {RepoService.class, IssueService.class}) public class MultiApiConfig { @Bean RestClientHttpServiceGroupConfigurer groupConfigurer() { return groups { groups.filterByName(\"jsonplaceholder\") .forEachClient((group, builder) builder .baseUrl(\"https: jsonplaceholder.typicode.com/\") .build()); } } }; groups.filterByName(\"github\") .forEachClient((group, builder) builder .baseUrl(\"https: api.github.com\") .defaultHeader(\"Accept\", \"application/vnd.github.v3+json\") .build()); > > - - / / / / > - Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/046.webp",
+      "text": "BUILT-IN Resilience No more Spring Retry dependency."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/047.webp",
+      "text": "RESILIENCE FEATURES Retry & throttling, built into the core · @Retryable — retry failed methods with backoff · RetryTemplate — dynamic, programmatic control · @ConcurrencyLimit — throttle concurrent calls · Exponential backoff (1s, 2s, 4s, 8s…) · Jitter support — prevent the thundering herd · All built into Spring Framework 7 core Spring Boot 4 · Spring Framework 7 @therealdanvega"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/048.webp",
+      "text": "Retry a flaky call with one annotation @Service public class RestaurantService { @Retryable (maxAttempts = 4 ,includes = RestaurantApiException.class ,delay = public List<MenuItem> getMenuFromPartner(String calls a flaky partner API… } } Spring Boot 4 · Spring Framework 7 / / RESILIENCE · DECLARATIVE RETRY id) { 1000 ,multiplier = 2 )"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/049.webp",
+      "text": "RESILIENCE · GOING FURTHER Resilience in Action public DriverAssignmentService(DriverRetryListener driverRetryListener) { this.driverRetryListener = driverRetryListener; RetryPolicy retryPolicy = RetryPolicy.builder() .maxAttempts(10) .delay(Duration.ofMillis(2000)) .multiplier(1.5) .maxDelay(Duration.ofMillis(10000)) .includes(NoDriversAvailableException.class) .build(); } retryTemplate = new RetryTemplate(retryPolicy); retryTemplate.setRetryListener(driverRetryListener); Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/050.webp",
+      "text": "RESILIENCE · GOING FURTHER Concurrency Cap @Service public class RestaurantNotificationService { private static final Logger log = LoggerFactory.getLogger(RestaurantNotificationService.class); @ConcurrencyLimit(3) public void notifyRestaurant(Order order) { LocalTime start = LocalTime.now(); log.info(\"[CONCURRENT] Sending notification to restaurant for order {} (Thread: {})\", order.id(), Thread.currentThread().getName()); Simulate notification taking time (network call, webhook, etc.) simulateDelay(Duration.ofSeconds(2)); } LocalTime end = LocalTime.now(); log.info(\"[CONCURRENT] Notification sent for order {} (took {}ms)\", order.id(), Duration.between(start, end).toMillis()); } / / Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/051.webp",
+      "text": "A MODERN TESTING FACADE RestTestClient The WebTestClient API you know — for Spring MVC."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/052.webp",
+      "text": "A QUICK HISTORY LESSON One fluent, AssertJ-style client for testing It reads like a sentence, supports typed bodies and records, and is versioning-aware out of the box. Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/053.webp",
+      "text": "RESTTESTCLIENT · IN ACTION Assertions that read like a sentence @WebMvcTest(TodoSimpleController.class) @AutoConfigureRestTestClient public class TodoSimpleControllerTest { @Autowired RestTestClient client; @Test public void findAllTodos() { List<Todo > todos = client.get() .uri(\"/api/todos/simple/\") .exchange() .expectStatus().isOk() .expectBody(new ParameterizedTypeReference .returnResult().getResponseBody(); assertEquals(1 , todos.size()); } } > < Spring Boot 4 · Spring Framework 7 () {})"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/054.webp",
+      "text": "OBSERVABILITY OpenTelemetry A new Spring Boot starter."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/055.webp",
+      "text": "KEY CONCEPTS One dependency, production-ready Single dependency spring-boot-starter-opentelemetry replaces the complex setup Auto-instrumentation HTTP server / client, JDBC & more — out of the box Log correlation Automatic trace / span ID injection into your logs OTLP export Works with any OpenTelemetry-compatible backend Production ready Official Spring support! No alpha dependencies Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/056.webp",
+      "text": "THE LGTM STACK Where your telemetry lands L G T M Loki Grafana Tempo Mimir Log aggregation Dashboards & visualization Distributed tracing Long-term metrics storage Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/057.webp",
+      "text": "OPENTELEMETRY · CONFIGURATION Point traces, metrics & logs at a collector management: tracing: sampling.probability: 1.0 # 100% for dev otlp: metrics.export.url: http: localhost:4318/v1/metrics opentelemetry: tracing.export.otlp.endpoint: http: localhost:4318/v1/traces logging.export.otlp.endpoint: http: localhost:4318/v1/logs / / / / / / Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/058.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/059.webp",
+      "text": "MESSAGING, MODERNIZED JMS Client A fluent unified client, in the RestClient family."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/060.webp",
+      "text": "UNIFIED JMS CLIENT A modern alternative to JmsTemplate · Fluent API, like RestClient & JdbcClient · Unified exception translation · Customizable QoS settings · Supports jakarta.jms and Spring messaging Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/061.webp",
+      "text": "JMS CLIENT · IN ACTION Send a message in two fluent lines @Service public class OrderMessagingService \\ private final JmsClient { jmsClient; public OrderMessagingService(JmsClient jmsClient) { this .jmsClient = jmsClient; } public void sendOrder(Order order) { jmsClient.send(\"orders.queue\" ).withBody(order); } } Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/062.webp",
+      "text": "PROJECT LOOM Virtual Threads Loom is landing across the JDK and Spring is ready."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/063.webp",
+      "text": "PROJECT LOOM · THE JDK PATH Maturing release by release JDK 21 JDK 24 JDK 25 JDK 27 Virtual Threads arrive No more pinning issues Scoped Values Structured Concurrency? Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/064.webp",
+      "text": "VIRTUAL THREADS · IN SPRING One property turns it on spring.threads.virtual.enabled=true Controllers, RestClient , schedulers and listeners all benefit. In 4.0, Spring uses the JDK's virtualthread executor under the hood wherever appropriate. Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/065.webp",
+      "text": "BEYOND THE FRAMEWORK The Spring Portfolio AI, gRPC, Data and Security move in lockstep with Boot 4."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/066.webp",
+      "text": "GENERATIVE AI Spring AI Integrating Generative AI into your Spring applications."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/067.webp",
+      "text": "SPRING AI We're consumers of models, not trainers VERSIONS Spring Boot 3 → Spring AI 1.1.5 Spring Boot 4 → Spring AI 2.0.0 (Now GA!) THE JAVA OPPORTUNITY As application developers we aren't training models, we’re consuming them. Spring AI is far more than a facility for making REST calls. https: / / Spring Boot 4 · Spring Framework 7 www.danvega.dev/blog/can-you-use-java-for-ai"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/068.webp",
+      "text": "GOOGLE REMOTE PROCEDURE CALL Spring gRPC A new first-class Spring Boot module (1.1.0 M1)."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/069.webp",
+      "text": "SPRING GRPC Why teams reach for gRPC High performance Strong typing Binary protocol over HTTP/2 — lower latency than REST. Protocol Buffers give type safety across services. Streaming support Spring integration Bidirectional streaming out of the box. Familiar auto-config, DI and annotations. Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/070.webp",
+      "text": "SPRING DATA AOT Repositories Generate repository code at build time."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/071.webp",
+      "text": "SPRING DATA · REPOSITORIES The query methods you already write @Repository public interface CoffeeRepository extends ListCrudRepository<Coffee, Long > { List<Coffee> findByNameContainingIgnoreCase(String name); List<Coffee > findBySizeAndPriceGreaterThan(Size size, BigDecimal } Spring Boot 4 · Spring Framework 7 price);"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/072.webp",
+      "text": "THE PAYOFF 50–70% faster startup with AOT repositories Query parsing happens at build time, not runtime."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/073.webp",
+      "text": "SPRING SECURITY Multi-Factor Authentication First-class MFA, built into Spring Security."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/074.webp",
+      "text": "MULTI-FACTOR AUTH First-class, and configurable · @EnableMultiFactorAuthentication · Global or selective, per-endpoint MFA · Factor tracking via FactorGrantedAuthority · PASSWORD + One-Time Token out of the box Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/075.webp",
+      "text": "WHAT IS MFA Combine something you know, have, or are Know: password, PIN Have: SMS, email, token Are: biometrics Where: geolocation Do: behavior profiling THE SPRING SECURITY APPROACH At authentication time, Spring adds a FactorGrantedAuthority per verified factor. Authorization rules then require multiple factors e.g. FACTOR_PASSWORD + FACTOR_OTT. Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/076.webp",
+      "text": "MFA · GLOBAL Require both factors everywhere @Configuration @EnableWebSecurity(debug = true) @EnableMultiFactorAuthentication (authorities = { FactorGrantedAuthority .PASSWORD_AUTHORITY, FactorGrantedAuthority.OTT_AUTHORITY }) class SecurityConfig { @Bean SecurityFilterChain filterChain(HttpSecurity http) throws Exception return http .authorizeHttpRequests(a a .requestMatchers( \"/\", \"/ott/sent\" ).permitAll() .requestMatchers( \"/admin \").hasRole(\"ADMIN\" ) .anyRequest().authenticated()) .formLogin(withDefaults()) .oneTimeTokenLogin(withDefaults()).build(); } } 💡 Smart Redirect: Automatically sends user to missing factor's login * * / > - Spring Boot 4 · Spring Framework 7 {"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/077.webp",
+      "text": "MFA · SELECTIVE Demand MFA only where it matters @Bean SecurityFilterChain filterChain(HttpSecurity http) throws Exception { var mfa = AuthorizationManagerFactories .multiFactor().requireFactors( FactorGrantedAuthority .PASSWORD_AUTHORITY, FactorGrantedAuthority .OTT_AUTHORITY) .build(); http.authorizeHttpRequests(a a .requestMatchers( \"/admin \").access(mfa.hasRole(\"ADMIN\" )) .requestMatchers( \"/user/settings \" ).access(mfa.authenticated()) .anyRequest().authenticated()); return http.build(); } /admin/** → Requires MFA + ADMIN role * * / * > * - / Spring Boot 4 · Spring Framework 7 /user/settings/** → Requires MFA only Everything else → Single factor OK"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/078.webp",
+      "text": "ROADMAP · WHAT'S NEXT Spring Boot 4.1 · May 21, 2026 gRPC first-party server / client / test modules, BOM-managed, same cadence as Boot Type Safe Paths Introduces type-safe property paths in Spring Data Commons SSRF protection InetAddressFilter blocks outbound calls to disallowed addresses Async propagation observability context follows @Async automatically Lazy JDBC connection-fetch=lazy defers the physical connection until a statement runs Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/079.webp",
+      "text": "START.SPRING.IO Spring Boot 4.1.0 is available now Generate a project, pick Java 26, and start building."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/080.webp",
+      "text": "DEMO TIME Show Me The Code github.com/danvega/sb4"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/081.webp",
+      "text": "PART ZERO Spring & Security in the times of AI How a flood of AI-generated security reports is reshaping open source, and why Spring users have nothing to panic about."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/082.webp",
+      "text": "BUT THERE IS A REAL STORY UNDERNEATH AI made finding vulnerabilities cheap. Code-scanning models have collapsed the skill and effort needed to surface a potential flaw. The result is a flood of security reports hitting open-source projects, all at once."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/083.webp",
+      "text": "SPRING, APRIL 2026 482 new security reports in a single month ≈ 6.5 65 26 historic average per month projects scanned new CVEs announced"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/084.webp",
+      "text": "AND SPRING IS NOT ALONE The whole ecosystem is adjusting at once FREEBSD 270+ 20-yr vulnerabilities fixed in Firefox 150, surfaced by an AI code- old CVE in one of the industry s most secure operating scanning preview. systems, found via AI. ' MOZILLA"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/085.webp",
+      "text": "SECURITY REPORTS SUBMITTED, 2026 Reports by month 482 370 internal + 112 community 72 55 6.5 Historic avg March April May per month community new AI scanning community"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/086.webp",
+      "text": "VOLUME IS NOT THE SAME AS RISK Not every report is a CVE 37% Most CVEs are medium-to-low severity. of internal scan results were scope and impact. It s the sheer volume , not the danger of duplicates or invalid findings, any one finding, that makes this release worth your attention. Every report is triaged with the researcher to agree on real ' filtered out before any CVE."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/087.webp",
+      "text": "BEHIND EVERY ADVISORY Every report gets an expert STEP 01 STEP 02 STEP 03 Triaged by a committer Scope with the reporter Reporter validates the fix An expert on the very project it was reported The team works directly with the The researcher verifies the patch is correct against owns the issue. researcher to confirm the real concern. before it ships. For context: between Jan 2024 and Sep 2025, only 2.6% of vulnerabilities reported to MITRE had a public proof of concept, making this level of reporter collaboration the exception, not the norm."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/088.webp",
+      "text": "WHEN THE PATCH CADENCE SPEEDS UP, TIMING MATTERS VMware Tanzu Spring can help Day 0 access First-party support Application Advisor Fixes land in the enterprise repository The only provider that can release a fix Automated, real code upgrades as pull before the public CVE is even announced. ahead of public disclosure. requests in your CI, not just dependency bumps."
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/089.webp",
+      "text": "THE TAKEAWAY New times, steady hands. The volume of reports won t return to historic norms soon, but the process protecting you hasn t changed. Stay patched, and stay calm. enterprise.spring.io calendar.spring.io ' RELEASE SCHEDULE ' SPRING ENTERPRISE"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/090.webp",
+      "text": "RESOURCES Where to go next Spring Framework 7.0 release notes Spring Boot 4.0 release notes Road to GA blog series Demo repository Spring Portfolio Version Mappings Spring Release Highlights Spring Boot 4 · Spring Framework 7 spring-projects/spring-framework/wiki spring-projects/spring-boot/wiki spring.io/blog/2025/09/02/road_to_ga_introduction github.com/danvega/sb4 spring.io/projects/generations spring.io/projects/release-highlights"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/091.webp",
+      "text": "ROADMAP How we got to Framework 7 Framework 6.2 Nov 2024 Framework 7.0 Nov 2025 • Final 6.x with long-term support • Foundation for Spring Boot 4.0+ • Foundation for Boot 3.4 & 3.5 • JDK 17+, optimized for JDK 25 • JDK 17 & JDK 21 LTS • Jakarta EE 11, JSpecify, Kotlin 2.x • Deep core container revision • Bean registration, API versioning Spring Boot 4 · Spring Framework 7"
+    },
+    {
+      "src": "/slides/kcdc-2026-whats-new-in-spring-boot-4/092.webp",
+      "text": "THANKS FOR WATCHING Thank you! dan.vega@broadcom.com danvega.dev @therealdanvega"
+    }
+  ]
+}

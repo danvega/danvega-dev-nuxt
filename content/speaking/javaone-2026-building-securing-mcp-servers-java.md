@@ -24,7 +24,7 @@ In this session, you'll learn the basic building blocks of MCP and how to build,
 
 ## Slides
 
-:pdf-embed{src="https://speakerdeck.com/therealdanvega/integrating-llms-in-java-a-practical-guide-to-model-context-protocol" title="Spring AI MCP Slides" height="450px"}
+:slide-deck{slug="devnexus-2026-integrating-llms-java-mcp" title="Spring AI MCP Slides"}
 
 ## Video
 
