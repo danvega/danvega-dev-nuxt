@@ -1,0 +1,256 @@
+{
+  "pdf": "/slides/devnexus-2026-integrating-llms-java-mcp/devnexus-2026-integrating-llms-java-mcp.pdf",
+  "pdfSize": 2039454,
+  "width": 1920,
+  "height": 1080,
+  "slides": [
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/001.webp",
+      "text": "Integrating LLMs in Java A Practical Guide to Model Context Protocol (MCP) Dan Vega · Spring Developer Advocate · @Brodcom"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/002.webp",
+      "text": "About Me Learn more at danvega.dev 🧑🧑🧒🧒 Husband & Father 🏠 Cleveland ☕ Java Champion 🧑💻 Software Development 23 Years 🍃 Spring Developer Advocate 📖 Author"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/003.webp",
+      "text": "/ / https: www.springofficehours.io"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/004.webp",
+      "text": "Quick show of hands... Who's feeling overwhelmed? It's okay. This is a safe space."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/005.webp",
+      "text": "Things we're supposed to learn right now LLMs Prompt Engineering AI Agents Cursor Context Windows GPT-5 Claude Agentic Workflows LoRA MCP Multi-Agent Systems Windsurf Fine-Tuning RAG Claude Code Prompt Chaining Hallucination Mitigation A2A Protocol Tokens Llama Mistral Structured Output Constitutional AI Vector Databases Tool Calling Vibe Coding GitHub Copilot Context Engineering Gemini Embeddings Memory Systems Grok Sampling Chain of Thought ...and that's just this week Function Calling Agentic IDEs Guardrails DeepSeek RLHF Qwen Evals Computer Use Observability MoE"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/006.webp",
+      "text": "The good news? You don't need to learn all of this. You need to understand the building blocks."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/007.webp",
+      "text": "The AI Developer Stack Your Application Today's focus The thing your users actually care about Agents & Workflows We're going to zoom into the Tools & Actions layer, specifically MCP. Orchestration, Multi-Agent, Agentic IDEs, Evals Tools & Actions Function Calling, Tool Use, APIs, MCP Context & Memory Prompts, RAG, Embeddings, Vector DBs, Context Windows Models GPT, Claude, Gemini, Llama, Mistral, ... Start with the layer that gives your models superpowers MCP is a single protocol that sits between your AI models and the outside world. Master this one building block, and a huge chunk of that wall of terms starts to make sense."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/008.webp",
+      "text": "Mcp 🗓 NOVEMBER 2024"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/009.webp",
+      "text": "Protocol"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/010.webp",
+      "text": "Model Context Protocol"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/011.webp",
+      "text": "So let's start simple. What happens when an LLM isn't enough? Understanding LLM limitations → Tools → MCP"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/012.webp",
+      "text": "“ LLMs are like super-smart interns. Brilliant Confidently Wrong → Draft design docs in seconds → Write complex code → Analyze data & summarize research → Explain anything to anyone → Invent APIs that don't exist → Fabricate citations & statistics → \"The Eiffel Tower was built in 1875\" → All with total confidence"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/013.webp",
+      "text": "LLM Limitations For all the good, there are real constraints we need to address Hallucinations Invents facts and API names with total confidence Domain Gaps Uses generic wording where niche jargon is required Privacy & Security Proprietary data could leave your trusted boundary Stale Data Knowledge frozen at training cutoff — no live info Context Window Long threads get truncated; model forgets earlier details Cost & Latency High-token chains drain budgets and slow UX So how do we fix this? We have a Swiss-army lineup of solutions. Bias & Safety Can output stereotypes, toxic language, or policy violations Non-Deterministic Same prompt, different answer — flaky tests, review churn Weak Reasoning Multi-step calculations and logical deductions fail"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/014.webp",
+      "text": "Taming LLM Limitations Four levers: start simple, escalate as needed 1 🛡 Prompt Guarding Encode rules that constrain behavior like tone, honesty, refusal policy. Think of it as terms of employment for our smart intern. 2 📄 Prompt Stuffing / RAG Inject fresh, task-specific context so the model quotes facts instead of guessing. Shove the answer into the context window. 3 🔧 Tools / Function Calling Let the model invoke code or APIs for real-time data, calculations, and business logic. In Spring AI, that's one annotation. 4 🌐 MCP (Resources + Prompts + Tools) Package those tools as reusable, versioned endpoints every client can share. Build once, use everywhere. Start with prompt rules → graduate to stuffing → escalate to tools → wrap best tools in MCP"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/015.webp",
+      "text": "Two Categories of Tool Use Information Retrieval Taking Action Augment the model's knowledge with real-time external data Automate tasks that would otherwise need human intervention → What's tomorrow's date? → Send an email → Current weather forecast → Create a database record → Stock price for AAPL → Submit a form or PR → What are Dan Vega’s latest YouTube Videos? → Trigger a CI/CD workflow → What talks are at this conference? → Post a message to Slack Tools give LLMs hands and feet…"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/016.webp",
+      "text": "Tools in Spring AI public class DateTimeTools { @Tool(description = “Get the current date & time\") String getCurrentDateTime() { return LocalDateTime.now() .atZone(LocaleContextHolder .getTimeZone().toZoneId()) .toString(); } } One annotation is all it takes Name + Description The @Tool annotation registers this method. The description tells the model when to use it. Model Decides You don't call the tool — the AI model reads the description and autonomously decides when this tool is needed."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/017.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/018.webp",
+      "text": "Tokens & LLM Pricing Understanding the currency of AI"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/019.webp",
+      "text": "Producing Pricing This is pricing for the the products that sit on top of the LLMs"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/020.webp",
+      "text": "API Pricing API Pricing is based on Tokens"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/021.webp",
+      "text": "What is a Token? Tokenizer Example ~¾ Tell me an interesting fact about Java 7 tokens · 38 characters [60751, 668, 448, 9559, 2840, 1078, 13114] of a word per token Context Window 100 tokens ≈ 75 words 1 token ≈ 4 characters Why it matters Everything going to and from the model is measured in tokens. More tokens = more cost. Tools add tokens too. ← Context Window Size (e.g., 200K tokens) → System → User → Assistant → Tools → TOKENS"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/022.webp",
+      "text": "LLM Pricing Landscape Per 1M tokens · Prices as of mid-2025 Model Context Input Output Notes GPT-5 (OpenAI) ~400K $1.25 $10.00 Cached: $0.125 GPT-5 Mini ~400K $0.25 $2.00 Cached: $0.025 GPT-5 Nano ~400K $0.05 $0.40 Cached: $0.005 Claude Sonnet 4 200K $3.00 $15.00 Claude Opus 4.1 200K $15.00 $75.00 Gemini 2.5 Flash-Lite 1M $0.10 $0.40 Gemini 2.5 Flash 1M $0.30 $1.25 Gemini 2.5 Pro 1M $1.25 $10.00 >200K: $2.50/$15 Grok 3 (xAI) 131K $3.00 $15.00 Cached: $0.75 32K output Key insight: A single tool call can add 500-2,000 tokens of overhead. With 10 tools available, that's up to 20K tokens before the user even asks a question."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/023.webp",
+      "text": "Context Rot Bigger context windows don't mean better answers Lost in the Middle Accuracy vs. Position in Context Liu et al., 2023 Accuracy % 75% LLMs are better at using info at the beginning or end of context. Performance degrades significantly in the middle. 65% Context Length Hurts Du et al., 2025 55% 1st 5th 10th Beginning 15th 20th Middle End Even with perfect retrieval, performance still degrades 13-85% as input length increases within claimed limits. Position of answer in document Stuffing more context isn't always the answer. This is why tools and MCP matter."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/024.webp",
+      "text": "The Hidden Cost of Tools Every tool you register eats context, even when it's not used 200K Token Context Window System Prompt Tool Definitions (10 tools × ~500 tokens each) Chat History Available for user query + response Selection Accuracy Context Budget Not Reusable More tools means more chances for the model to pick the wrong one. Beyond ~20 tools, decision quality drops significantly. Each tool definition costs 200-2,000 tokens. Register 50 tools and you've burned 25-100K tokens before the conversation starts. Traditional tools are wired into one application. Want them in Slack, IntelliJ, and a CLI? Rewrite the integration 3 times. This is the exact problem MCP solves… standardized, reusable, shareable tool endpoints"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/025.webp",
+      "text": "Model Context Protocol Exploring the building blocks of MCP"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/026.webp",
+      "text": "“ MCP is a standardized protocol for giving LLMs structured access to tools, data, and systems."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/027.webp",
+      "text": "The Problem MCP Solves Build once and use everywhere instead of rebuilding integrations for every client. Without MCP With MCP ✗ Rewrite tool integrations per app ✓ Build a server once, any client connects ✗ Each client has its own bugs ✓ Standardized protocol, fewer bugs ✗ Separate maintenance burden ✓ One codebase to maintain ✗ Provider lock-in ✓ Model and provider agnostic"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/028.webp",
+      "text": "Benefits of MCP 🧠 Modularity Keep AI apps light while deeply environment- Control 🔒 Fine-Grained Decide what data and tools your AI can access aware 💡 Reusability One server serves Claude, Cursor, IntelliJ, and & Security 🛡 Privacy Keep sensitive data local, you control visibility more Agnostic 👨💻 Language Works across Java, Python, TypeScript, and more Key Insight: MCP lets you package tools, context, and prompts as reusable, versioned endpoints that any AI client can discover and use."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/029.webp",
+      "text": "MCP Server vs. Traditional API Both expose functionality but they serve fundamentally different consumers. Traditional API MCP Server Consumer: Software systems & developers Consumer: LLMs and AI applications Discovery: Requires docs and manual integration Discovery: Auto-discovered by AI clients Schema: REST, GraphQL, gRPC — varies Schema: JSON-RPC 2.0 — always consistent Decision: Developer decides which endpoint to call Decision: Model autonomously picks the right tool Context: Not designed for AI context windows Context: Purpose-built for AI context windows"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/030.webp",
+      "text": "“ API’s are for systems MCP’s are for LLMS"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/031.webp",
+      "text": "MCP in Action Build one MCP server → every AI client gets the same capabilities Your MCP Server Java / Spring AI ↓ Claude Desktop Cursor / IDEs Spring Boot App CLI Tools Zero code changes. Write your MCP server once in Java. Every MCP-compatible client discovers and uses it automatically."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/032.webp",
+      "text": "Why Java Developers Should Care Java and Spring are first-class citizens in the MCP ecosystem 🏆 Official Java SDK 🍃 Spring AI Integration Spring donated the official MCP SDK for Java. This Spring AI has first-class MCP support. Use isn’t a third-party wrapper, it’s the reference @McpTool, auto-configuration, and the Spring implementation. programming model you already know. 🔧 Your Skills Transfer 🏢 Enterprise Ready Dependency injection, testing, security, OAuth2, Spring Security, Spring Authorization observability… everything you know about Spring Server… production-grade security from day one. applies directly to MCP servers."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/033.webp",
+      "text": "PRIMITIVES The Building Blocks of MCP Servers"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/034.webp",
+      "text": "MCP Server Primitives Tools Resources Prompts Model-controlled: Claude decides when to call these. Results are used by Claude App-controlled: Our app decides when to call these. Results are used primarily by our app. User-controlled: The user decides when to use these. Used for: • Giving additional functionality to Claude Used for: • Getting data into our app • Adding context to messages Used for: • Workflows to run based on user input, like a slash command, button click, or menu option"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/035.webp",
+      "text": "GitHubMCP Server Tools Prompts GitHub API Resources MCP Client DVAAS MCP Server YouTube API Tools Prompts Transistor API Resources Beehiiv API"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/036.webp",
+      "text": "MCP Primitives: Tools WHAT WHEN Executable functions that AI applications can invoke to perform actions (e.g., file operations, API calls, database queries) AI needs to take action beyond just generating text — when it needs to DO something in the real world EXAMPLES read_file() Read contents of a file git_commit() Commit changes to repository write_file() Create or modify files slack_post() Send messages to Slack channels execute_sql() Run database queries web_search() Search the internet send_email() Send messages via email API calculate() Perform mathematical operations Tools are model-driven — the AI decides when to call them. Think function calling, standardized through MCP."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/037.webp",
+      "text": "MCP Primitives: Resources WHAT WHEN Data sources that provide contextual information to AI applications (e.g., file contents, database records, API responses) AI needs to understand or reference existing information before responding or taking action EXAMPLES file://project/README.md Documentation and project files calendar://events/today Schedule and meeting data db://users/profile/123 User records and data email://inbox/recent Email content and metadata git://repo/commit/history Version control information slack://channel/messages Chat history and conversations Resources are application-driven — your app decides when to load them. Think of it as giving AI access to your information universe."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/038.webp",
+      "text": "MCP Primitives: Prompts WHAT WHEN Reusable templates that help structure interactions with language models (e.g., system prompts, few-shot examples) You need consistent, well-crafted prompts across different conversations or want to standardize AI behavior patterns EXAMPLES code_reviewer Template for reviewing PRs with specific criteria customer_support Consistent tone and approach for user interactions meeting_summarizer Structured format for extracting action items data_analyst Framework for interpreting charts and metrics technical_writer Guidelines for creating docs in company style bug_triager Template for categorizing and prioritizing issues Prompts are user-driven — the user decides when to use them. Think prompt engineering, but modular and shareable."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/039.webp",
+      "text": "Primitives: Interaction Model Who controls each primitive, and what does it provide? PRIMITIVE Tools Resources Prompts CONTROLLED BY PROVIDES Model-Driven Actions The AI model decides when to call these Execute functions, call APIs, modify data Application-Driven Your app decides when to load these Context Files, database records, memory User-Driven Workflows The user decides when to use these Added to the context window on demand"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/040.webp",
+      "text": "TRANSPORTS The Foundation for communication between clients and servers"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/041.webp",
+      "text": "“ Transports in the Model Context Protocol (MCP) provide the foundation for communication between clients and servers. A transport handles the underlying mechanics of how messages are sent and received."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/042.webp",
+      "text": "Transports How messages are sent and received between MCP clients and servers. Uses JSON-RPC 2.0 as its wire format. Standard I/O stdio • • • • Building command-line tools Implementing local integrations Simple process communication Working with shell scripts Server-Sent Events SSE • Server-to-client streaming only • Working with restricted networks • Implementing simple updates Streamable HTTP HTTP • Building web-based integrations • Bidirectional streaming • Request / Response streaming • Modern HTTP infrastructure"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/043.webp",
+      "text": "SECURITY Securing MCP Servers that can scale from local dev to global"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/044.webp",
+      "text": "Authorization Allows Private Context Sharing Account Binding Third-Party Integrations Allows private context to be Enable MCP server authors Securely connect to third- shared from trusted data to bind the capabilities of a party integrations. Leverage sources. Creates a trust server to an account. The existing OAuth providers, boundary so MCP servers same server can provide SAML systems, or enterprise can access internal different functionality based identity providers like documents, customer data, on who's using it. Salesforce, GitHub, and and proprietary systems. internal databases. Without authorization, MCP servers are sandbox toys. With it, they become enterprise-ready tools."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/045.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/046.webp",
+      "text": "Securing MCP Servers With Java / Spring SECURITY CHALLENGE While local MCP servers (stdio transport) may not need authentication, enterprise HTTP deployments require robust security and permission management. OAUTH2 INTEGRATION New MCP spec (2025-03-26) leverages OAuth2 framework — MCP server acts as both Resource Server (validates tokens) and Authorization Server (issues tokens). IMPLEMENTATION 1 2 3 Add Spring Security & Spring Authorization Server dependencies Configure OAuth2 client credentials in application.properties Create SecurityFilterChain for authentication and token validation"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/047.webp",
+      "text": "Securing MCP Servers"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/048.webp",
+      "text": "Securing MCP Servers with Spring AI / / https: spring.io/blog/2025/09/30/spring-ai-mcp-server-security"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/049.webp",
+      "text": "/ / https: www.youtube.com/@danvega"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/050.webp",
+      "text": "Advanced Features 🧠 Sampling 💡 Elicitations 👨💻 Completions 🛡 Progress Allows MCP servers to request LLM completions through the client, enabling agentic behaviors while the client maintains control over model access, selection, and permissions. Enables servers to request additional information from users during operations using structured JSON schemas to validate responses, allowing interactive workflows while maintaining human oversight. Provides a standardized way for servers to offer argument autocompletion suggestions for prompts and resource URIs, enabling IDE-like experiences where users receive contextual suggestions while entering values. Supports optional progress tracking for long-running operations through notification messages, allowing either side to send updates about operation status to keep users informed."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/051.webp",
+      "text": "Building MCP Servers How to build, secure, test and deploy MCP Servers in Java & Spring"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/052.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/053.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/054.webp",
+      "text": "Building an MCP Server in Java / Spring SPRING PROGRAMMING MODEL It’s the same Spring you already know: dependency injection, annotations, auto configuration, with some additional MCP specific APIs layered on top. MCP APIs Tools Prompts Resources @McpTool @McpPrompt @McpResource Executable functions the AI can invoke. Define methods, annotate them, and Spring handles the rest. Reusable templates for structuring LLM interactions. Expose prompt templates your server offers to clients. Data sources the AI can reference. Expose files, database records, or API responses as addressable URIs."
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/055.webp",
+      "text": "@Component public class VideoTools { / / / / / / / / / / } @McpTool(name = \"get-recent-videos\", description = \"Returns last 5 videos from Dan Vega's YouTube Channel\") public List<Video> getRecentVideos() { return List.of( new Video(\"Building a Terminal UI for Spring Initializr with Java\", \"https: www.youtube.com/watch?v=J9C2MiQTIYs\"), new Video(\"Spring Boot RestClient.Builder Explained (Builder Pattern)\", \"https: www.youtube.com/watch?v=aocKQ2-U3wU\"), new Video(\"Spring AI Prompt Caching: Stop Wasting Money on Repeated Tokens\", \"https: www.youtube.com/watch?v=eYb7BKW4QcU\"), new Video(\"Spring REST Client with Service Discovery (Eureka)\", \"https: www.youtube.com/watch?v=s9yyxyvYuq4\"), new Video(\"Claude Code Tasks: Stop Babysitting Your AI Agent\", \"https: www.youtube.com/watch?v=NAWKFRaR0Sk\") ); }"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/056.webp",
+      "text": "@SpringBootTest class VideoToolsTest { @Autowired VideoTools videoTools; @Test void shouldReturnFiveRecentVideos() { List<Video> videos = videoTools.getRecentVideos(); assertThat(videos).hasSize(5); } / / > - } @Test void shouldReturnVideosWithTitleAndUrl() { List<Video> videos = videoTools.getRecentVideos(); assertThat(videos).allSatisfy(video { assertThat(video.title()).isNotBlank(); assertThat(video.url()).startsWith(\"https: www.youtube.com/watch?v=\"); }); }"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/057.webp",
+      "text": "Testing Your MCP Servers RUN YOUR SERVER stdio Executable JAR Package as a JAR and run as a local process. Best for IDE integrations and CLI tools. TEST WITH AN MCP CLIENT Spring MCP Client Programmatic testing in your test suite Claude Desktop Interactive testing with Anthropic's desktop app HTTP Run the Server Start as a web server with Streamable HTTP transport. Best for shared/remote deployments. Cursor / Windsurf / Junie Test inside your IDE's AI assistant Any MCP Client The protocol is open — use whatever fits"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/058.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/059.webp",
+      "text": "“ You have an MCP Server, where and how do you deploy it for anyone to use?"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/060.webp",
+      "text": "Tanzu Platform Delivers Governance & Observability Enables access and server management for cost-optimized agentic coding assistants"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/061.webp",
+      "text": "DEMO Dan Vega As A Service (dvaas) github.com/danvega/dvaas"
+    },
+    {
+      "src": "/slides/devnexus-2026-integrating-llms-java-mcp/062.webp",
+      "text": "Thank you! [Portrait / Avatar] danvega@gmail.com https://danvega.dev"
+    }
+  ]
+}

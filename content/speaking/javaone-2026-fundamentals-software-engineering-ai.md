@@ -24,7 +24,7 @@ Modern software development demands more than just coding proficiency—it requi
 
 ## Slides
 
-:pdf-embed{src="https://speakerdeck.com/therealdanvega/fundamentals-of-software-engineering-in-the-age-of-ai" title="Fundamentals of SWE in the age of AI Slides" height="450px"}
+:slide-deck{slug="devnexus-2026-fundamentals-software-engineering-ai" title="Fundamentals of SWE in the age of AI Slides"}
 
 
 ## Video

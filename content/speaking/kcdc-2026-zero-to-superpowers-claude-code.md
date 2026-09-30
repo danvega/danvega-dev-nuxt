@@ -29,7 +29,7 @@ You'll leave knowing what to learn first, what to add as your needs grow, and wh
 
 ## Slides
 
-:pdf-embed{src="https://speakerdeck.com/therealdanvega/claude-code-start-simple-scale-smart" title="Introduction to Spring AI Slides" height="450px"}
+:slide-deck{slug="kcdc-2026-zero-to-superpowers-claude-code" title="Claude Code: Start Simple, Scale Smart slides"}
 
 ## Code
 

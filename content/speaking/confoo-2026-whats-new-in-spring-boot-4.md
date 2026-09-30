@@ -24,7 +24,7 @@ In this session, you'll not only learn what's new but experience it firsthand th
 
 ## Slides
 
-:pdf-embed{src="https://speakerdeck.com/therealdanvega/whats-new-in-spring-boot-4" title="What's New in Spring Boot 4 Slides" height="450px"}
+:slide-deck{slug="confoo-2026-whats-new-in-spring-boot-4" title="What's New in Spring Boot 4 Slides"}
 
 ## Code
 

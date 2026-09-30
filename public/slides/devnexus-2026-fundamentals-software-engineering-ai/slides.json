@@ -1,0 +1,880 @@
+{
+  "pdf": "/slides/devnexus-2026-fundamentals-software-engineering-ai/devnexus-2026-fundamentals-software-engineering-ai.pdf",
+  "pdfSize": 10362123,
+  "width": 1920,
+  "height": 1080,
+  "slides": [
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/001.webp",
+      "text": "Fundamentals of Software Engineering Nathaniel Schutta Dan Vega … In the age of AI"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/002.webp",
+      "text": "Nathaniel Schutta @nts.bsky.social https://www.linkedin.com/in/nate-schutta https://ntschutta.io/ Dan Vega @therealdanvega https://www.linkedin.com/in/danvega https://danvega.dev"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/003.webp",
+      "text": "Part 1: Core Skills 1. Programmer to Engineer 2. Reading Code 3. Writing Code Part 2: Technical Practices 4. Software Modeling 5. Automated Testing 6. Working with Existing Code Part 3: Application Development and Design 7. User Interface Design 8. Working with Data 9. Software Architecture 10.To Production Part 4: Professional Development and Growth 11.Powering Up Your Productivity 12.Learning to Learn 13.Mastering Soft Skills in the Tech World 14.Career Management 15.The AI-Powered Software Engineer"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/004.webp",
+      "text": "Do the fundamentals still matter?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/005.webp",
+      "text": "Where do the fundamentals matter?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/006.webp",
+      "text": "…In the age of AI"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/007.webp",
+      "text": "A brief history of abstractions We've always been building layers to make things easier. Punch Cards & Machine Code Assembly Language High-Level Languages OOP & Frameworks Cloud & Platforms AI-Assisted Development 1950s 1960s 1970s 1990s 2010s 2020s Programmers spoke the machine's language Mnemonics replaced raw binary C, COBOL, Fortran abstracted hardware Java, patterns, and reusable components Managed infrastructure and serverless Copilots, agents, and code generation Every new abstraction made us more productive — but never eliminated the need to understand what's happening underneath."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/008.webp",
+      "text": "Here we go again... Every few years, something new is going to make developers obsolete. 2000s IDEs & code generators \"Drag-and-drop will replace coding\" 2010s Frameworks & low-code \"Anyone can build an app now\" 2018+ No-code platforms \"Developers are the new buggy whip makers\" 2023+ AI code assistants \"Why learn to code at all?\" Yet here we are."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/009.webp",
+      "text": "Are our roles changing? Absolutely!"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/010.webp",
+      "text": "But first... What does a Software Engineer actually do?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/011.webp",
+      "text": "Write Code. Go Home …right?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/012.webp",
+      "text": "What a Software Engineer really does Requirements & Planning System Design & Architecture Writing Code Testing & Debugging Code Review Deployment & CI/CD Monitoring & Performance Communication & Collaboration Security & Compliance Documentation Mentoring & Leadership Problem Solving Writing code is just one piece of the puzzle"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/013.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/014.webp",
+      "text": "Before we say AI replaces software engineers…"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/015.webp",
+      "text": "Let’s make sure we understand what they actually do."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/016.webp",
+      "text": "Meanwhile… The Market Panicked."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/017.webp",
+      "text": "fl The software industry has ebbed and owed before."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/018.webp",
+      "text": "There are always ups and downs to the job market."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/019.webp",
+      "text": "Things seem… uncertain right now."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/020.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/021.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/022.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/023.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/024.webp",
+      "text": "“ Six months ago, Dario Amodei, the CEO of massive AI company Anthropic, claimed that in half a year, AI would be \"writing 90 percent of code.\" And that was the worst-case scenario; in just three months, he predicted, we could hit a place where \"essentially all\" code is written by AI.”"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/025.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/026.webp",
+      "text": "fi https://bsky.app/pro le/garymarcus.bsky.social/post/3lkdxwb6lzc2f"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/027.webp",
+      "text": "Tool Makers Non Programmers Business"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/028.webp",
+      "text": "What about vibe coding? Is this what replaces software engineers?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/029.webp",
+      "text": "/ / https: x.com/karpathy/status/1886192184808149383"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/030.webp",
+      "text": "We Vibe Code a 30k / month SaaS App in 64 minutes / / https: www.youtube.com/@GregIsenberg"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/031.webp",
+      "text": "“I think what AI does quite frankly is reduce the oor and raise the ceiling for all of us.” fl –Satya Nadella, Microsoft"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/032.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/033.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/034.webp",
+      "text": "It isn’t a silver bullet"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/035.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/036.webp",
+      "text": "http://bit.ly/4myx9jJ"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/037.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/038.webp",
+      "text": "“I rmly believe that AI makes engineering more essential, not less. The fear among junior engineers is real, but it's backwards. Yes, AI can write working code from natural language, but working code and engineered systems are worlds apart.” fi – Nate B. Jones"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/039.webp",
+      "text": "But the stakes matter. Vibe coding and engineered systems are worlds apart. Vibe Coding Context Engineering Personal budget tracker HR payroll system Side project landing page Healthcare records platform Internal tool prototype Financial trading system Hobby app for personal use Infrastructure at scale Proof of concept / MVP Anything with compliance or SLAs If it breaks, you adjust your budget. If it breaks, thousands don't get paid. Same tools. Completely different responsibility."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/040.webp",
+      "text": "fi https://bsky.app/pro le/headius.bsky.social/post/3lmdn76ujen2l"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/041.webp",
+      "text": "Code is cheap. Software is not."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/042.webp",
+      "text": "Ultimately, the fundamentals matter more than ever."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/043.webp",
+      "text": "One of the Real Dangers we face."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/044.webp",
+      "text": "“Even as experts become the only people who can effectively check the work of ever more capable AIs, we are in danger of stopping the pipeline that creates experts.” –Ethan Mollick, Co-Intelligence"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/045.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/046.webp",
+      "text": "We are at a crossroad…"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/047.webp",
+      "text": "Fundamentals AI Dependent"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/048.webp",
+      "text": "What I’m excited about."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/049.webp",
+      "text": "There is a particular type of satisfaction that comes from making something that works."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/050.webp",
+      "text": "A wonderful time to be a builder. The Old Reality The New Reality The Superpower Great ideas but no time, no budget, no team. You have an idea? Build it. Today. Fundamentals + AI = an engineer who can build anything. Projects stayed on the backlog forever. Tools for yourself, side projects, prototypes — things you couldn't touch before. You're not being replaced. You're being amplified. The cost of experimentation has collapsed. This is the most exciting time in 24 years of building software. Building anything meaningful required massive investment. I don't think I've ever been this excited to build software."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/051.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/052.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/053.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/054.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/055.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/056.webp",
+      "text": "The Photographer 📸"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/057.webp",
+      "text": "Crossing the chasm."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/058.webp",
+      "text": "Fundamentals matter."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/059.webp",
+      "text": "What do professional athletes work on over and over?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/060.webp",
+      "text": "The things they were taught in the beginning of their career."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/061.webp",
+      "text": "Stance, grip, alignment for golfers."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/062.webp",
+      "text": "Shooting form, dribbling, layups for basketball players."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/063.webp",
+      "text": "They don’t spend much time on the highlight reel stuff."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/064.webp",
+      "text": "https://twitter.com/DaliaShea/status/1367827097109078019"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/065.webp",
+      "text": "There are any number of paths to become a software engineer."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/066.webp",
+      "text": "Comp Sci undergrad degrees."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/067.webp",
+      "text": "Boot camps."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/068.webp",
+      "text": "Self taught."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/069.webp",
+      "text": "Doesn’t really matter."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/070.webp",
+      "text": "But there is a huge gulf between what we teach you…"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/071.webp",
+      "text": "And what you need to be successful."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/072.webp",
+      "text": "What you really need to know. What you learn in a comp sci program. What you learn in a boot camp."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/073.webp",
+      "text": "Sorry about that!"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/074.webp",
+      "text": "Fundamental goals are different."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/075.webp",
+      "text": "Undergrad programs prepare you for…graduate programs."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/076.webp",
+      "text": "Algorithms, language design, compiler theory, OS."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/077.webp",
+      "text": "fi Boot camps cram speci cs into a *very* short time frame."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/078.webp",
+      "text": "Frameworks, language du jour."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/079.webp",
+      "text": "More practical? Maybe. More transitory? Maybe."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/080.webp",
+      "text": "Some of these bootcamps are run by Universities!"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/081.webp",
+      "text": "🤔"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/082.webp",
+      "text": "fi #probably ne"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/083.webp",
+      "text": "Mostly, we teach you how to code."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/084.webp",
+      "text": "You learn a language or three."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/085.webp",
+      "text": "Become familiar with our good friends foo and bar."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/086.webp",
+      "text": "https://twitter.com/corneil/status/1431133997124423680"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/087.webp",
+      "text": "Learn a bit about debugging."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/088.webp",
+      "text": "But a lot of important things are left out. For various reasons."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/089.webp",
+      "text": "Time for one."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/090.webp",
+      "text": "Undergrad degree might put you at an advantage…for a year or two."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/091.webp",
+      "text": "But things usually even out."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/092.webp",
+      "text": "Don’t forger, the “traditional” undergrad comp sci program?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/093.webp",
+      "text": "Didn’t exist at most schools until relatively recently."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/094.webp",
+      "text": "And early on, they were often math heavy…"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/095.webp",
+      "text": "Some people think math aptitude is required."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/096.webp",
+      "text": "It isn’t."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/097.webp",
+      "text": "https://twitter.com/adammgrant/status/1406978898181636099"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/098.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/099.webp",
+      "text": "There’s one other key component…"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/100.webp",
+      "text": "https://twitter.com/EmilyKager/status/1378009547734802433"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/101.webp",
+      "text": "Never apologize for how you became a developer."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/102.webp",
+      "text": "Ultimately it is about problem solving, tinkering, creativity."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/103.webp",
+      "text": "If you have the mindset, you have it. Period."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/104.webp",
+      "text": "Core Skills"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/105.webp",
+      "text": "Reading code."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/106.webp",
+      "text": "Despite the way we teach…"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/107.webp",
+      "text": "You’ll spend far more time reading code than writing it."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/108.webp",
+      "text": "Yet we jump right into writing."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/109.webp",
+      "text": "Not how you’d learn French or Italian is it?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/110.webp",
+      "text": "https://twitter.com/adammgrant/status/1406978898181636099"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/111.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/112.webp",
+      "text": "In the era of AI, you will spend even more time reading code."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/113.webp",
+      "text": "You need to be critical of code."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/114.webp",
+      "text": "Anecdotally. Senior devs tend to be more skeptical of output."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/115.webp",
+      "text": "Modify the results."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/116.webp",
+      "text": "Less experienced devs? May just commit the output."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/117.webp",
+      "text": "“Even as experts become the only people who can effectively check the work of ever more capable AIs, we are in danger of stopping the pipeline that creates experts.” –Ethan Mollick, Co-Intelligence"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/118.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/119.webp",
+      "text": "🤔"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/120.webp",
+      "text": "Reading code is practically a developer’s nightmare."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/121.webp",
+      "text": "😡"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/122.webp",
+      "text": "︵ (╯°□°)╯ ┻━┻"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/123.webp",
+      "text": "Why do we dislike other’s code so much?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/124.webp",
+      "text": "When we read someone’s code, we have two problems."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/125.webp",
+      "text": "We need to understand the domain, the problem at hand."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/126.webp",
+      "text": "And we have to see that problem through another’s eyes."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/127.webp",
+      "text": "It is the later that often frustrates us the most."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/128.webp",
+      "text": "We’ve all read some code and wondered “what idiot wrote this?”"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/129.webp",
+      "text": "Only for you to realize…you were the idiot the wrote this!"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/130.webp",
+      "text": "https://twitter.com/pawpoise/status/38010102002888704"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/131.webp",
+      "text": "We’re also dealing with patches on top of patches."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/132.webp",
+      "text": "Often made with inadequate time or understanding."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/133.webp",
+      "text": "Ship it!"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/134.webp",
+      "text": "There’s also the IKEA effect."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/135.webp",
+      "text": "We place a higher value on things we’ve created."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/136.webp",
+      "text": "One study found people would pay 63% more if they assembled it."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/137.webp",
+      "text": "🤔"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/138.webp",
+      "text": "The mere-exposure effect."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/139.webp",
+      "text": "Familiarity may breed contempt…"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/140.webp",
+      "text": "But we tend to prefer things we are familiar with."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/141.webp",
+      "text": "Part of the dogmatism around programming languages."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/142.webp",
+      "text": "fi Developers tend to think time began with the rst language learned."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/143.webp",
+      "text": "“Why does Java need these new fangled Lambdas?”"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/144.webp",
+      "text": "🤔"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/145.webp",
+      "text": "Blub paradox."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/146.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/147.webp",
+      "text": "Languages exist along a power continuum."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/148.webp",
+      "text": "Looking down the axis, you see languages missing key features!"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/149.webp",
+      "text": "How could anyone be productive without that?!?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/150.webp",
+      "text": "Looking up the continuum, you see weird languages."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/151.webp",
+      "text": "And features you don’t use (since they don’t exist in Blub!)"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/152.webp",
+      "text": "We tend to get attached to a language and stick with it."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/153.webp",
+      "text": "Be careful here."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/154.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/155.webp",
+      "text": "Important to look at other languages."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/156.webp",
+      "text": "Consider learning a new language every year or two."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/157.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/158.webp",
+      "text": "Even if you don’t use them in your day to day work."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/159.webp",
+      "text": "Learning Ruby/Python/Haskel/Lisp/ Rust/Go will change how you code."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/160.webp",
+      "text": "The more languages you know, the easier it is to learn another."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/161.webp",
+      "text": "You have more things to compare it to."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/162.webp",
+      "text": "Oh, that’s like this in Ruby and that in JavaScript."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/163.webp",
+      "text": "Diversity makes us stronger."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/164.webp",
+      "text": "AI can help you understand a codebase!"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/165.webp",
+      "text": "Soft Skills"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/166.webp",
+      "text": "Career Exploration with AI & NotebookLM https://fundamentalsofswe.com/workshops"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/167.webp",
+      "text": "fi Arti cial Intelligence (AI)"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/168.webp",
+      "text": "Anyone else feeling overwhelmed? 🙋"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/169.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/170.webp",
+      "text": "Things we're supposed to learn right now LLMs Prompt Engineering AI Agents Cursor Context Windows GPT-5 Claude Agentic Workflows LoRA MCP Multi-Agent Systems Windsurf Fine-Tuning RAG Claude Code Context Engineering Gemini Prompt Chaining Hallucination Mitigation A2A Protocol Mistral Structured Output Constitutional AI Vector Databases Tool Calling Vibe Coding GitHub Copilot Tokens Llama Embeddings Memory Systems Grok Sampling Chain of Thought ...and that's just this week… Function Calling Agentic IDEs Guardrails DeepSeek RLHF Qwen Evals Computer Use Observability MoE"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/171.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/172.webp",
+      "text": "The good news? You don't need to learn all of this. You need to understand the building blocks."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/173.webp",
+      "text": "The AI Developer Stack Your Application Today's focus The thing your users actually care about Agents & Workflows We're going to zoom into the Tools & Actions layer, specifically MCP. Orchestration, Multi-Agent, Agentic IDEs, Evals Tools & Actions Function Calling, Tool Use, APIs, MCP Context & Memory Prompts, RAG, Embeddings, Vector DBs, Context Windows Models GPT, Claude, Gemini, Llama, Mistral, ... Start with the layer that gives your models superpowers MCP is a single protocol that sits between your AI models and the outside world. Master this one building block, and a huge chunk of that wall of terms starts to make sense."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/174.webp",
+      "text": "Will AI Replace Developers?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/175.webp",
+      "text": "“It Depends” 🤷"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/176.webp",
+      "text": "What about costs of running these models?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/177.webp",
+      "text": "You are the pilot not the passenger."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/178.webp",
+      "text": "“AI won’t replace developers, but developers who use AI will replace those who don’t.” –Jeff Atwood (attributed), software developer, author, blogger and entrepreneur"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/179.webp",
+      "text": "Threat or Liberation?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/180.webp",
+      "text": "Your pAIr programmer."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/181.webp",
+      "text": "Fundamentals AI Dependent"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/182.webp",
+      "text": "/ / https: x.com/karpathy/status/1886192184808149383"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/183.webp",
+      "text": "Consider these 2 scenarios Scenario 1 You want to build a personal expense tracker to categorize your monthly spending. You use vibe coding to generate the application over a weekend. If a bug miscalculates your coffee expenses, the worst outcome is a slightly inaccurate budget. Scenario 2 Your company needs a payroll system that handles thousands of employees across multiple states with different tax requirements. A bug here could mean employees don’t get paid correctly, tax obligations aren’t met, and the company faces legal consequences."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/184.webp",
+      "text": "Getting Started with AI."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/185.webp",
+      "text": "LLM Pricing & Tokens The Currency of LLMS"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/186.webp",
+      "text": "Producing Pricing This is pricing for the the products that sit on top of the LLMs"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/187.webp",
+      "text": "API Pricing API Pricing is based on Tokens"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/188.webp",
+      "text": "What is a Token? Tokenizer Example ~¾ Tell me an interesting fact about Java 7 tokens · 38 characters [60751, 668, 448, 9559, 2840, 1078, 13114] of a word per token Context Window 100 tokens ≈ 75 words 1 token ≈ 4 characters Why it matters Everything going to and from the model is measured in tokens. More tokens = more cost. Tools add tokens too. ← Context Window Size (e.g., 200K tokens) → System → User → Assistant → Tools → TOKENS"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/189.webp",
+      "text": "LLM Pricing Landscape Per 1M tokens · Prices as of mid-2025 Model Context Input Output Notes GPT-5 (OpenAI) ~400K $1.25 $10.00 Cached: $0.125 GPT-5 Mini ~400K $0.25 $2.00 Cached: $0.025 GPT-5 Nano ~400K $0.05 $0.40 Cached: $0.005 Claude Sonnet 4 200K $3.00 $15.00 Claude Opus 4.1 200K $15.00 $75.00 Gemini 2.5 Flash-Lite 1M $0.10 $0.40 Gemini 2.5 Flash 1M $0.30 $1.25 Gemini 2.5 Pro 1M $1.25 $10.00 >200K: $2.50/$15 Grok 3 (xAI) 131K $3.00 $15.00 Cached: $0.75 32K output Key insight: A single tool call can add 500-2,000 tokens of overhead. With 10 tools available, that's up to 20K tokens before the user even asks a question."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/190.webp",
+      "text": "Context Rot Bigger context windows don't mean better answers Lost in the Middle Accuracy vs. Position in Context Liu et al., 2023 Accuracy % 75% LLMs are better at using info at the beginning or end of context. Performance degrades significantly in the middle. 65% Context Length Hurts Du et al., 2025 55% 1st 5th 10th Beginning 15th 20th Middle End Even with perfect retrieval, performance still degrades 13-85% as input length increases within claimed limits. Position of answer in document Stuffing more context isn't always the answer. This is why tools and MCP matter."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/191.webp",
+      "text": "The Hidden Cost of Tools Every tool you register eats context — even when it's not used 200K Token Context Window System Prompt Tool Definitions (10 tools × ~500 tokens each) Chat History Available for user query + response Selection Accuracy Context Budget Not Reusable More tools means more chances for the model to pick the wrong one. Beyond ~20 tools, decision quality drops significantly. Each tool definition costs 200-2,000 tokens. Register 50 tools and you've burned 25-100K tokens before the conversation starts. Traditional tools are wired into one application. Want them in Slack, IntelliJ, and a CLI? Rewrite the integration 3 times. This is the exact problem MCP solves — standardized, reusable, shareable tool endpoints"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/192.webp",
+      "text": "Tools"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/193.webp",
+      "text": "ffi The Best Tools are the ones you’re most e cient using"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/194.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/195.webp",
+      "text": "AI-Assisted Feature Development https://fundamentalsofswe.com/workshops"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/196.webp",
+      "text": "So now what?"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/197.webp",
+      "text": "Many of us enjoy the craft of building software."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/198.webp",
+      "text": "Technology changes."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/199.webp",
+      "text": "Constantly."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/200.webp",
+      "text": "Our industry is evolving."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/201.webp",
+      "text": "Some will be tempted to just…"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/202.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/203.webp",
+      "text": "It’s a bold strategy Cotton. Let’s see if it pays off."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/204.webp",
+      "text": "Two possible mindsets."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/205.webp",
+      "text": "fi You can de ne yourself by what you’ve done in the past."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/206.webp",
+      "text": "Or…"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/207.webp",
+      "text": "fi You can de ne yourself by the problems you will solve in the future."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/208.webp",
+      "text": "You can be reactive."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/209.webp",
+      "text": "Or proactive."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/210.webp",
+      "text": "Whatever path you choose, change is inevitable."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/211.webp",
+      "text": "You are responsible for your career!"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/212.webp",
+      "text": "No one can do it for you."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/213.webp",
+      "text": "Fundamentals will always serve you well."
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/214.webp",
+      "text": "“Excellence is doing ordinary things extraordinarily well.” – John W. Gardner"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/215.webp",
+      "text": "Good luck!"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/216.webp",
+      "text": "https://fundamentalsofswe.com"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/217.webp",
+      "text": "Code: FOSEQCON25 Link: https://learning.oreilly.com/ get-learning/?code=FOSEQCON25"
+    },
+    {
+      "src": "/slides/devnexus-2026-fundamentals-software-engineering-ai/218.webp",
+      "text": "Nathaniel Schutta @nts.bsky.social https://www.linkedin.com/in/nate-schutta https://ntschutta.io/ Dan Vega @therealdanvega https://www.linkedin.com/in/danvega https://danvega.dev"
+    }
+  ]
+}

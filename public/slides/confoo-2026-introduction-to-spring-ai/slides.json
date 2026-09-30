@@ -1,0 +1,116 @@
+{
+  "pdf": "/slides/confoo-2026-introduction-to-spring-ai/confoo-2026-introduction-to-spring-ai.pdf",
+  "pdfSize": 1067594,
+  "width": 1920,
+  "height": 1080,
+  "slides": [
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/001.webp",
+      "text": "Spring into AI AI for Java Developers Dan Vega Spring Developer Advocate @ Broadcom"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/002.webp",
+      "text": "Introduction"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/003.webp",
+      "text": "About Me Husband & Father Cleveland, OH Spring Developer Advocate Java Champion Author 24 Years in Software Development danvega.dev"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/004.webp",
+      "text": "/ / https: www.springofficehours.io"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/005.webp",
+      "text": "The Java AI Opportunity"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/006.webp",
+      "text": "Why are we talking about AI on the JVM?"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/007.webp",
+      "text": "I know that most people won’t believe it, but I can guarantee you that in 2 years, the majority of AI agent workloads will run on the JVM James Ward Principal Developer Advocate at AWS"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/008.webp",
+      "text": "Python earned its place in AI. TensorFlow. PyTorch. Scikit-learn. Hugging Face. Python dominated AI research and model training. That part of the story is not up for debate. But the game has changed."
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/009.webp",
+      "text": "But what are we actually doing? Building & Training Models Integrating AI into Applications • Specialized ML frameworks required • REST APIs & SDKs • Research-oriented workflows • Authentication & Rate Limiting • Customized Data Pipelines • Retry Logic & Resilience • GPU Infrastructure • Observability Most of us aren't training models. We're calling them."
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/010.webp",
+      "text": "You've done this before. Databases → Message Queues → Payment Gateways LLMs are just the next Integration. → Cloud"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/011.webp",
+      "text": "Java Is Built for This Enterprise-grade infrastructure Spring, Kafka, observability tools that are already running in production at scale Type safety & structured output Parse AI responses into real objects with compile-time guarantees, not loose strings Battle-tested at scale Millions of JVM applications serving billions of requests every single day Your existing team No need to hire a Python shop or replatform. Just upskill the developers you already trust"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/012.webp",
+      "text": "/bin/bash echo \"Calling Open AI \" MY_OPENAI_KEY=\"YOUR_API_KEY_HERE\" PROMPT=\"Tell me an interesting fact about Java\" curl https: api.openai.com/v1/chat/completions \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer $MY_OPENAI_KEY\" \\ . . . / / -d '{\"model\": “gpt-5\", \"messages\": [{“role\":\"user\", \"content\": \"'\"${PROMPT}\"'\"}] }' ! # Calling OpenAI with cURL"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/013.webp",
+      "text": "API Response { \"id\": \"chatcmpl-ABNbjZ5oRbo72OevnCX2arPufJCYK\", \"object\": \"chat.completion\", \"model\": \"gpt-5\", \"choices\": [{ \"message\": { \"role\": \"assistant\", \"content\": \"Java was initially designed with interactive television in mind \" }, \"finish_reason\": \"stop\" }], \"usage\": { \"prompt_tokens\": 14, \"completion_tokens\": 90, \"total_tokens\": 104 } . . . }"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/014.webp",
+      "text": "Calling OpenAI with Java public static void main(String[] args) throws IOException, InterruptedException { var apiKey = \"YOUR_API_KEY_HERE\"; var body = \"\"\" { \"model\": \"gpt-5\", \"messages\": [{ \"role\": \"user\", \"content\": \"Tell me an interesting fact about Java\" }] } “”\"; HttpRequest request = HttpRequest.newBuilder() .uri(URI.create(\"https: api.openai.com/v1/chat/completions\")) .header(\"Content-Type\", \"application/json\") .header(\"Authorization\", \"Bearer \" + apiKey) .POST(HttpRequest.BodyPublishers.ofString(body)) .build(); / / } var client = HttpClient.newHttpClient(); var response = client.send(request,HttpResponse.BodyHandlers.ofString()); System.out.println(response.body());"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/015.webp",
+      "text": "Spring AI provides us so much more than a facility for making REST API calls"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/016.webp",
+      "text": "What Are the Challenges? What does a framework provide you? Model abstraction and portability Response streaming and async processing Unified API across providers Memory and conversation management Structured output parsing Embedding and vector operations Prompt template management Function calling integration Token counts & cost management Observability and monitoring Retry logic and error handling Security and compliance"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/017.webp",
+      "text": "LLM Pricing"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/018.webp",
+      "text": "ChatGPT Pricing Tiers"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/019.webp",
+      "text": "API Pricing"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/020.webp",
+      "text": "What is a Token? ~100 tokens ≈ 75 words A token is roughly 3/4 of a word"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/021.webp",
+      "text": "What is a Token?"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/022.webp",
+      "text": "Context Window"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/023.webp",
+      "text": "LLM Pricing Comparison Model Context Input / Output (per 1M tokens) GPT-5 (OpenAI) ~400K $1.25 / $10.00 GPT-5 Mini ~400K $0.25 / $2.00 GPT-5 Nano ~400K $0.05 / $0.40 Claude Sonnet 4 200K $3.00 / $15.00 Claude Opus 4.1 200K (32K out) $15.00 / $75.00 Gemini 2.5 Flash-Lite 1M $0.10 / $0.40 Gemini 2.5 Flash 1M $0.30 / $1.25 Gemini 2.5 Pro 1M (2M roadmap) $1.25-2.50 / $10-15 Grok 3 (xAI) 131K $3.00 / $15.00"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/024.webp",
+      "text": "Spring AI Introduction"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/025.webp",
+      "text": "Getting Started A Tour of Spring AI Features • Spring AI Reference Documentation • Currently Versions: • Spring Boot 3 - v1.1.2 • Spring Boot 4 - 2.0.0 M2 • start.spring.io • Chat Client & Chat Model • Blocking vs Non-Blocking (Streaming Responses) • Response Types (Content / ChatResponse) • Spring AI Features (Prompt Templates, Structured Output & more) 29"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/026.webp",
+      "text": "Demo Time Check out the code"
+    },
+    {
+      "src": "/slides/confoo-2026-introduction-to-spring-ai/027.webp",
+      "text": "Thank You www.danvega.dev"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "pdf": "/slides/confoo-2026-whats-new-in-spring-boot-4/confoo-2026-whats-new-in-spring-boot-4.pdf",
+  "pdfSize": 2456210,
+  "width": 1920,
+  "height": 1080,
+  "slides": [
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/001.webp",
+      "text": "W H AT ' S N E W I N SPRING BOOT 4 Spring Framework 7 & Spring Boot 4 Dan Vega // Spring Developer Advocate @Broadcom"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/002.webp",
+      "text": "DAN VEGA Spring Developer Advocate @Broadcom Java Champion Author: Fundamentals of Software Engineering (O'Reilly) 24+ years building software Cleveland, OH // Husband & Father danvega.dev YouTube // Blog // Podcast"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/003.webp",
+      "text": "/ / https: www.springofficehours.io"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/004.webp",
+      "text": "WHERE WE'VE BEEN Spring Boot 3.x recap"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/005.webp",
+      "text": "\" You can't really know where you are going until you know where you have been. - Maya Angelou"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/006.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/007.webp",
+      "text": "3.0 November 2022 • JDK 17+ • Jakarta EE 9/10 • Ahead-of-Time (AOT) / GraalVM • Observability • HTTP Interface Clients • RFC 7807 Problem Details"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/008.webp",
+      "text": "3.1 May 2023 • Docker Compose support • Testcontainers • Spring Authorization Server"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/009.webp",
+      "text": "3.2 • JDK 21 (LTS) support November 2023 • Virtual Threads • New Rest Client • New JDBC Client • SSL Bundle Reloading"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/010.webp",
+      "text": "3.3 • CDS Support May 2024 • Observability Enhancements • SBOM Actuator Endpoint • Service Connections • Base64 Resources"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/011.webp",
+      "text": "3.4 • Structured Logging November 2024 • @Fallback Beans • AssertJ support for MockMvc • Expanded Virtual Thread Support • ARM image support out-of-the-box"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/012.webp",
+      "text": "3.5 May 2025 • SSL Bundle Metrics • Load properties from env vars • Trigger Quartz jobs from Actuator • ECS structured logging (nested format)"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/013.webp",
+      "text": "SPRING FRAMEWORK 7 & SPRING BOOT 4 November 2025"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/014.webp",
+      "text": "THE ROAD TO GA spring.io/blog/2025/09/02/road_to_ga_introduction"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/015.webp",
+      "text": "SPRING BOOT 4 github.com/danvega/sb4"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/016.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/017.webp",
+      "text": "BASELINE UPGRADES • JDK 17+ / JDK 25 (LTS) • Kotlin 2.2 • Jakarta EE 11 • GraalVM 25 • Servlet 6.1 (Tomcat 11) • Jackson 3 • JPA 3.2 • JUnit 6 • Bean Validation 3.1 • Hibernate ORM 7.x"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/018.webp",
+      "text": "MODULAR AUTO-CONFIG The biggest structural change in Boot 4"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/019.webp",
+      "text": "185 KB → 2 MB spring-boot-autoconfigure JAR growth from 2014 to 2025"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/020.webp",
+      "text": "WHAT CHANGED • Auto-config split into focused modules • spring-boot-starter-web -> spring-boot-webmvc • spring-boot-starter-webmvc (new, more explicit) • Each starter brings only its own auto-config"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/021.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/022.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/023.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/024.webp",
+      "text": "JACKSON 3 New JSON library with big improvements"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/025.webp",
+      "text": "JACKSON 3 SUPPORT • Immutable builder-based configuration • ISO-8601 date defaults out of the box • Unchecked exceptions - better for lambdas/streams • New tools.jackson packages • Spring Boot auto-configures JsonMapper bean • Mix of Jackson 2 & 3 supported during migration"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/026.webp",
+      "text": "Jackson 3 - JsonMapper @Component public class DataLoader implements CommandLineRunner { private static final Logger log = LoggerFactory.getLogger(DataLoader.class); private static final String DONUTS_JSON_PATH = \"classpath:/data/donuts-menu.json\"; private final JsonMapper jsonMapper; private final ResourceLoader resourceLoader; private List<Donut> donuts; public DataLoader(JsonMapper jsonMapper, ResourceLoader resourceLoader) { this.jsonMapper = jsonMapper; this.resourceLoader = resourceLoader; } @Override public void run(String args) throws Exception { log.info(\"Loading Donuts \\uD83C\\uDF69\"); try { Resource resource = resourceLoader.getResource(DONUTS_JSON_PATH); this.donuts = jsonMapper.readValue(resource.getInputStream(), new TypeReference > < . . } . } } catch (JacksonException e) { log.error(\"Error loading Donuts: {}\", e.getMessage()); } catch (Exception e) { throw e; } () {});"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/027.webp",
+      "text": "Jackson - Use Jackson 2 Defaults spring: application: name: donut-shop jackson: serialization: indent-output: true use-jackson2-defaults: true"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/028.webp",
+      "text": "Jackson - JSON Views # # public record Donut( @JsonView(Views.Summary.class) String type, @JsonView(Views.Public.class) Glaze glaze, @JsonView(Views.Public.class) List<String> toppings, @JsonView(Views.Summary.class) @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = \"$#. BigDecimal price, @JsonView(Views.Public.class) Boolean isVegan, @JsonView(Views.Internal.class) Integer calories, @JsonView(Views.Internal.class) LocalDateTime bakedAt) {} \")"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/029.webp",
+      "text": "Jackson - JSON Views public class Views { * Summary view: Minimal information for quick listings * Includes: type, price public interface Summary {} * Public view: Information suitable for public API consumers * Includes: Summary + glaze, toppings, isVegan public interface Public extends Summary {} * Internal view: Additional details for internal use * Includes: Public + calories, bakedAt public interface Internal extends Public {} * Admin view: Complete information for administrative purposes * Includes: All fields (no restrictions) public interface Admin extends Internal {} / * / * / * / * * * * * * * * * / / / / }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/030.webp",
+      "text": "❌ OLD: Required mutable wrapper object var user = new User(\"Marcel\", \"Martin\", LocalDate.of(1971, 7, 12), \"m@m.fr\", \"1234 rue Gambetta\", 69002, \"Lyon\", \"France\"); var jacksonValue = new MappingJacksonValue(user); jacksonValue.setSerializationView(Summary.class); Wrapper! Mutable! / / / / / / / / var response = this.restTemplate.postForObject( \"http: localhost:8080/create\", jacksonValue, Have to send wrapper, not the actual object String.class ); / / Spring Boot 3 - Request with filtered fields"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/031.webp",
+      "text": "✅ NEW: Clean, immutable, fluent API var user = new User(\"Marcel\", \"Martin\", LocalDate.of(1971, 7, 12), \"m@m.fr\", \"1234 rue Gambetta\", 69002, \"Lyon\", \"France\"); / / / / / / var response = this.restClient.post() .uri(\"http: localhost:8080/create\") .hint(JsonView.class.getName(), Summary.class) .body(user) Send the actual object .retrieve() .body(String.class); / / Spring Boot 4 - Request with filtered fields Clean hint!"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/032.webp",
+      "text": "NULL SAFETY WITH JSPECIFY Say goodbye to NullPointerExceptions… maybe"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/033.webp",
+      "text": "EVER HIT A NullPointer Exception? Yeah. Everyone. Every single one of you."
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/034.webp",
+      "text": "THE PROBLEM ISN’T NULL Sometimes you want to express the absence of a value"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/035.webp",
+      "text": "THE REAL PROBLEM WITH NULL Is that it is usually implicit and undocumented"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/036.webp",
+      "text": "EXPRESS NULLABILITY JSPECIFY / / https: jspecify.dev"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/037.webp",
+      "text": "JSPECIFY ANNOTATIONS • @Nullable: Indicates that a type usage (Fields, Return Types, Parameters & Generics) can be null@NullMarked - everything is non-null by default • @NonNull: This explicitly marks that null is not a valid value for this type usage • @NullMarked: All type usages within that scope are considered non-null by default • @NullUnmarked: All type usages have unspecified nullness (neither nullable nor non-null by default)"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/038.webp",
+      "text": "SPRING FRAMEWORK JSR-305 ANNOTATIONS • Replaces Spring's JSR-305 annotations • @Nullable • @NonNull • @NonNullApi • @NonNullFields"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/039.webp",
+      "text": "Why are we doing this? Ensure null safety in the IDE or during compilation time"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/040.webp",
+      "text": "SUPPORT FOR JSPECIFY Across the Spring Portfolio of projects"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/041.webp",
+      "text": "BeanRegistrar API Programmatic Bean Registration"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/042.webp",
+      "text": "PROGRAMMATICALLY REGISTER BEANS A more flexible way to register multiple or conditional beans without abusing @Bean methods."
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/043.webp",
+      "text": "Bean Registrar in Action public class MessageServiceRegistrar implements BeanRegistrar { @Override public void register(BeanRegistry registry, Environment env) { String messageType = env.getProperty(\"app.message-type\", \"email\"); switch (messageType.toLowerCase()) { case \"email\" registry.registerBean(\"messageService\", EmailMessageService.class, spec spec.description(\"Email service via BeanRegistrar\")); case \"sms\" registry.registerBean(\"messageService\", SmsMessageService.class, spec spec.description(\"SMS service via BeanRegistrar\")); } } > > > - - - > - }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/044.webp",
+      "text": "Bean Registrar in Action @Configuration @Import(MessageServiceRegistrar.class) public class ModernConfig { other bean definitions here / / }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/045.webp",
+      "text": "BUILT-IN API VERSIONING First-class support in MVC & WebFlux"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/046.webp",
+      "text": "WE COULD ALWAYS VERSION OUR API’S Introducing first-class support for web endpoint versioning in MVC / WebFlux"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/047.webp",
+      "text": "API VERSIONING • version attribute on @GetMapping / @PostMapping • Version source: header, param, media type or path variable • Configurable strategy via ApiVersionConfigurer • Supported versions + default version • No more custom interceptors or filters"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/048.webp",
+      "text": "API VERSIONING IN ACTION @GetMapping(value = \"/{version}/users\", version = \"1.0\") public List<UserDTOv1> findAllV1() { return userRepository.findAll().stream() .map(userMapper toV1) .collect(Collectors.toList()); } : : : : @GetMapping(value = \"/{version}/users\", version = \"2.0\") public List<UserDTOv2> findAllV2() { return userRepository.findAll().stream() .map(userMapper toV2) .collect(Collectors.toList()); }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/049.webp",
+      "text": "API VERSIONING IN ACTION @Configuration public class WebConfig implements WebMvcConfigurer { * path-segment /v1/users * request header * query param * media type param / * * / } @Override public void configureApiVersioning(ApiVersionConfigurer configurer) { configurer .addSupportedVersions(\"1.0\",\"1.1\",\"2.0\") .setDefaultVersion(\"1.0\") .useRequestHeader(\"X-API-Version\") .setVersionParser(new ApiVersionParser()); }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/050.webp",
+      "text": "HTTP INTERFACE CLIENTS Declarative HTTP with @HttpExchange"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/051.webp",
+      "text": "HTTP INTERFACE CLIENTS Introduced in Spring Framework 6 & Spring Boot 3.0"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/052.webp",
+      "text": "HTTP CLIENTS IN ACTION @HttpExchange(url = “/todos\", accept = \"application/json\") public interface TodoService { @GetExchange(\"/\") List<Todo> getAllTodos(); @GetExchange(\"/{id}\") Todo getTodoById(@PathVariable Long id); @PostExchange(\"/\") Todo createTodo(@RequestBody Todo todo); }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/053.webp",
+      "text": "HTTP CLIENTS IN ACTION @Bean public TodoService todoService(RestClient.Builder restClientBuilder) { var restClient = restClientBuilder .baseUrl(\"https: jsonplaceholder.typicode.com\") .build(); / / } var adapter = RestClientAdapter.create(restClient); var factory = HttpServiceProxyFactory.builderFor(adapter).build(); return factory.createClient(TodoService.class);"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/054.webp",
+      "text": "HTTP CLIENTS IN ACTION @HttpExchange(url = “/todos\", accept = \"application/json\") public interface TodoService { @GetExchange(\"/\") List<Todo> getAllTodos(); @GetExchange(\"/{id}\") Todo getTodoById(@PathVariable Long id); } / / @Configuration(proxyBeanMethods = false) @ImportHttpServices(TodoService.class) public class HttpClientConfig { That's it! }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/055.webp",
+      "text": "HTTP CLIENTS IN ACTION @Configuration @ImportHttpServices(group = \"jsonplaceholder\", types = {TodoService.class, PostService.class}) @ImportHttpServices(group = \"github\", types = {RepoService.class, IssueService.class}) public class MultiApiConfig { @Bean RestClientHttpServiceGroupConfigurer groupConfigurer() { return groups { groups.filterByName(\"jsonplaceholder\") .forEachClient((group, builder) builder .baseUrl(\"https: jsonplaceholder.typicode.com/\") .build()); > > - - / / / / > } - } }; groups.filterByName(\"github\") .forEachClient((group, builder) builder .baseUrl(\"https: api.github.com\") .defaultHeader(\"Accept\", \"application/vnd.github.v3+json\") .build());"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/056.webp",
+      "text": "BUILT-IN RESILIENCE No more Spring Retry dependency"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/057.webp",
+      "text": "RESILIENCE FEATURES • @Retryable - retry failed methods with backoff • RetryTemplate - dynamic control over retry • @ConcurrencyLimit - throttle concurrent calls • Exponential backoff (1s, 2s, 4s, 8s...) • Jitter support - prevent thundering herd • All built into Spring Framework 7 Core"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/058.webp",
+      "text": "RESLIANCE IN ACTION & & = ! : : > - = = @Service public class RestaurantService { @Retryable( maxAttempts = 4, includes = RestaurantApiException.class, delay = 1000, multiplier = 2 ) public List<MenuItem> getMenuFromPartner(String restaurantId) { if (random.nextDouble() < 0.4) { throw new RestaurantApiException(\"Partner restaurant API is temporarily unavailable\"); } Restaurant restaurant = dataLoader.getRestaurant(restaurantId); if (restaurant null) { throw new RestaurantApiException(\"Restaurant not found: \" + restaurantId); } List<MenuItem> menu = restaurant.menuItemIds().stream() .map(dataLoader getMenuItem) .filter(item item null item.available()) .toList(); return menu; } }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/059.webp",
+      "text": "RESLIANCE IN ACTION public DriverAssignmentService(DriverRetryListener driverRetryListener) { this.driverRetryListener = driverRetryListener; RetryPolicy retryPolicy = RetryPolicy.builder() .maxAttempts(10) .delay(Duration.ofMillis(2000)) .multiplier(1.5) .maxDelay(Duration.ofMillis(10000)) .includes(NoDriversAvailableException.class) .build(); } retryTemplate = new RetryTemplate(retryPolicy); retryTemplate.setRetryListener(driverRetryListener);"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/060.webp",
+      "text": "RESLIANCE IN ACTION @Service public class RestaurantNotificationService { private static final Logger log = LoggerFactory.getLogger(RestaurantNotificationService.class); @ConcurrencyLimit(3) public void notifyRestaurant(Order order) { LocalTime start = LocalTime.now(); log.info(\"[CONCURRENT] Sending notification to restaurant for order {} (Thread: {})\", order.id(), Thread.currentThread().getName()); Simulate notification taking time (network call, webhook, etc.) simulateDelay(Duration.ofSeconds(2)); } / / } LocalTime end = LocalTime.now(); log.info(\"[CONCURRENT] Notification sent for order {} (took {}ms)\", order.id(), Duration.between(start, end).toMillis());"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/061.webp",
+      "text": "REST TEST CLIENT A modern testing facade"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/062.webp",
+      "text": "HTTP CLIENTS A quick history lesson on Http Clients"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/063.webp",
+      "text": "RestTestClient"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/064.webp",
+      "text": "REST TEST CLIENT IN ACTION @WebMvcTest(TodoSimpleController.class) @AutoConfigureRestTestClient public class TodoSimpleControllerTest { @Autowired RestTestClient client; @Test public void findAllTodos() { List<Todo> todos = client.get() .uri(\"/api/todos/simple/\") .exchange() .expectStatus().isOk() .expectBody(new ParameterizedTypeReference<List<Todo .returnResult() .getResponseBody(); > > } assertEquals(1, todos.size()); assertEquals(\"First Todo\", todos.get(0).title()); () {})"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/065.webp",
+      "text": "OPEN TELEMETRY A new spring boot starter"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/066.webp",
+      "text": "KEY CONCEPTS • Single Dependency: spring-boot-starter-opentelemetry - replaces complex setup • Automatic instrumentation: HTTP server/client, JDBC & more • Log correlation: Automatic trace/span ID injection into logs • OLTP export: Works with any OpenTelemetry-compatible backend • Production ready: Official Spring Support, no alpha dependencies"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/067.webp",
+      "text": "LGTM STACK • Loki - for logs (Log aggregation system) • Grafana - for visualization and dashboards • Tempo - for traces (distributed tracing backend) • Mimir - for metrics (long-term storage for Prometheus metrics"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/068.webp",
+      "text": "OPEN TELEMETRY SPRING BOOT STARTER spring: application: name: my-app / / / / / / management: tracing: sampling: probability: 1.0 # 100% for development otlp: metrics: export: url: http: localhost:4318/v1/metrics opentelemetry: tracing: export: otlp: endpoint: http: localhost:4318/v1/traces logging: export: otlp: endpoint: http: localhost:4318/v1/logs"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/069.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/070.webp",
+      "text": "JMS CLIENT Virtual Threads"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/071.webp",
+      "text": "UNIFIED JMS CLIENT • Modern alternative to JmsTemplate • Fluent API like RestClient & JdbcClient • Customizable QoS settings • Unified exception translation • Supports jakarta.jms and Spring messaging"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/072.webp",
+      "text": "JMS CLIENT IN ACTION @Service public class OrderMessagingService { private final JmsClient jmsClient; public OrderMessagingService(JmsClient jmsClient) { this.jmsClient = jmsClient; } public void sendOrder(Order order) { jmsClient.send(\"orders.queue\") .withBody(order); } }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/073.webp",
+      "text": "SPRING DATA AOT REPOSITORIES Generate Repository code at build time"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/074.webp",
+      "text": "SPRING DATA REPOSITORIES @Repository public interface CoffeeRepository extends ListCrudRepository<Coffee, Long> { List<Coffee> findByNameContainingIgnoreCase(String name); List<Coffee> findBySizeAndPriceGreaterThan(Size size, BigDecimal price); }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/075.webp",
+      "text": "THE SOLUTION? AOT Repositories"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/076.webp",
+      "text": "50-70% Faster startup with AOT repositories Query parsing at build time, not runtime"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/077.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/078.webp",
+      "text": "SPRING SECURITY MFA Multi-Factor Authentication"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/079.webp",
+      "text": "MULTI-FACTOR AUTH • First-class MFA in Spring Security • @EnableMultiFactorAuthentication • Factor tracking via FactorGrantedAuthority • Global or selective (per-endpoint) MFA • PASSWORD + One-Time Token out of the box"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/080.webp",
+      "text": "SPRING DATA REPOSITORIES @Repository public interface CoffeeRepository extends ListCrudRepository<Coffee, Long> { List<Coffee> findByNameContainingIgnoreCase(String name); List<Coffee> findBySizeAndPriceGreaterThan(Size size, BigDecimal price); }"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/081.webp",
+      "text": "What is Multi-Factor Authentication? MFA requires users to provide multiple factors to authenticate — combining something you know, have, or are. OWASP FACTOR CATEGORIES SPRING SECURITY APPROACH Something you know — Password, PIN At authentication time, Spring Security adds a FactorGrantedAuthority to Something you have — SMS, Email, Token Something you are — Biometrics track which factors have been verified. Authorization rules can then require multiple factors before granting access. Somewhere you are — Geolocation FACTOR_PASSWORD + FACTOR_OTT Something you do — Behavior profiling"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/082.webp",
+      "text": "Enabling MFA Use @EnableMultiFactorAuthentication to require multiple factors globally. @Configuration @EnableWebSecurity(debug = true) @EnableMultiFactorAuthentication(authorities = { FactorGrantedAuthority.PASSWORD_AUTHORITY, FactorGrantedAuthority.OTT_AUTHORITY }) class SecurityConfig { @Bean SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception { return http .authorizeHttpRequests((authorize) authorize .requestMatchers(\"/\", \"/ott/sent\").permitAll() .requestMatchers(\"/admin \").hasRole(\"ADMIN\") .anyRequest().authenticated() ) .formLogin(withDefaults()) .oneTimeTokenLogin(withDefaults()) .build(); } > - * * Smart Redirect: Automatically sends user to missing factor's login / All URLs: Require both PASSWORD and OTT factors"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/083.webp",
+      "text": "Selective MFA Require MFA only for specific endpoints using AuthorizationManagerFactories. @Bean SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception { var mfa = AuthorizationManagerFactories.multiFactor() .requireFactors( FactorGrantedAuthority.PASSWORD_AUTHORITY, FactorGrantedAuthority.OTT_AUTHORITY ) .build(); http } .authorizeHttpRequests((authorize) authorize .requestMatchers(\"/admin \").access(mfa.hasRole(\"ADMIN\")) .requestMatchers(\"/user/settings \").access(mfa.authenticated()) .anyRequest().authenticated() ) .formLogin(Customizer.withDefaults()) .oneTimeTokenLogin(Customizer.withDefaults()); return http.build(); * * /user/settings/** → Requires MFA only / > - * * / /admin/** → Requires MFA + ADMIN role Everything else → Single factor OK"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/084.webp",
+      "text": "start.spring.io Spring Boot 4.0.3 is available NOW Java 25"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/085.webp",
+      "text": "SHOW ME THE CODE github.com/danvega/sb4"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/086.webp",
+      "text": "RESOURCES Spring Framework 7.0 Release Notes github.com/spring-projects/spring-framework/wiki Spring Boot 4.0 Release Notes github.com/spring-projects/spring-boot/wiki Road to GA Blog Series spring.io/blog/2025/09/02/road_to_ga_introduction Demo Repository github.com/danvega/sb4 Spring Portfolio Generations spring.io/projects/generations"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/087.webp",
+      "text": "ROADMAP Spring Framework 6.2 Spring Framework 7.0 Available Now November 2025 • Final 6.x with long-term support • Foundation for Spring Boot 4.0 • Foundation for Boot 3.4 & 3.5 • JDK 17+, optimized for JDK 25 • JDK 17 & JDK 21 LTS • Jakarta EE 11, JSpecify, Kotlin 2.x • Deep core container revision • Bean registration, API versioning"
+    },
+    {
+      "src": "/slides/confoo-2026-whats-new-in-spring-boot-4/088.webp",
+      "text": "THANK YOU! dan.vega@broadcom.com danvega.dev @therealdanvega"
+    }
+  ]
+}
