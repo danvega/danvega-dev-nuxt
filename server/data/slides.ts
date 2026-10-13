@@ -737,6 +737,286 @@ export const slideDecks: Record<string, SlideDeck> = {
       }
     ]
   },
+  "dev2next-2026-zero-to-superpowers-claude-code": {
+    "pdf": "/slides/dev2next-2026-zero-to-superpowers-claude-code/dev2next-2026-zero-to-superpowers-claude-code.pdf",
+    "pdfSize": 5256018,
+    "width": 1920,
+    "height": 1080,
+    "slides": [
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/001.webp",
+        "text": "CODING AGENTS A practical intro for engineers new to coding agents Start simple. Scale smart. Dan Vega Spring Developer Advocate · Broadcom danvega.dev slides and code"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/002.webp",
+        "text": "HELLO 👋 About me. Spring Developer Advocate at Broadcom Java Champion Co-author of Fundamentals of Software Engineering 25 years as a software engineer danvega.dev"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/003.webp",
+        "text": "One quick disclaimer. If you're already running five terminals with custom agents and skills… This talk probably isn't for you. Go grab another coffee. We'll be in the fundamentals for most of this talk."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/004.webp",
+        "text": "CODING AGENTS One tool today. Most of it translates to your favorite. Codex Gemini CLI Copilot Cursor Windsurf Grok Build Kiro"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/005.webp",
+        "text": "I want to describe a feeling I get these days."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/006.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/007.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/008.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/009.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/010.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/011.webp",
+        "text": "Social media driven development."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/012.webp",
+        "text": "QUICK SHOW OF HANDS… Who's feeling overwhelmed? It's okay. This is a safe space."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/013.webp",
+        "text": "Things we're supposed to learn in coding agents. CLAUDE.md Agents Hooks /clear Subagents SKILL.md MCP Memory Worktrees /init Plan Mode Plugins Skills Agent Teams"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/014.webp",
+        "text": "Things we're supposed to learn in coding agents. CLAUDE.md Agents Harness Hooks /clear Subagents SKILL.md Checkpoints Permissions Routines MCP Worktrees /init Memory PostToolUse Tokens Marketplace Status Line /goal Plan Mode Plugins /resume Agent Teams /context Compaction Skills Sonnet PreToolUse"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/015.webp",
+        "text": "Things we're supposed to learn in coding agents. CLAUDE.md Agents Harness Hooks /clear Subagents SKILL.md Checkpoints MCP /goal Routines Tokens Marketplace /resume SessionStart Dispatch Auto-Accept Edits Plan Mode Plugins Compaction Auto Mode Slash Commands Cowork Effort Levels Skills Agent Teams /context Status Line Permissions Background Sessions /init Memory PostToolUse Side Chat Worktrees Sonnet PreToolUse Context Window Headless Mode Haiku Opus .claude/ Computer Use …and that's just this week"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/016.webp",
+        "text": "You are not behind. You don't need to learn all of this. You need the building blocks. Scale later. We're all on our own journey."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/017.webp",
+        "text": "TO DAY What we'll cover. 01 The fundamentals agent · harness · token · context window 02 Getting started three surfaces · permissions · plan mode 03 Context is the job CLAUDE.md · skills · MCP 04 Scaling up subagents · hooks · goals · worktrees"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/018.webp",
+        "text": "SECTION 01 / 04 The fundamentals. The vocabulary everything else hangs on. 01 The fundamentals 02 Getting started 03 Context is the job 04 Scaling up"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/019.webp",
+        "text": "F U N DA M E N TA L S · 0 1 Agent."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/020.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/021.webp",
+        "text": "F U N DA M E N TA L S · 0 2 Harness."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/022.webp",
+        "text": "HARNESS The machinery that builds and runs the loop. Claude Code is a harness. So are Codex, Cursor, Gemini CLI, and Copilot's agent mode. Same model, different harness, different results."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/023.webp",
+        "text": "harness · the car model · the driver you · the destination ↓ decide → use a tool → observe ↻ repeats until the goal is done tools context safety rails orchestration steering and pedals read, edit, run windshield and mirrors what the model sees brakes and seatbelts sandbox, approvals cruise control retries, loops Agent = model + harness. You pick the destination."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/024.webp",
+        "text": "F U N DA M E N TA L S · 0 3 Token."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/025.webp",
+        "text": "TOKEN You don't pay for words. You pay for tokens. Ref actor tests = 9 the payment service and Roughly three quarters of a word. Claude reads, writes, and bills in them. run the"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/026.webp",
+        "text": "F U N DA M E N TA L S · 0 4 Context window."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/027.webp",
+        "text": "CONTEXT WINDOW Working memory for one session. > /context system prompt ▮▮ tool definitions ▮▮▮▮▮▮ memory files ▮▮▮ messages ▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮ free space ▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮ 3% 9% 4% auto-compact at 95% Everything Claude is holding in its head right now. Big, but finite. 41% 43%"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/028.webp",
+        "text": "T H E C AT C H Context rot. output quality More context is not better context. 18 frontier models tested. All 18 got worse as the window filled. Source: Chroma, \"Context Rot\" 2025 ) ( tokens in context →"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/029.webp",
+        "text": "SECTION 02 / 04 Getting started. Three surfaces, permissions, plan mode. 01 The fundamentals 02 Getting started 03 Context is the job 04 Scaling up"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/030.webp",
+        "text": "T H R E E WAY S I N Same engine underneath. terminal desktop web fast, scriptable parallel sessions runs while you're away"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/031.webp",
+        "text": "B E F O R E YO U S TA R T Two ways to pay. $/month $/token Subscription. Flat, predictable. API. Metered, no ceiling. Pro, Max, or a Team seat. One pool across chat and Code. Great for scripts and CI. Pricey for daily coding. A stray ANTHROPIC_API_KEY silently moves you to the right column. /status shows your route."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/032.webp",
+        "text": "DEMO · 01 A first session. Open a project. Run claude. Ask for one small thing. Watch the loop. → jump to claude code"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/033.webp",
+        "text": "TRUST, BUT VERIFY Permissions. plan mode ask every time auto-accept edits auto mode skip everything"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/034.webp",
+        "text": "THE ONE FOLDER TO KNOW .claude/ .claude/ ├── commands/your custom slash commands ├── agents/subagent configs (markdown) ├── skills/SKILL.md folders ├── hooks/lifecycle shell scripts Everything custom about your Claude ├── settings.json project settings Code setup lives here. Memory. └── settings.local.json your overrides (gitignored) Commands. Agents. Skills. Hooks. CLAUDE.md project memory (root of repo)"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/035.webp",
+        "text": ".claude/settings.json INSIDE .CLAUDE { \"model\": \"sonnet\", settings.json \"permissions\": { \"allow\": [\"Bash(./mvnw *)\", \"Bash(git diff *)\", \"Read\"], \"deny\": [\"Bash(rm -rf *)\", \"Bash(mvn deploy *)\", One JSON file controls permissions, \"Read(./.env)\"], \"ask\": [\"Bash(git commit *)\", \"Bash(git push *)\"] environment, and team-wide defaults. }, Checked into the repo, it travels with \"env\": { \"SPRING_PROFILES_ACTIVE\": \"test\" the project. } }"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/036.webp",
+        "text": "M AY B E M Y FAVO R I T E F E AT U R E Plan mode. Hit ⇧ Tab until plan mode. Claude goes read-only. The difference between \"oh no\" and \"yes, do exactly that.\" 01 Explore the codebase 02 Ask clarifying questions 03 Write a markdown plan 04 You approve · it executes"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/037.webp",
+        "text": "NO PLAN MODE? Prompt it. Or make it a skill. PROMPT IT SKILL IT Ask for the plan first. Write it down once. \"Explore the code. Ask me questions. Write a plan. Save that prompt as a skill. Any agent that Don't edit anything until I approve it.\" supports skills can use it. More on skills in a bit."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/038.webp",
+        "text": "DEMO · 02 Permissions and plan mode. A new project, from first prompt to trusted setup. → jump to claude code"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/039.webp",
+        "text": "SECTION 03 / 04 Context is the job. Steering Claude with what you already know. 01 The fundamentals 02 Getting started 03 Context is the job 04 Scaling up"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/040.webp",
+        "text": "This is where you can take a coding agent from a nice parlor trick to an irreplaceable teammate."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/041.webp",
+        "text": "The model is only as good as the context you give it."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/042.webp",
+        "text": "THREE GAPS, THREE FIXES Three ways the model comes up short. GAP 01 GAP 02 GAP 03 CLAUDE.md Skills MCP What it should always What it should know how to What it cannot see from know about this project. do. where it sits."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/043.webp",
+        "text": "CLAUDE.md A markdown file at the root of your repo. Claude reads it every session. CLAUDE.md # spring-petclinic Java 25 · Spring Boot 4.1 · PostgreSQL · Maven Conventions - Constructor injection only 20 minutes on a good one makes every session sharper. - Records for DTOs - Tests use Testcontainers, not H2 Run it $ ./mvnw spring-boot:run Gotchas - Migrations live in db/migration, not resources/ # # Have an AGENTS.md? Claude reads it when there's no CLAUDE.md. # # # # PROJECT MEMORY"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/044.webp",
+        "text": "PROJECT MEMORY · THE CRAFT Write one that actually helps. VAG U E · D O N ' T SPECIFIC · DO \"Write good code.\" \"Use 2-space indent, no semicolons.\" \"Follow best practices.\" \"Constructor injection only.\" \"Format things properly.\" \"DTOs are records in model/.\" \"Test your changes.\" \"Run ./mvnw verify before done.\" Claude already tries to do all of this. Zero signal. Concrete rules Claude can't guess. Real signal. Structure it. Headings and bullets, not prose. Keep it tight. Every line costs context. Revisit it. Fix the file, not just the chat."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/045.webp",
+        "text": "CLAUDE.md KEEP IT LEAN Progressive disclosure. # Payments API Constructor injection only. Run ./mvnw verify before done. Testing conventions: @docs/testing.md Point at the details instead of pasting DB migrations: @docs/migrations.md them. Claude reads a file only when Release process: @docs/release.md the task needs it. Loaded up front: 8 lines. Loaded on demand: everything else."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/046.webp",
+        "text": "G A P 0 2 · W H AT I T S H O U L D K N O W H O W T O D O A skill is a folder with a SKILL.md. Expertise packaged once, pulled in on demand. Not crammed into every prompt."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/047.webp",
+        "text": "SKILLS What one looks like. The description is the trigger. Claude reads it to decide when the skill applies. The body is the playbook. Steps, conventions, commands. name: readme description: Write, rewrite, or review a README so it serves its actual reader. Use whenever the task is creating or improving a README. A README has one job: get the reader to what they came for in under a minute. Ground rules It's just markdown. In the repo, reviewed and versioned - Open with one plain sentence saying like code. what the project is and who it's for - Verify every command against the repo - - # - - No hype. Show a code sample instead. - # - - .claude/skills/readme/SKILL.md"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/048.webp",
+        "text": "SKILLS If you explain it twice, make it a skill. new-endpoint scaffold a REST endpoint the way this team does it db-migration write a Flyway migration, naming and all code-review review a diff against the team's checklist release-notes turn merged PRs into a changelog, in house style"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/049.webp",
+        "text": "SKILLS IN THE WILD Four jobs, twelve skills. VIDEO WRITING SHIP IT PODCAST video-edit blog-new-post shipit-shape spring-office-hours-edit Raw footage to Premiere. A first draft in my voice. Find the smallest useful version. Raw stream to podcast mp3. video-rough-cut blog-seo-optimize shipit-mvp spring-office-hours-prep Cut dead air, fillers, and retakes. Find what developers search for. PRODUCT.md before any code. Audio and show notes in one go. video-motion-graphics newsletter-publish shipit-feature podcast-appearance Graphics timed to what I say. Beehiiv edition to my site. Build the next feature and verify it. Log my guest appearances. Type the same prompt twice? Make it a skill."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/050.webp",
+        "text": "G A P 0 3 · W H AT I T C A N N O T S E E F R O M W H E R E I T S I T S MCP is a standard plug for outside tools. One protocol. Any tool that speaks it, Claude can see and use."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/051.webp",
+        "text": "terminal MCP What connecting looks like. One command to connect. The server does the rest. Claude discovers the tools. The server advertises what it can do. - / - / You stay in charge. Tool use runs through the same permissions. $ claude mcp add dvaas https: transport http \\ mcp.danvega.dev/mcp ✓ Connected to dvaas ✓ 21 tools discovered: youtube · blog · speaking · newsletter · podcasts"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/052.webp",
+        "text": "MCP Wherever Claude is guessing, plug in the source. github postgres read the real issue, comment on the real PR query the actual schema, not a guess at it chrome-devtools figma drive a real browser: live DOM, console, network build from the design file, not a screenshot cloudflare context7 manage workers, DNS, and logs on your real account current docs for your framework version, not training data"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/053.webp",
+        "text": "CONTEXT IS THE JOB Skills versus MCP. SKILLS MCP Teach Claude how. Give Claude tools. Markdown playbooks for repeatable work. Static. Can't reach outside the repo. Live connections to tickets, databases, APIs. Capabilities. They don't teach taste. \"turn a newsletter into a site post\" TOGETHER \"fetch the edition from Beehiiv\" MCP fetches the newsletter. The skill publishes it my way."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/054.webp",
+        "text": "DEMO · 03 Skills and MCP. Teach it a skill, then plug in mcp.danvega.dev. → jump to claude code"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/055.webp",
+        "text": "SECTION 04 / 04 Scaling up. One session to many. Watching to delegating. 01 The fundamentals 02 Getting started 03 Context is the job 04 Scaling up"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/056.webp",
+        "text": "An agent is a file. .claude/agents/code-reviewer.md Its own prompt you decide how it behaves name: code-reviewer Only these tools description: Reviews code for quality read only, in this case tools: Read, Glob, Grep A cheaper model model: haiku haiku for mechanical work You are a code reviewer. Give specific, actionable feedback. Its own context window the whole reason to use one - - - It reads 40 files. You get back a paragraph. - - - SCALING UP"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/057.webp",
+        "text": "D E L E G AT I N G S A F E LY Hooks. Hard rules, not vibes. CLAUDE.md HOOKS Advises. Enforce. The model reads it. The model can drift. A script that runs before or after Claude acts. Every time, no judgment call. \"Use BigDecimal for money.\" Block any edit that stores money in a double. Claude usually listens. Claude can't get past it. The more you delegate, the more you want rules that cannot be talked out of."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/058.webp",
+        "text": "W O R K T H AT R E P E AT S Routines. Claude works while your laptop is closed. WHEN CLAUDE schedule Every weekday, 8am → Triage new issues and label them. api CI goes red → Read the log and open a fix PR. webhook A PR opens → Review it and leave comments."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/059.webp",
+        "text": "F R O M WAT C H I N G T O D E L E G AT I N G /goal Set the outcome, not the task. Claude keeps working, turn after turn, until it gets there. /goal Every task in PLAN.md is marked complete, ← THE OUTCOME and ./mvnw verify passes with output shown for each one. A task is not complete until it has a unit test ← HOW IT'S CHECKED and an integration test covering its behavior. Update PLAN.md after each task. Stop after 25 turns. ← WHEN TO STOP"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/060.webp",
+        "text": "KNOW THE DIFFERENCE /goal is not spec driven development. SPEC DRIVEN /GOAL A plan. A finish line. Every decision made up front. The agent builds Keep going until this is true. It doesn't decide to it. what to build. Don't reach for it when the task needs design decisions you haven't made yet."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/061.webp",
+        "text": "M Y TA K E You may not need spec-driven development. VIBE CODING SPEC DRIVEN One prompt to rule them all. A spec for everything. Fun for prototypes. Without a plan, it falls apart Spec Kit, Kiro, OpenSpec, BMad. Great for big in production. teams. Overkill for one developer. My middle ground: one PRODUCT.md and my own process, written as skills."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/062.webp",
+        "text": "RUNNING MORE THAN ONE Two agents, one repo, one mess. Git worktrees give each branch its own folder. Same history, separate working files. FROM CLAUDE One .git history, shared across all of them. claude Separate files, so builds and tests don't collide. worktree feature-auth No stashing, no branch switching mid task. OR BY HAND git worktree add /api-auth auth-fix . . . . - - git worktree remove /api-auth Cost: each folder needs its own install and build."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/063.webp",
+        "text": "DEMO · 04 Agents. Working with subagents → jump to claude code"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/064.webp",
+        "text": "F R O M PA I R TO PA R A L L E L Gates, not babysitting. You can't watch five agents. Your gates can. WHEN WHAT IT CHECKS permissions Before it acts → Allow the safe stuff. Deny the rest. hooks While it works → Hard rules it can't talk its way past. ./mvnw verify Before it says done → Tests pass, or it isn't done. ArchUnit In every build → Architecture rules it can't quietly break. code-reviewer Before you merge → A second agent reads the diff."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/065.webp",
+        "text": "Remember the wall? You know the ones that matter. CLAUDE.md Agents Harness Hooks /clear Subagents SKILL.md Checkpoints MCP /goal Routines Tokens Marketplace /resume SessionStart Dispatch Auto-Accept Edits Plan Mode Plugins Compaction Auto Mode Slash Commands Cowork Effort Levels Skills Agent Teams /context Status Line Permissions Background Sessions /init Memory PostToolUse Side Chat Worktrees Sonnet PreToolUse Context Window Headless Mode Haiku Computer Use You are not behind. Start simple, scale smart. We're all on our own journey. Opus .claude/"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/066.webp",
+        "text": "S AV E YO U R S E L F A F E W W E E K S Mistakes I made so you don't have to. 01 Vague one-line prompts. \"Fix the bug.\" Cool. Which one? Where? What did you try? Be specific. 04 No CLAUDE.md. Re-explaining your stack every session. Twenty minutes, write it once. 02 Skipping plan mode for real work. Five minutes of planning saves an hour of \"what did you just do?\" 05 Trusting the first answer. Read the diff. Run the tests. Push back. Claude likes the pushback. 03 Never running /clear. Stale context bleeds into new tasks. Wipe between unrelated jobs. 06 Reaching for Skills/MCP/Agents too early. First learn what Claude does well bare. Then add scaffolding."
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/067.webp",
+        "text": "github.com/danvega/claude-code-start-simple the code from this talk"
+      },
+      {
+        "src": "/slides/dev2next-2026-zero-to-superpowers-claude-code/068.webp",
+        "text": "That's it. Thanks. Questions? Dan Vega Spring Developer Advocate · Broadcom danvega.dev · @therealdanvega"
+      }
+    ]
+  },
   "devnexus-2026-fundamentals-software-engineering-ai": {
     "pdf": "/slides/devnexus-2026-fundamentals-software-engineering-ai/devnexus-2026-fundamentals-software-engineering-ai.pdf",
     "pdfSize": 10362123,
