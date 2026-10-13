@@ -485,6 +485,258 @@ export const slideDecks: Record<string, SlideDeck> = {
       }
     ]
   },
+  "dev2next-2026-spring-ai-there-and-back-again": {
+    "pdf": "/slides/dev2next-2026-spring-ai-there-and-back-again/dev2next-2026-spring-ai-there-and-back-again.pdf",
+    "pdfSize": 4886804,
+    "width": 1920,
+    "height": 1080,
+    "slides": [
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/001.webp",
+        "text": "SPRING AI There and Back Again Dan Vega · Spring Developer Advocate Grab the code while you settle in. The demo repo github.com/danvega/spring-ai-there-and-back-again"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/002.webp",
+        "text": "SPRING AI There and Back Again Dan Vega Spring Developer Advocate"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/003.webp",
+        "text": "Dan Vega Spring Developer Advocate Java Champion Author, Fundamentals of Software Engineering Cleveland, Ohio (my Shire) Find out more at danvega.dev"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/004.webp",
+        "text": "SET TING THE SCOPE When we say AI, we mean two different things 01 02 AI that writes the code AI inside the code you ship Assistants and agents in the IDE Models called from your own services Writing, reviewing and debugging Features your users actually touch Reading unfamiliar codebases Your data, your rules, your uptime A different talk This talk"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/005.webp",
+        "text": "You don't need to leave Java to build AI apps."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/006.webp",
+        "text": "Why are we talking about AI on the JVM?"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/007.webp",
+        "text": "PY THON EARNED ITS PLACE IN AI The training era belonged to Python Python dominated AI research and model training. We are not here to debate that story. TensorFlow PyTorch Scikit-Learn But the game has changed. Hugging Face"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/008.webp",
+        "text": "WHERE THE MONEY WENT Compute moved from training to running models 2/3 55% 74% of AI compute in 2026 is inference, up from a third in 2023 of AI cloud spend is inference, past training for the first time of builders say most of their workload is inference, up from 48% Gartner, 2026 Deloitte, TMT Predictions 2026 Menlo Ventures LLM market update Running models in production is application work, and application work is where Java lives."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/009.webp",
+        "text": "B U T W H AT A R E W E A C T U A L LY D O I N G ? You already own the tools for this job Training a model: a research problem Consuming a model: an integration problem Sourcing and cleaning a corpus Distributed training on a GPU cluster Calling the API RestClient, provider SDKs Weeks of runs, most of them discarded Evaluation and alignment before anyone can use it A handful of labs do this Most of us aren't training models. We're calling them. Credentials and config Spring Boot configuration, Vault Retries and timeouts Spring Retry, Resilience4j Observability and cost Micrometer, OpenTelemetry"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/010.webp",
+        "text": "YOU ' V E D ONE T H I S B E FORE LLMs are just the next integration Databases → Message queues → Payment gateways → Cloud → LLMs"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/011.webp",
+        "text": "WHY THE JVM Java is built for this 01 02 03 04 Enterprise-grade infrastructure Type safety & structured output Battle-tested at scale Your existing team Spring, Kafka and observability tooling already running in production at scale Parse AI responses into real objects with compile-time guarantees, not loose strings Millions of JVM applications serving billions of requests every single day No need to hire a Python shop or replatform. Upskill the developers you already trust"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/012.webp",
+        "text": "Before the Framework"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/013.webp",
+        "text": "Calling Claude with cURL /bin/bash ANTHROPIC_API_KEY=\"YOUR_API_KEY_HERE\" PROMPT=\"Tell me an interesting fact about Java\" / / curl https: api.anthropic.com/v1/messages \\ -H \"Content-Type: application/json\" \\ -H \"x-api-key: $ANTHROPIC_API_KEY\" \\ -H \"anthropic-version: 2023-06-01\" \\ -d '{\"model\": \"claude-haiku-4-5\", \"max_tokens\": 1024, \"messages\": [{\"role\": \"user\", \"content\": \"'\"${PROMPT}\"'\"}]}' ! # NO FRAMEWORK"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/014.webp",
+        "text": "W H AT C O M E S B A C K Raw JSON, and your own parsing { \"id\": \"msg_01XFDUDYJgAACzvnptvVoYEL\", \"type\": \"message\", \"role\": \"assistant\", \"model\": \"claude-haiku-4-5\", \"content\": [ { \"type\": \"text\", \"text\": \"Java was initially designed with interactive television in mind ], \"stop_reason\": \"end_turn\", \"usage\": { \"input_tokens\": 14, \"output_tokens\": 90 } . . . } \" }"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/015.webp",
+        "text": "NO FRAMEWORK Calling Claude with plain Java var body = \"\"\" { \"model\": \"claude-haiku-4-5\", \"max_tokens\": 1024, \"messages\": [{ \"role\": \"user\", \"content\": \"Tell me an interesting fact about Java\" }] } \"\"\"; HttpRequest request = HttpRequest.newBuilder() .uri(URI.create(\"https: api.anthropic.com/v1/messages\")) .header(\"Content-Type\", \"application/json\") .header(\"x-api-key\", apiKey) .header(\"anthropic-version\", \"2023-06-01\") .POST(HttpRequest.BodyPublishers.ofString(body)) .build(); / / var client = HttpClient.newHttpClient(); var response = client.send(request, HttpResponse.BodyHandlers.ofString()); System.out.println(response.body());"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/016.webp",
+        "text": "“ f Spring AI provides so much more than a acility for making REST API calls."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/017.webp",
+        "text": "W H AT A R E T H E C H A L L E N G E S ? Everything you would otherwise build yourself 01 02 03 Talking to models Running it in production Going past one call Model abstraction and portability Error handling and retry logic Structured output parsing Unified API across providers Observability and monitoring Prompt template management Multimodality: text, image, audio Token counts and cost control Memory and conversation state Streaming and async responses Evaluation and testing RAG, embeddings, vector stores Security and compliance Tool calling and MCP"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/018.webp",
+        "text": "what is a token? You pay for tokens, not words 100 tokens is about 75 words. A token is roughly three quarters of a word. The model reads, writes and bills in tokens. The words you send and the words you get back both count. Remember the usage block on the raw JSON slide? input_tokens and output_tokens are the bill."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/019.webp",
+        "text": "T W O WAY S T O PAY ChatGPT pricing is not API pricing $/month $/token A subscription. Flat and predictable. ChatGPT Plus or Claude Pro is about $20 a month for one person in a chat app. The API. Metered, with no ceiling. Every request your app sends is billed by the token, in and out. What you pay when you chat What your Spring Boot app pays Your app uses the API. Tokens are your bill."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/020.webp",
+        "text": "pricing What the models cost, per million tokens Standard rates for short prompts, checked October 13, 2026. Long prompts, batch and cached input price differently, and intro prices end soon. Check the provider's page before you budget."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/021.webp",
+        "text": "context window One budget, spent on every call The model has no memory between calls. Everything below is sent again on every request, and it all has to fit inside the window. Run out of room and the call fails. Fill it carelessly and you pay for it on every turn."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/022.webp",
+        "text": "the catch Context rot More context is not better context. Chroma tested 18 models, including GPT - Chroma Research, July 2025"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/023.webp",
+        "text": "The Road Ahead"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/024.webp",
+        "text": "THE ROAD AHEAD Who decides what happens next? The Shire Bree Rivendell Mordor ChatClient Tools MCP Agents Your code decides The model decides"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/025.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/026.webp",
+        "text": "“It's a dangerous business, going out your door.” BILBO BAGGINS Step one: start.spring.io"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/027.webp",
+        "text": "How Spring Hands You a ChatClient pom.xml <dependency> <groupId>org.springframework.ai groupId> <artifactId>spring-ai-starter-model-anthropic dependency> artifactId> 1 Add one starter. application.yaml spring: ai: anthropic: api-key: ${SPRING_AI_ANTHROPIC_API_KEY} chat: model: claude-haiku-4-5 2 Set your key and model. ShireController.java public ShireController(ChatClient.Builder builder) { this.chatClient = builder.build(); } 3 Ask for it in your constructor. / < f / < No new. No setup code. That's auto-con iguration. / < CHAPTER ONE · THE SHIRE At startup, Spring sees both and builds an AnthropicChatModel and a ChatClient.Builder for you."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/028.webp",
+        "text": "MAKE CAMP · CHAPTER ONE Camp 1: The Shire WHAT WE'LL BUILD A new project from start.spring.io Your first prompt, then stream it A messy email into a Java record git checkout 01-shire"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/029.webp",
+        "text": "W H AT W E J U S T B U I LT · T H E S H I R E Your First Prompt ShireController.java String answer = chatClient.prompt() .system(\"You are a hobbit who has never left the Shire.\") .user(\"Plan a perfect day in the Shire, starting with second breakfast.\") .call() .content();"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/030.webp",
+        "text": "W H AT W E J U S T B U I LT · T H E S H I R E Streaming ShireController.java Wait for the whole answer .call().content() String Watch it arrive .stream().content() / / / / Same prompt. One word changes. Flux<String>"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/031.webp",
+        "text": "W H AT W E J U S T B U I LT · T H E S H I R E Structured Output Journey.java · ShireController.java record Journey(String traveler, LocalDate departure, List<Stop> stops) {} record Stop(String place, LocalDate arrival, String lodging, String confirmationCode) {} Journey journey = chatClient.prompt() .system(\"Extract the journey details from this email.\") .user(email) .call() .entity(Journey.class);"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/032.webp",
+        "text": "Most AI features never need to leave the Shire."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/033.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/034.webp",
+        "text": "CHAPTER TWO · BREE How a Tool Call Works Your code runs on this side only. YOUR SPRING B O OT APP You Spring AI manages the loop 1 Sends your question and the tool list to Claude 3 Runs getWeather(\"Rivendell\") in your app What should I pack for Rivendell? 4 Sends back: Cold and misty. Rain by evening. 6 Hands the final answer back to you Claude The model 2 getWeather(\"Rivendell\") Not an answer. A request. 5 Pack a warm cloak and waterproof boots. Your Tool methods getCurrentDate() getWeather(place) The model never runs your code. It only asks. @ Spring AI runs this loop for you."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/035.webp",
+        "text": "MAKE CAMP · CHAPTER TWO Camp 2: Bree WHAT WE'LL BUILD A tool that knows today's date A tool that checks the weather Watch the model choose git checkout 02-bree"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/036.webp",
+        "text": "Defining a Tool TravelTools.java @Tool(description = \"Get today's date\") String getCurrentDate() { return LocalDate.now().toString(); } @Tool(description = \"Get the current weather for a place in Middle-earth\") String getWeather(@ToolParam(description = \"The place, for example Bree or Rivendell\") String place) { Sunny in the Shire, misty in Rivendell, ash in Mordor } BreeController.java chatClient.prompt() .user(prompt) .tools(new TravelTools()) .call() .content(); / / W H AT W E J U S T B U I LT · B R E E"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/037.webp",
+        "text": "CHAPTER TWO · BREE What do you trust the model to carry? Read Tools Write Tools Look things up. Change things. Weather, search, database queries Send email, update records, place orders S A F E TO C A RRY C A RRY W I T H C A RE"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/038.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/039.webp",
+        "text": "One protocol to connect them all. modelcontextprotocol.io"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/040.webp",
+        "text": "mcp by the numbers Everyone speaks MCP now 400M SDK downloads a month, up 4x this year Python, TypeScript, Java, Kotlin, C#, Go, Rust, Swift, Ruby, PHP + Anthropic, July 2026"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/041.webp",
+        "text": "december 2025 Anthropic donates MCP to the Agentic AI Foundation A directed fund under the Linux Foundation. Neutral governance. It belongs to you now."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/042.webp",
+        "text": "MADE IN SPRING Java's MCP SDK came from the Spring team Nov 2024 Feb 2025 Today Spring AI starts an experimental MCP project for Java It becomes the official MCP Java SDK, built with Anthropic Spring AI 2.0 builds on it. A starter and a few lines of YAML. Spring blog, February 2025 When you use MCP from Java, you're using code the Spring team wrote."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/043.webp",
+        "text": "T W O WAY S T O C O N N E C T Local or remote, same protocol stdio Streamable HTTP The server runs on your machine. Your app starts it as a process and talks to it over standard input and output. The server runs anywhere on the network. Clients connect to it with a URL. In our demo, the app starts the filesystem server In our demo, the MCP Inspector connects to /mcp Same tools, same messages. Only the connection changes."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/044.webp",
+        "text": "CHAPTER THREE · RIVENDELL Client and Server YOUR A P P A S A C L I E N T Y O U R A P P A S A S E RV E R Any MCP client GitHub Claude Desktop Filesystem server uses its tools Your Spring Boot app Claude Code Databases Hundreds more t Your app uses tools other people buil ."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/045.webp",
+        "text": "MAKE CAMP · CHAPTER THREE Camp 3: Rivendell WHAT WE'LL BUILD Use an existing MCP server Expose our tools as an MCP server Call them from Claude git checkout 03-rivendell"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/046.webp",
+        "text": "W H AT W E J U S T B U I LT · R I V E N D E L L Your App as a Client application.yaml spring: ai: mcp: client: stdio: connections: filesystem: command: npx args: [\"-y\", \"@modelcontextprotocol/server-filesystem\" , \"./journeys\" ] RivendellController.java chatClient.prompt() .user(prompt) .tools(new TravelTools(), mcpTools) .call() .content(); it can only touch this one folder"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/047.webp",
+        "text": "W H AT W E J U S T B U I LT · R I V E N D E L L Your App as a Server application.yaml spring: ai: mcp: server: name: journey protocol: STREAMABLE #required: without it you get the older SSE transport McpServerConfig.java @Bean ToolCallbackProvider travelTools() { return MethodToolCallbackProvider.builder() .toolObjects(new TravelTools()) .build(); } Building an MCP server from scratch? Use @McpTool."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/048.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/049.webp",
+        "text": "One does not simply walk into agents."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/050.webp",
+        "text": "Why didn't they just fly the eagles? t Planning is the hard par ."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/051.webp",
+        "text": "CHAPTER FOUR · MORDOR How an Agent Works GOAL Plan the fastest safe route from Rivendell to Mount Doom. AC T · what it called C H E C K · what came back P L A N · what it decides next getRoutes(Rivendell) Caradhras 2 days, Moria 4 days Caradhras is faster. Check the weather first. getWeather(Caradhras) Blizzard. Pass blocked. Re-plan: go through Moria. getRoutes(Moria) Lothlorien, 2 days. \"Something stirs in the deep.\" It's open. Keep going. requestEagles(Mount Doom) Declined. Walk. Keep walking. getRoutes(Dead Marshes) Black Gate closed. Cirith Ungol open. Take Cirith Ungol. write_file(route-to-mordor.md) Saved. Done. 22 days. ... a few more routes ... An agent is the tool loop from Bree, given a goal instead of a question."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/052.webp",
+        "text": "MAKE CAMP · CHAPTER FOUR Camp 4: Mordor WHAT WE'LL BUILD Give it a goal, not a question Watch it plan and act See where it goes wrong git checkout 04-mordor"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/053.webp",
+        "text": "W H AT W E J U S T B U I LT · M O R D O R What We Just Built MordorController.java builder.defaultSystem(\"\"\" You are a route planner for Middle-earth. Reach the goal using your tools. Explore the routes one step at a time. Never invent a route. Check the weather before crossing any mountain pass. \"\"\") chatClient.prompt() .user(goal) .tools(new TravelTools(), new RouteTools(), mcpTools) .call() .content(); Same loop as Bree. A goal, more tools, and instructions. The model did the planning."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/054.webp",
+        "text": "BEYOND MORDOR Going Further: Embabel An agent framework for the JVM, from the creator of Spring Plans with an algorithm GOAP, from game AI , not the LLM Re-plans after every step Typed Java: @Agent, @Action, @AchievesGoal “Spring AI is the Servlet API. Embabel is Spring MVC.” the Embabel README ) ( github.com/embabel/embabel-agent"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/055.webp",
+        "text": "CHAPTER FOUR · MORDOR Don't go further than you need to. Workflow: the road Agent: the wilderness You choose the path. The model chooses the path. Predictable. ◆ Cheaper. ◆ Easy to test. Flexible. ◆ Slower and costlier. ◆ Might walk into Moria. Most features are roads. Save agents for the wilderness."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/056.webp",
+        "text": "There and Back Again"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/057.webp",
+        "text": "THERE AND BACK AGAIN Which stop do you need? The Shire Text goes in and text or data comes out. Summaries, extraction, classification. ChatClient & Prompts Bree Tools Rivendell MCP Mordor Agents The answer needs live data, or the app needs to act in your system. The tools already exist somewhere else, or other AI apps should use yours. You can't know the steps ahead of time, and the task is worth the cost and risk."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/058.webp",
+        "text": ""
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/059.webp",
+        "text": "COMING IN SPRING AI 2.1 The Road Goes Ever On THE SHIRE Session management. Conversation history is coming to Spring AI's core. BREE Message parts. Replies keep their order: reasoning, tool calls, text, and images. RIVENDELL The newest MCP spec 2026 07 28) is in progress. MORDOR Spring AI Agents. A new experimental project, planned for November 2026. - - ( - 2.1.0 M1 is out now. Milestone APIs may still change."
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/060.webp",
+        "text": "THERE AND BACK AGAIN Your Next Steps 1 2 Spring AI reference docs.spring.io/spring-ai/reference Spring AI Community github.com/spring-ai-community Community projects that extend Spring AI 3 The demo repo github.com/danvega/spring-ai-there-and-back-again"
+      },
+      {
+        "src": "/slides/dev2next-2026-spring-ai-there-and-back-again/061.webp",
+        "text": "Thank You Dan Vega danvega.dev The demo repo github.com/danvega/spring-ai-there-and-back-again"
+      }
+    ]
+  },
   "devnexus-2026-fundamentals-software-engineering-ai": {
     "pdf": "/slides/devnexus-2026-fundamentals-software-engineering-ai/devnexus-2026-fundamentals-software-engineering-ai.pdf",
     "pdfSize": 10362123,

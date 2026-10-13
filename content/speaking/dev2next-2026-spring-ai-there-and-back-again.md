@@ -16,3 +16,21 @@ This is that adventure. We'll set out from the Shire with the basics of Spring A
 Along the way you'll pick up working code, a clear mental model of how the pieces of Spring AI fit together, and a sense of where each one earns its place in a real application. No toy examples. No waving at concepts from a distance. Just a Spring Boot app that grows up a little at every stop on the road.
 
 You'll come back the way all good adventurers do. With stories to tell, a pack full of new tools, and a map for wherever you want to go next.
+
+## What You'll Learn
+
+- **The Shire:** ChatClient, prompts, system messages, streaming, and structured output
+- **Bree:** Giving the model tools it can call in your own Java code
+- **Rivendell:** MCP, using other people's tools as a client and sharing your own as a server
+- **Mordor:** Agents that plan, act, and change course on their own
+- How tokens, context windows, and pricing shape what you build
+
+## Slides
+
+:slide-deck{slug="dev2next-2026-spring-ai-there-and-back-again" title="Spring AI: There and Back Again Slides"}
+
+## Code
+
+::GitHubRepo{url="https://github.com/danvega/spring-ai-there-and-back-again"}
+All the code from this presentation can be found in the repository below. Every stop on the journey has its own branch, so you can start from any camp.
+::
