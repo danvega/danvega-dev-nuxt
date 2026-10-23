@@ -103,4 +103,4 @@ What AI hacks have you incorporated into your workflow? I'd love to hear about y
 
 ---
 
-*For more content on AI and software development, visit [danvega.dev](https://www.danvega.dev) or check out my AI-focused site at [bytesizedai.dev](https://www.bytesizedai.dev).*
+*For more content on AI and software development, visit [danvega.dev](https://www.danvega.dev).*

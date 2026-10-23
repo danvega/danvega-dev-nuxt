@@ -78,13 +78,13 @@ The Spring AI team released Milestone 3 of Spring AI 2.0. You can read the full 
 
 ### AI Is Hurting Developer Learning
 
-A new piece on Bytesized AI digs into research showing that AI tools are actually hurting how developers learn. You can read it [here](https://www.bytesizedai.dev/p/ai-is-hurting-developer-learning-and-the-research-proves-it).
+A new piece on Bytesized AI digs into research showing that AI tools are actually hurting how developers learn. You can read it [here](/blog/ai-hurting-developer-learning).
 
 **Dan's Thoughts:** I actually wrote this one for my Bytesized AI newsletter. The research is pretty clear: when developers lean on AI tools too heavily, especially early in their learning journey, they're not building the mental models they need. It ties directly into why I'm giving that "Fundamentals of Software Engineering" talk at Arc of AI. The tools are powerful, but you still need to understand what's happening under the hood.
 
 ### Stop Letting AI Build Out Horizontally
 
-Another piece from Bytesized AI about why you should stop letting AI expand your codebase in every direction at once. Read it [here](https://www.bytesizedai.dev/p/stop-letting-ai-build-horizontally).
+Another piece from Bytesized AI about why you should stop letting AI expand your codebase in every direction at once. Read it [here](/blog/stop-letting-ai-build-horizontally).
 
 **Dan's Thoughts:** The idea behind this comes from the concept of tracer bullets in The Pragmatic Programmer. Instead of letting AI scaffold out a wide, shallow codebase, you're better off building thin vertical slices that work end to end. It gives you a working path through your system that you can validate and build on. It's a much better way to use AI as a coding partner.
 

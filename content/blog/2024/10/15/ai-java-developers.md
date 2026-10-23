@@ -127,7 +127,7 @@ As you build AI-powered applications, keep these points in mind:
 
 4. **Security**: Always keep your API keys secure. Use environment variables or secure vaults, never hardcode them in your application.
 
-5. **Prompt Engineering**: The quality of your AI's output depends heavily on your input. Experiment with different prompts to get the best results. I have a guide on [how to talk to robots](https://www.bytesizedai.dev/p/how-to-talk-to-robots). 
+5. **Prompt Engineering**: The quality of your AI's output depends heavily on your input. Experiment with different prompts to get the best results. 
 
 ## Conclusion
 

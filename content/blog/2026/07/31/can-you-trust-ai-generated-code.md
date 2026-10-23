@@ -152,7 +152,7 @@ What I know is that the code looks good and the app runs. That is all I have to 
 
 This feeling has a name in journalism. Gell-Mann amnesia is when you read a news article about a subject you know well, spot every error, then turn the page and trust the next article about a subject you do not know. AI coding tools trigger the exact same reflex.
 
-So here is what I recommend when working with these agents. You can read the full write-up in my [Bytesized AI article](https://www.bytesizedai.dev/p/can-you-trust-ai-generated-code).
+So here is what I recommend when working with these agents.
 
 **Trust what you know, verify what you do not.** When you use AI in a language, framework, or domain you do not know well, assume the output is wrong until you have verified it. Run it, read the docs, ask it to explain its own choices, then sanity check those explanations. The confidence you feel is not evidence of correctness. It is evidence of your own blind spot.
 

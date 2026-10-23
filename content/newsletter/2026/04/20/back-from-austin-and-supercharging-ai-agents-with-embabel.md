@@ -36,7 +36,7 @@ Looking ahead, we've got an incredible lineup. On April 27th, Rod Johnson is joi
 
 ## Can You Trust AI-Generated Code? It Depends on What You Already Know
 
-[This article](https://www.bytesizedai.dev/p/can-you-trust-ai-generated-code) over at ByteSized AI digs into a question a lot of us are wrestling with: how much should you trust the code that AI generates for you? The short answer is that it really depends on your existing knowledge of the domain.
+[This article](/blog/can-you-trust-ai-generated-code) over at ByteSized AI digs into a question a lot of us are wrestling with: how much should you trust the code that AI generates for you? The short answer is that it really depends on your existing knowledge of the domain.
 
 It's something I've been thinking about a lot as I use AI coding agents more and more. When I ask AI about a framework I've never used, it feels like magic. Everything looks great and I'm flying. But when I ask it about Spring code I've been writing for years, I catch mistakes on every line. That's Gell-Mann amnesia in action: we trust the AI's output in areas we can't verify while knowing it's unreliable in areas we can. This is exactly why the fundamentals matter more now, not less. AI is an incredible tool, but you need enough knowledge to know when it's wrong. If you're leaning on AI-generated code in areas you don't understand, you're building on a foundation you can't inspect. Give it a read and let me know if your experience lines up with mine.
 
