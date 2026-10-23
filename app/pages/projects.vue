@@ -52,11 +52,11 @@ const projects: Project[] = [
   {
     slug: 'bytesized-ai',
     title: 'ByteSized AI',
-    description: 'An AI-focused newsletter delivering bite-sized insights on artificial intelligence, machine learning, and how developers can leverage AI in their workflows.',
+    description: 'An AI-focused newsletter delivering bite-sized insights on artificial intelligence, machine learning, and how developers can leverage AI in their workflows. Retired in 2026; the best posts now live on this blog.',
     image: 'bytesized-ai.png',
     techStack: [],
-    url: 'https://bytesizedai.dev',
-    status: 'active'
+    url: 'https://www.danvega.dev/blog?tag=ByteSized%20AI',
+    status: 'archived'
   },
   {
     slug: 'dvaas',
