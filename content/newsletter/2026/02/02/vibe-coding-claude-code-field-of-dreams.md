@@ -54,7 +54,7 @@ The developers who thrive won't be the ones cloning screens the fastest. They'll
 
 Vibe code your prototype. Then do the real work.
 
-[Read the full Article](https://www.bytesizedai.dev/p/vibe-coding-and-the-field-of-dreams-problem)
+[Read the full Article](/blog/vibe-coding-field-of-dreams-problem)
 
 ## Claude Code
 

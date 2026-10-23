@@ -386,3 +386,21 @@ courses.danvega.dev /courses 301
 /blog/kill-java-process-macos-sierra-using-activity-monitor /blog/kill-process-on-port 301
 /blog/2026/07/14/kill-process-on-port /blog/kill-process-on-port 301
 /blog/2026/02/05/ralph-loop /blog/ralph-loop 301
+
+# ByteSized AI retirement (2026-10-23): bytesizedai.dev posts moved here.
+# These only take effect once bytesizedai.dev and www.bytesizedai.dev are added
+# to this Netlify site as domain aliases. Specific posts first, catch-all last.
+https://www.bytesizedai.dev/p/what-is-ai https://www.danvega.dev/blog/what-is-artificial-intelligence 301!
+https://www.bytesizedai.dev/p/vibe-coding-why-fast-doesn-t-mean-good https://www.danvega.dev/blog/vibe-coding-fast-doesnt-mean-good 301!
+https://www.bytesizedai.dev/p/vibe-coding-and-the-field-of-dreams-problem https://www.danvega.dev/blog/vibe-coding-field-of-dreams-problem 301!
+https://www.bytesizedai.dev/p/ai-is-hurting-developer-learning-and-the-research-proves-it https://www.danvega.dev/blog/ai-hurting-developer-learning 301!
+https://www.bytesizedai.dev/p/stop-letting-ai-build-horizontally https://www.danvega.dev/blog/stop-letting-ai-build-horizontally 301!
+https://www.bytesizedai.dev/p/can-you-trust-ai-generated-code https://www.danvega.dev/blog/can-you-trust-ai-generated-code 301!
+https://www.bytesizedai.dev/* https://www.danvega.dev/blog?tag=ByteSized%20AI 301!
+https://bytesizedai.dev/p/what-is-ai https://www.danvega.dev/blog/what-is-artificial-intelligence 301!
+https://bytesizedai.dev/p/vibe-coding-why-fast-doesn-t-mean-good https://www.danvega.dev/blog/vibe-coding-fast-doesnt-mean-good 301!
+https://bytesizedai.dev/p/vibe-coding-and-the-field-of-dreams-problem https://www.danvega.dev/blog/vibe-coding-field-of-dreams-problem 301!
+https://bytesizedai.dev/p/ai-is-hurting-developer-learning-and-the-research-proves-it https://www.danvega.dev/blog/ai-hurting-developer-learning 301!
+https://bytesizedai.dev/p/stop-letting-ai-build-horizontally https://www.danvega.dev/blog/stop-letting-ai-build-horizontally 301!
+https://bytesizedai.dev/p/can-you-trust-ai-generated-code https://www.danvega.dev/blog/can-you-trust-ai-generated-code 301!
+https://bytesizedai.dev/* https://www.danvega.dev/blog?tag=ByteSized%20AI 301!
