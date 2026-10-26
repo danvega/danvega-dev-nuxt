@@ -1,99 +1,150 @@
 <script lang="ts" setup>
-import type { Project } from '~/types/ui'
+import type { Project, ProjectGroup } from '~/types/ui'
+import { ChevronRightIcon } from '@heroicons/vue/20/solid'
+import { projects, groupLabels, statusLabels } from '~/data/projects'
 
 useHead({
   title: 'Dan Vega - Projects',
   meta: [
     { name: 'title', content: 'Dan Vega - Projects' },
-    { name: 'description', content: 'A collection of projects I\'ve built and am currently working on.' },
+    { name: 'description', content: 'The projects I have built and the stories behind them, from Mac apps and developer tools to an O\'Reilly book and a weekly Spring show.' },
     { property: 'og:title', content: 'Dan Vega - Projects' },
-    { property: 'og:description', content: 'A collection of projects I\'ve built and am currently working on.' }
+    { property: 'og:description', content: 'The projects I have built and the stories behind them.' }
   ]
 });
 
-const projects: Project[] = [
-  {
-    slug: 'danvega-dev',
-    title: 'danvega.dev',
-    description: 'My personal website and blog built with Nuxt 3. Features blog posts, newsletter archives, speaking events, and courses — all powered by Nuxt Content with markdown.',
-    image: 'danvega-dev.png',
-    techStack: ['Nuxt 3', 'Vue 3', 'Tailwind CSS', 'TypeScript'],
-    github: 'https://github.com/danvega/danvega-dev-nuxt',
-    url: 'https://www.danvega.dev',
-    status: 'active'
-  },
-  {
-    slug: 'spring-office-hours',
-    title: 'Spring Office Hours',
-    description: 'The companion website for the Spring Office Hours podcast — a weekly show covering everything Spring and Java in the developer ecosystem.',
-    image: 'spring-office-hours.png',
-    techStack: [],
-    url: 'https://www.springofficehours.io',
-    status: 'active'
-  },
-  {
-    slug: 'fundamentals-of-swe',
-    title: 'Fundamentals of Software Engineering',
-    description: 'Companion site for the Fundamentals of Software Engineering book, providing resources and supplemental content for readers.',
-    image: 'fundamentals-of-swe.png',
-    techStack: [],
-    url: 'https://www.fundamentalsofswe.com',
-    status: 'active'
-  },
-  {
-    slug: 'spring-initializr-tui',
-    title: 'Spring Initializr TUI',
-    description: 'A terminal user interface for scaffolding Spring Boot projects. Browse dependencies, configure your project, and generate a ready-to-go Spring Boot app — all from the terminal.',
-    image: 'spring-initializr-tui.png',
-    techStack: ['Java', 'TamboUI', 'GraalVM'],
-    github: 'https://github.com/danvega/spring-initializr-tui',
-    status: 'active'
-  },
-  {
-    slug: 'bytesized-ai',
-    title: 'ByteSized AI',
-    description: 'An AI-focused newsletter delivering bite-sized insights on artificial intelligence, machine learning, and how developers can leverage AI in their workflows. Retired in 2026; the best posts now live on this blog.',
-    image: 'bytesized-ai.png',
-    techStack: [],
-    url: 'https://www.danvega.dev/blog?tag=ByteSized%20AI',
-    status: 'archived'
-  },
-  {
-    slug: 'dvaas',
-    title: 'DVaaS (Dan Vega as a Service)',
-    description: 'An MCP server that exposes my entire content ecosystem — blog, YouTube, podcasts, newsletter, and speaking events — to AI assistants and tools.',
-    image: 'dvaas.png',
-    techStack: ['Spring Boot', 'Spring AI', 'Java'],
-    github: 'https://github.com/danvega/dvaas',
-    url: 'https://www.danvega.dev/mcp',
-    status: 'active'
-  },
-  {
-    slug: 'content-os',
-    title: 'Content OS',
-    description: 'A content creation lifecycle management application for planning, tracking, and publishing content across multiple platforms.',
-    image: 'content-os.png',
-    techStack: ['Spring Boot 4', 'Java 25', 'JTE', 'PostgreSQL'],
-    status: 'in-progress'
+const groupOrder: ProjectGroup[] = ['apps', 'tools', 'books-and-shows', 'websites']
+const groups = groupOrder.map(key => ({
+  key,
+  label: groupLabels[key],
+  projects: projects.filter(p => p.group === key)
+}))
+// Modal browsing follows the order the list shows
+const ordered = groups.flatMap(g => g.projects)
+
+const earliest = Math.min(...projects.map(p => Number(p.since)))
+const inProgress = projects.filter(p => p.status === 'in-progress').length
+
+const statusDots: Record<string, string> = {
+  active: 'bg-green-500',
+  'in-progress': 'bg-yellow-500',
+  archived: 'bg-zinc-400 dark:bg-zinc-500'
+}
+
+// The open project lives in the URL (?p=slug) so every story has a shareable link.
+// The page is prerendered without a query, so only read it after mount to avoid a hydration mismatch.
+const route = useRoute()
+const router = useRouter()
+const mounted = ref(false)
+onMounted(() => { mounted.value = true })
+
+const selected = computed<Project | null>(() => {
+  if (!mounted.value) return null
+  return ordered.find(p => p.slug === route.query.p) ?? null
+})
+const position = computed(() => (selected.value ? ordered.indexOf(selected.value) + 1 : 0))
+
+// The row that morphs into the modal (and back) during a view transition
+const morphSlug = ref<string | null>(null)
+
+function withTransition(update: () => Promise<unknown>) {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (!document.startViewTransition || reduceMotion) {
+    update()
+    return
   }
-]
+  document.startViewTransition(async () => {
+    await update()
+    await nextTick()
+  })
+}
+
+function setProject(slug: string | null) {
+  const { p, ...rest } = route.query
+  return router.replace({ query: slug ? { ...rest, p: slug } : rest })
+}
+
+function open(project: Project) {
+  morphSlug.value = project.slug
+  withTransition(() => setProject(project.slug))
+}
+
+function close() {
+  withTransition(() => setProject(null))
+}
+
+function show(slug: string) {
+  morphSlug.value = slug
+  withTransition(() => setProject(slug))
+}
+
+function step(offset: number) {
+  if (!selected.value) return
+  show(ordered[(ordered.indexOf(selected.value) + offset + ordered.length) % ordered.length].slug)
+}
 </script>
 
 <template>
   <Container class="mt-16 sm:mt-32">
-    <header class="max-w-4xl">
-      <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-        Projects I've built and things I'm working on.
+    <header>
+      <p class="font-mono text-sm text-green-600 dark:text-green-400">$ ls ~/projects</p>
+      <h1 class="mt-4 max-w-[30ch] text-4xl font-bold tracking-tight text-balance text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+        Things I've built, and the stories behind them.
       </h1>
-      <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-        A collection of projects that I've created, contribute to, or am actively developing. From open-source tools to content platforms, these are the things I spend my time building.
+      <p class="mt-6 max-w-[48ch] text-lg text-pretty text-zinc-600 dark:text-zinc-400">
+        Every project here started with a problem I had. Pick one to read why I built it and what I learned.
+      </p>
+      <p class="mt-6 font-mono text-sm tabular-nums text-zinc-500">
+        {{ projects.length }} projects · building since {{ earliest }} · {{ inProgress }} in progress
       </p>
     </header>
 
-    <div class="mt-12">
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-        <ProjectsProjectCard v-for="project in projects" :key="project.slug" :project="project" />
-      </div>
+    <div class="mt-16 space-y-14 sm:mt-20">
+      <section v-for="group in groups" :key="group.key" :aria-labelledby="`group-${group.key}`">
+        <h2 :id="`group-${group.key}`" class="font-mono text-sm uppercase tracking-wide text-zinc-500">
+          {{ group.label }}
+        </h2>
+        <ul role="list" class="mt-4 divide-y divide-zinc-900/5 border-y border-zinc-900/5 dark:divide-white/5 dark:border-white/5">
+          <li v-for="project in group.projects" :key="project.slug">
+            <button
+              type="button"
+              class="group -mx-3 flex w-[calc(100%+1.5rem)] items-center gap-4 rounded-xl p-3 text-left hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 dark:hover:bg-zinc-800/50 sm:-mx-4 sm:w-[calc(100%+2rem)] sm:px-4"
+              :style="morphSlug === project.slug && !selected ? { viewTransitionName: 'project-card' } : undefined"
+              @click="open(project)"
+            >
+              <ProjectsProjectIcon
+                :project="project"
+                :style="morphSlug === project.slug && !selected ? { viewTransitionName: 'project-icon' } : undefined"
+              />
+              <div class="min-w-0 flex-1">
+                <p class="text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                  {{ project.title }}
+                </p>
+                <p class="truncate text-base text-zinc-600 dark:text-zinc-400 sm:text-sm">
+                  {{ project.tagline }}
+                </p>
+              </div>
+              <p class="font-mono text-sm tabular-nums text-zinc-500 max-sm:hidden">{{ project.since }}</p>
+              <p class="flex w-28 items-center gap-2 font-mono text-sm text-zinc-600 dark:text-zinc-400 max-md:hidden">
+                <span class="size-2 shrink-0 rounded-full" :class="statusDots[project.status ?? 'active']" />
+                {{ statusLabels[project.status ?? 'active'] }}
+              </p>
+              <ChevronRightIcon class="size-5 shrink-0 fill-zinc-400 group-hover:fill-zinc-600 dark:group-hover:fill-zinc-300" />
+            </button>
+          </li>
+        </ul>
+      </section>
     </div>
+
+    <ProjectsProjectModal
+      :project="selected"
+      :position="position"
+      :total="ordered.length"
+      :morph="morphSlug === selected?.slug"
+      @close="close"
+      @prev="step(-1)"
+      @next="step(1)"
+      @open="show"
+    />
   </Container>
 </template>
