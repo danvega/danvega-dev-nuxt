@@ -13,6 +13,7 @@
                 <div class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/about">About</a>
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/blog">Blog</a>
+                  <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/projects">Projects</a>
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/newsletter">Newsletter</a>
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/speaking">Speaking</a>
                   <a class="transition hover:text-blue-500 dark:hover:text-blue-400" href="/courses">Courses</a>

@@ -49,6 +49,29 @@ export const projects: Project[] = [
     status: 'in-progress'
   },
   {
+    slug: 'pressworks',
+    title: 'Pressworks',
+    group: 'apps',
+    icon: 'pressworks.png',
+    tagline: 'Make your Java app look as good as it works.',
+    description: 'A store of designed page templates for Java developers, ready to drop into the app they already run.',
+    image: 'pressworks.jpg',
+    frame: 'browser',
+    frameLabel: 'pressworks.dev',
+    since: '2026',
+    story: {
+      why: 'Java developers can build the backend, but making it look good is another story. The good template stores serve React. The ones that serve Java sell dated Bootstrap admin themes. So we grab a theme everyone recognizes, port an HTML template to Thymeleaf by hand, or ship something ugly.',
+      built: 'A store of complete, designed page templates. Each one ships in four formats: plain HTML, Thymeleaf, FreeMarker, and JTE. You keep your controllers and your wiring and drop in the view layer. Some templates are free. You can buy one, or subscribe to all of them.'
+    },
+    stats: [
+      { label: 'Formats', value: '4' },
+      { label: 'Commits', value: '430' }
+    ],
+    techStack: ['Spring Boot', 'Java', 'Thymeleaf', 'JTE', 'Stripe'],
+    url: 'https://pressworks.dev',
+    status: 'active'
+  },
+  {
     slug: 'content-os',
     title: 'Content OS',
     group: 'apps',
