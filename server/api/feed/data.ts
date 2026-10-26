@@ -530,6 +530,18 @@ export const rssData = [
     ]
   },
   {
+    "title": "Vibe Coding: Why Fast Doesn't Mean Good",
+    "description": "What vibe coding is, where the term came from, and why the best developers still learn the fundamentals before they let AI write their code.",
+    "date": "2026-03-24T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/vibe-coding-fast-doesnt-mean-good",
+    "slug": "vibe-coding-fast-doesnt-mean-good",
+    "tags": [
+      "AI",
+      "ByteSized AI"
+    ]
+  },
+  {
     "title": "JEP 500: Prepare to Make Final Mean Final in JDK 26",
     "description": "JDK 26 introduces JEP 500, which warns developers when final fields are mutated through reflection. Here's what this means for your Java code and how to prepare for the future.",
     "date": "2026-03-20T10:00:00.000Z",
@@ -538,6 +550,30 @@ export const rssData = [
     "slug": "jdk-26-final-means-final",
     "tags": [
       "Java"
+    ]
+  },
+  {
+    "title": "AI Is Hurting Developer Learning (And the Research Proves It)",
+    "description": "A randomized study found developers who learned a new library with AI scored 17% lower and weren't faster. What it means for when to use AI and when to struggle.",
+    "date": "2026-03-20T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/ai-hurting-developer-learning",
+    "slug": "ai-hurting-developer-learning",
+    "tags": [
+      "AI",
+      "ByteSized AI"
+    ]
+  },
+  {
+    "title": "Stop Letting AI Build Horizontally",
+    "description": "AI can scaffold every layer of your app in seconds, and none of it has run together. Use tracer bullets to build thin vertical slices you can verify instead.",
+    "date": "2026-03-18T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/stop-letting-ai-build-horizontally",
+    "slug": "stop-letting-ai-build-horizontally",
+    "tags": [
+      "AI",
+      "ByteSized AI"
     ]
   },
   {
@@ -585,43 +621,6 @@ export const rssData = [
     "tags": [
       "AI",
       "Java"
-    ]
-  },
-  {
-    "title": "OpenTelemetry with Spring Boot 4: The New Starter",
-    "description": "Learn how to use the new spring-boot-starter-opentelemetry in Spring Boot 4 to add observability with traces, metrics, and logs—no Actuator required.",
-    "date": "2025-12-23T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/opentelemetry-spring-boot",
-    "slug": "opentelemetry-spring-boot",
-    "tags": [
-      "Spring Boot",
-      "Observability"
-    ]
-  },
-  {
-    "title": "Building a Spring Boot 4 REST API the Fast Way",
-    "description": "Learn how to build a REST API with Spring Boot 4 in minutes. This tutorial shows you how to create CRUD endpoints using Java records and the @RestController annotation.",
-    "date": "2025-12-18T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-boot-4-rest-api",
-    "slug": "spring-boot-4-rest-api",
-    "tags": [
-      "Spring Boot",
-      "Java",
-      "REST API"
-    ]
-  },
-  {
-    "title": "Loading Resources in Spring Boot",
-    "description": "Learn how to load resources in Spring Boot using the Resource interface. This tutorial covers three approaches for loading files from the classpath, filesystem, and URLs.",
-    "date": "2025-12-17T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/loading-spring-resources",
-    "slug": "loading-spring-resources",
-    "tags": [
-      "Spring Boot",
-      "Spring Framework"
     ]
   }
 ] as const
