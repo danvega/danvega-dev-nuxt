@@ -61,7 +61,28 @@ function withTransition(update: () => Promise<unknown>) {
 
 function setProject(slug: string | null) {
   const { p, ...rest } = route.query
-  return router.replace({ query: slug ? { ...rest, p: slug } : rest })
+  // Keep the current path. Production serves /projects/ with a trailing slash, and a query-only
+  // location resolves to /projects. Nuxt sees that as a new page, remounts it, and starts its
+  // own view transition, which aborts ours and makes the modal slow to open.
+  return router.replace({ path: route.path, query: slug ? { ...rest, p: slug } : rest })
+}
+
+// Warm the modal's screenshot on hover or focus so it is usually cached by the time the row is clicked.
+// The options mirror the NuxtImg in ProjectFrame so the browser picks the same srcset candidate.
+const $img = useImage()
+const prefetched = new Set<string>()
+
+function prefetch(project: Project) {
+  if (prefetched.has(project.slug)) return
+  prefetched.add(project.slug)
+  const { src, srcset, sizes } = $img.getSizes(`/images/projects/${project.image}`, {
+    sizes: '100vw lg:960px',
+    modifiers: { width: '1920', quality: $img.options.quality }
+  })
+  const image = new Image()
+  if (sizes) image.sizes = sizes
+  if (srcset) image.srcset = srcset
+  image.src = src
 }
 
 function open(project: Project) {
@@ -110,6 +131,8 @@ function step(offset: number) {
               type="button"
               class="group -mx-3 flex w-[calc(100%+1.5rem)] items-center gap-4 rounded-xl p-3 text-left hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 dark:hover:bg-zinc-800/50 sm:-mx-4 sm:w-[calc(100%+2rem)] sm:px-4"
               :style="morphSlug === project.slug && !selected ? { viewTransitionName: 'project-card' } : undefined"
+              @pointerenter="prefetch(project)"
+              @focus="prefetch(project)"
               @click="open(project)"
             >
               <ProjectsProjectIcon
