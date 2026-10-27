@@ -33,15 +33,10 @@ const statusDots: Record<string, string> = {
 
 // The open project lives in the URL (?p=slug) so every story has a shareable link.
 // The page is prerendered without a query, so only read it after mount to avoid a hydration mismatch.
-const route = useRoute()
-const router = useRouter()
-const mounted = ref(false)
-onMounted(() => { mounted.value = true })
+const selectedSlug = ref<string | null>(null)
+onMounted(() => { selectedSlug.value = new URLSearchParams(window.location.search).get('p') })
 
-const selected = computed<Project | null>(() => {
-  if (!mounted.value) return null
-  return ordered.find(p => p.slug === route.query.p) ?? null
-})
+const selected = computed<Project | null>(() => ordered.find(p => p.slug === selectedSlug.value) ?? null)
 const position = computed(() => (selected.value ? ordered.indexOf(selected.value) + 1 : 0))
 
 // The row that morphs into the modal (and back) during a view transition
@@ -59,12 +54,17 @@ function withTransition(update: () => Promise<unknown>) {
   })
 }
 
+// Update the address bar directly instead of going through the router. Production serves
+// /projects/ with a trailing slash, and a router navigation resolves to /projects. Nuxt treats
+// that as a new page: it remounts the page and starts its own view transition, which aborts ours
+// and freezes the screen. A query change here never needs a navigation.
 function setProject(slug: string | null) {
-  const { p, ...rest } = route.query
-  // Keep the current path. Production serves /projects/ with a trailing slash, and a query-only
-  // location resolves to /projects. Nuxt sees that as a new page, remounts it, and starts its
-  // own view transition, which aborts ours and makes the modal slow to open.
-  return router.replace({ path: route.path, query: slug ? { ...rest, p: slug } : rest })
+  const url = new URL(window.location.href)
+  if (slug) url.searchParams.set('p', slug)
+  else url.searchParams.delete('p')
+  window.history.replaceState(window.history.state, '', url)
+  selectedSlug.value = slug
+  return Promise.resolve()
 }
 
 // Warm the modal's screenshot on hover or focus so it is usually cached by the time the row is clicked.
