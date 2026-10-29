@@ -8,6 +8,8 @@ newsletter: true
 published: true
 ---
 
+![The Age of Personal Software. You can't vibe code beehiiv over a weekend. But most of us only need a small slice of the tools we pay for.](/images/newsletter/2026/10/29/personal-software-header.png)
+
 If you spent any time on X this month, you probably saw the beehiiv debate.
 
 Here's the quick version. [Marc Lou left beehiiv](https://x.com/marclou/status/2108509543810605218) after its third price increase in two years. He says his bill was headed from $1,000 a year to $4,000. So he vibe coded his own newsletter platform.
@@ -40,6 +42,8 @@ I feel that all the time now. If a tool is essential to my work, I'll happily pa
 
 And for years I stitched these tools together. Notion here, a calendar there, something else to glue it all together. It worked, but it never worked the way I work.
 
+![Pull quote: "I think we're all paying for too much right now." Dan Vega, The Age of Personal Software.](/images/newsletter/2026/10/29/paying-for-too-much.png)
+
 ## So I started building my own
 
 That's what pushed me to build Content OS, which is now Publishwell. It pulls the parts of Notion and my calendar I actually used into one place. I'm building Wrap, my own Mac recorder, to replace Ecamm and most of what I did in Premiere. And I built Clearing, because there's great productivity software out there, just not built the way I want to use it.
@@ -59,6 +63,8 @@ Let's be honest about who's doing this. It's a small group. Nobody is vibe codin
 What has changed is this. If you can build, you can now build software for an audience of one. That used to be a waste of time. Now it might be the best use of a weekend.
 
 There's professional software, and there's personal software. The age of personal software is here. It has never been a better time to be a builder.
+
+![Pull quote: "If you can build, you can now build software for an audience of one." Dan Vega, The Age of Personal Software.](/images/newsletter/2026/10/29/audience-of-one.png)
 
 ## So what's your take?
 
