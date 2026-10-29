@@ -50,6 +50,7 @@
   {
     "title": "AI for Java Developers",
     "url": "https://qconsf.com/training/nov2026/ai-java-developers",
+    "slug": "qcon-sf-2026-ai-for-java-developers-workshop",
     "name": "QCon San Francisco 2026",
     "startDate": "Nov 19, 2026",
     "endDate": "Nov 19, 2026",
@@ -59,6 +60,7 @@
   {
     "title": "The Fundamentals of Software Engineering in the Age of AI",
     "url": "https://qconsf.com/training/nov2026/fundamentals-software-engineering-age-ai",
+    "slug": "qcon-sf-2026-fundamentals-software-engineering-ai-workshop",
     "name": "QCon San Francisco 2026",
     "startDate": "Nov 19, 2026",
     "endDate": "Nov 19, 2026",
