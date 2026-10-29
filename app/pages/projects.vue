@@ -33,15 +33,10 @@ const statusDots: Record<string, string> = {
 
 // The open project lives in the URL (?p=slug) so every story has a shareable link.
 // The page is prerendered without a query, so only read it after mount to avoid a hydration mismatch.
-const route = useRoute()
-const router = useRouter()
-const mounted = ref(false)
-onMounted(() => { mounted.value = true })
+const selectedSlug = ref<string | null>(null)
+onMounted(() => { selectedSlug.value = new URLSearchParams(window.location.search).get('p') })
 
-const selected = computed<Project | null>(() => {
-  if (!mounted.value) return null
-  return ordered.find(p => p.slug === route.query.p) ?? null
-})
+const selected = computed<Project | null>(() => ordered.find(p => p.slug === selectedSlug.value) ?? null)
 const position = computed(() => (selected.value ? ordered.indexOf(selected.value) + 1 : 0))
 
 // The row that morphs into the modal (and back) during a view transition
@@ -59,9 +54,35 @@ function withTransition(update: () => Promise<unknown>) {
   })
 }
 
+// Update the address bar directly instead of going through the router. Production serves
+// /projects/ with a trailing slash, and a router navigation resolves to /projects. Nuxt treats
+// that as a new page: it remounts the page and starts its own view transition, which aborts ours
+// and freezes the screen. A query change here never needs a navigation.
 function setProject(slug: string | null) {
-  const { p, ...rest } = route.query
-  return router.replace({ query: slug ? { ...rest, p: slug } : rest })
+  const url = new URL(window.location.href)
+  if (slug) url.searchParams.set('p', slug)
+  else url.searchParams.delete('p')
+  window.history.replaceState(window.history.state, '', url)
+  selectedSlug.value = slug
+  return Promise.resolve()
+}
+
+// Warm the modal's screenshot on hover or focus so it is usually cached by the time the row is clicked.
+// The options mirror the NuxtImg in ProjectFrame so the browser picks the same srcset candidate.
+const $img = useImage()
+const prefetched = new Set<string>()
+
+function prefetch(project: Project) {
+  if (prefetched.has(project.slug)) return
+  prefetched.add(project.slug)
+  const { src, srcset, sizes } = $img.getSizes(`/images/projects/${project.image}`, {
+    sizes: '100vw lg:960px',
+    modifiers: { width: '1920', quality: $img.options.quality }
+  })
+  const image = new Image()
+  if (sizes) image.sizes = sizes
+  if (srcset) image.srcset = srcset
+  image.src = src
 }
 
 function open(project: Project) {
@@ -110,6 +131,8 @@ function step(offset: number) {
               type="button"
               class="group -mx-3 flex w-[calc(100%+1.5rem)] items-center gap-4 rounded-xl p-3 text-left hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 dark:hover:bg-zinc-800/50 sm:-mx-4 sm:w-[calc(100%+2rem)] sm:px-4"
               :style="morphSlug === project.slug && !selected ? { viewTransitionName: 'project-card' } : undefined"
+              @pointerenter="prefetch(project)"
+              @focus="prefetch(project)"
               @click="open(project)"
             >
               <ProjectsProjectIcon
