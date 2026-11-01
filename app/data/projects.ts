@@ -31,22 +31,24 @@ export const projects: Project[] = [
     title: 'Publishwell',
     group: 'apps',
     icon: 'publishwell.svg',
-    tagline: 'A studio of tools for creators. Stop starting from scratch.',
-    description: 'Focused apps for the work around creating, sharing one account so what you save in one app helps in the next.',
+    tagline: 'A studio of tools for creators.',
+    description: 'Four apps that work together and share one account, so what you save in one app helps in the next.',
     image: 'publishwell.jpg',
     frame: 'browser',
     frameLabel: 'publishwell.studio',
     since: '2026',
     story: {
       why: 'Creators handle the creative work and every production task around it. Photos, references, drafts, and plans end up scattered. So every new project starts from scratch.',
-      built: 'A suite of focused apps that share one account and one database. Thumbnail Studio comes first. Publishing Pipeline, Scheduler, and Sponsors are next. It replaces Content OS, the private app I built just for me.'
+      built: 'Four apps that share one account. Thumbnail Studio makes thumbnail concepts from your brief, photos, and references. Pipeline helps you plan, make, and ship each video. Scheduler turns a published video into a campaign of social posts. Sponsors tracks your sponsor deals and the checks on each video. It replaces Content OS, the private app I built just for me. It is in early access now, and you can join the waitlist.'
     },
     stats: [
-      { label: 'Commits', value: '627' },
+      { label: 'Commits', value: '686' },
       { label: 'Apps', value: '4' }
     ],
     techStack: ['Spring Boot 4', 'Java', 'Spring Modulith', 'PostgreSQL'],
-    status: 'in-progress'
+    url: 'https://publishwell.studio',
+    urlLabel: 'Join the waitlist',
+    status: 'early-access'
   },
   {
     slug: 'pressworks',
@@ -138,7 +140,7 @@ export const projects: Project[] = [
       { label: 'Publisher', value: 'O\'Reilly' }
     ],
     techStack: [],
-    url: 'https://www.fundamentalsofswe.com',
+    url: 'https://fundamentalsofswe.com',
     post: { title: 'The Fundamentals of Software Engineering is now Available', url: '/newsletter/2025/12/09/fundamentals-of-software-engineering' },
     status: 'active'
   },
@@ -286,6 +288,7 @@ export const projects: Project[] = [
 export const statusLabels: Record<string, string> = {
   active: 'Active',
   'in-progress': 'In progress',
+  'early-access': 'Early access',
   archived: 'Retired'
 }
 

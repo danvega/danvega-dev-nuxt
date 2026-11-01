@@ -28,6 +28,7 @@ const inProgress = projects.filter(p => p.status === 'in-progress').length
 const statusDots: Record<string, string> = {
   active: 'bg-green-500',
   'in-progress': 'bg-yellow-500',
+  'early-access': 'bg-blue-500',
   archived: 'bg-zinc-400 dark:bg-zinc-500'
 }
 
@@ -148,7 +149,7 @@ function step(offset: number) {
                 </p>
               </div>
               <p class="font-mono text-sm tabular-nums text-zinc-500 max-sm:hidden">{{ project.since }}</p>
-              <p class="flex w-28 items-center gap-2 font-mono text-sm text-zinc-600 dark:text-zinc-400 max-md:hidden">
+              <p class="flex w-32 items-center gap-2 font-mono text-sm text-zinc-600 dark:text-zinc-400 max-md:hidden">
                 <span class="size-2 shrink-0 rounded-full" :class="statusDots[project.status ?? 'active']" />
                 {{ statusLabels[project.status ?? 'active'] }}
               </p>
