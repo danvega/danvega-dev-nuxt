@@ -28,6 +28,7 @@ function onKeydown(event: KeyboardEvent) {
 const statusDots: Record<string, string> = {
   active: 'bg-green-500',
   'in-progress': 'bg-yellow-500',
+  'early-access': 'bg-blue-500',
   archived: 'bg-zinc-400 dark:bg-zinc-500'
 }
 </script>

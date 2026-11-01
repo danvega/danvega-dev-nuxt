@@ -63,8 +63,10 @@ export interface Project {
   techStack: string[]
   github?: string
   url?: string
+  // Text for the url link. Defaults to 'Visit site'.
+  urlLabel?: string
   post?: { title: string; url: string }
-  status?: 'active' | 'in-progress' | 'archived'
+  status?: 'active' | 'in-progress' | 'early-access' | 'archived'
   // Slug of the project that replaced this one
   successor?: string
 }
