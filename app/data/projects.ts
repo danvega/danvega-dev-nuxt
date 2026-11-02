@@ -51,6 +51,30 @@ export const projects: Project[] = [
     status: 'early-access'
   },
   {
+    slug: 'wrap',
+    title: 'Wrap',
+    group: 'apps',
+    icon: 'wrap.svg',
+    tagline: 'A screen recorder that knows what you did, not just what you said.',
+    description: 'An AI-first Mac recorder for coding videos. Your own agent plans the edit, and you approve each change.',
+    image: 'wrap.jpg',
+    frame: 'bare',
+    since: '2026',
+    story: {
+      why: 'I make a coding video almost every week. Once I recorded twenty minutes with the wrong mic, and all of it was gone. Editing takes too long, and AI editors only see the transcript. They hear "okay, so that passed" and guess.',
+      built: 'A Mac app that records your screen, camera, and voice. It also logs what you did while you talked: terminal commands and whether they passed, test runs, and the file and line you were on. Connect the agent you already use, like Claude Code, Codex, or Cursor. It reads the transcript and the log and plans the edit. You preview each change and accept the ones you want. Nothing leaves your Mac. It is in a private beta now, and you can join the waitlist.'
+    },
+    stats: [
+      { label: 'Commits', value: '123' },
+      { label: 'Platform', value: 'macOS' }
+    ],
+    techStack: ['Swift', 'SwiftUI', 'ScreenCaptureKit', 'MCP'],
+    url: 'https://thatsawrap.video',
+    urlLabel: 'Join the waitlist',
+    post: { title: 'Meet Wrap, Java\'s JSON API, and What\'s Next for Clearing', url: '/newsletter/2026/11/02/meet-wrap-javas-json-api-and-whats-next-for-clearing' },
+    status: 'early-access'
+  },
+  {
     slug: 'pressworks',
     title: 'Pressworks',
     group: 'apps',

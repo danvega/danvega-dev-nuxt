@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 4 112 112">
+<rect x="4" y="4" width="112" height="112" fill="#FF4F8B"/>
+<rect x="29" y="55" width="72" height="44" rx="8" fill="#1C1A26"/>
+<rect x="24" y="50" width="72" height="44" rx="8" fill="#FFFAF3"/>
+<clipPath id="b"><rect x="24" y="50" width="72" height="44" rx="8"/></clipPath>
+<g clip-path="url(#b)"><polygon points="18,63 25,50 32,50 25,63" fill="#1C1A26"/><polygon points="32,63 39,50 46,50 39,63" fill="#FF4F8B"/><polygon points="46,63 53,50 60,50 53,63" fill="#1C1A26"/><polygon points="60,63 67,50 74,50 67,63" fill="#2F5BFF"/><polygon points="74,63 81,50 88,50 81,63" fill="#1C1A26"/><polygon points="88,63 95,50 102,50 95,63" fill="#3DDC97"/><polygon points="102,63 109,50 116,50 109,63" fill="#1C1A26"/><polygon points="116,63 123,50 130,50 123,63" fill="#FF5A1F"/></g>
+<line x1="24" y1="63" x2="96" y2="63" stroke="#1C1A26" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="24" y="50" width="72" height="44" rx="8" fill="none" stroke="#1C1A26" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="34" y="72" width="36" height="5" rx="2.5" fill="#1C1A26"/>
+<rect x="34" y="82" width="22" height="5" rx="2.5" fill="#6B6478"/>
+<circle cx="84" cy="80" r="6" fill="#FF3B30" stroke="#1C1A26" stroke-width="3"/>
+<g transform="rotate(-14 26 47)">
+  <rect x="29" y="39" width="72" height="13" rx="3" fill="#1C1A26"/>
+  <clipPath id="a"><rect x="24" y="34" width="72" height="13" rx="3"/></clipPath>
+  <g clip-path="url(#a)"><rect x="24" y="34" width="72" height="13" fill="#FFFAF3"/><polygon points="18,47 25,34 32,34 25,47" fill="#1C1A26"/><polygon points="32,47 39,34 46,34 39,47" fill="#FF4F8B"/><polygon points="46,47 53,34 60,34 53,47" fill="#1C1A26"/><polygon points="60,47 67,34 74,34 67,47" fill="#2F5BFF"/><polygon points="74,47 81,34 88,34 81,47" fill="#1C1A26"/><polygon points="88,47 95,34 102,34 95,47" fill="#3DDC97"/><polygon points="102,47 109,34 116,34 109,47" fill="#1C1A26"/><polygon points="116,47 123,34 130,34 123,47" fill="#FF5A1F"/></g>
+  <rect x="24" y="34" width="72" height="13" rx="3" fill="none" stroke="#1C1A26" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<circle cx="27" cy="48" r="4" fill="#1C1A26"/>
+</svg>
