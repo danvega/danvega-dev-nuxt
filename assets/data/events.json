@@ -1,5 +1,25 @@
 [
   {
+    "title": "Context Engineering for Java Developers",
+    "url": "https://confoo.ca/en/2027/session/context-engineering-for-java-developers",
+    "slug": "confoo-2027-context-engineering-java-developers",
+    "name": "ConFoo 2027",
+    "startDate": "Feb 24, 2027",
+    "endDate": "Feb 26, 2027",
+    "location": "Montreal, Canada",
+    "description": "Prompt engineering was only the beginning. Reliable AI applications depend on the context around the prompt: system instructions, memory, retrieved knowledge, tools, and structured output. In this live-coding session, we'll use Spring AI to build that context deliberately, load the right information at the right time, and avoid overwhelming the model. You'll leave with a practical mental model for building AI applications Java can trust."
+  },
+  {
+    "title": "Spring Cleaning: What Boot 4 Lets You Delete",
+    "url": "https://confoo.ca/en/2027/session/spring-cleaning-what-boot-4-lets-you-delete",
+    "slug": "confoo-2027-spring-cleaning-boot-4",
+    "name": "ConFoo 2027",
+    "startDate": "Feb 24, 2027",
+    "endDate": "Feb 26, 2027",
+    "location": "Montreal, Canada",
+    "description": "Spring Boot 4 can help you delete more than old dependencies. Built-in resilience may replace Spring Retry. HTTP interfaces can replace Feign. API versioning can replace custom filters. RestTestClient can simplify test setup. We'll also cover JSpecify, Jackson 3, modular auto-configuration, and the smaller changes worth knowing. You'll leave with less code to maintain and a clear upgrade path."
+  },
+  {
     "title": "Spring AI in Practice: A Hands-On Workshop for Java Developers",
     "url": "https://www.jfokus.se/",
     "slug": "jfokus-2027-spring-ai-in-practice-workshop",
