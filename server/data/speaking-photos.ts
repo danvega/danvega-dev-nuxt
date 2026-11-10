@@ -61,5 +61,43 @@ export const speakingPhotos: Record<string, Array<{ id: number; src: string; alt
       "alt": "HR4yLvEbMAANqz5",
       "filename": "HR4yLvEbMAANqz5.jpeg"
     }
+  ],
+  "porto-tech-hub-2026-fundamentals-software-engineering-ai": [
+    {
+      "id": 1,
+      "src": "/images/speaking/porto-tech-hub-2026-fundamentals-software-engineering-ai/01-nate-and-dan-on-stage.jpeg",
+      "alt": "nate and dan on stage",
+      "filename": "01-nate-and-dan-on-stage.jpeg"
+    },
+    {
+      "id": 2,
+      "src": "/images/speaking/porto-tech-hub-2026-fundamentals-software-engineering-ai/02-fundamentals-did-not-change.jpeg",
+      "alt": "fundamentals did not change",
+      "filename": "02-fundamentals-did-not-change.jpeg"
+    },
+    {
+      "id": 3,
+      "src": "/images/speaking/porto-tech-hub-2026-fundamentals-software-engineering-ai/03-what-a-software-engineer-really-does.jpeg",
+      "alt": "what a software engineer really does",
+      "filename": "03-what-a-software-engineer-really-does.jpeg"
+    },
+    {
+      "id": 4,
+      "src": "/images/speaking/porto-tech-hub-2026-fundamentals-software-engineering-ai/04-on-stage-from-the-crowd.jpeg",
+      "alt": "on stage from the crowd",
+      "filename": "04-on-stage-from-the-crowd.jpeg"
+    },
+    {
+      "id": 5,
+      "src": "/images/speaking/porto-tech-hub-2026-fundamentals-software-engineering-ai/05-full-room-from-the-stage.jpeg",
+      "alt": "full room from the stage",
+      "filename": "05-full-room-from-the-stage.jpeg"
+    },
+    {
+      "id": 6,
+      "src": "/images/speaking/porto-tech-hub-2026-fundamentals-software-engineering-ai/06-selfie-with-the-audience.jpeg",
+      "alt": "selfie with the audience",
+      "filename": "06-selfie-with-the-audience.jpeg"
+    }
   ]
 }
