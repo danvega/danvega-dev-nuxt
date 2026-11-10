@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<!--
+  STYLE: clearing — the Clearing app's own look: warm paper, sage ink, a rising sun over three
+  green hills, Caveat handwriting, New York serif titles, and a real app screenshot.
+  USE WHEN: the post is about Clearing (launches, how it's built, updates). Not for other topics.
+
+  Assets live in scripts/cover/assets/clearing/ (Caveat font + its OFL license, app icon, the home
+  screenshot). They came from the Clearing website, so refresh them from there if the app changes.
+
+  Before rendering a copy from the scratchpad, set <base href> below to the absolute file:// path
+  of scripts/cover/assets/clearing/ in this repo, so the font and images resolve.
+
+  Sections to customize per post:
+    1. .hand      — handwritten kicker, short (2-5 words)
+    2. h1         — serif headline; wrap the payoff word in <em> (sage)
+    3. .dek       — one sans line of supporting facts, · separated
+    4. .shot img  — swap for another screenshot from the Clearing site if it fits the post better
+    5. .card      — optional floating card in the app's style; make its text true to the app,
+                    or delete it
+  Gotchas: headline wraps at max-width 1180px; keep it to three lines. The sun sits behind the
+  screenshot's top-right corner, like the website hero. No em dashes.
+-->
+<head>
+<meta charset="utf-8">
+<base href="file:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/cover/assets/clearing/">
+<style>
+  @font-face { font-family: "Caveat"; src: url("Caveat.ttf") format("truetype"); font-weight: 400 700; }
+  :root {
+    --paper: #FCF9F2;
+    --card: #FFFFFF;
+    --ink: #1F2A27;
+    --ink-soft: #4A5A55;
+    --ink-faint: #6B7A75;
+    --line: #E4E8E3;
+    --sage: #3F726D;
+    --sage-wash: #E3EEEC;
+    --sun: #DCA556;
+    --sun-soft: #F2D49B;
+    --hill-1: #CFE0D9;
+    --hill-2: #9CBDB3;
+    --hill-3: #5E8F87;
+    --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, sans-serif;
+    --mono: "SF Mono", Menlo, monospace;
+    --hand: "Caveat", "Bradley Hand", cursive;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--sans); position: relative; overflow: hidden; }
+
+  .hills { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 62%; }
+  .hills .h1 { fill: var(--hill-1); }
+  .hills .h2 { fill: var(--hill-2); }
+  .hills .h3 { fill: var(--hill-3); }
+
+  .copy { position: absolute; left: 150px; top: 150px; width: 1180px; }
+  .hand { font-family: var(--hand); color: var(--sage); font-size: 104px; line-height: 1; }
+  h1 { font-family: var(--serif); font-weight: 500; font-size: 146px; line-height: 1.04; letter-spacing: -0.01em; margin-top: 34px; }
+  h1 em { font-style: normal; color: var(--sage); }
+  .dek { margin-top: 44px; font-size: 42px; color: var(--ink-soft); }
+
+  .sun {
+    position: absolute; width: 360px; height: 360px; border-radius: 50%;
+    left: 2210px; top: 110px; transform: translateX(-50%);
+    background: radial-gradient(circle closest-side, var(--sun) 0 64%, var(--sun-soft) 65% 100%);
+  }
+  .shot {
+    position: absolute; left: 1420px; top: 250px; width: 1300px;
+    filter: drop-shadow(0 40px 60px rgba(31, 42, 39, 0.22));
+  }
+  .shot img { width: 100%; display: block; border-radius: 22px; }
+
+  .card {
+    position: absolute; left: 1260px; top: 900px; width: 860px;
+    background: var(--card); border-radius: 28px; padding: 40px 48px;
+    box-shadow: 0 30px 60px rgba(31, 42, 39, 0.18), 0 0 0 2px var(--line);
+  }
+  .card .title { font-size: 26px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); font-weight: 600; }
+  .card .row { display: flex; align-items: center; justify-content: space-between; margin-top: 22px; font-size: 38px; }
+  .toggle { width: 96px; height: 56px; border-radius: 28px; background: var(--sage); position: relative; flex: none; }
+  .toggle::after { content: ""; position: absolute; right: 6px; top: 6px; width: 44px; height: 44px; border-radius: 50%; background: #fff; }
+  .status { display: flex; align-items: center; gap: 16px; color: var(--sage); font-weight: 600; }
+  .status .dot { width: 18px; height: 18px; border-radius: 50%; background: var(--sage); }
+  .addr { margin-top: 22px; font-family: var(--mono); font-size: 32px; color: var(--ink); background: var(--sage-wash); border-radius: 14px; padding: 16px 22px; }
+
+  .brand { position: absolute; left: 150px; bottom: 110px; display: flex; align-items: center; gap: 30px; }
+  .brand img { width: 120px; height: 120px; border-radius: 27px; }
+  .brand span { font-size: 70px; font-weight: 600; color: #FCF9F2; letter-spacing: -0.01em; }
+</style>
+</head>
+<body>
+  <svg class="hills" viewBox="0 0 1440 560" preserveAspectRatio="none" aria-hidden="true">
+    <path class="h1" d="M0 300 C 240 230, 420 270, 620 300 S 1040 350, 1440 270 L1440 560 L0 560 Z"></path>
+    <path class="h2" d="M0 380 C 260 330, 520 400, 760 380 S 1160 330, 1440 390 L1440 560 L0 560 Z"></path>
+    <path class="h3" d="M0 460 C 300 420, 600 490, 900 460 S 1260 430, 1440 470 L1440 560 L0 560 Z"></path>
+  </svg>
+
+  <div class="copy">
+    <p class="hand">Example kicker</p>
+    <h1>Example headline with a <em>payoff</em></h1>
+    <p class="dek">fact one · fact two · fact three</p>
+  </div>
+
+  <div class="sun" aria-hidden="true"></div>
+  <figure class="shot"><img src="home-light.webp" alt=""></figure>
+
+  <div class="card">
+    <p class="title">Example card</p>
+    <div class="row"><span>Example setting</span><span class="toggle"></span></div>
+  </div>
+
+  <div class="brand"><img src="icon-180.png" alt=""><span>Clearing</span></div>
+</body>
+</html>
