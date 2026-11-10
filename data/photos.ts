@@ -302,5 +302,19 @@ export const photos: Photo[] = [
       height: 4284,
       src: '/images/photos/kcdc_2026_01.jpeg',
       alt: 'Packed room for my Zero to Superpowers Claude Code talk at KCDC 2026'
+    },
+    {
+      id: 43,
+      width: 1024,
+      height: 768,
+      src: '/images/photos/porto_tech_hub_2026_01.jpeg',
+      alt: 'Nate Schutta and Dan Vega on stage for the Porto Tech Hub 2026 keynote'
+    },
+    {
+      id: 44,
+      width: 1024,
+      height: 768,
+      src: '/images/photos/porto_tech_hub_2026_02.jpeg',
+      alt: 'Selfie with Nate Schutta and the audience at the Porto Tech Hub 2026 keynote'
     }
 ];
