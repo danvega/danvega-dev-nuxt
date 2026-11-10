@@ -29,3 +29,7 @@ Whether you write code, ship it, or plan the work around it, we will cut through
 - The core skills worth investing in right now
 - What to keep learning as the tools keep changing
 - Why the craft still matters
+
+## Slides
+
+:slide-deck{slug="porto-tech-hub-2026-fundamentals-software-engineering-ai" title="Fundamentals of Software Engineering in the Age of AI Slides"}

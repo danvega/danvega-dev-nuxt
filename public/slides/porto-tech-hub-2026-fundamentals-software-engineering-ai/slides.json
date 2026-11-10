@@ -1,0 +1,764 @@
+{
+  "pdf": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/porto-tech-hub-2026-fundamentals-software-engineering-ai.pdf",
+  "pdfSize": 6454617,
+  "width": 1920,
+  "height": 1080,
+  "slides": [
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/001.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/002.webp",
+      "text": "Do the fundamentals still matter?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/003.webp",
+      "text": "We have the tools. They plan. They write. They test. They ship."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/004.webp",
+      "text": "Do we still need to understand the code? Do we even need to read it?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/005.webp",
+      "text": "The fundamentals didn't change. The ratio did."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/006.webp",
+      "text": "Who's feeling overwhelmed? It's okay. This is a safe space. 🙋"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/007.webp",
+      "text": "I want to describe a feeling I get these days."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/008.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/009.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/010.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/011.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/012.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/013.webp",
+      "text": "x.com/karpathy/status/2004607146781278521"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/014.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/015.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/016.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/017.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/018.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/019.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/020.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/021.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/022.webp",
+      "text": "Be careful what you read out there. The demo is not the product."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/023.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/024.webp",
+      "text": "/ / https: x.com/karpathy/status/1886192184808149383"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/025.webp",
+      "text": "Vibe coding skips the typing. Not the job. Shipping it. Running it. Securing it."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/026.webp",
+      "text": "Typing speed has never been the bottleneck in software."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/027.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/028.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/029.webp",
+      "text": "x.com/MattPRD/status/2017386365756072376"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/030.webp",
+      "text": "x.com/theonejvo/status/2017732898632437932"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/031.webp",
+      "text": "Every hyperbolic claim deserves one question. What's the financial incentive of the person making it?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/032.webp",
+      "text": "Who’s saying it? 01 02 03 Tool makers Non-programmers Business “Everyone should be using this. Today.” “I built this app in a weekend. No code.” “We can ship more with fewer engineers.” What they get What they get What they get They sell the tool. They sell the course. They cut the payroll."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/033.webp",
+      "text": "“I think what AI does quite frankly is reduce the oor and raise the ceiling for all of us.” fl –Satya Nadella, Microsoft"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/034.webp",
+      "text": "You are not behind. You don't need to learn all of this. You need the building blocks."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/035.webp",
+      "text": "We've been here before… If the role is changing, what is the role? 🫠"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/036.webp",
+      "text": "fl The software industry has ebbed and owed before."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/037.webp",
+      "text": "There are always ups and downs to the job market."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/038.webp",
+      "text": "Things seem… uncertain right now."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/039.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/040.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/041.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/042.webp",
+      "text": "Life moves pretty fast…"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/043.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/044.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/045.webp",
+      "text": "“I think we will be there in three to six months, where AI is writing 90% of the code. And then, in 12 months, we may be in a world where AI is writing essentially all of the code.” –Dario Amodei, CEO of Anthropic, March 2025 October 2026: Anthropic has 644 open jobs. 224 have “Engineer” in the title."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/046.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/047.webp",
+      "text": "fi https://bsky.app/pro le/garymarcus.bsky.social/post/3lkdxwb6lzc2f"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/048.webp",
+      "text": "Software job postings: highest since September 2023. Up 22% in a year. Still 22% below February 2020. Software development job postings on Indeed, U.S. (Feb 2020 = 100). Data through Oct 2, 2026. Source: Indeed Hiring Lab via FRED."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/049.webp",
+      "text": "The house. Hammers for millennia. Then nail guns and prefabricated joists. The house is still a house. The carpenter is still a carpenter."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/050.webp",
+      "text": "The forecast. June 1944. A room of forecasters argued for days over one forecast. Today it’s in your pocket. And there are more meteorologists, not fewer."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/051.webp",
+      "text": "We’ve leveraged new abstractions before! Punch cards were one of the first! 🧱"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/052.webp",
+      "text": "A brief history of abstractions. We've always built layers to make things easier. 1950s ● Punch cards & machine code Programmers spoke the machine's language"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/053.webp",
+      "text": "A brief history of abstractions. We've always built layers to make things easier. 1950s 1960s ● ● Punch cards & machine code Assembly Programmers spoke the machine's language Mnemonics replaced raw binary"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/054.webp",
+      "text": "A brief history of abstractions. We've always built layers to make things easier. 1950s 1960s 1970s ● ● ● Punch cards & machine code Assembly High-level languages Programmers spoke the machine's language Mnemonics replaced raw binary C, COBOL and Fortran hid the hardware"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/055.webp",
+      "text": "A brief history of abstractions. We've always built layers to make things easier. 1950s 1960s 1970s 1990s ● ● ● ● Punch cards & machine code Assembly High-level languages OOP & frameworks Programmers spoke the machine's language Mnemonics replaced raw binary C, COBOL and Fortran hid the hardware Java, patterns and reusable parts"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/056.webp",
+      "text": "A brief history of abstractions. We've always built layers to make things easier. 1950s 1960s 1970s 1990s 2010s ● ● ● ● ● Punch cards & machine code Assembly High-level languages OOP & frameworks Cloud & platforms Java, patterns and reusable parts Managed infrastructure and serverless Programmers spoke the machine's language Mnemonics replaced raw binary C, COBOL and Fortran hid the hardware"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/057.webp",
+      "text": "A brief history of abstractions. We've always built layers to make things easier. 1950s 1960s 1970s 1990s 2010s 2020s ● ● ● ● ● ● Punch cards & machine code Assembly High-level languages OOP & frameworks Cloud & platforms Java, patterns and reusable parts Managed infrastructure and serverless AI-assisted development Programmers spoke the machine's language Mnemonics replaced raw binary C, COBOL and Fortran hid the hardware Copilots, agents and code generation"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/058.webp",
+      "text": "A brief history of abstractions. We've always built layers to make things easier. 1950s 1960s 1970s 1990s 2010s 2020s ● ● ● ● ● ● Punch cards & machine code Assembly High-level languages OOP & frameworks Cloud & platforms Java, patterns and reusable parts Managed infrastructure and serverless AI-assisted development Programmers spoke the machine's language Mnemonics replaced raw binary C, COBOL and Fortran hid the hardware Every new abstraction made us more productive. None removed the need to understand what's underneath. Copilots, agents and code generation"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/059.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/060.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/061.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/062.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/063.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/064.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/065.webp",
+      "text": "x.com/mattpocockuk/status/2107749763789578692"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/066.webp",
+      "text": "The universe of problems keeps growing. When code gets cheaper, we build more software. Not less."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/067.webp",
+      "text": "Radical extensibility."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/068.webp",
+      "text": "Early in my career…"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/069.webp",
+      "text": "Every project (seemingly) was 18 months and €€€."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/070.webp",
+      "text": "Mass market software."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/071.webp",
+      "text": "Countless spreadsheets…"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/072.webp",
+      "text": "And shadow IT."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/073.webp",
+      "text": "Now?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/074.webp",
+      "text": "Build your own light saber!"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/075.webp",
+      "text": "Is that good? Bad?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/076.webp",
+      "text": "Yes."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/077.webp",
+      "text": "Autocomplete to agents in under four years. Autocomplete. Chat. Agents."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/078.webp",
+      "text": "The tools have always changed. We adapt to use them."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/079.webp",
+      "text": "Are our roles changing? Absolutely!"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/080.webp",
+      "text": "But first... What does a Software Engineer actually do?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/081.webp",
+      "text": "Write Code. Go Home. …right?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/082.webp",
+      "text": "How many hours a day do you actually get to code?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/083.webp",
+      "text": "How many hours would you prefer to spend coding?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/084.webp",
+      "text": "What a Software Engineer really does Requirements & Planning System Design & Architecture Writing Code Testing & Debugging Code Review Deployment & CI/CD Monitoring & Performance Communication & Collaboration Security & Compliance Documentation Mentoring & Leadership Problem Solving Writing code is just one piece of the puzzle"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/085.webp",
+      "text": "From the outside, the job looks like typing. Typing was always the smallest part."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/086.webp",
+      "text": "The job didn't change. The role expanded."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/087.webp",
+      "text": "Not everybody is going to make that transition. If your whole job was one narrow thing, that part is going away."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/088.webp",
+      "text": "If you really enjoyed carefully placing brackets and semicolons…"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/089.webp",
+      "text": "There are…challenges ahead."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/090.webp",
+      "text": "If you love to build and create?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/091.webp",
+      "text": "The world is your oyster!"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/092.webp",
+      "text": "A super technical product manager. Moving up the value chain. That's a good thing. Knowing what to ask. What to build. Which questions matter."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/093.webp",
+      "text": "Where's the next bottleneck? • A week before: mostly writing code. • A week now: deciding, specifying, reviewing, running. • When writing code gets cheap, the bottleneck moves."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/094.webp",
+      "text": "Are you measuring the impact?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/095.webp",
+      "text": "Or are you measuring adoption?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/096.webp",
+      "text": "AI allows you to generate code faster."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/097.webp",
+      "text": "That doesn’t necessarily translate to more software."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/098.webp",
+      "text": "DORA’s 2025 report crystallized the reality: AI is an ampli er of your development practices. Good processes get better (highperforming teams saw 55-70% faster delivery). Bad processes get worse (accumulating debt at unprecedented speed). There is no silver bullet. fi https://addyosmani.com/blog/the-80-problem-in-agentic-coding/"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/099.webp",
+      "text": "I don't write much code anymore. I write code to learn. I write code to teach. When I build, I review, I set gates, and I use what I know to build the right thing."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/100.webp",
+      "text": "If you're attached to the code, you might be in trouble. If you love building things, you're going to be fine."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/101.webp",
+      "text": "A wonderful time to be a builder! The old reality The new reality The superpower Great ideas, but no time, no budget, no team. Projects stayed on the backlog forever. Building anything meaningful took a big investment. You have an idea? Build it. Today. Tools for yourself, side projects, prototypes: things you couldn't touch before. The cost of trying things has collapsed. Fundamentals plus AI: an engineer who can build anything. You're not being replaced. You're being ampli ed. fi I don't think I've ever been this excited to build software!"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/102.webp",
+      "text": "Do I still need to learn this? 🧑🏫 Every abstraction brought more software. Nobody reads assembly anymore."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/103.webp",
+      "text": "What about vibe coding? Is this what replaces software engineers?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/104.webp",
+      "text": "It depends. Scope. Stakes. Scale."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/105.webp",
+      "text": "Same tools. Different stakes. Scope A weekend A side budgeting app Years in production An enterprise payroll system"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/106.webp",
+      "text": "Same tools. Different stakes. Scope Stakes A weekend A wrong total A side budgeting app Years in production Missed rent An enterprise payroll system"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/107.webp",
+      "text": "Same tools. Different stakes. Scope Stakes Scale A weekend Years in production A wrong total Missed rent One person Thousands A side budgeting app An enterprise payroll system"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/108.webp",
+      "text": "If it breaks, who notices? A side budgeting app An enterprise payroll system You. Thousands. You adjust your budget. They don't get paid."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/109.webp",
+      "text": "So surely we’re scrutinizing the code that matters. …right?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/110.webp",
+      "text": "Who has merged code they didn’t fully read? Still a safe space. 🙀"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/111.webp",
+      "text": "“Re exive AI usage is now a baseline expectation at Shopify.” fl –Tobi Lütke, Shopify, April 2025"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/112.webp",
+      "text": "Seventeen months later…"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/113.webp",
+      "text": "“We call those ‘slop grenades’ that people toss at each other.” –Tobi Lütke, The Knowledge Project, September 2026"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/114.webp",
+      "text": "Anatomy of a slop grenade. YOU Generate it. “Slop grenade”: Tobi Lütke, Shopify, who credits Harry Brundage"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/115.webp",
+      "text": "Anatomy of a slop grenade. YOU YOU Generate it. Skip reading it. “Slop grenade”: Tobi Lütke, Shopify, who credits Harry Brundage"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/116.webp",
+      "text": "Anatomy of a slop grenade. YOU YOU A TEAMMATE Generate it. Skip reading it. Hand it on. “Slop grenade”: Tobi Lütke, Shopify, who credits Harry Brundage"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/117.webp",
+      "text": "Anatomy of a slop grenade. YOU YOU A TEAMMATE SOMEONE ELSE Generate it. Skip reading it. Hand it on. Someone else pays. “Slop grenade”: Tobi Lütke, Shopify, who credits Harry Brundage"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/118.webp",
+      "text": "Anatomy of a slop grenade. YOU YOU A TEAMMATE SOMEONE ELSE Generate it. Skip reading it. Hand it on. Someone else pays. Seconds to make. Hours to clean up. “Slop grenade”: Tobi Lütke, Shopify, who credits Harry Brundage"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/119.webp",
+      "text": "AI slop? We had human slop first."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/120.webp",
+      "text": "“Hey, Jen, can you review this for me?”"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/121.webp",
+      "text": "Click."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/122.webp",
+      "text": "Done!"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/123.webp",
+      "text": "🤔"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/124.webp",
+      "text": "Defeats the purpose."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/125.webp",
+      "text": "“The danger lies in how easily developers may accept AI-suggested code without validating it.”"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/126.webp",
+      "text": "Are we becoming…the TSA? https://doctorow.medium.com/https-pluralisticnet-2025-12-05-pop-that-bubble-u-washington-8b6b75abc28e"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/127.webp",
+      "text": "“Automation blindness.”"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/128.webp",
+      "text": "fi Rare things are hard to nd."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/129.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/130.webp",
+      "text": "Maybe we’ve become… too reliant on AI?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/131.webp",
+      "text": "fi https://bsky.app/pro le/yallchemist.bsky.social/post/3mwvtuvkjq22t"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/132.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/133.webp",
+      "text": "x.com/karpathy/status/2015883857489522876"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/134.webp",
+      "text": "fi The skill AI erodes rst is debugging."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/135.webp",
+      "text": "AI and learning. 17% 52 developers learned a new library. Half used an AI assistant. The biggest gap: debugging. lower quiz scores with AI Shen and Tamkin, \"How AI Impacts Skill Formation\" (arXiv:2601.20245), 2026"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/136.webp",
+      "text": "An intern directing an intern. A junior developer plus an agent. Who checks the work?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/137.webp",
+      "text": "“Even as experts become the only people who can effectively check the work of ever more capable AIs, we are in danger of stopping the pipeline that creates experts.” –Ethan Mollick, Co-Intelligence"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/138.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/139.webp",
+      "text": "You can’t review what you can’t read. So yes. You still need to learn this."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/140.webp",
+      "text": "Ever notice how AI is really good at the things you don’t know?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/141.webp",
+      "text": "Two codebases, same assistant, completely opposite reaction."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/142.webp",
+      "text": "Trust what you know, verify what you don’t."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/143.webp",
+      "text": "Today, the job is knowing what good looks like."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/144.webp",
+      "text": "You still need to learn new things."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/145.webp",
+      "text": "The reps rule. Never written it? Written it a thousand times? Write it once yourself. Hand it off. A new framework. A new concept. A bug you don't understand. The thousandth controller. Boilerplate. Things you've done many times."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/146.webp",
+      "text": "“AI won’t replace humans. But humans with AI will replace humans without AI.” Karim R. Lakhani Professor, Harvard Business School Harvard Business Review, August 4, 2023"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/147.webp",
+      "text": "Do the rst ones by hand. Watch the machine do the next thousand. fi Stephen Wolfram on learning integrals, as told by Karim Lakhani"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/148.webp",
+      "text": "You can't send a robot to the gym for you."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/149.webp",
+      "text": "🤖"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/150.webp",
+      "text": "Know one level of abstraction below the one you use. Know what's under the hood of the nail gun."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/151.webp",
+      "text": "In the era of AI, you will spend even more time reading code."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/152.webp",
+      "text": "Smells are your review checklist now."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/153.webp",
+      "text": "Know what good looks like? Write it down."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/154.webp",
+      "text": "Diagrams don't compile. Neither do specs. Tests do."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/155.webp",
+      "text": "x.com/rough__sea/status/2013280952370573666"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/156.webp",
+      "text": "x.com/rough__sea/status/2092091242377265562"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/157.webp",
+      "text": "The x was a gate. fi Not a better model."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/158.webp",
+      "text": "Done means. It has a test. The tests pass. You saw it work. You said what you checked, and what you didn't."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/159.webp",
+      "text": "mastodon.social/@bagder/116009025260090059"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/160.webp",
+      "text": "Relationships matter."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/161.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/162.webp",
+      "text": "Crawl. Walk. Run. Start slowly."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/163.webp",
+      "text": "The fundamentals didn't change. The ratio did."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/164.webp",
+      "text": "Writing code is now cheap. Owning code is still expensive."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/165.webp",
+      "text": "Owning code is the craft. And the craft isn’t going away."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/166.webp",
+      "text": "The Photographer."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/167.webp",
+      "text": "So now what?"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/168.webp",
+      "text": "Many of us enjoy the craft of building software."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/169.webp",
+      "text": "Technology changes."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/170.webp",
+      "text": "Constantly."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/171.webp",
+      "text": "Our industry is evolving."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/172.webp",
+      "text": "Some will be tempted to just…"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/173.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/174.webp",
+      "text": "It’s a bold strategy Cotton. Let’s see if it pays off."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/175.webp",
+      "text": "Two possible mindsets."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/176.webp",
+      "text": "fi You can de ne yourself by what you’ve done in the past."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/177.webp",
+      "text": "Or…"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/178.webp",
+      "text": "fi You can de ne yourself by the problems you will solve in the future."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/179.webp",
+      "text": "You can be reactive."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/180.webp",
+      "text": "Or proactive."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/181.webp",
+      "text": "Whatever path you choose, change is inevitable."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/182.webp",
+      "text": "You are responsible for your career!"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/183.webp",
+      "text": "No one can do it for you."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/184.webp",
+      "text": "You can't stop learning."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/185.webp",
+      "text": "Fundamentals will always serve you well."
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/186.webp",
+      "text": "“Excellence is doing ordinary things extraordinarily well.” John W. Gardner"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/187.webp",
+      "text": "How to win: ??"
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/188.webp",
+      "text": ""
+    },
+    {
+      "src": "/slides/porto-tech-hub-2026-fundamentals-software-engineering-ai/189.webp",
+      "text": "Brigado! 👋"
+    }
+  ]
+}
