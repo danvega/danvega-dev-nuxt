@@ -14,18 +14,24 @@ keywords:
   - local-first planner app
 cover: mac-iphone-planner-built-in-mcp-server.png
 date: 2026-11-10T09:00:00.000Z
-published: false
+published: true
 ---
 
-<!-- Dan: publish this the day Mac 1.1 and iPhone 1.1 go out together. Move the file to that day's folder and update `date` to match. -->
+> **TL;DR:** I built Clearing, a day planner for the Mac and iPhone, with the help of coding agents. It runs an MCP server inside the Mac app, so your AI agent can read and update your plan. It syncs through your own iCloud and finds tasks in a brain dump with Apple's on-device model. There's no account and no server of mine.
 
-What if your AI agent could read your day planner without your plans ever touching a server? No account, no cloud database of mine, no API key to paste into a web form. Just an app on your Mac that your agent can talk to.
+What a time to be a builder. Everyone seems to be complaining about coding agents right now. But the app in this post is something I never would have had the time to build before them.
 
-That's how Clearing works. Clearing is a calm day planner for the Mac and iPhone. I built it because I had stitched together a task app, a calendar, a notes app and a weekly review doc for years, and things still slipped through the cracks. A to-do list tells you what. Clearing tells you when.
+It didn't come for free, though. I'm not an iOS expert. So I invested a lot in gates and verification steps that catch the mistakes I wouldn't know to look for.
+
+## What Is Clearing?
+
+Clearing is a calm day planner for the Mac and iPhone. I built it because I had stitched together a task app, a calendar, a notes app and a weekly review doc for years, and things still slipped through the cracks. A to-do list tells you what. Clearing tells you when.
+
+![Clearing on the Mac showing the What needs me view with today's tasks and calendar](/images/blog/2026/11/10/clearing-home.png)
+
+It also lets your AI agent read your plan without your plans ever touching a server. No account, no cloud database of mine, no API key to paste into a web form. Just an app on your Mac that your agent can talk to.
 
 In this post I'll walk through three technical choices behind it: a Model Context Protocol (MCP) server that runs inside the Mac app, sync that goes through your own iCloud, and a brain dump feature that runs on Apple's on-device model. I'll also tell you where each choice falls short, because none of them is free.
-
-<!-- Dan: add a line here on how you built it (Claude Code? how long?) if you want it in the story. I didn't want to guess. -->
 
 ## No Server of Mine
 
@@ -36,6 +42,8 @@ I wanted the opposite. Clearing has no account and no backend. Your plans live i
 That one decision shaped everything else. An AI integration can't call my API, because there isn't one. Sync can't go through my server, because there isn't one. So each feature had to find another way.
 
 ## An MCP Server Inside a Mac App
+
+Last week I put out a video called [Every App Should Have an MCP Server](https://www.youtube.com/watch?v=Qmq0z5vYQFc). In it I showed how to add one to an app with Spring AI. Clearing is me taking my own advice, just in Swift instead of Java.
 
 MCP is the open standard AI apps use to connect to tools. Most MCP servers you've seen are separate processes. You install a package, your AI app starts it, and it talks over standard input and output.
 
@@ -75,6 +83,8 @@ claude mcp add --transport http --scope user clearing http://127.0.0.1:47821/mcp
 
 The server offers fourteen tools. Some read: `what_needs_me`, `get_day`, `list_projects`, `search`, `list_areas` and `list_done`. Others write: `add_to_inbox`, `create_project`, `add_to_project`, `add_event`, `block_time`, `move_block`, `plan_task` and `complete_task`. There are also ready-made prompts, like Plan My Day, Weekly Review and Shut Down.
 
+![Clearing's week view with time blocks placed around meetings](/images/blog/2026/11/10/clearing-week.png)
+
 There's no delete tool. That's on purpose. An agent can suggest a task it spotted in your email, but it can't clean out your plan because it misread something. Anything an agent adds is marked, so you can see where it came from.
 
 ### Where this falls short
@@ -101,9 +111,13 @@ The line is the easy part. Three things took real work.
 
 **Sync has to be optional.** Some people aren't signed in to iCloud. Some don't want sync at all. And App Review tests the iPhone app with no Mac. So both apps work fully on their own, and Settings has a Sync tab that tells you what sync is doing: up to date, syncing, offline, or signed out.
 
+![Clearing on the iPhone showing the same What needs me view](/images/blog/2026/11/10/clearing-iphone-home.png){width="330" style="margin-left: auto; margin-right: auto"}
+
 ## A Brain Dump That Stays on Your Device
 
 Brain Dump is the feature I use to empty my head. <!-- Dan: keep or change this line, it's your call how you describe it. --> You press the mic and talk through everything on your mind, as messy as you like. Clearing turns it into tasks, each with a day and a list. You pick the ones to keep.
+
+![Clearing's Brain Dump sheet listing five tasks found in what you said](/images/blog/2026/11/10/clearing-brain-dump.png)
 
 None of that leaves your device. Apple's `SpeechAnalyzer` does the transcription. Then the Foundation Models framework, Apple's on-device language model, finds the tasks. The nice part of Foundation Models is guided generation. You describe the shape you want as a Swift type, and the model fills it in:
 
@@ -137,9 +151,9 @@ For a personal planner, I made that trade on purpose. Your plans say a lot about
 
 ## Try It
 
-Clearing is on the [Mac App Store](https://apps.apple.com/us/app/clearing-calm-day-planner/id6826955896?mt=12). The iPhone app comes with the same purchase. You pay once and there's no subscription. It needs macOS 26 or later on the Mac. You can read more at [clearingplanner.com](https://clearingplanner.com).
+Clearing is out now for both Mac and iPhone on the [App Store](https://apps.apple.com/us/app/clearing-calm-day-planner/id6826955896). It's $19.99 at launch, then $29.99. You pay once and get both apps. There's no subscription. It needs macOS 26 or later on the Mac and iOS 27 or later on the iPhone. You can read more at [clearingplanner.com](https://clearingplanner.com).
 
-<!-- Dan: confirm the launch price wording on publish day. The site says "$19.99 at launch, then $29.99." -->
+![Clearing on the Mac in dark mode](/images/blog/2026/11/10/clearing-dark-mode.png)
 
 If you build MCP servers, try running one inside an app you already ship. The loopback listener and the `Host`, `Origin` and token checks are most of the work, and your users get an agent that can reach their data without it ever leaving their machine.
 

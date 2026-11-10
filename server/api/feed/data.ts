@@ -1,6 +1,18 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "I Built a Mac and iPhone Planner With a Built-In MCP Server",
+    "description": "How Clearing runs a local MCP server inside a Mac app, syncs through your own iCloud, and finds tasks in a brain dump without a server of its own.",
+    "date": "2026-11-10T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/mac-iphone-planner-built-in-mcp-server",
+    "slug": "mac-iphone-planner-built-in-mcp-server",
+    "tags": [
+      "AI",
+      "MCP"
+    ]
+  },
+  {
     "title": "Spring Boot 3 to 4 Migration: Fixing Every Break",
     "description": "A hands-on Spring Boot 3 to 4 migration: upgrade a real app, then fix Jackson 3, modular starters, the missing H2 console, test imports, and JSpecify.",
     "date": "2026-09-24T09:00:00.000Z",
@@ -609,18 +621,6 @@ export const rssData = [
     "tags": [
       "Java",
       "AI"
-    ]
-  },
-  {
-    "title": "The Ralph Loop: Automate AI Coding Tasks in Java",
-    "description": "The Ralph Loop is a bash script that runs your AI coding agent with a fresh context every iteration. Here's how it works and how I used it to build a Java CLI.",
-    "date": "2026-02-05T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/ralph-loop",
-    "slug": "ralph-loop",
-    "tags": [
-      "AI",
-      "Java"
     ]
   }
 ] as const
