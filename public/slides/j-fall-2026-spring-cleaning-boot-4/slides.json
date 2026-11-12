@@ -1,0 +1,356 @@
+{
+  "pdf": "/slides/j-fall-2026-spring-cleaning-boot-4/j-fall-2026-spring-cleaning-boot-4.pdf",
+  "pdfSize": 3055357,
+  "width": 1920,
+  "height": 1080,
+  "slides": [
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/001.webp",
+      "text": "Get the code Scan now. Follow along later. github.com/danvega/spring-cleaning Spring Cleaning starts soon / / while you find a seat"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/002.webp",
+      "text": "- spring-retry - spring-cloud-starter-openfeign - VersionFilter.java Spring Cleaning What Boot 4 lets you delete. Dan Vega · J-Fall 2026"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/003.webp",
+      "text": "$ whoami Dan Vega Spring Developer Advocate, Broadcom + Java Champion + 25+ years building software + Co-wrote this book with Nate Schutta + Co-host Spring Office Hours + Cleveland, OH. Husband and father. www.danvega.dev"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/004.webp",
+      "text": "AI vulnerabilities Let's talk about it first. / / the elephant in the room"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/005.webp",
+      "text": "security reports to the Spring team, per month 6.5 The old normal. Spring blog, June 1, 2026"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/006.webp",
+      "text": "security reports to the Spring team 6.5 a month, the old normal 482 In April 2026 alone. Spring blog, June 1, 2026"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/007.webp",
+      "text": "It's hitting all of open source Jan 2026 curl ends its bug bounty to stop a flood of AI reports. The Register, Jan 21, 2026 May 2026 Linus Torvalds: the kernel security list is \"almost entirely unmanageable.\" Infosecurity Magazine, Sept 2, 2026 Oct 2026 Google pauses its open source bug bounty. Most new reports aren't valid. Help Net Security, Oct 5, 2026 / / not just spring"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/008.webp",
+      "text": "AI made finding vulnerabilities cheap. / / the real story"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/009.webp",
+      "text": "“ It is strongly recommended to upgrade as soon as possible to the latest patches. The Spring team, June 2026"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/010.webp",
+      "text": "You can patch faster. Or you can have less to patch."
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/011.webp",
+      "text": "Trusted Artifacts Data Services Spring Enterprise SLSA Level 3 verified libraries for Java, Python and NPM, plus Bitnami Secure Images. Validated distributions and enterprise support for PostgreSQL, RabbitMQ, MySQL and Valkey. Secure builds, 24x7 support and day-zero CVE-only patches for Spring and its whole dependency tree. + Application Advisor Applies those patches across your apps, or plans the move to Boot 4. / / when you can't delete it yet"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/012.webp",
+      "text": "Free support, by version 3.5 ended Jun 30, 2026 4.0 ends Dec 31, 2026 4.1 until Jul 31, 2027 4.2 due in November latest Your app: which one? / / where you stand"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/013.webp",
+      "text": "+ Agents are great at adding code. - Not so great at deleting code. / / why delete anything"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/014.webp",
+      "text": "Don't know what's built in? You can't prompt for it. You can't review it."
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/015.webp",
+      "text": "Agenda / / today 01 Boot cleaned house first 02 What you can delete 03 Small things, quietly useful 04 The upgrade plan"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/016.webp",
+      "text": "Part 1 Boot cleaned house first modular auto-config · jackson 3"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/017.webp",
+      "text": "Modularization One jar became many. / / part 1"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/018.webp",
+      "text": "The jar kept growing 2014 2025 Boot 1.0, the first release Boot 3.5. One big monolith, in every app. 185 KB → 2 MB / / spring-boot-autoconfigure.jar"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/019.webp",
+      "text": "Boot 4 split up its auto-configuration Boot 3.5 156 auto-configurations, all in this one jar / / spring-boot-autoconfigure.jar Boot 4.1 → 12 left in that jar. The rest moved into about 100 focused modules."
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/020.webp",
+      "text": "- Boot 3 configured everything it could find. + Boot 4 configures what you ask for. / / boot did its own spring cleaning"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/021.webp",
+      "text": "One jar became many your classpath - spring-boot-autoconfigure 156 auto-configs, one jar + spring-boot-autoconfigure 12, just the core + spring-boot-webmvc + spring-boot-jackson + spring-boot-flyway + spring-boot-h2console / / / / / about 100 modules / . . . / + / / / boot did its own spring cleaning"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/022.webp",
+      "text": "Name what you use pom.xml - spring-boot-starter-web + spring-boot-starter-webmvc - flyway-core <!-- just worked in Boot 3 --> + spring-boot-starter-flyway + spring-boot-h2console <!-- just worked in Boot 3 --> ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ <!-- the database, unchanged --> ‌ / h2 / / / modular auto-configuration"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/023.webp",
+      "text": "It fails quietly ! Flyway: no error. Your migrations just don't run. ! H2 console: a 404 ! WebMvcTest needs spring-boot-starter-webmvc-test ! MockBean is gone. Use @ / @ @ / modular auto-configuration MockitoBean."
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/024.webp",
+      "text": "spring-boot-starter-classic Turns the old behavior back on. Get green, then move to focused starters one at a time. / / escape hatch"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/025.webp",
+      "text": "Jackson 3 The JSON library under everything. / / part 1"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/026.webp",
+      "text": "- What's new in the box / / jackson 3 + Immutable, builder-based configuration + Unchecked exceptions, better for lambdas and streams + Boot auto-configures a JsonMapper bean + ISO 8601 dates out of the box + New tools.jackson packages + Jackson 2 and 3 side by side"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/027.webp",
+      "text": "Inject the auto-configured mapper DataLoader.java @Component class DataLoader implements CommandLineRunner { private final JsonMapper mapper; private final ResourceLoader loader; DataLoader(JsonMapper mapper, ResourceLoader loader) { public void run(String } args) throws Exception { var json = loader.getResource(DONUTS_JSON).getInputStream(); donuts = mapper.readValue(json, new TypeReference<>() {}); } . . . ‌ . . . / } / / / jackson 3"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/028.webp",
+      "text": "What bites ! The databind packages moved to tools.jackson ! Mappers are immutable. Configure them with a builder. ! Dates are ISO 8601 strings, even in mappers you build ! A null for a primitive field now fails - / / jackson 3"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/029.webp",
+      "text": "spring.jackson.use-jackson2-defaults: true A bridge, not a home. It only covers Boot's own mapper. / / need more time?"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/030.webp",
+      "text": "LIVE $ git checkout demo-01-start It worked yesterday Boot 3.5 to 4.1, one break at a time. Demo 1 of 2"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/031.webp",
+      "text": "Part 2 What you can delete whatever Boot 4 now does for you"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/032.webp",
+      "text": "Spring Retry Retries are built in now. / / part 2"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/033.webp",
+      "text": "Spring Retry goes - @EnableRetry - @Retryable(retryFor = ApiException.class, - maxAttempts = 4, backoff = @Backoff( - delay = 1000, multiplier = 2)) + @EnableResilientMethods + @Retryable(maxRetries = 3, / / delete: spring-retry + includes = ApiException.class, + delay = 1000, multiplier = 2) −1 dependency"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/034.webp",
+      "text": "Spring Retry goes + @EnableResilientMethods + @Retryable(maxRetries = 3, / / delete: spring-retry + includes = ApiException.class, + delay = 1000, multiplier = 2) −1 dependency"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/035.webp",
+      "text": "- maxAttempts = 4 + maxRetries = 3 Spring Retry counts the first call. Framework 7 counts only the retries. / / watch the count"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/036.webp",
+      "text": "Retry a flaky call with one annotation SpeakerService.java @Service plus @EnableResilientMethods on the app class SpeakerService { @Retryable( includes = HttpServerErrorException.class, only retry a 5xx maxRetries = 3, 1 call + 3 retries delay = 200, multiplier = 2) wait 200, 400, 800 ms SpeakerProfile profile(String name) { return speakers.get(name); the flaky speaker API } / / / / / / / / / / / } / / / framework 7"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/037.webp",
+      "text": "Also in the box + RetryTemplate and RetryPolicy for code you can't annotate + A RetryListener to log or count every attempt + + / @ / delete: spring-retry ConcurrencyLimit caps how many calls run at once Jitter, so retries don't all land at once"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/038.webp",
+      "text": "HTTP clients Feign goes. Interfaces stay. / / part 2"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/039.webp",
+      "text": "Spring Cloud OpenFeign is feature complete. / / why now"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/040.webp",
+      "text": "Describe the API as an interface TodoService.java @HttpExchange(url = \"/todos\", accept = \"application/json\") public interface TodoService { @GetExchange(\"/\") List<Todo> getAllTodos(); @GetExchange(\"/{id}\") Todo getTodoById(@PathVariable Long id); @PostExchange(\"/\") Todo createTodo(@RequestBody Todo todo); / } / / / http interfaces"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/041.webp",
+      "text": "Boot 3: wire every client by hand −3 beans HttpConfig.java - @Bean RestClient restClient(RestClient.Builder builder) { - return builder.baseUrl(\"https: api.github.com\").build(); - } - @Bean HttpServiceProxyFactory factory(RestClient client) { - return HttpServiceProxyFactory .builderFor(RestClientAdapter.create(client)).build(); - } - @Bean GitHub gitHub(HttpServiceProxyFactory factory) { - return factory.createClient(GitHub.class); / / / - } / / / delete: the boilerplate"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/042.webp",
+      "text": "ImportHttpServices One annotation. No factory beans. HttpConfig.java @Configuration @ImportHttpServices( group = \"github\", types = GitHub.class) / class HttpConfig {} / / @ / framework 7"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/043.webp",
+      "text": "Boot does the rest application.yaml spring: http: serviceclient: github: base-url: https: / / / read-timeout: 5s / / / boot 4 api.github.com"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/044.webp",
+      "text": "Need more? Configure the group @Configuration @ImportHttpServices(group = \"todos\", types = {TodoService.class, PostService.class}) @ImportHttpServices(group = \"github\", types = {RepoService.class, IssueService.class}) class MultiApiConfig { @Bean RestClientHttpServiceGroupConfigurer groupConfigurer() { return groups -> groups.filterByName(\"github\") .forEachClient((group, builder) -> builder .baseUrl(\"https: api.github.com\") .defaultHeader(\"Accept\", \"application/vnd.github.v3+json\")); } ‌ / / ‌ } / / framework 7"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/045.webp",
+      "text": "Feign goes GitHub.java - @FeignClient(name = \"github\", - url = \"${github.url}\") interface GitHub { - @GetMapping(\"/users/{id}\") + @GetExchange(\"/users/{id}\") User get(@PathVariable Long id); / } / / / delete: openfeign −1 dependency"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/046.webp",
+      "text": "Feign goes GitHub.java interface GitHub { + @GetExchange(\"/users/{id}\") User get(@PathVariable Long id); / } / / / delete: openfeign −1 dependency"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/047.webp",
+      "text": "API versioning Versions are part of the mapping now. / / part 2"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/048.webp",
+      "text": "We could always version APIs. Now it's built in, MVC and WebFlux. No more custom filters. / / the shift"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/049.webp",
+      "text": "That 2021 filter goes VersionFilter.java (deleted) - class VersionFilter extends OncePerRequestFilter { - read the X-API-Version header - rewrite the path to /v2/ - 140 lines nobody touches - } UserController.java + @GetMapping(path = \"/users\", version = \"2.0\") . } . . . . . / / / / / / / / List<UserV2> users() { / / / / delete: your version filter −1 file"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/050.webp",
+      "text": "That 2021 filter goes VersionFilter.java (deleted) UserController.java + @GetMapping(path = \"/users\", version = \"2.0\") . . . / / List<UserV2> users() { / / / / delete: your version filter } −1 file"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/051.webp",
+      "text": "Same path, two versions TalkController.java @RequestMapping(\"/api/talks\") class TalkController { @GetMapping(version = \"1.0\") List<Talk> findAll() { return talks.findAll(); } @GetMapping(version = \"2.0\") List<TalkSummary> findAllSummaries() { return talks.findAll().stream().map(TalkSummary } : : / } / / / framework 7 of).toList();"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/052.webp",
+      "text": "One property picks the strategy application.yaml spring: mvc: apiversion: use: header: X-API-Version supported: 1.0,2.0 / default: \"1.0\" / / / boot 4"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/053.webp",
+      "text": "The \"2.0 \" trick Don't copy endpoints that didn't change. TalkController.java @GetMapping(version = \"1.0\") List<Talk> findAll() { } @GetMapping(version = \"2.0+\") 2.0, 2.1, 2.2 . . } . . . . / / . . . + / List<TalkSummary> findAllSummaries() { / / / baseline versions"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/054.webp",
+      "text": "Retire a version, politely Boot picks up the bean. No WebMvcConfigurer. ApiVersionConfig.java @Bean ApiVersionDeprecationHandler deprecations() { var handler = new StandardApiVersionDeprecationHandler(); handler.configureVersion(\"1.0\") .setDeprecationDate(ZonedDateTime.parse(\"2026-11-12T00:00Z\")) .setSunsetDate(ZonedDateTime.parse(\"2027-06-30T00:00Z\")) .setSunsetLink(URI.create(\"https: return handler; / / / } / / / deprecation example.com/talks/v2\"));"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/055.webp",
+      "text": "The client sees the warning GET /api/talks, X-API-Version: 1.0 HTTP/1.1 200 Deprecation: @1794441600 Sunset: Wed, 30 Jun 2027 00:00:00 GMT / / / Link: <https: / / / rfc 9745, on every 1.0 response example.com/talks/v2>; rel=\"sunset\"; type=\"text/html\""
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/056.webp",
+      "text": "It does more than routing / / delete: your version filter + Header, query parameter, path or media type + A 400 for a version you don't support + Your own formats, like v1, with an ApiVersionParser + Clients send versions too, with RestClient"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/057.webp",
+      "text": "LIVE $ git checkout demo-02-start Demolition, live Delete what Boot now does for you. Tests stay green. Demo 2 of 2"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/058.webp",
+      "text": "Testing Fewer test clients, no WebFlux. / / part 2"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/059.webp",
+      "text": "Meet RestTestClient WebTestClient's fluent API, for Spring MVC. No WebFlux. ApiTests.java @Autowired RestTestClient client; with @AutoConfigureRestTestClient @Test void speakerProfileSurvivesAFlakyApi() { client.get().uri(\"/api/talks/1/speaker\") .exchange() .expectStatus().isOk() .expectBody() .jsonPath(\"$.name\").isEqualTo(\"Dan Vega\"); / / / } / / / framework 7"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/060.webp",
+      "text": "Test scaffolding goes −1 dependency TodoControllerTest.java - mockMvc.perform(get(\"/todos\")) - .andExpect(status().isOk()); + client.get().uri(\"/todos\") + .exchange() + .expectStatus().isOk() + .expectBody(Todo[].class); pom.xml ‌ <!-- only for WebTestClient --> ‌ ‌ ‌ / / - spring-boot-starter-webflux / / / / delete: extra test clients"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/061.webp",
+      "text": "Test scaffolding goes TodoControllerTest.java / + client.get().uri(\"/todos\") / / / delete: extra test clients + .exchange() + .expectStatus().isOk() + .expectBody(Todo[].class); −1 dependency"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/062.webp",
+      "text": "One client, every kind of test / / delete: extra test clients + bindToController: a unit test, no Spring + bindTo(mockMvc): your slice tests + bindToApplicationContext: the full context + bindToServer: a real HTTP server"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/063.webp",
+      "text": "Observability OpenTelemetry, built in. / / part 2"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/064.webp",
+      "text": "OpenTelemetry, one starter OTLP built in / + spring-boot-starter-opentelemetry / more than you need / - spring-boot-starter-actuator + bridges / third party, alpha / - opentelemetry-spring-boot-starter / version headaches / - -javaagent:opentelemetry-javaagent.jar / / / delete: your observability setup"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/065.webp",
+      "text": "OpenTelemetry, one starter / OTLP built in / + spring-boot-starter-opentelemetry / / delete: your observability setup"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/066.webp",
+      "text": "What you get out of the box / / spring-boot-starter-opentelemetry + Traces for every request and RestClient call + Metrics, exported over OTLP + Trace and span IDs in every log line + Sampling defaults to 10%. Turn it up for local dev. + LGTM in Docker Compose. Boot wires it up."
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/067.webp",
+      "text": "LGTM, letter by letter L Loki. Your logs, searchable. G Grafana. The screen you look at. T Tempo. Your traces, request by request. M Mimir. Your metrics, Prometheus style. One container. Open localhost:3000 and it's all there. / / grafana/otel-lgtm"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/068.webp",
+      "text": "What left your pom pom.xml - <artifactId>spring-retry artifactId> - <artifactId>spring-cloud-starter-openfeign - <artifactId>spring-boot-starter-webflux VersionFilter.java / < / < / < / / artifactId> artifactId> (deleted) Three dependencies and one filter. All built into Framework 7. / − / / / the diffstat, one demo app 3"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/069.webp",
+      "text": "Part 3 Small things, quietly useful null safety, BeanRegistrar, and six more"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/070.webp",
+      "text": "Null safety JSpecify, across the portfolio. / / part 3"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/071.webp",
+      "text": "Ever hit a NullPointerException? Yeah. Everyone. Every single one of you."
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/072.webp",
+      "text": "The problem isn't null. It's that nullness is implicit. Undocumented. The compiler can't help. / / the real problem"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/073.webp",
+      "text": "Four annotations, one standard / / jspecify.dev @Nullable @NonNull This value can be null. A field, return, parameter or generic. Null is never valid here. @NullMarked @NullUnmarked Everything in this scope is non-null by default. Nullness is unspecified. Opt a scope back out."
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/074.webp",
+      "text": "Spring's annotations go away package-info.java - @NonNullApi + @NullMarked package dev.danvega.talks; - import org.springframework.lang.NonNullApi; + import org.jspecify.annotations.NullMarked; Talk.java - import org.springframework.lang.Nullable; / / + import org.jspecify.annotations.Nullable; / / / / delete: org.springframework.lang −4 annotations"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/075.webp",
+      "text": "Spring's annotations go away package-info.java + @NullMarked package dev.danvega.talks; + import org.jspecify.annotations.NullMarked; Talk.java / / + import org.jspecify.annotations.Nullable; / / / / delete: org.springframework.lang −4 annotations"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/076.webp",
+      "text": "JSpecify null safety Null becomes part of the type. package-info.java @NullMarked package dev.danvega.orders; OrderService.java / / @Nullable Order find(String id); / / / / boot 4"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/077.webp",
+      "text": "Spring's own APIs now tell you where null can come back. / / the payoff"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/078.webp",
+      "text": "Programmatic beans BeanRegistrar replaces the post-processor. / / part 3"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/079.webp",
+      "text": "Boot 3: register beans by hand Feeds.java - class Feeds implements BeanDefinitionRegistryPostProcessor { - public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry) { - for (String name : List.of(\"devoxx\", \"jfall\")) { - var definition = BeanDefinitionBuilder - .genericBeanDefinition(Feed.class, () -> new Feed(name)) - .getBeanDefinition(); - registry.registerBeanDefinition(name + \"Feed\", definition); - } - } - public void postProcessBeanFactory(ConfigurableListableBeanFactory factory) {} ‌ / - } / / / delete: the post-processor"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/080.webp",
+      "text": "BeanRegistrar @Import(Feeds.class) on any @Configuration class Feeds implements BeanRegistrar { public void register(BeanRegistry registry, Environment env) { for (String name : List.of(\"devoxx\", \"jfall\")) { registry.registerBean(name + \"Feed\", Feed.class, spec -> spec.supplier(ctx -> new Feed(name))); } if (env.matchesProfiles(\"dev\")) { registry.registerBean(\"mirror\", Mirror.class, spec -> spec.lazyInit() .supplier(ctx -> new Mirror(ctx.bean(\"jfallFeed\", Feed.class)))); } } ‌ ‌ ‌ ‌ / } / / / framework 7"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/081.webp",
+      "text": "Six small things / / easy to miss Spring AI 2 JmsClient Security MFA Built on Boot 4 Like JdbcClient, for JMS Multi-factor login, built in Data AOT SSRF guard 4.1 Lazy JDBC 4.1 Faster startup Block calls you don't allow Connect on first statement"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/082.webp",
+      "text": "Part 4 The upgrade plan upgrade first, delete second"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/083.webp",
+      "text": "Five steps 1. Get to the latest 3.5.x first 2. Bump to Boot 4.1 and run the tests 3. Fix Jackson, then starters, then tests 4. Check what went quiet: Flyway, consoles, metrics 5. Then delete what Boot now does for you / / your plan"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/084.webp",
+      "text": "Let tools do the boring part / / your plan > OpenRewrite has Boot 4 recipes > Spring Application Advisor plans the order > Your tests are the real safety net"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/085.webp",
+      "text": "/ / recap − ? ✓ Delete the extras Find the quiet breaks Stay supported"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/086.webp",
+      "text": "Resources Migration guide github.com/spring-projects/spring-boot/wiki Blog posts danvega.dev/blog Demo code github.com/danvega/spring-cleaning Spring Boot 4 playlist youtube.com/@danvega · 18 videos / / wrap-up Scan for the code"
+    },
+    {
+      "src": "/slides/j-fall-2026-spring-cleaning-boot-4/087.webp",
+      "text": "$ git commit -m \"spring cleaning\" Thank you Questions? danvega.dev @therealdanvega github.com/danvega"
+    }
+  ]
+}
