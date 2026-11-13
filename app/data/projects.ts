@@ -8,23 +8,25 @@ export const projects: Project[] = [
     group: 'apps',
     icon: 'clearing.png',
     tagline: 'A to-do list tells you what. Clearing tells you when.',
-    description: 'A calm Mac planner that holds everything that needs me, so my head doesn\'t have to.',
+    description: 'A calm planner for Mac, iPhone, and iPad that holds everything that needs me, so my head doesn\'t have to. Live on the App Store now.',
     image: 'clearing.jpg',
     frame: 'browser',
     frameLabel: 'clearingplanner.com',
     since: '2026',
     story: {
       why: 'I run a job, a content business, conference travel, a family, and a house. My work lived in a Notion calendar. The rest of my life lived in an Apple Notes list. Neither one told me what needed attention, so my head kept checking.',
-      built: 'A Mac app that opens to one screen: what needs me. Overdue, due soon, planned for this week, and the inbox. Around it sit a timeline of my day, time blocks, a weekly review, and an end-of-day shutdown. An iPhone version is next.',
+      built: 'An app that opens to one screen: what needs me. Overdue, due soon, planned for this week, and the inbox. Around it sit a timeline of my day, time blocks, a weekly review, and an end-of-day shutdown. It is live on the App Store for Mac, iPhone, and iPad. One purchase covers all three, and your plans sync through your own iCloud.',
       learned: 'It borrows from Cal Newport\'s deep work and the GTD capture habit, without enforcing either. Rituals are tools to use when they help, not rules.'
     },
     stats: [
       { label: 'Commits', value: '405' },
-      { label: 'Platform', value: 'macOS' }
+      { label: 'Platforms', value: 'Mac, iPhone, iPad' }
     ],
     techStack: ['Swift', 'SwiftUI'],
-    url: 'https://clearingplanner.com',
-    status: 'in-progress'
+    url: 'https://apps.apple.com/us/app/clearing-calm-day-planner/id6826955896',
+    urlLabel: 'Get it on the App Store',
+    post: { title: 'I Built a Mac and iPhone Planner With a Built-In MCP Server', url: '/blog/2026/11/10/mac-iphone-planner-built-in-mcp-server' },
+    status: 'active'
   },
   {
     slug: 'publishwell',
