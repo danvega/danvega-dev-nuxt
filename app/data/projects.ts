@@ -195,6 +195,32 @@ export const projects: Project[] = [
     status: 'active'
   },
   {
+    slug: 'beansprout',
+    title: 'Beansprout',
+    group: 'tools',
+    icon: 'beansprout.png',
+    tagline: 'A Markdown blog for the Spring Boot app you already have.',
+    description: 'An open source Spring Boot starter. Add a dependency and a theme, write posts in Markdown, and your app has a blog.',
+    image: 'beansprout.jpg',
+    frame: 'browser',
+    frameLabel: 'localhost:8080/blog',
+    since: '2026',
+    story: {
+      why: 'I have been building a lot lately, and every Spring Boot app needed a blog. I could build it over and over again, or build one thing that fits what I need and reuse it.',
+      built: 'A starter that adds a blog to the app you already run. You write posts as Markdown files, and you get an index, tags, an archive, an Atom feed, a sitemap, and the tags search engines read. No database and no controllers. I spent my flight to San Francisco getting it ready, and version 0.2.0 shipped with five free themes from Pressworks.',
+      learned: 'Most blogs need less than a blog platform. One dependency and a folder of Markdown covers a lot of it.'
+    },
+    stats: [
+      { label: 'Commits', value: '37' },
+      { label: 'Themes', value: '5' }
+    ],
+    techStack: ['Java', 'Spring Boot 4', 'JTE', 'Markdown'],
+    github: 'https://github.com/danvega/beansprout',
+    url: 'https://central.sonatype.com/artifact/dev.danvega/beansprout-spring-boot-starter',
+    urlLabel: 'View on Maven Central',
+    status: 'active'
+  },
+  {
     slug: 'spring-initializr-tui',
     title: 'Spring Initializr TUI',
     group: 'tools',
