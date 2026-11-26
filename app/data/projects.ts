@@ -29,6 +29,30 @@ export const projects: Project[] = [
     status: 'active'
   },
   {
+    slug: 'elf-hunt',
+    title: 'Elf Hunt',
+    group: 'apps',
+    icon: 'elf-hunt.png',
+    tagline: 'A new house to search every day until Christmas.',
+    description: 'A cozy Christmas seek-and-find game my daughter and I made for the whole family, on iPhone and iPad. Live on the App Store now.',
+    image: 'elf-hunt.jpg',
+    frame: 'bare',
+    since: '2026',
+    story: {
+      why: 'My daughter and I made this game together. We wanted a Christmas game the whole family could play. Something like an advent calendar, where you open one new thing each day in December.',
+      built: 'Each day a new house opens in a snowy town. Elves hide behind sofas, trees, presents, and curtains. Find them all and cross them off the checklist to finish the house. There are 25 advent houses, 15 more on Snowball Lane, and five secret Santas. Up to six players can share one device. Houses 1 to 3 are free, and one purchase unlocks the rest. No ads, no accounts, and nothing leaves your device.',
+      learned: 'I pitched the idea on a Sunday and submitted it to the App Store that same night. Two days later it was live. With AI, a small idea and a hard deadline is a fun way to build.'
+    },
+    stats: [
+      { label: 'Houses', value: '40' },
+      { label: 'Platforms', value: 'iPhone, iPad' }
+    ],
+    techStack: ['Swift', 'SwiftUI', 'StoreKit'],
+    url: 'https://apps.apple.com/us/app/elf-hunt-christmas-advent/id6838152375',
+    urlLabel: 'Get it on the App Store',
+    status: 'active'
+  },
+  {
     slug: 'publishwell',
     title: 'Publishwell',
     group: 'apps',
