@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<!--
+  STYLE: wrap — the Wrap app's own look: warm paper, Rubik, the website's timeline strip with
+  colored clips and an orange playhead, the app icon, and a real app screenshot.
+  USE WHEN: the post is about Wrap (launches, how it's built, updates). Not for other topics.
+
+  Assets live in scripts/cover/assets/wrap/ (Rubik + its OFL license from the Wrap app, the app
+  icon from the Wrap website, and the 1.0 Home screen). Refresh them from those repos if they change.
+
+  Before rendering a copy from the scratchpad, set <base href> below to the absolute file:// path
+  of scripts/cover/assets/wrap/ in this repo, so the font and images resolve.
+
+  Sections to customize per post:
+    1. .kicker    — mono facts line, · separated
+    2. h1         — Rubik headline, three lines max; wrap the payoff in <em> (orange)
+    3. .dek       — one short supporting line
+    4. .shot img  — swap for another Wrap screenshot if it fits the post better
+    5. .card      — floating card in Wrap's Review style; keep its text true to the app, or delete it
+  Gotchas: the timeline strip and playhead are fixed decor. The screenshot bleeds off the right
+  edge on purpose. No em dashes.
+-->
+<head>
+<meta charset="utf-8">
+<base href="file:///Users/vega/dev/danvega/danvega-dev-nuxt/scripts/cover/assets/wrap/">
+<style>
+  @font-face { font-family: "Rubik"; src: url("Rubik-Variable.woff2") format("woff2"); font-weight: 300 900; }
+  :root {
+    --paper: #fefaf4;
+    --paper-deep: #f6efe3;
+    --ink: #1c1a26;
+    --ink-soft: #433d52;
+    --muted: #6b6478;
+    --line: #ece5d8;
+    --line-strong: #e1d8c8;
+    --yellow: #f7ca5a;
+    --purple: #b29df8;
+    --green: #71d99d;
+    --orange: #ec6636;
+    --blue: #395af6;
+    --pink: #ec5d8b;
+    --sans: "Rubik", -apple-system, sans-serif;
+    --mono: "SF Mono", Menlo, monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--sans); position: relative; overflow: hidden; }
+
+  /* The timeline strip from the Wrap website's header. */
+  .ruler { position: absolute; left: 0; right: 0; top: 70px; height: 40px; }
+  .ruler span { position: absolute; top: 0; font-family: var(--mono); font-size: 22px; color: var(--muted); }
+  .ticks { position: absolute; left: 0; right: 0; top: 112px; height: 18px;
+    background: repeating-linear-gradient(90deg, var(--line-strong) 0 3px, transparent 3px 63px); }
+  .clips { position: absolute; left: 40px; right: 40px; top: 142px; height: 46px; display: flex; gap: 10px; }
+  .clips i { display: block; height: 100%; border-radius: 10px; }
+  .playhead { position: absolute; left: 1200px; top: 56px; width: 6px; height: 160px; background: var(--orange); border-radius: 3px; }
+  .playhead::before { content: ""; position: absolute; left: -15px; top: -8px; width: 36px; height: 30px;
+    background: var(--orange); border-radius: 8px 8px 50% 50%; }
+
+  .copy { position: absolute; left: 150px; top: 330px; width: 1060px; }
+  .brand { display: flex; align-items: center; gap: 30px; }
+  .brand img { width: 120px; height: 120px; border-radius: 27px; box-shadow: 0 10px 30px rgba(28,26,38,.14); }
+  .brand span { font-size: 80px; font-weight: 700; letter-spacing: -0.02em; }
+  .kicker { margin-top: 70px; font-family: var(--mono); font-size: 32px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  h1 { margin-top: 28px; font-size: 128px; font-weight: 800; line-height: 1.02; letter-spacing: -0.025em; }
+  h1 em { font-style: normal; color: var(--orange); }
+  .dek { margin-top: 44px; max-width: 980px; font-size: 44px; line-height: 1.3; color: var(--ink-soft); }
+
+  .shot { position: absolute; left: 1290px; top: 300px; width: 1460px; border-radius: 26px; overflow: hidden;
+    border: 2px solid var(--line-strong); background: #fff;
+    box-shadow: 0 50px 120px rgba(28,26,38,.18), 0 12px 30px rgba(28,26,38,.08); }
+  .bar { height: 56px; background: var(--paper-deep); border-bottom: 2px solid var(--line); display: flex; align-items: center; gap: 14px; padding-left: 26px; }
+  .bar i { width: 20px; height: 20px; border-radius: 50%; display: block; }
+  .shot .frame { height: 780px; overflow: hidden; }
+  .shot img { width: 100%; display: block; }
+
+  /* A proposal card in the style of Wrap's Review screen. */
+  .card { position: absolute; left: 1420px; top: 1040px; width: 700px; background: #fff; border-radius: 26px;
+    border: 2px solid var(--line-strong); padding: 34px 38px; box-shadow: 0 30px 70px rgba(28,26,38,.16); }
+  .card .top { display: flex; align-items: center; justify-content: space-between; }
+  .card .title { font-size: 42px; font-weight: 700; }
+  .pill { font-size: 24px; font-weight: 600; color: #fff; background: var(--blue); border-radius: 999px; padding: 8px 20px; }
+  .card .meta { margin-top: 12px; font-size: 30px; color: var(--muted); }
+  .card .row { margin-top: 26px; display: flex; gap: 18px; justify-content: flex-end; }
+  .btn { font-size: 30px; font-weight: 700; border-radius: 999px; padding: 14px 34px; border: 2px solid var(--line-strong); background: #fff; }
+  .btn.primary { background: var(--yellow); border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
+</style>
+</head>
+<body>
+  <div class="ruler">
+    <span style="left:40px">0:00</span><span style="left:460px">3:00</span><span style="left:880px">6:00</span>
+    <span style="left:1300px">9:00</span><span style="left:1720px">12:00</span><span style="left:2140px">15:00</span>
+  </div>
+  <div class="ticks"></div>
+  <div class="clips">
+    <i style="flex:3.2;background:var(--yellow)"></i>
+    <i style="flex:4.1;background:var(--purple)"></i>
+    <i style="flex:1.6;background:var(--green)"></i>
+    <i style="flex:3.6;background:var(--orange)"></i>
+    <i style="flex:5.2;background:var(--blue)"></i>
+    <i style="flex:2;background:var(--pink)"></i>
+  </div>
+  <div class="playhead"></div>
+
+  <div class="copy">
+    <div class="brand"><img src="app-icon.png" alt=""><span>wrap</span></div>
+    <div class="kicker">32 days · 498 commits · 23 releases</div>
+    <h1>What it really took to build <em>Wrap 1.0</em></h1>
+    <div class="dek">A Mac app built with AI agents, from a written brief to launch.</div>
+  </div>
+
+  <figure class="shot">
+    <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div>
+    <div class="frame"><img src="home.png" alt=""></div>
+  </figure>
+
+  <div class="card">
+    <div class="top"><span class="title">Rough cut</span><span class="pill">Agent</span></div>
+    <div class="meta">14 changes · saves 23s</div>
+    <div class="row"><span class="btn">Reject</span><span class="btn primary">Accept</span></div>
+  </div>
+</body>
+</html>
