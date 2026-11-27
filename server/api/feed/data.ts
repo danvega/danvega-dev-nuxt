@@ -1,6 +1,19 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "Wrap 1.0: What It Really Took to Build a Mac App With AI Agents",
+    "description": "Wrap 1.0 took 32 days, 498 commits and 79,000 lines of Swift. Here's how it grew from a written brief, and why building it with AI agents was still hard.",
+    "date": "2026-11-26T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/building-wrap-mac-app-with-ai-agents",
+    "slug": "building-wrap-mac-app-with-ai-agents",
+    "tags": [
+      "AI",
+      "MCP",
+      "Software Development"
+    ]
+  },
+  {
     "title": "How to Pass App Store Review With a Coding Agent",
     "description": "App Store review tips from shipping iOS and Mac apps with a coding agent: avoid rejections, write better review notes, and request an expedited app review.",
     "date": "2026-11-25T09:00:00.000Z",
@@ -610,17 +623,6 @@ export const rssData = [
     "tags": [
       "Java",
       "Spring Boot"
-    ]
-  },
-  {
-    "title": "Spring AI Prompt Caching: Stop Wasting Money on Repeated Tokens",
-    "description": "Spring AI prompt caching cuts your Anthropic Claude API costs. Use AnthropicCacheStrategy to cache system prompts and tools that don't change between requests.",
-    "date": "2026-02-08T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/spring-ai-prompt-caching",
-    "slug": "spring-ai-prompt-caching",
-    "tags": [
-      "Spring AI"
     ]
   }
 ] as const
