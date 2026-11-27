@@ -15,7 +15,7 @@ keywords:
   - app store review guidelines 2.1
 cover: app-store-review-tips-coding-agent.png
 date: 2026-11-25T09:00:00.000Z
-published: false
+published: true
 ---
 
 > **TL;DR:** The slow part of App Store review isn't the review. It's the rejection loop. I use my coding agent to research the rules, scrub the build, and write the review package before I submit. And if your launch is tied to a date, you can ask Apple for an expedited review.
@@ -205,8 +205,6 @@ December 1.
 Notice what's not in there. I also wanted the app live for Black Friday, but I left that out. Black Friday is a sales date. It isn't the event the app is built around. The advent start is.
 
 I submitted Elf Hunt on Sunday night, November 22, and sent the request. It was approved on Tuesday, November 24.
-
-<!-- Dan: if you remember roughly when the approval email landed on the 24th, a time would make this land harder. -->
 
 If you have a holiday app, a conference app, or anything with a date on it, submit early and then ask. The worst Apple can say is no, and you're in the queue either way.
 

@@ -1,6 +1,18 @@
 // Auto-generated RSS data - do not edit manually
 export const rssData = [
   {
+    "title": "How to Pass App Store Review With a Coding Agent",
+    "description": "App Store review tips from shipping iOS and Mac apps with a coding agent: avoid rejections, write better review notes, and request an expedited app review.",
+    "date": "2026-11-25T09:00:00.000Z",
+    "author": "Dan Vega",
+    "_path": "/blog/app-store-review-tips-coding-agent",
+    "slug": "app-store-review-tips-coding-agent",
+    "tags": [
+      "AI",
+      "Software Development"
+    ]
+  },
+  {
     "title": "I Built a Mac and iPhone Planner With a Built-In MCP Server",
     "description": "How Clearing runs a local MCP server inside a Mac app, syncs through your own iCloud, and finds tasks in a brain dump without a server of its own.",
     "date": "2026-11-10T09:00:00.000Z",
@@ -609,18 +621,6 @@ export const rssData = [
     "slug": "spring-ai-prompt-caching",
     "tags": [
       "Spring AI"
-    ]
-  },
-  {
-    "title": "I Tried OpenAI's New Codex Agent. Here are my First Impressions (It's Really Good)",
-    "description": "OpenAI released Codex, a new GUI for their coding agent. I put it to the test by building a vending machine CLI application in Java 25 with Maven, JUnit 6, and JSpecify null safety annotations.",
-    "date": "2026-02-05T09:00:00.000Z",
-    "author": "Dan Vega",
-    "_path": "/blog/openai-codex-first-look",
-    "slug": "openai-codex-first-look",
-    "tags": [
-      "Java",
-      "AI"
     ]
   }
 ] as const
